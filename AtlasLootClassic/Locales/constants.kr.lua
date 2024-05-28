@@ -192,7 +192,3 @@ AL["Wand"] = "마법봉"
 AL["Weapons"] = "무기"
 AL["Wintersaber Trainers"] = "눈호랑이 조련사"
 AL["Wrathful %s"] = "분노한 %s"
-
-AL["Feast"] = "잔치요리"
-AL["Useful Stat"] = "유용한 능력치"
-AL["Off-Hand/Shield"] = "보조장비/방패"
