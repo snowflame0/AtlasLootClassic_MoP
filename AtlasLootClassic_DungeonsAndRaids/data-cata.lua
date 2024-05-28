@@ -189,49 +189,48 @@ local T11_SET = {
 	name = format(AL["Tier %s Sets"], "11"),
 	ExtraList = true,
 	TableType = SET_ITTYPE,
-	--ContentPhaseBC = 6,
 	IgnoreAsSource = true,
 	[NORMAL_DIFF] = {
-		{1, 4000925}, -- Death Knight Normal DPS Set
-		{2, 4000926}, -- Death Knight Normal Tank Set
-		{4, 4000927}, -- Druid Normal Melee Set
-		{5, 4000928}, -- Druid Normal Resto Set
-		{6, 4000929}, -- Druid Normal Balance Set
-		{8, 4000930}, -- Hunter Normal
-		{10, 4000931}, -- Mage Normal
-		{12, 4000932}, -- Paladin DPS
-		{13, 4000933}, -- Paladin Holy
-		{14, 4000934}, -- Paladin Prot
-		{16, 4000935}, -- Priest Holy
-		{17, 4000936}, -- Priest Shadow
-		{19, 4000937}, -- Rogue
-		{21, 4000938}, -- Shaman Resto
-		{22, 4000939}, -- Shaman Enhance
-		{23, 4000940}, -- Shaman Elemental
-		{25, 4000941}, -- Warlock
-		{27, 4000942}, -- Warrior
-		{28, 4000943}, -- Warrior
+		{ 1,    4000941 }, -- Warlock
+		{ 3,    4000935 }, -- Priest / Heal
+		{ 4,    4000936 }, -- Priest / Shadow
+		{ 6,    4000937 }, -- Rogue
+		{ 8,    4000930 }, -- Hunter
+		{ 10,   4000943 }, -- Warrior / Prot
+		{ 11,   4000942 }, -- Warrior / DD
+		{ 13,   4000926 }, -- Deathknight / Prot
+		{ 14,   4000925 }, -- Deathknight / DD
+		{ 16,   4000931 }, -- Mage
+		{ 18,   4000928 }, -- Druid / Heal
+		{ 19,   4000929 }, -- Druid / Owl
+		{ 20,   4000927 }, -- Druid / Feral
+		{ 22,   4000938 }, -- Shaman / Heal
+		{ 23,   4000940 }, -- Shaman / Ele
+		{ 24,   4000939 }, -- Shaman / Enh
+		{ 26,   4000933 }, -- Paladin / Heal
+		{ 27,   4000934 }, -- Paladin / Prot
+		{ 28,   4000932 }, -- Paladin / DD
 	},
 	[HEROIC_DIFF] = {
-		{1, 4001925}, -- Death Knight Heroic DPS Set
-		{2, 4001926}, -- Death Knight Heroic Tank Set
-		{4, 4001927}, -- Druid Normal Melee Set
-		{5, 4001928}, -- Druid Normal Resto Set
-		{6, 4001929}, -- Druid Normal Balance Set
-		{8, 4001930}, -- Hunter Heroic
-		{10, 4001931}, -- Mage Heroic
-		{12, 4001932}, -- Paladin DPS
-		{13, 4001933}, -- Paladin Holy
-		{14, 4001934}, -- Paladin Prot
-		{16, 4001935}, -- Priest Holy
-		{17, 4001936}, -- Priest Shadow
-		{19, 4001937}, -- Rogue
-		{21, 4001938}, -- Shaman Resto
-		{22, 4001939}, -- Shaman Enhance
-		{23, 4001940}, -- Shaman Elemental
-		{25, 4001941}, -- Warlock
-		{27, 4001942}, -- Warrior
-		{28, 4001943}, -- Warrior
+		{ 1,    4001941 }, -- Warlock
+		{ 3,    4001935 }, -- Priest / Heal
+		{ 4,    4001936 }, -- Priest / Shadow
+		{ 6,    4001937 }, -- Rogue
+		{ 8,    4001930 }, -- Hunter
+		{ 10,   4001943 }, -- Warrior / Prot
+		{ 11,   4001942 }, -- Warrior / DD
+		{ 13,   4001926 }, -- Deathknight / Prot
+		{ 14,   4001925 }, -- Deathknight / DD
+		{ 16,   4001931 }, -- Mage
+		{ 18,   4001928 }, -- Druid / Heal
+		{ 19,   4001929 }, -- Druid / Owl
+		{ 20,   4001927 }, -- Druid / Feral
+		{ 22,   4001938 }, -- Shaman / Heal
+		{ 23,   4001940 }, -- Shaman / Ele
+		{ 24,   4001939 }, -- Shaman / Enh
+		{ 26,   4001933 }, -- Paladin / Heal
+		{ 27,   4001934 }, -- Paladin / Prot
+		{ 28,   4001932 }, -- Paladin / DD
 	},
 }
 
@@ -239,49 +238,48 @@ local T12_SET = {
 	name = format(AL["Tier %s Sets"], "12"),
 	ExtraList = true,
 	TableType = SET_ITTYPE,
-	--ContentPhaseBC = 6,
 	IgnoreAsSource = true,
 	[NORMAL_DIFF] = {
-		{1, 4000944}, -- Death Knight Normal DPS Set
-		{2, 4000945}, -- Death Knight Normal Tank Set
-		{4, 4000946}, -- Druid Normal Melee Set
-		{5, 4000947}, -- Druid Normal Resto Set
-		{6, 4000948}, -- Druid Normal Balance Set
-		{8, 4000949}, -- Hunter Normal
-		{10, 4000950}, -- Mage Normal
-		{12, 4000951}, -- Paladin DPS
-		{13, 4000952}, -- Paladin Holy
-		{14, 4000953}, -- Paladin Prot
-		{16, 4000954}, -- Priest
-		{17, 4000955}, -- Priest
-		{19, 4000956}, -- Rogue
-		{21, 4000957}, -- Shaman
-		{22, 4000958}, -- Shaman
-		{23, 4000959}, -- Shaman
-		{25, 4000960}, -- Warlock
-		{27, 4000961}, -- Warrior
-		{28, 4000962}, -- Warrior
+		{ 1,    4000960 }, -- Warlock
+		{ 3,    4000954 }, -- Priest / Heal
+		{ 4,    4000955 }, -- Priest / Shadow
+		{ 6,    4000956 }, -- Rogue
+		{ 8,    4000949 }, -- Hunter
+		{ 10,   4000962 }, -- Warrior / Prot
+		{ 11,   4000961 }, -- Warrior / DD
+		{ 13,   4000945 }, -- Deathknight / Prot
+		{ 14,   4000944 }, -- Deathknight / DD
+		{ 16,   4000950 }, -- Mage
+		{ 18,   4000947 }, -- Druid / Heal
+		{ 19,   4000948 }, -- Druid / Owl
+		{ 20,   4000946 }, -- Druid / Feral
+		{ 22,   4000957 }, -- Shaman / Heal
+		{ 23,   4000959 }, -- Shaman / Ele
+		{ 24,   4000958 }, -- Shaman / Enh
+		{ 26,   4000952 }, -- Paladin / Heal
+		{ 27,   4000953 }, -- Paladin / Prot
+		{ 28,   4000951 }, -- Paladin / DD
 	},
 	[HEROIC_DIFF] = {
-		{1, 4001944}, -- Death Knight Normal DPS Set
-		{2, 4001945}, -- Death Knight Normal Tank Set
-		{4, 4001946}, -- Druid Normal Melee Set
-		{5, 4001947}, -- Druid Normal Resto Set
-		{6, 4001948}, -- Druid Normal Balance Set
-		{8, 4001949}, -- Hunter Normal
-		{10, 4001950}, -- Mage Normal
-		{12, 4001951}, -- Paladin DPS
-		{13, 4001952}, -- Paladin Holy
-		{14, 4001953}, -- Paladin Prot
-		{16, 4001954}, -- Priest
-		{17, 4001955}, -- Priest
-		{19, 4001956}, -- Rogue
-		{21, 4001957}, -- Shaman
-		{22, 4001958}, -- Shaman
-		{23, 4001959}, -- Shaman
-		{25, 4001960}, -- Warlock
-		{27, 4001961}, -- Warrior
-		{28, 4001962}, -- Warrior
+		{ 1,    4001960 }, -- Warlock
+		{ 3,    4001954 }, -- Priest / Heal
+		{ 4,    4001955 }, -- Priest / Shadow
+		{ 6,    4001956 }, -- Rogue
+		{ 8,    4001949 }, -- Hunter
+		{ 10,   4001962 }, -- Warrior / Prot
+		{ 11,   4001961 }, -- Warrior / DD
+		{ 13,   4001945 }, -- Deathknight / Prot
+		{ 14,   4001944 }, -- Deathknight / DD
+		{ 16,   4001950 }, -- Mage
+		{ 18,   4001947 }, -- Druid / Heal
+		{ 19,   4001948 }, -- Druid / Owl
+		{ 20,   4001946 }, -- Druid / Feral
+		{ 22,   4001957 }, -- Shaman / Heal
+		{ 23,   4001959 }, -- Shaman / Ele
+		{ 24,   4001958 }, -- Shaman / Enh
+		{ 26,   4001952 }, -- Paladin / Heal
+		{ 27,   4001953 }, -- Paladin / Prot
+		{ 28,   4001951 }, -- Paladin / DD
 	},
 }
 
@@ -289,7 +287,6 @@ local T13_SET = {
 	name = format(AL["Tier %s Sets"], "13"),
 	ExtraList = true,
 	TableType = SET_ITTYPE,
-	--ContentPhaseBC = 6,
 	IgnoreAsSource = true,
 	[LFR_DIFF] = {
 		{1, 0}, -- Death Knight Normal DPS Set
