@@ -496,6 +496,98 @@ data["TierSets"] = {
 				{ 28,   3251900 }, -- Paladin / DD
 			},
 		}),
+		AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM, {
+			name = format(AL["Tier %s Sets"], "11"),
+			CoinTexture = "CATA",
+			[NORMAL_DIFF] = {
+				{ 1,    4000941 }, -- Warlock
+				{ 3,    4000935 }, -- Priest / Heal
+				{ 4,    4000936 }, -- Priest / Shadow
+				{ 6,    4000937 }, -- Rogue
+				{ 8,    4000930 }, -- Hunter
+				{ 10,   4000943 }, -- Warrior / Prot
+				{ 11,   4000942 }, -- Warrior / DD
+				{ 13,   4000926 }, -- Deathknight / Prot
+				{ 14,   4000925 }, -- Deathknight / DD
+				{ 16,   4000931 }, -- Mage
+				{ 18,   4000928 }, -- Druid / Heal
+				{ 19,   4000929 }, -- Druid / Owl
+				{ 20,   4000927 }, -- Druid / Feral
+				{ 22,   4000938 }, -- Shaman / Heal
+				{ 23,   4000940 }, -- Shaman / Ele
+				{ 24,   4000939 }, -- Shaman / Enh
+				{ 26,   4000933 }, -- Paladin / Heal
+				{ 27,   4000934 }, -- Paladin / Prot
+				{ 28,   4000932 }, -- Paladin / DD
+			},
+			[HEROIC_DIFF] = {
+				{ 1,    4001941 }, -- Warlock
+				{ 3,    4001935 }, -- Priest / Heal
+				{ 4,    4001936 }, -- Priest / Shadow
+				{ 6,    4001937 }, -- Rogue
+				{ 8,    4001930 }, -- Hunter
+				{ 10,   4001943 }, -- Warrior / Prot
+				{ 11,   4001942 }, -- Warrior / DD
+				{ 13,   4001926 }, -- Deathknight / Prot
+				{ 14,   4001925 }, -- Deathknight / DD
+				{ 16,   4001931 }, -- Mage
+				{ 18,   4001928 }, -- Druid / Heal
+				{ 19,   4001929 }, -- Druid / Owl
+				{ 20,   4001927 }, -- Druid / Feral
+				{ 22,   4001938 }, -- Shaman / Heal
+				{ 23,   4001940 }, -- Shaman / Ele
+				{ 24,   4001939 }, -- Shaman / Enh
+				{ 26,   4001933 }, -- Paladin / Heal
+				{ 27,   4001934 }, -- Paladin / Prot
+				{ 28,   4001932 }, -- Paladin / DD
+			},
+		}),
+		AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM, {
+			name = format(AL["Tier %s Sets"], "12"),
+			CoinTexture = "CATA",
+			[NORMAL_DIFF] = {
+				{ 1,    4000960 }, -- Warlock
+				{ 3,    4000954 }, -- Priest / Heal
+				{ 4,    4000955 }, -- Priest / Shadow
+				{ 6,    4000956 }, -- Rogue
+				{ 8,    4000949 }, -- Hunter
+				{ 10,   4000962 }, -- Warrior / Prot
+				{ 11,   4000961 }, -- Warrior / DD
+				{ 13,   4000945 }, -- Deathknight / Prot
+				{ 14,   4000944 }, -- Deathknight / DD
+				{ 16,   4000950 }, -- Mage
+				{ 18,   4000947 }, -- Druid / Heal
+				{ 19,   4000948 }, -- Druid / Owl
+				{ 20,   4000946 }, -- Druid / Feral
+				{ 22,   4000957 }, -- Shaman / Heal
+				{ 23,   4000959 }, -- Shaman / Ele
+				{ 24,   4000958 }, -- Shaman / Enh
+				{ 26,   4000952 }, -- Paladin / Heal
+				{ 27,   4000953 }, -- Paladin / Prot
+				{ 28,   4000951 }, -- Paladin / DD
+			},
+			[HEROIC_DIFF] = {
+				{ 1,    4001960 }, -- Warlock
+				{ 3,    4001954 }, -- Priest / Heal
+				{ 4,    4001955 }, -- Priest / Shadow
+				{ 6,    4001956 }, -- Rogue
+				{ 8,    4001949 }, -- Hunter
+				{ 10,   4001962 }, -- Warrior / Prot
+				{ 11,   4001961 }, -- Warrior / DD
+				{ 13,   4001945 }, -- Deathknight / Prot
+				{ 14,   4001944 }, -- Deathknight / DD
+				{ 16,   4001950 }, -- Mage
+				{ 18,   4001947 }, -- Druid / Heal
+				{ 19,   4001948 }, -- Druid / Owl
+				{ 20,   4001946 }, -- Druid / Feral
+				{ 22,   4001957 }, -- Shaman / Heal
+				{ 23,   4001959 }, -- Shaman / Ele
+				{ 24,   4001958 }, -- Shaman / Enh
+				{ 26,   4001952 }, -- Paladin / Heal
+				{ 27,   4001953 }, -- Paladin / Prot
+				{ 28,   4001951 }, -- Paladin / DD
+			},
+		}),
 	},
 }
 
