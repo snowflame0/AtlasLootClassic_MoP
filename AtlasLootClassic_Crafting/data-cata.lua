@@ -2059,6 +2059,7 @@ data["CookingCata"] = {
                 { 1, 96133 }, -- Scalding Murglesnout
                 { 2, 88018 }, -- Fish Fry
                 { 3, 88006 }, -- Blackened Surprise
+                { 5, 93741 }, -- Venison Jerky
                 { 16, 88044 }, -- South Island Iced Tea
                 { 17, 88045 }, -- Starfire Espresso
             },
