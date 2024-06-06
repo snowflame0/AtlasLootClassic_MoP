@@ -513,6 +513,7 @@ data["EnchantingWrath"] = {
             name = AL["Misc"],
             [NORMAL_DIFF] = {
                 { 1, 69412 },	-- Abyssal Shatter
+                { 3, 60619 },   -- Runed Titanium Rod
             }
         },
     }
