@@ -1015,11 +1015,11 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
 		-- Hunter
 		["BH_A_HUNTER"] = {60307, 60305, 0, 60424, 60426, type = 9},
 		-- Warrior
-		["BH_A_WARRIOR_D"] = {60340, 60342, 0, 60409, 60411, type = 9},
-		["BH_A_WARRIOR_T"] = {60350, 60352, type = 9},
+		["BH_A_WARRIOR_D"] = {60326, 60324, 0, 60419, 60421, type = 9},
+		["BH_A_WARRIOR_T"] = {60332, 60330, type = 9},
 		-- Deathknight
-		["BH_A_DEATHKNIGHT_D"] = {60326, 60324, 0, 60419, 60421, type = 9},
-		["BH_A_DEATHKNIGHT_T"] = {60332, 60330, type = 9},
+		["BH_A_DEATHKNIGHT_D"] = {60340, 60342, 0, 60409, 60411, type = 9},
+		["BH_A_DEATHKNIGHT_T"] = {60350, 60352, type = 9},
 		-- Mage
 		["BH_A_MAGE"] = {60247, 60245, 0, 60463, 60465, type = 9},
 		-- Druid
