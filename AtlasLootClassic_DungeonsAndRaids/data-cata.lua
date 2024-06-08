@@ -766,6 +766,7 @@ data["TheVortexPinnacle"] = {
                 { 8, 55845 },	-- Heart of Thunder
                 { 9, 55846 },	-- Lightningflash
                 { 10, 55853 },	-- Thundercall
+                { 11, 55852 },  -- Captured Lightning
                 { 16, "ac4847" },
             },
             [HEROIC_DIFF] = {
@@ -779,7 +780,8 @@ data["TheVortexPinnacle"] = {
                 { 8, 56370 },	-- Heart of Thunder
                 { 9, 56366 },	-- Lightningflash
                 { 10, 56376 },	-- Thundercall
-                { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
+                { 11, 56372 },  -- Captured Lightning
+                { 13, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
                 { 16, "ac5064" },
                 { 17, "ac5288" },
             },
