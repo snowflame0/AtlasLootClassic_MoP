@@ -766,6 +766,7 @@ data["TheVortexPinnacle"] = {
                 { 8, 55845 },	-- Heart of Thunder
                 { 9, 55846 },	-- Lightningflash
                 { 10, 55853 },	-- Thundercall
+                { 11, 55852 },  -- Captured Lightning
                 { 16, "ac4847" },
             },
             [HEROIC_DIFF] = {
@@ -779,7 +780,8 @@ data["TheVortexPinnacle"] = {
                 { 8, 56370 },	-- Heart of Thunder
                 { 9, 56366 },	-- Lightningflash
                 { 10, 56376 },	-- Thundercall
-                { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
+                { 11, 56372 },  -- Captured Lightning
+                { 13, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
                 { 16, "ac5064" },
                 { 17, "ac5288" },
             },
@@ -1615,6 +1617,103 @@ data["ZulGurub"] = {
             },
         },
     }
+}
+
+data["WorldBossesCata"] = {
+	name = AL["World Bosses"],
+	ContentType = RAID_CONTENT,
+	items = {
+        { -- Akma'hat
+            name = AL["Akma'hat"],
+            npcID = 50063,
+            Level = 999,
+            DisplayIDs = {{1}},
+            [NORMAL_DIFF] = {
+                { 1, 67240 }, -- Belt of a Thousand Mouths
+                { 3, "INV_sword_04", nil, ALIL["Random World Epics"] },
+                { 16, 67541 }, -- Pattern: High Society Top Hat
+                { 17, 71965 }, -- Design: Rhinestone Sunglasses
+                { 18, 52496 }, -- Design: Jeweler's Amber Monocle
+                { 19, 52495 }, -- Design: Jeweler's Sapphire Monocle
+                { 20, 52494 }, -- Design: Jeweler's Ruby Monocle
+            }
+        },
+        { -- Garr
+            name = AL["Garr"],
+            npcID = 50056,
+            Level = 999,
+            DisplayIDs = {{1}},
+            [NORMAL_DIFF] = {
+                { 1, 67235 }, -- Garr's Girdle of Memories
+                { 3, "INV_sword_04", nil, ALIL["Random World Epics"] },
+                { 16, 67541 }, -- Pattern: High Society Top Hat
+                { 17, 71965 }, -- Design: Rhinestone Sunglasses
+                { 18, 52496 }, -- Design: Jeweler's Amber Monocle
+                { 19, 52495 }, -- Design: Jeweler's Sapphire Monocle
+                { 20, 52494 }, -- Design: Jeweler's Ruby Monocle
+            }
+        },
+        { -- Julak-Doom
+            name = AL["Julak-Doom"],
+            npcID = 50089,
+            Level = 999,
+            DisplayIDs = {{1}},
+            [NORMAL_DIFF] = {
+                { 1, 67246 }, -- Beak of Julak-Doom
+                { 3, "INV_sword_04", nil, ALIL["Random World Epics"] },
+                { 16, 67541 }, -- Pattern: High Society Top Hat
+                { 17, 71965 }, -- Design: Rhinestone Sunglasses
+                { 18, 52496 }, -- Design: Jeweler's Amber Monocle
+                { 19, 52495 }, -- Design: Jeweler's Sapphire Monocle
+                { 20, 52494 }, -- Design: Jeweler's Ruby Monocle
+            }
+        },
+        { -- Mobus
+            name = AL["Mobus"],
+            npcID = 50009,
+            Level = 999,
+            DisplayIDs = {{1}},
+            [NORMAL_DIFF] = {
+                { 1, 67153 }, -- Mobus's Vile Halberd
+                { 3, "INV_sword_04", nil, ALIL["Random World Epics"] },
+                { 16, 67541 }, -- Pattern: High Society Top Hat
+                { 17, 71965 }, -- Design: Rhinestone Sunglasses
+                { 18, 52496 }, -- Design: Jeweler's Amber Monocle
+                { 19, 52495 }, -- Design: Jeweler's Sapphire Monocle
+                { 20, 52494 }, -- Design: Jeweler's Ruby Monocle
+            }
+        },
+        { -- Xariona
+            name = AL["Xariona"],
+            npcID = 50061,
+            Level = 999,
+            DisplayIDs = {{1}},
+            [NORMAL_DIFF] = {
+                { 1, 67239 }, -- Xariona's Spectral Claws
+                { 3, "INV_sword_04", nil, ALIL["Random World Epics"] },
+                { 16, 67541 }, -- Pattern: High Society Top Hat
+                { 17, 71965 }, -- Design: Rhinestone Sunglasses
+                { 18, 52496 }, -- Design: Jeweler's Amber Monocle
+                { 19, 52495 }, -- Design: Jeweler's Sapphire Monocle
+                { 20, 52494 }, -- Design: Jeweler's Ruby Monocle
+            }
+        },
+        { -- Poseidus
+            name = AL["Poseidus"],
+            npcID = 50005,
+            Level = 999,
+            DisplayIDs = {{1}},
+            [NORMAL_DIFF] = {
+                { 1, 67151 }, -- Reins of Poseidus
+                { 3, "INV_sword_04", nil, ALIL["Random World Epics"] },
+                { 16, 67541 }, -- Pattern: High Society Top Hat
+                { 17, 71965 }, -- Design: Rhinestone Sunglasses
+                { 18, 52496 }, -- Design: Jeweler's Amber Monocle
+                { 19, 52495 }, -- Design: Jeweler's Sapphire Monocle
+                { 20, 52494 }, -- Design: Jeweler's Ruby Monocle
+            }
+        },
+	}
 }
 
 data["TheBastionOfTwilight"] = {

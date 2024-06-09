@@ -396,7 +396,7 @@ data["MountsCata"] = {
     }, {
         name = AL["Crafting"],
         [NORMAL_DIFF] = {{1, 65891}, -- Vial of the Sands
-                        {2, 41508}, -- Mechano-Hog
+                        { 16, [ATLASLOOT_IT_ALLIANCE] = 44413, [ATLASLOOT_IT_HORDE] = 41508 }, -- Mekgineer's Chopper / Mechano-hog
                         {3, 34061}, -- Turbo-Charged Flying Machine
                         {4, 44558}, -- Magnificent Flying Carpet
                         {5, 54797}, -- Frosty Flying Carpet
