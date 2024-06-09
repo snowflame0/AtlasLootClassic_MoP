@@ -1119,11 +1119,11 @@ data["JewelcraftingCata"] = {
         {
             name = AL["Armor"].." - "..ALIL["Trinket"],
             [NORMAL_DIFF] = {
-                { 1, 73640 }, -- Figurine - Demon Panther
-                { 2, 73643 }, -- Figurine - Dream Owl
-                { 3, 73641 }, -- Figurine - Earthen Guardian
-                { 4, 73642 }, -- Figurine - Jeweled Serpent
-                { 5, 73639 }, -- Figurine - King of Boars
+                { 1, "i52199" }, -- Figurine - Demon Panther
+                { 2, "i52351" }, -- Figurine - King of Boars
+                { 3, "i52352" }, -- Figurine - Earthen Guardian
+                { 4, "i52353" }, -- Figurine - Jeweled Serpent
+                { 5, "i52354" }, -- Figurine - Dream Owl
             }
         },
         {
@@ -1952,6 +1952,14 @@ data["ArchaeologyCata"] = {
             [NORMAL_DIFF] = {
                 { 1, "INV_sword_04", nil, ALIL["Tol'vir"] },
                 { 2, 91790 }, -- Canopic Jar
+                { 16, "i52843" }, -- Dwarf Rune Stone
+                { 17, "i63127" }, -- Highborne Scroll
+                { 18, "i63128" }, -- Troll Tablet
+                { 19, "i64392" }, -- Orc Blood Text
+                { 20, "i64394" }, -- Draenei Tome
+                { 21, "i64395" }, -- Vrykul Rune Stick
+                { 22, "i64396" }, -- Nerubian Obelisk
+                { 23, "i64397" }, -- Tol'vir Hieroglyphic
             }
         },
     }
