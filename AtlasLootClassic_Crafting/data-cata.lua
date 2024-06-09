@@ -100,6 +100,7 @@ data["AlchemyCata"] = {
                 { 2, 80495 }, -- Potion of the Tol'vir
                 { 3, 80481 }, -- Volcanic Potion
                 { 4, 80478 }, -- Earthen Potion
+                { 5, 80479 }, -- Deathblood Venom
             },
         },
         {
@@ -113,7 +114,6 @@ data["AlchemyCata"] = {
                 { 6, 80477 }, -- Ghost Elixir
                 { 16, 80492 }, -- Prismatic Elixir
                 { 17, 80488 }, -- Elixir of Deep Earth
-                { 19, 80479 }, -- Deathblood Venom
             },
         },
         {
