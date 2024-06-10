@@ -19,7 +19,7 @@ local data = AtlasLoot.ItemDB:Add(addonname, 4, AtlasLoot.CATA_VERSION_NUM)
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
 
-local LFR_DIFF = data:AddDifficulty("LFR", nil, nil, nil, true)
+--local LFR_DIFF = data:AddDifficulty("LFR", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 
@@ -113,46 +113,46 @@ local T12_SET = {
     ContentPhaseCata = 2,
     IgnoreAsSource = true,
     [NORMAL_DIFF] = {
-        {1, 4000960 }, -- Warlock
-        {3, 4000954 }, -- Priest Holy
-        {4, 4000955 }, -- Priest Shadow
-        {6, 4000956 }, -- Rogue
-        {8, 4000949 }, -- Hunter
-        {10, 4000962 }, -- Warrior Tank
-        {11, 4000961 }, -- Warrior DPS
-        {13, 4000945 }, -- Death Knight Tank
-        {14, 4000944 }, -- Death Knight DPS
-        {16, 4000950 }, -- Mage
-        {18, 4000947 }, -- Druid Resto
-        {19, 4000948 }, -- Druid Balance
-        {20, 4000946 }, -- Druid Feral
-        {22, 4000957 }, -- Shaman Resto
-        {23, 4000959 }, -- Shaman Elemental
-        {24, 4000958 }, -- Shaman Enhance
-        {26, 4000952 }, -- Paladin Holy
-        {27, 4000953 }, -- Paladin Prot
-        {28, 4000951 }, -- Paladin DPS
+        {1, 40001008 }, -- Warlock
+        {3, 40001009 }, -- Priest Holy
+        {4, 40001010 }, -- Priest Shadow
+        {6, 40001006 }, -- Rogue
+        {8, 40001005 }, -- Hunter
+        {10, 40001018 }, -- Warrior Tank
+        {11, 40001017 }, -- Warrior DPS
+        {13, 40001001 }, -- Death Knight Tank
+        {14, 40001000 }, -- Death Knight DPS
+        {16, 40001007 }, -- Mage
+        {18, 40001004 }, -- Druid Resto
+        {19, 40001003 }, -- Druid Balance
+        {20, 40001002 }, -- Druid Feral
+        {22, 40001014 }, -- Shaman Resto
+        {23, 40001016 }, -- Shaman Elemental
+        {24, 40001015 }, -- Shaman Enhance
+        {26, 40001011 }, -- Paladin Holy
+        {27, 40001013 }, -- Paladin Prot
+        {28, 40001012 }, -- Paladin DPS
     },
     [HEROIC_DIFF] = {
-        {1, 4001960 }, -- Warlock
-        {3, 4001954 }, -- Priest Holy
-        {4, 4001955 }, -- Priest Shadow
-        {6, 4001956 }, -- Rogue
-        {8, 4001949 }, -- Hunter
-        {10, 4001962 }, -- Warrior Tank
-        {11, 4001961 }, -- Warrior DPS
-        {13, 4001945 }, -- Death Knight Tank
-        {14, 4001944 }, -- Death Knight DPS
-        {16, 4001950 }, -- Mage
-        {18, 4001947 }, -- Druid Resto
-        {19, 4001948 }, -- Druid Balance
-        {20, 4001946 }, -- Druid Feral
-        {22, 4001957 }, -- Shaman Resto
-        {23, 4001959 }, -- Shaman Elemental
-        {24, 4001958 }, -- Shaman Enhance
-        {26, 4001952 }, -- Paladin Holy
-        {27, 4001953 }, -- Paladin Prot
-        {28, 4001951 }, -- Paladin DPS
+        {1, 40011008 }, -- Warlock
+        {3, 40011009 }, -- Priest Holy
+        {4, 40011010 }, -- Priest Shadow
+        {6, 40011006 }, -- Rogue
+        {8, 40011005 }, -- Hunter
+        {10, 40011018 }, -- Warrior Tank
+        {11, 40011017 }, -- Warrior DPS
+        {13, 40011001 }, -- Death Knight Tank
+        {14, 40011000 }, -- Death Knight DPS
+        {16, 40011007 }, -- Mage
+        {18, 40011004 }, -- Druid Resto
+        {19, 40011003 }, -- Druid Balance
+        {20, 40011002 }, -- Druid Feral
+        {22, 40011014 }, -- Shaman Resto
+        {23, 40011016 }, -- Shaman Elemental
+        {24, 40011015 }, -- Shaman Enhance
+        {26, 40011011 }, -- Paladin Holy
+        {27, 40011013 }, -- Paladin Prot
+        {28, 40011012 }, -- Paladin DPS
     },
 }
 
@@ -162,68 +162,68 @@ local T13_SET = {
     TableType = SET_ITTYPE,
     ContentPhaseCata = 3,
     IgnoreAsSource = true,
-    --[LFR_DIFF] = {
-    --	{1, 4000979 }, -- Warlock
-    --	{3, 4000973 }, -- Priest Holy
-    --	{4, 4000974 }, -- Priest Shadow
-    --	{6, 4000975 }, -- Rogue
-    --	{8, 4000968 }, -- Hunter
-    --	{10, 4000981 }, -- Warrior Tank
-    --	{11, 4000980 }, -- Warrior Dps
-    --	{13, 4000964 }, -- Death Knight Tank
-    --	{14, 4000963 }, -- Death Knight DPS
-    --	{16, 4000969 }, -- Mage
-    --	{18, 4000966 }, -- Druid Resto
-    --	{19, 4000967 }, -- Druid Balance
-    --	{20, 4000965 }, -- Druid Melee
-    --	{22, 4000976 }, -- Shaman Resto
-    --	{23, 4000978 }, -- Shaman Elemental
-    --	{24, 4000977 }, -- Shaman Enhance
-    --	{26, 4000971 }, -- Paladin Holy
-    --	{27, 4000972 }, -- Paladin Prot
-    --	{28, 4000970 }, -- Paladin DPS
-    --},
+    -- [LFR_DIFF] = {
+    -- 	{1, 40001072 }, -- Warlock
+    -- 	{3, 40001066 }, -- Priest Holy
+    -- 	{4, 40001067 }, -- Priest Shadow
+    -- 	{6, 40001068 }, -- Rogue
+    -- 	{8, 40001061 }, -- Hunter
+    -- 	{10, 40001074 }, -- Warrior Tank
+    -- 	{11, 40001073 }, -- Warrior Dps
+    -- 	{13, 40001056 }, -- Death Knight Tank
+    -- 	{14, 40001057 }, -- Death Knight DPS
+    -- 	{16, 40001062 }, -- Mage
+    -- 	{18, 40001060 }, -- Druid Resto
+    -- 	{19, 40001059 }, -- Druid Balance
+    -- 	{20, 40001058 }, -- Druid Melee
+    -- 	{22, 40001069 }, -- Shaman Resto
+    -- 	{23, 40001070 }, -- Shaman Elemental
+    -- 	{24, 40001071 }, -- Shaman Enhance
+    -- 	{26, 40001063 }, -- Paladin Holy
+    -- 	{27, 40001065 }, -- Paladin Prot
+    -- 	{28, 40001064 }, -- Paladin DPS
+    -- },
     [NORMAL_DIFF] = {
-        {1, 4001979 }, -- Warlock
-        {3, 4001973 }, -- Priest Holy
-        {4, 4001974 }, -- Priest Shadow
-        {6, 4001975 }, -- Rogue
-        {8, 4001968 }, -- Hunter
-        {10, 4001981 }, -- Warrior Tank
-        {11, 4001980 }, -- Warrior Dps
-        {13, 4001964 }, -- Death Knight Tank
-        {14, 4001963 }, -- Death Knight DPS
-        {16, 4001969 }, -- Mage
-        {18, 4001966 }, -- Druid Resto
-        {19, 4001967 }, -- Druid Balance
-        {20, 4001965 }, -- Druid Melee
-        {22, 4001976 }, -- Shaman Resto
-        {23, 4001978 }, -- Shaman Elemental
-        {24, 4001977 }, -- Shaman Enhance
-        {26, 4001971 }, -- Paladin Holy
-        {27, 4001972 }, -- Paladin Prot
-        {28, 4001970 }, -- Paladin DPS
+    	{1, 40011072 }, -- Warlock
+    	{3, 40011066 }, -- Priest Holy
+    	{4, 40011067 }, -- Priest Shadow
+    	{6, 40011068 }, -- Rogue
+    	{8, 40011061 }, -- Hunter
+    	{10, 40011074 }, -- Warrior Tank
+    	{11, 40011073 }, -- Warrior Dps
+    	{13, 40011056 }, -- Death Knight Tank
+    	{14, 40011057 }, -- Death Knight DPS
+    	{16, 40011062 }, -- Mage
+    	{18, 40011060 }, -- Druid Resto
+    	{19, 40011059 }, -- Druid Balance
+    	{20, 40011058 }, -- Druid Melee
+    	{22, 40011069 }, -- Shaman Resto
+    	{23, 40011070 }, -- Shaman Elemental
+    	{24, 40011071 }, -- Shaman Enhance
+    	{26, 40011063 }, -- Paladin Holy
+    	{27, 40011065 }, -- Paladin Prot
+    	{28, 40011064 }, -- Paladin DPS
     },
     [HEROIC_DIFF] = {
-        {1, 4002979 }, -- Warlock
-        {3, 4002973 }, -- Priest Holy
-        {4, 4002974 }, -- Priest Shadow
-        {6, 4002975 }, -- Rogue
-        {8, 4002968 }, -- Hunter
-        {10, 4002981 }, -- Warrior Tank
-        {11, 4002980 }, -- Warrior Dps
-        {13, 4002964 }, -- Death Knight Tank
-        {14, 4002963 }, -- Death Knight DPS
-        {16, 4002969 }, -- Mage
-        {18, 4002966 }, -- Druid Resto
-        {19, 4002967 }, -- Druid Balance
-        {20, 4002965 }, -- Druid Melee
-        {22, 4002976 }, -- Shaman Resto
-        {23, 4002978 }, -- Shaman Elemental
-        {24, 4002977 }, -- Shaman Enhance
-        {26, 4002971 }, -- Paladin Holy
-        {27, 4002972 }, -- Paladin Prot
-        {28, 4002970 }, -- Paladin DPS
+    	{1, 40021072 }, -- Warlock
+    	{3, 40021066 }, -- Priest Holy
+    	{4, 40021067 }, -- Priest Shadow
+    	{6, 40021068 }, -- Rogue
+    	{8, 40021061 }, -- Hunter
+    	{10, 40021074 }, -- Warrior Tank
+    	{11, 40021073 }, -- Warrior Dps
+    	{13, 40021056 }, -- Death Knight Tank
+    	{14, 40021057 }, -- Death Knight DPS
+    	{16, 40021062 }, -- Mage
+    	{18, 40021060 }, -- Druid Resto
+    	{19, 40021059 }, -- Druid Balance
+    	{20, 40021058 }, -- Druid Melee
+    	{22, 40021069 }, -- Shaman Resto
+    	{23, 40021070 }, -- Shaman Elemental
+    	{24, 40021071 }, -- Shaman Enhance
+    	{26, 40021063 }, -- Paladin Holy
+    	{27, 40021065 }, -- Paladin Prot
+    	{28, 40021064 }, -- Paladin DPS
     },
 }
 
