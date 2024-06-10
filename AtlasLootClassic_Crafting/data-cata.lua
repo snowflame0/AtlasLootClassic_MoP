@@ -159,7 +159,7 @@ data["BlacksmithingCata"] = {
             }
         },
         { -- Axes
-            name = AL["Weapons"].." - "..AL["Axes"],
+            name = AL["Weapons"].." - "..ALIL["Axes"],
             [NORMAL_DIFF] = {
                 { 1, "INV_sword_04", nil, ALIL["One-Handed Axes"] },
                 { 2, 99655 },   -- Elementium-Edged Scalper
@@ -169,7 +169,7 @@ data["BlacksmithingCata"] = {
             }
         },
         { -- Maces
-            name = AL["Weapons"].." - "..AL["Maces"],
+            name = AL["Weapons"].." - "..ALIL["Maces"],
             [NORMAL_DIFF] = {
                 { 1, "INV_sword_04", nil, ALIL["One-Handed Maces"] },
                 { 2, 99654 }, -- Lightforged Elementium Hammer
@@ -180,7 +180,7 @@ data["BlacksmithingCata"] = {
             }
         },
         { -- Swords
-            name = AL["Weapons"].." - "..AL["Swords"],
+            name = AL["Weapons"].." - "..ALIL["Swords"],
             [NORMAL_DIFF] = {
                 { 1, "INV_sword_04", nil, ALIL["One-Handed Swords"] },
                 { 2, 99657 }, -- Unbreakable Guardian
@@ -191,7 +191,7 @@ data["BlacksmithingCata"] = {
             }
         },
         { -- Polearms
-            name = AL["Weapons"].." - "..AL["Polearms"],
+            name = AL["Weapons"].." - "..ALIL["Polearms"],
             [NORMAL_DIFF] = {
                 { 1, "INV_sword_06", nil, ALIL["Polearms"] },
                 { 2, 99660 }, -- Witch Hunter's Harvester
@@ -554,7 +554,7 @@ data["InscriptionCata"] = {
     CorrespondingFields = private.INSCRIPTION_LINK,
     items = {
         {
-            name = AL["Armor"].." - "..ALIL["Off Hand"],
+            name = ALIL["Armor"].." - "..ALIL["Off Hand"],
             [NORMAL_DIFF] = {
                 { 1, 86640 }, -- Lord Rottington's Pressed Wisp Book
                 { 2, 86616 }, -- Book of Blood
@@ -564,7 +564,7 @@ data["InscriptionCata"] = {
             }
         },
         {
-            name = AL["Armor"].." - "..ALIL["Relic"],
+            name = ALIL["Armor"].." - "..ALIL["Relic"],
             [NORMAL_DIFF] = {
                 { 1, 86647 }, -- Etched Horn
                 { 2, 86648 }, -- Manual of the Planes
