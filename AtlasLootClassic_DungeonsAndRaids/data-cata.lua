@@ -184,46 +184,46 @@ local T13_SET = {
     -- 	{28, 40001064 }, -- Paladin DPS
     -- },
     [NORMAL_DIFF] = {
-    	{1, 40011072 }, -- Warlock
-    	{3, 40011066 }, -- Priest Holy
-    	{4, 40011067 }, -- Priest Shadow
-    	{6, 40011068 }, -- Rogue
-    	{8, 40011061 }, -- Hunter
-    	{10, 40011074 }, -- Warrior Tank
-    	{11, 40011073 }, -- Warrior Dps
-    	{13, 40011056 }, -- Death Knight Tank
-    	{14, 40011057 }, -- Death Knight DPS
-    	{16, 40011062 }, -- Mage
-    	{18, 40011060 }, -- Druid Resto
-    	{19, 40011059 }, -- Druid Balance
-    	{20, 40011058 }, -- Druid Melee
-    	{22, 40011069 }, -- Shaman Resto
-    	{23, 40011070 }, -- Shaman Elemental
-    	{24, 40011071 }, -- Shaman Enhance
-    	{26, 40011063 }, -- Paladin Holy
-    	{27, 40011065 }, -- Paladin Prot
-    	{28, 40011064 }, -- Paladin DPS
+        {1, 40011072 }, -- Warlock
+        {3, 40011066 }, -- Priest Holy
+        {4, 40011067 }, -- Priest Shadow
+        {6, 40011068 }, -- Rogue
+        {8, 40011061 }, -- Hunter
+        {10, 40011074 }, -- Warrior Tank
+        {11, 40011073 }, -- Warrior Dps
+        {13, 40011056 }, -- Death Knight Tank
+        {14, 40011057 }, -- Death Knight DPS
+        {16, 40011062 }, -- Mage
+        {18, 40011060 }, -- Druid Resto
+        {19, 40011059 }, -- Druid Balance
+        {20, 40011058 }, -- Druid Melee
+        {22, 40011069 }, -- Shaman Resto
+        {23, 40011070 }, -- Shaman Elemental
+        {24, 40011071 }, -- Shaman Enhance
+        {26, 40011063 }, -- Paladin Holy
+        {27, 40011065 }, -- Paladin Prot
+        {28, 40011064 }, -- Paladin DPS
     },
     [HEROIC_DIFF] = {
-    	{1, 40021072 }, -- Warlock
-    	{3, 40021066 }, -- Priest Holy
-    	{4, 40021067 }, -- Priest Shadow
-    	{6, 40021068 }, -- Rogue
-    	{8, 40021061 }, -- Hunter
-    	{10, 40021074 }, -- Warrior Tank
-    	{11, 40021073 }, -- Warrior Dps
-    	{13, 40021056 }, -- Death Knight Tank
-    	{14, 40021057 }, -- Death Knight DPS
-    	{16, 40021062 }, -- Mage
-    	{18, 40021060 }, -- Druid Resto
-    	{19, 40021059 }, -- Druid Balance
-    	{20, 40021058 }, -- Druid Melee
-    	{22, 40021069 }, -- Shaman Resto
-    	{23, 40021070 }, -- Shaman Elemental
-    	{24, 40021071 }, -- Shaman Enhance
-    	{26, 40021063 }, -- Paladin Holy
-    	{27, 40021065 }, -- Paladin Prot
-    	{28, 40021064 }, -- Paladin DPS
+        {1, 40021072 }, -- Warlock
+        {3, 40021066 }, -- Priest Holy
+        {4, 40021067 }, -- Priest Shadow
+        {6, 40021068 }, -- Rogue
+        {8, 40021061 }, -- Hunter
+        {10, 40021074 }, -- Warrior Tank
+        {11, 40021073 }, -- Warrior Dps
+        {13, 40021056 }, -- Death Knight Tank
+        {14, 40021057 }, -- Death Knight DPS
+        {16, 40021062 }, -- Mage
+        {18, 40021060 }, -- Druid Resto
+        {19, 40021059 }, -- Druid Balance
+        {20, 40021058 }, -- Druid Melee
+        {22, 40021069 }, -- Shaman Resto
+        {23, 40021070 }, -- Shaman Elemental
+        {24, 40021071 }, -- Shaman Enhance
+        {26, 40021063 }, -- Paladin Holy
+        {27, 40021065 }, -- Paladin Prot
+        {28, 40021064 }, -- Paladin DPS
     },
 }
 
@@ -1620,9 +1620,9 @@ data["ZulGurub"] = {
 }
 
 data["WorldBossesCata"] = {
-	name = AL["World Bosses"],
-	ContentType = RAID_CONTENT,
-	items = {
+    name = AL["World Bosses"],
+    ContentType = RAID_CONTENT,
+    items = {
         { -- Akma'hat
             name = AL["Akma'hat"],
             npcID = 50063,
@@ -1713,7 +1713,7 @@ data["WorldBossesCata"] = {
                 { 20, 52494 }, -- Design: Jeweler's Ruby Monocle
             }
         },
-	}
+    }
 }
 
 data["TheBastionOfTwilight"] = {
