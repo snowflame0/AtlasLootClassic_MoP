@@ -4,7 +4,7 @@
 
 ### AtlasLootClassic Cata is a forked and revised version of the AtlasLootClassic updated for Cataclysm Classic. It allows for various loot tables to be browsed in-game.
 
-### !! This is still mostly a  work in progress !! 
+### !! This is still mostly a  work in progress !!
 
 #### If you appreciate the work and want to help support my broke ass while I keep working on this, please feel free to buy me a coffee @ https://buymeacoffee.com/snowflame0
 
@@ -39,7 +39,7 @@ Please report any bugs on Github, I will keep adding missing features. Special t
 ## Credits
 - Lag/Hoizame (on Github) - Original author of AtlasLootClassic
 - @scareclaw-kashtira on Github for many contributions updating modules
-- @getenarra on Github for many contributions updating modules
+- @gitenarra on Github for many contributions updating modules
 - @MCJOHNS117 on Github for initial tier set updates
 - @iZcr3am on Github for help with translations and updating modules
 

@@ -1423,9 +1423,9 @@ data["JewelcraftingWrath"] = {
         {
             name = format(GEM_FORMAT1, ALIL["Prismatic"]),
             [NORMAL_DIFF] = {
-                { 1, 56530 }, -- Enchanted Pearl
+                { 1, 68253 }, -- Nightmare Tear
                 { 2, 56531 }, -- Enchanted Tear
-                { 3, 68253 }, -- Nightmare Tear
+                { 3, 56530 }, -- Enchanted Pearl
             }
         },
         {
