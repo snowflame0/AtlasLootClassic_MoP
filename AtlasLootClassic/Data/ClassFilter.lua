@@ -271,6 +271,9 @@ local LINKED_STATS = {
     ["ITEM_MOD_SPELL_DAMAGE"] = "ITEM_MOD_SPELL_DAMAGE_DONE_SHORT",
     ["ITEM_MOD_SPELL_DAMAGE_DONE"] = "ITEM_MOD_SPELL_DAMAGE_DONE_SHORT",
     ["ITEM_MOD_SPELL_HEALING_DONE"] = "ITEM_MOD_SPELL_HEALING_DONE_SHORT",
+	
+	["ITEM_MOD_EXPERTISE_RATING_SHORT"] = "ITEM_MOD_EXPERTISE_RATING_SHORT",
+	["ITEM_MOD_MASTERY_RATING_SHORT"] = "ITEM_MOD_MASTERY_RATING_SHORT",
 
     --["ITEM_MOD_DEFENSE_SKILL_RATING"] = "ITEM_MOD_DEFENSE_SKILL_RATING_SHORT",
     ["ITEM_MOD_DODGE_RATING"] = "ITEM_MOD_DODGE_RATING_SHORT",
@@ -318,7 +321,7 @@ local STAT_LIST = {
         "ITEM_MOD_ATTACK_POWER_SHORT", -- Attack Power
         "ITEM_MOD_MELEE_ATTACK_POWER_SHORT", -- Melee Attack Power
         "ITEM_MOD_RANGED_ATTACK_POWER_SHORT", -- Ranged Attack Power
-        "ITEM_MOD_FERAL_ATTACK_POWER_SHORT", -- Attack Power In Forms
+        "ITEM_MOD_FERAL_ATTACK_POWER_SHORT", -- Attack Power In Forms		
         "",
         "ITEM_MOD_HIT_RATING_SHORT", -- Hit
         "ITEM_MOD_HIT_MELEE_RATING_SHORT", -- Hit (Melee)
@@ -329,6 +332,9 @@ local STAT_LIST = {
         "ITEM_MOD_CRIT_MELEE_RATING_SHORT", -- Critical Strike (Melee)
         "ITEM_MOD_CRIT_RANGED_RATING_SHORT", -- Critical Strike (Ranged)
         "ITEM_MOD_CRIT_SPELL_RATING_SHORT", -- Critical Strike (Spell)
+		"",
+		"ITEM_MOD_EXPERTISE_RATING_SHORT", -- Expertise
+		"ITEM_MOD_MASTERY_RATING_SHORT", -- Mastery
     },
     {
         name = AL["Special"],
@@ -366,6 +372,7 @@ AtlasLoot.AtlasLootDBDefaults.profile.ClassFilter = {
         ["ITEM_MOD_STRENGTH_SHORT"] = false,
         ["ITEM_MOD_INTELLECT_SHORT"] = false,
         ["ITEM_MOD_SPIRIT_SHORT"] = false,
+	["ITEM_MOD_EXPERTISE_RATING_SHORT"] = false,
         ["ITEM_MOD_MANA_SHORT"] = false,
 	["ITEM_MOD_DEFENSE_SKILL_RATING_SHORT"] = false,
         ["ITEM_MOD_PARRY_RATING_SHORT"] = false,
@@ -393,6 +400,7 @@ AtlasLoot.AtlasLootDBDefaults.profile.ClassFilter = {
         ["ITEM_MOD_HIT_RANGED_RATING_SHORT"] = false,
         ["ITEM_MOD_CRIT_MELEE_RATING_SHORT"] = false,
         ["ITEM_MOD_CRIT_RANGED_RATING_SHORT"] = false,
+	["ITEM_MOD_EXPERTISE_RATING_SHORT"] = false,
 	["ITEM_MOD_DEFENSE_SKILL_RATING_SHORT"] = false,
         ["ITEM_MOD_PARRY_RATING_SHORT"] = false,
         ["ITEM_MOD_DODGE_RATING_SHORT"] = false,
@@ -416,6 +424,7 @@ AtlasLoot.AtlasLootDBDefaults.profile.ClassFilter = {
         ["ITEM_MOD_HIT_RANGED_RATING_SHORT"] = false,
         ["ITEM_MOD_CRIT_MELEE_RATING_SHORT"] = false,
         ["ITEM_MOD_CRIT_RANGED_RATING_SHORT"] = false,
+	["ITEM_MOD_EXPERTISE_RATING_SHORT"] = false,
 	["ITEM_MOD_DEFENSE_SKILL_RATING_SHORT"] = false,
         ["ITEM_MOD_PARRY_RATING_SHORT"] = false,
         ["ITEM_MOD_DODGE_RATING_SHORT"] = false,
@@ -433,6 +442,7 @@ AtlasLoot.AtlasLootDBDefaults.profile.ClassFilter = {
         ["ITEM_MOD_HIT_RANGED_RATING_SHORT"] = false,
         ["ITEM_MOD_CRIT_MELEE_RATING_SHORT"] = false,
         ["ITEM_MOD_CRIT_RANGED_RATING_SHORT"] = false,
+	["ITEM_MOD_EXPERTISE_RATING_SHORT"] = false,
 	["ITEM_MOD_DEFENSE_SKILL_RATING_SHORT"] = false,
         ["ITEM_MOD_PARRY_RATING_SHORT"] = false,
         ["ITEM_MOD_DODGE_RATING_SHORT"] = false,
