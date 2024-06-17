@@ -2774,8 +2774,7 @@ data["Karazhan"] = {
     }
 }
 
---[[
-data["ZulAman"] = {
+data["ZulAmanClassic"] = {
 	MapID = 3805,
 	InstanceID = 568,
 	AtlasModule = ATLAS_MODULE_NAME,
@@ -2949,8 +2948,6 @@ data["ZulAman"] = {
         },
     }
 }
---]]
-
 
 data["WorldBossesBC"] = {
 	name = AL["World Bosses"],

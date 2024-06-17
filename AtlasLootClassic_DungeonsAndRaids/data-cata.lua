@@ -1188,7 +1188,6 @@ data["GrimBatol"] = {
 
 data["Deadmines"] = {
     MapID = 1581,
-    --EncounterJournalID = 36,
     InstanceID = 36,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},

@@ -35,7 +35,7 @@ local SOURCE_DATA = {
         "TheMechanar",
         "MagistersTerrace",
         "Karazhan",
-        "ZulAman",
+        "ZulAmanClassic",
         "WorldBossesBC",
         "MagtheridonsLair",
         "GruulsLair",
