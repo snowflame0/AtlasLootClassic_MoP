@@ -193,10 +193,9 @@ data["BlacksmithingCata"] = {
         { -- Polearms
             name = AL["Weapons"].." - "..ALIL["Polearms"],
             [NORMAL_DIFF] = {
-                { 1, "INV_sword_06", nil, ALIL["Polearms"] },
-                { 2, 99660 }, -- Witch Hunter's Harvester
-                { 3, 76451 }, -- Elementium Poleaxe
-                { 4, 76474 }, -- Obsidium Bladespear
+                { 1, 99660 }, -- Witch Hunter's Harvester
+                { 2, 76451 }, -- Elementium Poleaxe
+                { 3, 76474 }, -- Obsidium Bladespear
             }
         },
         { -- Shield

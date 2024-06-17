@@ -453,7 +453,6 @@ data["CompanionsCata"] = {
     }}
 }
 
-
 data["TabardsCata"] = {
     name = ALIL["Tabard"],
     ContentType = COLLECTIONS_CONTENT,
@@ -471,18 +470,17 @@ data["TabardsCata"] = {
             {5, 65908}, -- Tabard of the Wildhammer Clan
         },
         [HORDE_DIFF] = {
-            {1, 65909}, -- Tabard of the Dragonmaw Clan
-            {2, 65910}, -- Tabard of the Earthen Ring
-            {3, 65911}, -- Tabard of the Guardians of Hyjal
-            {4, 65912}, -- Tabard of Therazane
-            {5, 65913}, -- Tabard of the Ramkahen
+            {1, 65904}, -- Tabard of the Ramkahen
+            {2, 65905}, -- Tabard of the Earthen Ring
+            {3, 65906}, -- Tabard of the Guardians of Hyjal
+            {4, 65907}, -- Tabard of Therazane
+            {5, 65909}, -- Tabard of the Dragonmaw Clan
         }
     }, {
         name = AL["PvP"],
         CoinTexture = "PvP",
         [NORMAL_DIFF] = {
-            {1, 63379}, -- Baradin's Wardens Tabard (Alliance)
-            {2, 63378}, -- Hellscream's Reach Tabard (Horde)
+            { 1, [ATLASLOOT_IT_ALLIANCE] = { 63379 }, [ATLASLOOT_IT_HORDE] = { 63378 } }, -- Baradin's Wardens Tabard / Hellscream's Reach Tabard
         }
     }, {
         name = AL["Achievements"],
@@ -502,7 +500,6 @@ data["TabardsCata"] = {
         }
     }}
 }
-
 
 data["LegendarysCata"] = {
     name = AL["Legendaries"],
