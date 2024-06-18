@@ -844,24 +844,28 @@ function Favourites:CountFavouritesByList(addonName, contentName, boss, dif, inc
         return result
     end
     for l, listData in pairs(self.db.lists) do
-        local listName = listData.__name
-        for i, item in ipairs(items) do
-            if type(item[2]) == "number" then
-                local itemID = item[2]
-                if listData[itemID] and (includeObsolete or not self:IsItemEquippedOrObsolete(itemID, l)) then
-                    result[listName] = (result[listName] or 0) + 1
+        if self:ListIsGlobalActive(l) or self:ListIsProfileActive(l) then
+            local listName = listData.__name
+            for i, item in ipairs(items) do
+                if type(item[2]) == "number" then
+                    local itemID = item[2]
+                    if listData[itemID] and (includeObsolete or not self:IsItemEquippedOrObsolete(itemID, l)) then
+                        result[listName] = (result[listName] or 0) + 1
+                    end
                 end
             end
         end
     end
 
     for l, listData in pairs(self.globalDb.lists) do
-        local listName = listData.__name
-        for i, item in ipairs(items) do
-            if type(item[2]) == "number" then
-                local itemID = item[2]
-                if listData[itemID] and (includeObsolete or not self:IsItemEquippedOrObsolete(itemID, l)) then
-                    result[listName] = (result[listName] or 0) + 1
+        if self:ListIsGlobalActive(l) or self:ListIsProfileActive(l) then
+            local listName = listData.__name
+            for i, item in ipairs(items) do
+                if type(item[2]) == "number" then
+                    local itemID = item[2]
+                    if listData[itemID] and (includeObsolete or not self:IsItemEquippedOrObsolete(itemID, l)) then
+                        result[listName] = (result[listName] or 0) + 1
+                    end
                 end
             end
         end
