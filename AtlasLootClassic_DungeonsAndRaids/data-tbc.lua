@@ -1184,13 +1184,14 @@ data["TheSlavePens"] = {
             DisplayIDs = {{23344}},
             ExtraList = true,
             [NORMAL_DIFF] = {
-                { 1, 69771 }, -- Frostscythe of Lord Ahune
-                { 2, 69768 }, -- Shroud of Winter's Chill
-                { 3, 69766 }, -- The Frost Lord's War Cloak
-                { 4, 69770 }, -- Icebound Cloak
-                { 5, 69769 }, -- Cloak of the Frigid Winds
-                { 6, 69767 }, -- The Frost Lord's Battle Shroud
-                { 8, 35723 }, -- Shards of Ahune
+                { 1, 54536 }, -- Satchel of Chilled Goods
+                { 2, 69771 }, -- Frostscythe of Lord Ahune
+                { 4, 69768 }, -- Shroud of Winter's Chill
+                { 5, 69766 }, -- The Frost Lord's War Cloak
+                { 6, 69770 }, -- Icebound Cloak
+                { 7, 69769 }, -- Cloak of the Frigid Winds
+                { 8, 69767 }, -- The Frost Lord's Battle Shroud
+                { 10, 35723 }, -- Shards of Ahune
                 { 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
                 { 18, 34955 }, -- Scorched Stone
                 { 19, 53641 }, -- Ice Chip
