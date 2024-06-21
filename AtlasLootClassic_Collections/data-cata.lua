@@ -540,3 +540,47 @@ data["HeirloomCata"] = {
         [NORMAL_ITTYPE] = {}
     }}
 }
+
+data["MidsummerFestivalCata"] = {
+    name = AL["Midsummer Festival"],
+    ContentType = WORLD_EVENT_CONTENT,
+    LoadDifficulty = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.MIDSUMMER_FESTIVAL,
+    items = {{
+        name = AL["Midsummer Festival"],
+        [NORMAL_DIFF] = {
+        {1, 23083}, -- Captured Flame
+        {2, 34686}, -- Brazier of Dancing Flames
+        {4, 23324}, -- Mantle of the Fire Festival
+        {5, 23323}, -- Crown of the Fire Festival
+        {6, 34683}, -- Sandals of Summer
+        {7, 34685}, -- Vestment of Summer
+        {9, 23247}, -- Burning Blossom
+        {10, 34599}, -- Juggling Torch
+        {11, 34684}, -- Handful of Summer Petals
+        {12, 23246}, -- Fiery Festival Brew
+        {16, 23215}, -- Bag of Smorc Ingredients
+        {17, 23211}, -- Toasted Smorc
+        {18, 23435}, -- Elderberry Pie
+        {19, 23327}, -- Fire-toasted Bun
+        {20, 23326} -- Midsummer Sausage
+        }
+    }, {
+        name = C_Map_GetAreaInfo(3717) .. " - " .. AL["Ahune"],
+        [NORMAL_DIFF] = {
+            { 1, 69771 }, -- Frostscythe of Lord Ahune
+            { 2, 69768 }, -- Shroud of Winter's Chill
+            { 3, 69766 }, -- The Frost Lord's War Cloak
+            { 4, 69770 }, -- Icebound Cloak
+            { 5, 69769 }, -- Cloak of the Frigid Winds
+            { 6, 69767 }, -- The Frost Lord's Battle Shroud
+            { 8, 35723 }, -- Shards of Ahune
+            { 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
+            { 18, 34955 }, -- Scorched Stone
+            { 19, 53641 }, -- Ice Chip
+            { 21, 35557 }, -- Huge Snowball
+        }
+    }}
+}
