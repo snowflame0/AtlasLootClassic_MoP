@@ -538,7 +538,7 @@ data["HeirloomCata"] = {
             {19, 61935}, -- Tarnished Raging Berserker's Helm
             {20, 61942}, -- Preened Tribal War Feathers
             {21, 61937}, -- Stained Shadowcraft Cap
-            {22, 61958}, -- Tattered Dreadmist Mask
+            {22, 61958} -- Tattered Dreadmist Mask
         }
     }}
 }
