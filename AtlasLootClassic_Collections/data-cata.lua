@@ -509,7 +509,7 @@ data["LegendarysCata"] = {
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
     CorrespondingFields = private.LEGENDARYS,
     items = {{
-        name = AL["Lengendaries"],
+        name = AL["Legendaries"],
         [NORMAL_ITTYPE] = {{1, 71086, "ac5839"}, -- Dragonwrath, Tarecgosa's Rest
         {16, 77949, "ac6181"}, -- Golad, Twilight of Aspects
         {17, 77950, "ac6181"} -- 	Tiriosh, Nightmare of Ages
