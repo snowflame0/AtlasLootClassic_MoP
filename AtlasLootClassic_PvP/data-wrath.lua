@@ -509,7 +509,8 @@ data["ArenaS6PvP"] = {
     items = {{
         name = AL["Sets"],
         TableType = SET_ITTYPE,
-        [NORMAL_DIFF] = {{1, 3003780}, -- Warlock
+        [NORMAL_DIFF] = {
+        {1, 3003780}, -- Warlock
         {3, 3003777}, -- Priest / Heal
         {4, 3003778}, -- Priest / Shadow
         {6, 3003776}, -- Rogue
@@ -711,7 +712,8 @@ data["ArenaS7PvP"] = {
     items = {{
         name = AL["Sets"],
         TableType = SET_ITTYPE,
-        [NORMAL_DIFF] = {{1, 3004780}, -- Warlock
+        [NORMAL_DIFF] = {
+        {1, 3004780}, -- Warlock
         {3, 3004777}, -- Priest / Heal
         {4, 3004778}, -- Priest / Shadow
         {6, 3004776}, -- Rogue
