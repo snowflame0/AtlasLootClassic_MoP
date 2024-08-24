@@ -160,7 +160,7 @@ data["BlacksmithingCata"] = {
             }
         },
         { -- Axes
-            name = AL["Weapons"].." - "..ALIL["Axes"],
+            name = AL["Weapons"].." - "..AL["Axes"],
             [NORMAL_DIFF] = {
                 { 1, "INV_sword_04", nil, ALIL["One-Handed Axes"] },
                 { 2, 99655 },   -- Elementium-Edged Scalper
@@ -170,7 +170,7 @@ data["BlacksmithingCata"] = {
             }
         },
         { -- Maces
-            name = AL["Weapons"].." - "..ALIL["Maces"],
+            name = AL["Weapons"].." - "..AL["Maces"],
             [NORMAL_DIFF] = {
                 { 1, "INV_sword_04", nil, ALIL["One-Handed Maces"] },
                 { 2, 99654 }, -- Lightforged Elementium Hammer
@@ -181,7 +181,7 @@ data["BlacksmithingCata"] = {
             }
         },
         { -- Swords
-            name = AL["Weapons"].." - "..ALIL["Swords"],
+            name = AL["Weapons"].." - "..AL["Swords"],
             [NORMAL_DIFF] = {
                 { 1, "INV_sword_04", nil, ALIL["One-Handed Swords"] },
                 { 2, 99657 }, -- Unbreakable Guardian
