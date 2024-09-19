@@ -2715,14 +2715,14 @@ data["BlackrockDepths"] = {
             Level = 87,
             ExtraList = true,
             [NORMAL_DIFF] = {
-                { 1,  71333 }, -- Bitterer Balebrew Charm
-                { 2,  71334 }, -- Bubblier Brightbrew Charm
-                { 3,  71335 }, -- Coren's Chilled Chromium Coaster
-                { 4,  71337 }, -- Mithril Stopwatch
-                { 5,  71336 }, -- Petrified Pickled Egg
-                { 6,  71338 }, -- Brawler's Trophy
-                { 8,  71331 }, -- Direbrew's Bloodied Shanker
-                { 9,  71332 }, -- Tremendous Tankard O' Terror
+                { 1,  232017 }, -- Bitterer Balebrew Charm
+                { 2,  232016 }, -- Bubblier Brightbrew Charm
+                { 3,  232012 }, -- Coren's Chilled Chromium Coaster
+                { 4,  232013 }, -- Mithril Stopwatch
+                { 5,  232014 }, -- Petrified Pickled Egg
+                { 6,  232015 }, -- Brawler's Trophy
+                { 8,  232030 }, -- Direbrew's Bloodied Shanker
+                { 9,  232031 }, -- Tremendous Tankard O' Terror
                 { 16,  33977 }, -- Swift Brewfest Ram
                 { 17,  37828 }, -- Great Brewfest Kodo
                 { 19,  37863 }, -- Direbrew's Remote
