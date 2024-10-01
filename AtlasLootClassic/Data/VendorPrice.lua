@@ -175,6 +175,13 @@ local PRICE_INFO_LIST = {
     ["DarkmoonPrizeTicket"] = {
         currencyID = 515
     }, -- Darkmoon Prize Ticket
+    ["MarkWorldTree"] = {
+        currencyID = 416
+    }, -- Mark of the World Tree
+    ["Firestone"] = {
+        currencyID = 71617
+    }, -- Crystallized Firestone
+
 
 
     --- PvP
