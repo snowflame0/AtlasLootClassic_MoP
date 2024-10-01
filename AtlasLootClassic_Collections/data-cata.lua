@@ -1,0 +1,741 @@
+-----------------------------------------------------------------------
+-- Upvalued Lua API.
+-----------------------------------------------------------------------
+local _G = getfenv(0)
+local select = _G.select
+local string = _G.string
+local format = string.format
+
+-- WoW
+local function C_Map_GetAreaInfo(id)
+    local d = C_Map.GetAreaInfo(id)
+    return d or "GetAreaInfo" .. id
+end
+
+-- ----------------------------------------------------------------------------
+-- AddOn namespace.
+-- ----------------------------------------------------------------------------
+local addonname, private = ...
+local AtlasLoot = _G.AtlasLoot
+if AtlasLoot:GameVersion_LT(AtlasLoot.CATA_VERSION_NUM) then
+    return
+end
+local data = AtlasLoot.ItemDB:Add(addonname, 1, AtlasLoot.CATA_VERSION_NUM)
+
+local AL = AtlasLoot.Locales
+local ALIL = AtlasLoot.IngameLocales
+
+local GetForVersion = AtlasLoot.ReturnForGameVersion
+
+local LFR_DIFF = data:AddDifficulty("LFR", nil, nil, nil, true)
+local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
+local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
+
+local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
+
+local ALLIANCE_DIFF, HORDE_DIFF, LOAD_DIFF
+if UnitFactionGroup("player") == "Horde" then
+    HORDE_DIFF = data:AddDifficulty(FACTION_HORDE, "horde", nil, 1)
+    ALLIANCE_DIFF = data:AddDifficulty(FACTION_ALLIANCE, "alliance", nil, 1)
+    LOAD_DIFF = HORDE_DIFF
+else
+    ALLIANCE_DIFF = data:AddDifficulty(FACTION_ALLIANCE, "alliance", nil, 1)
+    HORDE_DIFF = data:AddDifficulty(FACTION_HORDE, "horde", nil, 1)
+    LOAD_DIFF = ALLIANCE_DIFF
+end
+
+local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
+local SET_ITTYPE = data:AddItemTableType("Set", "Item")
+local AC_ITTYPE = data:AddItemTableType("Item", "Achievement")
+
+local QUEST_EXTRA_ITTYPE = data:AddExtraItemTableType("Quest")
+local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
+local SET_EXTRA_ITTYPE = data:AddExtraItemTableType("Set")
+
+local VENDOR_CONTENT = data:AddContentType(AL["Vendor"], ATLASLOOT_DUNGEON_COLOR)
+local SET_CONTENT = data:AddContentType(AL["Sets"], ATLASLOOT_PVP_COLOR)
+-- local WORLD_BOSS_CONTENT = data:AddContentType(AL["World Bosses"], ATLASLOOT_WORLD_BOSS_COLOR)
+local COLLECTIONS_CONTENT = data:AddContentType(AL["Collections"], ATLASLOOT_COLLECTIONS_COLOR)
+local WORLD_EVENT_CONTENT = data:AddContentType(AL["World Events"], ATLASLOOT_SEASONALEVENTS_COLOR)
+
+-- colors
+local BLUE = "|cff6666ff%s|r"
+-- local GREY = "|cff999999%s|r"
+local GREEN = "|cff66cc33%s|r"
+local _RED = "|cffcc6666%s|r"
+local PURPLE = "|cff9900ff%s|r"
+-- local WHIT = "|cffffffff%s|r"
+
+data["JusticePoints P1"] = {
+    name = format(AL["'%s' Vendor"], AL["Justice Points P1"]),
+    ContentType = VENDOR_CONTENT,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    items = {{
+        name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 58155}, -- Cowl of Pleasant Gloom
+        {16, 58161}, -- Mask of New Snow
+        -- Shoulder
+        {3, 58157}, -- Meadow Mantle
+        {18, 58162}, -- Summer Song Shoulderwraps
+        -- Chest
+        {5, 58153}, -- Robes of Embalmed Darkness
+        {20, 58159}, -- Musk Rose Robes
+        -- Hands
+        {7, 58158}, -- Gloves of the Painless Midnight
+        {22, 58163}, -- Gloves of Purification
+        -- Waist
+        {9, 57921}, -- Incense Infused Cummerbund
+        {24, 57922}, -- Belt of the Falling Rain
+        -- Legs
+        {11, 58154}, -- Pensive Legwraps
+        {26, 58160} -- Leggings of Charity
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Leather"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 58150}, -- Cluster of Stars
+        {16, 58133}, -- Mask of Vines
+        -- Shoulder
+        {3, 58151}, -- Somber Shawl
+        {18, 58134}, -- Embrace of the Night
+        -- Chest
+        {5, 58139}, -- Chestguard of Forgetfulness
+        {20, 58131}, -- Tunic of Sinking Envy
+        -- Hands
+        {7, 58152}, -- Blessed Hands of Elune
+        {22, 58138}, -- Sticky Fingers
+        -- Waist
+        {9, 57919}, -- Thatch Eave Vines
+        {24, 57918}, -- Sash of Musing
+        -- Legs
+        {11, 58140}, -- Leggings of Late Blooms
+        {26, 58132} -- Leggings of the Burrowing Mole
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 58128}, -- Helm of the Inward Eye
+        {16, 58123}, -- Willow Mask
+        -- Shoulder
+        {3, 58129}, -- Seafoam Mantle
+        {18, 58124}, -- Wrap of the Valley Glades
+        -- Chest
+        {5, 58126}, -- Vest of the Waking Dream
+        {20, 58121}, -- Vest of the True Companion
+        -- Hands
+        {7, 58130}, -- Gleaning Gloves
+        {22, 58125}, -- Gloves of the Passing Night
+        -- Waist
+        {9, 57917}, -- Belt of the Still Stream
+        {24, 57916}, -- Belt of the Dim Forest
+        -- Legs
+        {11, 58127}, -- Leggings of Soothing Silence
+        {26, 58122} -- Hillside Striders
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Plate"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 58103}, -- Helm of the Proud
+        {2, 58098}, -- Helm of Easeful Death
+        {3, 58108}, -- Crown of the Blazing Sun
+        -- Shoulder
+        {5, 58104}, -- Sunburnt Pauldrons
+        {6, 58100}, -- Pauldrons of the High Requiem
+        {7, 58109}, -- Pauldrons of the Forlorn
+        -- Chest
+        {9, 58101}, -- Chestplate of the Steadfast
+        {10, 58096}, -- Breastplate of Raging Fury
+        {11, 58106}, -- Chestguard of Dancing Waves
+        -- Hands
+        {16, 58105}, -- Numbing Handguards
+        {17, 58099}, -- Reaping Gauntlets
+        {18, 58110}, -- Gloves of Curious Conscience
+        -- Waist
+        {20, 57914}, -- Girdle of the Mountains
+        {21, 57913}, -- Beech Green Belt
+        {22, 57915}, -- Belt of Barred Clouds
+        -- Legs
+        {24, 58102}, -- Greaves of Splendor
+        {25, 58097}, -- Greaves of Gallantry
+        {26, 58107} -- Legguards of the Gentle
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Neck"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 57932}, -- The Lustrous Eye
+        {2, 57934}, -- Celadon Pendant
+        {3, 57933}, -- String of Beaded Bubbles
+        {4, 57931}, -- Amulet of Dull Dreaming
+        {5, 57930} -- Pendant of Quiet Breath
+        }
+    }, {
+        name = ALIL["Off-Hand/Shield"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 57927}, -- Throat Slasher
+        {2, 57928}, -- Windslicer
+        {3, 57929}, -- Dawnblaze Blade
+        {5, 57926}, -- Shield of the Four Grey Towers
+        {6, 57925}, -- Shield of the Mists
+        {8, 57924}, -- Apple-Bent Bough
+        {9, 57923} -- Hermit's Lamp
+        }
+    }, {
+        name = ALIL["Misc"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 52185}, -- Elementium Ore
+        {2, 53010}, -- Embersilk Cloth
+        {3, 52976}, -- Savage Leather
+        {4, 52721}, -- Heavenly Shard
+        {5, 52555}, -- Hypnotic Dust
+        {6, 68813}, -- Satchel of Freshly-Picked Herbs
+        {7, 52719} -- Greater Celestial Essence
+        }
+    }}
+}
+
+data["ValorPoints P1"] = {
+    name = format(AL["'%s' Vendor"], AL["Valor Points P1"]),
+    ContentType = VENDOR_CONTENT,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    items = {{
+        name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
+        [NORMAL_DIFF] = { -- Mage
+        {1, 60244}, -- Firelord's Robes
+        {2, 60247}, -- Firelord's Gloves
+        {3, 60245}, -- Firelord's Leggings
+        -- Warlock
+        {5, 60251}, -- Shadowflame Robes
+        {6, 60248}, -- Shadowflame Handwraps
+        {7, 60250}, -- Shadowflame Leggings
+        -- Priest
+        {16, 60259}, -- Mercurial Robes
+        {17, 60275}, -- Mercurial Handwraps
+        {18, 60261}, -- Mercurial Legwraps
+        {20, 60254}, -- Mercurial Vestment
+        {21, 60257}, -- Mercurial Gloves
+        {22, 60255}, -- Mercurial Leggings
+        -- Misc
+        {9, 58485}, -- Melodious Slippers
+        {10, 58486} -- Slippers of Moving Waters
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Leather"],
+        [NORMAL_DIFF] = { -- Druid
+        {1, 60276}, -- Stormrider's Robes
+        {2, 60280}, -- Stormrider's Handwraps
+        {3, 60278}, -- Stormrider's Legwraps
+        {5, 60287}, -- Stormrider's Raiment
+        {6, 60290}, -- Stormrider's Grips
+        {7, 60288}, -- Stormrider's Legguards
+        {9, 60281}, -- Stormrider's Vestment
+        {10, 60285}, -- Stormrider's Gloves
+        {11, 60283}, -- Stormrider's Leggings
+        -- Rouge
+        {16, 60301}, -- Wind Dancer's Tunic
+        {17, 60298}, -- Wind Dancer's Gloves
+        {18, 60300}, -- Wind Dancer's Legguards
+        -- Misc
+        {13, 58482}, -- Treads of Fleeting Joy
+        {14, 58484} -- Fading Violet Sandals
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
+        [NORMAL_DIFF] = { -- Shaman
+        {1, 60313}, -- Hauberk of the Raging Elements
+        {2, 60314}, -- Gloves of the Raging Elements
+        {3, 60316}, -- Kilt of the Raging Elements
+        {5, 60309}, -- Tunic of the Raging Elements
+        {6, 60312}, -- Handwraps of the Raging Elements
+        {7, 60310}, -- Legwraps of the Raging Elements
+        {9, 60318}, -- Cuirass of the Raging Elements
+        {10, 60319}, -- Grips of the Raging Elements
+        {11, 60321}, -- Legguards of the Raging Elements
+        -- Rouge
+        {16, 60304}, -- Lightning-Charged Tunic
+        {17, 60307}, -- Lightning-Charged Gloves
+        {18, 60305}, -- Lightning-Charged Legguards
+        -- Misc
+        {13, 58199}, -- Moccasins of Verdurous Glooms
+        {14, 58481} -- Boots of the Perilous Seas
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Plate"],
+        [NORMAL_DIFF] = { -- Paladin
+        {1, 60360}, -- Reinforced Sapphirium Breastplate
+        {2, 60363}, -- Reinforced Sapphirium Gloves
+        {3, 60361}, -- Reinforced Sapphirium Greaves
+        {4, 60344}, -- Reinforced Sapphirium Battleplate
+        {5, 60345}, -- Reinforced Sapphirium Gauntlets
+        {6, 60347}, -- Reinforced Sapphirium Legplates
+        {7, 60354}, -- Reinforced Sapphirium Chestguard
+        {8, 60355}, -- Reinforced Sapphirium Handguards
+        {9, 60357}, -- Reinforced Sapphirium Legguards
+        -- Warrior
+        {11, 60323}, -- Earthen Battleplate
+        {12, 60326}, -- Earthen Gauntlets
+        {13, 60324}, -- Earthen Legplates
+        {16, 60329}, -- Earthen Chestguard
+        {17, 60332}, -- Earthen Handguards
+        {18, 60330}, -- Earthen Legguards
+        -- DK
+        {20, 60339}, -- Magma Plated Battleplate
+        {21, 60340}, -- Magma Plated Gauntlets
+        {22, 60342}, -- Magma Plated Legplates
+        {24, 60349}, -- Magma Plated Chestguard
+        {25, 60350}, -- Magma Plated Handguards
+        {26, 60352}, -- Magma Plated Legguards
+        -- Misc
+        {28, 58197}, -- Rock Furrow Boots
+        {29, 58198}, -- Eternal Pathfinders
+        {30, 58195} -- Woe Breeder's Boots
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Back"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 58191}, -- Viewless Wings
+        {2, 58194}, -- Heavenly Breeze
+        {3, 58193}, -- Haunt of Flies
+        {4, 58190}, -- Floating Web
+        {5, 58192} -- Gray Hair Cloak
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Ring"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 58189}, -- Twined Band of Flowers
+        {2, 58188}, -- Band of Secret Names
+        {3, 58185}, -- Band of Bees
+        {4, 68812}, -- Hornet-Sting Band
+        {5, 58187} -- Ring of the Battle Anthem
+        }
+    }, {
+        name = ALIL["Relic"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 64673}, -- Throat Slasher
+        {2, 64674}, -- Windslicer
+        {3, 64671}, -- Dawnblaze Blade
+        {4, 64676}, -- Shield of the Four Grey Towers
+        {5, 64672} -- Shield of the Mists
+        }
+    }, {
+        name = ALIL["Trinket"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 58180}, -- License to Slay
+        {2, 58181}, -- Fluid Death
+        {3, 58183}, -- Soul Casket
+        {4, 58184}, -- Core of Ripeness
+        {5, 58182} -- Bedrock Talisman
+        }
+    }}
+}
+data["ValorPoints P2"] = {
+    name = format(AL["'%s' Vendor"], AL["Valor Points P2"]),
+    ContentType = VENDOR_CONTENT,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    items = {{
+        name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
+        [NORMAL_DIFF] = { -- Mage
+        {1, 71289}, -- Firehawk Robes
+        {2, 71286}, -- Firehawk Gloves
+        {3, 71288}, -- Firehawk Leggings
+        -- Warlock
+        {5, 71284}, -- Balespider's Robes
+        {6, 71281}, -- Balespider's Handwraps
+        {7, 71283}, -- Balespider's Leggings
+        -- Priest
+        {16, 71274}, -- Robes of the Cleansing Flame
+        {17, 71271}, -- Handwraps of the Cleansing Flame
+        {18, 71273}, -- Legwraps of the Cleansing Flame
+        {20, 71279}, -- Vestment of the Cleansing Flame
+        {21, 71276}, -- Gloves of the Cleansing Flame
+        {22, 71278}, -- Leggings of the Cleansing Flame
+        -- Misc
+        {9, 71265}, -- Emberflame Bracers
+        {10, 71266} -- Firesoul Wristguards
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Leather"],
+        [NORMAL_DIFF] = { -- Druid
+        {1, 71105}, -- Obsidian Arborweave Tunic
+        {2, 71102}, -- Obsidian Arborweave Handwraps
+        {3, 71104}, -- Obsidian Arborweave Legwraps
+        {5, 71100}, -- Obsidian Arborweave Raiment
+        {6, 71097}, -- Obsidian Arborweave Grips
+        {7, 71099}, -- Obsidian Arborweave Legguards
+        {9, 71110}, -- Obsidian Arborweave Vestment
+        {10, 71107}, -- Obsidian Arborweave Gloves
+        {11, 71109}, -- Obsidian Arborweave Leggings
+        -- Rouge
+        {16, 71045}, -- Dark Phoenix Tunic
+        {17, 71046}, -- Dark Phoenix Gloves
+        {18, 71048}, -- Dark Phoenix Legguards
+        -- Misc
+        {13, 71262}, -- Smolderskull Bindings
+        {14, 71130} -- Flamebinder Bracers
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
+        [NORMAL_DIFF] = { -- Shaman
+        {1, 71294}, -- Erupting Volcanic Hauberk
+        {2, 71292}, -- Erupting Volcanic Gloves 
+        {3, 71291}, -- Erupting Volcanic Kilt
+        {5, 71296}, -- Erupting Volcanic Tunic
+        {6, 71297}, -- Erupting Volcanic Handwraps
+        {7, 71299}, -- Erupting Volcanic Legwraps
+        {9, 71301}, -- Erupting Volcanic Cuirass
+        {10, 71302}, -- Erupting Volcanic Grips
+        {11, 71304}, -- Erupting Volcanic Legguards
+        -- Rouge
+        {16, 71054}, -- Flamewalker's Tunic
+        {17, 71050}, -- Flamewalker's Gloves
+        {18, 71052}, -- Flamewalker's Legguards
+        -- Misc
+        {13, 71263}, -- Bracers of Misting Ash
+        {14, 71264} -- Bracers of Forked Lightning
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Plate"],
+        [NORMAL_DIFF] = { -- Paladin
+        {1, 71091}, -- Immolation Breastplate
+        {2, 71092}, -- Immolation Sapphirium Gloves
+        {3, 71094}, -- Immolation Sapphirium Greaves
+        {4, 71063}, -- Immolation Sapphirium Battleplate
+        {5, 71064}, -- Immolation Sapphirium Gauntlets
+        {6, 71066}, -- Immolation Sapphirium Legplates
+        {7, 70950}, -- Immolation Sapphirium Chestguard
+        {8, 70949}, -- Immolation Sapphirium Handguards
+        {9, 70947}, -- Immolation Sapphirium Legguards
+        -- DK
+        {11, 71058}, -- Elementium Deathplate Breastplate
+        {12, 71059}, -- Elementium Deathplate Gauntlets
+        {13, 71061}, -- Elementium Deathplate Greaves
+        {16, 70955}, -- Elementium Deathplate Chestguard
+        {17, 70953}, -- Elementium Deathplate Handguards
+        {18, 70952}, -- Elementium Deathplate Legguards
+        -- Warrior
+        {20, 71068}, -- Battleplate of the Molten Giant
+        {21, 71069}, -- Gauntlets of the Molten Giant
+        {22, 71071}, -- Legplates of the Molten Giant
+        {24, 70945}, -- Chestguard of the Molten Giant
+        {25, 70943}, -- Handguards of the Molten Giant
+        {26, 70942}, -- Legguards of the Molten Giant
+        -- Misc
+        {28, 71260}, -- Bracers of Imperious Truths
+        {29, 70937}, -- Bracers of Regal Force
+        {30, 71261} -- Gigantform Bracers
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Neck"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 71213}, -- Amulet of Burning Brilliance
+        {2, 71214}, -- Firemind Pendant
+        {3, 71129}, -- Necklace of Smoke Signals
+        {4, 71212}, -- Stoneheart Choker
+        {5, 70935} -- Stoneheart Necklace
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Ring"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 71210}, -- Crystalline Brimstone Ring
+        {2, 70940}, -- Deflecting Brimstone Band
+        {3, 71208}, -- Serrated Brimstone Signet
+        {4, 71211}, -- Soothing Brimstone Circle
+        {5, 71209} -- Splintered Brimstone Seal
+        }
+    }, {
+        name = ALIL["Relic"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 70939}, -- Deathclutch Figurine
+        {2, 71147}, -- Relic of the Elemental Lords
+        {3, 71149}, -- Singed Plume of Aviana
+        {4, 71146}, -- Covenant of the Flame
+        {5, 71148} -- Soulflame Vial
+        }
+    }, {
+        name = ALIL["Wand"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 71150}, -- Scorchvine Wand
+        {2, 71151}, -- Trail of Embers
+        {3, 71152}, -- Morningstar Shard
+        {4, 71154}, -- Giantslicer
+        {5, 71218} -- Deflecting Star
+        }
+    }}
+}
+
+-- shared!
+data["WorldEpicsCata"] = {
+    name = AL["World Epics"],
+    ContentType = COLLECTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.WORLD_EPICS,
+    items = {{
+        name = AL["World Epics"],
+        [NORMAL_ITTYPE] = {
+            {1, 67131}, -- Ritssyn's Ruminous Drape
+            {2, 67141}, -- Corefire Legplates
+            {3, 67130}, -- Dorian's Lost Necklace
+            {4, 67140}, -- Drape of Inimitable Fate
+            {5, 67134}, -- Dory's Finery
+            {6, 67137}, -- Don Rodrigo's Fabulous Necklace
+            {7, 67139}, -- Blauvelt's Family Crest
+            {8, 67136}, -- Gilnean Ring of Ruination
+            {9, 67144}, -- Pauldrons of Edward the Odd
+            {10, 67148}, -- Kilt of Trollish Dreams
+            {11, 67129}, -- Signet of High Arcanist Savor
+            {12, 67135}, -- Morrie's Waywalker Wrap
+            {13, 67133}, -- Dizze's Whirling Robe
+            {14, 67138}, -- Buc-Zakai Choker
+            {15, 67150}, -- Arrowsinger Legguards
+            {16, 67149}, -- Heartbound Tome
+            {17, 67145}, -- Blockade's Lost Shield
+            {18, 67143}, -- Icebone Hauberk
+            {19, 67147}, -- Je'Tze's Sparkling Tiara
+            {20, 67146}, -- Woundsplicer Handwraps
+            {21, 67132}, -- Grips of the Failed Immortal
+            {22, 67142}, -- Zom's Electrostatic Cloak
+        }
+    }}
+}
+
+data["Weapon Sets"] = {
+    name = format(AL["%s Sets"], AL["Weapons"]),
+    ContentType = SET_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = SET_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    items = {
+        { -- Misc
+            name = AL["Weapons"],
+            [NORMAL_DIFF] = {
+                { 1,  951 }, -- Agony and Torment / 359
+                { 2,  1089 }, -- Jaws of Retribution / 397
+                { 3, 1088 }, -- Maw of Oblivion / 406
+                { 4,  1087 }, -- Fangs of the Father / 416
+            }
+    }}
+}
+data["MountsCata"] = {
+    name = ALIL["Mounts"],
+    ContentType = COLLECTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = NORMAL_ITTYPE,
+    CorrespondingFields = private.MOUNTS,
+    items = {{
+        name = AL["PvP"],
+        [NORMAL_DIFF] ={{ 1, [ATLASLOOT_IT_ALLIANCE] = 70909, [ATLASLOOT_IT_HORDE] = 70910 }, -- Vicious War Steed / Vicious War Wolf
+                        {2, 71339}, -- Vicious Gladiator's Twilight Drake
+                        {3, 71954}, -- Ruthless Gladiator's Twilight Drake
+        }
+    }, { -- Drops
+        name = AL["Drops"],
+        [NORMAL_DIFF] = {{1, 63043}, -- Reins of the Vitreous Stone Drake
+                        {2, 63042}, -- Reins of the Phosphorescent Stone Drake
+                        {4, 63040}, -- Reins of the Drake of the North Wind
+                        {5, 63041}, -- Reins of the Drake of the South Wind
+                        {7, 69224}, -- Smoldering Egg of Millagazor
+                        {8, 71665}, -- Flametalon of Alysrazor
+                        {10, 77067}, -- Reins of the Blazing Drake
+                        {11, 77069}, -- Life-Binder's Handmaiden
+                        {12, 78919}, -- Experiment 12-B
+                        {14, 68823}, -- Armored Razzashi Raptor
+                        {15, 68824}, -- Swift Zulian Panther
+                        {16, 69747}, -- Amani Battle Bear
+                        {18, 67151}, -- Reins of Poseidus
+        }
+    }, {
+        name = AL["Crafting"],
+        [NORMAL_DIFF] = {{1, 65891}, -- Vial of the Sands
+                        {3, 60954}, -- Fossilized Raptor
+                        {5, 64883}, -- Scepter of Azj'Aqir
+        }
+    }, {
+        name = AL["Factions"],
+        [NORMAL_DIFF] = {
+                        {1, [ATLASLOOT_IT_ALLIANCE] = 63039, [ATLASLOOT_IT_HORDE] = 65356},
+                        {2, [ATLASLOOT_IT_ALLIANCE] = 64998, [ATLASLOOT_IT_HORDE] = 64999},
+        }
+    }, {
+        name = AL["Darkmoon Faire"],
+        [NORMAL_DIFF] = {{1, 73766}, -- Darkmoon Dancing Bear
+                        {2, 72140}, -- Swift Forest Strider
+        }
+    }, {
+        name = ALIL["Achievements"],
+        TableType = AC_ITTYPE,
+        [NORMAL_DIFF] = {{1, 62900, 4845}, -- Reins of the Volcanic Stone Drake
+                        {2, 62901, 4853}, -- Reins of the Drake of the East Wind
+                        {3, 69230, 5828}, -- Corrupted Egg of Millagazor
+                        {4, 77068, 6169}, -- Reins of the Twilight Harbinger
+        }
+    }}
+}
+
+data["CompanionsCata"] = {
+    name = ALIL["Companions"],
+    ContentType = COLLECTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.COMPANIONS,
+    items = {{
+        name = AL["Drops"],
+        [NORMAL_DIFF] = {}
+    }, {
+        name = AL["Vendor"],
+        [NORMAL_DIFF] = {}
+    }, {
+        name = AL["World Events"],
+        [NORMAL_DIFF] = {}
+    }, {
+        name = ALIL["Achievements"],
+        TableType = AC_ITTYPE,
+        [NORMAL_DIFF] = {}
+    }, {
+        name = ALIL["Fishing"],
+        [NORMAL_DIFF] = {}
+    }, { -- Misc
+        name = AL["Misc"],
+        [NORMAL_DIFF] = {}
+    }}
+}
+
+data["TabardsCata"] = {
+    name = ALIL["Tabard"],
+    ContentType = COLLECTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = NORMAL_ITTYPE,
+    CorrespondingFields = private.TABARDS,
+    items = {{
+        name = AL["Factions"],
+        CoinTexture = "Reputation",
+        [ALLIANCE_DIFF] = {
+            {1, 65904}, -- Tabard of the Ramkahen
+            {2, 65905}, -- Tabard of the Earthen Ring
+            {3, 65906}, -- Tabard of the Guardians of Hyjal
+            {4, 65907}, -- Tabard of Therazane
+            {5, 65908}, -- Tabard of the Wildhammer Clan
+        },
+        [HORDE_DIFF] = {
+            {1, 65904}, -- Tabard of the Ramkahen
+            {2, 65905}, -- Tabard of the Earthen Ring
+            {3, 65906}, -- Tabard of the Guardians of Hyjal
+            {4, 65907}, -- Tabard of Therazane
+            {5, 65909}, -- Tabard of the Dragonmaw Clan
+        }
+    }, {
+        name = AL["PvP"],
+        CoinTexture = "PvP",
+        [NORMAL_DIFF] = {
+            { 1, [ATLASLOOT_IT_ALLIANCE] = { 63379 }, [ATLASLOOT_IT_HORDE] = { 63378 } }, -- Baradin's Wardens Tabard / Hellscream's Reach Tabard
+        }
+    }, {
+        name = AL["Achievements"],
+        CoinTexture = "Achievement",
+        [NORMAL_DIFF] = {
+            {1, 43349}, -- Tabard of Brute Force
+            {2, 43348}, -- Tabard of the Achiever
+            {3, 40643}, -- Tabard of the Explorer
+        }
+    }, {
+        name = AL["Misc"],
+        CoinTexture = "Misc",
+        [NORMAL_DIFF] = {
+            {1, 35280}, -- Tabard of Summer Flames
+            {2, 35279}, -- Tabard of Summer Skies
+            {3, 89196}, -- Theramore Tabard
+        }
+    }}
+}
+
+data["LegendarysCata"] = {
+    name = AL["Legendarys"],
+    ContentType = COLLECTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.LEGENDARYS,
+    items = {{
+        name = AL["Legendarys"],
+        [NORMAL_DIFF] = {
+        {1, 71086, "ac5839"}, -- Dragonwrath, Tarecgosa's Rest
+        {16, 77949, "ac6181"}, -- Golad, Twilight of Aspects
+        {17, 77950, "ac6181"} -- Tiriosh, Nightmare of Ages
+        }
+    }}
+}
+
+data["HeirloomCata"] = {
+    name = ALIL["Heirloom"],
+    ContentType = COLLECTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    items = {{
+        name = ALIL["Armor"],
+        [NORMAL_DIFF] = {
+            -- Cloak
+            {1, 62039}, -- Inherited Cape of the Black Baron
+            {2, 62038}, -- Worn Stoneskin Gargoyle Cape
+            {3, 62040}, -- Ancient Bloodmoon Cloak
+            {4, 69892}, -- Ripped Sandstorm Cloak
+            -- Head
+            {16, 69887}, -- Burnished Helm of Might
+            {17, 61931}, -- Polished Helm of Valor
+            {18, 61936}, -- Mystical Coif of Elements
+            {19, 61935}, -- Tarnished Raging Berserker's Helm
+            {20, 61942}, -- Preened Tribal War Feathers
+            {21, 61937}, -- Stained Shadowcraft Cap
+            {22, 61958} -- Tattered Dreadmist Mask
+        }
+    }}
+}
+
+data["MidsummerFestivalCata"] = {
+    name = AL["Midsummer Festival"],
+    ContentType = WORLD_EVENT_CONTENT,
+    LoadDifficulty = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.MIDSUMMER_FESTIVAL,
+    items = {{
+        name = AL["Midsummer Festival"],
+        [NORMAL_DIFF] = {
+        {1, 23083}, -- Captured Flame
+        {2, 34686}, -- Brazier of Dancing Flames
+        {4, 23324}, -- Mantle of the Fire Festival
+        {5, 23323}, -- Crown of the Fire Festival
+        {6, 34683}, -- Sandals of Summer
+        {7, 34685}, -- Vestment of Summer
+        {9, 23247}, -- Burning Blossom
+        {10, 34599}, -- Juggling Torch
+        {11, 34684}, -- Handful of Summer Petals
+        {12, 23246}, -- Fiery Festival Brew
+        {16, 23215}, -- Bag of Smorc Ingredients
+        {17, 23211}, -- Toasted Smorc
+        {18, 23435}, -- Elderberry Pie
+        {19, 23327}, -- Fire-toasted Bun
+        {20, 23326} -- Midsummer Sausage
+        }
+    }, {
+        name = C_Map_GetAreaInfo(3717) .. " - " .. AL["Ahune"],
+        [NORMAL_DIFF] = {
+            { 1, 54536 }, -- Satchel of Chilled Goods
+            { 2, 69771 }, -- Frostscythe of Lord Ahune
+            { 4, 69768 }, -- Shroud of Winter's Chill
+            { 5, 69766 }, -- The Frost Lord's War Cloak
+            { 6, 69770 }, -- Icebound Cloak
+            { 7, 69769 }, -- Cloak of the Frigid Winds
+            { 8, 69767 }, -- The Frost Lord's Battle Shroud
+            { 10, 35723 }, -- Shards of Ahune
+            { 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
+            { 18, 53641 }, -- Ice Chip
+            { 20, 35557 }, -- Huge Snowball
+        }
+    }}
+}
