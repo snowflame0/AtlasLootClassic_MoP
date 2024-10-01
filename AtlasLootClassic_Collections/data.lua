@@ -602,16 +602,16 @@ data["TierSets"] = {
             CoinTexture = "CATA",
             contentPhaseCata = 3,
             [LFR_DIFF] = {
-                {1, 40001072 }, -- Warlock
-                {3, 40001066 }, -- Priest Holy
-                {4, 40001067 }, -- Priest Shadow
-                {6, 40001068 }, -- Rogue
-                {8, 40001061 }, -- Hunter
-                {10, 40001074 }, -- Warrior Tank
-                {11, 40001073 }, -- Warrior Dps
-                {13, 40001056 }, -- Death Knight Tank
-                {14, 40001057 }, -- Death Knight DPS
-                {16, 40001062 }, -- Mage
+              	{1, 40001072 }, -- Warlock
+              	{3, 40001066 }, -- Priest Holy
+              	{4, 40001067 }, -- Priest Shadow
+              	{6, 40001068 }, -- Rogue
+            	  {8, 40001061 }, -- Hunter
+            	  {10, 40001074 }, -- Warrior Tank
+            	  {11, 40001073 }, -- Warrior Dps
+            	  {13, 40001056 }, -- Death Knight Tank
+            	  {14, 40001057 }, -- Death Knight DPS
+            	  {16, 40001062 }, -- Mage
                 {18, 40001060 }, -- Druid Resto
                 {19, 40001059 }, -- Druid Balance
                 {20, 40001058 }, -- Druid Melee
@@ -1284,7 +1284,7 @@ data["Tabards"] = {
 }
 
 data["Legendarys"] = {
-    name = AL["Legendaries"],
+    name = AL["Legendarys"],
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
@@ -1292,7 +1292,8 @@ data["Legendarys"] = {
     CorrespondingFields = private.LEGENDARYS,
     items = {
         {
-            name = AL["Legendaries"],
+
+            name = AL["Legendarys"],
             [NORMAL_DIFF] = {
                 { 1,  19019, "ac428" }, -- Thunderfury, Blessed Blade of the Windseeker
 
@@ -1341,54 +1342,51 @@ data["Darkmoon"] = {
     ContentPhase = 3,
     items = {
         { -- Exalted
-            name = GetFactionInfoByID(909),
-            [NORMAL_DIFF] = {
-                { 1,  19491, 19182, [ATLASLOOT_IT_AMOUNT2] = 1200 }, -- Amulet of the Darkmoon
-                { 2,  19426, 19182, [ATLASLOOT_IT_AMOUNT2] = 1200 }, -- Orb of the Darkmoon
-                { 4,  19293, 19182, [ATLASLOOT_IT_AMOUNT2] = 50 }, -- Last Year's Mutton
-                { 5,  19291, 19182, [ATLASLOOT_IT_AMOUNT2] = 50 }, -- Darkmoon Storage Box
-                { 7,  9249, 19182, [ATLASLOOT_IT_AMOUNT2] = 40 }, -- Schematic: Steam Tonk Controller
-                { 8,  19296, 19182, [ATLASLOOT_IT_AMOUNT2] = 40 }, -- Greater Darkmoon Prize
-                { 10,  19297, 19182, [ATLASLOOT_IT_AMOUNT2] = 12 }, -- Lesser Darkmoon Prize
-                { 12,  19292, 19182, [ATLASLOOT_IT_AMOUNT2] = 10 }, -- Last Month's Mutton
-                { 14,  19298, 19182, [ATLASLOOT_IT_AMOUNT2] = 5 }, -- Minor Darkmoon Prize
-                { 15,  19295, 19182, [ATLASLOOT_IT_AMOUNT2] = 5 }, -- Darkmoon Flower
-            },
-        },
-        {
-            name = AL["Classic"],
+            name = AL["Decks"],
             [NORMAL_DIFF] = {
                 { 1,  19228 }, -- Darkmoon Card: Blue Dragon
                 { 2,  19267 }, -- Darkmoon Card: Maelstrom
                 { 3,  19257 }, -- Darkmoon Card: Heroism
                 { 4,  19277 }, -- Darkmoon Card: Twisting Nether
+                { 6,  31907 }, -- Darkmoon Card: Vengeance
+                { 7,  31890 }, -- Darkmoon Card: Crusade
+                { 8,  31891 }, -- Darkmoon Card: Wrath
+                { 9,  31914 }, -- Darkmoon Card: Madness
+                { 11, 44276 },	-- Chaos Deck
+                { 12, 44259 },	-- Prisms Deck
+                { 13, 44294 },	-- Undeath Deck
+                { 14, 44326 },	-- Nobles Deck
+                { 16, 62021 },	-- Volcanic Deck
+                { 17, 62044 },	-- Tsunami Deck
+                { 18, 62045 },	-- Hurricane Deck
+                { 19, 62046 },	-- Earthquake Deck
             },
         },
-        AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, {
-            name = AL["BC"],
+        {
+            name = AL["Replica Dungeon T1"],
             [NORMAL_DIFF] = {
-                { 1,  31907 }, -- Darkmoon Card: Vengeance
-                { 2,  31890 }, -- Darkmoon Card: Crusade
-                { 3,  31891 }, -- Darkmoon Card: Wrath
-                { 4,  31914 }, -- Darkmoon Card: Madness
+                {1, 78186}, -- Replica Magister's Boots
             },
-        }),
-        AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, {
-            name = AL["Wrath"],
+        },
+        {
+            name = AL["Replica Dungeon T2"],
             [NORMAL_DIFF] = {
-                { 1, 44276 },	-- Chaos Deck
-                { 2, 44259 },	-- Prisms Deck
-                { 3, 44294 },	-- Undeath Deck
-                { 4, 44326 },	-- Nobles Deck
+                {1, 78198}, -- Replica Sorcerer's Crown
             },
-        }),
-        AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM, {
-            name = AL["Cataclysm"],
+        },
+        AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM,{
+            name = AL["Pets / Mounts"],
             [NORMAL_DIFF] = {
-                { 1, 62021 },	-- Volcanic Deck
-                { 2, 62044 },	-- Tsunami Deck
-                { 3, 62045 },	-- Hurricane Deck
-                { 4, 62046 },	-- Earthquake Deck
+                {1, 73766}, -- Darkmoon Dancing Bear
+                {2, 72140}, -- Swift Forest Strider
+                {4, 73762}, -- Darkmoon Balloon
+                {5, 73764}, -- Darkmoon Monkey
+                {6, 73765}, -- Darkmoon Turtle
+                {7, 73903}, -- Darkmoon Tonk
+                {8, 73905}, -- Darkmoon Zeppelin
+                {9, 74981}, -- Darkmoon Balloon
+                {16, 19450}, -- Jubling
+                {17, 73953}, -- Sea Pony
             },
         }),
     },
@@ -1998,7 +1996,6 @@ data["ScourgeInvasion"] = {
         },
     },
 }
-
 data["MoltenFront"] = {
     name = AL["Molten Front"],
     ContentType = COLLECTIONS_CONTENT,

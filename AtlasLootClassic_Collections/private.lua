@@ -59,4 +59,6 @@ private.MIDSUMMER_FESTIVAL = {
 }
 private.MOLTEN_FRONT = {
     [AtlasLoot.CATA_VERSION_NUM]        = "MoltenFrontCata",
+
 }
+
