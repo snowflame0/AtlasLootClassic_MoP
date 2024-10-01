@@ -24,7 +24,7 @@ local ALIL = AtlasLoot.IngameLocales
 
 local GetForVersion = AtlasLoot.ReturnForGameVersion
 
-local LFR_DIFF = data:AddDifficulty("LFR", nil, nil, nil, true)
+local RAIDFINDER_DIFF = data:AddDifficulty("Raid Finder", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 local RAID10_DIFF = data:AddDifficulty("10RAID")
@@ -601,7 +601,7 @@ data["TierSets"] = {
             name = format(AL["Tier %s Sets"], "13"),
             CoinTexture = "CATA",
             contentPhaseCata = 3,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
             	{1, 40001072 }, -- Warlock
             	{3, 40001066 }, -- Priest Holy
             	{4, 40001067 }, -- Priest Shadow
