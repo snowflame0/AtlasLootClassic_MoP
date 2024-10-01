@@ -31,6 +31,9 @@ local SPECIAL_ICONS = {
 	[463] = GetItemIcon(19896), -- Primal Blessing
 	[261] = GetItemIcon(18203), -- Spirit of Eskhandar
 	[65]  = GetItemIcon(13183), -- Spider's Kiss
+	[1087]  = GetItemIcon(77949), -- Fangs of the Father
+	[1088]  = GetItemIcon(77947), -- Maw of Oblivion
+	[1089]  = GetItemIcon(77945), -- Jaws of Retribution
 }
 local COLOR_STRINGS = {}
 local ContentPhaseCache = {}
@@ -1242,9 +1245,9 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
     [1073] = {{78783,78830,78752,78763,78801},4,4,384,1,{{2,105797},{4,105907}}}, -- DPS
     [1074] = {{78784,78829,78753,78764,78800},4,4,384,1,{{2,105908},{4,105911}}}, -- Prot
     -- Misc Sets
-    [1087] = {{77949,77950},0,4,416,0,{{2,109939}}}, -- Fangs of the Father
-    [1088] = {{77947,77948},0,4,406,0,{{2,109956}}}, -- Maw of Oblivion
-    [1089] = {{77945,77946},0,4,397,0,{{2,109960}}}, -- Jaws of Retribution
+    [1087] = {{77949,77950},0,4,416,8,{{2,109939}}}, -- Fangs of the Father
+    [1088] = {{77947,77948},0,4,406,8,{{2,109956}}}, -- Maw of Oblivion
+    [1089] = {{77945,77946},0,4,397,8,{{2,109960}}}, -- Jaws of Retribution
     [951] = {{63537,63538},0,4,359,0,{{2,95763}}}, -- Agony and Torment
 
     -- Death Knight
