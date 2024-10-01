@@ -164,25 +164,25 @@ local T13_SET = {
     ContentPhaseCata = 3,
     IgnoreAsSource = true,
     [LFR_DIFF] = {
- 	{1, 40001072 }, -- Warlock
- 	{3, 40001066 }, -- Priest Holy
- 	{4, 40001067 }, -- Priest Shadow
- 	{6, 40001068 }, -- Rogue
- 	{8, 40001061 }, -- Hunter
- 	{10, 40001074 }, -- Warrior Tank
- 	{11, 40001073 }, -- Warrior Dps
- 	{13, 40001056 }, -- Death Knight Tank
- 	{14, 40001057 }, -- Death Knight DPS
- 	{16, 40001062 }, -- Mage
- 	{18, 40001060 }, -- Druid Resto
- 	{19, 40001059 }, -- Druid Balance
-  	{20, 40001058 }, -- Druid Melee
- 	{22, 40001069 }, -- Shaman Resto
- 	{23, 40001070 }, -- Shaman Elemental
- 	{24, 40001071 }, -- Shaman Enhance
- 	{26, 40001063 }, -- Paladin Holy
- 	{27, 40001065 }, -- Paladin Prot
- 	{28, 40001064 }, -- Paladin DPS
+     {1, 40001072 }, -- Warlock
+     {3, 40001066 }, -- Priest Holy
+     {4, 40001067 }, -- Priest Shadow
+     {6, 40001068 }, -- Rogue
+     {8, 40001061 }, -- Hunter
+     {10, 40001074 }, -- Warrior Tank
+     {11, 40001073 }, -- Warrior Dps
+     {13, 40001056 }, -- Death Knight Tank
+     {14, 40001057 }, -- Death Knight DPS
+     {16, 40001062 }, -- Mage
+     {18, 40001060 }, -- Druid Resto
+     {19, 40001059 }, -- Druid Balance
+      {20, 40001058 }, -- Druid Melee
+     {22, 40001069 }, -- Shaman Resto
+     {23, 40001070 }, -- Shaman Elemental
+     {24, 40001071 }, -- Shaman Enhance
+     {26, 40001063 }, -- Paladin Holy
+     {27, 40001065 }, -- Paladin Prot
+     {28, 40001064 }, -- Paladin DPS
     },
     [NORMAL_DIFF] = {
         {1, 40011072 }, -- Warlock
@@ -3372,7 +3372,7 @@ data["DragonSoul"] = {
             { 3, 1087 }, -- Fangs of the Father / 416
             { 16, "ac6181" },
             { 17, "ac6182" },
-                
+
             },
         },
         T13_SET,

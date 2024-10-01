@@ -382,7 +382,7 @@ data["ValorPoints P2"] = {
         name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
         [NORMAL_DIFF] = { -- Shaman
         {1, 71294}, -- Erupting Volcanic Hauberk
-        {2, 71292}, -- Erupting Volcanic Gloves 
+        {2, 71292}, -- Erupting Volcanic Gloves
         {3, 71291}, -- Erupting Volcanic Kilt
         {5, 71296}, -- Erupting Volcanic Tunic
         {6, 71297}, -- Erupting Volcanic Handwraps

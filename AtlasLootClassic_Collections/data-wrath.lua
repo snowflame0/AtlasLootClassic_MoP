@@ -1017,7 +1017,7 @@ data["MountsWrath"] = {
         {16, 44168}, -- Reins of the Time-Lost Proto-Drake
         {17, 44151}, -- Reins of the Blue Proto-Drake
         {19, [ATLASLOOT_IT_ALLIANCE] = 43959, [ATLASLOOT_IT_HORDE] = 44083}, --  Reins of the Grand Black War Mammoth
-        {21, 43962}, -- Reins of the White Polar Bear      
+        {21, 43962}, -- Reins of the White Polar Bear
         }
     }, {
         name = AL["Crafting"],
@@ -1053,11 +1053,11 @@ data["MountsWrath"] = {
         name = AL["Unobtainable"],
         TableType = AC_ITTYPE,
         [NORMAL_DIFF] = {AtlasLoot:GetRetByFaction({1, 49046, 3810}, {1, 49044, 3810}), -- Swift Horde Wolf / Swift Alliance Steed
-        AtlasLoot:GetRetByFaction({2, 49098, 4156}, {2, 49096, 4156}), -- Crusader's Black Warhorse / Crusader's White Warhorse 
+        AtlasLoot:GetRetByFaction({2, 49098, 4156}, {2, 49096, 4156}), -- Crusader's Black Warhorse / Crusader's White Warhorse
         {4, 46708}, -- Deadly Gladiator's Frost Wyrm
         {5, 46171}, -- Furious  Gladiator's Frost Wyrm
         {6, 47840}, -- Relentless Gladiator's Frost Wyrm
-        {7, 50435} -- Wrathful Gladiator's Frost Wyrm  
+        {7, 50435} -- Wrathful Gladiator's Frost Wyrm
         }
     }, {
         name = ALIL["Achievements"],
