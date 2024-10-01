@@ -1121,7 +1121,8 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
 		["BH_AL_PALADIN_D"] = {76875, 76877, 0, 73570, 73568, type = 9},
 		["BH_AL_PALADIN_T"] = {77004, 77006, type = 9},
 		--- Misc
-		[44951] = { { 41119, "24-40" }, type = 11 }
+		[44951] = { { 41119, "24-40" }, type = 11 },
+		[71086] = {71084, 71085}, -- Dragonwrath, Tarecgosa's Rest
 	}
 end
 

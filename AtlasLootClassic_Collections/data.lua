@@ -24,7 +24,7 @@ local ALIL = AtlasLoot.IngameLocales
 
 local GetForVersion = AtlasLoot.ReturnForGameVersion
 
---local LFR_DIFF = data:AddDifficulty("LFR", nil, nil, nil, true)
+local LFR_DIFF = data:AddDifficulty("LFR", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 local RAID10_DIFF = data:AddDifficulty("10RAID")
@@ -601,27 +601,27 @@ data["TierSets"] = {
             name = format(AL["Tier %s Sets"], "13"),
             CoinTexture = "CATA",
             contentPhaseCata = 3,
-            -- [LFR_DIFF] = {
-            -- 	{1, 40001072 }, -- Warlock
-            -- 	{3, 40001066 }, -- Priest Holy
-            -- 	{4, 40001067 }, -- Priest Shadow
-            -- 	{6, 40001068 }, -- Rogue
-            -- 	{8, 40001061 }, -- Hunter
-            -- 	{10, 40001074 }, -- Warrior Tank
-            -- 	{11, 40001073 }, -- Warrior Dps
-            -- 	{13, 40001056 }, -- Death Knight Tank
-            -- 	{14, 40001057 }, -- Death Knight DPS
-            -- 	{16, 40001062 }, -- Mage
-            -- 	{18, 40001060 }, -- Druid Resto
-            -- 	{19, 40001059 }, -- Druid Balance
-            -- 	{20, 40001058 }, -- Druid Melee
-            -- 	{22, 40001069 }, -- Shaman Resto
-            -- 	{23, 40001070 }, -- Shaman Elemental
-            -- 	{24, 40001071 }, -- Shaman Enhance
-            -- 	{26, 40001063 }, -- Paladin Holy
-            -- 	{27, 40001065 }, -- Paladin Prot
-            -- 	{28, 40001064 }, -- Paladin DPS
-            -- },
+            [LFR_DIFF] = {
+            	{1, 40001072 }, -- Warlock
+            	{3, 40001066 }, -- Priest Holy
+            	{4, 40001067 }, -- Priest Shadow
+            	{6, 40001068 }, -- Rogue
+            	{8, 40001061 }, -- Hunter
+            	{10, 40001074 }, -- Warrior Tank
+            	{11, 40001073 }, -- Warrior Dps
+            	{13, 40001056 }, -- Death Knight Tank
+            	{14, 40001057 }, -- Death Knight DPS
+            	{16, 40001062 }, -- Mage
+                {18, 40001060 }, -- Druid Resto
+                {19, 40001059 }, -- Druid Balance
+                {20, 40001058 }, -- Druid Melee
+                {22, 40001069 }, -- Shaman Resto
+                {23, 40001070 }, -- Shaman Elemental
+                {24, 40001071 }, -- Shaman Enhance
+                {26, 40001063 }, -- Paladin Holy
+                {27, 40001065 }, -- Paladin Prot
+                {28, 40001064 }, -- Paladin DPS
+            },
             [NORMAL_DIFF] = {
                 {1, 40011072 }, -- Warlock
                 {3, 40011066 }, -- Priest Holy
@@ -1076,21 +1076,19 @@ data["Mounts"] = {
             name = AL["Drops"],
             [NORMAL_DIFF] = {
                 { 1, 13335 }, -- Deathcharger's Reins
-                { 3, 19872 }, -- Swift Razzashi Raptor
-                { 5, 19902 }, -- Swift Zulian Tiger
             },
         },
-        { -- Reputation
-            name = AL["Reputation"],
-            [ALLIANCE_DIFF] = {
-                { 1, 13086 }, -- Reins of the Winterspring Frostsaber
-            }
+        { -- Quest
+            name = AL["Quest"],
+            [NORMAL_DIFF] = {
+                { 1, [ATLASLOOT_IT_ALLIANCE] = 13086, [ATLASLOOT_IT_HORDE] = 46102},            }
         },
         {
-            name = ALIL["Special"],
+            name = ALIL["Unobtainable"],
             [NORMAL_DIFF] = {
                 { 1, 21176 }, -- Black Qiraji Resonating Crystal
-                { 3, 23720 }, -- Riding Turtle
+                { 3, 19872 }, -- Swift Razzashi Raptor
+                { 5, 19902 }, -- Swift Zulian Tiger
             },
         },
         { -- AQ40
@@ -1286,7 +1284,7 @@ data["Tabards"] = {
 }
 
 data["Legendarys"] = {
-    name = AL["Legendarys"],
+    name = AL["Legendaries"],
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
@@ -1294,23 +1292,23 @@ data["Legendarys"] = {
     CorrespondingFields = private.LEGENDARYS,
     items = {
         {
-            name = AL["Legendarys"],
-            [NORMAL_ITTYPE] = {
-                { 1,  19019 }, -- Thunderfury, Blessed Blade of the Windseeker
+            name = AL["Legendaries"],
+            [NORMAL_DIFF] = {
+                { 1,  19019, "ac428" }, -- Thunderfury, Blessed Blade of the Windseeker
 
-                { 3,  22631 }, -- Atiesh, Greatstaff of the Guardian / Priest
-                { 4,  22589 }, -- Atiesh, Greatstaff of the Guardian / Mage
-                { 5,  22630 }, -- Atiesh, Greatstaff of the Guardian / Warlock
-                { 6,  22632 }, -- Atiesh, Greatstaff of the Guardian / Druid
+                { 3,  22631, "ac425" }, -- Atiesh, Greatstaff of the Guardian / Priest
+                { 4,  22589, "ac425" }, -- Atiesh, Greatstaff of the Guardian / Mage
+                { 5,  22630, "ac425" }, -- Atiesh, Greatstaff of the Guardian / Warlock
+                { 6,  22632, "ac425" }, -- Atiesh, Greatstaff of the Guardian / Druid
 
-                { 16,  17182 }, -- Sulfuras, Hand of Ragnaros
+                { 8,  17182, "ac429" }, -- Sulfuras, Hand of Ragnaros
 
-                { 18,  21176 }, -- Black Qiraji Resonating Crystal
+                { 10,  21176, "ac416" }, -- Black Qiraji Resonating Crystal
             },
         },
         {
             name = ALIL["Quest Item"],
-            [NORMAL_ITTYPE] = {
+            [NORMAL_DIFF] = {
                 { 1,  19018 }, -- Dormant Wind Kissed Blade
                 { 2,  19017 }, -- Essence of the Firelord
                 { 3,  19016 }, -- Vessel of Rebirth
@@ -1328,7 +1326,7 @@ data["Legendarys"] = {
         },
         {
             name = AL["Unobtainable"],
-            [NORMAL_ITTYPE] = {
+            [NORMAL_DIFF] = {
                 { 1,  17782 }, -- Talisman of Binding Shard
                 { 16,  20221 }, -- Foror's Fabled Steed
             },
@@ -1997,6 +1995,101 @@ data["ScourgeInvasion"] = {
                 { 1, 23178 }, -- Mantle of Lady Falther'ess
                 { 2, 23177 }, -- Lady Falther'ess' Finger
             }
+        },
+    },
+}
+
+data["MoltenFront"] = {
+    name = AL["Molten Front"],
+    ContentType = COLLECTIONS_CONTENT,
+    LoadDifficulty = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.MOLTEN_FRONT,
+    items = {
+        { -- Additional Armaments
+            name = AL["Additional Armaments"],
+            [NORMAL_DIFF] = {
+                   { 1,  70177 }, -- Schematic: Flintlocke's Woodchucker
+                   { 2,  71078 }, -- Schematic: Extreme-Impact Hole Puncher
+                   { 3,  70166 }, -- Plans: Brainsplinter
+                   { 4,  70167 }, -- Plans: Masterwork Elementium Spellblade
+                   { 5,  70168 }, -- Plans: Lightforged Elementium Hammer
+                   { 6,  70169 }, -- Plans: Elementium-Edged Scalper
+                   { 7,  70170 }, -- Plans: Pyrium Spellward
+                   { 8,  70171 }, -- Plans: Unbreakable Guardian
+                   { 9,  70172 }, -- Plans: Masterwork Elementium Deathblade
+                   { 10, 70173 }, -- Plans: Witch-Hunter's Harvester
+                   { 12, 70118 }, -- Widow's Clutches
+                   { 13, 70114 }, -- Fireplume Girdle
+                   { 14, 70115 }, -- Fiery Treads
+                   { 15, 70116 }, -- Gauntlets of Living Obsidium
+                   { 16, 70119 }, -- Meteorite Ring
+                   { 17, 70120 }, -- Rickety Belt
+                   { 18, 70121 }, -- Ricket's Gun Show
+                   { 19, 70117 }, -- Belt of Living Obsidium
+                   { 20, 70144 }, -- Ricket's Magnetic Fireball
+            }
+        },
+        { -- Filling the Moonwell
+            name = AL["Filling the Moonwell"],
+            [NORMAL_DIFF] = {
+                   { 1,  70174 }, -- Pattern: Royal Scribe's Satchel
+                   { 2,  70175 }, -- Pattern: Triple-Reinforced Mining Bag
+                   { 3,  70176 }, -- Pattern: Luxurious Silk Gem Bag
+                   { 5,  70110 }, -- Band of Glittering Lights
+                   { 6,  70112 }, -- Globe of Moonlight
+                   { 7,  70113 }, -- Moon Blessed Band
+                   { 8,  70142 }, -- Moonwell Chalice
+                   { 9,  70143 }, -- Moonwell Phial
+                   { 11, 70160 }, -- Crimson Lasher
+                   { 12, 70161 }, -- Mushroom Chair
+            }
+        },
+        { -- Calling the Ancients
+            name = AL["Calling the Ancients"],
+            [NORMAL_DIFF] = {
+                   { 1,  70122 }, -- Aviana's Grips
+                   { 2,  70123 }, -- Lancer's Greaves
+                   { 3,  70124 }, -- Spirit Fragment Band
+                   { 4,  70126 }, -- Nemesis Shell Band
+                   { 5,  70127 }, -- Lylagar Horn Ring
+                   { 6,  70141 }, -- Dwyer's Caber
+                   { 8,  70140 }, -- Hyjal Bear Cub
+                   { 9,  70159 }, -- Mylune's Call
+            }
+        },
+        { -- Favors of the World Tree
+            name = AL["Favors of the World Tree"],
+            [NORMAL_DIFF] = {
+                   { 1,  70105 }, -- Matoclaw's Band
+                   { 2,  70106 }, -- Nightweaver's Amulet
+                   { 3,  70107 }, -- Fireheart Necklace
+                   { 4,  70108 }, -- Pyrelord Greaves
+                   { 6,  70145 }, -- Darnassus Writ of Commendation
+                   { 7,  70146 }, -- Exodar Writ of Commendation
+                   { 8,  70147 }, -- Gnomeregan Writ of Commendation
+                   { 9,  70148 }, -- Ironforge Writ of Commendation
+                   { 13, 70149 }, -- Orgrimmar Writ of Commendation
+                   { 14, 70150 }, -- Sen'jin Writ of Commendation
+                   { 15, 70151 }, -- Silvermoon Writ of Commendation
+                   { 10, 70152 }, -- Stormwind Writ of Commendation
+                   { 16, 70153 }, -- Thunder Bluff Writ of Commendation
+                   { 17, 70154 }, -- Undercity Writ of Commendation
+                   { 11, 71087 }, -- Gilneas Writ of Commendation
+                   { 18, 71088 }, -- Bilgewater Writ of Commendation
+                   { 20, 71631 }, -- Zen'Vorka's Cache
+            }
+        },
+        { -- Misc
+            name = AL["Misc"],
+            [NORMAL_DIFF] = {
+                   { 1,  69213 }, -- Flameward Hippogryph
+                   { 2,  71259 }, -- Leyara's Locket
+                   { 4, "ac5866" },
+                   { 5, "ac5879" },
+                   { 6, "ac5859" },
+            },
         },
     },
 }

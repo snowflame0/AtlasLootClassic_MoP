@@ -87,12 +87,7 @@ data["AvengersOfHyjal"] = {
                 {3, 68998}, -- Rune of Zeth
                 {4, 69000}, -- Fiery Quintessence
                 {5, 68996}, -- Stay of Execution
-                {6, 69185}, -- Rune of Zeth
-                {7, 69199}, -- Ancient Petrified Seed
-                {8, 69200}, -- Essence of the Eternal Flame
-                {9, 69198}, -- Fiery Quintessence
-                {10, 69184}, -- Stay of Execution
-                {11, 69002}, -- Essence of the Eternal Flame
+                {6, 69002}, -- Essence of the Eternal Flame
             },
         },
         { -- Honored 6
@@ -101,20 +96,12 @@ data["AvengersOfHyjal"] = {
                 {1, "f1204rep6"},
                 {2, 71258}, -- Embereye Belt
                 {3, 71250}, -- Cinch of the Flaming Ember
-                {4, 71394}, -- Flamebinding Girdle
-                {5, 71396}, -- Firearrow Belt
-                {6, 71249}, -- Firescar Sash
-                {7, 70933}, -- Girdle of the Indomitable Flame
-                {8, 71254}, -- Firemend Cinch
-                {9, 71255}, -- Firearrow Belt
-                {10, 71399}, -- Cinch of the Flaming Ember
-                {11, 71397}, -- Firemend Cinch
-                {12, 71398}, -- Belt of the Seven Seals
-                {13, 71400}, -- Girdle of the Indomitable Flame
-                {14, 71131}, -- Flamebinding Girdle
-                {15, 71253}, -- Belt of the Seven Seals
-                {16, 71395}, -- Firescar Sash
-                {17, 71393}, -- Embereye Belt
+                {4, 71249}, -- Firescar Sash
+                {5, 70933}, -- Girdle of the Indomitable Flame
+                {6, 71254}, -- Firemend Cinch
+                {7, 71255}, -- Firearrow Belt
+                {8, 71131}, -- Flamebinding Girdle
+                {9, 71253}, -- Belt of the Seven Seals
             },
         },
         { -- Friendly 5

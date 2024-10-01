@@ -393,19 +393,19 @@ data["MountsBC"] = {
     CorrespondingFields = private.MOUNTS,
     items = {{
         name = AL["Faction Mounts"],
-        [ALLIANCE_DIFF] = {{5, 29745}, -- Great Blue Elekk
-        {6, 29746}, -- Great Green Elekk
-        {7, 29747}, -- Great Purple Elekk
-        {20, 28481}, -- Brown Elekk
-        {21, 29743}, -- Purple Elekk
-        {22, 29744}, -- Gray Elekk
-        {9, 25527}, -- Swift Red Gryphon
-        {10, 25528}, -- Swift Green Gryphon
-        {11, 25529}, -- Swift Purple Gryphon
-        {12, 25473}, -- Swift Blue Gryphon
-        {24, 25470}, -- Golden Gryphon
-        {25, 25471}, -- Ebon Gryphon
-        {26, 25472} -- Snowy Gryphon
+        [ALLIANCE_DIFF] = {{1, 29745}, -- Great Blue Elekk
+        {2, 29746}, -- Great Green Elekk
+        {3, 29747}, -- Great Purple Elekk
+        {16, 28481}, -- Brown Elekk
+        {17, 29743}, -- Purple Elekk
+        {18, 29744}, -- Gray Elekk
+        {5, 25527}, -- Swift Red Gryphon
+        {6, 25528}, -- Swift Green Gryphon
+        {7, 25529}, -- Swift Purple Gryphon
+        {8, 25473}, -- Swift Blue Gryphon
+        {20, 25470}, -- Golden Gryphon
+        {21, 25471}, -- Ebon Gryphon
+        {22, 25472} -- Snowy Gryphon
         },
         [HORDE_DIFF] = {{1, 29223}, -- Swift Green Hawkstrider
         {2, 29224}, -- Swift Purple Hawkstrider
@@ -427,25 +427,16 @@ data["MountsBC"] = {
         [ALLIANCE_DIFF] = {{1, 35906}, -- Reins of the Black War Elekk
         {2, 29228}, -- Reins of the Dark War Talbuk
         {3, 28915}, -- Reins of the Dark Riding Talbuk
-        {16, 30609}, -- Swift Nether Drake
-        {17, 34092}, -- Merciless Nether Drake
-        {18, 37676}, -- Vengeful Nether Drake
-        {19, 43516} -- Brutal Nether Drake
         },
         [HORDE_DIFF] = {{1, 34129}, -- Swift Warstrider
         {2, 29228}, -- Reins of the Dark War Talbuk
         {3, 28915}, -- Reins of the Dark Riding Talbuk
-        {16, 30609}, -- Swift Nether Drake
-        {17, 34092}, -- Merciless Nether Drake
-        {18, 37676}, -- Vengeful Nether Drake
-        {19, 43516} -- Brutal Nether Drake
         }
     }, {
         name = AL["Drops"],
         [NORMAL_DIFF] = {{1, 32768}, -- Reins of the Raven Lord
-        {3, 33809}, -- Amani War Bear
-        {16, 30480}, -- Fiery Warhorse's Reins
-        {18, 32458} -- Ashes of Al'ar
+        {3, 30480}, -- Fiery Warhorse's Reins
+        {5, 32458} -- Ashes of Al'ar
         }
     }, {
         name = AL["Reputation"],
@@ -498,12 +489,12 @@ data["MountsBC"] = {
         {2, 34060} -- Flying Machine Control
         }
     }, {
-        name = AL["Special"],
-        [NORMAL_DIFF] = {{1, 33225}, -- Reins of the Swift Spectral Tiger
-        {2, 33224}, -- Reins of the Spectral Tiger
-        {4, 38576}, -- Big Battle Bear
-        {16, 35226}, -- X-51 Nether-Rocket X-TREME
-        {17, 35225} -- X-51 Nether-Rocket
+        name = AL["Unobtainable"],
+        [NORMAL_DIFF] = {{1, 33809}, -- Amani War Bear
+        {3, 30609}, -- Swift Nether Drake
+        {4, 34092}, -- Merciless Nether Drake
+        {5, 37676}, -- Vengeful Nether Drake
+        {6, 43516} -- Brutal Nether Drake
         }
     }}
 }
@@ -624,9 +615,10 @@ data["LegendarysBC"] = {
     CorrespondingFields = private.LEGENDARYS,
     items = {{
         name = AL["Legendarys"],
-        [NORMAL_ITTYPE] = {{1, 34334}, -- Thori'dal, the Stars' Fury
-        {16, 32837}, -- Warglaive of Azzinoth
-        {17, 32838} -- Warglaive of Azzinoth
+        [NORMAL_DIFF] = {
+        {1, 34334, "ac725"}, -- Thori'dal, the Stars' Fury
+        {3, 32837, "ac426"}, -- Warglaive of Azzinoth
+        {4, 32838, "ac426"} -- Warglaive of Azzinoth
         }
     }, {
         MapID = 3845,

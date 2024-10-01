@@ -995,11 +995,14 @@ data["MountsWrath"] = {
     TableType = NORMAL_ITTYPE,
     CorrespondingFields = private.MOUNTS,
     items = {{
-        name = AL["PvP"],
-        [NORMAL_DIFF] = {{1, 46708}, -- Deadly Gladiator's Frost Wyrm
-        {2, 46171}, -- Furious  Gladiator's Frost Wyrm
-        {3, 47840}, -- Relentless Gladiator's Frost Wyrm
-        {4, 50435} -- Wrathful Gladiator's Frost Wyrm
+        name = AL["Vendors"],
+        [NORMAL_DIFF] = {{1, [ATLASLOOT_IT_HORDE] = 44690, [ATLASLOOT_IT_ALLIANCE] = 44689}, -- Armored Snowy Gryphon / Armored Blue Wind Rider
+        {2, [ATLASLOOT_IT_HORDE] = 44226, [ATLASLOOT_IT_ALLIANCE] = 44225}, -- Reins of the Armored Brown Bear / Reins of the Armored Brown Bear
+        {3, [ATLASLOOT_IT_HORDE] = 44231, [ATLASLOOT_IT_ALLIANCE] = 44230}, -- Reins of the Wooly Mammoth / Reins of the Wooly Mammoth
+        {4, [ATLASLOOT_IT_HORDE] = 44234, [ATLASLOOT_IT_ALLIANCE] = 44235}, -- Reins of the Traveler's Tundra Mammoth / Reins of the Traveler's Tundra Mammoth
+        {6, [ATLASLOOT_IT_HORDE] = 44080, [ATLASLOOT_IT_ALLIANCE] = 43958}, -- Reins of the Ice Mammoth / Reins of the Ice Mammoth
+        {7, [ATLASLOOT_IT_HORDE] = 44086, [ATLASLOOT_IT_ALLIANCE] = 43961}, -- Reins of the Grand Ice Mammoth / Reins of the Grand Ice Mammoth
+        {9, [ATLASLOOT_IT_HORDE] = 44077, [ATLASLOOT_IT_ALLIANCE] = 43956} -- Reins of the Black War Mammoth / Reins of the Black War Mammoth
         }
     }, { -- Drops
         name = AL["Drops"],
@@ -1010,10 +1013,11 @@ data["MountsWrath"] = {
         {8, 43954}, -- Reins of the Twilight Drake
         {9, 43952}, -- Reins of the Azure Drake
         {10, 43951}, -- Reins of the Bronze Drake
+        {11, 43953}, -- Reins of the Blue Drake
         {16, 44168}, -- Reins of the Time-Lost Proto-Drake
         {17, 44151}, -- Reins of the Blue Proto-Drake
-        {19, 43959}, -- Reins of the Grand Black War Mammoth
-        {20, 44083} -- Reins of the Grand Black War Mammoth
+        {19, [ATLASLOOT_IT_ALLIANCE] = 43959, [ATLASLOOT_IT_HORDE] = 44083}, --  Reins of the Grand Black War Mammoth
+        {21, 43962}, -- Reins of the White Polar Bear      
         }
     }, {
         name = AL["Crafting"],
@@ -1027,8 +1031,33 @@ data["MountsWrath"] = {
         [NORMAL_DIFF] = {{1, 46109} -- Sea Turtle
         }
     }, {
-        name = AL["Quest"],
-        [NORMAL_DIFF] = {{1, 46102} -- Whistle of the Venomhide Ravasaur
+        name = ALIL["Argent Tournament"],
+        [NORMAL_DIFF] = {
+        {1, [ATLASLOOT_IT_ALLIANCE] = 45589, [ATLASLOOT_IT_HORDE] = 45592},
+        {2, [ATLASLOOT_IT_ALLIANCE] = 45125, [ATLASLOOT_IT_HORDE] = 45593},
+        {3, [ATLASLOOT_IT_ALLIANCE] = 45591, [ATLASLOOT_IT_HORDE] = 45595},
+        {4, [ATLASLOOT_IT_ALLIANCE] = 45586, [ATLASLOOT_IT_HORDE] = 45596},
+        {5, [ATLASLOOT_IT_ALLIANCE] = 45590, [ATLASLOOT_IT_HORDE] = 45597},
+        {7, [ATLASLOOT_IT_ALLIANCE] = 46752, [ATLASLOOT_IT_HORDE] = 46743},
+        {8, [ATLASLOOT_IT_ALLIANCE] = 46744, [ATLASLOOT_IT_HORDE] = 46746},
+        {9, [ATLASLOOT_IT_ALLIANCE] = 46747, [ATLASLOOT_IT_HORDE] = 46749},
+        {10, [ATLASLOOT_IT_ALLIANCE] = 46748, [ATLASLOOT_IT_HORDE] = 46750},
+        {11, [ATLASLOOT_IT_ALLIANCE] = 46745, [ATLASLOOT_IT_HORDE] = 46751},
+        {13, [ATLASLOOT_IT_ALLIANCE] = 46815, [ATLASLOOT_IT_HORDE] = 46816},
+        {14, [ATLASLOOT_IT_ALLIANCE] = 46813, [ATLASLOOT_IT_HORDE] = 46814},
+        {16, 47180}, -- Argent Charger
+        {17, 47179}, -- Argent Warhorse
+        {19, 45725} -- Argent Hippogryph
+        }
+    }, {
+        name = AL["Unobtainable"],
+        TableType = AC_ITTYPE,
+        [NORMAL_DIFF] = {AtlasLoot:GetRetByFaction({1, 49046, 3810}, {1, 49044, 3810}), -- Swift Horde Wolf / Swift Alliance Steed
+        AtlasLoot:GetRetByFaction({2, 49098, 4156}, {2, 49096, 4156}), -- Crusader's Black Warhorse / Crusader's White Warhorse 
+        {4, 46708}, -- Deadly Gladiator's Frost Wyrm
+        {5, 46171}, -- Furious  Gladiator's Frost Wyrm
+        {6, 47840}, -- Relentless Gladiator's Frost Wyrm
+        {7, 50435} -- Wrathful Gladiator's Frost Wyrm  
         }
     }, {
         name = ALIL["Achievements"],
@@ -1038,11 +1067,12 @@ data["MountsWrath"] = {
         AtlasLoot:GetRetByFaction({4, 44842, 2537}, {4, 44843, 2536}), -- Red Dragonhawk Mount / Blue Dragonhawk Mount
         AtlasLoot:GetRetByFaction({6, 44224, 619}, {6, 44223, 614}), -- Reins of the Black War Bear / Reins of the Black War Bear
                          {8, 44160, 2136}, -- Reins of the Red Proto-Drake
+        {10, 44175, 2137}, -- Reins of the Plagued Proto-Drake
+        {11, 44164, 2138}, -- Reins of the Black Proto-Drake
         {16, 45802, 2957}, -- Reins of the Rusted Proto-Drake
         {17, 45801, 2958}, -- Reins of the Ironbound Proto-Drake
-        AtlasLoot:GetRetByFaction({19, 49098, 4079}, {19, 49096, 4156}), -- Crusader's Black Warhorse / Crusader's White Warhorse
-                         {21, 51954, 4602}, -- Reins of the Bloodbathed Frostbrood Vanquisher
-        {22, 51955, 4603} -- Reins of the Icebound Frostbrood Vanquisher
+                         {19, 51954, 4602}, -- Reins of the Bloodbathed Frostbrood Vanquisher
+        {20, 51955, 4603} -- Reins of the Icebound Frostbrood Vanquisher
         }
     }}
 }
@@ -1185,11 +1215,12 @@ data["LegendarysWrath"] = {
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
-    gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     CorrespondingFields = private.LEGENDARYS,
+    gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     items = {{
         name = AL["Legendarys"],
-        [NORMAL_ITTYPE] = {{1, 49623, "ac4623"}, -- Shadowmourne
+        [NORMAL_DIFF] = {
+        {1, 49623, "ac4623"}, -- Shadowmourne
         {16, 46017, "ac3142"} -- Val'anyr, Hammer of Ancient Kings
         }
     }}
@@ -1203,7 +1234,8 @@ data["HeirloomWrath"] = {
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     items = {{
         name = ALIL["Armor"],
-        [NORMAL_ITTYPE] = {{1, 42985}, -- Tattered Dreadmist Mantle
+        [NORMAL_DIFF] = {
+        {1, 42985}, -- Tattered Dreadmist Mantle
         {2, 44107}, -- Exquisite Sunderseer Mantle
         {16, 48691}, -- Tattered Dreadmist Robe
         {4, 42952}, -- Stained Shadowcraft Spaulders
