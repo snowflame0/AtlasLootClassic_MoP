@@ -436,8 +436,10 @@ data["MountsBC"] = {
         name = AL["Drops"],
         [NORMAL_DIFF] = {{1, 32768}, -- Reins of the Raven Lord
         {3, 30480}, -- Fiery Warhorse's Reins
+
         {16, 32458}, -- Ashes of Al'ar
         {18, 35513} -- Swift White Hawkstrider
+
         }
     }, {
         name = AL["Reputation"],

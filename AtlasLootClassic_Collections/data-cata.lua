@@ -466,6 +466,143 @@ data["ValorPoints P2"] = {
     }}
 }
 
+data["ValorPoints P2"] = {
+    name = format(AL["'%s' Vendor"], AL["Valor Points P2"]),
+    ContentType = VENDOR_CONTENT,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    items = {{
+        name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
+        [NORMAL_DIFF] = {
+        -- Mage
+        {1, 71289}, -- Firehawk Robes
+        {2, 71286}, -- Firehawk Gloves
+        {3, 71288}, -- Firehawk Leggings
+        -- Warlock
+        {5, 71284}, -- Balespider's Robes
+        {6, 71281}, -- Balespider's Handwraps
+        {7, 71283}, -- Balespider's Leggings
+        -- Priest
+        {16, 71274}, -- Robes of the Cleansing Flame
+        {17, 71271}, -- Handwraps of the Cleansing Flame
+        {18, 71273}, -- Legwraps of the Cleansing Flame
+        {20, 71279}, -- Vestment of the Cleansing Flame
+        {21, 71276}, -- Gloves of the Cleansing Flame
+        {22, 71278}, -- Leggings of the Cleansing Flame
+        -- Misc
+        {9, 71265}, -- Emberflame Bracers
+        {10, 71266} -- Firesoul Wristguards
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Leather"],
+        [NORMAL_DIFF] = { -- Druid
+        {1, 71105}, -- Obsidian Arborweave Tunic
+        {2, 71102}, -- Obsidian Arborweave Handwraps
+        {3, 71104}, -- Obsidian Arborweave Legwraps
+        {5, 71100}, -- Obsidian Arborweave Raiment
+        {6, 71097}, -- Obsidian Arborweave Grips
+        {7, 71099}, -- Obsidian Arborweave Legguards
+        {9, 71110}, -- Obsidian Arborweave Vestment
+        {10, 71107}, -- Obsidian Arborweave Gloves
+        {11, 71109}, -- Obsidian Arborweave Leggings
+        -- Rouge
+        {16, 71045}, -- Dark Phoenix Tunic
+        {17, 71046}, -- Dark Phoenix Gloves
+        {18, 71048}, -- Dark Phoenix Legguards
+        -- Misc
+        {13, 71262}, -- Smolderskull Bindings
+        {14, 71130} -- Flamebinder Bracers
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
+        [NORMAL_DIFF] = { -- Shaman
+        {1, 71294}, -- Erupting Volcanic Hauberk
+        {2, 71292}, -- Erupting Volcanic Gloves
+        {3, 71291}, -- Erupting Volcanic Kilt
+        {5, 71296}, -- Erupting Volcanic Tunic
+        {6, 71297}, -- Erupting Volcanic Handwraps
+        {7, 71299}, -- Erupting Volcanic Legwraps
+        {9, 71301}, -- Erupting Volcanic Cuirass
+        {10, 71302}, -- Erupting Volcanic Grips
+        {11, 71304}, -- Erupting Volcanic Legguards
+        -- Rouge
+        {16, 71054}, -- Flamewalker's Tunic
+        {17, 71050}, -- Flamewalker's Gloves
+        {18, 71052}, -- Flamewalker's Legguards
+        -- Misc
+        {13, 71263}, -- Bracers of Misting Ash
+        {14, 71264} -- Bracers of Forked Lightning
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Plate"],
+        [NORMAL_DIFF] = { -- Paladin
+        {1, 71091}, -- Immolation Breastplate
+        {2, 71092}, -- Immolation Sapphirium Gloves
+        {3, 71094}, -- Immolation Sapphirium Greaves
+        {4, 71063}, -- Immolation Sapphirium Battleplate
+        {5, 71064}, -- Immolation Sapphirium Gauntlets
+        {6, 71066}, -- Immolation Sapphirium Legplates
+        {7, 70950}, -- Immolation Sapphirium Chestguard
+        {8, 70949}, -- Immolation Sapphirium Handguards
+        {9, 70947}, -- Immolation Sapphirium Legguards
+        -- DK
+        {11, 71058}, -- Elementium Deathplate Breastplate
+        {12, 71059}, -- Elementium Deathplate Gauntlets
+        {13, 71061}, -- Elementium Deathplate Greaves
+        {16, 70955}, -- Elementium Deathplate Chestguard
+        {17, 70953}, -- Elementium Deathplate Handguards
+        {18, 70952}, -- Elementium Deathplate Legguards
+        -- Warrior
+        {20, 71068}, -- Battleplate of the Molten Giant
+        {21, 71069}, -- Gauntlets of the Molten Giant
+        {22, 71071}, -- Legplates of the Molten Giant
+        {24, 70945}, -- Chestguard of the Molten Giant
+        {25, 70943}, -- Handguards of the Molten Giant
+        {26, 70942}, -- Legguards of the Molten Giant
+        -- Misc
+        {28, 71260}, -- Bracers of Imperious Truths
+        {29, 70937}, -- Bracers of Regal Force
+        {30, 71261} -- Gigantform Bracers
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Neck"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 71213}, -- Amulet of Burning Brilliance
+        {2, 71214}, -- Firemind Pendant
+        {3, 71129}, -- Necklace of Smoke Signals
+        {4, 71212}, -- Stoneheart Choker
+        {5, 70935} -- Stoneheart Necklace
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Ring"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 71210}, -- Crystalline Brimstone Ring
+        {2, 70940}, -- Deflecting Brimstone Band
+        {3, 71208}, -- Serrated Brimstone Signet
+        {4, 71211}, -- Soothing Brimstone Circle
+        {5, 71209} -- Splintered Brimstone Seal
+        }
+    }, {
+        name = ALIL["Relic"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 70939}, -- Deathclutch Figurine
+        {2, 71147}, -- Relic of the Elemental Lords
+        {3, 71149}, -- Singed Plume of Aviana
+        {4, 71146}, -- Covenant of the Flame
+        {5, 71148} -- Soulflame Vial
+        }
+    }, {
+        name = ALIL["Wand"],
+        [NORMAL_DIFF] = { -- Head
+        {1, 71150}, -- Scorchvine Wand
+        {2, 71151}, -- Trail of Embers
+        {3, 71152}, -- Morningstar Shard
+        {4, 71154}, -- Giantslicer
+        {5, 71218} -- Deflecting Star
+        }
+    }}
+}
+
 -- shared!
 data["WorldEpicsCata"] = {
     name = AL["World Epics"],
@@ -499,7 +636,25 @@ data["WorldEpicsCata"] = {
             {20, 67146}, -- Woundsplicer Handwraps
             {21, 67132}, -- Grips of the Failed Immortal
             {22, 67142}, -- Zom's Electrostatic Cloak
-        }
+            }
+    }}
+}
+
+data["Weapon Sets"] = {
+    name = format(AL["%s Sets"], AL["Weapons"]),
+    ContentType = SET_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = SET_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    items = {
+        { -- Misc
+            name = AL["Weapons"],
+            [NORMAL_DIFF] = {
+                { 1,  951 }, -- Agony and Torment / 359
+                { 2,  1089 }, -- Jaws of Retribution / 397
+                { 3, 1088 }, -- Maw of Oblivion / 406
+                { 4,  1087 }, -- Fangs of the Father / 416
+            }
     }}
 }
 
