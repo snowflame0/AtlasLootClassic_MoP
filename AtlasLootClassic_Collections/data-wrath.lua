@@ -1058,7 +1058,7 @@ data["MountsWrath"] = {
         {4, 46708}, -- Deadly Gladiator's Frost Wyrm
         {5, 46171}, -- Furious  Gladiator's Frost Wyrm
         {6, 47840}, -- Relentless Gladiator's Frost Wyrm
-        {7, 50435} -- Wrathful Gladiator's Frost Wyrm  
+        {7, 50435} -- Wrathful Gladiator's Frost Wyrm
         }
     }, {
         name = ALIL["Achievements"],
@@ -1212,14 +1212,14 @@ data["TabardsWrath"] = {
 }
 
 data["LegendarysWrath"] = {
-    name = AL["Legendarys"],
+    name = AL["Legendaries"],
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
     CorrespondingFields = private.LEGENDARYS,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     items = {{
-        name = AL["Legendarys"],
+        name = AL["Legendaries"],
         [NORMAL_DIFF] = {
         {1, 49623, "ac4623"}, -- Shadowmourne
         {16, 46017, "ac3142"} -- Val'anyr, Hammer of Ancient Kings
