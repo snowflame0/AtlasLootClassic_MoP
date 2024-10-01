@@ -330,7 +330,6 @@ data["ValorPoints P1"] = {
         }
     }}
 }
-
 data["ValorPoints P2"] = {
     name = format(AL["'%s' Vendor"], AL["Valor Points P2"]),
     ContentType = VENDOR_CONTENT,
@@ -338,8 +337,7 @@ data["ValorPoints P2"] = {
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
     items = {{
         name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
-        [NORMAL_DIFF] = {
-        -- Mage
+        [NORMAL_DIFF] = { -- Mage
         {1, 71289}, -- Firehawk Robes
         {2, 71286}, -- Firehawk Gloves
         {3, 71288}, -- Firehawk Leggings
@@ -382,7 +380,7 @@ data["ValorPoints P2"] = {
         name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
         [NORMAL_DIFF] = { -- Shaman
         {1, 71294}, -- Erupting Volcanic Hauberk
-        {2, 71292}, -- Erupting Volcanic Gloves
+        {2, 71292}, -- Erupting Volcanic Gloves 
         {3, 71291}, -- Erupting Volcanic Kilt
         {5, 71296}, -- Erupting Volcanic Tunic
         {6, 71297}, -- Erupting Volcanic Handwraps
@@ -501,7 +499,7 @@ data["WorldEpicsCata"] = {
             {20, 67146}, -- Woundsplicer Handwraps
             {21, 67132}, -- Grips of the Failed Immortal
             {22, 67142}, -- Zom's Electrostatic Cloak
-            }
+        }
     }}
 }
 
@@ -522,7 +520,6 @@ data["Weapon Sets"] = {
             }
     }}
 }
-
 data["MountsCata"] = {
     name = ALIL["Mounts"],
     ContentType = COLLECTIONS_CONTENT,
@@ -539,23 +536,29 @@ data["MountsCata"] = {
         name = AL["Drops"],
         [NORMAL_DIFF] = {{1, 63043}, -- Reins of the Vitreous Stone Drake
                         {2, 63042}, -- Reins of the Phosphorescent Stone Drake
-                        {3, 63040}, -- Reins of the Drake of the North Wind
-                        {4, 63041}, -- Reins of the Drake of the South Wind
-                        {5, 69224}, -- Smoldering Egg of Millagazor
-                        {6, 71665}, -- Flametalon of Alysrazor
-                        {7, 77067}, -- Reins of the Blazing Drake
-                        {8, 77069}, -- Life-Binder's Handmaiden
-                        {9, 78919}, -- Experiment 12-B
-                        {10, 69747}, -- Amani Battle Bear
-                        {11, 68823}, -- Armored Razzashi Raptor
-                        {12, 68824}, -- Swift Zulian Panther
-                        {13, 67151}, -- Reins of Poseidus
+                        {4, 63040}, -- Reins of the Drake of the North Wind
+                        {5, 63041}, -- Reins of the Drake of the South Wind
+                        {7, 69224}, -- Smoldering Egg of Millagazor
+                        {8, 71665}, -- Flametalon of Alysrazor
+                        {10, 77067}, -- Reins of the Blazing Drake
+                        {11, 77069}, -- Life-Binder's Handmaiden
+                        {12, 78919}, -- Experiment 12-B
+                        {14, 68823}, -- Armored Razzashi Raptor
+                        {15, 68824}, -- Swift Zulian Panther
+                        {16, 69747}, -- Amani Battle Bear
+                        {18, 67151}, -- Reins of Poseidus
         }
     }, {
         name = AL["Crafting"],
         [NORMAL_DIFF] = {{1, 65891}, -- Vial of the Sands
                         {3, 60954}, -- Fossilized Raptor
                         {5, 64883}, -- Scepter of Azj'Aqir
+        }
+    }, {
+        name = AL["Factions"],
+        [NORMAL_DIFF] = {
+                        {1, [ATLASLOOT_IT_ALLIANCE] = 63039, [ATLASLOOT_IT_HORDE] = 65356},
+                        {2, [ATLASLOOT_IT_ALLIANCE] = 64998, [ATLASLOOT_IT_HORDE] = 64999},
         }
     }, {
         name = AL["Darkmoon Faire"],
@@ -651,14 +654,14 @@ data["TabardsCata"] = {
 }
 
 data["LegendarysCata"] = {
-    name = AL["Legendaries"],
+    name = AL["Legendarys"],
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
     CorrespondingFields = private.LEGENDARYS,
     items = {{
-        name = AL["Legendaries"],
+        name = AL["Legendarys"],
         [NORMAL_DIFF] = {
         {1, 71086, "ac5839"}, -- Dragonwrath, Tarecgosa's Rest
         {16, 77949, "ac6181"}, -- Golad, Twilight of Aspects
