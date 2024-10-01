@@ -602,16 +602,16 @@ data["TierSets"] = {
             CoinTexture = "CATA",
             contentPhaseCata = 3,
             [LFR_DIFF] = {
-              	{1, 40001072 }, -- Warlock
-              	{3, 40001066 }, -- Priest Holy
-              	{4, 40001067 }, -- Priest Shadow
-              	{6, 40001068 }, -- Rogue
-            	  {8, 40001061 }, -- Hunter
-            	  {10, 40001074 }, -- Warrior Tank
-            	  {11, 40001073 }, -- Warrior Dps
-            	  {13, 40001056 }, -- Death Knight Tank
-            	  {14, 40001057 }, -- Death Knight DPS
-            	  {16, 40001062 }, -- Mage
+            	{1, 40001072 }, -- Warlock
+            	{3, 40001066 }, -- Priest Holy
+            	{4, 40001067 }, -- Priest Shadow
+            	{6, 40001068 }, -- Rogue
+            	{8, 40001061 }, -- Hunter
+            	{10, 40001074 }, -- Warrior Tank
+            	{11, 40001073 }, -- Warrior Dps
+            	{13, 40001056 }, -- Death Knight Tank
+            	{14, 40001057 }, -- Death Knight DPS
+            	{16, 40001062 }, -- Mage
                 {18, 40001060 }, -- Druid Resto
                 {19, 40001059 }, -- Druid Balance
                 {20, 40001058 }, -- Druid Melee
@@ -1292,7 +1292,6 @@ data["Legendarys"] = {
     CorrespondingFields = private.LEGENDARYS,
     items = {
         {
-
             name = AL["Legendarys"],
             [NORMAL_DIFF] = {
                 { 1,  19019, "ac428" }, -- Thunderfury, Blessed Blade of the Windseeker
