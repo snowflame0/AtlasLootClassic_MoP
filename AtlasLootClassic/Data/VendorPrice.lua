@@ -179,7 +179,7 @@ local PRICE_INFO_LIST = {
         currencyID = 416
     }, -- Mark of the World Tree
     ["Firestone"] = {
-        currencyID = 71617
+        itemID = 71617
     }, -- Crystallized Firestone
 
 
@@ -2139,6 +2139,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [67476] = "cpvpConquest:950",
         [67477] = "cpvpConquest:950",
         [67478] = "cpvpConquest:950",
+        [67479] = "cpvpConquest:950",
         [67479] = "cpvpConquest:950",
         [73766] = "DarkmoonPrizeTicket:180",
         [72140] = "DarkmoonPrizeTicket:180",
