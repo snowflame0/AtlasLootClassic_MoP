@@ -57,6 +57,7 @@ private.MIDSUMMER_FESTIVAL = {
     [AtlasLoot.WRATH_VERSION_NUM]       = "MidsummerFestivalWrath",
     [AtlasLoot.CATA_VERSION_NUM]        = "MidsummerFestivalCata",
 }
+
 private.MOLTEN_FRONT = {
     [AtlasLoot.CATA_VERSION_NUM]        = "MoltenFrontCata",
 }
