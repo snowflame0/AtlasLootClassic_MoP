@@ -19,7 +19,7 @@ local data = AtlasLoot.ItemDB:Add(addonname, 4, AtlasLoot.CATA_VERSION_NUM)
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
 
-local LFR_DIFF = data:AddDifficulty("LFR", nil, nil, nil, true)
+local RAIDFINDER_DIFF = data:AddDifficulty("Raid Finder", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 
@@ -163,7 +163,7 @@ local T13_SET = {
     TableType = SET_ITTYPE,
     ContentPhaseCata = 3,
     IgnoreAsSource = true,
-    [LFR_DIFF] = {
+    [RAIDFINDER_DIFF] = {
  	{1, 40001072 }, -- Warlock
  	{3, 40001066 }, -- Priest Holy
  	{4, 40001067 }, -- Priest Shadow
@@ -2573,7 +2573,7 @@ data["Firelands"] = {
         },
         { -- Shared Boss Loot
             name = AL["Shared Boss Loot"],
-            EncounterJournalID = 200,
+            EncounterJournalID = 198,
             [NORMAL_DIFF] = {
                 { 1, 71779 },	-- Avool's Incendiary Shanker
                 { 2, 71787 },	-- Entrail Disgorger
@@ -2587,7 +2587,6 @@ data["Firelands"] = {
                 { 11, 69237 },	-- Living Ember
             },
             [HEROIC_DIFF] = {
-
                 { 1, 71778 },	-- Avool's Incendiary Shanker
                 { 2, 71786 },	-- Entrail Disgorger
                 { 3, 71784 },	-- Firethorn Mindslicer
@@ -2620,9 +2619,9 @@ data["Firelands"] = {
             },
         },
         { -- Firestones
-            name = AL["Firestone Vendor"],
+            name = ALIL["Firestone Vendor"],
             ExtraList = true,
-            [HEROIC_DIFF] = {
+            [NORMAL_DIFF] = {
                 { 1, 71641 },	-- Riplimb's Lost Collar
                 { 2, 71561 },	-- Hide-Bound Chains
                 { 4, 71563 },	-- Firebound Gorget
@@ -2913,6 +2912,18 @@ data["DragonSoul"] = {
         { -- Morchok
             name = AL["Morchok"],
             EncounterJournalID = 311,
+             [RAIDFINDER_DIFF] = {
+                { 1, 78381 },	-- Mosswrought Shoulderguards
+                { 2, 78380 },	-- Robe of Glowing Stone
+                { 3, 78375 },	-- Underdweller's Spaulders
+                { 4, 78384 },	-- Mycosynth Wristguards
+                { 5, 78376 },	-- Sporebeard Gauntlets
+                { 6, 78385 },	-- Girdle of Shattered Stone
+                { 7, 78378 },	-- Brackenshell Shoulderplates
+                { 8, 78377 },	-- Rockhide Bracers
+                { 9, 78386 },	-- Pillarfoot Greaves
+                { 16, 78382 },	-- Petrified Fungal Heart
+            },
             [NORMAL_DIFF] = {
                 { 1, 77267 },	-- Mosswrought Shoulderguards
                 { 2, 77263 },	-- Robe of Glowing Stone
@@ -2946,23 +2957,11 @@ data["DragonSoul"] = {
                 { 22, "ac6109" },
                 { 23, "ac6174" },
             },
-            [LFR_DIFF] = {
-                { 1, 78381 },	-- Mosswrought Shoulderguards
-                { 2, 78380 },	-- Robe of Glowing Stone
-                { 3, 78375 },	-- Underdweller's Spaulders
-                { 4, 78384 },	-- Mycosynth Wristguards
-                { 5, 78376 },	-- Sporebeard Gauntlets
-                { 6, 78385 },	-- Girdle of Shattered Stone
-                { 7, 78378 },	-- Brackenshell Shoulderplates
-                { 8, 78377 },	-- Rockhide Bracers
-                { 9, 78386 },	-- Pillarfoot Greaves
-                { 16, 78382 },	-- Petrified Fungal Heart
-            },
         },
         { -- Warlord Zon'ozz
             name = AL["Warlord Zon'ozz"],
             EncounterJournalID = 324,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78398 },	-- Cord of the Slain Champion
                 { 2, 78395 },	-- Belt of Flayed Skin
                 { 3, 78400 },	-- Grotesquely Writhing Bracers
@@ -3007,7 +3006,7 @@ data["DragonSoul"] = {
         { -- Yor'sahj the Unsleeping
             name = AL["Yor'sahj the Unsleeping"],
             EncounterJournalID = 325,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78408 },	-- Interrogator's Bloody Footpads
                 { 2, 78411 },	-- Mindstrainer Treads
                 { 3, 78412 },	-- Heartblood Wristplates
@@ -3050,7 +3049,7 @@ data["DragonSoul"] = {
         { -- Hagara the Stormbinder
             name = AL["Hagara the Stormbinder"],
             EncounterJournalID = 317,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78425 },	-- Bracers of the Banished
                 { 2, 78428 },	-- Girdle of the Grotesque
                 { 3, 78423 },	-- Treads of Dormant Dreams
@@ -3095,7 +3094,7 @@ data["DragonSoul"] = {
         { -- Ultraxion
             name = AL["Ultraxion"],
             EncounterJournalID = 331,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78442 },	-- Treads of Sordid Screams
                 { 2, 78443 },	-- Imperfect Specimens 27 and 28
                 { 3, 78438 },	-- Bracers of Looming Darkness
@@ -3145,7 +3144,7 @@ data["DragonSoul"] = {
         { -- Warmaster Blackhorn
             name = AL["Warmaster Blackhorn"],
             EncounterJournalID = 332,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78457 },	-- Janglespur Jackboots
                 { 2, 78454 },	-- Shadow Wing Armbands
                 { 3, 78455 },	-- Belt of the Beloved Companion
@@ -3192,7 +3191,7 @@ data["DragonSoul"] = {
         { -- Spine of Deathwing
             name = AL["Spine of Deathwing"],
             EncounterJournalID = 318,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78466 },	-- Gloves of Liquid Smoke
                 { 2, 78467 },	-- Molten Blood Footpads
                 { 3, 78468 },	-- Belt of Shattered Elementium
@@ -3235,7 +3234,7 @@ data["DragonSoul"] = {
         { -- Madness of Deathwing
             name = AL["Madness of Deathwing"],
             EncounterJournalID = 333,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78484 },	-- Rathrak, the Poisonous Mind
                 { 2, 78483 },	-- Blade of the Unmaker
                 { 3, 78488 },	-- Souldrinker
@@ -3279,7 +3278,7 @@ data["DragonSoul"] = {
         { -- Shared
             name = AL["Shared Boss Loot"],
             ExtraList = true,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78497 },	-- Breathstealer Band
                 { 2, 78498 },	-- Hardheart Ring
                 { 3, 78495 },	-- Infinite Loop
