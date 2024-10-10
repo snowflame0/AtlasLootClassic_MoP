@@ -2630,12 +2630,12 @@ data["Firelands"] = {
                 {6, 71230}, -- Rippling Flamewrath Drape
                 {8, "f1204rep6"},
                 {9, 71258}, -- Embereye Belt
-                {10, 71250}, -- Cinch of the Flaming Ember
-                {11, 71249}, -- Firescar Sash
-                {12, 70933}, -- Girdle of the Indomitable Flame
-                {13, 71254}, -- Firemend Cinch
-                {14, 71255}, -- Firearrow Belt
-                {15, 71131}, -- Flamebinding Girdle
+                {10, 71249}, -- Firescar Sash
+                {11, 71131}, -- Flamebinding Girdle
+                {12, 71254}, -- Firemend Cinch
+                {13, 71255}, -- Firearrow Belt
+                {14, 71250}, -- Cinch of the Flaming Ember
+                {15, 70933}, -- Girdle of the Indomitable Flame
                 {16, 71253}, -- Belt of the Seven Seals
                 {18, "f1204rep7"},
                 {19, 69001}, -- Ancient Petrified Seed
