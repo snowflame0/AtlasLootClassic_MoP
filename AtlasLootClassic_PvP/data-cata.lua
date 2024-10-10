@@ -539,38 +539,86 @@ data["ArenaS10PvP"] = {
     }, {
         name = AL["Weapons"] .. " - " .. AL["Ranged"],
         [SET4_DIFF] = {
+            { 1, 70236 }, -- Ruthless Gladiator's Longbow
+            { 2, 70238 }, -- Ruthless Gladiator's Heavy Crossbow
+            { 3, 70237 }, -- Ruthless Gladiator's Rifle
+            { 5, 70233 }, -- Ruthless Gladiator's Hatchet
+            { 6, 70232 }, -- Ruthless Gladiator's War Edge
+            { 16, 70235 }, -- Ruthless Gladiator's Baton of Light
+            { 17, 70234 }, -- Ruthless Gladiator's Touch of Defeat
         },
-
         [SET5_DIFF] = {
+            { 1, 70192 }, -- Ruthless Gladiator's Longbow
+            { 2, 70193 }, -- Ruthless Gladiator's Heavy Crossbow
+            { 3, 70194 }, -- Ruthless Gladiator's Rifle
+            { 5, 70197 }, -- Ruthless Gladiator's Hatchet
+            { 6, 70198 }, -- Ruthless Gladiator's War Edge
+            { 16, 70195 }, -- Ruthless Gladiator's Baton of Light
+            { 17, 70196 }, -- Ruthless Gladiator's Touch of Defeat
         },
     }, {
         name = AL["Weapons"] .. " - " .. ALIL["Off Hand"],
         [SET4_DIFF] = {
+            { 1, 70239 }, -- Ruthless Gladiator's Endgame
+            { 2, 70240 }, -- Ruthless Gladiator's Reprieve
         },
         [SET5_DIFF] = {
+            { 1, 70209 }, -- Ruthless Gladiator's Reprieve
+            { 2, 70210 }, -- Ruthless Gladiator's Endgame
         },
     }, {
         name = AL["Weapons"] .. " - " .. ALIL["Shields"],
         [SET4_DIFF] = {
+            { 1, 70242 }, -- Ruthless Gladiator's Barrier
+            { 2, 70243 }, -- Ruthless Gladiator's Redoubt
+            { 3, 70241 }, -- Ruthless Gladiator's Shield Wall
         },
         [SET5_DIFF] = {
+            { 1, 70207 }, -- Ruthless Gladiator's Barrier
+            { 2, 70206 }, -- Ruthless Gladiator's Redoubt
+            { 3, 70208 }, -- Ruthless Gladiator's Shield Wall
         },
     }, {
         name = ALIL["Cloak"],
         [SET4_DIFF] = {
-        }
+            { 1, 70386 }, -- Ruthless Gladiator's Cape of Cruelty
+            { 2, 70385 }, -- Ruthless Gladiator's Cape of Prowess
+            { 4, 70383 }, -- Ruthless Gladiator's Cloak of Alacrity
+            { 5, 70384 }, -- Ruthless Gladiator's Cloak of Prowess
+            { 16, 70387 }, -- Ruthless Gladiator's Drape of Diffusion
+            { 17, 70398 }, -- Ruthless Gladiator's Drape of Meditation
+            { 18, 70388 }, -- Ruthless Gladiator's Drape of Prowess
+        },
     }, {
         name = ALIL["Relic"],
         [SET4_DIFF] = {
-        }
+            { 1, 70408 }, -- Ruthless Gladiator's Relic of Conquest
+            { 2, 70405 }, -- Ruthless Gladiator's Relic of Dominance
+            { 3, 70406 }, -- Ruthless Gladiator's Relic of Salvation
+            { 4, 70407 }, -- Ruthless Gladiator's Relic of Triumph
+        },
     }, {
         name = ALIL["Neck"],
         [SET4_DIFF] = {
-        }
+            { 1, 70382 }, -- Ruthless Gladiator's Choker of Accuracy
+            { 2, 70381 }, -- Ruthless Gladiator's Choker of Proficiency
+            { 5, 70380 }, -- Ruthless Gladiator's Necklace of Proficiency
+            { 6, 70379 }, -- Ruthless Gladiator's Necklace of Prowess
+            { 16, 70377 }, -- Ruthless Gladiator's Pendant of Alacrity
+            { 17, 70376 }, -- Ruthless Gladiator's Pendant of Diffusion
+            { 18, 70378 }, -- Ruthless Gladiator's Pendant of Meditation
+        },
     }, {
         name = ALIL["Finger"],
         [SET4_DIFF] = {
-        }
+            { 1, 70373 }, -- Ruthless Gladiator's Signet of Accuracy
+            { 2, 70372 }, -- Ruthless Gladiator's Signet of Cruelty
+            { 4, 70374 }, -- Ruthless Gladiator's Ring of Accuracy
+            { 5, 70375 }, -- Ruthless Gladiator's Ring of Cruelty
+            { 16, 70370 }, -- Ruthless Gladiator's Band of Accuracy
+            { 17, 70369 }, -- Ruthless Gladiator's Band of Cruelty
+            { 18, 70371 }, -- Ruthless Gladiator's Band of Meditation
+        },
     }, {
         name = format(AL["Non Set '%s'"], ALIL["Cloth"]),
         [SET4_DIFF] = {
