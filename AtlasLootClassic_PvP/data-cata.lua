@@ -34,9 +34,11 @@ else
     HORDE_DIFF = data:AddDifficulty(FACTION_HORDE, "horde", nil, 1)
     LOAD_DIFF = ALLIANCE_DIFF
 end
-local SET1_DIFF = data:AddDifficulty(format(AL["Bloodthirsty %s"], ""), "set1", nil, 1)
-local SET2_DIFF = data:AddDifficulty(format(AL["Vicious %s"], ""), "set2", nil, 1)
-local SET3_DIFF = data:AddDifficulty(format(AL["Vicious (Elite) %s"], ""), "set3", nil, 1)
+local SET1_DIFF = data:AddDifficulty(format(AL["Bloodthirsty%s"], ""), "set1", nil, 1)
+local SET2_DIFF = data:AddDifficulty(format(AL["Vicious%s"], ""), "set2", nil, 1)
+local SET3_DIFF = data:AddDifficulty(format(AL["Vicious Elite%s"], ""), "set3", nil, 1)
+local SET4_DIFF = data:AddDifficulty(format(AL["Ruthless%s"], ""), "set4", nil, 1)
+local SET5_DIFF = data:AddDifficulty(format(AL["Ruthless Elite%s"], ""), "set5", nil, 1)
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
@@ -459,11 +461,10 @@ data["ArenaS9PvP"] = {
         [NORMAL_DIFF] = {
             { 1, "ac6003" },
             { 2, 71339 },
-        }
+        },
     }}
 }
 
---[[ TODO: Later, beta first
 data["ArenaS10PvP"] = {
     name = format(AL["Season %s"], "10"),
     ContentType = ARENA_CONTENT,
@@ -472,80 +473,142 @@ data["ArenaS10PvP"] = {
     items = {{
         name = AL["Sets"],
         TableType = SET_ITTYPE,
-        [NORMAL_DIFF] = {
-        }
+        [SET4_DIFF] = {
+            {1, 4003910}, -- Warlock
+            {3, 4003916}, -- Priest Healing
+            {4, 4003915}, -- Priest Shadow
+            {6, 4003914}, -- Rogue
+            {8, 4003920}, -- Hunter
+            {10, 4003909}, -- Warrior Melee
+            {13, 4003924}, -- Death Knight Melee
+            {16, 4003919}, -- Mage
+            {18, 4003923}, -- Druid Resto
+            {19, 4003921}, -- Druid Balance
+            {20, 4003922}, -- Druid Feral
+            {22, 4003913}, -- Shaman Resto
+            {23, 4003911}, -- Shaman Elemental
+            {24, 4003912}, -- Shaman Enhancement
+            {26, 4003918}, -- Paladin Holy
+            {27, 4003917} -- Paladin Melee
+        },
+        [SET5_DIFF] = {
+            {1, 4004910}, -- Warlock
+            {3, 4004916}, -- Priest Healing
+            {4, 4004915}, -- Priest Shadow
+            {6, 4004914}, -- Rogue
+            {8, 4004920}, -- Hunter
+            {10, 4004909}, -- Warrior Melee
+            {13, 4004924}, -- Death Knight Melee
+            {16, 4004919}, -- Mage
+            {18, 4004923}, -- Druid Resto
+            {19, 4004921}, -- Druid Balance
+            {20, 4004922}, -- Druid Feral
+            {22, 4004913}, -- Shaman Resto
+            {23, 4004911}, -- Shaman Elemental
+            {24, 4004912}, -- Shaman Enhancement
+            {26, 4004918}, -- Paladin Holy
+            {27, 4004917} -- Paladin Melee
+        },
     }, {
         name = AL["Weapons"] .. " - " .. AL["One-Handed"],
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = AL["Weapons"] .. " - " .. AL["One-Handed"] .. " - R2",
-        [NORMAL_DIFF] = {
-        }
+        [SET4_DIFF] = {
+        },
+
+        [SET5_DIFF] = {
+        },
     }, {
         name = AL["Weapons"] .. " - " .. AL["Two-Handed"],
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = AL["Weapons"] .. " - " .. AL["Two-Handed"] .. " - R2",
-        [NORMAL_DIFF] = {
-        }
+        [SET4_DIFF] = {
+            { 1, 70225 }, -- Ruthless Gladiator's Pike
+            { 2, 70228 }, -- Ruthless Gladiator's Staff
+            { 4, 70213 }, -- Ruthless Gladiator's Decapitator
+            { 5, 70224 }, -- Ruthless Gladiator's Bonegrinder
+            { 6, 70231 }, -- Ruthless Gladiator's Greatsword
+            { 16, 70226 }, -- Ruthless Gladiator's Battle Staff
+            { 17, 70227 }, -- Ruthless Gladiator's Energy Staff
+        },
+        [SET5_DIFF] = {
+            { 1, 70182 }, -- Ruthless Gladiator's Pike
+            { 2, 70179 }, -- Ruthless Gladiator's Staff
+            { 4, 70184 }, -- Ruthless Gladiator's Decapitator
+            { 5, 70183 }, -- Ruthless Gladiator's Bonegrinder
+            { 6, 70178 }, -- Ruthless Gladiator's Greatsword
+            { 16, 70181 }, -- Ruthless Gladiator's Battle Staff
+            { 17, 70180 }, -- Ruthless Gladiator's Energy Staff
+        },
     }, {
         name = AL["Weapons"] .. " - " .. AL["Ranged"],
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = AL["Weapons"] .. " - " .. AL["Ranged"] .. " - R2",
-        [NORMAL_DIFF] = {
-        }
+        [SET4_DIFF] = {
+        },
+
+        [SET5_DIFF] = {
+        },
     }, {
         name = AL["Weapons"] .. " - " .. ALIL["Off Hand"],
-        [NORMAL_DIFF] = {
-        }
+        [SET4_DIFF] = {
+        },
+        [SET5_DIFF] = {
+        },
     }, {
         name = AL["Weapons"] .. " - " .. ALIL["Shields"],
-        [NORMAL_DIFF] = {
-        }
+        [SET4_DIFF] = {
+        },
+        [SET5_DIFF] = {
+        },
     }, {
         name = ALIL["Cloak"],
-        [NORMAL_DIFF] = {
+        [SET4_DIFF] = {
         }
     }, {
         name = ALIL["Relic"],
-        [NORMAL_DIFF] = {
+        [SET4_DIFF] = {
         }
     }, {
         name = ALIL["Neck"],
-        [NORMAL_DIFF] = {
+        [SET4_DIFF] = {
         }
     }, {
         name = ALIL["Finger"],
-        [NORMAL_DIFF] = {
+        [SET4_DIFF] = {
         }
     }, {
         name = format(AL["Non Set '%s'"], ALIL["Cloth"]),
-        [NORMAL_DIFF] = {
-        }
+        [SET4_DIFF] = {
+        },
+
+        [SET5_DIFF] = {
+        },
     }, {
         name = format(AL["Non Set '%s'"], ALIL["Leather"]),
-        [NORMAL_DIFF] = {
-        }
+        [SET4_DIFF] = {
+        },
+
+        [SET5_DIFF] = {
+        },
     }, {
         name = format(AL["Non Set '%s'"], ALIL["Mail"]),
-        [NORMAL_DIFF] = {
-        }
+        [SET4_DIFF] = {
+        },
+
+        [SET5_DIFF] = {
+        },
     }, {
         name = format(AL["Non Set '%s'"], ALIL["Plate"]),
-        [NORMAL_DIFF] = {
-        }
+        [SET4_DIFF] = {
+        },
+
+        [SET5_DIFF] = {
+        },
     }, {
         name = AL["Gladiator Mount"],
         ExtraList = true,
         [NORMAL_DIFF] = {
+            { 1, "ac6322" },
+            { 2, 71954 },
         }
     }}
 }
-
+--[[ Test
 data["ArenaS11PvP"] = {
     name = format(AL["Season %s"], "11"),
     ContentType = ARENA_CONTENT,
