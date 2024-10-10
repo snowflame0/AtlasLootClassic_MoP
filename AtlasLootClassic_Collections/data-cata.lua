@@ -462,7 +462,7 @@ data["ValorPoints T13"] = {
         name = ALIL["Armor"] .. " - " .. ALIL["Cloth / Leather"],
         [NORMAL_DIFF] = { -- Cloth
         {1, 77147}, -- Hood of Hidden Flesh
-        {2, 77324}, -- Robes of Searing Shadow
+        {2, 77122}, -- Robes of Searing Shadow
         {3, 77324}, -- Chronoboost Bracers
         {4, 77159}, -- Clockwinder's Immaculate Gloves
         {5, 77179}, -- Tentacular Belt
