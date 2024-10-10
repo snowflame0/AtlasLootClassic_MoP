@@ -2618,6 +2618,39 @@ data["Firelands"] = {
                 { 20, 71366 },	-- Lava Bolt Crossbow
             },
         },
+        { -- Avengers of Hyjal
+            name = ALIL["Avengers of Hyjal"],
+            ExtraList = true,
+            [NORMAL_DIFF] = {
+                {1, "f1204rep5"},
+                {2, 71229}, -- Flowing Flamewrath Cape
+                {3, 71227}, -- Bladed Flamewrath Cover
+                {4, 70930}, -- Durable Flamewrath Greatcloak
+                {5, 71228}, -- Sleek Flamewrath Cloak
+                {6, 71230}, -- Rippling Flamewrath Drape
+                {8, "f1204rep6"},
+                {9, 71258}, -- Embereye Belt
+                {10, 71250}, -- Cinch of the Flaming Ember
+                {11, 71249}, -- Firescar Sash
+                {12, 70933}, -- Girdle of the Indomitable Flame
+                {13, 71254}, -- Firemend Cinch
+                {14, 71255}, -- Firearrow Belt
+                {15, 71131}, -- Flamebinding Girdle
+                {16, 71253}, -- Belt of the Seven Seals
+                {18, "f1204rep7"},
+                {19, 69001}, -- Ancient Petrified Seed
+                {20, 68998}, -- Rune of Zeth
+                {21, 69000}, -- Fiery Quintessence
+                {22, 68996}, -- Stay of Execution
+                {23, 69002}, -- Essence of the Eternal Flame
+                {25, "f1204rep8"},
+                {26, 71237}, -- Quicksilver Signet of the Avengers
+                {27, 71215}, -- Obsidian Signet of the Avengers
+                {28, 70934}, -- Adamantine Signet of the Avengers
+                {29, 71216}, -- Viridian Signet of the Avengers
+                {30, 71217}, -- Infernal Signet of the Avengers
+            },
+        },
         { -- Firestones
             name = ALIL["Firestone Vendor"],
             ExtraList = true,
