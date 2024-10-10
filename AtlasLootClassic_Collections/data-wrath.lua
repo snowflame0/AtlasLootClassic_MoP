@@ -1058,7 +1058,7 @@ data["MountsWrath"] = {
         {4, 46708}, -- Deadly Gladiator's Frost Wyrm
         {5, 46171}, -- Furious  Gladiator's Frost Wyrm
         {6, 47840}, -- Relentless Gladiator's Frost Wyrm
-        {7, 50435} -- Wrathful Gladiator's Frost Wyrm
+        {7, 50435} -- Wrathful Gladiator's Frost Wyrm  
         }
     }, {
         name = ALIL["Achievements"],
@@ -1212,14 +1212,14 @@ data["TabardsWrath"] = {
 }
 
 data["LegendarysWrath"] = {
-    name = AL["Legendaries"],
+    name = AL["Legendarys"],
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
     CorrespondingFields = private.LEGENDARYS,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     items = {{
-        name = AL["Legendaries"],
+        name = AL["Legendarys"],
         [NORMAL_DIFF] = {
         {1, 49623, "ac4623"}, -- Shadowmourne
         {16, 46017, "ac3142"} -- Val'anyr, Hammer of Ancient Kings
@@ -1403,6 +1403,7 @@ data["BrewfestWrath"] = {
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
+    CorrespondingFields = private.BREWFEST,
     items = {{ -- Brewfest
         name = AL["Brewfest"],
         [NORMAL_DIFF] = {{1, 33968}, -- Blue Brewfest Hat
@@ -1415,18 +1416,14 @@ data["BrewfestWrath"] = {
         {8, 33868}, -- Brewfest Boots
         {10, 33047}, -- Belbi's Eyesight Enhancing Romance Goggles (Alliance)
         {11, 34008}, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
-        {13, 33016}, -- Blue Brewfest Stein
+        {13, 33927}, -- Brewfest Pony Keg
         {15, 37829}, -- Brewfest Prize Token
-        {16, 33976}, -- Brewfest Ram
-        {17, 33977}, -- Swift Brewfest Ram
-        {19, 32233}, -- Wolpertinger's Tankard
-        {21, 34028}, -- "Honorary Brewer" Hand Stamp
-        {22, 37599}, -- "Brew of the Month" Club Membership Form
-        {24, 33927}, -- Brewfest Pony Keg
-        {26, 37750}, -- Fresh Brewfest Hops
-        {27, 39477}, -- Fresh Dwarven Brewfest Hops
-        {28, 39476}, -- Fresh Goblin Brewfest Hops
-        {29, 37816} -- Preserved Brewfest Hops
+        {16, 32233}, -- Wolpertinger's Tankard
+        {18, 37599}, -- "Brew of the Month" Club Membership Form
+        {20, 37750}, -- Fresh Brewfest Hops
+        {21, 39477}, -- Fresh Dwarven Brewfest Hops
+        {22, 39476}, -- Fresh Goblin Brewfest Hops
+        {23, 37816} -- Preserved Brewfest Hops
         }
     }, {
         name = AL["Food"],

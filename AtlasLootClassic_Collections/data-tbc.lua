@@ -710,12 +710,13 @@ data["MidsummerFestivalBC"] = {
     }}
 }
 
-data["Brewfest"] = {
+data["BrewfestBC"] = {
     name = AL["Brewfest"],
     ContentType = WORLD_EVENT_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.BC_VERSION_NUM,
+    CorrespondingFields = private.BREWFEST,
     items = {{ -- Brewfest
         name = AL["Brewfest"],
         [NORMAL_DIFF] = {{1, 33968}, -- Blue Brewfest Hat

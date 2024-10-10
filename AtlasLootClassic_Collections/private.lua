@@ -26,6 +26,7 @@ private.HALLOWEEN = {
     [AtlasLoot.CLASSIC_VERSION_NUM]     = "Halloween",
     [AtlasLoot.BC_VERSION_NUM]          = "HalloweenBC",
     [AtlasLoot.WRATH_VERSION_NUM]       = "HalloweenWrath",
+    [AtlasLoot.CATA_VERSION_NUM]        = "HalloweenCata",
 }
 
 private.LEGENDARYS = {
@@ -50,6 +51,12 @@ private.SCOURGE_INVASION = {
 private.CHILDRENS_WEEK = {
     [AtlasLoot.BC_VERSION_NUM]          = "ChildrensWeekBC",
     [AtlasLoot.WRATH_VERSION_NUM]       = "ChildrensWeekWrath",
+}
+
+private.BREWFEST = {
+    [AtlasLoot.BC_VERSION_NUM]          = "BrewfestBC",
+    [AtlasLoot.WRATH_VERSION_NUM]       = "BrewfestWrath",
+    [AtlasLoot.CATA_VERSION_NUM]        = "BrewfestCata",
 }
 
 private.MIDSUMMER_FESTIVAL = {

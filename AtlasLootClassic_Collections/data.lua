@@ -1550,8 +1550,8 @@ data["Darkmoon"] = {
                 {23, 78327},
             },
         },
-        AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM,{
-            name = AL["Pets / Mounts / Misc"],
+        {
+            name = ALIL["Pets / Mounts / Misc"],
             [NORMAL_DIFF] = {
                 {1, 73766}, -- Darkmoon Dancing Bear
                 {2, 72140}, -- Swift Forest Strider
@@ -1571,6 +1571,36 @@ data["Darkmoon"] = {
                 {19, 78340}, -- Cloak of the Darkmoon Faire
                 {21, 74034}, -- Pit Fighter
                 {30, "SPECIAL_ACHIEVEMENT", nil, AL["Achievements"], nil, "AC_DarkmoonFaire"},
+          },
+      }, 
+        AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM,{
+        name = AL["Heirlooms"],
+        [NORMAL_DIFF] = {
+        {1, 42985}, -- Tattered Dreadmist Mantle
+        {2, 48691}, -- Tattered Dreadmist Robe
+        {4, 42952}, -- Stained Shadowcraft Spaulders
+        {5, 42984}, -- Preened Ironfeather Shoulders
+        {6, 48689}, -- Stained Shadowcraft Tunic
+        {7, 48687}, -- Preened Ironfeather Breastplate
+        {9, 42950}, -- Champion Herod's Shoulder
+        {10, 42951}, -- Mystical Pauldrons of Elements
+        {11, 48677}, -- Champion's Deathdealer Breastplate
+        {12, 48683}, -- Mystical Vest of Elements
+        {14, 42992}, -- Discerning Eye of the Beast
+        {15, 42991}, -- Swift Hand of Justice
+        {16, 42949}, -- Polished Spaulders of Valor
+        {17, 48685}, -- Polished Breastplate of Valor
+        {18, 69890}, -- Burnished Pauldrons of Might
+        {19, 69889}, -- Burnished Breastplate of Might
+        {21, 69893}, -- Bloodsoaked Skullforge Reaver
+        {22, 48716}, -- Venerable Mass of McGowan
+        {23, 42944}, -- Balanced Heartseeker
+        {24, 42945}, -- Venerable Dal'Rend's Sacred Charge
+        {25, 42948}, -- Devout Aurastone Hammer
+        {26, 42947}, -- Dignified Headmaster's Charge
+        {27, 42946}, -- Charmed Ancient Bone Bow
+        {28, 42943}, -- Bloodied Arcanite Reaper
+        {29, 48718}, -- Repurposed Lava Dredger
             },
         }),
     },
