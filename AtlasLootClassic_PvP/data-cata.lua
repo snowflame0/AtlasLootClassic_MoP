@@ -586,7 +586,7 @@ data["ArenaS10PvP"] = {
             { 4, 70383 }, -- Ruthless Gladiator's Cloak of Alacrity
             { 5, 70384 }, -- Ruthless Gladiator's Cloak of Prowess
             { 16, 70387 }, -- Ruthless Gladiator's Drape of Diffusion
-            { 17, 70398 }, -- Ruthless Gladiator's Drape of Meditation
+            { 17, 70389 }, -- Ruthless Gladiator's Drape of Meditation
             { 18, 70388 }, -- Ruthless Gladiator's Drape of Prowess
         },
     }, {
