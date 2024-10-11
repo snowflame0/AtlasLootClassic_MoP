@@ -64,9 +64,10 @@ data["PvPMountsCata"] = {
     items = {{ -- PvPMountsCata
         name = ALIL["Mounts"],
         [NORMAL_DIFF] = {
-            {1, 72140}, -- Vicious War Wolf
+            {1, [ATLASLOOT_IT_ALLIANCE] = 70909, [ATLASLOOT_IT_HORDE] = 70910},
             {2, 71339}, -- Vicious Gladiator's Twilight Drake
-            {3, 70910}, -- Ruthless Gladiator's Twilight Drake
+            {3, 71954}, -- Ruthless Gladiator's Twilight Drake
+            {16, [ATLASLOOT_IT_ALLIANCE] = "ac5328", [ATLASLOOT_IT_HORDE] = "ac5325"},
         },
     }}
 }
@@ -512,9 +513,36 @@ data["ArenaS10PvP"] = {
     }, {
         name = AL["Weapons"] .. " - " .. AL["One-Handed"],
         [SET4_DIFF] = {
+            { 1, 70211 }, -- Ruthless Gladiator's Cleaver
+            { 2, 70212 }, -- Ruthless Gladiator's Hacker
+            { 4, 70222 }, -- Ruthless Gladiator's Bonecracker
+            { 5, 70221 }, -- Ruthless Gladiator's Pummeler
+            { 7, 70230 }, -- Ruthless Gladiator's Quickblade
+            { 8, 70229 }, -- Ruthless Gladiator's Slicer
+            { 16, 70216 }, -- Ruthless Gladiator's Spellblade
+            { 17, 70223 }, -- Ruthless Gladiator's Gavel
+            { 19, 70214 }, -- Ruthless Gladiator's Shanker
+            { 20, 70215 }, -- Ruthless Gladiator's Shiv
+            { 22, 70220 }, -- Ruthless Gladiator's Right Render
+            { 23, 70217 }, -- Ruthless Gladiator's Right Ripper
+            { 25, 70219 }, -- Ruthless Gladiator's Left Render
+            { 26, 70218 }, -- Ruthless Gladiator's Left Ripper
         },
-
         [SET5_DIFF] = {
+            { 1, 70205 }, -- Ruthless Gladiator's Cleaver
+            { 2, 70204 }, -- Ruthless Gladiator's Hacker
+            { 4, 70201 }, -- Ruthless Gladiator's Bonecracker
+            { 5, 70202 }, -- Ruthless Gladiator's Pummeler
+            { 7, 70199 }, -- Ruthless Gladiator's Quickblade
+            { 8, 70200 }, -- Ruthless Gladiator's Slicer
+            { 16, 70188 }, -- Ruthless Gladiator's Spellblade
+            { 17, 70185 }, -- Ruthless Gladiator's Gavel
+            { 19, 70203 }, -- Ruthless Gladiator's Shanker
+            { 20, 70191 }, -- Ruthless Gladiator's Shiv
+            { 22, 70186 }, -- Ruthless Gladiator's Right Render
+            { 23, 70187 }, -- Ruthless Gladiator's Right Ripper
+            { 25, 70189 }, -- Ruthless Gladiator's Left Render
+            { 26, 70190 }, -- Ruthless Gladiator's Left Ripper
         },
     }, {
         name = AL["Weapons"] .. " - " .. AL["Two-Handed"],
@@ -622,30 +650,102 @@ data["ArenaS10PvP"] = {
     }, {
         name = format(AL["Non Set '%s'"], ALIL["Cloth"]),
         [SET4_DIFF] = {
+            { 1, 70364 }, -- Ruthless Gladiator's Treads of Alacrity
+            { 2, 70361 }, -- Ruthless Gladiator's Treads of Cruelty
+            { 3, 70367 }, -- Ruthless Gladiator's Treads of Meditation
+            { 5, 70362 }, -- Ruthless Gladiator's Cord of Accuracy
+            { 6, 70360 }, -- Ruthless Gladiator's Cord of Cruelty
+            { 7, 70368 }, -- Ruthless Gladiator's Cord of Meditation
+            { 16, 70363 }, -- Ruthless Gladiator's Cuffs of Accuracy
+            { 17, 70366 }, -- Ruthless Gladiator's Cuffs of Meditation
+            { 18, 70365 }, -- Ruthless Gladiator's Cuffs of Prowess
         },
-
         [SET5_DIFF] = {
+            { 1, 70496 }, -- Ruthless Gladiator's Treads of Alacrity
+            { 2, 70495 }, -- Ruthless Gladiator's Treads of Cruelty
+            { 3, 70497 }, -- Ruthless Gladiator's Treads of Meditation
         },
     }, {
         name = format(AL["Non Set '%s'"], ALIL["Leather"]),
         [SET4_DIFF] = {
+            { 1, 70351 }, -- Ruthless Gladiator's Boots of Alacrity
+            { 2, 70348 }, -- Ruthless Gladiator's Boots of Cruelty
+            { 3, 70358 }, -- Ruthless Gladiator's Footguards of Alacrity
+            { 4, 70344 }, -- Ruthless Gladiator's Footguards of Meditation
+            { 6, 70346 }, -- Ruthless Gladiator's Belt of Cruelty
+            { 7, 70343 }, -- Ruthless Gladiator's Belt of Meditation
+            { 8, 70349 }, -- Ruthless Gladiator's Waistband of Accuracy
+            { 9, 70347 }, -- Ruthless Gladiator's Waistband of Cruelty
+            { 16, 70350 }, -- Ruthless Gladiator's Armwraps of Accuracy
+            { 17, 70352 }, -- Ruthless Gladiator's Armwraps of Alacrity
+            { 18, 70345 }, -- Ruthless Gladiator's Bindings of Meditation
+            { 19, 70359 }, -- Ruthless Gladiator's Bindings of Prowess
         },
-
         [SET5_DIFF] = {
+            { 1, 70507 }, -- Ruthless Gladiator's Boots of Alacrity
+            { 2, 70506 }, -- Ruthless Gladiator's Boots of Cruelty
+            { 3, 70499 }, -- Ruthless Gladiator's Footguards of Alacrity
+            { 4, 70498 }, -- Ruthless Gladiator's Footguards of Meditation
         },
     }, {
         name = format(AL["Non Set '%s'"], ALIL["Mail"]),
         [SET4_DIFF] = {
+            { 1, 70337 }, -- Ruthless Gladiator's Sabatons of Alacrity
+            { 2, 70341 }, -- Ruthless Gladiator's Sabatons of Alacrity
+            { 3, 70335 }, -- Ruthless Gladiator's Sabatons of Cruelty
+            { 4, 70329 }, -- Ruthless Gladiator's Sabatons of Meditation
+            { 6, 70339 }, -- Ruthless Gladiator's Links of Accuracy
+            { 7, 70336 }, -- Ruthless Gladiator's Links of Cruelty
+            { 8, 70331 }, -- Ruthless Gladiator's Waistguard of Cruelty
+            { 9, 70328 }, -- Ruthless Gladiator's Waistguard of Meditation
+            { 16, 70330 }, -- Ruthless Gladiator's Armbands of Meditation
+            { 17, 70342 }, -- Ruthless Gladiator's Armbands of Prowess
+            { 18, 70340 }, -- Ruthless Gladiator's Wristguards of Accuracy
+            { 19, 70338 }, -- Ruthless Gladiator's Wristguards of Alacrity
         },
-
         [SET5_DIFF] = {
+            { 1, 70501 }, -- Ruthless Gladiator's Sabatons of Alacrity
+            { 2, 70508 }, -- Ruthless Gladiator's Sabatons of Alacrity
+            { 3, 70500 }, -- Ruthless Gladiator's Sabatons of Cruelty
+            { 4, 70509 }, -- Ruthless Gladiator's Sabatons of Meditation
         },
     }, {
         name = format(AL["Non Set '%s'"], ALIL["Plate"]),
         [SET4_DIFF] = {
+            { 1, 70324 }, -- Ruthless Gladiator's Greaves of Alacrity
+            { 2, 70333 }, -- Ruthless Gladiator's Greaves of Meditation
+            { 3, 70323 }, -- Ruthless Gladiator's Warboots of Alacrity
+            { 4, 70321 }, -- Ruthless Gladiator's Warboots of Cruelty
+            { 6, 70319 }, -- Ruthless Gladiator's Clasp of Cruelty
+            { 7, 70332 }, -- Ruthless Gladiator's Clasp of Meditation
+            { 8, 70320 }, -- Ruthless Gladiator's Girdle of Cruelty
+            { 9, 70326 }, -- Ruthless Gladiator's Girdle of Prowess
+            { 16, 70322 }, -- Ruthless Gladiator's Armplates of Alacrity
+            { 17, 70327 }, -- Ruthless Gladiator's Armplates of Proficiency
+            { 18, 70334 }, -- Ruthless Gladiator's Bracers of Meditation
+            { 19, 70325 }, -- Ruthless Gladiator's Bracers of Prowess
         },
-
         [SET5_DIFF] = {
+            { 1, 70502 }, -- Ruthless Gladiator's Greaves of Alacrity
+            { 2, 70503 }, -- Ruthless Gladiator's Greaves of Meditation
+            { 3, 70505 }, -- Ruthless Gladiator's Warboots of Alacrity
+            { 4, 70504 }, -- Ruthless Gladiator's Warboots of Cruelty
+        },
+    }, {       
+        name = ALIL["Trinket"],
+        [SET4_DIFF] = {
+            { 1, 70399 }, -- Ruthless Gladiator's Badge of Conquest
+            { 2, 70401 }, -- Ruthless Gladiator's Badge of Dominance
+            { 3, 70400 }, -- Ruthless Gladiator's Badge of Victory
+            { 5, 70396 }, -- Ruthless Gladiator's Emblem of Cruelty
+            { 6, 70397 }, -- Ruthless Gladiator's Emblem of Meditation
+            { 7, 70398 }, -- Ruthless Gladiator's Emblem of Tenacity
+            { 16, 70404 }, -- Ruthless Gladiator's Insignia of Conquest
+            { 17, 70402 }, -- Ruthless Gladiator's Insignia of Dominance
+            { 18, 70403 }, -- Ruthless Gladiator's Insignia of Victory
+            { 20, [ATLASLOOT_IT_ALLIANCE] = 70390, [ATLASLOOT_IT_HORDE] = 70393}, -- Ruthless Gladiator's Medallion of Cruelty
+            { 21, [ATLASLOOT_IT_ALLIANCE] = 70391, [ATLASLOOT_IT_HORDE] = 70394}, -- Ruthless Gladiator's Medallion of Meditation
+            { 22, [ATLASLOOT_IT_ALLIANCE] = 70392, [ATLASLOOT_IT_HORDE] = 70395}, -- Ruthless Gladiator's Medallion of Tenacity
         },
     }, {
         name = AL["Gladiator Mount"],
@@ -656,7 +756,7 @@ data["ArenaS10PvP"] = {
         }
     }}
 }
---[[ Test
+--[[ Later...
 data["ArenaS11PvP"] = {
     name = format(AL["Season %s"], "11"),
     ContentType = ARENA_CONTENT,
