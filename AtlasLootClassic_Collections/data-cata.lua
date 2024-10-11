@@ -380,7 +380,7 @@ data["ValorPoints T12"] = {
         name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
         [NORMAL_DIFF] = { -- Shaman
         {1, 71294}, -- Erupting Volcanic Hauberk
-        {2, 71292}, -- Erupting Volcanic Gloves 
+        {2, 71292}, -- Erupting Volcanic Gloves
         {3, 71291}, -- Erupting Volcanic Kilt
         {5, 71296}, -- Erupting Volcanic Tunic
         {6, 71297}, -- Erupting Volcanic Handwraps
@@ -528,31 +528,31 @@ data["ValorPoints T13"] = {
     }, {
         name = ALIL["Armor"] .. " - " .. ALIL["Accessories"],
         [NORMAL_DIFF] = { -- Plate
-    	{ 1, 77095}, -- Batwing Cloak
-    	{ 2, 77097}, -- Dreamcrusher Drape    	
+        { 1, 77095}, -- Batwing Cloak
+        { 2, 77097}, -- Dreamcrusher Drape    	
         { 3, 77099}, -- Indefatigable Greatcloak
-    	{ 4, 77098}, -- Nanoprecise Cape
-    	{ 5, 77096}, -- Woundlicker Cover
-    	{ 7, 77091}, -- Cameo of Terrible Memories
-    	{ 8, 77092}, -- Guardspike Choker
-    	{ 9, 77090}, -- Necklace of Black Dragon's Teeth
-    	{ 10, 77088}, -- Opal of the Secret Order
-    	{ 11, 77089}, -- Threadlinked Chain
-    	{ 13, 77081}, -- Gutripper Shard
-    	{ 14, 77083}, -- Lightning Spirit in a Bottle
-    	{ 15, 77082}, -- Mindbender Lens
-    	{ 16, 77109}, -- Band of Reconstruction
-    	{ 17, 77111}, -- Emergency Descent Loop
-    	{ 18, 77110}, -- Ring of Torn Flesh
-    	{ 19, 77108}, -- Seal of the Grand Architect
-    	{ 20, 77112}, -- Signet of the Resolute
-    	{ 22, 77114}, -- Bottled Wishes
-    	{ 23, 77117}, -- Fire of the Deep
-    	{ 24, 77113}, -- Kiroptyric Sigil
-    	{ 25, 77115}, -- Reflection of the Light
-    	{ 26, 77116}, -- Rotting Skull
-    	{ 28, 77080}, -- Ripfang Relic
-    	{ 29, 77084}, -- Stoutheart Talisman
+        { 4, 77098}, -- Nanoprecise Cape
+        { 5, 77096}, -- Woundlicker Cover
+        { 7, 77091}, -- Cameo of Terrible Memories
+        { 8, 77092}, -- Guardspike Choker
+        { 9, 77090}, -- Necklace of Black Dragon's Teeth
+        { 10, 77088}, -- Opal of the Secret Order
+        { 11, 77089}, -- Threadlinked Chain
+        { 13, 77081}, -- Gutripper Shard
+        { 14, 77083}, -- Lightning Spirit in a Bottle
+        { 15, 77082}, -- Mindbender Lens
+        { 16, 77109}, -- Band of Reconstruction
+        { 17, 77111}, -- Emergency Descent Loop
+        { 18, 77110}, -- Ring of Torn Flesh
+        { 19, 77108}, -- Seal of the Grand Architect
+        { 20, 77112}, -- Signet of the Resolute
+        { 22, 77114}, -- Bottled Wishes
+        { 23, 77117}, -- Fire of the Deep
+        { 24, 77113}, -- Kiroptyric Sigil
+        { 25, 77115}, -- Reflection of the Light
+        { 26, 77116}, -- Rotting Skull
+        { 28, 77080}, -- Ripfang Relic
+        { 29, 77084}, -- Stoutheart Talisman
         }
     }}
 }
