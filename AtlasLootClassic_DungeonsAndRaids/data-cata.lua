@@ -2573,7 +2573,7 @@ data["Firelands"] = {
         },
         { -- Shared Boss Loot
             name = AL["Shared Boss Loot"],
-            EncounterJournalID = 198,
+            ExtraList = true,
             [NORMAL_DIFF] = {
                 { 1, 71779 },	-- Avool's Incendiary Shanker
                 { 2, 71787 },	-- Entrail Disgorger
