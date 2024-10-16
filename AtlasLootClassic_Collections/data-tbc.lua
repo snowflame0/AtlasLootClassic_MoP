@@ -436,7 +436,8 @@ data["MountsBC"] = {
         name = AL["Drops"],
         [NORMAL_DIFF] = {{1, 32768}, -- Reins of the Raven Lord
         {3, 30480}, -- Fiery Warhorse's Reins
-        {5, 32458} -- Ashes of Al'ar
+        {16, 32458}, -- Ashes of Al'ar
+        {18, 35513} -- Swift White Hawkstrider
         }
     }, {
         name = AL["Reputation"],
@@ -709,12 +710,13 @@ data["MidsummerFestivalBC"] = {
     }}
 }
 
-data["Brewfest"] = {
+data["BrewfestBC"] = {
     name = AL["Brewfest"],
     ContentType = WORLD_EVENT_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.BC_VERSION_NUM,
+    CorrespondingFields = private.BREWFEST,
     items = {{ -- Brewfest
         name = AL["Brewfest"],
         [NORMAL_DIFF] = {{1, 33968}, -- Blue Brewfest Hat

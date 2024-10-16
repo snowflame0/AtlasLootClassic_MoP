@@ -19,7 +19,7 @@ local data = AtlasLoot.ItemDB:Add(addonname, 4, AtlasLoot.CATA_VERSION_NUM)
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
 
-local LFR_DIFF = data:AddDifficulty("LFR", nil, nil, nil, true)
+local RAIDFINDER_DIFF = data:AddDifficulty("Raid Finder", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 
@@ -163,26 +163,26 @@ local T13_SET = {
     TableType = SET_ITTYPE,
     ContentPhaseCata = 3,
     IgnoreAsSource = true,
-    [LFR_DIFF] = {
-     {1, 40001072 }, -- Warlock
-     {3, 40001066 }, -- Priest Holy
-     {4, 40001067 }, -- Priest Shadow
-     {6, 40001068 }, -- Rogue
-     {8, 40001061 }, -- Hunter
-     {10, 40001074 }, -- Warrior Tank
-     {11, 40001073 }, -- Warrior Dps
-     {13, 40001056 }, -- Death Knight Tank
-     {14, 40001057 }, -- Death Knight DPS
-     {16, 40001062 }, -- Mage
-     {18, 40001060 }, -- Druid Resto
-     {19, 40001059 }, -- Druid Balance
-      {20, 40001058 }, -- Druid Melee
-     {22, 40001069 }, -- Shaman Resto
-     {23, 40001070 }, -- Shaman Elemental
-     {24, 40001071 }, -- Shaman Enhance
-     {26, 40001063 }, -- Paladin Holy
-     {27, 40001065 }, -- Paladin Prot
-     {28, 40001064 }, -- Paladin DPS
+    [RAIDFINDER_DIFF] = {
+ 	{1, 40001072 }, -- Warlock
+ 	{3, 40001066 }, -- Priest Holy
+ 	{4, 40001067 }, -- Priest Shadow
+ 	{6, 40001068 }, -- Rogue
+ 	{8, 40001061 }, -- Hunter
+ 	{10, 40001074 }, -- Warrior Tank
+ 	{11, 40001073 }, -- Warrior Dps
+ 	{13, 40001056 }, -- Death Knight Tank
+ 	{14, 40001057 }, -- Death Knight DPS
+ 	{16, 40001062 }, -- Mage
+ 	{18, 40001060 }, -- Druid Resto
+ 	{19, 40001059 }, -- Druid Balance
+  	{20, 40001058 }, -- Druid Melee
+ 	{22, 40001069 }, -- Shaman Resto
+ 	{23, 40001070 }, -- Shaman Elemental
+ 	{24, 40001071 }, -- Shaman Enhance
+ 	{26, 40001063 }, -- Paladin Holy
+ 	{27, 40001065 }, -- Paladin Prot
+ 	{28, 40001064 }, -- Paladin DPS
     },
     [NORMAL_DIFF] = {
         {1, 40011072 }, -- Warlock
@@ -2573,8 +2573,7 @@ data["Firelands"] = {
         },
         { -- Shared Boss Loot
             name = AL["Shared Boss Loot"],
-            extraList = true,
-            EncounterJournalID = 200,
+            ExtraList = true,
             [NORMAL_DIFF] = {
                 { 1, 71779 },	-- Avool's Incendiary Shanker
                 { 2, 71787 },	-- Entrail Disgorger
@@ -2588,7 +2587,6 @@ data["Firelands"] = {
                 { 11, 69237 },	-- Living Ember
             },
             [HEROIC_DIFF] = {
-
                 { 1, 71778 },	-- Avool's Incendiary Shanker
                 { 2, 71786 },	-- Entrail Disgorger
                 { 3, 71784 },	-- Firethorn Mindslicer
@@ -2621,9 +2619,9 @@ data["Firelands"] = {
             },
         },
         { -- Firestones
-            name = AL["Firestone Vendor"],
+            name = ALIL["Firestone Vendor"],
             ExtraList = true,
-            [HEROIC_DIFF] = {
+            [NORMAL_DIFF] = {
                 { 1, 71641 },	-- Riplimb's Lost Collar
                 { 2, 71561 },	-- Hide-Bound Chains
                 { 4, 71563 },	-- Firebound Gorget
@@ -2670,6 +2668,39 @@ data["Firelands"] = {
                 { 19, 69958 },	-- Plans: Eternal Elementium Handguards
                 { 20, 69957 },	-- Plans: Fists of Fury
                 { 21, 69959 },	-- Plans: Holy Flame Gauntlets
+            },
+        },
+        { -- Avengers of Hyjal
+            name = ALIL["Avengers of Hyjal"],
+            ExtraList = true,
+            [NORMAL_DIFF] = {
+                {1, "f1204rep5"},
+                {2, 71229}, -- Flowing Flamewrath Cape
+                {3, 71227}, -- Bladed Flamewrath Cover
+                {4, 70930}, -- Durable Flamewrath Greatcloak
+                {5, 71228}, -- Sleek Flamewrath Cloak
+                {6, 71230}, -- Rippling Flamewrath Drape
+                {8, "f1204rep6"},
+                {9, 71258}, -- Embereye Belt
+                {10, 71249}, -- Firescar Sash
+                {11, 71131}, -- Flamebinding Girdle
+                {12, 71254}, -- Firemend Cinch
+                {13, 71255}, -- Firearrow Belt
+                {14, 71250}, -- Cinch of the Flaming Ember
+                {15, 70933}, -- Girdle of the Indomitable Flame
+                {16, 71253}, -- Belt of the Seven Seals
+                {18, "f1204rep7"},
+                {19, 69001}, -- Ancient Petrified Seed
+                {20, 68998}, -- Rune of Zeth
+                {21, 69000}, -- Fiery Quintessence
+                {22, 68996}, -- Stay of Execution
+                {23, 69002}, -- Essence of the Eternal Flame
+                {25, "f1204rep8"},
+                {26, 71237}, -- Quicksilver Signet of the Avengers
+                {27, 71215}, -- Obsidian Signet of the Avengers
+                {28, 70934}, -- Adamantine Signet of the Avengers
+                {29, 71216}, -- Viridian Signet of the Avengers
+                {30, 71217}, -- Infernal Signet of the Avengers
             },
         },
         { -- Legendary
@@ -2914,6 +2945,18 @@ data["DragonSoul"] = {
         { -- Morchok
             name = AL["Morchok"],
             EncounterJournalID = 311,
+             [RAIDFINDER_DIFF] = {
+                { 1, 78381 },	-- Mosswrought Shoulderguards
+                { 2, 78380 },	-- Robe of Glowing Stone
+                { 3, 78375 },	-- Underdweller's Spaulders
+                { 4, 78384 },	-- Mycosynth Wristguards
+                { 5, 78376 },	-- Sporebeard Gauntlets
+                { 6, 78385 },	-- Girdle of Shattered Stone
+                { 7, 78378 },	-- Brackenshell Shoulderplates
+                { 8, 78377 },	-- Rockhide Bracers
+                { 9, 78386 },	-- Pillarfoot Greaves
+                { 16, 78382 },	-- Petrified Fungal Heart
+            },
             [NORMAL_DIFF] = {
                 { 1, 77267 },	-- Mosswrought Shoulderguards
                 { 2, 77263 },	-- Robe of Glowing Stone
@@ -2947,23 +2990,11 @@ data["DragonSoul"] = {
                 { 22, "ac6109" },
                 { 23, "ac6174" },
             },
-            [LFR_DIFF] = {
-                { 1, 78381 },	-- Mosswrought Shoulderguards
-                { 2, 78380 },	-- Robe of Glowing Stone
-                { 3, 78375 },	-- Underdweller's Spaulders
-                { 4, 78384 },	-- Mycosynth Wristguards
-                { 5, 78376 },	-- Sporebeard Gauntlets
-                { 6, 78385 },	-- Girdle of Shattered Stone
-                { 7, 78378 },	-- Brackenshell Shoulderplates
-                { 8, 78377 },	-- Rockhide Bracers
-                { 9, 78386 },	-- Pillarfoot Greaves
-                { 16, 78382 },	-- Petrified Fungal Heart
-            },
         },
         { -- Warlord Zon'ozz
             name = AL["Warlord Zon'ozz"],
             EncounterJournalID = 324,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78398 },	-- Cord of the Slain Champion
                 { 2, 78395 },	-- Belt of Flayed Skin
                 { 3, 78400 },	-- Grotesquely Writhing Bracers
@@ -3008,7 +3039,7 @@ data["DragonSoul"] = {
         { -- Yor'sahj the Unsleeping
             name = AL["Yor'sahj the Unsleeping"],
             EncounterJournalID = 325,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78408 },	-- Interrogator's Bloody Footpads
                 { 2, 78411 },	-- Mindstrainer Treads
                 { 3, 78412 },	-- Heartblood Wristplates
@@ -3051,7 +3082,7 @@ data["DragonSoul"] = {
         { -- Hagara the Stormbinder
             name = AL["Hagara the Stormbinder"],
             EncounterJournalID = 317,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78425 },	-- Bracers of the Banished
                 { 2, 78428 },	-- Girdle of the Grotesque
                 { 3, 78423 },	-- Treads of Dormant Dreams
@@ -3096,7 +3127,7 @@ data["DragonSoul"] = {
         { -- Ultraxion
             name = AL["Ultraxion"],
             EncounterJournalID = 331,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78442 },	-- Treads of Sordid Screams
                 { 2, 78443 },	-- Imperfect Specimens 27 and 28
                 { 3, 78438 },	-- Bracers of Looming Darkness
@@ -3146,7 +3177,7 @@ data["DragonSoul"] = {
         { -- Warmaster Blackhorn
             name = AL["Warmaster Blackhorn"],
             EncounterJournalID = 332,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78457 },	-- Janglespur Jackboots
                 { 2, 78454 },	-- Shadow Wing Armbands
                 { 3, 78455 },	-- Belt of the Beloved Companion
@@ -3193,7 +3224,7 @@ data["DragonSoul"] = {
         { -- Spine of Deathwing
             name = AL["Spine of Deathwing"],
             EncounterJournalID = 318,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78466 },	-- Gloves of Liquid Smoke
                 { 2, 78467 },	-- Molten Blood Footpads
                 { 3, 78468 },	-- Belt of Shattered Elementium
@@ -3236,7 +3267,7 @@ data["DragonSoul"] = {
         { -- Madness of Deathwing
             name = AL["Madness of Deathwing"],
             EncounterJournalID = 333,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78484 },	-- Rathrak, the Poisonous Mind
                 { 2, 78483 },	-- Blade of the Unmaker
                 { 3, 78488 },	-- Souldrinker
@@ -3280,7 +3311,7 @@ data["DragonSoul"] = {
         { -- Shared
             name = AL["Shared Boss Loot"],
             ExtraList = true,
-            [LFR_DIFF] = {
+            [RAIDFINDER_DIFF] = {
                 { 1, 78497 },	-- Breathstealer Band
                 { 2, 78498 },	-- Hardheart Ring
                 { 3, 78495 },	-- Infinite Loop
@@ -3372,7 +3403,7 @@ data["DragonSoul"] = {
             { 3, 1087 }, -- Fangs of the Father / 416
             { 16, "ac6181" },
             { 17, "ac6182" },
-
+                
             },
         },
         T13_SET,

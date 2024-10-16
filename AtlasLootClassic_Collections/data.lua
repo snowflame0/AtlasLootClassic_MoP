@@ -24,7 +24,7 @@ local ALIL = AtlasLoot.IngameLocales
 
 local GetForVersion = AtlasLoot.ReturnForGameVersion
 
-local LFR_DIFF = data:AddDifficulty("LFR", nil, nil, nil, true)
+local RAIDFINDER_DIFF = data:AddDifficulty("Raid Finder", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 local RAID10_DIFF = data:AddDifficulty("10RAID")
@@ -601,17 +601,17 @@ data["TierSets"] = {
             name = format(AL["Tier %s Sets"], "13"),
             CoinTexture = "CATA",
             contentPhaseCata = 3,
-            [LFR_DIFF] = {
-                {1, 40001072 }, -- Warlock
-                {3, 40001066 }, -- Priest Holy
-                {4, 40001067 }, -- Priest Shadow
-                {6, 40001068 }, -- Rogue
-                {8, 40001061 }, -- Hunter
-                {10, 40001074 }, -- Warrior Tank
-                {11, 40001073 }, -- Warrior Dps
-                {13, 40001056 }, -- Death Knight Tank
-                {14, 40001057 }, -- Death Knight DPS
-                {16, 40001062 }, -- Mage
+            [RAIDFINDER_DIFF] = {
+            	{1, 40001072 }, -- Warlock
+            	{3, 40001066 }, -- Priest Holy
+            	{4, 40001067 }, -- Priest Shadow
+            	{6, 40001068 }, -- Rogue
+            	{8, 40001061 }, -- Hunter
+            	{10, 40001074 }, -- Warrior Tank
+            	{11, 40001073 }, -- Warrior Dps
+            	{13, 40001056 }, -- Death Knight Tank
+            	{14, 40001057 }, -- Death Knight DPS
+            	{16, 40001062 }, -- Mage
                 {18, 40001060 }, -- Druid Resto
                 {19, 40001059 }, -- Druid Balance
                 {20, 40001058 }, -- Druid Melee
@@ -1284,7 +1284,7 @@ data["Tabards"] = {
 }
 
 data["Legendarys"] = {
-    name = AL["Legendaries"],
+    name = AL["Legendarys"],
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
@@ -1292,7 +1292,7 @@ data["Legendarys"] = {
     CorrespondingFields = private.LEGENDARYS,
     items = {
         {
-            name = AL["Legendaries"],
+            name = AL["Legendarys"],
             [NORMAL_DIFF] = {
                 { 1,  19019, "ac428" }, -- Thunderfury, Blessed Blade of the Windseeker
 
@@ -1341,54 +1341,266 @@ data["Darkmoon"] = {
     ContentPhase = 3,
     items = {
         { -- Exalted
-            name = GetFactionInfoByID(909),
-            [NORMAL_DIFF] = {
-                { 1,  19491, 19182, [ATLASLOOT_IT_AMOUNT2] = 1200 }, -- Amulet of the Darkmoon
-                { 2,  19426, 19182, [ATLASLOOT_IT_AMOUNT2] = 1200 }, -- Orb of the Darkmoon
-                { 4,  19293, 19182, [ATLASLOOT_IT_AMOUNT2] = 50 }, -- Last Year's Mutton
-                { 5,  19291, 19182, [ATLASLOOT_IT_AMOUNT2] = 50 }, -- Darkmoon Storage Box
-                { 7,  9249, 19182, [ATLASLOOT_IT_AMOUNT2] = 40 }, -- Schematic: Steam Tonk Controller
-                { 8,  19296, 19182, [ATLASLOOT_IT_AMOUNT2] = 40 }, -- Greater Darkmoon Prize
-                { 10,  19297, 19182, [ATLASLOOT_IT_AMOUNT2] = 12 }, -- Lesser Darkmoon Prize
-                { 12,  19292, 19182, [ATLASLOOT_IT_AMOUNT2] = 10 }, -- Last Month's Mutton
-                { 14,  19298, 19182, [ATLASLOOT_IT_AMOUNT2] = 5 }, -- Minor Darkmoon Prize
-                { 15,  19295, 19182, [ATLASLOOT_IT_AMOUNT2] = 5 }, -- Darkmoon Flower
-            },
-        },
-        {
-            name = AL["Classic"],
+            name = AL["Decks"],
             [NORMAL_DIFF] = {
                 { 1,  19228 }, -- Darkmoon Card: Blue Dragon
                 { 2,  19267 }, -- Darkmoon Card: Maelstrom
                 { 3,  19257 }, -- Darkmoon Card: Heroism
                 { 4,  19277 }, -- Darkmoon Card: Twisting Nether
+                { 6,  31907 }, -- Darkmoon Card: Vengeance
+                { 7,  31890 }, -- Darkmoon Card: Crusade
+                { 8,  31891 }, -- Darkmoon Card: Wrath
+                { 9,  31914 }, -- Darkmoon Card: Madness
+                { 11, 44276 },	-- Chaos Deck
+                { 12, 44259 },	-- Prisms Deck
+                { 13, 44294 },	-- Undeath Deck
+                { 14, 44326 },	-- Nobles Deck
+                { 16, 62021 },	-- Volcanic Deck
+                { 17, 62044 },	-- Tsunami Deck
+                { 18, 62045 },	-- Hurricane Deck
+                { 19, 62046 },	-- Earthquake Deck
             },
         },
-        AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, {
-            name = AL["BC"],
+        {
+            name = ALIL["Replica Mage Sets"],
             [NORMAL_DIFF] = {
-                { 1,  31907 }, -- Darkmoon Card: Vengeance
-                { 2,  31890 }, -- Darkmoon Card: Crusade
-                { 3,  31891 }, -- Darkmoon Card: Wrath
-                { 4,  31914 }, -- Darkmoon Card: Madness
+                {1, 78190}, -- Replica Magister's Set
+                {2, 78186},
+                {3, 78187},
+                {4, 78188},
+                {5, 78189},
+                {6, 78191},
+                {7, 78192},
+                {8, 78193},
+                {16, 78200}, -- Replica Sorcerer's Set
+                {17, 78196},
+                {18, 78197},
+                {19, 78198},
+                {20, 78199},
+                {21, 78201},
+                {22, 78202},
+                {23, 78203},
             },
-        }),
-        AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, {
-            name = AL["Wrath"],
+        },
+        {
+            name = ALIL["Replica Warlock Sets"],
             [NORMAL_DIFF] = {
-                { 1, 44276 },	-- Chaos Deck
-                { 2, 44259 },	-- Prisms Deck
-                { 3, 44294 },	-- Undeath Deck
-                { 4, 44326 },	-- Nobles Deck
+                {1, 78225}, -- Replica Dreadmist Set
+                {2, 78224},
+                {3, 78223},
+                {4, 78227},
+                {5, 78228},
+                {6, 78226},
+                {7, 78222},
+                {8, 78229},
+                {16, 78237}, -- Replica Deathmist Set
+                {17, 78235},
+                {18, 78236},
+                {19, 78230},
+                {20, 78231},
+                {21, 78234},
+                {22, 78233},
+                {23, 78232},
             },
-        }),
-        AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM, {
-            name = AL["Cataclysm"],
+        },
+        {
+            name = ALIL["Replica Priest Sets"],
             [NORMAL_DIFF] = {
-                { 1, 62021 },	-- Volcanic Deck
-                { 2, 62044 },	-- Tsunami Deck
-                { 3, 62045 },	-- Hurricane Deck
-                { 4, 62046 },	-- Earthquake Deck
+                {1, 78209}, -- Replica Devout Set
+                {2, 78210},
+                {3, 78208},
+                {4, 78205},
+                {5, 78206},
+                {6, 78204},
+                {7, 78207},
+                {8, 78211},
+                {16, 78212}, -- Replica Virtuous Set
+                {17, 78219},
+                {18, 78217},
+                {19, 78216},
+                {20, 78214},
+                {21, 78213},
+                {22, 78218},
+                {23, 78215},
+            },
+        },
+        {
+            name = ALIL["Replica Druid Sets"],
+            [NORMAL_DIFF] = {
+                {1, 78242}, -- Replica Wildheart Set
+                {2, 78243},
+                {3, 78241},
+                {4, 78238},
+                {5, 78245},
+                {6, 78239},
+                {7, 78244},
+                {8, 78240},
+                {16, 78252}, -- Replica Feralheart Set
+                {17, 78251},
+                {18, 78248},
+                {19, 78249},
+                {20, 78250},
+                {21, 78247},
+                {22, 78246},
+                {23, 78253},
+            },
+        },
+        {
+            name = ALIL["Replica Rogue Sets"],
+            [NORMAL_DIFF] = {
+                {1, 78254}, -- Replica Shadowcraft Set
+                {2, 78256},
+                {3, 78257},
+                {4, 78260},
+                {5, 78258},
+                {6, 78261},
+                {7, 78259},
+                {8, 78255},
+                {16, 78269}, -- Replica Darkmantle Set
+                {17, 78262},
+                {18, 78266},
+                {19, 78263},
+                {20, 78268},
+                {21, 78267},
+                {22, 78265},
+                {23, 78264},
+            },
+        },
+        {
+            name = ALIL["Replica Hunter Sets"],
+            [NORMAL_DIFF] = {
+                {1, 78270}, -- Replica Beaststalker's Set
+                {2, 78272},
+                {3, 78271},
+                {4, 78275},
+                {5, 78276},
+                {6, 78273},
+                {7, 78274},
+                {8, 78277},
+                {16, 78282}, -- Replica Beastmaster's Set
+                {17, 78279},
+                {18, 78278},
+                {19, 78284},
+                {20, 78280},
+                {21, 78281},
+                {22, 78285},
+                {23, 78283},
+            },
+        },
+        {
+            name = ALIL["Replica Shaman Sets"],
+            [NORMAL_DIFF] = {
+                {1, 78290}, -- Replica Elements Set
+                {2, 78292},
+                {3, 78291},
+                {4, 78286},
+                {5, 78287},
+                {6, 78288},
+                {7, 78293},
+                {8, 78289},
+                {16, 78300}, -- Replica The Five Thunders Set
+                {17, 78298},
+                {18, 78295},
+                {19, 78294},
+                {20, 78301},
+                {21, 78299},
+                {22, 78297},
+                {23, 78296},
+            },
+        },
+        {
+            name = ALIL["Replica Paladin Sets"],
+            [NORMAL_DIFF] = {
+                {1, 78306}, -- Replica Lightforge Set
+                {2, 78309},
+                {3, 78303},
+                {4, 78307},
+                {5, 78305},
+                {6, 78308},
+                {7, 78302},
+                {8, 78304},
+                {16, 78313}, -- Replica Soulforge Set
+                {17, 78310},
+                {18, 78314},
+                {19, 78312},
+                {20, 78315},
+                {21, 78316},
+                {22, 78311},
+                {23, 78317},
+            },
+        },
+        {
+            name = ALIL["Replica Warrior Sets"],
+            [NORMAL_DIFF] = {
+                {1, 78323}, -- Replica Valor Set
+                {2, 78318},
+                {3, 78320},
+                {4, 78322},
+                {5, 78324},
+                {6, 78325},
+                {7, 78319},
+                {8, 78321},
+                {16, 78328}, -- Replica Soulforge Set
+                {17, 78326},
+                {18, 78329},
+                {19, 78330},
+                {20, 78331},
+                {21, 78332},
+                {22, 78333},
+                {23, 78327},
+            },
+        },
+        {
+            name = ALIL["Pets / Mounts / Misc"],
+            [NORMAL_DIFF] = {
+                {1, 73766}, -- Darkmoon Dancing Bear
+                {2, 72140}, -- Swift Forest Strider
+                {4, 73762}, -- Darkmoon Balloon
+                {5, 73764}, -- Darkmoon Monkey
+                {6, 73765}, -- Darkmoon Turtle
+                {7, 73903}, -- Darkmoon Tonk
+                {8, 73905}, -- Darkmoon Zeppelin
+                {9, 74981}, -- Darkmoon Cub
+                {11, 73953}, -- Sea Pony
+                {12, 19450}, -- Jubling
+                {14, 77158}, -- Darkmoon "Tiger"
+                {15, 19291}, -- Darkmoon Storage Box
+                {16, 19295}, -- Darkmoon Flower
+                {17, 77256}, -- Darkmoon "Sword"
+                {18, 78341}, -- Darkmoon Hammer
+                {19, 78340}, -- Cloak of the Darkmoon Faire
+                {21, 74034}, -- Pit Fighter
+                {30, "SPECIAL_ACHIEVEMENT", nil, AL["Achievements"], nil, "AC_DarkmoonFaire"},
+          },
+      }, 
+        AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM,{
+        name = AL["Heirlooms"],
+        [NORMAL_DIFF] = {
+        {1, 42985}, -- Tattered Dreadmist Mantle
+        {2, 48691}, -- Tattered Dreadmist Robe
+        {4, 42952}, -- Stained Shadowcraft Spaulders
+        {5, 42984}, -- Preened Ironfeather Shoulders
+        {6, 48689}, -- Stained Shadowcraft Tunic
+        {7, 48687}, -- Preened Ironfeather Breastplate
+        {9, 42950}, -- Champion Herod's Shoulder
+        {10, 42951}, -- Mystical Pauldrons of Elements
+        {11, 48677}, -- Champion's Deathdealer Breastplate
+        {12, 48683}, -- Mystical Vest of Elements
+        {14, 42992}, -- Discerning Eye of the Beast
+        {15, 42991}, -- Swift Hand of Justice
+        {16, 42949}, -- Polished Spaulders of Valor
+        {17, 48685}, -- Polished Breastplate of Valor
+        {18, 69890}, -- Burnished Pauldrons of Might
+        {19, 69889}, -- Burnished Breastplate of Might
+        {21, 69893}, -- Bloodsoaked Skullforge Reaver
+        {22, 48716}, -- Venerable Mass of McGowan
+        {23, 42944}, -- Balanced Heartseeker
+        {24, 42945}, -- Venerable Dal'Rend's Sacred Charge
+        {25, 42948}, -- Devout Aurastone Hammer
+        {26, 42947}, -- Dignified Headmaster's Charge
+        {27, 42946}, -- Charmed Ancient Bone Bow
+        {28, 42943}, -- Bloodied Arcanite Reaper
+        {29, 48718}, -- Repurposed Lava Dredger
             },
         }),
     },
@@ -1998,7 +2210,6 @@ data["ScourgeInvasion"] = {
         },
     },
 }
-
 data["MoltenFront"] = {
     name = AL["Molten Front"],
     ContentType = COLLECTIONS_CONTENT,

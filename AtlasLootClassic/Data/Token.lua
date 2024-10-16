@@ -232,7 +232,6 @@ TOKEN_DATA.CLASSIC = {
 	[12871] = { 12895, 0, 12903, 12945, type = 4 }, -- Chromatic Carapace
 	[18706] = { {18706, 12}, 0, 19024, type = 4 }, -- Arena Master
 
-
 	[22523] = { 22523, 22524, 0,
 				22689, 22690, 22681, 22680, 22688, 22679, 0,
 				22667, 22668, 22657, 22659, 22678, 22656, type = 4 }, -- Insignia of the Dawn
@@ -1122,7 +1121,10 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
 		["BH_AL_PALADIN_T"] = {77004, 77006, type = 9},
 		--- Misc
 		[44951] = { { 41119, "24-40" }, type = 11 },
-		[71086] = {71084, 71085}, -- Dragonwrath, Tarecgosa's Rest
+		[71086] = {71084, 71085, type = 3}, -- Dragonwrath, Tarecgosa's Rest
+	        [74034] = { {74034, 12}, 0, 74035, type = 3 }, -- Pit Fighter
+                --- Darkmoon Faire Achievements   
+		["AC_DarkmoonFaire"] = {"ac6019", "ac6020", "ac6021", "ac6022", "ac6023", "ac6024", "ac6025", "ac6026", "ac6027", "ac6028", "ac6029", "ac6030", "ac6031", "ac6032", type = 10},
 	}
 end
 

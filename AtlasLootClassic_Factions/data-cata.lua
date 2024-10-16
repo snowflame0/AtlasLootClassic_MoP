@@ -95,12 +95,12 @@ data["AvengersOfHyjal"] = {
             [NORMAL_DIFF] = {
                 {1, "f1204rep6"},
                 {2, 71258}, -- Embereye Belt
-                {3, 71250}, -- Cinch of the Flaming Ember
-                {4, 71249}, -- Firescar Sash
-                {5, 70933}, -- Girdle of the Indomitable Flame
-                {6, 71254}, -- Firemend Cinch
-                {7, 71255}, -- Firearrow Belt
-                {8, 71131}, -- Flamebinding Girdle
+                {3, 71249}, -- Firescar Sash
+                {4, 71131}, -- Flamebinding Girdle
+                {5, 71254}, -- Firemend Cinch
+                {6, 71255}, -- Firearrow Belt
+                {7, 71250}, -- Cinch of the Flaming Ember
+                {8, 70933}, -- Girdle of the Indomitable Flame
                 {9, 71253}, -- Belt of the Seven Seals
             },
         },

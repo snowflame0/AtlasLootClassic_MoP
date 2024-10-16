@@ -1016,8 +1016,9 @@ data["MountsWrath"] = {
         {11, 43953}, -- Reins of the Blue Drake
         {16, 44168}, -- Reins of the Time-Lost Proto-Drake
         {17, 44151}, -- Reins of the Blue Proto-Drake
-        {19, [ATLASLOOT_IT_ALLIANCE] = 43959, [ATLASLOOT_IT_HORDE] = 44083}, --  Reins of the Grand Black War Mammoth
-        {21, 43962}, -- Reins of the White Polar Bear
+        {18, 44707}, -- Reins of the Green Proto-Drake
+        {20, [ATLASLOOT_IT_ALLIANCE] = 43959, [ATLASLOOT_IT_HORDE] = 44083}, --  Reins of the Grand Black War Mammoth
+        {22, 43962}, -- Reins of the White Polar Bear      
         }
     }, {
         name = AL["Crafting"],
@@ -1053,11 +1054,11 @@ data["MountsWrath"] = {
         name = AL["Unobtainable"],
         TableType = AC_ITTYPE,
         [NORMAL_DIFF] = {AtlasLoot:GetRetByFaction({1, 49046, 3810}, {1, 49044, 3810}), -- Swift Horde Wolf / Swift Alliance Steed
-        AtlasLoot:GetRetByFaction({2, 49098, 4156}, {2, 49096, 4156}), -- Crusader's Black Warhorse / Crusader's White Warhorse
+        AtlasLoot:GetRetByFaction({2, 49098, 4156}, {2, 49096, 4156}), -- Crusader's Black Warhorse / Crusader's White Warhorse 
         {4, 46708}, -- Deadly Gladiator's Frost Wyrm
         {5, 46171}, -- Furious  Gladiator's Frost Wyrm
         {6, 47840}, -- Relentless Gladiator's Frost Wyrm
-        {7, 50435} -- Wrathful Gladiator's Frost Wyrm
+        {7, 50435} -- Wrathful Gladiator's Frost Wyrm  
         }
     }, {
         name = ALIL["Achievements"],
@@ -1402,6 +1403,7 @@ data["BrewfestWrath"] = {
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
+    CorrespondingFields = private.BREWFEST,
     items = {{ -- Brewfest
         name = AL["Brewfest"],
         [NORMAL_DIFF] = {{1, 33968}, -- Blue Brewfest Hat
@@ -1414,18 +1416,14 @@ data["BrewfestWrath"] = {
         {8, 33868}, -- Brewfest Boots
         {10, 33047}, -- Belbi's Eyesight Enhancing Romance Goggles (Alliance)
         {11, 34008}, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
-        {13, 33016}, -- Blue Brewfest Stein
+        {13, 33927}, -- Brewfest Pony Keg
         {15, 37829}, -- Brewfest Prize Token
-        {16, 33976}, -- Brewfest Ram
-        {17, 33977}, -- Swift Brewfest Ram
-        {19, 32233}, -- Wolpertinger's Tankard
-        {21, 34028}, -- "Honorary Brewer" Hand Stamp
-        {22, 37599}, -- "Brew of the Month" Club Membership Form
-        {24, 33927}, -- Brewfest Pony Keg
-        {26, 37750}, -- Fresh Brewfest Hops
-        {27, 39477}, -- Fresh Dwarven Brewfest Hops
-        {28, 39476}, -- Fresh Goblin Brewfest Hops
-        {29, 37816} -- Preserved Brewfest Hops
+        {16, 32233}, -- Wolpertinger's Tankard
+        {18, 37599}, -- "Brew of the Month" Club Membership Form
+        {20, 37750}, -- Fresh Brewfest Hops
+        {21, 39477}, -- Fresh Dwarven Brewfest Hops
+        {22, 39476}, -- Fresh Goblin Brewfest Hops
+        {23, 37816} -- Preserved Brewfest Hops
         }
     }, {
         name = AL["Food"],

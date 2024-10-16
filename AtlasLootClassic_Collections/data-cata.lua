@@ -27,7 +27,7 @@ local ALIL = AtlasLoot.IngameLocales
 
 local GetForVersion = AtlasLoot.ReturnForGameVersion
 
-local LFR_DIFF = data:AddDifficulty("LFR", nil, nil, nil, true)
+local RAIDFINDER_DIFF = data:AddDifficulty("Raid Finder", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 
@@ -195,8 +195,8 @@ data["JusticePoints P1"] = {
     }}
 }
 
-data["ValorPoints P1"] = {
-    name = format(AL["'%s' Vendor"], AL["Valor Points P1"]),
+data["ValorPoints T11"] = {
+    name = format(AL["'%s' Vendor"], AL["Valor Points T11"]),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
@@ -330,16 +330,14 @@ data["ValorPoints P1"] = {
         }
     }}
 }
-
-data["ValorPoints P2"] = {
-    name = format(AL["'%s' Vendor"], AL["Valor Points P2"]),
+data["ValorPoints T12"] = {
+    name = format(AL["'%s' Vendor"], AL["Valor Points T12"]),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
     items = {{
         name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
-        [NORMAL_DIFF] = {
-        -- Mage
+        [NORMAL_DIFF] = { -- Mage
         {1, 71289}, -- Firehawk Robes
         {2, 71286}, -- Firehawk Gloves
         {3, 71288}, -- Firehawk Leggings
@@ -430,43 +428,135 @@ data["ValorPoints P2"] = {
         {30, 71261} -- Gigantform Bracers
         }
     }, {
-        name = ALIL["Armor"] .. " - " .. ALIL["Neck"],
-        [NORMAL_DIFF] = { -- Head
+        name = ALIL["Armor"] .. " - " .. ALIL["Accessories"],
+        [NORMAL_DIFF] = { -- Misc
         {1, 71213}, -- Amulet of Burning Brilliance
         {2, 71214}, -- Firemind Pendant
         {3, 71129}, -- Necklace of Smoke Signals
         {4, 71212}, -- Stoneheart Choker
-        {5, 70935} -- Stoneheart Necklace
-        }
-    }, {
-        name = ALIL["Armor"] .. " - " .. ALIL["Ring"],
-        [NORMAL_DIFF] = { -- Head
-        {1, 71210}, -- Crystalline Brimstone Ring
-        {2, 70940}, -- Deflecting Brimstone Band
-        {3, 71208}, -- Serrated Brimstone Signet
-        {4, 71211}, -- Soothing Brimstone Circle
-        {5, 71209} -- Splintered Brimstone Seal
-        }
-    }, {
-        name = ALIL["Relic"],
-        [NORMAL_DIFF] = { -- Head
-        {1, 70939}, -- Deathclutch Figurine
-        {2, 71147}, -- Relic of the Elemental Lords
-        {3, 71149}, -- Singed Plume of Aviana
-        {4, 71146}, -- Covenant of the Flame
-        {5, 71148} -- Soulflame Vial
-        }
-    }, {
-        name = ALIL["Wand"],
-        [NORMAL_DIFF] = { -- Head
-        {1, 71150}, -- Scorchvine Wand
-        {2, 71151}, -- Trail of Embers
-        {3, 71152}, -- Morningstar Shard
-        {4, 71154}, -- Giantslicer
-        {5, 71218} -- Deflecting Star
+        {5, 70935}, -- Stoneheart Necklace
+        {7, 71210}, -- Crystalline Brimstone Ring
+        {8, 70940}, -- Deflecting Brimstone Band
+        {9, 71208}, -- Serrated Brimstone Signet
+        {10, 71211}, -- Soothing Brimstone Circle
+        {11, 71209}, -- Splintered Brimstone Seal
+        {16, 70939}, -- Deathclutch Figurine
+        {17, 71147}, -- Relic of the Elemental Lords
+        {18, 71149}, -- Singed Plume of Aviana
+        {19, 71146}, -- Covenant of the Flame
+        {20, 71148}, -- Soulflame Vial
+        {22, 71150}, -- Scorchvine Wand
+        {23, 71151}, -- Trail of Embers
+        {25, 71152}, -- Morningstar Shard
+        {26, 71154}, -- Giantslicer
+        {27, 71218}, -- Deflecting Star
         }
     }}
 }
+data["ValorPoints T13"] = {
+    name = format(AL["'%s' Vendor"], AL["Valor Points T13"]),
+    ContentType = VENDOR_CONTENT,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    items = {{
+        name = ALIL["Armor"] .. " - " .. ALIL["Cloth / Leather"],
+        [NORMAL_DIFF] = { -- Cloth
+        {1, 77147}, -- Hood of Hidden Flesh
+        {2, 77122}, -- Robes of Searing Shadow
+        {3, 77324}, -- Chronoboost Bracers
+        {4, 77159}, -- Clockwinder's Immaculate Gloves
+        {5, 77179}, -- Tentacular Belt
+        {6, 77176}, -- Kavan's Forsaken Treads
+        {8, 77146}, -- Soulgaze Cowl
+        {9, 77121}, -- Lightwarper Vestments
+        {10, 77323}, -- Bracers of the Black Dream
+        {11, 77157}, -- The Hands of Gilly
+        {12, 77187}, -- Vestal's Irrepressible Girdle
+        {13, 77177}, -- Splinterfoot Sandals
+             -- Leather
+        {16, 77149}, -- Helmet of Perpetual Rebirth
+        {17, 77127}, -- Decaying Herbalist's Robes
+        {18, 77320}, -- Luminescent Bracers
+        {19, 77160}, -- Fungus-Born Gloves
+        {20, 77181}, -- Belt of Universal Curing
+        {21, 77172}, -- Boots of Fungoid Growth
+        {23, 77148}, -- Nocturnal Gaze
+        {24, 77126}, -- Shadowbinder Chestguard
+        {25, 77322}, -- Bracers of Manifold Pockets
+        {26, 77161}, -- Lightfinger Handwraps
+        {27, 77180}, -- Belt of Hidden Keys
+        {28, 77173}, -- Rooftop Griptoes
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
+        [NORMAL_DIFF] = { -- Mail
+        {1, 77151}, -- Wolfdream Circlet
+        {2, 77125}, -- Ghostworld Chestguard
+        {3, 77319}, -- Bracers of the Spectral Wolf
+        {4, 77163}, -- Gloves of Ghostly Dreams
+        {5, 77183}, -- Girdle of Shamanic Fury
+        {6, 77174}, -- Sabatons of the Graceful Spirit
+        {8, 77150}, -- Zeherah's Dragonskull Crown
+        {9, 77124}, -- Dragonflayer Vest
+        {10, 77321}, -- Dragonbelly Bracers
+        {11, 77162}, -- Arrowflick Gauntlets
+        {12, 77182}, -- Cord of Dragon Sinew
+        {13, 77175}, -- Boneshard Boots
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Plate"],
+        [NORMAL_DIFF] = { -- Plate
+        {1, 77153}, -- Glowing Wings of Hope
+        {2, 77123}, -- Shining Carapace of Glory
+        {3, 77316}, -- Flashing Bracers of Warmth
+        {4, 77164}, -- Gleaming Grips of Mending
+        {5, 77184}, -- Blinding Girdle of Truth
+        {6, 77169}, -- Silver Sabatons of Fury
+        {8, 77155}, -- Visage of Petrification
+        {9, 77119}, -- Bones of the Damned
+        {10, 77317}, -- Heartcrusher Wristplates
+        {11, 77165}, -- Grimfist Crushers
+        {12, 77185}, -- Demonbone Waistguard
+        {13, 77170}, -- Kneebreaker Boots
+        {16, 77156}, -- Jaw of Repudiation
+        {17, 77120}, -- Chestplate of the Unshakable Titan
+        {18, 77318}, -- Bracers of Unrelenting Excellence
+        {19, 77166}, -- Gauntlets of Feathery Blows
+        {20, 77186}, -- Forgesmelter Waistplate
+        {21, 77171}, -- Bladeshatter Treads
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Accessories"],
+        [NORMAL_DIFF] = { -- Plate
+        { 1, 77095}, -- Batwing Cloak
+        { 2, 77097}, -- Dreamcrusher Drape    	
+        { 3, 77099}, -- Indefatigable Greatcloak
+        { 4, 77098}, -- Nanoprecise Cape
+        { 5, 77096}, -- Woundlicker Cover
+        { 7, 77091}, -- Cameo of Terrible Memories
+        { 8, 77092}, -- Guardspike Choker
+        { 9, 77090}, -- Necklace of Black Dragon's Teeth
+        { 10, 77088}, -- Opal of the Secret Order
+        { 11, 77089}, -- Threadlinked Chain
+        { 13, 77081}, -- Gutripper Shard
+        { 14, 77083}, -- Lightning Spirit in a Bottle
+        { 15, 77082}, -- Mindbender Lens
+        { 16, 77109}, -- Band of Reconstruction
+        { 17, 77111}, -- Emergency Descent Loop
+        { 18, 77110}, -- Ring of Torn Flesh
+        { 19, 77108}, -- Seal of the Grand Architect
+        { 20, 77112}, -- Signet of the Resolute
+        { 22, 77114}, -- Bottled Wishes
+        { 23, 77117}, -- Fire of the Deep
+        { 24, 77113}, -- Kiroptyric Sigil
+        { 25, 77115}, -- Reflection of the Light
+        { 26, 77116}, -- Rotting Skull
+        { 28, 77080}, -- Ripfang Relic
+        { 29, 77084}, -- Stoutheart Talisman
+        }
+    }}
+}
+
 
 -- shared!
 data["WorldEpicsCata"] = {
@@ -501,7 +591,7 @@ data["WorldEpicsCata"] = {
             {20, 67146}, -- Woundsplicer Handwraps
             {21, 67132}, -- Grips of the Failed Immortal
             {22, 67142}, -- Zom's Electrostatic Cloak
-            }
+        }
     }}
 }
 
@@ -522,7 +612,6 @@ data["Weapon Sets"] = {
             }
     }}
 }
-
 data["MountsCata"] = {
     name = ALIL["Mounts"],
     ContentType = COLLECTIONS_CONTENT,
@@ -539,23 +628,29 @@ data["MountsCata"] = {
         name = AL["Drops"],
         [NORMAL_DIFF] = {{1, 63043}, -- Reins of the Vitreous Stone Drake
                         {2, 63042}, -- Reins of the Phosphorescent Stone Drake
-                        {3, 63040}, -- Reins of the Drake of the North Wind
-                        {4, 63041}, -- Reins of the Drake of the South Wind
-                        {5, 69224}, -- Smoldering Egg of Millagazor
-                        {6, 71665}, -- Flametalon of Alysrazor
-                        {7, 77067}, -- Reins of the Blazing Drake
-                        {8, 77069}, -- Life-Binder's Handmaiden
-                        {9, 78919}, -- Experiment 12-B
-                        {10, 69747}, -- Amani Battle Bear
-                        {11, 68823}, -- Armored Razzashi Raptor
-                        {12, 68824}, -- Swift Zulian Panther
-                        {13, 67151}, -- Reins of Poseidus
+                        {4, 63040}, -- Reins of the Drake of the North Wind
+                        {5, 63041}, -- Reins of the Drake of the South Wind
+                        {7, 69224}, -- Smoldering Egg of Millagazor
+                        {8, 71665}, -- Flametalon of Alysrazor
+                        {10, 77067}, -- Reins of the Blazing Drake
+                        {11, 77069}, -- Life-Binder's Handmaiden
+                        {12, 78919}, -- Experiment 12-B
+                        {14, 68823}, -- Armored Razzashi Raptor
+                        {15, 68824}, -- Swift Zulian Panther
+                        {16, 69747}, -- Amani Battle Bear
+                        {18, 67151}, -- Reins of Poseidus
         }
     }, {
         name = AL["Crafting"],
         [NORMAL_DIFF] = {{1, 65891}, -- Vial of the Sands
                         {3, 60954}, -- Fossilized Raptor
                         {5, 64883}, -- Scepter of Azj'Aqir
+        }
+    }, {
+        name = AL["Factions"],
+        [NORMAL_DIFF] = {
+                        {1, [ATLASLOOT_IT_ALLIANCE] = 63039, [ATLASLOOT_IT_HORDE] = 65356},
+                        {2, [ATLASLOOT_IT_ALLIANCE] = 64998, [ATLASLOOT_IT_HORDE] = 64999},
         }
     }, {
         name = AL["Darkmoon Faire"],
@@ -651,14 +746,14 @@ data["TabardsCata"] = {
 }
 
 data["LegendarysCata"] = {
-    name = AL["Legendaries"],
+    name = AL["Legendarys"],
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
     CorrespondingFields = private.LEGENDARYS,
     items = {{
-        name = AL["Legendaries"],
+        name = AL["Legendarys"],
         [NORMAL_DIFF] = {
         {1, 71086, "ac5839"}, -- Dragonwrath, Tarecgosa's Rest
         {16, 77949, "ac6181"}, -- Golad, Twilight of Aspects
@@ -689,6 +784,133 @@ data["HeirloomCata"] = {
             {20, 61942}, -- Preened Tribal War Feathers
             {21, 61937}, -- Stained Shadowcraft Cap
             {22, 61958} -- Tattered Dreadmist Mask
+        }
+    }}
+}
+
+data["BrewfestCata"] = {
+    name = AL["Brewfest"],
+    ContentType = WORLD_EVENT_CONTENT,
+    LoadDifficulty = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.BREWFEST,
+    items = {{ -- Brewfest
+        name = AL["Brewfest"],
+        [NORMAL_DIFF] = {{1, 33968}, -- Blue Brewfest Hat
+        {2, 33864}, -- Brown Brewfest Hat
+        {3, 33967}, -- Green Brewfest Hat
+        {4, 33969}, -- Purple Brewfest Hat
+        {5, 33863}, -- Brewfest Dress
+        {6, 33862}, -- Brewfest Regalia
+        {7, 33966}, -- Brewfest Slippers
+        {8, 33868}, -- Brewfest Boots
+        {10, 33047}, -- Belbi's Eyesight Enhancing Romance Goggles (Alliance)
+        {11, 34008}, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
+        {13, 33927}, -- Brewfest Pony Keg
+        {15, 37829}, -- Brewfest Prize Token
+        {16, 32233}, -- Wolpertinger's Tankard
+        {18, 37599}, -- "Brew of the Month" Club Membership Form
+        {20, 37750}, -- Fresh Brewfest Hops
+        {21, 39477}, -- Fresh Dwarven Brewfest Hops
+        {22, 39476}, -- Fresh Goblin Brewfest Hops
+        {23, 37816} -- Preserved Brewfest Hops
+        }
+    }, {
+        name = AL["Food"],
+        [NORMAL_DIFF] = {{1, 33043}, -- The Essential Brewfest Pretzel
+        {3, 34017}, -- Small Step Brew
+        {4, 34018}, -- long Stride Brew
+        {5, 34019}, -- Path of Brew
+        {6, 34020}, -- Jungle River Water
+        {7, 34021}, -- Brewdoo Magic
+        {8, 34022}, -- Stout Shrunken Head
+        {9, 33034}, -- Gordok Grog
+        {10, 33035}, -- Ogre Mead
+        {11, 33036} -- Mudder's Milk
+        }
+    }, {
+        name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
+        [NORMAL_DIFF] = {{1, 232017}, -- Bitter Balebrew Charm
+        {2, 232016}, -- Bubbling Brightbrew Charm
+        {3, 232012}, -- Coren's Chromium Coaster
+        {4, 232013}, -- Mithril Pocketwatch
+        {5, 232014}, -- Ancient Pickled Egg
+        {6, 232015}, -- Brawler's Souvenir
+        {8, 232030}, -- Direbrew's Bloody Shanker
+        {9, 232031}, -- Tankard O' Terror
+        {16, 33977}, -- Swift Brewfest Ram
+        {17, 37828}, -- Great Brewfest Kodo
+        {19, 37863}, -- Direbrew's Remote
+        {21, 38280} -- Direbrew's Dire Brew
+        }
+    }}
+}
+
+data["HalloweenCata"] = {
+    name = AL["Hallow's End"],
+    ContentType = WORLD_EVENT_CONTENT,
+    LoadDifficulty = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.HALLOWEEN,
+    items = {{ -- Halloween1
+        name = AL["Hallow's End"] .. " - " .. AL["Misc"],
+        [NORMAL_DIFF] = {{1, 20400}, -- Pumpkin Bag
+        {3, 18633}, -- Styleen's Sour Suckerpop
+        {4, 18632}, -- Moonbrook Riot Taffy
+        {5, 18635}, -- Bellara's Nutterbar
+        {6, 20557}, -- Hallow's End Pumpkin Treat
+        {8, 20389}, -- Candy Corn
+        {9, 20388}, -- Lollipop
+        {10, 20390} -- Candy Bar
+        }
+    }, { -- Halloween1
+        name = AL["Hallow's End"] .. " - " .. AL["Wands"],
+        [NORMAL_DIFF] = {{1, 20410}, -- Hallowed Wand - Bat
+        {2, 20409}, -- Hallowed Wand - Ghost
+        {3, 20399}, -- Hallowed Wand - Leper Gnome
+        {4, 20398}, -- Hallowed Wand - Ninja
+        {5, 20397}, -- Hallowed Wand - Pirate
+        {6, 20413}, -- Hallowed Wand - Random
+        {7, 20411}, -- Hallowed Wand - Skeleton
+        {8, 20414} -- Hallowed Wand - Wisp
+        }
+    }, { -- Halloween3
+        name = AL["Hallow's End"] .. " - " .. AL["Masks"],
+        [NORMAL_DIFF] = {{1, 20561}, -- Flimsy Male Dwarf Mask
+        {2, 20391}, -- Flimsy Male Gnome Mask
+        {3, 20566}, -- Flimsy Male Human Mask
+        {4, 20564}, -- Flimsy Male Nightelf Mask
+        {5, 20570}, -- Flimsy Male Orc Mask
+        {6, 20572}, -- Flimsy Male Tauren Mask
+        {7, 20568}, -- Flimsy Male Troll Mask
+        {8, 20573}, -- Flimsy Male Undead Mask
+        {16, 20562}, -- Flimsy Female Dwarf Mask
+        {17, 20392}, -- Flimsy Female Gnome Mask
+        {18, 20565}, -- Flimsy Female Human Mask
+        {19, 20563}, -- Flimsy Female Nightelf Mask
+        {20, 20569}, -- Flimsy Female Orc Mask
+        {21, 20571}, -- Flimsy Female Tauren Mask
+        {22, 20567}, -- Flimsy Female Troll Mask
+        {23, 20574} -- Flimsy Female Undead Mask
+        }
+    }, { -- SMHeadlessHorseman
+        name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
+        [NORMAL_DIFF] = {{1, 211817}, -- Ring of Ghoulish Glee
+        {2, 211844}, -- The Horseman's Seal
+        {3, 211847}, -- Wicked Witch's Band
+        {5, 211850}, -- The Horseman's Horrific Helm
+        {6, 211851}, -- The Horseman's Baleful Blade
+        {8, 33292}, -- Hallowed Helm
+        {10, 34068}, -- Weighted Jack-o'-Lantern
+        {12, 33277}, -- Tome of Thomas Thomson
+        {16, 37012}, -- The Horseman's Reins
+        {18, 33182}, -- Swift Flying Broom        280% flying
+        {19, 33176}, -- Flying Broom              60% flying
+        {21, 33184}, -- Swift Magic Broom         100% ground
+        {22, 37011}, -- Magic Broom               60% ground
+        {24, 33154} -- Sinister Squashling
         }
     }}
 }

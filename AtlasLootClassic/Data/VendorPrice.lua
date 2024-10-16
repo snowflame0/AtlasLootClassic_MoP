@@ -107,7 +107,7 @@ local PRICE_INFO_LIST = {
     ["ArcticFur"] = {
         itemID = 44128
     }, -- Arctic Fur
-    ["championsSeal"] = {
+    ["championSeal"] = {
         currencyID = 241
     }, -- Champion's Seal
     ["EmblemOfHeroism"] = {
@@ -172,6 +172,17 @@ local PRICE_INFO_LIST = {
     ["ValorPoints"] = {
         currencyID = 396
     }, -- Valor Points
+    ["DarkmoonPrizeTicket"] = {
+        currencyID = 515
+    }, -- Darkmoon Prize Ticket
+    ["MarkWorldTree"] = {
+        currencyID = 416
+    }, -- Mark of the World Tree
+    ["Firestone"] = {
+        itemID = 71617
+    }, -- Crystallized Firestone
+
+
 
     --- PvP
     ["cpvpConquest"] = {
@@ -1345,6 +1356,12 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
         [46988] = "DefilersScourgestone:38",
         [47093] = "DefilersScourgestone:30",
         [47195] = "DefilersScourgestone:38",
+        [46744] = "championSeal:5:money:3500000",
+        [46747] = "championSeal:5:money:3500000",
+        [46748] = "championSeal:5:money:3500000",
+        [46745] = "championSeal:5:money:3500000",
+        [43958] = "money:8000000",
+        [43961] = "money:80000000",
         [40586] = "money:68000000",
         [44935] = "money:68000000",
         [40585] = "money:68000000",
@@ -2122,7 +2139,10 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [67476] = "cpvpConquest:950",
         [67477] = "cpvpConquest:950",
         [67478] = "cpvpConquest:950",
-        [67479] = "cpvpConquest:950"
+        [67479] = "cpvpConquest:950",
+        [67479] = "cpvpConquest:950",
+        [73766] = "DarkmoonPrizeTicket:180",
+        [72140] = "DarkmoonPrizeTicket:180",
     }
 end
 
