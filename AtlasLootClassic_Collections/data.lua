@@ -602,16 +602,16 @@ data["TierSets"] = {
             CoinTexture = "CATA",
             contentPhaseCata = 3,
             [RAIDFINDER_DIFF] = {
-            	{1, 40001072 }, -- Warlock
-            	{3, 40001066 }, -- Priest Holy
-            	{4, 40001067 }, -- Priest Shadow
-            	{6, 40001068 }, -- Rogue
-            	{8, 40001061 }, -- Hunter
-            	{10, 40001074 }, -- Warrior Tank
-            	{11, 40001073 }, -- Warrior Dps
-            	{13, 40001056 }, -- Death Knight Tank
-            	{14, 40001057 }, -- Death Knight DPS
-            	{16, 40001062 }, -- Mage
+                {1, 40001072 }, -- Warlock
+                {3, 40001066 }, -- Priest Holy
+                {4, 40001067 }, -- Priest Shadow
+                {6, 40001068 }, -- Rogue
+                {8, 40001061 }, -- Hunter
+                {10, 40001074 }, -- Warrior Tank
+                {11, 40001073 }, -- Warrior Dps
+                {13, 40001056 }, -- Death Knight Tank
+                {14, 40001057 }, -- Death Knight DPS
+                {16, 40001062 }, -- Mage
                 {18, 40001060 }, -- Druid Resto
                 {19, 40001059 }, -- Druid Balance
                 {20, 40001058 }, -- Druid Melee
@@ -1572,7 +1572,7 @@ data["Darkmoon"] = {
                 {21, 74034}, -- Pit Fighter
                 {30, "SPECIAL_ACHIEVEMENT", nil, AL["Achievements"], nil, "AC_DarkmoonFaire"},
           },
-      }, 
+      },
         AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM,{
         name = AL["Heirlooms"],
         [NORMAL_DIFF] = {

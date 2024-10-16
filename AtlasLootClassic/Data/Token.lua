@@ -1123,7 +1123,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
 		[44951] = { { 41119, "24-40" }, type = 11 },
 		[71086] = {71084, 71085, type = 3}, -- Dragonwrath, Tarecgosa's Rest
 	        [74034] = { {74034, 12}, 0, 74035, type = 3 }, -- Pit Fighter
-                --- Darkmoon Faire Achievements   
+                --- Darkmoon Faire Achievements
 		["AC_DarkmoonFaire"] = {"ac6019", "ac6020", "ac6021", "ac6022", "ac6023", "ac6024", "ac6025", "ac6026", "ac6027", "ac6028", "ac6029", "ac6030", "ac6031", "ac6032", type = 10},
 	}
 end

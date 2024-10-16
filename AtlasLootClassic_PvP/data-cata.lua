@@ -62,14 +62,14 @@ data["PvPMountsCata"] = {
     LoadDifficulty = LOAD_DIFF,
     CorrespondingFields = private.MOUNTS_LINK,
     items = {{ -- PvPMountsCata
-        name = ALIL["Mounts"],
-        [NORMAL_DIFF] = {
-            {1, [ATLASLOOT_IT_ALLIANCE] = 70909, [ATLASLOOT_IT_HORDE] = 70910},
-            {2, 71339}, -- Vicious Gladiator's Twilight Drake
-            {3, 71954}, -- Ruthless Gladiator's Twilight Drake
-            {16, [ATLASLOOT_IT_ALLIANCE] = "ac5328", [ATLASLOOT_IT_HORDE] = "ac5325"},
-        },
-    }}
+    name = ALIL["Mounts"],
+    [NORMAL_DIFF] = {
+        {1, [ATLASLOOT_IT_ALLIANCE] = 70909, [ATLASLOOT_IT_HORDE] = 70910},
+        {2, 71339}, -- Vicious Gladiator's Twilight Drake
+        {3, 71954}, -- Ruthless Gladiator's Twilight Drake
+        {16, [ATLASLOOT_IT_ALLIANCE] = "ac5328", [ATLASLOOT_IT_HORDE] = "ac5325"},
+    },
+}}
 }
 
 data["ArenaS9PvP"] = {
@@ -731,7 +731,7 @@ data["ArenaS10PvP"] = {
             { 3, 70505 }, -- Ruthless Gladiator's Warboots of Alacrity
             { 4, 70504 }, -- Ruthless Gladiator's Warboots of Cruelty
         },
-    }, {       
+    }, {
         name = ALIL["Trinket"],
         [SET4_DIFF] = {
             { 1, 70399 }, -- Ruthless Gladiator's Badge of Conquest
@@ -758,84 +758,84 @@ data["ArenaS10PvP"] = {
 }
 --[[ Later...
 data["ArenaS11PvP"] = {
-    name = format(AL["Season %s"], "11"),
-    ContentType = ARENA_CONTENT,
-    LoadDifficulty = LOAD_DIFF,
-    TableType = NORMAL_ITTYPE,
-    items = {{
-        name = AL["Sets"],
-        TableType = SET_ITTYPE,
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = AL["Weapons"] .. " - " .. AL["One-Handed"],
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = AL["Weapons"] .. " - " .. AL["One-Handed"] .. " - R2",
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = AL["Weapons"] .. " - " .. AL["Two-Handed"],
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = AL["Weapons"] .. " - " .. AL["Two-Handed"] .. " - R2",
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = AL["Weapons"] .. " - " .. AL["Ranged"],
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = AL["Weapons"] .. " - " .. AL["Ranged"] .. " - R2",
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = AL["Weapons"] .. " - " .. ALIL["Off Hand"],
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = AL["Weapons"] .. " - " .. ALIL["Shields"],
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = ALIL["Cloak"],
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = ALIL["Relic"],
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = ALIL["Neck"],
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = ALIL["Finger"],
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = format(AL["Non Set '%s'"], ALIL["Cloth"]),
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = format(AL["Non Set '%s'"], ALIL["Leather"]),
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = format(AL["Non Set '%s'"], ALIL["Mail"]),
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = format(AL["Non Set '%s'"], ALIL["Plate"]),
-        [NORMAL_DIFF] = {
-        }
-    }, {
-        name = AL["Gladiator Mount"],
-        ExtraList = true,
-        [NORMAL_DIFF] = {
-        }
-    }}
+name = format(AL["Season %s"], "11"),
+ContentType = ARENA_CONTENT,
+LoadDifficulty = LOAD_DIFF,
+TableType = NORMAL_ITTYPE,
+items = {{
+name = AL["Sets"],
+TableType = SET_ITTYPE,
+[NORMAL_DIFF] = {
+}
+}, {
+name = AL["Weapons"] .. " - " .. AL["One-Handed"],
+[NORMAL_DIFF] = {
+}
+}, {
+name = AL["Weapons"] .. " - " .. AL["One-Handed"] .. " - R2",
+[NORMAL_DIFF] = {
+}
+}, {
+name = AL["Weapons"] .. " - " .. AL["Two-Handed"],
+[NORMAL_DIFF] = {
+}
+}, {
+name = AL["Weapons"] .. " - " .. AL["Two-Handed"] .. " - R2",
+[NORMAL_DIFF] = {
+}
+}, {
+name = AL["Weapons"] .. " - " .. AL["Ranged"],
+[NORMAL_DIFF] = {
+}
+}, {
+name = AL["Weapons"] .. " - " .. AL["Ranged"] .. " - R2",
+[NORMAL_DIFF] = {
+}
+}, {
+name = AL["Weapons"] .. " - " .. ALIL["Off Hand"],
+[NORMAL_DIFF] = {
+}
+}, {
+name = AL["Weapons"] .. " - " .. ALIL["Shields"],
+[NORMAL_DIFF] = {
+}
+}, {
+name = ALIL["Cloak"],
+[NORMAL_DIFF] = {
+}
+}, {
+name = ALIL["Relic"],
+[NORMAL_DIFF] = {
+}
+}, {
+name = ALIL["Neck"],
+[NORMAL_DIFF] = {
+}
+}, {
+name = ALIL["Finger"],
+[NORMAL_DIFF] = {
+}
+}, {
+name = format(AL["Non Set '%s'"], ALIL["Cloth"]),
+[NORMAL_DIFF] = {
+}
+}, {
+name = format(AL["Non Set '%s'"], ALIL["Leather"]),
+[NORMAL_DIFF] = {
+}
+}, {
+name = format(AL["Non Set '%s'"], ALIL["Mail"]),
+[NORMAL_DIFF] = {
+}
+}, {
+name = format(AL["Non Set '%s'"], ALIL["Plate"]),
+[NORMAL_DIFF] = {
+}
+}, {
+name = AL["Gladiator Mount"],
+ExtraList = true,
+[NORMAL_DIFF] = {
+}
+}}
 }
 ]]
