@@ -529,7 +529,7 @@ data["ValorPoints T13"] = {
         name = ALIL["Armor"] .. " - " .. ALIL["Accessories"],
         [NORMAL_DIFF] = { -- Plate
         { 1, 77095}, -- Batwing Cloak
-        { 2, 77097}, -- Dreamcrusher Drape    	
+        { 2, 77097}, -- Dreamcrusher Drape
         { 3, 77099}, -- Indefatigable Greatcloak
         { 4, 77098}, -- Nanoprecise Cape
         { 5, 77096}, -- Woundlicker Cover

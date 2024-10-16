@@ -192,7 +192,7 @@ end
 local function PopulateSubLists(db, globalDb)
     local subDb, globalSubDb = db.activeSubLists, globalDb.activeSubLists
     db, globalDb = db.lists, globalDb.lists
-    
+
     CheckSubSetDb(subDb, db, globalDb)
     CheckSubSetDb(globalSubDb, db, globalDb)
 end
@@ -345,13 +345,13 @@ local function ClearActiveList(self)
     local name, isGlobal = self.db.activeList[1], ( self.db.activeList[2] == true )
     local db = isGlobal and self:GetGlobaleLists() or self:GetProfileLists()
     local new = {}
-    
+
     for k,v in pairs(self.activeList) do
         if type(k) ~= "number" and k ~= "mainItems" then
             new[k] = v
         end
     end
-    
+
     if db[name] then
         db[name] = new
     else
@@ -363,7 +363,7 @@ end
 local function CleanUpShownLists(db, globalDb, activeSubLists, isGlobalList)
     local new = {}
     db, globalDb = db.lists, globalDb.lists
-    
+
     for listID, isGlobal in pairs(activeSubLists) do
         if ( isGlobal and globalDb[listID] ) then
             new[listID] = isGlobal
@@ -371,7 +371,7 @@ local function CleanUpShownLists(db, globalDb, activeSubLists, isGlobalList)
             new[listID] = isGlobal
         end
     end
-    
+
     return new
 end
 
@@ -382,7 +382,7 @@ local function OnTooltipSetItem_Hook(self)
     if not TooltipCache[item] then
         TooltipCache[item] = tonumber(strmatch(item, "item:(%d+)"))
     end
-    
+
     item = TooltipCache[item]
     if Favourites:IsFavouriteItemID(item) then
         if Favourites.db.showIconInTT then
@@ -392,7 +392,7 @@ local function OnTooltipSetItem_Hook(self)
             end
             text:SetText( TooltipTextCache[item] or RETRIEVING_ITEM_INFO )
         end
-        
+
         -- Add Listnames
         if Favourites.db.showListInTT then
             self:AddLine(" ")
@@ -495,11 +495,11 @@ function Favourites:UpdateDb()
     self.activeListID = self.db.activeList[1]
     TooltipTextCache = {}
     setmetatable(TooltipTextCache, KEY_WEAK_MT)
-    
+
     -- populate sublists
     self.subItems = {}
     PopulateSubLists(self.db, self.globalDb)
-    
+
     -- init item count
     local numItems = 0
     for k in pairs(self.activeList) do
@@ -508,7 +508,7 @@ function Favourites:UpdateDb()
         end
     end
     self.numItems = numItems
-    
+
     -- name / icon mix
     ListNameCache = {
         active = format(TEXT_WITH_TEXTURE, tostring(self.activeList.__icon or STD_ICON), self.activeList.__name or LIST_BASE_NAME),
@@ -517,21 +517,21 @@ function Favourites:UpdateDb()
     }
     PopulateListNames(self.db.lists, ListNameCache.profile)
     PopulateListNames(self.globalDb.lists, ListNameCache.global)
-    
+
     ListNoteCache = {}
     PopulateListNotes(self.db.lists, ListNoteCache)
     PopulateListNotes(self.globalDb.lists, ListNoteCache)
-    
+
     ListBiSCache = {}
     PopulateListBiS(self.db.lists, ListBiSCache)
     PopulateListBiS(self.globalDb.lists, ListBiSCache)
-    
+
     -- tooltip hook
     if self:TooltipHookEnabled() and not TooltipsHooked then
         InitTooltips()
     end
     self.GUI:ItemListUpdate()
-    
+
     -- number of favourite items by dungeon/boss/...
     ItemCountCache = {}
 end
@@ -717,12 +717,12 @@ function Favourites:SetItemNote(itemID, note, list, listID)
     if not list.notes then
         list.notes = {}
     end
-    
+
     --Remove note if its an empty string
     if note == "" then
         note = nil
     end
-    
+
     list.notes[tonumber(itemID)] = note
     -- Refresh cache
     ListNoteCache = {}
@@ -836,7 +836,7 @@ function Favourites:CountFavouritesByList(addonName, contentName, boss, dif, inc
         ItemCountCache[cacheIdent] = result
         return result
     end
-    
+
     -- Get count for all matching items
     local items, tableType, diffData = ItemDB:GetItemTable(addonName, contentName, boss, dif)
     -- Check if items is nil or empty
@@ -856,7 +856,7 @@ function Favourites:CountFavouritesByList(addonName, contentName, boss, dif, inc
             end
         end
     end
-    
+
     for l, listData in pairs(self.globalDb.lists) do
         if self:ListIsGlobalActive(l) or self:ListIsProfileActive(l) then
             local listName = listData.__name
@@ -870,7 +870,7 @@ function Favourites:CountFavouritesByList(addonName, contentName, boss, dif, inc
             end
         end
     end
-    
+
     ItemCountCache[cacheIdent] = result
     return result
 end
@@ -949,7 +949,7 @@ function Favourites:SetFavouriteIcon(itemID, texture, hideOnFail)
     local listName = self:IsFavouriteItemID(itemID)
     if not listName then return hideOnFail and texture:Hide() or nil end
     local icon = Favourites:GetIconForActiveItemID(itemID)
-    
+
     if icon then
         if type(icon) == "number" then
             texture:SetTexture(icon)
@@ -968,7 +968,7 @@ end
 function Favourites:GetIconForActiveItemID(itemID)
     local listName = self:IsFavouriteItemID(itemID)
     local icon
-    
+
     if listName == true then
         icon = self.activeList.__icon or STD_ICON
     elseif #listName > 1 then
@@ -980,7 +980,7 @@ function Favourites:GetIconForActiveItemID(itemID)
     elseif listName[1][2] then
         icon = listName[1][2]
     end
-    
+
     return icon
 end
 
@@ -1055,14 +1055,14 @@ function Favourites:AddIntoShownList(listID, isGlobalList, globalShown)
     local list = isGlobalList and self:GetGlobaleLists() or self:GetProfileLists()
     if not listID or not list[listID] then return end
     local activeSubLists = ( isGlobalList and globalShown ) and self.globalDb.activeSubLists or self.db.activeSubLists
-    
+
     activeSubLists[listID] = isGlobalList
 end
 
 function Favourites:RemoveFromShownList(listID, isGlobalList, globalShown)
     local list = isGlobalList and self:GetGlobaleLists() or self:GetProfileLists()
     local activeSubLists = ( isGlobalList and globalShown ) and self.globalDb.activeSubLists or self.db.activeSubLists
-    
+
     activeSubLists[listID] = nil
 end
 
@@ -1089,7 +1089,7 @@ end
 function Favourites:AddNewList(isGlobalList)
     local list = isGlobalList and self:GetGlobaleLists() or self:GetProfileLists()
     local id = format(NEW_LIST_ID_PATTERN, isGlobalList and "g" or "p", GetServerTime())
-    
+
     if not list[id] then    -- should work as spam protect as GetServerTime returns sec
         list[id] = {}
         self:AddIntoShownList(id, isGlobalList, isGlobalList)
