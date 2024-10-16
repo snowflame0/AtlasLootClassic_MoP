@@ -154,9 +154,10 @@ data["BlacksmithingCata"] = {
             name = AL["Weapons"].." - "..ALIL["Daggers"],
             [NORMAL_DIFF] = {
                 { 1, 99652 }, -- Brainsplinter
-                { 2, 76449 }, -- Elementium Spellblade
-                { 3, 76453 }, -- Elementium Shank
-                { 4, 76434 }, -- Cold Forged Shank
+                { 2, 99653 }, -- Masterwork Elementium Spellblade
+                { 3, 76449 }, -- Elementium Spellblade
+                { 4, 76453 }, -- Elementium Shank
+                { 5, 76434 }, -- Cold Forged Shank
             }
         },
         { -- Axes
