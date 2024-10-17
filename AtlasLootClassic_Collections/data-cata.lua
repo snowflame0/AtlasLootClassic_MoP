@@ -722,7 +722,7 @@ data["CompanionsCata"] = {
          {6, 60869, "ac5449"}, -- Pebbles
          {7, 63138}, -- Dark Phoenix Hatchling
          {8, 71033, "ac5840"}, -- Lil Tarecgosa
-         {17, 73903, "ac5876"}, -- Nuts'
+         {17, 71140, "ac5876"}, -- Nuts'
         }
     }, {
         name = ALIL["Quests"],
