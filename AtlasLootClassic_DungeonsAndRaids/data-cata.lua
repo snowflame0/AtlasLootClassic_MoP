@@ -3398,7 +3398,6 @@ TableType = SET_ITTYPE,
     { 3, 1087 }, -- Fangs of the Father / 416
     { 16, "ac6181" },
     { 17, "ac6182" },
-    
 },
 },
 T13_SET,
