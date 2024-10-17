@@ -732,9 +732,9 @@ data["CompanionsCata"] = {
          {2, 66080}, -- Tiny Flamefly
          {3, 69648}, -- Legs
          {4, 68833}, -- Panther Cub
-         {5, 66073}, -- Sunflower
+         {5, 66067}, -- Sunflower
          {6, 46325}, -- Withers
-         {7, 66073}, -- Sunflower
+         {7, 66073}, -- Snail
          {8, [ATLASLOOT_IT_ALLIANCE] = 72042, [ATLASLOOT_IT_HORDE] = 72045}, -- A/H Balloons
          {9, 65661}, -- Blue mini jouster
          {10, 65661}, -- Gold mini jouster
