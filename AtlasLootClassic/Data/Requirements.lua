@@ -5860,6 +5860,12 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
     }
 end
 
+if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
+    ReqData_RAW.CATA = {
+		-- TODO: Add requirements for items (class tokens, class specific items, pets, etc)
+	}
+end
+
 local CLASS = ALPrivate.CLASS_BITS
 local CLASS_SORT = ALPrivate.CLASS_SORT
 

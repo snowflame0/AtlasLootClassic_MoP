@@ -62,7 +62,7 @@ TOKEN_DATA.CLASSIC = {
     [11732] = { 11622, 0, 11732, 11754, 11752, 8424, type = 4 },			-- Libram of Rumination
     [11734] = { 11643, 0, 11734, 11754, 11753, {11564, 4}, type = 4 },		-- Libram of Tenacity
     [11737] = { 11647, 11648, 11649, 11645, 11646, 0, 11737, 11754, {11951, 4}, {11563, 4}, type = 4 },	-- Libram of Voracity
-    
+
     --- Darkmoon cards
     -- Portals / Darkmoon Card: Twisting Nether
     [19277] = { 19277, 19290, 0, 19276, 19278, 19279, 19280, 19281, 19282, 19283, 19284 },	-- Portals Deck
@@ -74,7 +74,7 @@ TOKEN_DATA.CLASSIC = {
     [19282] = 19277,	-- Six of Portals
     [19283] = 19277,	-- Seven of Portals
     [19284] = 19277,	-- Eight of Portals
-    
+
     -- Elementals / Darkmoon Card: Maelstrom
     [19267] = { 19267, 19289, 0, 19268, 19269, 19270, 19271, 19272, 19273, 19274, 19275 },	-- Elementals Deck
     [19268] = 19267,	-- Ace of Elementals
@@ -85,7 +85,7 @@ TOKEN_DATA.CLASSIC = {
     [19273] = 19267,	-- Six of Elementals
     [19274] = 19267,	-- Seven of Elementals
     [19275] = 19267,	-- Eight of Elementals
-    
+
     -- Warlords / Darkmoon Card: Heroism
     [19257] = { 19257, 19287, 0, 19258, 19259, 19260, 19261, 19262, 19263, 19264, 19265 },	-- Warlords Deck
     [19258] = 19257,	-- Ace of Warlords
@@ -96,7 +96,7 @@ TOKEN_DATA.CLASSIC = {
     [19263] = 19257,	-- Six of Warlords
     [19264] = 19257,	-- Seven of Warlords
     [19265] = 19257,	-- Eight of Warlords
-    
+
     -- Beasts / Darkmoon Card: Blue Dragon
     [19228] = { 19228, 19288, 0, 19227, 19230, 19231, 19232, 19233, 19234, 19235, 19236 },	-- Beasts Deck
     [19227] = 19228,	-- Ace of Beasts
@@ -107,7 +107,7 @@ TOKEN_DATA.CLASSIC = {
     [19234] = 19228,	-- Six of Beasts
     [19235] = 19228,	-- Seven of Beasts
     [19236] = 19228,	-- Eight of Beasts
-    
+
     -- Zul'Gurub
     [19724] = { ICONS.HUNTER, 19831, 0, ICONS.ROGUE, 19834, 0, ICONS.PRIEST, 19841, type = 6 },		-- Primal Hakkari Aegis
     [19717] = { ICONS.WARRIOR, 19824, 0, ICONS.ROGUE, 19836, 0, ICONS.SHAMAN, 19830, type = 6 },	-- Primal Hakkari Armsplint
@@ -118,7 +118,7 @@ TOKEN_DATA.CLASSIC = {
     [19721] = { ICONS.PALADIN, 19826, 0, ICONS.HUNTER, 19832, 0, ICONS.MAGE, 19845, type = 6 },		-- Primal Hakkari Shawl
     [19718] = { ICONS.PRIEST, 19843, 0, ICONS.WARLOCK, 19848, 0, ICONS.DRUID, 19840, type = 6 },	-- Primal Hakkari Stanchion
     [19722] = { ICONS.PALADIN, 19825, 0, ICONS.SHAMAN, 19828, 0, ICONS.DRUID, 19838, type = 6 },	-- Primal Hakkari Tabard
-    
+
     -- AQ40
     [21237] = { 21268, 21273, 21275, type = 6 },			-- Imperial Qiraji Regalia
     [21232] = { 21242, 21244, 21272, 21269, type = 6 },	-- Imperial Qiraji Armaments
@@ -130,7 +130,7 @@ TOKEN_DATA.CLASSIC = {
     [20931] = { ICONS.PALADIN, 21390, 0, ICONS.HUNTER, 21368, 0, ICONS.SHAMAN, 21375, 0, ICONS.WARLOCK, 21336, 0, ICONS.DRUID, 21356, type = 6 }, -- Skin of the Great Sandworm
     [20929] = { ICONS.WARRIOR, 21331, 0, ICONS.PALADIN, 21389, 0, ICONS.HUNTER, 21370, 0, ICONS.ROGUE, 21364, 0, ICONS.SHAMAN, 21374, type = 6 }, -- Carapace of the Old God
     [20933] = { ICONS.PRIEST, 21351, 0, ICONS.MAGE, 21343, 0, ICONS.WARLOCK, 21334, 0, ICONS.DRUID, 21357, type = 6 }, -- Husk of the Old God
-    
+
     -- AQ20
     [20888] = { ICONS.HUNTER, 21402, 0, ICONS.ROGUE, 21405, 0, ICONS.PRIEST, 21411, 0, ICONS.WARLOCK, 21417, type = 6 },							-- Qiraji Ceremonial Ring
     [20884] = { ICONS.WARRIOR, 21393, 0, ICONS.PALADIN, 21396, 0, ICONS.SHAMAN, 21399, 0, ICONS.MAGE, 21414, 0, ICONS.DRUID, 21408, type = 6 },		-- Qiraji Magisterial Ring
@@ -138,7 +138,7 @@ TOKEN_DATA.CLASSIC = {
     [20889] = { ICONS.PALADIN, 21397, 0, ICONS.HUNTER, 21403, 0, ICONS.SHAMAN, 21400, 0, ICONS.WARLOCK, 21418, 0, ICONS.DRUID, 21409, type = 6 },	-- Qiraji Regal Drape
     [20890] = { ICONS.PRIEST, 21410, 0, ICONS.MAGE, 21413, 0, ICONS.WARLOCK, 21416, 0, ICONS.DRUID, 21407, type = 6 },								-- Qiraji Ornate Hilt
     [20886] = { ICONS.WARRIOR, 21392, 0, ICONS.PALADIN, 21395, 0, ICONS.HUNTER, 21401, 0, ICONS.ROGUE, 21404, 0, ICONS.SHAMAN, 21398, type = 6  },	-- Qiraji Spiked Hilt
-    
+
     -- Tier 3
     [22360] = { ICONS.PALADIN, 22428, 0, ICONS.HUNTER, 22438, 0, ICONS.SHAMAN, 22466, 0, ICONS.DRUID, 22490, type = 6 }, -- Desecrated Headpiece
     [22361] = { ICONS.PALADIN, 22429, 0, ICONS.HUNTER, 22439, 0, ICONS.SHAMAN, 22467, 0, ICONS.DRUID, 22491, type = 6 }, -- Desecrated Spaulders
@@ -164,7 +164,7 @@ TOKEN_DATA.CLASSIC = {
     [22356] = { ICONS.WARRIOR, 22422, 0, ICONS.ROGUE, 22482, type = 6 }, -- Desecrated Waistguard
     [22352] = { ICONS.WARRIOR, 22417, 0, ICONS.ROGUE, 22477, type = 6 }, -- Desecrated Legplates
     [22358] = { ICONS.WARRIOR, 22420, 0, ICONS.ROGUE, 22480, type = 6 }, -- Desecrated Sabatons
-    
+
     -- Gem Sacks
     [17962] = { 12361, 7971, 13926, {1529, "1-2"}, {7909, "1-3"}, {7910, "1-3"}, {3864, "1-3"}, type = 2 },		-- Blue Sack of Gems
     [17963] = { 12364, 7971, {1529, "1-3"}, {7909, "1-3"}, {7910, "1-3"}, {3864, "1-3"}, type = 2 },			-- Green Sack of Gems
@@ -179,11 +179,11 @@ TOKEN_DATA.CLASSIC = {
         17969, 12799, 7971, 13926, {1529, "1-3"}, {7909, "1-3"}, {7910, "1-3"}, {3864, "1-3"},
         type = 2,
     },
-    
+
     -- Misc Bags
     [21156] = { 20858, 20859, 20860, 20861, 20862, 20863, 20864, 20865, type = 2 },						-- Scarab Bag
     [12033] = { 7910, 1529, 7909, 12361, 1705, 12799, 7971, 5500, 12800, 1206, 12364, type = 2 },		-- Thaurissan Family Jewels
-    
+
     -- Misc
     [11086] = { 9372, 0, 9379, 11086 }, -- Jang'thraze the Protector
     [9379] =  11086, -- Sang'thraze the Deflector
@@ -212,7 +212,7 @@ TOKEN_DATA.CLASSIC = {
     [7741] = 7733, -- The Shaft of Tsol
     [12845] = { 17044, 17045, type = 4 }, -- Medallion of Faith
     [17771] = { 17771, 0, 18562, {12360,10}, 17010, {18567,3} }, -- Elementium Bar
-    
+
     -- Quests
     [10441] = { 10657, 10658, type = 3 }, -- Glowing Shard
     [6283] = { 6335, 4534, type = 3 }, -- The Book of Ur
@@ -225,28 +225,28 @@ TOKEN_DATA.CLASSIC = {
     [19003] = { 19383, 19384, 19366, type = 3 }, -- Head of Nefarian
     [18423] = { 18404, 18403, 18406, type = 3 }, -- Head of Onyxia
     [20644] = { 20600, type = 3 }, -- Shrouded in Nightmare
-    
+
     -- Quest objective
     [18705] = { 18713, type = 4 }, -- Mature Black Dragon Sinew
     [18704] = { 18714, type = 4 }, -- Mature Blue Dragon Sinew
     [12871] = { 12895, 0, 12903, 12945, type = 4 }, -- Chromatic Carapace
     [18706] = { {18706, 12}, 0, 19024, type = 4 }, -- Arena Master
-    
+
     [22523] = { 22523, 22524, 0,
     22689, 22690, 22681, 22680, 22688, 22679, 0,
     22667, 22668, 22657, 22659, 22678, 22656, type = 4 }, -- Insignia of the Dawn
     [22524] = 22523, -- Insignia of the Crusade
-    
+
     -- Naxxramas
     [22520] = { 23207, 23206, type = 3 }, -- The Phylactery of Kel'Thuzad
-    
+
     -- AQ40
     [21221] = { 21712, 21710, 21709, type = 3 }, -- Amulet of the Fallen God
     [21762] = { 21156, 20876, 20879, 20875, 20878, 20881, 20877, 20874, 20882 }, -- Greater Scarab Coffer Key
-    
+
     -- AQ20
     [21220] = { 21504, 21507, 21505, 21506, type = 3 }, -- Head of Ossirian the Unscarred
-    
+
     -- ZG
     [19802] = { 19950, 19949, 19948, type = 3 }, -- Heart of Hakkar
     [19939] = { 19939, 19940, 19941, 19942, 0,
@@ -258,27 +258,27 @@ TOKEN_DATA.CLASSIC = {
     [19942] = 19939, -- Hazza'rah's Dream Thread
     -- ZG / Punctured Voodoo Doll
     [19820] = 19939, [19818] = 19939, [19819] = 19939, [19814] = 19939, [19821] = 19939, [19816] = 19939, [19817] = 19939, [19815] = 19939, [19813] = 19939,
-    
+
     -- Reagent for...
     [12811] = { "prof20034", "prof22750", "prof25079", 0, "prof18456", "prof16990", "prof23632", "prof23633", type = 5 }, -- Righteous Orb
     [20381] = { "prof24703", type = 5 }, -- Dreamscale Breastplate
     [12753] = { "prof22928", "prof27830", type = 5 }, -- Dreamscale Breastplate
     [17203] = { "prof21161", type = 5 }, -- Sulfuron Ingot
     [15410] = { "prof19106", "prof19093", type = 5 }, -- Scale of Onyxia
-    
+
     -- Atiesh
     [22727] = { { 22726, 40 }, 22727, 22734, 22733, 0, 22631, 22589, 22630, 22632 }, -- Frame of Atiesh
     [22726] = 22727, -- Splinter of Atiesh
     [22734] = 22727, -- Base of Atiesh
     [22733] = 22727, -- Staff Head of Atiesh
     [22737] = 22727, -- Atiesh / Use item
-    
+
     -- UBRS key
     [12219] = { 12219, 12336, 12335, 12337, 0, 12344 }, -- Unadorned Seal of Ascension
     [12336] = 12219, -- Gemstone of Spirestone
     [12335] = 12219, -- Gemstone of Smolderthorn
     [12337] = 12219, -- Gemstone of Bloodaxe
-    
+
     --- Cenarion Circle Dailies
     -- Exalted
     [21188] = { "f609rep8", 0, {20802, 15}, {20800, 20}, {20801, 20}, 21508 }, -- Fist of Cenarius
@@ -322,7 +322,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
         [29766] = { ICONS.PALADIN, 29074, 29063, 29069, 0, ICONS.ROGUE, 29046, 0, ICONS.SHAMAN, 29030, 29036, 29042, type = 6 }, -- Leggings of the Fallen Champion
         [29767] = { ICONS.WARRIOR, 29022, 29015, 0, ICONS.PRIEST, 29059, 29053, 0, ICONS.DRUID, 29094, 29099, 29088, type = 6 }, -- Leggings of the Fallen Defender
         [29765] = { ICONS.HUNTER, 29083, 0, ICONS.MAGE, 29078, 0, ICONS.WARLOCK, 28966, type = 6 }, -- Leggings of the Fallen Hero
-        
+
         --- T5
         -- Head
         [30242] = { ICONS.PALADIN, 30125, 30136, 30131, 0, ICONS.ROGUE, 30146, 0, ICONS.SHAMAN, 30166, 30171, 30190, type = 6 }, -- Helm of the Vanquished Champion
@@ -344,7 +344,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
         [30245] = { ICONS.PALADIN, 30132, 30137, 30126, 0, ICONS.ROGUE, 30148, 0, ICONS.SHAMAN, 30172, 30167, 30192, type = 6 }, -- Leggings of the Vanquished Champion
         [30246] = { ICONS.WARRIOR, 30121, 30116, 0, ICONS.PRIEST, 30153, 30162, 0, ICONS.DRUID, 30229, 30220, 30234, type = 6 }, -- Leggings of the Vanquished Defender
         [30247] = { ICONS.HUNTER, 30142, 0, ICONS.MAGE, 30207, 0, ICONS.WARLOCK, 30213, type = 6 }, -- Leggings of the Vanquished Hero
-        
+
         --- T6
         -- Head
         [31097] = { ICONS.PALADIN, 30987, 30988, 30989, 0, ICONS.PRIEST, 31063, 31064, 0, ICONS.WARLOCK, 31051, type = 6 }, -- Helm of the Forgotten Conqueror
@@ -378,7 +378,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
         [34856] = { ICONS.PALADIN, 34559, 34560, 34561, 0, ICONS.PRIEST, 34562, 34563, 0, ICONS.WARLOCK, 34564, type = 6 }, -- Boots of the Forgotten Conqueror
         [34858] = { ICONS.ROGUE, 34575, 0, ICONS.MAGE, 34574, 0, ICONS.DRUID, 34571, 34572, 34573, type = 6 }, -- Boots of the Forgotten Vanquisher
         [34857] = { ICONS.WARRIOR, 34568, 34569, 0, ICONS.HUNTER, 34570, 0, ICONS.SHAMAN, 34565, 34566, 34567, type = 6 }, -- Boots of the Forgotten Protector
-        
+
         --- Sunwell Sunmote tokens
         -- Cloth
         [34399] = { 34399, 0, {34664, "1"}, {34233, "1"}, type = 7 }, -- Robes of Ghostly Hatred
@@ -391,7 +391,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
         [34170] = { 34386, 0, {34664, "1"}, {34170, "1"}, type = 8 }, -- Pantaloons of Calming Strife
         [34393] = { 34393, 0, {34664, "1"}, {34202, "1"}, type = 7 }, -- Shoulderpads of Knowledge's Pursuit
         [34202] = { 34393, 0, {34664, "1"}, {34202, "1"}, type = 8 }, -- Shawl of Wonderment
-        
+
         -- Leather
         [34397] = { 34397, 0, {34664, "1"}, {34211, "1"}, type = 7 }, -- Bladed Chaos Tunic
         [34211] = { 34397, 0, {34664, "1"}, {34211, "1"}, type = 8 }, -- Harness of Carnal Instinct
@@ -413,7 +413,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
         [34195] = { 34392, 0, {34664, "1"}, {34195, "1"}, type = 8 }, -- Shoulderpads of Vehemence
         [34391] = { 34391, 0, {34664, "1"}, {34209, "1"}, type = 7 }, -- Spaulders of Devastation
         [34209] = { 34391, 0, {34664, "1"}, {34209, "1"}, type = 8 }, -- Spaulders of Reclamation
-        
+
         -- Mail
         [34402] = { 34402, 0, {34664, "1"}, {34332, "1"}, type = 7 }, -- Cover of Ursoc the Mighty
         [34332] = { 34402, 0, {34664, "1"}, {34332, "1"}, type = 8 }, -- Cowl of Gul'dan
@@ -425,7 +425,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
         [34350] = { 34409, 0, {34664, "1"}, {34350, "1"}, type = 8 }, -- Gauntlets of the Ancient Shadowmoon
         [34383] = { 34383, 0, {34664, "1"}, {34186, "1"}, type = 7 }, -- Kilt of Spiritual Reconstruction
         [34186] = { 34383, 0, {34664, "1"}, {34186, "1"}, type = 8 }, -- Chain Links of the Tumultuous Storm
-        
+
         -- Plate
         [34401] = { 34401, 0, {34664, "1"}, {34243, "1"}, type = 7 }, -- Helm of Uther's Resolve
         [34243] = { 34401, 0, {34664, "1"}, {34243, "1"}, type = 8 }, -- Helm of Burning Righteousness
@@ -443,19 +443,18 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
         [34167] = { 34382, 0, {34664, "1"}, {34167, "1"}, type = 8 }, -- Legplates of the Holy Juggernaut
         [34381] = { 34381, 0, {34664, "1"}, {34180, "1"}, type = 7 }, -- Felstrength Legplates
         [34180] = { 34381, 0, {34664, "1"}, {34180, "1"}, type = 8 }, -- Felfury Legplates
-        
-        
-        --- Misc
-        -- Magtheridon's Lair
+
+    --- Misc
+    -- Magtheridon's Lair
         [32385] = { 28791, 28790, 28793, 28792, type = 3 }, -- Magtheridon's Head
         [34846] = { -- Black Sack of Gems
         {32230,"1-3"}, {32249,"1-3"}, {32228,"1-3"}, {32229,"1-3"}, {32231,"1-3"}, {32227,"1-3"}, 0, -- Epic
         {23441,"1-2"}, {23437,"1-2"}, {23436,"1-2"}, {23438,"1-2"}, {23440,"1-2"}, {23439,"1-2"}, -- Blue
-        type = 2,
-    },
+        type = 2 },
+
     -- Tempest Keep
     [32405] = { 30018, 30017, 30007, 30015 }, -- Verdant Sphere
-    
+
     -- Motes
     [22574] = { {22574,"10"}, 0, 21884 }, -- Mote of Fire
     [22576] = { {22576,"10"}, 0, 22457 }, -- Mote of Mana
@@ -463,24 +462,24 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
     [22572] = { {22572,"10"}, 0, 22451 }, -- Mote of Air
     [22575] = { {22575,"10"}, 0, 21886 }, -- Mote of Life
     [22578] = { {22578,"10"}, 0, 21885 }, -- Mote of Water
-    
+
     --- Darkmoon cards
     -- Furies Deck / Darkmoon Card: Vengeance
     [31907] = { 31907, 31858, 0, 31901, 31909, 31908, 31904, 31903, 31906, 31905, 31902 },
     [31901] = 31907, [31909] = 31907, [31908] = 31907, [31904] = 31907, [31903] = 31907, [31906] = 31907, [31905] = 31907, [31902] = 31907,
-    
+
     -- Blessings Deck / Darkmoon Card: Crusade
     [31890] = { 31890, 31856, 0, 31882, 31889, 31888, 31885, 31884, 31887, 31886, 31883 },
     [31882] = 31890, [31889] = 31890, [31888] = 31890, [31885] = 31890, [31884] = 31890, [31887] = 31890, [31886] = 31890, [31883] = 31890,
-    
+
     -- Storms Deck / Darkmoon Card: Wrath
     [31891] = { 31891, 31857, 0, 31892, 31900, 31899, 31895, 31894, 31898, 31896, 31893 },
     [31892] = 31891, [31900] = 31891, [31899] = 31891, [31899] = 31891, [31895] = 31891, [31898] = 31891, [31896] = 31891, [31893] = 31891,
-    
+
     -- Lunacy Deck / Darkmoon Card: Madness
     [31914] = { 31914, 31859, 0, 31910, 31918, 31917, 31913, 31912, 31916, 31915, 31911 },
     [31910] = 31914, [31918] = 31914, [31917] = 31914, [31913] = 31914, [31912] = 31914, [31916] = 31914, [31915] = 31914, [31911] = 31914,
-    
+
     -- Brewfest
     [33016] = { 33017, 33018, 33019, 33020, 33021 }, -- Blue Brewfest Stein
     [32912] = { 32917, 32918, 32920, 32915, 32919 }, -- Yellow Brewfest Stein
@@ -493,19 +492,19 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
         [52676] = {{47241,"2"}, 43953, 0,
         {36918,"1-3"}, {36921,"1-3"}, {36924,"1-3"}, {36927,"1-3"}, {36930,"1-3"}, {36933,"1-3"}, type = 2
     }, -- Cache of the Ley-Guardian
-    
+
     -- Battered Hilt
     [50380] = {50047, 50046, 50049, 50048, type = 3}, -- horde
     [50379] = 50380, -- alli
-    
+
     -- Key to the Focusing Iris
     [44569] = {44582, type = 3}, -- 10man
     [44577] = {44581, type = 3}, -- 25man
-    
+
     -- Heart of Magic / Malygos
     [44650] = {44658, 44657, 44659, 44660, type = 3}, -- 10man
     [44651] = {44661, 44662, 44664, 44665, type = 3}, -- 25man
-    
+
     --- T7 / 10Man
     -- Head
     [40616] = { ICONS.PALADIN, 39628, 39635, 39640, 0, ICONS.PRIEST, 39514, 39521, 0, ICONS.WARLOCK, 39496, type = 6}, -- Helm of the Lost Conqueror
@@ -527,7 +526,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
     [40619] = { ICONS.PALADIN, 39630, 39636, 39641, 0, ICONS.PRIEST, 39517, 39528, 0, ICONS.WARLOCK, 39498, type = 6}, -- Leggings of the Lost Conqueror
     [40620] = { ICONS.WARRIOR, 39607, 39612, 0, ICONS.HUNTER, 39580, 0, ICONS.SHAMAN, 39589, 39595, 39603, type = 6}, -- Leggings of the Lost Protector
     [40621] = { ICONS.ROGUE, 39564, 0, ICONS.DEATHKNIGHT, 39620, 39626, 0, ICONS.MAGE, 39493, 0, ICONS.DRUID, 39539, 39546, 39555, type = 6}, -- Leggings of the Lost Vanquisher
-    
+
     --- T7 / 25Man
     -- Head
     [40631] = { ICONS.PALADIN, 40571, 40576, 40581, 0, ICONS.PRIEST, 40447, 40456, 0, ICONS.WARLOCK, 40421, type = 6}, -- Crown of the Lost Conqueror
@@ -549,7 +548,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
     [40634] = { ICONS.PALADIN, 40572, 40577, 40583, 0, ICONS.PRIEST, 40448, 40457, 0, ICONS.WARLOCK, 40422, type = 6}, -- Legplates of the Lost Conqueror
     [40635] = { ICONS.WARRIOR, 40529, 40547, 0, ICONS.HUNTER, 40506, 0, ICONS.SHAMAN, 40512, 40517, 40522, type = 6}, -- Legplates of the Lost Protector
     [40636] = { ICONS.ROGUE, 40500, 0, ICONS.DEATHKNIGHT, 40556, 40567, 0, ICONS.MAGE, 40417, 0, ICONS.DRUID, 40462, 40468, 40493, type = 6}, -- Legplates of the Lost Vanquisher
-    
+
     --- T8 / 10Man
     -- Head
     [45647] = { ICONS.PALADIN, 45372, 45377, 45382, 0, ICONS.PRIEST, 45386, 45391, 0, ICONS.WARLOCK, 45417, type = 6}, -- Helm of the Wayward Conqueror
@@ -571,7 +570,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
     [45650] = { ICONS.PALADIN, 45371, 45379, 45384, 0, ICONS.PRIEST, 45388, 45394, 0, ICONS.WARLOCK, 45420, type = 6}, -- Leggings of the Wayward Conqueror
     [45651] = { ICONS.WARRIOR, 45427, 45432, 0, ICONS.HUNTER, 45362, 0, ICONS.SHAMAN, 45403, 45409, 45416, type = 6}, -- Leggings of the Wayward Protector
     [45652] = { ICONS.ROGUE, 45399, 0, ICONS.DEATHKNIGHT, 45338, 45343, 0, ICONS.MAGE, 45367, 0, ICONS.DRUID, 45347, 45353, 45357, type = 6}, -- Leggings of the Wayward Vanquisher
-    
+
     --- T8 / 25Man
     -- Head
     [45638] = { ICONS.PALADIN, 46156, 46175, 46180, 0, ICONS.PRIEST, 46172, 46197, 0, ICONS.WARLOCK, 46140, type = 6}, -- Crown of the Wayward Conqueror
@@ -593,7 +592,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
     [45653] = { ICONS.PALADIN, 46153, 46176, 46181, 0, ICONS.PRIEST, 46170, 46195, 0, ICONS.WARLOCK, 46139, type = 6}, -- Legplates of the Wayward Conqueror
     [45654] = { ICONS.WARRIOR, 46150, 46169, 0, ICONS.HUNTER, 46144, 0, ICONS.SHAMAN, 46202, 46208, 46210, type = 6}, -- Legplates of the Wayward Protector
     [45655] = { ICONS.ROGUE, 46126, 0, ICONS.DEATHKNIGHT, 46116, 46121, 0, ICONS.MAGE, 46133, 0, ICONS.DRUID, 46160, 46185, 46192, type = 6}, -- Legplates of the Wayward Vanquisher
-    
+
     --- ## WrathOnyxiasLair
     [49644] = {49485, 49486, 49487, type = 3}, -- Head of Onyxia
     [49294] = { {36919, "1-2"}, {36922, "1-3"}, {36931, "1-3"}, {36928, "1-3"}, {36934, "1-3"}, {36925, "1-3"}, type = 2 },	-- Ashen Sack of Gems
@@ -611,7 +610,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
         ICONS.WARRIOR, 49479, 49478, 0, ICONS.PALADIN, 49476, 49475, 49474, 0, ICONS.DEATHKNIGHT, 49467, 49466,
         type = 9
     },
-    
+
     ["Tier7TitanRuneTokens"] = {
         40616, 40617, 40618, 0,
         40622, 40623, 40624, 0,
@@ -626,16 +625,17 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
         45644, 45645, 45646, 0,
         type = 9
     },
-    
-    --- ## Ulduar
+
+    --- Val'anyr
     [45038] = { { 45038, 30 }, 45039, 45896, 0, 46017 }, -- Fragment of Val'anyr
     [45039] = 45038, -- Shattered Fragments of Val'anyr
     [45896] = 45038, -- Unbound Fragments of Val'anyr
     [46017] = 45038, -- Val'anyr, Hammer of Ancient Kings
-    
+
+    --- Algalon Quest
     [46052] = { 46320, 46321, 46322, 46323, type = 3 }, -- Reply-Code Alpha / 10man
     [46053] = { 45588, 45618, 45608, 45614, type = 3 }, -- Reply-Code Alpha / 25man
-    
+
     --- Algalon Key
     -- 10 man
     [45796] = { 45788, 45786, 45787, 45784, 0, 45796, type = 4 }, -- Celestial Planetarium Key / 10man
@@ -643,26 +643,28 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
     -- 25 man
     [45798] = { 45814, 45815, 45816, 45817, 0, 45798, type = 4 }, -- Celestial Planetarium Key / 25man
     [45814] = 45798, [45815] = 45798, [45816] = 45798, [45817] = 45798,
-    
+
     ["AC_UlduarFlameLeviathan10"] = {"ac2913", "ac2914", "ac2915", "ac3056", 0, "ac2911", "ac2909", "ac2907", "ac2905", type = 10},
     ["AC_UlduarFlameLeviathan25"] = {"ac2918", "ac2916", "ac2917", "ac3057", 0, "ac2912", "ac2910", "ac2908", "ac2906", type = 10},
-    
+
     ["AC_UlduarXTDeconstructor10"] = {"ac3058", "ac2937", "ac2931", "ac2934", "ac2933", type = 10},
     ["AC_UlduarXTDeconstructor25"] = {"ac3059", "ac2938", "ac2932", "ac2936", "ac2935", type = 10},
-    
+
     ["AC_UlduarCouncil10"] = {"ac2945", "ac2947", "ac2939", "ac2941", "ac2940", type = 10},
     ["AC_UlduarCouncil25"] = {"ac2946", "ac2948", "ac2942", "ac2944", "ac2943", type = 10},
-    
+
     ["AC_UlduarFreya10"] = {"ac2980", "ac2985", "ac2982", "ac2979", 0, "ac3177", "ac3178", "ac3179", type = 10},
     ["AC_UlduarFreya25"] = {"ac2981", "ac2984", "ac2983", "ac3118", 0, "ac3185", "ac3186", "ac3187", type = 10},
-    
+
     ["AC_UlduarHodir10"] = {"ac2961", "ac2967", "ac3182", "ac2963", "ac2969", type = 10},
     ["AC_UlduarHodir25"] = {"ac2962", "ac2968", "ac3184", "ac2965", "ac2970", type = 10},
-    
+
     ["AC_UlduarYoggSaron10"] = {"ac3159", "ac3158", "ac3141", "ac3157", "ac3008", 0, "ac3012", "ac3015", "ac3009", "ac3014", type = 10},
     ["AC_UlduarYoggSaron25"] = {"ac3164", "ac3163", "ac3162", "ac3161", "ac3010", 0, "ac3013", "ac3016", "ac3011", "ac3017", type = 10},
-    
-    --- ## ICC
+
+    -- TODO: T9 and T10 token drops never implemented
+
+    --- ## Shadowmourne
     [50274] = { {50274,"50"}, {49908,"25"}, 49869, 50226, 50231, 0, 49888, 49623, 0, 51315, 52200, 52201, 52251, 52252, 52253 }, -- Shadowfrost Shard
     [49869] = 50274, -- Light's Vengeance
     [50226] = 50274, -- Festergut's Acidic Blood
@@ -674,8 +676,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
     [52251] = 50274, -- Jaina's Locket
     [52252] = 50274, -- Tabard of the Lightbringer
     [52253] = 50274, -- Sylvanas' Music Box
-    
-    
+
     --- ## VaultofArchavon
     --- Archavon the Stone Watcher
     -- Warlock
@@ -726,7 +727,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
     ["VoA_A_PALADIN_25_D"] = {40574, 40575, 40577, 0, 40785, 40805, 40846, type = 9},
     ["VoA_A_PALADIN_10_T"] = {39638, 39639, 39641, type = 9},
     ["VoA_A_PALADIN_25_T"] = {40579, 40580, 40583, type = 9},
-    
+
     --- Emalon the Storm Watcher
     -- Warlock
     ["VoA_E_WARLOCK_10"] = {45419, 45420, 0, 42016, 42004, type = 9},
@@ -776,7 +777,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
     ["VoA_E_PALADIN_25_H"] = {46179, 46181, 0, 40927, 40939, type = 9},
     ["VoA_E_PALADIN_25_D"] = {46155, 46153, 0, 40808, 40849, type = 9},
     ["VoA_E_PALADIN_25_T"] = {46174, 46176, type = 9},
-    
+
     --- Koralon the Flame Watcher (Alliance)
     -- Non-ClassSet-Items
     ["VoA_K_CLOTH_10"] = {41909, 41898, 41903, 0, 41893, 41881, 41885, type = 9},
@@ -873,7 +874,6 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
     ["VoA_KH_DRUID_10_DR"] = {48183, 48185, 0, 41293, 41304, type = 9},
     ["VoA_KH_DRUID_10_D"] = {48192, 48190, 0, 41773, 41667, type = 9},
     ["VoA_KH_DRUID_10_H"]  = {48153, 48155, 0, 41287, 41298, type = 9},
-    
     ["VoA_KH_DRUID_25_DR"] = {48182, 48180, 0, 41294, 41305, type = 9},
     ["VoA_KH_DRUID_25_D"] = {48193, 48195, 0, 41774, 41668, type = 9},
     ["VoA_KH_DRUID_25_H"]  = {48152, 48150, 0, 41288, 41299, type = 9},
@@ -891,7 +891,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
     ["VoA_KH_PALADIN_25_H"] = {48593, 48591, 0, 40928, 40940, type = 9},
     ["VoA_KH_PALADIN_25_D"] = {48625, 48623, 0, 40812, 40852, type = 9},
     ["VoA_KH_PALADIN_25_T"] = {48658, 48660, type = 9},
-    
+
     --- Toravon the Ice Watcher
     -- Non-ClassSet-Items
     ["VoA_T_CLOTH_10"] = {41910, 41899, 41904, 0, 41894, 41882, 41886, 0, 49181, 49179, 49183, type = 9},
@@ -956,180 +956,201 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
     ["VoA_T_PALADIN_25_H"] = {51169, 51168, 0, 51469, 51471, type = 9},
     ["VoA_T_PALADIN_25_D"] = {51163, 51161, 0, 51475, 51477, type = 9},
     ["VoA_T_PALADIN_25_T"] = {51172, 51171, type = 9},
-    
+
     --- Darkmoon cards
     -- Chaos Deck / Darkmoon Card: Berserker!
     [44276] = { 44276, 42989, 0, 44277, 44278, 44279, 44280, 44281, 44282, 44284, 44285 },
     [44277] = 44276, [44278] = 44276, [44279] = 44276, [44280] = 44276, [44281] = 44276, [44282] = 44276, [44284] = 44276, [44285] = 44276,
-    
+
     -- Prisms Deck / Darkmoon Card: Illusion
     [44259] = { 44259, 42988, 0, 44260, 44261, 44262, 44263, 44264, 44265, 44266, 44267 },
     [44260] = 44259, [44261] = 44259, [44262] = 44259, [44263] = 44259, [44264] = 44259, [44265] = 44259, [44266] = 44259, [44267] = 44259,
-    
+
     -- Undeath Deck / Darkmoon Card: Death
     [44294] = { 44294, 42990, 0, 44286, 44287, 44288, 44289, 44290, 44291, 44292, 44293 },
     [44286] = 44294, [44287] = 44294, [44288] = 44294, [44289] = 44294, [44290] = 44294, [44291] = 44294, [44292] = 44294, [44293] = 44294,
-    
+
     -- Lunacy Deck / Darkmoon Card: Greatness
     [44326] = { 44326, 44253, 42987, 44254, 44255, 0, 44268, 44269, 44270, 44271, 44272, 44273, 44274, 44275 },
     [44268] = 44326, [44269] = 44326, [44270] = 44326, [44271] = 44326, [44272] = 44326, [44273] = 44326, [44274] = 44326, [44275] = 44326,
-    
-    -- Volcanic Deck / Darkmoon Card: Volcano
-    [62021] = { 62021, 62047, 0, 61988, 61989, 61990, 61991, 61992, 61993, 61994, 61995 },
-    [61988] = 62021, [61989] = 62021, [61990] = 62021, [61991] = 62021, [61992] = 62021, [61993] = 62021, [61994] = 62021, [61995] = 62021,
-    
-    -- Tsunami Deck / Darkmoon Card: Tsunami
-    [62044] = { 62044, 62050, 0, 62012, 62013, 62014, 62015, 62016, 62017, 62018, 62019	},
-    [62012] = 62044, [62013] = 62044, [62014] = 62044, [62015] = 62044, [62016] = 62044, [62017] = 62044, [62018] = 62044, [62019] = 62044,
-    
-    -- Hurricane Deck / Darkmoon Card: Hurricane
-    [62045] = { 62045, 62049, 62051, 0, 62004, 62005, 62006, 62007, 62008, 62009, 62010, 62011	},
-    [62004] = 62045, [62005] = 62045, [62006] = 62045, [62007] = 62045, [62008] = 62045, [62009] = 62045, [62010] = 62045, [62011] = 62045,
-    
-    -- Earthquake Deck / Darkmoon Card: Earthquake
-    [62046] = { 62046, 62048, 0, 61996, 61997, 61998, 61999, 62000, 62001, 62002, 62003	},
-    [61996] = 62046, [61997] = 62046, [61998] = 62046, [61999] = 62046, [62000] = 62046, [62001] = 62046, [62002] = 62046, [62003] = 62046,
-    
-    --- ## Baradin Hold
-    --- Argaloth
-    -- Non-ClassSet-Items
-    ["BH_A_CLOTH"] = {60628, 60626, 60630, 0, 60635, 60637, 60636, 0, 60634, 60612, 60613, type = 9},
-    ["BH_A_LEATHER"] = {60591, 60589, 60587, 0, 60594, 60586, 60593, 0, 60611, 60583, 60607, 0, 60582, 60580, 60581, type = 9},
-    ["BH_A_MAIL"] = {60559, 60555, 60557, 0, 60565, 60564, 60554, 0, 60535, 60533, 60534, 0, 60569, 60536, 60567, type = 9},
-    ["BH_A_PLATE"] = {60512, 60508, 60509, 0, 60523, 60521, 60513, 0, 60520, 60505, 60516, 0, 60541, 60539, 60540, type = 9},
-    ["BH_A_BACK"] = {60783, 60779, 0, 60776, 60778, 0, 60786, 60788, 60787, type = 9},
-    ["BH_A_NECK"] = {60669, 60668, 0, 60673, 60670, 0, 60662, 60661, 60664, type = 9},
-    ["BH_A_FINGER"] = {60658, 60659, 0, 60651, 60650, 0, 60647, 60645, 60649, type = 9},
-    -- trinkets alliance
-    ["BH_AA_TRINKET"] = {61033, 61035, 61034, 0, 61026, 61031, 61032, 0, 60794, 60799, 60800, 0, 61047, 61045, 61046, type = 9},
-    -- trinkets horde
-    ["BH_AH_TRINKET"] = {61033, 61035, 61034, 0, 61026, 61031, 61032, 0, 60801, 60806, 60807, 0, 61047, 61045, 61046, type = 9},
-    -- warlock
-    ["BH_A_WARLOCK"] = {60248, 60250, 0, 60478, 60480, type = 9},
-    -- Priest
-    ["BH_A_PRIEST_H"] = {60275, 60261, 0, 60468, 60470, type = 9},
-    ["BH_A_PRIEST_D"] = {60257, 60255, 0, 60476, 60475, type = 9},
-    -- Rogue
-    ["BH_A_ROGUE"] = {60298, 60300, 0, 60459, 60461, type = 9},
-    -- Hunter
-    ["BH_A_HUNTER"] = {60307, 60305, 0, 60424, 60426, type = 9},
-    -- Warrior
-    ["BH_A_WARRIOR_D"] = {60326, 60324, 0, 60419, 60421, type = 9},
-    ["BH_A_WARRIOR_T"] = {60332, 60330, type = 9},
-    -- Deathknight
-    ["BH_A_DEATHKNIGHT_D"] = {60340, 60342, 0, 60409, 60411, type = 9},
-    ["BH_A_DEATHKNIGHT_T"] = {60350, 60352, type = 9},
-    -- Mage
-    ["BH_A_MAGE"] = {60247, 60245, 0, 60463, 60465, type = 9},
-    -- Druid
-    ["BH_A_DRUID_DR"] = {60285, 60283, 0, 60453, 60455, type = 9},
-    ["BH_A_DRUID_D"] = {60290, 60288, 0, 60443, 60445, type = 9},
-    ["BH_A_DRUID_H"] = {60280, 60278, 0, 60448, 60450, type = 9},
-    -- Shaman
-    ["BH_A_SHAMAN_DR"] = {60314, 60316, 0, 60439, 60441, type = 9},
-    ["BH_A_SHAMAN_D"] = {60319, 60321, 0, 60434, 60436, type = 9},
-    ["BH_A_SHAMAN_H"] = {60312, 60310, 0, 60429, 60431, type = 9},
-    -- Paladin
-    ["BH_A_PALADIN_H"] = {60363, 60361, 0, 60602, 60604, type = 9},
-    ["BH_A_PALADIN_D"] = {60345, 60347, 0, 60414, 60416, type = 9},
-    ["BH_A_PALADIN_T"] = {60355, 60357, type = 9},
-    
-    --- Occu'thar
-    -- Non-ClassSet-Items
-    ["BH_O_CLOTH"] = {70363, 70362, 70364, 0, 70366, 70368, 70367, 0, 70365, 70360, 70361, type = 9},
-    ["BH_O_LEATHER"] = {70350, 70349, 70348, 0, 70352, 70347, 70351, 0, 70359, 70346, 70358, 0, 70345, 70343, 70344, type = 9},
-    ["BH_O_MAIL"] = {70338, 70336, 70337, 0, 70340, 70339, 70335, 0, 70330, 70328, 70329, 0, 70342, 70331, 70341, type = 9},
-    ["BH_O_PLATE"] = {70327, 70320, 70321, 0, 70322, 70326, 70323, 0, 70325, 70319, 70324, 0, 70334, 70332, 70333, type = 9},
-    ["BH_O_BACK"] = {70386, 70385, 0, 70383, 70384, 0, 70387, 70389, 70388, type = 9},
-    ["BH_O_NECK"] = {70380, 70379, 0, 70382, 70381, 0, 70377, 70376, 70378, type = 9},
-    ["BH_O_FINGER"] = { 70374, 70375, 0, 70373, 70372, 0, 70370, 70369, 70371,type = 9},
-    -- trinkets alliance
-    ["BH_OA_TRINKET"] = {70399, 70401, 70400, 0, 70396, 70397, 70398, 0, 70390, 70391, 70392, 0, 70404, 70402, 70403, type = 9},
-    -- trinkets horde
-    ["BH_OH_TRINKET"] = {70399, 70401, 70400, 0, 70396, 70397, 70398, 0, 70393, 70394, 70395, 0, 70404, 70402, 70403, type = 9},
-    -- warlock
-    ["BH_O_WARLOCK"] = {71281, 71283, 0, 70314, 70316, type = 9},
-    -- Priest
-    ["BH_O_PRIEST_H"] = {71271, 71273, 0, 70304, 70306, type = 9},
-    ["BH_O_PRIEST_D"] = {71276, 71278, 0, 70309, 70311, type = 9},
-    -- Rogue
-    ["BH_O_ROGUE"] = {71046, 71048, 0, 70301, 70297, type = 9},
-    -- Hunter
-    ["BH_O_HUNTER"] = {71050, 71052, 0, 70260, 70262, type = 9},
-    -- Warrior
-    ["BH_O_WARRIOR_D"] = {71069, 71071, 0, 70255, 70257, type = 9},
-    ["BH_O_WARRIOR_T"] = {70943, 70942, type = 9},
-    -- Deathknight
-    ["BH_O_DEATHKNIGHT_D"] = {71059, 71061, 0, 70245, 70247, type = 9},
-    ["BH_O_DEATHKNIGHT_T"] = {70953, 70952, type = 9},
-    -- Mage
-    ["BH_O_MAGE"] = {71286, 71288, 0, 70299, 70301, type = 9},
-    -- Druid
-    ["BH_O_DRUID_DR"] = {71107, 71109, 0, 70289, 70291, type = 9},
-    ["BH_O_DRUID_D"] = {71097, 71099, 0, 70279, 70281, type = 9},
-    ["BH_O_DRUID_H"] = {71102, 71104, 0, 70284, 70286, type = 9},
-    -- Shaman
-    ["BH_O_SHAMAN_DR"] = {71292, 71294, 0, 70275, 70277, type = 9},
-    ["BH_O_SHAMAN_D"] = {71302, 71304, 0, 70270, 70272, type = 9},
-    ["BH_O_SHAMAN_H"] = {71297, 71299, 0, 70265, 70267, type = 9},
-    -- Paladin
-    ["BH_O_PALADIN_H"] = {71092, 71094, 0, 70354, 70356, type = 9},
-    ["BH_O_PALADIN_D"] = {71064, 71066, 0, 70250, 70252, type = 9},
-    ["BH_O_PALADIN_T"] = {70949, 70947, type = 9},
-    
-    --- Alizabal, Mistress of Hate
-    -- Non-ClassSet-Items
-    ["BH_AL_CLOTH"] = {73633, 73638, 73635, 0, 73631, 73637, 73634, 0, 73632, 73639, 73636, type = 9},
-    ["BH_AL_LEATHER"] = {73528, 73532, 73531, 0, 73529, 73533, 73530, 0, 73600, 73602, 73601, 0, 73608, 73610, 73609, type = 9},
-    ["BH_AL_MAIL"] = {73586, 73590, 73587, 0, 73585, 73589, 73588, 0, 73518, 73522, 73520, 0, 73519, 73507, 73677, type = 9},
-    ["BH_AL_PLATE"] = {73550, 73555, 73553, 0, 73551, 73554, 73552, 0, 73562, 73566, 73564, 0, 73561, 73565, 73563,  type = 9},
-    ["BH_AL_BACK"] = {73647, 73646, 0, 73495, 73494, 0, 73629, 73628, 73630, type = 9},
-    ["BH_AL_NECK"] = {73645, 73644, 0, 73492, 73493, 0, 73627, 73626, 73625, type = 9},
-    ["BH_AL_FINGER"] = { 73640, 73641, 0, 73488, 73489, 0, 73622, 73623, 73621, type = 9},
-    -- trinkets alliance
-    ["BH_ALA_TRINKET"] = {73648, 73498, 73496, 0, 73593, 73591, 73592, 0, 73539, 73535, 73536, 0, 73643, 73497, 73491, type = 9},
-    -- trinkets horde
-    ["BH_ALH_TRINKET"] = {73648, 73498, 73496, 0, 73593, 73591, 73592, 0, 73538, 73534, 73537, 0, 73643, 73497, 73491, type = 9},
-    -- warlock
-    ["BH_AL_WARLOCK"] = {76343, 76341, 0, 73487, 73485, type = 9},
-    -- Priest
-    ["BH_AL_PRIEST_H"] = {76357, 76359, 0, 73549, 73547, type = 9},
-    ["BH_AL_PRIEST_D"] = {76348, 76346, 0, 73544, 73542, type = 9},
-    -- Rogue
-    ["BH_AL_ROGUE"] = {77024, 77026, 0, 73526, 73524, type = 9},
-    -- Hunter
-    ["BH_AL_HUNTER"] = {77029, 77031, 0, 73583, 73581, type = 9},
-    -- Warrior
-    ["BH_AL_WARRIOR_D"] = {76985, 76986, 0, 73481, 73479, type = 9},
-    ["BH_AL_WARRIOR_T"] = {76989, 76991, type = 9},
-    -- Deathknight
-    ["BH_AL_DEATHKNIGHT_D"] = {76975, 76977, 0, 73619, 73617, type = 9},
-    ["BH_AL_DEATHKNIGHT_T"] = {77009, 77011, type = 9},
-    -- Mage
-    ["BH_AL_MAGE"] = {76212, 76214, 0, 73576, 73574, type = 9},
-    -- Druid
-    ["BH_AL_DRUID_DR"] = {77018, 77020, 0, 73599, 73597, type = 9},
-    ["BH_AL_DRUID_D"] = {77014, 77016, 0, 73615, 73613, type = 9},
-    ["BH_AL_DRUID_H"] = {76749, 76751, 0, 73607, 73605, type = 9},
-    -- Shaman
-    ["BH_AL_SHAMAN_DR"] = {77038, 77036, 0, 73505, 73503, type = 9},
-    ["BH_AL_SHAMAN_D"] = {77041, 77043, 0, 73511, 73509, type = 9},
-    ["BH_AL_SHAMAN_H"] = {76757, 76759, 0, 73516, 73514, type = 9},
-    -- Paladin
-    ["BH_AL_PALADIN_H"] = {76766, 76768, 0, 73559, 73557, type = 9},
-    ["BH_AL_PALADIN_D"] = {76875, 76877, 0, 73570, 73568, type = 9},
-    ["BH_AL_PALADIN_T"] = {77004, 77006, type = 9},
-    --- Misc
-    [44951] = { { 41119, "24-40" }, type = 11 },
-    [71086] = {71084, 71085, type = 3}, -- Dragonwrath, Tarecgosa's Rest
-    [74034] = { {74034, 12}, 0, 74035, type = 3 }, -- Pit Fighter
-    --- Darkmoon Faire Achievements
-    ["AC_DarkmoonFaire"] = {"ac6019", "ac6020", "ac6021", "ac6022", "ac6023", "ac6024", "ac6025", "ac6026", "ac6027", "ac6028", "ac6029", "ac6030", "ac6031", "ac6032", type = 10},
 }
 end
 
 if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
     TOKEN_DATA.CATA = {
+        -- Volcanic Deck / Darkmoon Card: Volcano
+        [62021] = { 62021, 62047, 0, 61988, 61989, 61990, 61991, 61992, 61993, 61994, 61995 },
+        [61988] = 62021, [61989] = 62021, [61990] = 62021, [61991] = 62021, [61992] = 62021, [61993] = 62021, [61994] = 62021, [61995] = 62021,
+
+        -- Tsunami Deck / Darkmoon Card: Tsunami
+        [62044] = { 62044, 62050, 0, 62012, 62013, 62014, 62015, 62016, 62017, 62018, 62019	},
+        [62012] = 62044, [62013] = 62044, [62014] = 62044, [62015] = 62044, [62016] = 62044, [62017] = 62044, [62018] = 62044, [62019] = 62044,
+
+        -- Hurricane Deck / Darkmoon Card: Hurricane
+        [62045] = { 62045, 62049, 62051, 0, 62004, 62005, 62006, 62007, 62008, 62009, 62010, 62011	},
+        [62004] = 62045, [62005] = 62045, [62006] = 62045, [62007] = 62045, [62008] = 62045, [62009] = 62045, [62010] = 62045, [62011] = 62045,
+
+        -- Earthquake Deck / Darkmoon Card: Earthquake
+        [62046] = { 62046, 62048, 0, 61996, 61997, 61998, 61999, 62000, 62001, 62002, 62003	},
+        [61996] = 62046, [61997] = 62046, [61998] = 62046, [61999] = 62046, [62000] = 62046, [62001] = 62046, [62002] = 62046, [62003] = 62046,
+
+        --- T11 / Heroic
+        -- Head
+        [65001] = { ICONS.PALADIN, 65216, 65221, 65226, 0, ICONS.PRIEST, 65230, 65235, 0, ICONS.WARLOCK, 65260, type = 6}, -- Crown of the Forlorn Conqueror
+        [65000] = { ICONS.WARRIOR, 65266, 65271, 0, ICONS.HUNTER, 65206, 0, ICONS.SHAMAN, 65246, 65251, 65256, type = 6}, -- Crown of the Forlorn Protector
+        [65002] = { ICONS.ROGUE, 65241, 0, ICONS.DEATHKNIGHT, 65181, 65186, 0, ICONS.MAGE, 65210, 0, ICONS.DRUID, 65190, 65195, 65200, type = 6}, -- Crown of the Forlorn Vanquisher
+        -- Shoulders
+        [65088] = { ICONS.PALADIN, 65218, 65223, 65228, 0, ICONS.PRIEST, 65233, 65238, 0, ICONS.WARLOCK, 65263, type = 6}, -- Shoulders of the Forlorn Conqueror
+        [65087] = { ICONS.WARRIOR, 65268, 65273, 0, ICONS.HUNTER, 65208, 0, ICONS.SHAMAN, 65248, 65253, 65258, type = 6}, -- Shoulders of the Forlorn Protector
+        [65089] = { ICONS.ROGUE, 65243, 0, ICONS.DEATHKNIGHT, 65183, 65188, 0, ICONS.MAGE, 65213, 0, ICONS.DRUID, 65193, 65198, 65203, type = 6}, -- Shoulders of the Forlorn Vanquisher
+        -- Chest
+        [67423] = { ICONS.PALADIN, 65214, 65219, 65224, 0, ICONS.PRIEST, 65232, 65237, 0, ICONS.WARLOCK, 65262, type = 6}, -- Chest of the Forlorn Conqueror
+        [67424] = { ICONS.WARRIOR, 65264, 65269, 0, ICONS.HUNTER, 65204, 0, ICONS.SHAMAN, 65244, 65249, 65254, type = 6}, -- Chest of the Forlorn Protector
+        [67425] = { ICONS.ROGUE, 65239, 0, ICONS.DEATHKNIGHT, 65179, 65184, 0, ICONS.MAGE, 65212, 0, ICONS.DRUID, 65192, 65197, 65202, type = 6}, -- Chest of the Lost Vanquisher
+        -- Hands
+        [67429] = { ICONS.PALADIN, 65215, 65220, 65225, 0, ICONS.PRIEST, 65229, 65234, 0, ICONS.WARLOCK, 65259, type = 6}, -- Gauntlets of the Forlorn Conqueror
+        [67430] = { ICONS.WARRIOR, 65265, 65270, 0, ICONS.HUNTER, 65205, 0, ICONS.SHAMAN, 65245, 65250, 65255, type = 6}, -- Gauntlets of the Forlorn Protector
+        [67431] = { ICONS.ROGUE, 65240, 0, ICONS.DEATHKNIGHT, 65180, 65185, 0, ICONS.MAGE, 65209, 0, ICONS.DRUID, 65189, 65194, 65199, type = 6}, -- Gauntlets of the Forlorn Vanquisher
+        -- Leggings
+        [67428] = { ICONS.PALADIN, 65217, 65222, 65227, 0, ICONS.PRIEST, 65231, 65236, 0, ICONS.WARLOCK, 65261, type = 6}, -- Leggings of the Forlorn Conqueror
+        [67427] = { ICONS.WARRIOR, 65267, 65272, 0, ICONS.HUNTER, 65207, 0, ICONS.SHAMAN, 65247, 65252, 65257, type = 6}, -- Leggings of the Forlorn Protector
+        [67426] = { ICONS.ROGUE, 65242, 0, ICONS.DEATHKNIGHT, 65182, 65187, 0, ICONS.MAGE, 65211, 0, ICONS.DRUID, 65191, 65196, 65201, type = 6}, -- Leggings of the Forlorn Vanquisher
+
+        --- ## Baradin Hold
+        --- Argaloth
+        -- Non-ClassSet-Items
+        ["BH_A_CLOTH"] = {60628, 60626, 60630, 0, 60635, 60637, 60636, 0, 60634, 60612, 60613, type = 9},
+        ["BH_A_LEATHER"] = {60591, 60589, 60587, 0, 60594, 60586, 60593, 0, 60611, 60583, 60607, 0, 60582, 60580, 60581, type = 9},
+        ["BH_A_MAIL"] = {60559, 60555, 60557, 0, 60565, 60564, 60554, 0, 60535, 60533, 60534, 0, 60569, 60536, 60567, type = 9},
+        ["BH_A_PLATE"] = {60512, 60508, 60509, 0, 60523, 60521, 60513, 0, 60520, 60505, 60516, 0, 60541, 60539, 60540, type = 9},
+        ["BH_A_BACK"] = {60783, 60779, 0, 60776, 60778, 0, 60786, 60788, 60787, type = 9},
+        ["BH_A_NECK"] = {60669, 60668, 0, 60673, 60670, 0, 60662, 60661, 60664, type = 9},
+        ["BH_A_FINGER"] = {60658, 60659, 0, 60651, 60650, 0, 60647, 60645, 60649, type = 9},
+        -- trinkets alliance
+        ["BH_AA_TRINKET"] = {61033, 61035, 61034, 0, 61026, 61031, 61032, 0, 60794, 60799, 60800, 0, 61047, 61045, 61046, type = 9},
+        -- trinkets horde
+        ["BH_AH_TRINKET"] = {61033, 61035, 61034, 0, 61026, 61031, 61032, 0, 60801, 60806, 60807, 0, 61047, 61045, 61046, type = 9},
+        -- warlock
+        ["BH_A_WARLOCK"] = {60248, 60250, 0, 60478, 60480, type = 9},
+        -- Priest
+        ["BH_A_PRIEST_H"] = {60275, 60261, 0, 60468, 60470, type = 9},
+        ["BH_A_PRIEST_D"] = {60257, 60255, 0, 60476, 60475, type = 9},
+        -- Rogue
+        ["BH_A_ROGUE"] = {60298, 60300, 0, 60459, 60461, type = 9},
+        -- Hunter
+        ["BH_A_HUNTER"] = {60307, 60305, 0, 60424, 60426, type = 9},
+        -- Warrior
+        ["BH_A_WARRIOR_D"] = {60326, 60324, 0, 60419, 60421, type = 9},
+        ["BH_A_WARRIOR_T"] = {60332, 60330, type = 9},
+        -- Deathknight
+        ["BH_A_DEATHKNIGHT_D"] = {60340, 60342, 0, 60409, 60411, type = 9},
+        ["BH_A_DEATHKNIGHT_T"] = {60350, 60352, type = 9},
+        -- Mage
+        ["BH_A_MAGE"] = {60247, 60245, 0, 60463, 60465, type = 9},
+        -- Druid
+        ["BH_A_DRUID_DR"] = {60285, 60283, 0, 60453, 60455, type = 9},
+        ["BH_A_DRUID_D"] = {60290, 60288, 0, 60443, 60445, type = 9},
+        ["BH_A_DRUID_H"] = {60280, 60278, 0, 60448, 60450, type = 9},
+        -- Shaman
+        ["BH_A_SHAMAN_DR"] = {60314, 60316, 0, 60439, 60441, type = 9},
+        ["BH_A_SHAMAN_D"] = {60319, 60321, 0, 60434, 60436, type = 9},
+        ["BH_A_SHAMAN_H"] = {60312, 60310, 0, 60429, 60431, type = 9},
+        -- Paladin
+        ["BH_A_PALADIN_H"] = {60363, 60361, 0, 60602, 60604, type = 9},
+        ["BH_A_PALADIN_D"] = {60345, 60347, 0, 60414, 60416, type = 9},
+        ["BH_A_PALADIN_T"] = {60355, 60357, type = 9},
+
+        --- Occu'thar
+        -- Non-ClassSet-Items
+        ["BH_O_CLOTH"] = {70363, 70362, 70364, 0, 70366, 70368, 70367, 0, 70365, 70360, 70361, type = 9},
+        ["BH_O_LEATHER"] = {70350, 70349, 70348, 0, 70352, 70347, 70351, 0, 70359, 70346, 70358, 0, 70345, 70343, 70344, type = 9},
+        ["BH_O_MAIL"] = {70338, 70336, 70337, 0, 70340, 70339, 70335, 0, 70330, 70328, 70329, 0, 70342, 70331, 70341, type = 9},
+        ["BH_O_PLATE"] = {70327, 70320, 70321, 0, 70322, 70326, 70323, 0, 70325, 70319, 70324, 0, 70334, 70332, 70333, type = 9},
+        ["BH_O_BACK"] = {70386, 70385, 0, 70383, 70384, 0, 70387, 70389, 70388, type = 9},
+        ["BH_O_NECK"] = {70380, 70379, 0, 70382, 70381, 0, 70377, 70376, 70378, type = 9},
+        ["BH_O_FINGER"] = { 70374, 70375, 0, 70373, 70372, 0, 70370, 70369, 70371,type = 9},
+        -- trinkets alliance
+        ["BH_OA_TRINKET"] = {70399, 70401, 70400, 0, 70396, 70397, 70398, 0, 70390, 70391, 70392, 0, 70404, 70402, 70403, type = 9},
+        -- trinkets horde
+        ["BH_OH_TRINKET"] = {70399, 70401, 70400, 0, 70396, 70397, 70398, 0, 70393, 70394, 70395, 0, 70404, 70402, 70403, type = 9},
+        -- warlock
+        ["BH_O_WARLOCK"] = {71281, 71283, 0, 70314, 70316, type = 9},
+        -- Priest
+        ["BH_O_PRIEST_H"] = {71271, 71273, 0, 70304, 70306, type = 9},
+        ["BH_O_PRIEST_D"] = {71276, 71278, 0, 70309, 70311, type = 9},
+        -- Rogue
+        ["BH_O_ROGUE"] = {71046, 71048, 0, 70301, 70297, type = 9},
+        -- Hunter
+        ["BH_O_HUNTER"] = {71050, 71052, 0, 70260, 70262, type = 9},
+        -- Warrior
+        ["BH_O_WARRIOR_D"] = {71069, 71071, 0, 70255, 70257, type = 9},
+        ["BH_O_WARRIOR_T"] = {70943, 70942, type = 9},
+        -- Deathknight
+        ["BH_O_DEATHKNIGHT_D"] = {71059, 71061, 0, 70245, 70247, type = 9},
+        ["BH_O_DEATHKNIGHT_T"] = {70953, 70952, type = 9},
+        -- Mage
+        ["BH_O_MAGE"] = {71286, 71288, 0, 70299, 70301, type = 9},
+        -- Druid
+        ["BH_O_DRUID_DR"] = {71107, 71109, 0, 70289, 70291, type = 9},
+        ["BH_O_DRUID_D"] = {71097, 71099, 0, 70279, 70281, type = 9},
+        ["BH_O_DRUID_H"] = {71102, 71104, 0, 70284, 70286, type = 9},
+        -- Shaman
+        ["BH_O_SHAMAN_DR"] = {71292, 71294, 0, 70275, 70277, type = 9},
+        ["BH_O_SHAMAN_D"] = {71302, 71304, 0, 70270, 70272, type = 9},
+        ["BH_O_SHAMAN_H"] = {71297, 71299, 0, 70265, 70267, type = 9},
+        -- Paladin
+        ["BH_O_PALADIN_H"] = {71092, 71094, 0, 70354, 70356, type = 9},
+        ["BH_O_PALADIN_D"] = {71064, 71066, 0, 70250, 70252, type = 9},
+        ["BH_O_PALADIN_T"] = {70949, 70947, type = 9},
+
+        --- Alizabal, Mistress of Hate
+        -- Non-ClassSet-Items
+        ["BH_AL_CLOTH"] = {73633, 73638, 73635, 0, 73631, 73637, 73634, 0, 73632, 73639, 73636, type = 9},
+        ["BH_AL_LEATHER"] = {73528, 73532, 73531, 0, 73529, 73533, 73530, 0, 73600, 73602, 73601, 0, 73608, 73610, 73609, type = 9},
+        ["BH_AL_MAIL"] = {73586, 73590, 73587, 0, 73585, 73589, 73588, 0, 73518, 73522, 73520, 0, 73519, 73507, 73677, type = 9},
+        ["BH_AL_PLATE"] = {73550, 73555, 73553, 0, 73551, 73554, 73552, 0, 73562, 73566, 73564, 0, 73561, 73565, 73563,  type = 9},
+        ["BH_AL_BACK"] = {73647, 73646, 0, 73495, 73494, 0, 73629, 73628, 73630, type = 9},
+        ["BH_AL_NECK"] = {73645, 73644, 0, 73492, 73493, 0, 73627, 73626, 73625, type = 9},
+        ["BH_AL_FINGER"] = { 73640, 73641, 0, 73488, 73489, 0, 73622, 73623, 73621, type = 9},
+        -- trinkets alliance
+        ["BH_ALA_TRINKET"] = {73648, 73498, 73496, 0, 73593, 73591, 73592, 0, 73539, 73535, 73536, 0, 73643, 73497, 73491, type = 9},
+        -- trinkets horde
+        ["BH_ALH_TRINKET"] = {73648, 73498, 73496, 0, 73593, 73591, 73592, 0, 73538, 73534, 73537, 0, 73643, 73497, 73491, type = 9},
+        -- warlock
+        ["BH_AL_WARLOCK"] = {76343, 76341, 0, 73487, 73485, type = 9},
+        -- Priest
+        ["BH_AL_PRIEST_H"] = {76357, 76359, 0, 73549, 73547, type = 9},
+        ["BH_AL_PRIEST_D"] = {76348, 76346, 0, 73544, 73542, type = 9},
+        -- Rogue
+        ["BH_AL_ROGUE"] = {77024, 77026, 0, 73526, 73524, type = 9},
+        -- Hunter
+        ["BH_AL_HUNTER"] = {77029, 77031, 0, 73583, 73581, type = 9},
+        -- Warrior
+        ["BH_AL_WARRIOR_D"] = {76985, 76986, 0, 73481, 73479, type = 9},
+        ["BH_AL_WARRIOR_T"] = {76989, 76991, type = 9},
+        -- Deathknight
+        ["BH_AL_DEATHKNIGHT_D"] = {76975, 76977, 0, 73619, 73617, type = 9},
+        ["BH_AL_DEATHKNIGHT_T"] = {77009, 77011, type = 9},
+        -- Mage
+        ["BH_AL_MAGE"] = {76212, 76214, 0, 73576, 73574, type = 9},
+        -- Druid
+        ["BH_AL_DRUID_DR"] = {77018, 77020, 0, 73599, 73597, type = 9},
+        ["BH_AL_DRUID_D"] = {77014, 77016, 0, 73615, 73613, type = 9},
+        ["BH_AL_DRUID_H"] = {76749, 76751, 0, 73607, 73605, type = 9},
+        -- Shaman
+        ["BH_AL_SHAMAN_DR"] = {77038, 77036, 0, 73505, 73503, type = 9},
+        ["BH_AL_SHAMAN_D"] = {77041, 77043, 0, 73511, 73509, type = 9},
+        ["BH_AL_SHAMAN_H"] = {76757, 76759, 0, 73516, 73514, type = 9},
+        -- Paladin
+        ["BH_AL_PALADIN_H"] = {76766, 76768, 0, 73559, 73557, type = 9},
+        ["BH_AL_PALADIN_D"] = {76875, 76877, 0, 73570, 73568, type = 9},
+        ["BH_AL_PALADIN_T"] = {77004, 77006, type = 9},
+        --- Misc
+        [44951] = { { 41119, "24-40" }, type = 11 },
+        [74034] = { {74034, 12}, 0, 74035, type = 3 }, -- Pit Fighter
+        --- Darkmoon Faire Achievements
+        ["AC_DarkmoonFaire"] = {"ac6019", "ac6020", "ac6021", "ac6022", "ac6023", "ac6024", "ac6025", "ac6026", "ac6027", "ac6028", "ac6029", "ac6030", "ac6031", "ac6032", type = 10},
+
         --- ## Dragonwrath
         [71141] = { {71141,"25"}, {65893,"3"}, {69815,"1000"}, 69848, 0, 71084, 71085, 71086}, -- Eternal Ember
         [69815] = 71141, -- Seething Cinder
@@ -1144,13 +1165,13 @@ end
 
 local function Init()
     local coloredClassNames = AtlasLoot:GetColoredClassNames()
-    
+
     for k, v in pairs(TOKEN) do
         if TOKEN[v] then
             TOKEN[k] = TOKEN[v]
         end
     end
-    
+
     for className, cClassName in pairs(coloredClassNames) do
         TOKEN_TYPE_TEXT[className] = format(TOKEN_FORMAT_STRING, cClassName)
     end
@@ -1186,7 +1207,7 @@ end
 function Token.GetClassItemsForToken(tokenItemID, className)
     if not tokenItemID or not TOKEN[tokenItemID] then return end
     if not className or not ICONS[className] then return end
-    
+
     local classTokens = {}
     local isClassToken = false
     for i, token in ipairs(TOKEN[tokenItemID]) do
@@ -1200,7 +1221,7 @@ function Token.GetClassItemsForToken(tokenItemID, className)
             isClassToken = true
         end
     end
-    
+
     return #classTokens > 0 and classTokens or nil
 end
 
