@@ -714,12 +714,14 @@ data["CompanionsCata"] = {
         TableType = AC_ITTYPE,
         [NORMAL_DIFF] = {
          {1, 63398, "ac5144"}, -- Armadillo Pup
-         {2, 65361}, -- Guild Page
-         {3, 65363}, -- Guild Herald
+         {2, 65361, "ac5031"}, -- Guild Page Ally
+         {3, 65361, "ac5179"}, -- Guild Page Horde
+         {4, 65363, "ac5201"}, -- Guild Herald Ally
+         {5, 65364, "ac5201"}, -- Guild Herald Horde
          {16, 71387, "ac5877"}, -- Brilliant Kaliri
-         {4, 60869, "ac5449"}, -- Pebbles
-         {5, 63138}, -- Dark Phoenix Hatchling
-         {6, 71033, "ac5840"}, -- Lil Tarecgosa
+         {6, 60869, "ac5449"}, -- Pebbles
+         {7, 63138}, -- Dark Phoenix Hatchling
+         {8, 71033, "ac5840"}, -- Lil Tarecgosa
          {17, 73903, "ac5876"}, -- Nuts'
         }
     }, {
