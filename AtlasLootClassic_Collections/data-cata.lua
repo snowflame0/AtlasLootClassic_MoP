@@ -529,7 +529,7 @@ data["ValorPoints T13"] = {
         name = ALIL["Armor"] .. " - " .. ALIL["Accessories"],
         [NORMAL_DIFF] = { -- Plate
         { 1, 77095}, -- Batwing Cloak
-        { 2, 77097}, -- Dreamcrusher Drape
+        { 2, 77097}, -- Dreamcrusher Drape    	
         { 3, 77099}, -- Indefatigable Greatcloak
         { 4, 77098}, -- Nanoprecise Cape
         { 5, 77096}, -- Woundlicker Cover
@@ -677,23 +677,85 @@ data["CompanionsCata"] = {
     CorrespondingFields = private.COMPANIONS,
     items = {{
         name = AL["Drops"],
-        [NORMAL_DIFF] = {}
+        [NORMAL_DIFF] = {
+         {1, 64403}, -- Fox Kit
+         {2, 64494}, -- Tiny Shale Spider
+         {3, 68673}, -- Smolderweb Egg
+         {16, 61387}, -- Grubs bag
+         {17, 66076}, -- Mr Grubbs
+        }
     }, {
         name = AL["Vendor"],
-        [NORMAL_DIFF] = {}
+        [NORMAL_DIFF] = {
+         {1, 70140}, -- Hyjal Bear Cub
+         {2, 70160}, -- Crimson Lasher
+         {3, 73905}, -- Darkmoon Zep
+         {4, [ATLASLOOT_IT_ALLIANCE] = 63355, [ATLASLOOT_IT_HORDE] = 64996}, -- Rustberg Gull
+         {5, 69239}, -- Winterspring Cub
+         {6, 73903}, -- Darkmoon Tonk
+         {7, 74981}, -- Darkmoon Cub
+         {8, 75042}, -- Flimsy Yellow Ballon
+         {9, 75040}, -- Flimsy Darkmoon Ballon
+         {10, 75041}, -- Flimsy Green Balloon
+         {11, 73762}, -- Darkmoon Balloon
+         {12, 73764}, -- Darkmoon Monkey
+         {13, 73764}, -- Darkmoon Turtle
+        }
     }, {
         name = AL["World Events"],
-        [NORMAL_DIFF] = {}
+        [NORMAL_DIFF] = {
+         {1, 71076}, -- Creepy Crate
+         {2, 70908}, -- Feline Familiar
+         {4, 73797}, -- Lump of Coal
+         {6, 74611}, -- Festival Lantern
+        }
     }, {
         name = ALIL["Achievements"],
         TableType = AC_ITTYPE,
-        [NORMAL_DIFF] = {}
+        [NORMAL_DIFF] = {
+         {1, 63398, "ac5144"}, -- Armadillo Pup
+         {2, 65361}, -- Guild Page
+         {3, 65363}, -- Guild Herald
+         {16, 71387, "ac5877"}, -- Brilliant Kaliri
+         {4, 60869, "ac5449"}, -- Pebbles
+         {5, 63138}, -- Dark Phoenix Hatchling
+         {6, 71033, "ac5840"}, -- Lil Tarecgosa
+         {17, 73903, "ac5876"}, -- Nuts'
+        }
+    }, {
+        name = ALIL["Quests"],
+        TableType = AC_ITTYPE,
+        [NORMAL_DIFF] = {
+         {1, 69251}, -- Lashtail Hatchling
+         {2, 66080}, -- Tiny Flamefly
+         {3, 69648}, -- Legs
+         {4, 68833}, -- Panther Cub
+         {5, 66073}, -- Sunflower
+         {6, 46325}, -- Withers
+         {7, 66073}, -- Sunflower
+         {8, [ATLASLOOT_IT_ALLIANCE] = 72042, [ATLASLOOT_IT_HORDE] = 72045}, -- A/H Balloons
+         {9, 65661}, -- Blue mini jouster
+         {10, 65661}, -- Gold mini jouster
+        }
     }, {
         name = ALIL["Fishing"],
-        [NORMAL_DIFF] = {}
-    }, { -- Misc
-        name = AL["Misc"],
-        [NORMAL_DIFF] = {}
+        [NORMAL_DIFF] = {
+         {1, 73953}, -- Sea pony
+        }
+    }, {
+        name = ALIL["Crafting"],
+        [NORMAL_DIFF] = {
+         {1, 67274}, -- Enchanted Lantern
+         {2, 67275}, -- Magic Lamp
+         {3, 60847}, -- Crawling Claw
+         {4, 67282}, -- Elementium Geode
+         {5, 59597}, -- Personal World Destroyer
+         {6, 60216}, -- De-Weaponized Mechanical Companion
+         {7, 69821}, -- Pterrordax Hatchling
+         {8, 60955}, -- Fossilized Hatchling
+         {9, 69824}, -- Voodoo Figurine
+         {10, 64327}, -- Clockwork Gnome
+        }
     }}
 }
 
