@@ -754,7 +754,7 @@ data["CompanionsCata"] = {
          {7, 69821}, -- Pterrordax Hatchling
          {8, 60955}, -- Fossilized Hatchling
          {9, 69824}, -- Voodoo Figurine
-         {10, 64327}, -- Clockwork Gnome
+         {10, 64372}, -- Clockwork Gnome
         }
     }}
 }
