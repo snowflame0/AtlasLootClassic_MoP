@@ -715,7 +715,7 @@ data["CompanionsCata"] = {
         [NORMAL_DIFF] = {
          {1, 63398, "ac5144"}, -- Armadillo Pup
          {2, 65361, "ac5031"}, -- Guild Page Ally
-         {3, 65361, "ac5179"}, -- Guild Page Horde
+         {3, 65362, "ac5179"}, -- Guild Page Horde
          {4, 65363, "ac5201"}, -- Guild Herald Ally
          {5, 65364, "ac5201"}, -- Guild Herald Horde
          {16, 71387, "ac5877"}, -- Brilliant Kaliri
