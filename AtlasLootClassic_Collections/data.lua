@@ -1659,6 +1659,7 @@ data["LunarFestival"] = {
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+    CorrespondingFields = private.LUNAR_FESTIVAL,
     items = {
         { -- LunarFestival1
             name = AL["Lunar Festival"],
@@ -1722,12 +1723,13 @@ data["LunarFestival"] = {
     },
 }
 
-data["Valentineday"] = {
+data["ValentinesDay"] = {
     name = AL["Love is in the Air"],
     ContentType = WORLD_EVENT_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+    CorrespondingFields = private.VALENTINES_DAY,
     items = {
         { -- Valentineday
             name = AL["Love is in the Air"],
@@ -1782,6 +1784,7 @@ data["ChildrensWeek"] = {
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+    CorrespondingFields = private.CHILDRENS_WEEK,
     items = {
         { -- ChildrensWeek
             name = AL["Childrens Week"],
@@ -1801,6 +1804,7 @@ data["MidsummerFestival"] = {
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+    CorrespondingFields = private.MIDSUMMER_FESTIVAL,
     items = {
         { -- MidsummerFestival
             name = AL["Midsummer Festival"],
@@ -1906,6 +1910,7 @@ data["WinterVeil"] = {
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+    CorrespondingFields = private.WINTER_VEIL,
     items = {
         { -- Winterviel1
             name = AL["Misc"],
@@ -2210,98 +2215,4 @@ data["ScourgeInvasion"] = {
         },
     },
 }
-data["MoltenFront"] = {
-    name = AL["Molten Front"],
-    ContentType = COLLECTIONS_CONTENT,
-    LoadDifficulty = NORMAL_DIFF,
-    TableType = NORMAL_ITTYPE,
-    gameVersion = AtlasLoot.CATA_VERSION_NUM,
-    CorrespondingFields = private.MOLTEN_FRONT,
-    items = {
-        { -- Additional Armaments
-            name = AL["Additional Armaments"],
-            [NORMAL_DIFF] = {
-                   { 1,  70177 }, -- Schematic: Flintlocke's Woodchucker
-                   { 2,  71078 }, -- Schematic: Extreme-Impact Hole Puncher
-                   { 3,  70166 }, -- Plans: Brainsplinter
-                   { 4,  70167 }, -- Plans: Masterwork Elementium Spellblade
-                   { 5,  70168 }, -- Plans: Lightforged Elementium Hammer
-                   { 6,  70169 }, -- Plans: Elementium-Edged Scalper
-                   { 7,  70170 }, -- Plans: Pyrium Spellward
-                   { 8,  70171 }, -- Plans: Unbreakable Guardian
-                   { 9,  70172 }, -- Plans: Masterwork Elementium Deathblade
-                   { 10, 70173 }, -- Plans: Witch-Hunter's Harvester
-                   { 12, 70118 }, -- Widow's Clutches
-                   { 13, 70114 }, -- Fireplume Girdle
-                   { 14, 70115 }, -- Fiery Treads
-                   { 15, 70116 }, -- Gauntlets of Living Obsidium
-                   { 16, 70119 }, -- Meteorite Ring
-                   { 17, 70120 }, -- Rickety Belt
-                   { 18, 70121 }, -- Ricket's Gun Show
-                   { 19, 70117 }, -- Belt of Living Obsidium
-                   { 20, 70144 }, -- Ricket's Magnetic Fireball
-            }
-        },
-        { -- Filling the Moonwell
-            name = AL["Filling the Moonwell"],
-            [NORMAL_DIFF] = {
-                   { 1,  70174 }, -- Pattern: Royal Scribe's Satchel
-                   { 2,  70175 }, -- Pattern: Triple-Reinforced Mining Bag
-                   { 3,  70176 }, -- Pattern: Luxurious Silk Gem Bag
-                   { 5,  70110 }, -- Band of Glittering Lights
-                   { 6,  70112 }, -- Globe of Moonlight
-                   { 7,  70113 }, -- Moon Blessed Band
-                   { 8,  70142 }, -- Moonwell Chalice
-                   { 9,  70143 }, -- Moonwell Phial
-                   { 11, 70160 }, -- Crimson Lasher
-                   { 12, 70161 }, -- Mushroom Chair
-            }
-        },
-        { -- Calling the Ancients
-            name = AL["Calling the Ancients"],
-            [NORMAL_DIFF] = {
-                   { 1,  70122 }, -- Aviana's Grips
-                   { 2,  70123 }, -- Lancer's Greaves
-                   { 3,  70124 }, -- Spirit Fragment Band
-                   { 4,  70126 }, -- Nemesis Shell Band
-                   { 5,  70127 }, -- Lylagar Horn Ring
-                   { 6,  70141 }, -- Dwyer's Caber
-                   { 8,  70140 }, -- Hyjal Bear Cub
-                   { 9,  70159 }, -- Mylune's Call
-            }
-        },
-        { -- Favors of the World Tree
-            name = AL["Favors of the World Tree"],
-            [NORMAL_DIFF] = {
-                   { 1,  70105 }, -- Matoclaw's Band
-                   { 2,  70106 }, -- Nightweaver's Amulet
-                   { 3,  70107 }, -- Fireheart Necklace
-                   { 4,  70108 }, -- Pyrelord Greaves
-                   { 6,  70145 }, -- Darnassus Writ of Commendation
-                   { 7,  70146 }, -- Exodar Writ of Commendation
-                   { 8,  70147 }, -- Gnomeregan Writ of Commendation
-                   { 9,  70148 }, -- Ironforge Writ of Commendation
-                   { 13, 70149 }, -- Orgrimmar Writ of Commendation
-                   { 14, 70150 }, -- Sen'jin Writ of Commendation
-                   { 15, 70151 }, -- Silvermoon Writ of Commendation
-                   { 10, 70152 }, -- Stormwind Writ of Commendation
-                   { 16, 70153 }, -- Thunder Bluff Writ of Commendation
-                   { 17, 70154 }, -- Undercity Writ of Commendation
-                   { 11, 71087 }, -- Gilneas Writ of Commendation
-                   { 18, 71088 }, -- Bilgewater Writ of Commendation
-                   { 20, 71631 }, -- Zen'Vorka's Cache
-                   { 21, 34955 }, -- Scorched Stone
-            }
-        },
-        { -- Misc
-            name = AL["Misc"],
-            [NORMAL_DIFF] = {
-                   { 1,  69213 }, -- Flameward Hippogryph
-                   { 2,  71259 }, -- Leyara's Locket
-                   { 4, "ac5866" },
-                   { 5, "ac5879" },
-                   { 6, "ac5859" },
-            },
-        },
-    },
-}
+

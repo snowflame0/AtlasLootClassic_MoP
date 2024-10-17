@@ -1290,12 +1290,13 @@ data["HeirloomWrath"] = {
     }}
 }
 
-data["ValentinedayWrath"] = {
+data["ValentinesDayWrath"] = {
     name = AL["Love is in the Air"],
     ContentType = WORLD_EVENT_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
+    CorrespondingFields = private.VALENTINES_DAY,
     items = {{ -- Valentineday
         name = AL["Love is in the Air"],
         [NORMAL_DIFF] = {{1, 22206}, -- Bouquet of Red Roses

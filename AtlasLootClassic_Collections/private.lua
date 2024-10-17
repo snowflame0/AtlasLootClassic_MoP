@@ -22,13 +22,6 @@ private.TABARDS = {
     [AtlasLoot.CATA_VERSION_NUM]        = "TabardsCata",
 }
 
-private.HALLOWEEN = {
-    [AtlasLoot.CLASSIC_VERSION_NUM]     = "Halloween",
-    [AtlasLoot.BC_VERSION_NUM]          = "HalloweenBC",
-    [AtlasLoot.WRATH_VERSION_NUM]       = "HalloweenWrath",
-    [AtlasLoot.CATA_VERSION_NUM]        = "HalloweenCata",
-}
-
 private.LEGENDARYS = {
     [AtlasLoot.CLASSIC_VERSION_NUM]     = "Legendarys",
     [AtlasLoot.BC_VERSION_NUM]          = "LegendarysBC",
@@ -48,15 +41,20 @@ private.SCOURGE_INVASION = {
     [AtlasLoot.WRATH_VERSION_NUM]       = "ScourgeInvasionWrath",
 }
 
+private.LUNAR_FESTIVAL = {
+    [AtlasLoot.CLASSIC_VERSION_NUM]     = "LunarFestival",
+    [AtlasLoot.CATA_VERSION_NUM]        = "LunarFestivalCata",
+}
+
+private.VALENTINES_DAY = {
+    [AtlasLoot.CLASSIC_VERSION_NUM]     = "ValentinesDay",
+    [AtlasLoot.WRATH_VERSION_NUM]       = "ValentinesDayWrath",
+    [AtlasLoot.CATA_VERSION_NUM]        = "ValentinesDayCata",
+}
+
 private.CHILDRENS_WEEK = {
     [AtlasLoot.BC_VERSION_NUM]          = "ChildrensWeekBC",
     [AtlasLoot.WRATH_VERSION_NUM]       = "ChildrensWeekWrath",
-}
-
-private.BREWFEST = {
-    [AtlasLoot.BC_VERSION_NUM]          = "BrewfestBC",
-    [AtlasLoot.WRATH_VERSION_NUM]       = "BrewfestWrath",
-    [AtlasLoot.CATA_VERSION_NUM]        = "BrewfestCata",
 }
 
 private.MIDSUMMER_FESTIVAL = {
@@ -65,6 +63,20 @@ private.MIDSUMMER_FESTIVAL = {
     [AtlasLoot.CATA_VERSION_NUM]        = "MidsummerFestivalCata",
 }
 
-private.MOLTEN_FRONT = {
-    [AtlasLoot.CATA_VERSION_NUM]        = "MoltenFrontCata",
+private.BREWFEST = {
+    [AtlasLoot.BC_VERSION_NUM]          = "BrewfestBC",
+    [AtlasLoot.WRATH_VERSION_NUM]       = "BrewfestWrath",
+    [AtlasLoot.CATA_VERSION_NUM]        = "BrewfestCata",
+}
+
+private.HALLOWEEN = {
+    [AtlasLoot.CLASSIC_VERSION_NUM]     = "Halloween",
+    [AtlasLoot.BC_VERSION_NUM]          = "HalloweenBC",
+    [AtlasLoot.WRATH_VERSION_NUM]       = "HalloweenWrath",
+    [AtlasLoot.CATA_VERSION_NUM]        = "HalloweenCata",
+}
+
+private.WINTER_VEIL = {
+    [AtlasLoot.CLASSIC_VERSION_NUM]     = "WinterVeil",
+    [AtlasLoot.CATA_VERSION_NUM]        = "WinterVeilCata",
 }
