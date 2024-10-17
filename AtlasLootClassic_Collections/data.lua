@@ -2290,6 +2290,7 @@ data["MoltenFront"] = {
                    { 11, 71087 }, -- Gilneas Writ of Commendation
                    { 18, 71088 }, -- Bilgewater Writ of Commendation
                    { 20, 71631 }, -- Zen'Vorka's Cache
+                   { 21, 34955 }, -- Scorched Stone
             }
         },
         { -- Misc

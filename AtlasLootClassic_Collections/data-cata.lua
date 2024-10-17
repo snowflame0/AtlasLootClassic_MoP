@@ -857,13 +857,16 @@ data["HalloweenCata"] = {
     items = {{ -- Halloween1
         name = AL["Hallow's End"] .. " - " .. AL["Misc"],
         [NORMAL_DIFF] = {{1, 20400}, -- Pumpkin Bag
-        {3, 18633}, -- Styleen's Sour Suckerpop
-        {4, 18632}, -- Moonbrook Riot Taffy
-        {5, 18635}, -- Bellara's Nutterbar
-        {6, 20557}, -- Hallow's End Pumpkin Treat
-        {8, 20389}, -- Candy Corn
-        {9, 20388}, -- Lollipop
-        {10, 20390} -- Candy Bar
+        {3, 70722}, -- Little Wickerman
+        {4, 70908}, -- Feline Familiar
+        {5, 71076}, -- Creepy Crate
+        {7, 18633}, -- Styleen's Sour Suckerpop
+        {8, 18632}, -- Moonbrook Riot Taffy
+        {9, 18635}, -- Bellara's Nutterbar
+        {10, 20557}, -- Hallow's End Pumpkin Treat
+        {11, 20389}, -- Candy Corn
+        {12, 20388}, -- Lollipop
+        {13, 20390} -- Candy Bar
         }
     }, { -- Halloween1
         name = AL["Hallow's End"] .. " - " .. AL["Wands"],
@@ -897,11 +900,12 @@ data["HalloweenCata"] = {
         }
     }, { -- SMHeadlessHorseman
         name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
-        [NORMAL_DIFF] = {{1, 211817}, -- Ring of Ghoulish Glee
-        {2, 211844}, -- The Horseman's Seal
-        {3, 211847}, -- Wicked Witch's Band
-        {5, 211850}, -- The Horseman's Horrific Helm
-        {6, 211851}, -- The Horseman's Baleful Blade
+        [NORMAL_DIFF] = {{1, 232536}, -- Band of Ghoulish Glee
+        {2, 232537}, -- The Horseman's Signet
+        {3, 232540}, -- Wicked Witch's Ring
+        {4, 232538}, -- Seal of the Petrified Pumpkin
+        {5, 232544}, -- The Horseman's Horrific Helmet
+        {6, 232548}, -- The Horseman's Sinister Saber
         {8, 33292}, -- Hallowed Helm
         {10, 34068}, -- Weighted Jack-o'-Lantern
         {12, 33277}, -- Tome of Thomas Thomson
@@ -911,6 +915,214 @@ data["HalloweenCata"] = {
         {21, 33184}, -- Swift Magic Broom         100% ground
         {22, 37011}, -- Magic Broom               60% ground
         {24, 33154} -- Sinister Squashling
+        }
+    }}
+}
+
+data["WinterVeilCata"] = {
+    name = AL["Feast of Winter Veil"],
+    ContentType = WORLD_EVENT_CONTENT,
+    LoadDifficulty = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.WINTER_VEIL,
+    items = {
+        { -- Winterviel1
+            name = AL["Misc"],
+            [NORMAL_DIFF] = {
+                { 1,  66540 }, -- Miniature Winter Veil Tree
+                { 2,  34425 }, -- Clockwork Rocket Bot
+                { 3,  54436 }, -- Blue Clockwork Rocket Bot
+                { 4,  73797 }, -- Lump of Coal
+                { 5,  46709 }, -- MiniZep Controller
+                { 6,  44606 }, -- Toy Train Set
+                { 7,  37710 }, -- Crashin' Thrashin' Racer Controller
+                { 8,  46725 }, -- Red Rider Air Rifle
+                { 9,  54437 }, -- Tiny Green Ragdoll
+                { 10,  54438 }, -- Tiny Blue Ragdoll
+                { 11,  34498 }, -- Paper Zeppelin Kit
+                { 12,  44599 }, -- Zippy Copper Racer
+                { 13,  44601 }, -- Heavy Copper Racer
+                { 14,  44481 }, -- Grindgear Toy Gorilla
+                { 15,  44482 }, -- Trusty Copper Racer
+                { 16,  21525 }, -- Green Winter Hat
+                { 17,  21524 }, -- Red Winter Hat
+                { 18,  17712 }, -- Winter Veil Disguise Kit
+                { 19,  17202 }, -- Snowball
+                { 20,  21212 }, -- Fresh Holly
+                { 21,  21519 }, -- Mistletoe
+            },
+        },
+        {
+            name = AL["Gaily Wrapped Present"],
+            [NORMAL_DIFF] = {
+                { 1, 21301 }, -- Green Helper Box
+                { 2, 21308 }, -- Jingling Bell
+                { 3, 21305 }, -- Red Helper Box
+                { 4, 21309 }, -- Snowman Kit
+            },
+        },
+        {
+            name = AL["Festive Gift"],
+            [NORMAL_DIFF] = {
+                { 1, 21328 }, -- Wand of Holiday Cheer
+            },
+        },
+        {
+            name = AL["Smokywood Pastures Special Gift"],
+            [NORMAL_DIFF] = {
+                { 1, 17706 }, -- Plans: Edge of Winter
+                { 2, 17725 }, -- Formula: Enchant Weapon - Winter's Might
+                { 3, 17720 }, -- Schematic: Snowmaster 9000
+                { 4, 17722 }, -- Pattern: Gloves of the Greatfather
+                { 5, 17709 }, -- Recipe: Elixir of Frost Power
+                { 6, 17724 }, -- Pattern: Green Holiday Shirt
+                { 16, 21325 }, -- Mechanical Greench
+                { 17, 21213 }, -- Preserved Holly
+            },
+        },
+        {
+            name = AL["Gently Shaken Gift"],
+            [NORMAL_DIFF] = {
+                { 1, 21235 }, -- Winter Veil Roast
+                { 2, 21241 }, -- Winter Veil Eggnog
+            },
+        },
+        {
+            name = AL["Smokywood Pastures"],
+            [NORMAL_DIFF] = {
+                { 1,  17201 }, -- Recipe: Egg Nog
+                { 2,  17200 }, -- Recipe: Gingerbread Cookie
+                { 3,  17344 }, -- Candy Cane
+                { 4,  17406 }, -- Holiday Cheesewheel
+                { 5,  17407 }, -- Graccu's Homemade Meat Pie
+                { 6,  17408 }, -- Spicy Beefstick
+                { 7,  17404 }, -- Blended Bean Brew
+                { 8,  17405 }, -- Green Garden Tea
+                { 9, 17196 }, -- Holiday Spirits
+                { 10, 17403 }, -- Steamwheedle Fizzy Spirits
+                { 11, 17402 }, -- Greatfather's Winter Ale
+                { 12, 17194 }, -- Holiday Spices
+                { 16, 17303 }, -- Blue Ribboned Wrapping Paper
+                { 17, 17304 }, -- Green Ribboned Wrapping Paper
+                { 18, 17307 }, -- Purple Ribboned Wrapping Paper
+            },
+        },
+    },
+}
+
+data["LunarFestivalCata"] = {
+    name = AL["Lunar Festival"],
+    ContentType = WORLD_EVENT_CONTENT,
+    LoadDifficulty = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.LUNAR_FESTIVAL,
+    items = {
+        { -- LunarFestival1
+            name = AL["Lunar Festival"],
+            [NORMAL_DIFF] = {
+                { 1,  21100 }, -- Coin of Ancestry
+                { 2,  74610 }, -- Lunar Lantern
+                { 3,  74611 }, -- Festival Lantern
+                { 6,  21157 }, -- Festive Green Dress
+                { 7,  21538 }, -- Festive Pink Dress
+                { 8,  21539 }, -- Festive Purple Dress
+                { 9,  21541 }, -- Festive Black Pant Suit
+                { 10,  21544 }, -- Festive Blue Pant Suit
+                { 11,  21543 }, -- Festive Teal Pant Suit
+            },
+        },
+        {
+            name = AL["Lunar Festival Fireworks Pack"],
+            [NORMAL_DIFF] = {
+                { 1, 21558 }, -- Small Blue Rocket
+                { 2, 21559 }, -- Small Green Rocket
+                { 3, 21557 }, -- Small Red Rocket
+                { 4, 21561 }, -- Small White Rocket
+                { 5, 21562 }, -- Small Yellow Rocket
+                { 7, 21537 }, -- Festival Dumplings
+                { 8, 21713 }, -- Elune's Candle
+                { 16, 21589 }, -- Large Blue Rocket
+                { 17, 21590 }, -- Large Green Rocket
+                { 18, 21592 }, -- Large Red Rocket
+                { 19, 21593 }, -- Large White Rocket
+                { 20, 21595 }, -- Large Yellow Rocket
+            }
+        },
+        {
+            name = AL["Lucky Red Envelope"],
+            [NORMAL_DIFF] = {
+                { 1, 21540 }, -- Elune's Lantern
+                { 2, 21536 }, -- Elune Stone
+                { 16, 21744 }, -- Lucky Rocket Cluster
+                { 17, 21745 }, -- Elder's Moonstone
+            }
+        },
+        { -- LunarFestival2
+            name = AL["Plans"],
+            [NORMAL_DIFF] = {
+                { 1,  21722 }, -- Pattern: Festival Dress
+                { 3,  21738 }, -- Schematic: Firework Launcher
+                { 5,  21724 }, -- Schematic: Small Blue Rocket
+                { 6,  21725 }, -- Schematic: Small Green Rocket
+                { 7,  21726 }, -- Schematic: Small Red Rocket
+                { 9, 21727 }, -- Schematic: Large Blue Rocket
+                { 10, 21728 }, -- Schematic: Large Green Rocket
+                { 11, 21729 }, -- Schematic: Large Red Rocket
+                { 16, 21723 }, -- Pattern: Festive Red Pant Suit
+                { 18, 21737 }, -- Schematic: Cluster Launcher
+                { 20, 21730 }, -- Schematic: Blue Rocket Cluster
+                { 21, 21731 }, -- Schematic: Green Rocket Cluster
+                { 22, 21732 }, -- Schematic: Red Rocket Cluster
+                { 24, 21733 }, -- Schematic: Large Blue Rocket Cluster
+                { 25, 21734 }, -- Schematic: Large Green Rocket Cluster
+                { 26, 21735 }, -- Schematic: Large Red Rocket Cluster
+            },
+        },
+    },
+}
+
+data["ValentinedayCata"] = {
+    name = AL["Love is in the Air"],
+    ContentType = WORLD_EVENT_CONTENT,
+    LoadDifficulty = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.VALENTINE_DAY,
+    items = {{ -- Valentineday
+        name = AL["Love is in the Air"],
+        [NORMAL_DIFF] = {{1, 22206}, -- Bouquet of Red Roses
+        {3, "INV_ValentinesBoxOfChocolates02", nil, AL["Gift of Adoration"]}, {4, 22279}, -- Lovely Black Dress
+        {5, 22235}, -- Truesilver Shafted Arrow
+        {6, 22200}, -- Silver Shafted Arrow
+        {7, 22261}, -- Love Fool
+        {8, 22218}, -- Handful of Rose Petals
+        {9, 21813}, -- Bag of Candies
+        {11, "INV_Box_02", nil, AL["Box of Chocolates"]}, {12, 22237}, -- Dark Desire
+        {13, 22238}, -- Very Berry Cream
+        {14, 22236}, -- Buttermilk Delight
+        {15, 22239}, -- Sweet Surprise
+        {16, 22276}, -- Lovely Red Dress
+        {17, 22278}, -- Lovely Blue Dress
+        {18, 22280}, -- Lovely Purple Dress
+        {19, 22277}, -- Red Dinner Suit
+        {20, 22281}, -- Blue Dinner Suit
+        {21, 22282} -- Purple Dinner Suit
+        }
+    }, { -- SFKApothecaryH
+        name = C_Map_GetAreaInfo(209) .. " - " .. AL["Apothecary Hummel"],
+        [NORMAL_DIFF] = {{1,  68175}, -- Winking Eye of Love
+        {2, 68176} , -- Heartbreak Charm
+        {3, 68172}, -- Shard of Pirouetting Happiness
+        {4, 68174}, -- Sweet Perfume Broach
+        {5, 68173}, -- Choker of the Pure Heart
+        {7, 49641}, -- Faded Lovely Greeting Card
+        {8, 49715}, -- Forever-Lovely Rose
+        {9, 50250}, -- X-45 Heartbreaker
+        {10, 50446}, -- Toxic Wasteling
+        {11, 50471}, -- The Heartbreaker
+        {12, 50741} -- Vile Fumigator's Mask
         }
     }}
 }
