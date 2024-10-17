@@ -2303,7 +2303,10 @@ data["Firelands"] = {
             { 16, 70922 },	-- Mandible of Beth'tilac
             { 17, 71039 },	-- Funeral Pyre
             { 18, 71038 },	-- Ward of the Red Widow
-            { 20, "ac5821" },
+            { 20, 71141 },	-- Eternal Ember
+            { 21, 69815 },	-- Seething Cinder
+            { 22, 69237 },	-- Living Ember
+            { 24, "ac5821" },
         },
         [HEROIC_DIFF] = {
             { 1, 71407 },	-- Robes of Smoldering Devastation
@@ -2320,8 +2323,11 @@ data["Firelands"] = {
             { 16, 71406 },	-- Mandible of Beth'tilac
             { 17, 71409 },	-- Funeral Pyre
             { 18, 71408 },	-- Ward of the Red Widow
-            { 20, "ac5807" },
-            { 21, "ac5821" },
+            { 20, 71141 },	-- Eternal Ember
+            { 21, 69815 },	-- Seething Cinder
+            { 22, 69237 },	-- Living Ember
+            { 24, "ac5807" },
+            { 25, "ac5821" },
         },
     },
     { -- Lord Rhyolith
@@ -2341,7 +2347,10 @@ data["Firelands"] = {
         { 12, 71012 },	-- Heartstone of Rhyolith
         { 16, 71006 },	-- Volcanospike
         { 17, 70991 },	-- Arbalest of Erupting Fury
-        { 19, "ac5810" },
+        { 19, 71141 },	-- Eternal Ember
+        { 20, 69815 },	-- Seething Cinder
+        { 21, 69237 },	-- Living Ember
+        { 23, "ac5810" },
     },
     [HEROIC_DIFF] = {
         { 1, 71415 },	-- Dreadfire Drape
@@ -2357,8 +2366,11 @@ data["Firelands"] = {
         { 12, 71423 },	-- Heartstone of Rhyolith
         { 16, 71422 },	-- Volcanospike
         { 17, 71414 },	-- Arbalest of Erupting Fury
-        { 19, "ac5808" },
-        { 20, "ac5810" },
+        { 19, 71141 },	-- Eternal Ember
+        { 20, 69815 },	-- Seething Cinder
+        { 21, 69237 },	-- Living Ember
+        { 23, "ac5808" },
+        { 24, "ac5810" },
     },
 },
 { -- Alysrazor
@@ -2380,7 +2392,10 @@ EncounterJournalID = 194,
     { 14, 68983 },	-- Eye of Blazing Power
     { 16, 70733 },	-- Alysra's Razor
     { 18, 71665, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Flametalon of Alysrazor
-    { 20, "ac5813" },
+    { 20, 71141 },	-- Eternal Ember
+    { 21, 69815 },	-- Seething Cinder
+    { 22, 69237 },	-- Living Ember
+    { 24, "ac5813" },
 },
 [HEROIC_DIFF] = {
     { 1, 71434 },	-- Wings of Flame
@@ -2394,15 +2409,18 @@ EncounterJournalID = 194,
     { 9, 71432 },	-- Spaulders of Recurring Flame
     { 10, 71439 },	-- Clutch of the Firemother
     { 11, 71431 },	-- Lavaworm Legplates
-    { 12, 71433 },	-- Alysrazor's Band
-    { 13, 69149 },	-- Eye of Blazing Power
-    { 15, 71427 },	-- Alysra's Razor
-    { 16, 71679 },	-- Chest of the Fiery Conqueror
-    { 17, 71686 },	-- Chest of the Fiery Protector
-    { 18, 71672 },	-- Chest of the Fiery Vanquisher
-    { 19, 71665, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Flametalon of Alysrazor
-    { 21, "ac5809" },
-    { 22, "ac5813" },
+    { 13, 71433 },	-- Alysrazor's Band
+    { 14, 69149 },	-- Eye of Blazing Power
+    { 16, 71427 },	-- Alysra's Razor
+    { 18, 71679 },	-- Chest of the Fiery Conqueror
+    { 19, 71686 },	-- Chest of the Fiery Protector
+    { 20, 71672 },	-- Chest of the Fiery Vanquisher
+    { 22, 71665, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Flametalon of Alysrazor
+    { 24, 71141 },	-- Eternal Ember
+    { 25, 69815 },	-- Seething Cinder
+    { 26, 69237 },	-- Living Ember
+    { 28, "ac5809" },
+    { 29, "ac5813" },
 },
 },
 { -- Shannox
@@ -2423,7 +2441,10 @@ EncounterJournalID = 195,
     { 13, 71022 },	-- Goblet of Anger
     { 16, 71014 },	-- Skullstealer Greataxe
     { 17, 71013 },	-- Feeding Frenzy
-    { 19, "ac5829" },
+    { 19, 71141 },	-- Eternal Ember
+    { 20, 69815 },	-- Seething Cinder
+    { 21, 69237 },	-- Living Ember
+    { 23, "ac5829" },
 },
 [HEROIC_DIFF] = {
     { 1, 71447 },	-- Coalwalker Sandals
@@ -2435,16 +2456,19 @@ EncounterJournalID = 195,
     { 7, 71443 },	-- Uncrushable Belt of Fury
     { 8, 71453 },	-- Legplates of Absolute Control
     { 9, 71444 },	-- Legplates of Frenzied Devotion
-    { 10, 71446 },	-- Necklace of Fetishes
-    { 11, 71449 },	-- Crystal Prison Band
-    { 12, 71448 },	-- Goblet of Anger
-    { 13, 71445 },	-- Skullstealer Greataxe
-    { 14, 71441 },	-- Feeding Frenzy
-    { 16, 71678 },	-- Leggings of the Fiery Conqueror
-    { 17, 71685 },	-- Leggings of the Fiery Protector
-    { 18, 71671 },	-- Leggings of the Fiery Vanquisher
-    { 20, "ac5806" },
-    { 21, "ac5829" },
+    { 11, 71446 },	-- Necklace of Fetishes
+    { 12, 71449 },	-- Crystal Prison Band
+    { 13, 71448 },	-- Goblet of Anger
+    { 16, 71445 },	-- Skullstealer Greataxe
+    { 17, 71441 },	-- Feeding Frenzy
+    { 19, 71678 },	-- Leggings of the Fiery Conqueror
+    { 20, 71685 },	-- Leggings of the Fiery Protector
+    { 21, 71671 },	-- Leggings of the Fiery Vanquisher
+    { 23, 71141 },	-- Eternal Ember
+    { 24, 69815 },	-- Seething Cinder
+    { 25, 69237 },	-- Living Ember
+    { 27, "ac5806" },
+    { 28, "ac5829" },
 },
 },
 { -- Baleroc, the Gatekeeper
@@ -2464,7 +2488,10 @@ EncounterJournalID = 196,
     { 12, 71323 },	-- Molten Scream
     { 16, 71312 },	-- Gatecrasher
     { 17, 70915 },	-- Shard of Torment
-    { 19, "ac5830" },
+    { 19, 71141 },	-- Eternal Ember
+    { 20, 69815 },	-- Seething Cinder
+    { 21, 69237 },	-- Living Ember
+    { 23, "ac5830" },
 },
 [HEROIC_DIFF] = {
     { 1, 71461 },	-- Mantle of Closed Doors
@@ -2476,15 +2503,18 @@ EncounterJournalID = 196,
     { 7, 71465 },	-- Casque of Flame
     { 8, 71459 },	-- Helm of Blazing Glory
     { 9, 71458 },	-- Flickering Handguards
-    { 10, 69139 },	-- Necromantic Focus
-    { 11, 71462 },	-- Molten Scream
-    { 13, 71454 },	-- Gatecrasher
-    { 14, 71460 },	-- Shard of Torment
-    { 16, 71676 },	-- Gauntlets of the Fiery Conqueror
-    { 17, 71683 },	-- Gauntlets of the Fiery Protector
-    { 18, 71669 },	-- Gauntlets of the Fiery Vanquisher
-    { 20, "ac5805" },
-    { 21, "ac5830" },
+    { 11, 69139 },	-- Necromantic Focus
+    { 12, 71462 },	-- Molten Scream
+    { 16, 71454 },	-- Gatecrasher
+    { 17, 71460 },	-- Shard of Torment
+    { 19, 71676 },	-- Gauntlets of the Fiery Conqueror
+    { 20, 71683 },	-- Gauntlets of the Fiery Protector
+    { 21, 71669 },	-- Gauntlets of the Fiery Vanquisher
+    { 23, 71141 },	-- Eternal Ember
+    { 24, 69815 },	-- Seething Cinder
+    { 25, 69237 },	-- Living Ember
+    { 27, "ac5805" },
+    { 28, "ac5830" },
 },
 },
 { -- Majordomo Staghelm
@@ -2506,7 +2536,10 @@ EncounterJournalID = 197,
     { 16, 71681 },	-- Mantle of the Fiery Conqueror
     { 17, 71688 },	-- Mantle of the Fiery Protector
     { 18, 71674 },	-- Mantle of the Fiery Vanquisher
-    { 20, "ac5799" },
+    { 20, 71141 },	-- Eternal Ember
+    { 21, 69815 },	-- Seething Cinder
+    { 22, 69237 },	-- Living Ember
+    { 24, "ac5799" },
 },
 [HEROIC_DIFF] = {
     { 1, 71471 },	-- Wristwraps of Arrogant Doom
@@ -2524,8 +2557,11 @@ EncounterJournalID = 197,
     { 16, 71680 },	-- Shoulders of the Fiery Conqueror
     { 17, 71687 },	-- Shoulders of the Fiery Protector
     { 18, 71673 },	-- Shoulders of the Fiery Vanquisher
-    { 20, "ac5804" },
-    { 21, "ac5799" },
+    { 20, 71141 },	-- Eternal Ember
+    { 21, 69815 },	-- Seething Cinder
+    { 22, 69237 },	-- Living Ember
+    { 24, "ac5804" },
+    { 25, "ac5799" },
 },
 },
 { -- Ragnaros
@@ -2547,8 +2583,12 @@ EncounterJournalID = 198,
     { 16, 71675 },	-- Helm of the Fiery Conqueror
     { 17, 71682 },	-- Helm of the Fiery Protector
     { 18, 71668 },	-- Helm of the Fiery Vanquisher
-    { 19, 69224 },	-- Smoldering Egg of Millagazor
-    { 21, "ac5855" },
+    { 20, 69224 },	-- Smoldering Egg of Millagazor
+    { 22, 71141 },	-- Eternal Ember
+    { 23, 69815 },	-- Seething Cinder
+    { 24, 69848 },  -- Heart of Flame
+    { 25, 69237 },	-- Living Ember
+    { 27, "ac5855" },
 },
 [HEROIC_DIFF] = {
     { 1, 71614 },	-- Fingers of Incineration
@@ -2566,14 +2606,18 @@ EncounterJournalID = 198,
     { 16, 71677 },	-- Crown of the Fiery Conqueror
     { 17, 71684 },	-- Crown of the Fiery Protector
     { 18, 71670 },	-- Crown of the Fiery Vanquisher
-    { 19, 69224 },	-- Smoldering Egg of Millagazor
-    { 21, "ac5803" },
-    { 22, "ac5855" },
+    { 20, 69224 },	-- Smoldering Egg of Millagazor
+    { 22, 71141 },	-- Eternal Ember
+    { 23, 69815 },	-- Seething Cinder
+    { 24, 69848 },  -- Heart of Flame
+    { 25, 69237 },	-- Living Ember
+    { 27, "ac5803" },
+    { 28, "ac5855" },
 },
 },
 { -- Shared Boss Loot
 name = AL["Shared Boss Loot"],
-ExtraList = true,
+--ExtraList = true,
 [NORMAL_DIFF] = {
     { 1, 71779 },	-- Avool's Incendiary Shanker
     { 2, 71787 },	-- Entrail Disgorger
@@ -2582,9 +2626,6 @@ ExtraList = true,
     { 5, 71776 },	-- Eye of Purification
     { 6, 71782 },	-- Shatterskull Bonecrusher
     { 7, 71775 },	-- Smoldering Censer of Purity
-    { 9, 71141 },	-- Eternal Ember
-    { 10, 69815 },	-- Seething Cinder
-    { 11, 69237 },	-- Living Ember
 },
 [HEROIC_DIFF] = {
     { 1, 71778 },	-- Avool's Incendiary Shanker
@@ -2594,10 +2635,7 @@ ExtraList = true,
     { 5, 71777 },	-- Eye of Purification
     { 6, 71783 },	-- Shatterskull Bonecrusher
     { 7, 71774 },	-- Smoldering Censer of Purity
-    { 9, 71141 },	-- Eternal Ember
-    { 10, 69815 },	-- Seething Cinder
-    { 11, 69237 },	-- Living Ember
-    { 13, 71617 },	-- Crystallized Firestone
+    { 16, 71617 },	-- Crystallized Firestone
 },
 },
 {	--Firelands Trash
@@ -2667,48 +2705,6 @@ ExtraList = true,
     { 19, 69958 },	-- Plans: Eternal Elementium Handguards
     { 20, 69957 },	-- Plans: Fists of Fury
     { 21, 69959 },	-- Plans: Holy Flame Gauntlets
-},
-},
-{ -- Avengers of Hyjal
-name = ALIL["Avengers of Hyjal"],
-ExtraList = true,
-[NORMAL_DIFF] = {
-    {1, "f1204rep5"},
-    {2, 71229}, -- Flowing Flamewrath Cape
-    {3, 71227}, -- Bladed Flamewrath Cover
-    {4, 70930}, -- Durable Flamewrath Greatcloak
-    {5, 71228}, -- Sleek Flamewrath Cloak
-    {6, 71230}, -- Rippling Flamewrath Drape
-    {8, "f1204rep6"},
-    {9, 71258}, -- Embereye Belt
-    {10, 71249}, -- Firescar Sash
-    {11, 71131}, -- Flamebinding Girdle
-    {12, 71254}, -- Firemend Cinch
-    {13, 71255}, -- Firearrow Belt
-    {14, 71250}, -- Cinch of the Flaming Ember
-    {15, 70933}, -- Girdle of the Indomitable Flame
-    {16, 71253}, -- Belt of the Seven Seals
-    {18, "f1204rep7"},
-    {19, 69001}, -- Ancient Petrified Seed
-    {20, 68998}, -- Rune of Zeth
-    {21, 69000}, -- Fiery Quintessence
-    {22, 68996}, -- Stay of Execution
-    {23, 69002}, -- Essence of the Eternal Flame
-    {25, "f1204rep8"},
-    {26, 71237}, -- Quicksilver Signet of the Avengers
-    {27, 71215}, -- Obsidian Signet of the Avengers
-    {28, 70934}, -- Adamantine Signet of the Avengers
-    {29, 71216}, -- Viridian Signet of the Avengers
-    {30, 71217}, -- Infernal Signet of the Avengers
-},
-},
-{ -- Legendary
-name = AL["Legendary"],
-ExtraList = true,
-[NORMAL_DIFF] = {
-    { 1, 71086 },	-- Dragonwrath, Tarecgosa's Rest
-    { 16, "ac5839" },
-    { 17, "ac5840" },
 },
 },
 T12_SET,
@@ -3402,7 +3398,7 @@ TableType = SET_ITTYPE,
     { 3, 1087 }, -- Fangs of the Father / 416
     { 16, "ac6181" },
     { 17, "ac6182" },
-
+    
 },
 },
 T13_SET,
