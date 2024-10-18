@@ -1097,12 +1097,12 @@ data["ScarletMonasteryGraveyard"] = {
             AtlasMapBossID = nil,
             ExtraList = true,
             [NORMAL_DIFF] = {
-                { 1, 232536 }, -- Band of Ghoulish Glee
-                { 2, 232537 }, -- The Horseman's Signet
-                { 3, 232540 }, -- Wicked Witch's Ring
-                { 4, 232538 }, -- Seal of the Petrified Pumpkin
-                { 5, 232544 }, -- The Horseman's Horrific Helmet
-                { 6, 232548 }, -- The Horseman's Sinister Saber
+                { 1, 71327 }, -- Band of Ghoulish Glee
+                { 2, 71328 }, -- The Horseman's Signet
+                { 3, 71329 }, -- Wicked Witch's Ring
+                { 4, 71330 }, -- Seal of the Petrified Pumpkin
+                { 5, 71326 }, -- The Horseman's Horrific Helmet
+                { 6, 71325 }, -- The Horseman's Sinister Saber
                 { 8, 33292 }, -- Hallowed Helm
                 { 10, 34068 }, -- Weighted Jack-o'-Lantern
                 { 12, 33277 }, -- Tome of Thomas Thomson
