@@ -994,6 +994,15 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [62046] = { 62046, 62048, 0, 61996, 61997, 61998, 61999, 62000, 62001, 62002, 62003	},
         [61996] = 62046, [61997] = 62046, [61998] = 62046, [61999] = 62046, [62000] = 62046, [62001] = 62046, [62002] = 62046, [62003] = 62046,
 
+        --- T11 / Normal
+        -- Head
+        [64315] = { ICONS.PALADIN, 60346, 60359, 60356, 0, ICONS.PRIEST, 60258, 60256, 0, ICONS.WARLOCK, 60249, type = 6}, -- Helm of the Forlorn Conqueror
+        [64316] = { ICONS.WARRIOR, 60325, 60328, 0, ICONS.HUNTER, 60303, 0, ICONS.SHAMAN, 60308, 60320, 60315, type = 6}, -- Helm of the Forlorn Protector
+        [64314] = { ICONS.ROGUE, 60299, 0, ICONS.DEATHKNIGHT, 60341, 60351, 0, ICONS.MAGE, 60243, 0, ICONS.DRUID, 60286, 60277, 60282, type = 6}, -- Helm of the Forlorn Vanquisher
+        -- Shoulders
+        [63683] = { ICONS.PALADIN, 60348, 60362, 60358, 0, ICONS.PRIEST, 60262, 60253, 0, ICONS.WARLOCK, 60252, type = 6}, -- Mantle of the Forlorn Conqueror
+        [63684] = { ICONS.WARRIOR, 60327, 60331, 0, ICONS.HUNTER, 60306, 0, ICONS.SHAMAN, 60311, 60322, 60317, type = 6}, -- Mantle of the Forlorn Protector
+        [63682] = { ICONS.ROGUE, 60302, 0, ICONS.DEATHKNIGHT, 60343, 60353, 0, ICONS.MAGE, 60246, 0, ICONS.DRUID, 60289, 60279, 60284, type = 6}, -- Mantle of the Forlorn Vanquisher
         --- T11 / Heroic
         -- Head
         [65001] = { ICONS.PALADIN, 65216, 65221, 65226, 0, ICONS.PRIEST, 65230, 65235, 0, ICONS.WARLOCK, 65260, type = 6}, -- Crown of the Forlorn Conqueror
@@ -1015,6 +1024,8 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [67428] = { ICONS.PALADIN, 65217, 65222, 65227, 0, ICONS.PRIEST, 65231, 65236, 0, ICONS.WARLOCK, 65261, type = 6}, -- Leggings of the Forlorn Conqueror
         [67427] = { ICONS.WARRIOR, 65267, 65272, 0, ICONS.HUNTER, 65207, 0, ICONS.SHAMAN, 65247, 65252, 65257, type = 6}, -- Leggings of the Forlorn Protector
         [67426] = { ICONS.ROGUE, 65242, 0, ICONS.DEATHKNIGHT, 65182, 65187, 0, ICONS.MAGE, 65211, 0, ICONS.DRUID, 65191, 65196, 65201, type = 6}, -- Leggings of the Forlorn Vanquisher
+
+        --- TODO: Add T12 + T13 tokens
 
         --- ## Baradin Hold
         --- Argaloth
