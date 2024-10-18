@@ -1042,21 +1042,29 @@ name = AL["Hallow's End"] .. " - " .. AL["Wands"],
 }, { -- Halloween3
 name = AL["Hallow's End"] .. " - " .. AL["Masks"],
 [NORMAL_DIFF] = {{1, 20561}, -- Flimsy Male Dwarf Mask
-{2, 20391}, -- Flimsy Male Gnome Mask
-{3, 20566}, -- Flimsy Male Human Mask
-{4, 20564}, -- Flimsy Male Nightelf Mask
-{5, 20570}, -- Flimsy Male Orc Mask
-{6, 20572}, -- Flimsy Male Tauren Mask
-{7, 20568}, -- Flimsy Male Troll Mask
-{8, 20573}, -- Flimsy Male Undead Mask
-{16, 20562}, -- Flimsy Female Dwarf Mask
-{17, 20392}, -- Flimsy Female Gnome Mask
-{18, 20565}, -- Flimsy Female Human Mask
-{19, 20563}, -- Flimsy Female Nightelf Mask
-{20, 20569}, -- Flimsy Female Orc Mask
-{21, 20571}, -- Flimsy Female Tauren Mask
-{22, 20567}, -- Flimsy Female Troll Mask
-{23, 20574} -- Flimsy Female Undead Mask
+    {2, 20391}, -- Flimsy Male Gnome Mask
+    {3, 20566}, -- Flimsy Male Human Mask
+    {4, 20564}, -- Flimsy Male Nightelf Mask
+    {5, 20570}, -- Flimsy Male Orc Mask
+    {6, 20572}, -- Flimsy Male Tauren Mask
+    {7, 20568}, -- Flimsy Male Troll Mask
+    {8, 20573}, -- Flimsy Male Undead Mask
+    {10, 69188}, -- Murloc Male Mask
+    {11, 69190}, -- Naga Male Mask
+    {12, 69193}, -- Ogre Male Mask
+    {13, 69195}, -- Vrykul Male Mask
+    {16, 20562}, -- Flimsy Female Dwarf Mask
+    {17, 20392}, -- Flimsy Female Gnome Mask
+    {18, 20565}, -- Flimsy Female Human Mask
+    {19, 20563}, -- Flimsy Female Nightelf Mask
+    {20, 20569}, -- Flimsy Female Orc Mask
+    {21, 20571}, -- Flimsy Female Tauren Mask
+    {22, 20567}, -- Flimsy Female Troll Mask
+    {23, 20574}, -- Flimsy Female Undead Mask
+    {25, 69187}, -- Murloc Female Mask
+    {26, 69189}, -- Naga Female Mask
+    {27, 69192}, -- Ogre Female Mask
+    {28, 69194}, -- Vrykul Female Mask
 }
 }, { -- SMHeadlessHorseman
 name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
