@@ -997,13 +997,13 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
 
         --- T11 / Normal
         -- Head
-        [64315] = { ICONS.PALADIN, 60346, 60359, 60356, 0, ICONS.PRIEST, 60258, 60256, 0, ICONS.WARLOCK, 60249, type = 6}, -- Helm of the Forlorn Conqueror
-        [64316] = { ICONS.WARRIOR, 60325, 60328, 0, ICONS.HUNTER, 60303, 0, ICONS.SHAMAN, 60308, 60320, 60315, type = 6}, -- Helm of the Forlorn Protector
-        [64314] = { ICONS.ROGUE, 60299, 0, ICONS.DEATHKNIGHT, 60341, 60351, 0, ICONS.MAGE, 60243, 0, ICONS.DRUID, 60286, 60277, 60282, type = 6}, -- Helm of the Forlorn Vanquisher
+        [63683] = { ICONS.PALADIN, 60346, 60359, 60356, 0, ICONS.PRIEST, 60258, 60256, 0, ICONS.WARLOCK, 60249, type = 6}, -- Helm of the Forlorn Conqueror
+        [63684] = { ICONS.WARRIOR, 60325, 60328, 0, ICONS.HUNTER, 60303, 0, ICONS.SHAMAN, 60308, 60320, 60315, type = 6}, -- Helm of the Forlorn Protector
+        [63682] = { ICONS.ROGUE, 60299, 0, ICONS.DEATHKNIGHT, 60341, 60351, 0, ICONS.MAGE, 60243, 0, ICONS.DRUID, 60286, 60277, 60282, type = 6}, -- Helm of the Forlorn Vanquisher
         -- Shoulders
-        [63683] = { ICONS.PALADIN, 60348, 60362, 60358, 0, ICONS.PRIEST, 60262, 60253, 0, ICONS.WARLOCK, 60252, type = 6}, -- Mantle of the Forlorn Conqueror
-        [63684] = { ICONS.WARRIOR, 60327, 60331, 0, ICONS.HUNTER, 60306, 0, ICONS.SHAMAN, 60311, 60322, 60317, type = 6}, -- Mantle of the Forlorn Protector
-        [63682] = { ICONS.ROGUE, 60302, 0, ICONS.DEATHKNIGHT, 60343, 60353, 0, ICONS.MAGE, 60246, 0, ICONS.DRUID, 60289, 60279, 60284, type = 6}, -- Mantle of the Forlorn Vanquisher
+        [64315] = { ICONS.PALADIN, 60348, 60362, 60358, 0, ICONS.PRIEST, 60262, 60253, 0, ICONS.WARLOCK, 60252, type = 6}, -- Mantle of the Forlorn Conqueror
+        [64316] = { ICONS.WARRIOR, 60327, 60331, 0, ICONS.HUNTER, 60306, 0, ICONS.SHAMAN, 60311, 60322, 60317, type = 6}, -- Mantle of the Forlorn Protector
+        [64314] = { ICONS.ROGUE, 60302, 0, ICONS.DEATHKNIGHT, 60343, 60353, 0, ICONS.MAGE, 60246, 0, ICONS.DRUID, 60289, 60279, 60284, type = 6}, -- Mantle of the Forlorn Vanquisher
         --- T11 / Heroic
         -- Head
         [65001] = { ICONS.PALADIN, 65216, 65221, 65226, 0, ICONS.PRIEST, 65230, 65235, 0, ICONS.WARLOCK, 65260, type = 6}, -- Crown of the Forlorn Conqueror
@@ -1037,7 +1037,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [71086] = 71141, -- Dragonwrath, Tarecgosa's Rest
         [69848] = 71141, -- Heart of Flame
         --- Items with suffixes from Throne
-        [68132] = {"item:68132:0:0:0:0:0:-129","item:68132:0:0:0:0:0:-128","item:68132:0:0:0:0:0:-127"},
+        [68132] = {"i68132:0:0:0:0:0:-129","i68132:0:0:0:0:0:-128","i68132:0:0:0:0:0:-127"},
         --- ## Baradin Hold
         --- Argaloth
         -- Non-ClassSet-Items
