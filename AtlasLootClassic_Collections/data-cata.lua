@@ -677,20 +677,86 @@ data["CompanionsCata"] = {
     CorrespondingFields = private.COMPANIONS,
     items = {{
         name = AL["Drops"],
-        [NORMAL_DIFF] = {}
+        [NORMAL_DIFF] = {
+         {1, 64403}, -- Fox Kit
+         {2, 64494}, -- Tiny Shale Spider
+         {3, 68673}, -- Smolderweb Egg
+         {16, 61387}, -- Grubs bag
+         {17, 66076}, -- Mr Grubbs
+        }
     }, {
         name = AL["Vendor"],
-        [NORMAL_DIFF] = {}
+        [NORMAL_DIFF] = {
+         {1, 70140}, -- Hyjal Bear Cub
+         {2, 70160}, -- Crimson Lasher
+         {3, 73905}, -- Darkmoon Zep
+         {4, [ATLASLOOT_IT_ALLIANCE] = 63355, [ATLASLOOT_IT_HORDE] = 64996}, -- Rustberg Gull
+         {5, 69239}, -- Winterspring Cub
+         {6, 73903}, -- Darkmoon Tonk
+         {7, 74981}, -- Darkmoon Cub
+         {8, 75042}, -- Flimsy Yellow Ballon
+         {9, 75040}, -- Flimsy Darkmoon Ballon
+         {10, 75041}, -- Flimsy Green Balloon
+         {11, 73762}, -- Darkmoon Balloon
+         {12, 73764}, -- Darkmoon Monkey
+         {13, 73764}, -- Darkmoon Turtle
+        }
     }, {
         name = AL["World Events"],
-        [NORMAL_DIFF] = {}
+        [NORMAL_DIFF] = {
+         {1, 71076}, -- Creepy Crate
+         {2, 70908}, -- Feline Familiar
+         {4, 73797}, -- Lump of Coal
+         {6, 74611}, -- Festival Lantern
+        }
     }, {
         name = ALIL["Achievements"],
         TableType = AC_ITTYPE,
-        [NORMAL_DIFF] = {}
+        [NORMAL_DIFF] = {
+         {1, 63398, "ac5144"}, -- Armadillo Pup
+         {2, 65361, "ac5031"}, -- Guild Page Ally
+         {3, 65362, "ac5179"}, -- Guild Page Horde
+         {4, 65363, "ac5201"}, -- Guild Herald Ally
+         {5, 65364, "ac5201"}, -- Guild Herald Horde
+         {16, 71387, "ac5877"}, -- Brilliant Kaliri
+         {6, 60869, "ac5449"}, -- Pebbles
+         {7, 63138}, -- Dark Phoenix Hatchling
+         {8, 71033, "ac5840"}, -- Lil Tarecgosa
+         {17, 71140, "ac5876"}, -- Nuts'
+        }
+    }, {
+        name = ALIL["Quests"],
+        TableType = AC_ITTYPE,
+        [NORMAL_DIFF] = {
+         {1, 69251}, -- Lashtail Hatchling
+         {2, 66080}, -- Tiny Flamefly
+         {3, 69648}, -- Legs
+         {4, 68833}, -- Panther Cub
+         {5, 66067}, -- Sunflower
+         {6, 46325}, -- Withers
+         {7, 66073}, -- Snail
+         {8, [ATLASLOOT_IT_ALLIANCE] = 72042, [ATLASLOOT_IT_HORDE] = 72045}, -- A/H Balloons
+         {9, 65661}, -- Blue mini jouster
+         {10, 65661}, -- Gold mini jouster
+        }
     }, {
         name = ALIL["Fishing"],
-        [NORMAL_DIFF] = {}
+        [NORMAL_DIFF] = {
+         {1, 73953}, -- Sea pony
+        }
+    }, {
+        name = ALIL["Crafting"],
+        [NORMAL_DIFF] = {
+         {1, 67274}, -- Enchanted Lantern
+         {2, 67275}, -- Magic Lamp
+         {3, 60847}, -- Crawling Claw
+         {4, 67282}, -- Elementium Geode
+         {5, 59597}, -- Personal World Destroyer
+         {6, 60216}, -- De-Weaponized Mechanical Companion
+         {7, 69821}, -- Pterrordax Hatchling
+         {8, 60955}, -- Fossilized Hatchling
+         {9, 69824}, -- Voodoo Figurine
+         {10, 64372}, -- Clockwork Gnome
     }, { -- Misc
     name = AL["Misc"],
     [NORMAL_DIFF] = {}
@@ -1042,31 +1108,39 @@ name = AL["Hallow's End"] .. " - " .. AL["Wands"],
 }, { -- Halloween3
 name = AL["Hallow's End"] .. " - " .. AL["Masks"],
 [NORMAL_DIFF] = {{1, 20561}, -- Flimsy Male Dwarf Mask
-{2, 20391}, -- Flimsy Male Gnome Mask
-{3, 20566}, -- Flimsy Male Human Mask
-{4, 20564}, -- Flimsy Male Nightelf Mask
-{5, 20570}, -- Flimsy Male Orc Mask
-{6, 20572}, -- Flimsy Male Tauren Mask
-{7, 20568}, -- Flimsy Male Troll Mask
-{8, 20573}, -- Flimsy Male Undead Mask
-{16, 20562}, -- Flimsy Female Dwarf Mask
-{17, 20392}, -- Flimsy Female Gnome Mask
-{18, 20565}, -- Flimsy Female Human Mask
-{19, 20563}, -- Flimsy Female Nightelf Mask
-{20, 20569}, -- Flimsy Female Orc Mask
-{21, 20571}, -- Flimsy Female Tauren Mask
-{22, 20567}, -- Flimsy Female Troll Mask
-{23, 20574} -- Flimsy Female Undead Mask
+    {2, 20391}, -- Flimsy Male Gnome Mask
+    {3, 20566}, -- Flimsy Male Human Mask
+    {4, 20564}, -- Flimsy Male Nightelf Mask
+    {5, 20570}, -- Flimsy Male Orc Mask
+    {6, 20572}, -- Flimsy Male Tauren Mask
+    {7, 20568}, -- Flimsy Male Troll Mask
+    {8, 20573}, -- Flimsy Male Undead Mask
+    {10, 69188}, -- Murloc Male Mask
+    {11, 69190}, -- Naga Male Mask
+    {12, 69193}, -- Ogre Male Mask
+    {13, 69195}, -- Vrykul Male Mask
+    {16, 20562}, -- Flimsy Female Dwarf Mask
+    {17, 20392}, -- Flimsy Female Gnome Mask
+    {18, 20565}, -- Flimsy Female Human Mask
+    {19, 20563}, -- Flimsy Female Nightelf Mask
+    {20, 20569}, -- Flimsy Female Orc Mask
+    {21, 20571}, -- Flimsy Female Tauren Mask
+    {22, 20567}, -- Flimsy Female Troll Mask
+    {23, 20574}, -- Flimsy Female Undead Mask
+    {25, 69187}, -- Murloc Female Mask
+    {26, 69189}, -- Naga Female Mask
+    {27, 69192}, -- Ogre Female Mask
+    {28, 69194}, -- Vrykul Female Mask
 }
 }, { -- SMHeadlessHorseman
 name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
 [NORMAL_DIFF] = {
-    {1, 232536}, -- Band of Ghoulish Glee
-    {2, 232537}, -- The Horseman's Signet
-    {3, 232540}, -- Wicked Witch's Ring
-    {4, 232538}, -- Seal of the Petrified Pumpkin
-    {5, 232544}, -- The Horseman's Horrific Helmet
-    {6, 232548}, -- The Horseman's Sinister Saber
+    {1, 71327}, -- Band of Ghoulish Glee
+    {2, 71328}, -- The Horseman's Signet
+    {3, 71329}, -- Wicked Witch's Ring
+    {4, 71330}, -- Seal of the Petrified Pumpkin
+    {5, 71326}, -- The Horseman's Horrific Helmet
+    {6, 71325}, -- The Horseman's Sinister Saber
     {8, 33292}, -- Hallowed Helm
     {10, 34068}, -- Weighted Jack-o'-Lantern
     {12, 33277}, -- Tome of Thomas Thomson
