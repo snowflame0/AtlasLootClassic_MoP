@@ -757,10 +757,11 @@ data["CompanionsCata"] = {
          {8, 60955}, -- Fossilized Hatchling
          {9, 69824}, -- Voodoo Figurine
          {10, 64372}, -- Clockwork Gnome
+        }
     }, { -- Misc
-    name = AL["Misc"],
-    [NORMAL_DIFF] = {}
-}}
+        name = AL["Misc"],
+        [NORMAL_DIFF] = {},
+    }}
 }
 
 data["TabardsCata"] = {
