@@ -1116,7 +1116,7 @@ name = AL["Hallow's End"] .. " - " .. AL["Masks"],
     {13, 69190}, -- Naga Male Mask
     {14, 69193}, -- Ogre Male Mask
     {15, 69195}, -- Vrykul Male Mask
-    {14, 20562}, -- Flimsy Female Dwarf Mask
+    {16, 20562}, -- Flimsy Female Dwarf Mask
     {17, 20392}, -- Flimsy Female Gnome Mask
     {18, 20565}, -- Flimsy Female Human Mask
     {19, 20563}, -- Flimsy Female Nightelf Mask
