@@ -24,7 +24,8 @@ local TOKEN_TYPE_TEXT = {
     [8]  = format(TOKEN_FORMAT_STRING, AL["Token for..."]), -- same as '6' but with itemDesc added
     [9]  = format(TOKEN_FORMAT_STRING, AL["Show loot."]),
     [10] = format(TOKEN_FORMAT_STRING, AL["Show Achievements."]),
-    [11] = format(TOKEN_FORMAT_STRING, AL["Contains."])
+    [11] = format(TOKEN_FORMAT_STRING, AL["Contains."]),
+    --[12] = format(TOKEN_FORMAT_STRING, AL["Show possible items."]), -- with Suffix
     -- classes get set with the init
     -- "DRUID", "HUNTER", "MAGE", "PALADIN", "PRIEST", "ROGUE", "SHAMAN", "WARLOCK", "WARRIOR", "DEATHKNIGHT"
 }
@@ -1026,7 +1027,17 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [67426] = { ICONS.ROGUE, 65242, 0, ICONS.DEATHKNIGHT, 65182, 65187, 0, ICONS.MAGE, 65211, 0, ICONS.DRUID, 65191, 65196, 65201, type = 6}, -- Leggings of the Forlorn Vanquisher
 
         --- TODO: Add T12 + T13 tokens
-
+        --- Dragonwrath
+        [71141] = { {71141,"25"}, {65893,"3"}, {69815,"1000"}, 69848, 0, 71084, 71085, 71086}, -- Eternal Ember
+        [69815] = 71141, -- Seething Cinder
+        [50226] = 71141, -- Festergut's Acidic Blood
+        [50231] = 71141, -- Rotface's Acidic Blood
+        [71084] = 71141, -- Branch of Nordrassil
+        [71085] = 71141, -- Runestaff of Nordrassil
+        [71086] = 71141, -- Dragonwrath, Tarecgosa's Rest
+        [69848] = 71141, -- Heart of Flame
+        --- Items with suffixes from Throne
+        [68132] = {"item:68132:0:0:0:0:0:-129","item:68132:0:0:0:0:0:-128","item:68132:0:0:0:0:0:-127"},
         --- ## Baradin Hold
         --- Argaloth
         -- Non-ClassSet-Items
@@ -1161,16 +1172,6 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [74034] = { {74034, 12}, 0, 74035, type = 3 }, -- Pit Fighter
         --- Darkmoon Faire Achievements
         ["AC_DarkmoonFaire"] = {"ac6019", "ac6020", "ac6021", "ac6022", "ac6023", "ac6024", "ac6025", "ac6026", "ac6027", "ac6028", "ac6029", "ac6030", "ac6031", "ac6032", type = 10},
-
-        --- ## Dragonwrath
-        [71141] = { {71141,"25"}, {65893,"3"}, {69815,"1000"}, 69848, 0, 71084, 71085, 71086}, -- Eternal Ember
-        [69815] = 71141, -- Seething Cinder
-        [50226] = 71141, -- Festergut's Acidic Blood
-        [50231] = 71141, -- Rotface's Acidic Blood
-        [71084] = 71141, -- Branch of Nordrassil
-        [71085] = 71141, -- Runestaff of Nordrassil
-        [71086] = 71141, -- Dragonwrath, Tarecgosa's Rest
-        [69848] = 71141, -- Heart of Flame
     }
 end
 
