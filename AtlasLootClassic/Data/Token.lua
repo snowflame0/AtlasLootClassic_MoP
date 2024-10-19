@@ -1037,7 +1037,18 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [71086] = 71141, -- Dragonwrath, Tarecgosa's Rest
         [69848] = 71141, -- Heart of Flame
         --- Items with suffixes from Throne
-        [68132] = {"i68132suf-131","i68132suf-129","i68132suf-114","i68132suf-130","i68132suf-138","i68132suf-132",type=2},
+        [68132] = {"i68132suf-131","i68132suf-129","i68132suf-114","i68132suf-130","i68132suf-138","i68132suf-132",type=2}, -- Caster Sword H
+        [68127] = {"i68127suf-131","i68127suf-129","i68127suf-114","i68127suf-130","i68127suf-138","i68127suf-132",type=1}, -- Caster Sword N
+        [65383] = {"i65383suf-131","i65383suf-129","i65383suf-114","i65383suf-130","i65383suf-138","i65383suf-132",type=2}, -- Soul Breath Leggings H
+        [63507] = {"i63507suf-131","i63507suf-129","i63507suf-114","i63507suf-130","i63507suf-138","i63507suf-132",type=1}, -- Soul Breath Leggings N
+        [69881] = {"i69881suf-131","i69881suf-129","i69881suf-114","i69881suf-130","i69881suf-138","i69881suf-132",type=1}, -- Planetary Drape H
+        [69835] = {"i69835suf-131","i69835suf-129","i69835suf-114","i69835suf-130","i69835suf-138","i69835suf-132",type=1}, -- Planetary Drape N
+        [65373] = {"i65373suf-131","i65373suf-129","i65373suf-114","i65373suf-130","i65373suf-138","i65373suf-132",type=1}, -- Planetary Band H
+        [63494] = {"i63494suf-131","i63494suf-129","i63494suf-114","i63494suf-130","i63494suf-138","i63494suf-132",type=1}, -- Planetary Band N
+        [69882] = {"i69882suf-131","i69882suf-129","i69882suf-114","i69882suf-130","i69882suf-138","i69882suf-132",type=1}, -- Planetary Amulet H
+        [69830] = {"i69830suf-131","i69830suf-129","i69830suf-114","i69830suf-130","i69830suf-138","i69830suf-132",type=1}, -- Planetary Amulet N
+        [65376] = {"i65376suf-131","i65376suf-129","i65376suf-114","i65376suf-130","i65376suf-138","i65376suf-132",type=2}, -- Soul Breath Belt H
+        [63498] = {"i63498suf-131","i63498suf-129","i63498suf-114","i63498suf-130","i63498suf-138","i63498suf-132",type=1}, -- Soul Breath Belt N
         --- ## Baradin Hold
         --- Argaloth
         -- Non-ClassSet-Items
