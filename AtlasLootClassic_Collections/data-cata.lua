@@ -1087,7 +1087,7 @@ data["HalloweenCata"] = {
     {3, 70722}, -- Little Wickerman
     {4, 70908}, -- Feline Familiar
     {5, 71076}, -- Creepy Crate
-    {6, 33226}, -- Tricky Treat
+    {16, 33226}, -- Tricky Treat
 }
 }, { -- Halloween1
 name = AL["Hallow's End"] .. " - " .. AL["Wands"],
