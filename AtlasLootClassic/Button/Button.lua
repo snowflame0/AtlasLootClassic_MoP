@@ -7,6 +7,7 @@
 		petID			= 123,
 		questID			= 123,
 		mountID			= 123,
+		suffixID		= 123,
 	}
 ]]
 
@@ -720,7 +721,7 @@ function Proto:SetContentTable(tab, formatTab, setOnlySec)
 				end
 			end
 			if not found and button_types[formatType] and button_types[formatType].GetStringContent then
-				self:SetType(formatType,  button_types[formatType].GetStringContent(curContent))
+				self:SetType(formatType, button_types[formatType].GetStringContent(curContent))
 			end
 		elseif button_types[curContent] then
 			self.__atlaslootinfo[formatType] = nil

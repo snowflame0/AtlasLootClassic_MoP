@@ -1037,7 +1037,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [71086] = 71141, -- Dragonwrath, Tarecgosa's Rest
         [69848] = 71141, -- Heart of Flame
         --- Items with suffixes from Throne
-        [68132] = {"i68132:0:0:0:0:0:-129","i68132:0:0:0:0:0:-128","i68132:0:0:0:0:0:-127"},
+        [68132] = {"i68132suf-131","i68132suf-129","i68132suf-114","i68132suf-130","i68132suf-138","i68132suf-132",type=2},
         --- ## Baradin Hold
         --- Argaloth
         -- Non-ClassSet-Items

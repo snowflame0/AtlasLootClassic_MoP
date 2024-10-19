@@ -23,10 +23,16 @@ local tonumber = _G.tonumber
 local assert = _G.assert
 local next, wipe, tab_remove = _G.next, _G.wipe, _G.table.remove
 local format, split, sfind, slower = _G.string.format, _G.string.split, _G.string.find, _G.string.lower
+local str_match = string.match
 
 -- WoW
 local GetItemInfo, IsEquippableItem, GetItemInfoInstant = _G.GetItemInfo, _G.IsEquippableItem, _G.GetItemInfoInstant
 local LOOT_BORDER_BY_QUALITY = _G["LOOT_BORDER_BY_QUALITY"]
+
+--[[
+	-- Items with suffixes format "i<itemID>suf<suffixID" e.g. "i68132suf-131"
+	SuffixID will often be negative
+]]
 
 -- AL
 local GetAlTooltip = AtlasLoot.Tooltip.GetTooltip
@@ -90,8 +96,9 @@ function Item.OnSet(button, second)
 	if not button then return end
 	if second and button.__atlaslootinfo.secType then
 		if type(button.__atlaslootinfo.secType[2]) == "table" then
-			button.secButton.ItemID = button.__atlaslootinfo.secType[2].itemID or tonumber(tab_remove(button.__atlaslootinfo.secType[2], 1))
-			button.secButton.ItemString = button.__atlaslootinfo.secType[2].itemString or GetItemString(button.secButton.ItemID)
+			button.secButton.ItemID = button.__atlaslootinfo.secType[2][1] or tonumber(tab_remove(button.__atlaslootinfo.secType[2], 1))
+			button.secButton.SuffixID = button.__atlaslootinfo.secType[2].SuffixID or button.__atlaslootinfo.secType[2][2] or 0
+			button.secButton.ItemString = button.__atlaslootinfo.secType[2].itemString or GetItemString(button.secButton.ItemID, false, button.secButton.SuffixID)
 		else
 			button.secButton.ItemID = button.__atlaslootinfo.secType[2]
 			if button.__atlaslootinfo.preSet and button.__atlaslootinfo.preSet.Item and ( button.__atlaslootinfo.preSet.Item.item2bonus or button.__atlaslootinfo.ItemDifficulty ) then
@@ -105,7 +112,8 @@ function Item.OnSet(button, second)
 	else
 		if type(button.__atlaslootinfo.type[2]) == "table" then
 			button.ItemID = button.__atlaslootinfo.type[2].itemID or tonumber(tab_remove(button.__atlaslootinfo.type[2], 1))
-			button.ItemString = button.__atlaslootinfo.type[2].itemString or GetItemString(button.ItemID)
+			button.SuffixID = button.__atlaslootinfo.type[2].SuffixID or button.__atlaslootinfo.secType[2][2] or 0
+			button.ItemString = button.__atlaslootinfo.type[2].itemString or GetItemString(button.ItemID, false, button.SuffixID)
 		else
 			button.ItemID = button.__atlaslootinfo.type[2]
 			if button.__atlaslootinfo.preSet and button.__atlaslootinfo.preSet.Item and ( button.__atlaslootinfo.preSet.Item.item1bonus or button.__atlaslootinfo.ItemDifficulty ) then
@@ -271,12 +279,14 @@ function Item.OnClear(button)
 	button.SetData = nil
 	button.RawName = nil
 	button.ItemLvl = nil
+	button.SuffixID = nil
 	button.secButton.ItemID = nil
 	button.secButton.Droprate = nil
 	button.secButton.ItemString = nil
 	button.secButton.SetData = nil
 	button.secButton.RawName = nil
 	button.secButton.ItemLvl = nil
+	button.secButton.SuffixID = nil
 	button.secButton.pvp:Hide()
 
 	itemIsOnEnter = nil
@@ -382,7 +392,12 @@ function Item.Refresh(button)
 end
 
 function Item.GetStringContent(str)
-	if tonumber(str) then
+	if tonumber(str_match(str, "suf(%-?%d+)")) then
+		return {
+			tonumber(str_match(str, "(%d+)")),
+			tonumber(str_match(str, "suf(%-?%d+)")),	-- suffix item
+		}
+	elseif tonumber(str) then
 		return tonumber(str)
 	else
 		return {
