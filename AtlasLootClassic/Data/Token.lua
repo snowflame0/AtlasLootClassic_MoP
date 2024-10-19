@@ -1049,6 +1049,20 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [69830] = {"i69830suf-131","i69830suf-129","i69830suf-114","i69830suf-130","i69830suf-138","i69830suf-132",type=1}, -- Planetary Amulet N
         [65376] = {"i65376suf-131","i65376suf-129","i65376suf-114","i65376suf-130","i65376suf-138","i65376suf-132",type=2}, -- Soul Breath Belt H
         [63498] = {"i63498suf-131","i63498suf-129","i63498suf-114","i63498suf-130","i63498suf-138","i63498suf-132",type=1}, -- Soul Breath Belt N
+        [65374] = {"i65374suf-131","i65374suf-130","i65374suf-138","i65374suf-132",type=2}, -- Gale Rouser Belt H
+        [63497] = {"i63497suf-131","i63497suf-130","i63497suf-138","i63497suf-132",type=1}, -- Gale Rouser Belt N
+        [65384] = {"i65384suf-131","i65384suf-130","i65384suf-138","i65384suf-132",type=2}, -- Gale Rouser Leggings H
+        [65384] = {"i65384suf-131","i65384suf-130","i65384suf-138","i65384suf-132",type=1}, -- Gale Rouser Leggings N
+        [65382] = {"i65382suf-121","i65382suf-122","i65382suf-120","i65382suf-118",type=1}, -- Cloudburst Ring H
+        [63499] = {"i63499suf-121","i63499suf-122","i63499suf-120","i63499suf-118",type=1}, -- Cloudburst Ring N
+        [69879] = {"i69879suf-121","i69879suf-122","i69879suf-120","i69879suf-118",type=1}, -- Cloudburst Cloak H
+        [69834] = {"i69834suf-121","i69834suf-122","i69834suf-120","i69834suf-118",type=1}, -- Cloudburst Cloak N
+        [69885] = {"i69885suf-121","i69885suf-122","i69885suf-120","i69885suf-118",type=1}, -- Cloudburst Neck H
+        [69829] = {"i69829suf-121","i69829suf-122","i69829suf-120","i69829suf-118",type=1}, -- Cloudburst Neck N
+        [65369] = {"i65369suf-121","i65369suf-122","i65369suf-120","i65369suf-118",type=2}, -- Sky Strider Belt H
+        [63490] = {"i63490suf-121","i63490suf-122","i63490suf-120","i63490suf-118",type=1}, -- Sky Strider Belt N
+        [65379] = {"i65379suf-121","i65379suf-122","i65379suf-120","i65379suf-118",type=2}, -- Sky Strider Greaves H
+        [63500] = {"i63500suf-121","i63500suf-122","i63500suf-120","i63500suf-118",type=1}, -- Sky Strider Greaves N
         --- ## Baradin Hold
         --- Argaloth
         -- Non-ClassSet-Items
