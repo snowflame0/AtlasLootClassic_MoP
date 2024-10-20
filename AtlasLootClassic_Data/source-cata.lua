@@ -2845,6 +2845,8 @@ local SOURCE_DATA = {
         [69775] = {[3] = 19,[4] = 98569},
         [69821] = {[3] = 19,[4] = 98582},
         [69824] = {[3] = 19,[4] = 98588},
+        -- TODO: Add missing tier pieces corresponding to tokens
+        -- Format [tier_piece_itemID] = token_itemID,
     },
 }
 
