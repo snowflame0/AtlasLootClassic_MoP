@@ -1087,13 +1087,7 @@ data["HalloweenCata"] = {
     {3, 70722}, -- Little Wickerman
     {4, 70908}, -- Feline Familiar
     {5, 71076}, -- Creepy Crate
-    {7, 18633}, -- Styleen's Sour Suckerpop
-    {8, 18632}, -- Moonbrook Riot Taffy
-    {9, 18635}, -- Bellara's Nutterbar
-    {10, 20557}, -- Hallow's End Pumpkin Treat
-    {11, 20389}, -- Candy Corn
-    {12, 20388}, -- Lollipop
-    {13, 20390} -- Candy Bar
+    {16, 33226}, -- Tricky Treat
 }
 }, { -- Halloween1
 name = AL["Hallow's End"] .. " - " .. AL["Wands"],
@@ -1116,10 +1110,12 @@ name = AL["Hallow's End"] .. " - " .. AL["Masks"],
     {6, 20572}, -- Flimsy Male Tauren Mask
     {7, 20568}, -- Flimsy Male Troll Mask
     {8, 20573}, -- Flimsy Male Undead Mask
-    {10, 69188}, -- Murloc Male Mask
-    {11, 69190}, -- Naga Male Mask
-    {12, 69193}, -- Ogre Male Mask
-    {13, 69195}, -- Vrykul Male Mask
+    {9, 49216}, -- Worgen Male Mask
+    {10, 49210}, -- Goblin Male Mask
+    {12, 69188}, -- Murloc Male Mask
+    {13, 69190}, -- Naga Male Mask
+    {14, 69193}, -- Ogre Male Mask
+    {15, 69195}, -- Vrykul Male Mask
     {16, 20562}, -- Flimsy Female Dwarf Mask
     {17, 20392}, -- Flimsy Female Gnome Mask
     {18, 20565}, -- Flimsy Female Human Mask
@@ -1128,10 +1124,12 @@ name = AL["Hallow's End"] .. " - " .. AL["Masks"],
     {21, 20571}, -- Flimsy Female Tauren Mask
     {22, 20567}, -- Flimsy Female Troll Mask
     {23, 20574}, -- Flimsy Female Undead Mask
-    {25, 69187}, -- Murloc Female Mask
-    {26, 69189}, -- Naga Female Mask
-    {27, 69192}, -- Ogre Female Mask
-    {28, 69194}, -- Vrykul Female Mask
+    {24, 49215}, -- Worgen Female Mask
+    {25, 49212}, -- Goblin Female Mask
+    {27, 69187}, -- Murloc Female Mask
+    {28, 69189}, -- Naga Female Mask
+    {29, 69192}, -- Ogre Female Mask
+    {30, 69194}, -- Vrykul Female Mask
 }
 }, { -- SMHeadlessHorseman
 name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
@@ -1146,11 +1144,8 @@ name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
     {10, 34068}, -- Weighted Jack-o'-Lantern
     {12, 33277}, -- Tome of Thomas Thomson
     {16, 37012}, -- The Horseman's Reins
-    {18, 33182}, -- Swift Flying Broom        280% flying
-    {19, 33176}, -- Flying Broom              60% flying
-    {21, 33184}, -- Swift Magic Broom         100% ground
-    {22, 37011}, -- Magic Broom               60% ground
-    {24, 33154} -- Sinister Squashling
+    {18, 37011}, -- Magic Broom               60% ground
+    {20, 33154} -- Sinister Squashling
 }
 }}
 }

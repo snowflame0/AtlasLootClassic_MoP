@@ -1037,7 +1037,68 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [71086] = 71141, -- Dragonwrath, Tarecgosa's Rest
         [69848] = 71141, -- Heart of Flame
         --- Items with suffixes from Throne
-        [68132] = {"i68132suf-131","i68132suf-129","i68132suf-114","i68132suf-130","i68132suf-138","i68132suf-132",type=2},
+        [68132] = {"i68132suf-131","i68132suf-129","i68132suf-114","i68132suf-130","i68132suf-138","i68132suf-132",type=2}, -- Caster Sword H
+        [68127] = {"i68127suf-131","i68127suf-129","i68127suf-114","i68127suf-130","i68127suf-138","i68127suf-132",type=1}, -- Caster Sword N
+        [68130] = {"i68130suf-136","i68130suf-133","i68130suf-137","i68130suf-135",type=2}, -- Agility Sword H
+        [68129] = {"i68129suf-136","i68129suf-133","i68129suf-137","i68129suf-135",type=1}, -- Agility Sword N
+        [68131] = {"i68131suf-121","i68131suf-122","i68131suf-120","i68131suf-118",type=2}, -- Strength Sword H
+        [68128] = {"i68128suf-121","i68128suf-122","i68128suf-120","i68128suf-118",type=1}, -- Strength Sword N
+        [65383] = {"i65383suf-131","i65383suf-129","i65383suf-114","i65383suf-130","i65383suf-138","i65383suf-132",type=2}, -- Soul Breath Leggings H
+        [63507] = {"i63507suf-131","i63507suf-129","i63507suf-114","i63507suf-130","i63507suf-138","i63507suf-132",type=1}, -- Soul Breath Leggings N
+        [69881] = {"i69881suf-131","i69881suf-129","i69881suf-114","i69881suf-130","i69881suf-138","i69881suf-132",type=1}, -- Planetary Drape H
+        [69835] = {"i69835suf-131","i69835suf-129","i69835suf-114","i69835suf-130","i69835suf-138","i69835suf-132",type=1}, -- Planetary Drape N
+        [65373] = {"i65373suf-131","i65373suf-129","i65373suf-114","i65373suf-130","i65373suf-138","i65373suf-132",type=1}, -- Planetary Band H
+        [63494] = {"i63494suf-131","i63494suf-129","i63494suf-114","i63494suf-130","i63494suf-138","i63494suf-132",type=1}, -- Planetary Band N
+        [69882] = {"i69882suf-131","i69882suf-129","i69882suf-114","i69882suf-130","i69882suf-138","i69882suf-132",type=1}, -- Planetary Amulet H
+        [69830] = {"i69830suf-131","i69830suf-129","i69830suf-114","i69830suf-130","i69830suf-138","i69830suf-132",type=1}, -- Planetary Amulet N
+        [65376] = {"i65376suf-131","i65376suf-129","i65376suf-114","i65376suf-130","i65376suf-138","i65376suf-132",type=2}, -- Soul Breath Belt H
+        [63498] = {"i63498suf-131","i63498suf-129","i63498suf-114","i63498suf-130","i63498suf-138","i63498suf-132",type=1}, -- Soul Breath Belt N
+        [65374] = {"i65374suf-131","i65374suf-130","i65374suf-138","i65374suf-132",type=2}, -- Gale Rouser Belt H
+        [63497] = {"i63497suf-131","i63497suf-130","i63497suf-138","i63497suf-132",type=1}, -- Gale Rouser Belt N
+        [63506] = {"i63506suf-131","i63506suf-130","i63506suf-138","i63506suf-132",type=1}, -- Gale Rouser Leggings N
+        [65384] = {"i65384suf-131","i65384suf-130","i65384suf-138","i65384suf-132",type=2}, -- Gale Rouser Leggings H
+        [65377] = {"i65377suf-131","i65377suf-130","i65377suf-138","i65377suf-132",type=2}, -- Lightning Well Belt H
+        [63496] = {"i63496suf-131","i63496suf-130","i63496suf-138","i63496suf-132",type=1}, -- Lightning Well Belt N
+        [65386] = {"i65386suf-131","i65386suf-130","i65386suf-138","i65386suf-132",type=2}, -- Lightning Well Leggings H
+        [63505] = {"i63505suf-131","i63505suf-130","i63505suf-138","i63505suf-132",type=1}, -- Lightning Well Leggings N
+        [65382] = {"i65382suf-121","i65382suf-122","i65382suf-120","i65382suf-118",type=2}, -- Cloudburst Ring H
+        [63499] = {"i63499suf-121","i63499suf-122","i63499suf-120","i63499suf-118",type=1}, -- Cloudburst Ring N
+        [69879] = {"i69879suf-121","i69879suf-122","i69879suf-120","i69879suf-118",type=1}, -- Cloudburst Cloak H
+        [69834] = {"i69834suf-121","i69834suf-122","i69834suf-120","i69834suf-118",type=1}, -- Cloudburst Cloak N
+        [69885] = {"i69885suf-121","i69885suf-122","i69885suf-120","i69885suf-118",type=1}, -- Cloudburst Neck H
+        [69829] = {"i69829suf-121","i69829suf-122","i69829suf-120","i69829suf-118",type=1}, -- Cloudburst Neck N
+        [65369] = {"i65369suf-121","i65369suf-122","i65369suf-120","i65369suf-118",type=2}, -- Sky Strider Belt H
+        [63490] = {"i63490suf-121","i63490suf-122","i63490suf-120","i63490suf-118",type=1}, -- Sky Strider Belt N
+        [65379] = {"i65379suf-121","i65379suf-122","i65379suf-120","i65379suf-118",type=2}, -- Sky Strider Greaves H
+        [63500] = {"i63500suf-121","i63500suf-122","i63500suf-120","i63500suf-118",type=1}, -- Sky Strider Greaves N
+        [65371] = {"i65371suf-136","i65371suf-133","i65371suf-137","i65371suf-135",type=2}, -- Wind Stalker Belt H
+        [63493] = {"i63493suf-136","i63493suf-133","i63493suf-137","i63493suf-135",type=1}, -- Wind Stalker Belt N
+        [65381] = {"i65381suf-136","i65381suf-133","i65381suf-137","i65381suf-135",type=2}, -- Wind Stalker Leggings H
+        [63503] = {"i63503suf-136","i63503suf-133","i63503suf-137","i63503suf-135",type=1}, -- Wind Stalker Belt N
+        [65368] = {"i65368suf-136","i65368suf-133","i65368suf-137","i65368suf-135",type=2}, -- Star Chaser Belt H
+        [63492] = {"i63492suf-136","i63492suf-133","i63492suf-137","i63492suf-135",type=1}, -- Star Chaser Belt N
+        [65378] = {"i65378suf-136","i65378suf-133","i65378suf-137","i65378suf-135",type=2}, -- Star Chaser Legs H
+        [63502] = {"i63502suf-136","i63502suf-133","i63502suf-137","i63502suf-135",type=1}, -- Star Chaser Legs N
+        [65367] = {"i65367suf-136","i65367suf-133","i65367suf-137","i65367suf-135",type=2}, -- Mistral Circle H
+        [63488] = {"i63488suf-136","i63488suf-133","i63488suf-137","i63488suf-135",type=1}, -- Mistral Circle N
+        [69884] = {"i69884suf-136","i69884suf-133","i69884suf-137","i69884suf-135",type=1}, -- Mistral Drape H
+        [69831] = {"i69831suf-136","i69831suf-133","i69831suf-137","i69831suf-135",type=1}, -- Mistral Drape N
+        [69880] = {"i69880suf-136","i69880suf-133","i69880suf-137","i69880suf-135",type=1}, -- Mistral Pendant H
+        [69827] = {"i69827suf-136","i69827suf-133","i69827suf-137","i69827suf-135",type=1}, -- Mistral Pendant N
+        [65372] = {"i65372suf-128","i65372suf-125","i65372suf-127",type=2}, -- Permafrost Signet H
+        [63489] = {"i63489suf-128","i63489suf-125","i63489suf-127",type=1}, -- Permafrost Signet N
+        [69878] = {"i69878suf-128","i69878suf-125","i69878suf-127",type=1}, -- Permafrost Cape H
+        [69833] = {"i69833suf-128","i69833suf-125","i69833suf-127",type=1}, -- Permafrost Cape N
+        [69883] = {"i69883suf-128","i69883suf-125","i69883suf-127",type=1}, -- Permafrost Choker H
+        [69828] = {"i69828suf-128","i69828suf-125","i69828suf-127",type=1}, -- Permafrost Signet N
+        [65370] = {"i65370suf-128","i65370suf-125","i65370suf-127",type=2}, -- Thunder Wall Belt H
+        [63491] = {"i63491suf-128","i63491suf-125","i63491suf-127",type=1}, -- Thunder Wall Belt N
+        [65380] = {"i65380suf-128","i65380suf-125","i65380suf-127",type=2}, -- Thunder Wall Legs H
+        [63501] = {"i63501suf-128","i63501suf-125","i63501suf-127",type=1}, -- Thunder Wall Legs N
+        [65375] = {"i65375suf-131","i65375suf-130","i65375suf-138","i65375suf-132",type=2}, -- Tempest Keeper Belt H
+        [63495] = {"i63495suf-131","i63495suf-130","i63495suf-138","i63495suf-132",type=1}, -- Tempest Keeper Belt N
+        [65385] = {"i65385suf-131","i65385suf-130","i65385suf-138","i65385suf-132",type=2}, -- Tempest Keeper Legs H
+        [63504] = {"i63504suf-131","i63504suf-130","i63504suf-138","i63504suf-132",type=1}, -- Tempest Keeper Legs N
         --- ## Baradin Hold
         --- Argaloth
         -- Non-ClassSet-Items
