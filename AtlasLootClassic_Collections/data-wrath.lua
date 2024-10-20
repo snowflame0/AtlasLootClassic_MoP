@@ -974,7 +974,8 @@ data["WorldEpicsWrath"] = {
     CorrespondingFields = private.WORLD_EPICS,
     items = {{
         name = AL["World Epics"],
-        [NORMAL_ITTYPE] = {{1, 44309}, -- Sash of Jordan
+        [NORMAL_DIFF] = {
+        {1, 44309}, -- Sash of Jordan
         {2, 44312}, -- Wapach's Spaulders of Solidarity
         {4, 44308}, -- Signet of Edward the Odd
         {5, 37835}, -- Je'Tze's Bell

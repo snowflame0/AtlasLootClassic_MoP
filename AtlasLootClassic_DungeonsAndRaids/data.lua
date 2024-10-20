@@ -124,7 +124,6 @@ local T2_SET = {
     ExtraList = true,
     LoadDifficulty = LOAD_DIFF,
     TableType = SET_ITTYPE,
-    ContentPhase = 3,
     IgnoreAsSource = true,
     [ALLIANCE_DIFF] = {
         { 1, 212 }, -- Warlock
@@ -149,7 +148,6 @@ local T3_SET = {
     ExtraList = true,
     LoadDifficulty = LOAD_DIFF,
     TableType = SET_ITTYPE,
-    ContentPhase = 6,
     IgnoreAsSource = true,
     [ALLIANCE_DIFF] = {
         { 1, 529 }, -- Warlock
@@ -216,7 +214,6 @@ local AQ_OPENING = {	-- Keys
     name = AL["AQ opening"],
     TableType = NORMAL_ITTYPE,
     ExtraList = true,
-    ContentPhase = 5,
     IgnoreAsSource = true,
     [NORMAL_DIFF] = {
         { 1,  21138 }, -- Red Scepter Shard
@@ -1080,7 +1077,6 @@ data["ScarletMonasteryGraveyard"] = {
             npcID = 14693,
             DisplayIDs = {{16197}},
             AtlasMapBossID = 1,
-            ContentPhase = 6,
             specialType = "scourgeInvasion",
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -1457,7 +1453,6 @@ data["RazorfenDowns"] = {
             npcID = 14686,
             DisplayIDs = {{10698}},
             AtlasMapBossID = 2,
-            ContentPhase = 6,
             specialType = "scourgeInvasion",
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -3011,7 +3006,6 @@ data["LowerBlackrockSpire"] = {
             npcID = 16080,
             DisplayIDs = {{15997}},
             ExtraList = true,
-            ContentPhase = 5,
             AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  22306 }, -- Ironweave Belt
@@ -3227,7 +3221,6 @@ data["UpperBlackrockSpire"] = {
             npcID = 16042,
             DisplayIDs = {{14308}},
             ExtraList = true,
-            ContentPhase = 5,
             AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  22302 }, -- Ironweave Cowl
@@ -3348,7 +3341,6 @@ data["DireMaulEast"] = {
             npcID = 16097,
             DisplayIDs = {{16000}},
             ExtraList = true,
-            ContentPhase = 5,
             AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  22304 }, -- Ironweave Gloves
@@ -3491,7 +3483,6 @@ data["DireMaulWest"] = {
             npcID = 14690,
             DisplayIDs = {{14695}},
             AtlasMapBossID = 2,
-            ContentPhase = 6,
             specialType = "scourgeInvasion",
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -4171,7 +4162,6 @@ data["Scholomance"] = {
             npcID = 14695,
             DisplayIDs = {{14699}},
             AtlasMapBossID = 2,
-            ContentPhase = 6,
             specialType = "scourgeInvasion",
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -4185,7 +4175,6 @@ data["Scholomance"] = {
             npcID = 16118,
             DisplayIDs = {{16020}},
             ExtraList = true,
-            ContentPhase = 5,
             AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  22303 }, -- Ironweave Pants
@@ -4620,7 +4609,6 @@ data["Stratholme"] = {
             NameColor = GREEN,
             ExtraList = true,
             AtlasMapBossID = 2,
-            ContentPhase = 6,
             [NORMAL_DIFF] = {
                 { 1,  22736 }, -- Andonisus, Reaper of Souls
             },
@@ -4633,7 +4621,6 @@ data["Stratholme"] = {
             npcID = 14684,
             DisplayIDs = {{7919}},
             AtlasMapBossID = 2,
-            ContentPhase = 6,
             [NORMAL_DIFF] = {
                 { 1,  23126 }, -- Waistband of Balzaphon
                 { 2,  23125 }, -- Chains of the Lich
@@ -4644,7 +4631,6 @@ data["Stratholme"] = {
             name = AL["Sothos and Jarien's Heirlooms"].." - "..format(AL["Tier %s Sets"], "0.5"),
             NameColor = GREEN,
             ExtraList = true,
-            ContentPhase = 5,
             AtlasMapBossID = 11,
             [NORMAL_DIFF] = {
                 { 1,  22327 }, -- Amulet of the Redeemed
@@ -4666,14 +4652,12 @@ data["WorldBosses"] = {
     AtlasMapFile = "Azuregos",
     ContentType = RAID40_CONTENT,
     LoadDifficulty = LOAD_DIFF,
-    ContentPhase = 2,
     items = {
         { -- AAzuregos
             name = AL["Azuregos"],
             AtlasMapFile = "Azuregos",
             npcID = 6109,
             Level = 999,
-            ContentPhase = 2,
             DisplayIDs = {{11460}},
             AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
@@ -4702,7 +4686,6 @@ data["WorldBosses"] = {
             AtlasMapFile = "LordKazzak",
             npcID = 12397,
             Level = 999,
-            ContentPhase = 2,
             DisplayIDs = {{12449}},
             AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
@@ -4731,7 +4714,6 @@ data["WorldBosses"] = {
             AtlasMapFile = "FourDragons",
             npcID = 14888,
             Level = 999,
-            ContentPhase = 4,
             DisplayIDs = {{15365}},
             [NORMAL_DIFF] = {
                 { 1,  20628 }, -- Deviate Growth Cap
@@ -4766,7 +4748,6 @@ data["WorldBosses"] = {
             AtlasMapFile = "FourDragons",
             npcID = 14889,
             Level = 999,
-            ContentPhase = 4,
             DisplayIDs = {{15366}},
             [NORMAL_DIFF] = {
                 { 1,  20623 }, -- Circlet of Restless Dreams
@@ -4799,7 +4780,6 @@ data["WorldBosses"] = {
             AtlasMapFile = "FourDragons",
             npcID = 14890,
             Level = 999,
-            ContentPhase = 4,
             DisplayIDs = {{15363}, {15367}},
             [NORMAL_DIFF] = {
                 { 1,  20633 }, -- Unnatural Leather Spaulders
@@ -4832,7 +4812,6 @@ data["WorldBosses"] = {
             AtlasMapFile = "FourDragons",
             npcID = 14887,
             Level = 999,
-            ContentPhase = 4,
             DisplayIDs = {{15364}},
             [NORMAL_DIFF] = {
                 { 1,  20637 }, -- Acid Inscribed Pauldrons
@@ -5263,7 +5242,6 @@ data["Zul'GurubClassic"] = {
     AtlasMapFile_AL = "ZulGurub",
     ContentType = RAID20_CONTENT,
     LoadDifficulty = RAID20_DIFF,
-    ContentPhase = 4,
     items = {
         { -- ZGJeklik
             name = AL["High Priestess Jeklik"],
@@ -5644,7 +5622,6 @@ data["BlackwingLair"] = {
     AtlasMapFile_AL = "BlackwingLair",
     ContentType = RAID40_CONTENT,
     LoadDifficulty = RAID40_DIFF,
-    ContentPhase = 3,
     items = {
         { -- BWLRazorgore
             name = AL["Razorgore the Untamed"],
@@ -5910,7 +5887,6 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
     AtlasMapFile_AL = "TheRuinsofAhnQiraj",
     ContentType = RAID20_CONTENT,
     LoadDifficulty = RAID20_DIFF,
-    ContentPhase = 5,
     items = {
         { -- AQ20Kurinnaxx
             name = AL["Kurinnaxx"],
@@ -6134,7 +6110,6 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
     AtlasMapFile_AL = "TheTempleofAhnQiraj",
     ContentType = RAID40_CONTENT,
     LoadDifficulty = RAID40_DIFF,
-    ContentPhase = 5,
     items = {
         { -- AQ40Skeram
             name = AL["The Prophet Skeram"],
@@ -6389,7 +6364,6 @@ data["Naxxramas"] = {
     AtlasMapFile_AL = "Naxxramas",
     ContentType = RAID40_CONTENT,
     LoadDifficulty = RAID40_DIFF,
-    ContentPhase = 6,
     items = {
         -- The Arachnid Quarter
         { -- NAXAnubRekhan

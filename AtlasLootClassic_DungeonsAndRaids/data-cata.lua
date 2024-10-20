@@ -61,7 +61,6 @@ local T11_SET = {
     name = format(AL["Tier %s Sets"], "11"),
     ExtraList = true,
     TableType = SET_ITTYPE,
-    ContentPhaseCata = 1,
     IgnoreAsSource = true,
     [NORMAL_DIFF] = {
         {1, 4000941 }, -- Warlock
@@ -111,7 +110,7 @@ local T12_SET = {
     name = format(AL["Tier %s Sets"], "12"),
     ExtraList = true,
     TableType = SET_ITTYPE,
-    ContentPhaseCata = 2,
+    ContentPhaseCata = 3,
     IgnoreAsSource = true,
     [NORMAL_DIFF] = {
         {1, 40001008 }, -- Warlock
@@ -161,7 +160,7 @@ local T13_SET = {
     name = format(AL["Tier %s Sets"], "13"),
     ExtraList = true,
     TableType = SET_ITTYPE,
-    ContentPhaseCata = 3,
+    ContentPhaseCata = 4,
     IgnoreAsSource = true,
     [RAIDFINDER_DIFF] = {
         {1, 40001072 }, -- Warlock
@@ -323,6 +322,7 @@ TableType = AC_ITTYPE,
 ExtraList = true,
 IgnoreAsSource = true,
 CoinTexture = "Achievement",
+ContentPhaseCata = 3,
 [NORMAL_DIFF] = {
     { 1, 5828 },
     { 2, 5821 },			{ 17, 5810 },
@@ -343,6 +343,7 @@ TableType = AC_ITTYPE,
 ExtraList = true,
 IgnoreAsSource = true,
 CoinTexture = "Achievement",
+ContentPhaseCata = 4,
 [NORMAL_DIFF] = {
     { 1, 6169 },
     { 2, 6174 },			{ 17, 6129 },
@@ -1378,10 +1379,12 @@ data["ZulAman"] = {
     InstanceID = 568,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},
+    ContentPhaseCata = 2,
     items = {
         { -- Akil'zon
         name = AL["Akil'zon"],
         EncounterJournalID = 1189,
+        ContentPhaseCata = 2,
         [HEROIC_DIFF] = {
             { 1, 69550 },	-- Leggings of Ancient Magics
             { 2, 69551 },	-- Feathers of Akil'zon
@@ -1393,6 +1396,7 @@ data["ZulAman"] = {
     { -- Nalorakk
     name = AL["Nalorakk"],
     EncounterJournalID = 1190,
+    ContentPhaseCata = 2,
     [HEROIC_DIFF] = {
         { 1, 69555 },	-- Boots of the Ursine
         { 2, 69556 },	-- Armbands of the Bear Spirit
@@ -1404,6 +1408,7 @@ data["ZulAman"] = {
 { -- Jan'alai
 name = AL["Jan'alai"],
 EncounterJournalID = 1191,
+ContentPhaseCata = 2,
 [HEROIC_DIFF] = {
     { 1, 69560 },	-- Jan'alai's Spaulders
     { 2, 69559 },	-- Amani'shi Bracers
@@ -1415,6 +1420,7 @@ EncounterJournalID = 1191,
 { -- Halazzi
 name = AL["Halazzi"],
 EncounterJournalID = 1192,
+ContentPhaseCata = 2,
 [HEROIC_DIFF] = {
     { 1, 69567 },	-- Wristwraps of Departed Spirits
     { 2, 69564 },	-- The Savager's Mask
@@ -1427,6 +1433,7 @@ EncounterJournalID = 1192,
 { -- Hex Lord Malacrass
 name = AL["Hex Lord Malacrass"],
 EncounterJournalID = 1193,
+ContentPhaseCata = 2,
 [HEROIC_DIFF] = {
     { 1, 69572 },	-- Hex Lord's Bloody Cloak
     { 2, 69569 },	-- Shadowtooth Trollskin Breastplate
@@ -1441,6 +1448,7 @@ EncounterJournalID = 1193,
 { -- Daakara
 name = AL["Daakara"],
 EncounterJournalID = 1194,
+ContentPhaseCata = 2,
 [HEROIC_DIFF] = {
     { 1, 69577 },	-- Collar of Bones
     { 2, 69578 },	-- Hexing Robes
@@ -1460,6 +1468,7 @@ EncounterJournalID = 1194,
 {	-- Timed Chest
 name = AL["Timed Reward Chest"],
 ExtraList = true,
+ContentPhaseCata = 2,
 [HEROIC_DIFF] = {
     { 1, 69584 },	-- Recovered Cloak of Frostheim
     { 2, 69585 },	-- Wristwraps of Madness
@@ -1478,6 +1487,7 @@ ExtraList = true,
 {	-- Trash
 name = AL["Trash Mobs"],
 ExtraList = true,
+ContentPhaseCata = 2,
 [HEROIC_DIFF] = {
     { 1, 69797 },	-- Charmbinder Grips
     { 2, 69801 },	-- Amani Armguards
@@ -1516,10 +1526,12 @@ data["ZulGurub"] = {
     InstanceID = 859,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},
+    ContentPhaseCata = 2,
     items = {
         { -- High Priest Venoxis
         name = AL["High Priest Venoxis"],
         EncounterJournalID = 1178,
+        ContentPhaseCata = 2,
         [HEROIC_DIFF] = {
             { 1, 69601 },	-- Serpentine Leggings
             { 2, 69600 },	-- Belt of Slithering Serpents
@@ -1532,6 +1544,7 @@ data["ZulGurub"] = {
     { -- Bloodlord Mandokir
     name = AL["Bloodlord Mandokir"],
     EncounterJournalID = 1179,
+    ContentPhaseCata = 2,
     [HEROIC_DIFF] = {
         { 1, 69606 },	-- Hakkari Loa Drape
         { 2, 69608 },	-- Deathcharged Wristguards
@@ -1545,26 +1558,31 @@ data["ZulGurub"] = {
 { -- Cache of Madness - Gri'lek
 name = AL["Gri'lek"],
 EncounterJournalID = 788,
+ContentPhaseCata = 2,
 [HEROIC_DIFF] = ZUL_GURUB_MADNESS_LOOT,
 },
 { -- Cache of Madness - Hazza'rah
 name = AL["Hazza'rah"],
 EncounterJournalID = 788,
+ContentPhaseCata = 2,
 [HEROIC_DIFF] = ZUL_GURUB_MADNESS_LOOT,
 },
 { -- Cache of Madness - Renataki
 name = AL["Renataki"],
 EncounterJournalID = 788,
+ContentPhaseCata = 2,
 [HEROIC_DIFF] = ZUL_GURUB_MADNESS_LOOT,
 },
 { -- Cache of Madness - Wushoolay
 name = AL["Wushoolay"],
 EncounterJournalID = 788,
+ContentPhaseCata = 2,
 [HEROIC_DIFF] = ZUL_GURUB_MADNESS_LOOT,
 },
 { -- High Priestess Kilnara
 name = AL["High Priestess Kilnara"],
 EncounterJournalID = 1180,
+ContentPhaseCata = 2,
 [HEROIC_DIFF] = {
     { 1, 69612 },	-- Claw-Fringe Mantle
     { 2, 69611 },	-- Sash of Anguish
@@ -1577,6 +1595,7 @@ EncounterJournalID = 1180,
 { -- Zanzil
 name = AL["Zanzil"],
 EncounterJournalID = 1181,
+ContentPhaseCata = 2,
 [HEROIC_DIFF] = {
     { 1, 69616 },	-- Spiritbinder Spaulders
     { 2, 69615 },	-- Zombie Walker Legguards
@@ -1588,6 +1607,7 @@ EncounterJournalID = 1181,
 { -- Jin'do the Godbreaker
 name = AL["Jin'do the Godbreaker"],
     EncounterJournalID = 1182,
+    ContentPhaseCata = 2,
     [HEROIC_DIFF] = {
         { 1, 69622 },	-- The Hexxer's Mask
         { 2, 69623 },	-- Vestments of the Soulflayer
@@ -1607,6 +1627,7 @@ name = AL["Jin'do the Godbreaker"],
 },
 {	-- Trash
 name = AL["Trash Mobs"],
+ContentPhaseCata = 2,
 ExtraList = true,
 [HEROIC_DIFF] = {
     { 1, 69800 },	-- Spiritguard Drape
@@ -2284,10 +2305,12 @@ data["Firelands"] = {
     InstanceID = 720,
     EncounterJournalID = 78,
     ContentType = RAID_CONTENT,
+    ContentPhaseCata = 3,
     items = {
         { -- Beth'tilac
         name = AL["Beth'tilac"],
         EncounterJournalID = 192,
+        ContentPhaseCata = 3,
         [NORMAL_DIFF] = {
             { 1, 71041 },	-- Robes of Smoldering Devastation
             { 2, 71040 },	-- Cowl of the Clicking Menace
@@ -2333,6 +2356,7 @@ data["Firelands"] = {
     { -- Lord Rhyolith
     name = AL["Lord Rhyolith"],
     EncounterJournalID = 193,
+    ContentPhaseCata = 3,
     [NORMAL_DIFF] = {
         { 1, 70992 },	-- Dreadfire Drape
         { 2, 71011 },	-- Flickering Cowl
@@ -2376,6 +2400,7 @@ data["Firelands"] = {
 { -- Alysrazor
 name = AL["Alysrazor"],
 EncounterJournalID = 194,
+ContentPhaseCata = 3,
 [NORMAL_DIFF] = {
     { 1, 70990 },	-- Wings of Flame
     { 2, 70989 },	-- Leggings of Billowing Fire
@@ -2426,6 +2451,7 @@ EncounterJournalID = 194,
 { -- Shannox
 name = AL["Shannox"],
 EncounterJournalID = 195,
+ContentPhaseCata = 3,
 [NORMAL_DIFF] = {
     { 1, 71023 },	-- Coalwalker Sandals
     { 2, 71025 },	-- Flickering Shoulderpads
@@ -2474,6 +2500,7 @@ EncounterJournalID = 195,
 { -- Baleroc, the Gatekeeper
 name = AL["Baleroc, the Gatekeeper"],
 EncounterJournalID = 196,
+ContentPhaseCata = 3,
 [NORMAL_DIFF] = {
     { 1, 71343 },	-- Mantle of Closed Doors
     { 2, 71345 },	-- Shoulderpads of the Forgotten Gate
@@ -2520,6 +2547,7 @@ EncounterJournalID = 196,
 { -- Majordomo Staghelm
 name = AL["Majordomo Staghelm"],
 EncounterJournalID = 197,
+ContentPhaseCata = 3,
 [NORMAL_DIFF] = {
     { 1, 71350 },	-- Wristwraps of Arrogant Doom
     { 2, 71349 },	-- Firecat Leggings
@@ -2567,6 +2595,7 @@ EncounterJournalID = 197,
 { -- Ragnaros
 name = AL["Ragnaros"],
 EncounterJournalID = 198,
+ContentPhaseCata = 3,
 [NORMAL_DIFF] = {
     { 1, 71358 },	-- Fingers of Incineration
     { 2, 71357 },	-- Majordomo's Chain of Office
@@ -2617,6 +2646,7 @@ EncounterJournalID = 198,
 },
 { -- Shared Boss Loot
 name = AL["Shared Boss Loot"],
+ContentPhaseCata = 3,
 --ExtraList = true,
 [NORMAL_DIFF] = {
     { 1, 71779 },	-- Avool's Incendiary Shanker
@@ -2640,6 +2670,7 @@ name = AL["Shared Boss Loot"],
 },
 {	--Firelands Trash
 name = AL["Trash Mobs"],
+ContentPhaseCata = 3,
 ExtraList = true,
 [NORMAL_DIFF] = {
     { 1, 71640 },	-- Riplimb's Lost Collar
@@ -2657,6 +2688,7 @@ ExtraList = true,
 },
 { -- Firestones
 name = ALIL["Firestone Vendor"],
+ContentPhaseCata = 3,
 ExtraList = true,
 [NORMAL_DIFF] = {
     { 1, 71641 },	-- Riplimb's Lost Collar
@@ -2685,6 +2717,7 @@ ExtraList = true,
 },
 { -- Patterns
 name = AL["Patterns"],
+ContentPhaseCata = 3,
 ExtraList = true,
 [NORMAL_DIFF] = {
     { 1, 69976 },	-- Pattern: Boots of the Black Flame
@@ -2746,30 +2779,36 @@ data["EndTime"] = {
     EncounterJournalID = 184,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},
+    ContentPhaseCata = 4,
     items = {
         { -- Echo of Baine
         name = AL["Echo of Baine"],
         EncounterJournalID = 340,
+        ContentPhaseCata = 4,
         [HEROIC_DIFF] = END_TIME_ECHO_LOOT,
     },
     { -- Echo of Jaina
     name = AL["Echo of Jaina"],
     EncounterJournalID = 285,
+    ContentPhaseCata = 4,
     [HEROIC_DIFF] = END_TIME_ECHO_LOOT,
 },
 { -- Echo of Tyrande
 name = AL["Echo of Tyrande"],
 EncounterJournalID = 283,
+ContentPhaseCata = 4,
 [HEROIC_DIFF] = END_TIME_ECHO_LOOT,
 },
 { -- Echo of Sylvanas
 name = AL["Echo of Sylvanas"],
 EncounterJournalID = 323,
+ContentPhaseCata = 4,
 [HEROIC_DIFF] = END_TIME_ECHO_LOOT,
 },
 { -- Murozond
 name = AL["Murozond"],
 EncounterJournalID = 289,
+ContentPhaseCata = 4,
 [HEROIC_DIFF] = {
     { 1, 72825 },	-- Mantle of Time
     { 2, 72826 },	-- Robes of Fate
@@ -2789,6 +2828,7 @@ EncounterJournalID = 289,
 },
 { -- Trash
 name = AL["Trash Mobs"],
+ContentPhaseCata = 4,
 ExtraList = true,
 [HEROIC_DIFF] = {
     { 1, 76154 },	-- Breastplate of Despair
@@ -2805,10 +2845,12 @@ data["WellOfEternity"] = {
     EncounterJournalID = 185,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},
+    ContentPhaseCata = 4,
     items = {
         { -- Peroth'arn
         name = AL["Peroth'arn"],
         EncounterJournalID = 290,
+        ContentPhaseCata = 4,
         [HEROIC_DIFF] = {
             { 1, 72830 },	-- Peroth'arn's Belt
             { 2, 72832 },	-- Girdle of the Queen's Champion
@@ -2822,6 +2864,7 @@ data["WellOfEternity"] = {
     { -- Queen Azshara
     name = AL["Queen Azshara"],
     EncounterJournalID = 291,
+    ContentPhaseCata = 4,
     [HEROIC_DIFF] = {
         { 1, 72838 },	-- Cloak of the Royal Protector
         { 2, 72836 },	-- Slippers of Wizardry
@@ -2834,6 +2877,7 @@ data["WellOfEternity"] = {
 { -- Mannoroth and Varo'then
 name = AL["Mannoroth and Varo'then"],
     EncounterJournalID = 292,
+    ContentPhaseCata = 4,
     [HEROIC_DIFF] = {
         { 1, 72839 },	-- Cowl of Highborne Sorcerors
         { 2, 72847 },	-- Helm of Thorns
@@ -2854,6 +2898,7 @@ name = AL["Mannoroth and Varo'then"],
 },
 { -- Trash
 name = AL["Trash Mobs"],
+ContentPhaseCata = 4,
 ExtraList = true,
 [HEROIC_DIFF] = {
     { 1, 76158 },	-- Courtier's Slippers
@@ -2871,10 +2916,12 @@ data["HourOfTwilight"] = {
     EncounterJournalID = 186,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},
+    ContentPhaseCata = 4,
     items = {
         { -- Arcurion
         name = AL["Arcurion"],
         EncounterJournalID = 322,
+        ContentPhaseCata = 4,
         [HEROIC_DIFF] = {
             { 1, 72854 },	-- Iceward Cloak
             { 2, 72851 },	-- Chillbane Belt
@@ -2888,6 +2935,7 @@ data["HourOfTwilight"] = {
     { -- Asira Dawnslayer
     name = AL["Asira Dawnslayer"],
     EncounterJournalID = 342,
+    ContentPhaseCata = 4,
     [HEROIC_DIFF] = {
         { 1, 76151 },	-- Cloak of Subtle Light
         { 2, 72857 },	-- Leggings of Blinding Speed
@@ -2901,6 +2949,7 @@ data["HourOfTwilight"] = {
 { -- Archbishop Benedictus
 name = AL["Archbishop Benedictus"],
 EncounterJournalID = 341,
+ContentPhaseCata = 4,
 [HEROIC_DIFF] = {
     { 1, 72865 },	-- Mantle of False Virtue
     { 2, 72868 },	-- Desecrated Shoulderguards
@@ -2921,6 +2970,7 @@ EncounterJournalID = 341,
 },
 { -- Trash
 name = AL["Trash Mobs"],
+ContentPhaseCata = 4,
 ExtraList = true,
 [HEROIC_DIFF] = {
     { 1, 76160 },	-- Drapes of the Dragonshrine
@@ -2936,10 +2986,12 @@ data["DragonSoul"] = {
     InstanceID = 967,
     EncounterJournalID = 187,
     ContentType = RAID_CONTENT,
+    ContentPhaseCata = 4,
     items = {
         { -- Morchok
         name = AL["Morchok"],
         EncounterJournalID = 311,
+        ContentPhaseCata = 4,
         [RAIDFINDER_DIFF] = {
             { 1, 78381 },	-- Mosswrought Shoulderguards
             { 2, 78380 },	-- Robe of Glowing Stone
@@ -2989,6 +3041,7 @@ data["DragonSoul"] = {
     { -- Warlord Zon'ozz
     name = AL["Warlord Zon'ozz"],
     EncounterJournalID = 324,
+    ContentPhaseCata = 4,
     [RAIDFINDER_DIFF] = {
         { 1, 78398 },	-- Cord of the Slain Champion
         { 2, 78395 },	-- Belt of Flayed Skin
@@ -3034,6 +3087,7 @@ data["DragonSoul"] = {
 { -- Yor'sahj the Unsleeping
 name = AL["Yor'sahj the Unsleeping"],
 EncounterJournalID = 325,
+ContentPhaseCata = 4,
 [RAIDFINDER_DIFF] = {
     { 1, 78408 },	-- Interrogator's Bloody Footpads
     { 2, 78411 },	-- Mindstrainer Treads
@@ -3077,6 +3131,7 @@ EncounterJournalID = 325,
 { -- Hagara the Stormbinder
 name = AL["Hagara the Stormbinder"],
 EncounterJournalID = 317,
+ContentPhaseCata = 4,
 [RAIDFINDER_DIFF] = {
     { 1, 78425 },	-- Bracers of the Banished
     { 2, 78428 },	-- Girdle of the Grotesque
@@ -3122,6 +3177,7 @@ EncounterJournalID = 317,
 { -- Ultraxion
 name = AL["Ultraxion"],
 EncounterJournalID = 331,
+ContentPhaseCata = 4,
 [RAIDFINDER_DIFF] = {
     { 1, 78442 },	-- Treads of Sordid Screams
     { 2, 78443 },	-- Imperfect Specimens 27 and 28
@@ -3172,6 +3228,7 @@ EncounterJournalID = 331,
 { -- Warmaster Blackhorn
 name = AL["Warmaster Blackhorn"],
 EncounterJournalID = 332,
+ContentPhaseCata = 4,
 [RAIDFINDER_DIFF] = {
     { 1, 78457 },	-- Janglespur Jackboots
     { 2, 78454 },	-- Shadow Wing Armbands
@@ -3219,6 +3276,7 @@ EncounterJournalID = 332,
 { -- Spine of Deathwing
 name = AL["Spine of Deathwing"],
 EncounterJournalID = 318,
+ContentPhaseCata = 4,
 [RAIDFINDER_DIFF] = {
     { 1, 78466 },	-- Gloves of Liquid Smoke
     { 2, 78467 },	-- Molten Blood Footpads
@@ -3262,6 +3320,7 @@ EncounterJournalID = 318,
 { -- Madness of Deathwing
 name = AL["Madness of Deathwing"],
 EncounterJournalID = 333,
+ContentPhaseCata = 4,
 [RAIDFINDER_DIFF] = {
     { 1, 78484 },	-- Rathrak, the Poisonous Mind
     { 2, 78483 },	-- Blade of the Unmaker
@@ -3305,6 +3364,7 @@ EncounterJournalID = 333,
 },
 { -- Shared
 name = AL["Shared Boss Loot"],
+ContentPhaseCata = 4,
 ExtraList = true,
 [RAIDFINDER_DIFF] = {
     { 1, 78497 },	-- Breathstealer Band
@@ -3349,6 +3409,7 @@ ExtraList = true,
 },
 { -- Trash
 name = AL["Trash Mobs"],
+ContentPhaseCata = 4,
 ExtraList = true,
 [NORMAL_DIFF] = {
     { 1, 78879 },	-- Sash of Relentless Truth
@@ -3366,6 +3427,7 @@ ExtraList = true,
 },
 { -- Patterns
 name = AL["Patterns"],
+ContentPhaseCata = 4,
 ExtraList = true,
 [NORMAL_DIFF] = {
     { 1, 72004 },	-- Pattern: Bracers of Unconquered Power

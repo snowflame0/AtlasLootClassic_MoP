@@ -15,11 +15,11 @@ AtlasLoot.AtlasLootDBDefaults = {
 		showDropRate = true,
 		enableAtlasMapIntegration = true,
 		enableColorsInNames = true,
-		ContentPhase = {
-			enableOnLootTable = false,
-			enableOnItems = false,
-			enableOnCrafting = false,
-			enableOnSets = false,
+		ContentPhases = {
+			enableOnLootTable = true,
+			enableOnItems = true,
+			enableOnCrafting = true,
+			enableOnSets = true,
 			enableTT = false,
 		},
 		Tooltip = {	-- Core\Tooltip.lua

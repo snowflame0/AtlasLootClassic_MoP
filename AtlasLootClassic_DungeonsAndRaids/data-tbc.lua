@@ -80,7 +80,6 @@ local T4_SET = {
 	name = format(AL["Tier %s Sets"], "4"),
 	ExtraList = true,
 	TableType = SET_ITTYPE,
-	--ContentPhaseBC = 6,
 	IgnoreAsSource = true,
 	[NORMAL_DIFF] = {
 		{ 1,    645 }, -- Warlock
@@ -107,7 +106,6 @@ local T5_SET = {
 	name = format(AL["Tier %s Sets"], "5"),
 	ExtraList = true,
 	TableType = SET_ITTYPE,
-	--ContentPhaseBC = 6,
 	IgnoreAsSource = true,
 	[NORMAL_DIFF] = {
 		{ 1,    646 }, -- Warlock
@@ -134,7 +132,6 @@ local T6_SET = {
 	name = format(AL["Tier %s Sets"], "6"),
 	ExtraList = true,
 	TableType = SET_ITTYPE,
-	--ContentPhaseBC = 6,
 	IgnoreAsSource = true,
 	[NORMAL_DIFF] = {
 		{ 1,    670 }, -- Warlock
@@ -2255,7 +2252,6 @@ data["MagistersTerrace"] = {
 	AtlasMapID = "CL_MagistersTerrace",
 	AtlasMapFile = "CL_MagistersTerrace",
 	ContentType = DUNGEON_CONTENT,
-    ContentPhaseBC = 5,
 	LevelRange = {65, 69, 70},
 	items = {
         { -- SMTFireheart
@@ -2781,7 +2777,6 @@ data["ZulAmanClassic"] = {
 	AtlasMapID = "ZulAman",
 	AtlasMapFile = "ZulAman",
 	ContentType = RAID10_CONTENT,
-    ContentPhaseBC = 4,
 	items = {
         { -- ZAAkilZon
             name = AL["Akil'zon"],
@@ -3094,7 +3089,6 @@ data["SerpentshrineCavern"] = {
 	AtlasMapID = "CL_CFRSerpentshrineCavern",
 	AtlasMapFile = {"CL_CFRSerpentshrineCavern", "CL_CoilfangReservoirEnt"},
 	ContentType = RAID25_CONTENT,
-    ContentPhaseBC = 2,
 	items = {
         { -- CFRSerpentHydross
             name = AL["Hydross the Unstable"],
@@ -3265,7 +3259,6 @@ data["TempestKeep"] = {
 	AtlasMapID = "CL_TempestKeepTheEye",
 	AtlasMapFile = {"CL_TempestKeepTheEye", "TempestKeepEnt"},
 	ContentType = RAID25_CONTENT,
-    ContentPhaseBC = 2,
 	items = {
         { -- TKEyeAlar
             name = AL["Al'ar"],
@@ -3412,7 +3405,6 @@ data["HyjalSummit"] = {
 	AtlasMapID = "CoTHyjal",
 	AtlasMapFile = {"CoTHyjal", "CL_CoTHyjalEnt"},
 	ContentType = RAID25_CONTENT,
-    ContentPhaseBC = 3,
 	items = {
         { -- MountHyjalWinterchill
             name = AL["Rage Winterchill"],
@@ -3556,7 +3548,6 @@ data["BlackTemple"] = {
 	AtlasMapID = "CL_BlackTempleStart",
 	AtlasMapFile = "CL_BlackTempleStart",
 	ContentType = RAID25_CONTENT,
-    ContentPhaseBC = 3,
 	items = {
         { -- BTNajentus
             name = AL["High Warlord Naj'entus"],
@@ -3821,7 +3812,6 @@ data["SunwellPlateau"] = {
 	AtlasMapID = "CL_SunwellPlateau",
 	AtlasMapFile = "CL_SunwellPlateau",
 	ContentType = RAID25_CONTENT,
-    ContentPhaseBC = 5,
 	items = {
         { -- SPKalecgos
             name = AL["Kalecgos"],

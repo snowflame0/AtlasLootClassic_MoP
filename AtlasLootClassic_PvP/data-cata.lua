@@ -471,6 +471,7 @@ data["ArenaS10PvP"] = {
     ContentType = ARENA_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
+    ContentPhaseCata = 3,
     items = {{
         name = AL["Sets"],
         TableType = SET_ITTYPE,

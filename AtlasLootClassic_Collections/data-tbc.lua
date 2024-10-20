@@ -347,25 +347,25 @@ data["WorldEpicsBC"] = {
     CorrespondingFields = private.WORLD_EPICS,
     items = {{
         name = AL["One-Handed Weapons"],
-        [NORMAL_ITTYPE] = {{1, 31331}, -- The Night Blade
+        [NORMAL_DIFF] = {{1, 31331}, -- The Night Blade
         {3, 31332}, -- Blinkstrike
         {16, 31336}, -- Blade of Wizardry
         {18, 31342} -- The Ancient Scepter of Sue-Min
         }
     }, {
         name = AL["Two-Handed Weapons"],
-        [NORMAL_ITTYPE] = {{1, 31318}, -- Singing Crystal Axe
+        [NORMAL_DIFF] = {{1, 31318}, -- Singing Crystal Axe
         {16, 31322}, -- The Hammer of Destiny
         {18, 31334} -- Staff of Natural Fury
         }
     }, {
         name = AL["Ranged Weapons"],
-        [NORMAL_ITTYPE] = {{1, 31323}, -- Don Santos' Famous Hunting Rifle
+        [NORMAL_DIFF] = {{1, 31323}, -- Don Santos' Famous Hunting Rifle
         {16, 34622} -- Spinesever
         }
     }, {
         name = ALIL["Trinket"] .. " & " .. ALIL["Finger"] .. " & " .. ALIL["Neck"],
-        [NORMAL_ITTYPE] = {{1, 31339}, -- Lola's Eve
+        [NORMAL_DIFF] = {{1, 31339}, -- Lola's Eve
         {3, 31319}, -- Band of Impenetrable Defenses
         {4, 31326}, -- Truestrike Ring
         {16, 31338}, -- Charlotte's Ivy
@@ -373,7 +373,7 @@ data["WorldEpicsBC"] = {
         }
     }, {
         name = AL["Equip"],
-        [NORMAL_ITTYPE] = {{1, 31329}, -- Lifegiving Cloak
+        [NORMAL_DIFF] = {{1, 31329}, -- Lifegiving Cloak
         {3, 31340}, -- Will of Edward the Odd
         {4, 31343}, -- Kamaei's Cerulean Skirt
         {6, 31333}, -- The Night Watchman

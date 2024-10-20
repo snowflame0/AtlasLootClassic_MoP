@@ -450,7 +450,7 @@ end
 
 local function ContentPhaseButton_Refresh(self)
 	self = self or GUI.frame.contentFrame.contentPhaseButton
-	if AtlasLoot.db.ContentPhase.enableOnItems then
+	if AtlasLoot.db.ContentPhases.enableOnItems then
 		self:SetAlpha(1.0)
 	else
 		self:SetAlpha(0.5)
@@ -458,7 +458,7 @@ local function ContentPhaseButton_Refresh(self)
 end
 
 local function ContentPhaseButton_OnClick(self, button)
-	AtlasLoot.db.ContentPhase.enableOnItems = not AtlasLoot.db.ContentPhase.enableOnItems
+	AtlasLoot.db.ContentPhases.enableOnItems = not AtlasLoot.db.ContentPhases.enableOnItems
 	AtlasLoot.GUI.ItemFrame:Refresh(true)
 	ContentPhaseButton_Refresh(self)
 end

@@ -506,7 +506,6 @@ data["TierSets"] = {
         AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM, {
             name = format(AL["Tier %s Sets"], "11"),
             CoinTexture = "CATA",
-            contentPhaseCata = 1,
             [NORMAL_DIFF] = {
                 {1, 4000941 }, -- Warlock
                 {3, 4000935 }, -- Priest Holy
@@ -553,7 +552,7 @@ data["TierSets"] = {
         AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM, {
             name = format(AL["Tier %s Sets"], "12"),
             CoinTexture = "CATA",
-            contentPhaseCata = 2,
+            ContentPhaseCata = 3,
             [NORMAL_DIFF] = {
                 {1, 40001008 }, -- Warlock
                 {3, 40001009 }, -- Priest Holy
@@ -600,7 +599,7 @@ data["TierSets"] = {
         AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM, {
             name = format(AL["Tier %s Sets"], "13"),
             CoinTexture = "CATA",
-            contentPhaseCata = 3,
+            ContentPhaseCata = 4,
             [RAIDFINDER_DIFF] = {
                 {1, 40001072 }, -- Warlock
                 {3, 40001066 }, -- Priest Holy
@@ -894,7 +893,7 @@ data["WorldEpics"] = {
     items = {
         {
             name = AL["One-Handed Weapons"],
-            [NORMAL_ITTYPE] = {
+            [NORMAL_DIFF] = {
                 -- Mace
                 { 1, 2243 }, -- Hand of Edward the Odd
                 { 2, 810 }, -- Hammer of the Northern Wind
@@ -916,7 +915,7 @@ data["WorldEpics"] = {
         },
         {
             name = AL["Two-Handed Weapons"],
-            [NORMAL_ITTYPE] = {
+            [NORMAL_DIFF] = {
                 -- Axe
                 { 1, 2801 }, -- Blade of Hanna
                 { 2, 647 }, -- Destiny
@@ -936,7 +935,7 @@ data["WorldEpics"] = {
         },
         {
             name = AL["Ranged Weapons"].." & "..ALIL["Shield"],
-            [NORMAL_ITTYPE] = {
+            [NORMAL_DIFF] = {
                 -- Bow
                 { 1, 2824 }, -- Hurricane
                 { 2, 2825 }, -- Bow of Searing Arrows
@@ -952,7 +951,7 @@ data["WorldEpics"] = {
         },
         {
             name = ALIL["Trinket"].." & "..ALIL["Finger"].." & "..ALIL["Neck"],
-            [NORMAL_ITTYPE] = {
+            [NORMAL_DIFF] = {
                 -- Trinket
                 { 1, 14557 }, -- The Lion Horn of Stormwind
                 { 2, 833 }, -- Lifestone
@@ -969,7 +968,7 @@ data["WorldEpics"] = {
         },
         {
             name = AL["Equip"],
-            [NORMAL_ITTYPE] = {
+            [NORMAL_DIFF] = {
                 -- Cloth
                 { 1,  3075 }, -- Eye of Flame
                 { 2,  940 }, -- Robes of Insight

@@ -245,7 +245,7 @@ function Item.OnEnter(button, owner)
 			tooltip:AddDoubleLine(AL["Item level:"], format(WHITE_TEXT, button.ItemLvl or 0))
 		end
 	end
-	if AtlasLoot.db.ContentPhase.enableTT and ContentPhase:GetForItemID(button.ItemID) then
+	if AtlasLoot.db.ContentPhases.enableTT and ContentPhase:GetForItemID(button.ItemID) then
 		tooltip:AddDoubleLine(AL["Content phase:"], format(WHITE_TEXT, ContentPhase:GetForItemID(button.ItemID)))
 	end
 	if button.ItemID == 12784 then tooltip:AddLine("Arcanite Reaper Hoooooo!") end
@@ -379,7 +379,7 @@ function Item.Refresh(button)
 		button.favourite:Hide()
 	end
 	--elseif Recipe.IsRecipe(itemID) then
-	if AtlasLoot.db.ContentPhase.enableOnItems then
+	if AtlasLoot.db.ContentPhases.enableOnItems then
 		local phaseT, active = ContentPhase:GetPhaseTextureForItemID(itemID)
 		if phaseT and not active then
 			button.phaseIndicator:SetTexture(phaseT)

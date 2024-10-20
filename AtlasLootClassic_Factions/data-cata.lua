@@ -67,6 +67,7 @@ data["AvengersOfHyjal"] = {
     FactionID = 1204,
     ContentType = FACTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
+    ContentPhaseCata = 3,
     items = {
         { -- Exalted 8
             name = ALIL["Exalted"],

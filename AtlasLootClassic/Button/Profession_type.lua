@@ -161,7 +161,7 @@ function Prof.Refresh(button)
 			button.count:SetText(itemCount)
 			button.count:Show()
 		end
-		if AtlasLoot.db.ContentPhase.enableOnCrafting then
+		if AtlasLoot.db.ContentPhases.enableOnCrafting then
 			local phaseT, active = Profession.GetPhaseTextureForSpellID(button.SpellID)
 			if phaseT and not active then
 				button.phaseIndicator:SetTexture(phaseT)
