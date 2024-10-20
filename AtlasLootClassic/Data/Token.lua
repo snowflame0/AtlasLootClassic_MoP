@@ -1051,8 +1051,8 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [63498] = {"i63498suf-131","i63498suf-129","i63498suf-114","i63498suf-130","i63498suf-138","i63498suf-132",type=1}, -- Soul Breath Belt N
         [65374] = {"i65374suf-131","i65374suf-130","i65374suf-138","i65374suf-132",type=2}, -- Gale Rouser Belt H
         [63497] = {"i63497suf-131","i63497suf-130","i63497suf-138","i63497suf-132",type=1}, -- Gale Rouser Belt N
+        [63506] = {"i63506suf-131","i63506suf-130","i63506suf-138","i63506suf-132",type=1}, -- Gale Rouser Leggings N
         [65384] = {"i65384suf-131","i65384suf-130","i65384suf-138","i65384suf-132",type=2}, -- Gale Rouser Leggings H
-        [65384] = {"i65384suf-131","i65384suf-130","i65384suf-138","i65384suf-132",type=1}, -- Gale Rouser Leggings N
         [65382] = {"i65382suf-121","i65382suf-122","i65382suf-120","i65382suf-118",type=1}, -- Cloudburst Ring H
         [63499] = {"i63499suf-121","i63499suf-122","i63499suf-120","i63499suf-118",type=1}, -- Cloudburst Ring N
         [69879] = {"i69879suf-121","i69879suf-122","i69879suf-120","i69879suf-118",type=1}, -- Cloudburst Cloak H
