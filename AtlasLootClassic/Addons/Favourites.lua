@@ -241,7 +241,6 @@ local function PopulateListBiS(db, dest)
             end
         else
             -- Outfitter not (yet) loaded, add callback to populate database again once Outfitter was loaded
-            -- TODO: Find a better way to access outfitter data when ready
             if not PluginOutfitterLoading then
                 PluginOutfitterLoading = true
             end
