@@ -1016,7 +1016,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         -- Chest
         [67423] = { ICONS.PALADIN, 65214, 65219, 65224, 0, ICONS.PRIEST, 65232, 65237, 0, ICONS.WARLOCK, 65262, type = 6}, -- Chest of the Forlorn Conqueror
         [67424] = { ICONS.WARRIOR, 65264, 65269, 0, ICONS.HUNTER, 65204, 0, ICONS.SHAMAN, 65244, 65249, 65254, type = 6}, -- Chest of the Forlorn Protector
-        [67425] = { ICONS.ROGUE, 65239, 0, ICONS.DEATHKNIGHT, 65179, 65184, 0, ICONS.MAGE, 65212, 0, ICONS.DRUID, 65192, 65197, 65202, type = 6}, -- Chest of the Lost Vanquisher
+        [67425] = { ICONS.ROGUE, 65239, 0, ICONS.DEATHKNIGHT, 65179, 65184, 0, ICONS.MAGE, 65212, 0, ICONS.DRUID, 65192, 65197, 65202, type = 6}, -- Chest of the Forlorn Vanquisher
         -- Hands
         [67429] = { ICONS.PALADIN, 65215, 65220, 65225, 0, ICONS.PRIEST, 65229, 65234, 0, ICONS.WARLOCK, 65259, type = 6}, -- Gauntlets of the Forlorn Conqueror
         [67430] = { ICONS.WARRIOR, 65265, 65270, 0, ICONS.HUNTER, 65205, 0, ICONS.SHAMAN, 65245, 65250, 65255, type = 6}, -- Gauntlets of the Forlorn Protector
@@ -1027,6 +1027,37 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [67426] = { ICONS.ROGUE, 65242, 0, ICONS.DEATHKNIGHT, 65182, 65187, 0, ICONS.MAGE, 65211, 0, ICONS.DRUID, 65191, 65196, 65201, type = 6}, -- Leggings of the Forlorn Vanquisher
 
         --- TODO: Add T12 + T13 tokens
+        --- T12 / Normal
+        -- Head
+        [71675] = { ICONS.PALADIN, 71065, 71093, 70948, 0, ICONS.PRIEST, 71272, 71277, 0, ICONS.WARLOCK, 71282, type = 6}, -- Helm of the Fiery Conqueror
+        [71682] = { ICONS.WARRIOR, 71070, 70944, 0, ICONS.HUNTER, 71051, 0, ICONS.SHAMAN, 71298, 71303, 71293, type = 6}, -- Helm of the Fiery Protector
+        [71668] = { ICONS.ROGUE, 71047, 0, ICONS.DEATHKNIGHT, 71060, 70954, 0, ICONS.MAGE, 71287, 0, ICONS.DRUID, 71098, 71103, 71108, type = 6}, -- Helm of the Fiery Vanquisher
+        -- Shoulders
+        [71681] = { ICONS.PALADIN, 71067, 71095, 70946, 0, ICONS.PRIEST, 71275, 71280, 0, ICONS.WARLOCK, 71285, type = 6}, -- Mantle of the Fiery Conqueror
+        [71688] = { ICONS.WARRIOR, 71072, 70941, 0, ICONS.HUNTER, 71053, 0, ICONS.SHAMAN, 71300, 71305, 71295, type = 6}, -- Mantle of the Fiery Protector
+        [71674] = { ICONS.ROGUE, 71049, 0, ICONS.DEATHKNIGHT, 71062, 70951, 0, ICONS.MAGE, 71290, 0, ICONS.DRUID, 71101, 71106, 71111, type = 6}, -- Mantle of the Fiery Vanquisher
+        --- T12 / Heroic
+        -- Head
+        [71677] = { ICONS.PALADIN, 71514, 71519, 71524, 0, ICONS.PRIEST, 71528, 71533, 0, ICONS.WARLOCK, 71595, type = 6}, -- Crown of the Fiery Conqueror
+        [71684] = { ICONS.WARRIOR, 71599, 71606, 0, ICONS.HUNTER, 71503, 0, ICONS.SHAMAN, 71544, 71549, 71554, type = 6}, -- Crown of the Fiery Protector
+        [71670] = { ICONS.ROGUE, 71539, 0, ICONS.DEATHKNIGHT, 71478, 71483, 0, ICONS.MAGE, 71508, 0, ICONS.DRUID, 71488, 71492, 71497, type = 6}, -- Crown of the Fiery Vanquisher
+        -- Shoulders
+        [71680] = { ICONS.PALADIN, 71516, 71521, 71526, 0, ICONS.PRIEST, 71531, 71536, 0, ICONS.WARLOCK, 71598, type = 6}, -- Shoulders of the Fiery Conqueror
+        [71687] = { ICONS.WARRIOR, 71603, 71608, 0, ICONS.HUNTER, 71505, 0, ICONS.SHAMAN, 71543, 71551, 71556, type = 6}, -- Shoulders of the Fiery Protector
+        [71673] = { ICONS.ROGUE, 71541, 0, ICONS.DEATHKNIGHT, 71480, 71485, 0, ICONS.MAGE, 71511, 0, ICONS.DRUID, 71490, 71495, 71500, type = 6}, -- Shoulders of the Fiery Vanquisher
+        -- Chest
+        [71679] = { ICONS.PALADIN, 71512, 71517, 71522, 0, ICONS.PRIEST, 71530, 71535, 0, ICONS.WARLOCK, 71597, type = 6}, -- Chest of the Fiery Conqueror
+        [71686] = { ICONS.WARRIOR, 71600, 71604, 0, ICONS.HUNTER, 71501, 0, ICONS.SHAMAN, 71546, 71547, 71552, type = 6}, -- Chest of the Fiery Protector
+        [71672] = { ICONS.ROGUE, 71537, 0, ICONS.DEATHKNIGHT, 71476, 71481, 0, ICONS.MAGE, 71510, 0, ICONS.DRUID, 71486, 71494, 71499, type = 6}, -- Chest of the Fiery Vanquisher
+        -- Hands
+        [71676] = { ICONS.PALADIN, 71513, 71518, 71523, 0, ICONS.PRIEST, 71527, 71532, 0, ICONS.WARLOCK, 71594, type = 6}, -- Gauntlets of the Fiery Conqueror
+        [71683] = { ICONS.WARRIOR, 71601, 71605, 0, ICONS.HUNTER, 71502, 0, ICONS.SHAMAN, 71542, 71548, 71553, type = 6}, -- Gauntlets of the Fiery Protector
+        [71669] = { ICONS.ROGUE, 71538, 0, ICONS.DEATHKNIGHT, 71477, 71482, 0, ICONS.MAGE, 71507, 0, ICONS.DRUID, 71487, 71491, 71496, type = 6}, -- Gauntlets of the Fiery Vanquisher
+        -- Leggings
+        [71678] = { ICONS.PALADIN, 71515, 71520, 71525, 0, ICONS.PRIEST, 71529, 71534, 0, ICONS.WARLOCK, 71596, type = 6}, -- Leggings of the Fiery Conqueror
+        [71685] = { ICONS.WARRIOR, 71602, 71607, 0, ICONS.HUNTER, 71504, 0, ICONS.SHAMAN, 71545, 71550, 71555, type = 6}, -- Leggings of the Fiery Protector
+        [71671] = { ICONS.ROGUE, 71540, 0, ICONS.DEATHKNIGHT, 71479, 71484, 0, ICONS.MAGE, 71509, 0, ICONS.DRUID, 71489, 71493, 71498, type = 6}, -- Leggings of the Fiery Vanquisher
+
         --- Dragonwrath
         [71141] = { {71141,"25"}, {65893,"3"}, {69815,"1000"}, 69848, 0, 71084, 71085, 71086}, -- Eternal Ember
         [69815] = 71141, -- Seething Cinder
