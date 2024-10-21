@@ -1650,7 +1650,7 @@ data["WorldBossesCata"] = {
         Level = 999,
         DisplayIDs = {{1}},
         [NORMAL_DIFF] = {
-            { 1, 67240 }, -- Belt of a Thousand Mouths
+            { 1, 69877 }, -- Belt of a Thousand Mouths
             { 3, "INV_sword_04", nil, ALIL["Random World Epics"] },
             { 16, 67541 }, -- Pattern: High Society Top Hat
             { 17, 71965 }, -- Design: Rhinestone Sunglasses
@@ -1665,7 +1665,7 @@ data["WorldBossesCata"] = {
     Level = 999,
     DisplayIDs = {{1}},
     [NORMAL_DIFF] = {
-        { 1, 67235 }, -- Garr's Girdle of Memories
+        { 1, 69842 }, -- Garr's Girdle of Memories
         { 3, "INV_sword_04", nil, ALIL["Random World Epics"] },
         { 16, 67541 }, -- Pattern: High Society Top Hat
         { 17, 71965 }, -- Design: Rhinestone Sunglasses
@@ -1680,7 +1680,7 @@ npcID = 50089,
 Level = 999,
 DisplayIDs = {{1}},
 [NORMAL_DIFF] = {
-    { 1, 67246 }, -- Beak of Julak-Doom
+    { 1, 69844 }, -- Beak of Julak-Doom
     { 3, "INV_sword_04", nil, ALIL["Random World Epics"] },
     { 16, 67541 }, -- Pattern: High Society Top Hat
     { 17, 71965 }, -- Design: Rhinestone Sunglasses
@@ -1695,7 +1695,7 @@ npcID = 50009,
 Level = 999,
 DisplayIDs = {{1}},
 [NORMAL_DIFF] = {
-    { 1, 67153 }, -- Mobus's Vile Halberd
+    { 1, 69843 }, -- Mobus's Vile Halberd
     { 3, "INV_sword_04", nil, ALIL["Random World Epics"] },
     { 16, 67541 }, -- Pattern: High Society Top Hat
     { 17, 71965 }, -- Design: Rhinestone Sunglasses
@@ -1710,7 +1710,7 @@ npcID = 50061,
 Level = 999,
 DisplayIDs = {{1}},
 [NORMAL_DIFF] = {
-    { 1, 67239 }, -- Xariona's Spectral Claws
+    { 1, 69876 }, -- Xariona's Spectral Claws
     { 3, "INV_sword_04", nil, ALIL["Random World Epics"] },
     { 16, 67541 }, -- Pattern: High Society Top Hat
     { 17, 71965 }, -- Design: Rhinestone Sunglasses
