@@ -3512,6 +3512,7 @@ data["BaradinHold"] = {
     { -- Occu'thar
     name = AL["Occu'thar"],
     EncounterJournalID = 140,
+    ContentPhaseCata = 3,
     [NORMAL_DIFF] = {
         { 1, "CLASS_WARLOCK", nil, CLASS_NAME["WARLOCK"], nil, "BH_O_WARLOCK"},
         { 3, "CLASS_PRIEST", nil, CLASS_NAME["PRIEST"], AL["Holy"], "BH_O_PRIEST_H"},
@@ -3547,6 +3548,7 @@ data["BaradinHold"] = {
 { -- Alizabal, Mistress of Hate
 name = AL["Alizabal, Mistress of Hate"],
 EncounterJournalID = 339,
+ContentPhaseCata = 4,
 [NORMAL_DIFF] = {
     { 1, "CLASS_WARLOCK", nil, CLASS_NAME["WARLOCK"], nil, "BH_AL_WARLOCK"},
     { 3, "CLASS_PRIEST", nil, CLASS_NAME["PRIEST"], AL["Holy"], "BH_AL_PRIEST_H"},

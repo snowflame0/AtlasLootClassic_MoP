@@ -1279,11 +1279,6 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         -- Warrior
         [1073] = {{78783,78830,78752,78763,78801},4,4,384,1,{{2,105797},{4,105907}}}, -- DPS
         [1074] = {{78784,78829,78753,78764,78800},4,4,384,1,{{2,105908},{4,105911}}}, -- Prot
-        -- Misc Sets
-        [1087] = {{77949,77950},0,4,416,8,{{2,109939}}}, -- Fangs of the Father
-        [1088] = {{77947,77948},0,4,406,8,{{2,109956}}}, -- Maw of Oblivion
-        [1089] = {{77945,77946},0,4,397,8,{{2,109960}}}, -- Jaws of Retribution
-        [951] = {{63537,63538},0,4,359,0,{{2,95763}}}, -- Agony and Torment
 
         -- Death Knight
         [40001057] = {{78782,78831,78754,78765,78802},4,4,384,32,{{2,105609},{4,105646}},AL["Raid Finder %s"],1057}, -- Raid Finder Death Knight DPS
@@ -1361,6 +1356,12 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [40001074] = {{78784,78829,78753,78764,78800},4,4,384,1,{{2,105908},{4,105911}},AL["Raid Finder %s"],1074}, -- Raid Finnder Warrior Prot
         [40011074] = {{76990,76992,76988,76989,76991},4,4,397,1,{{2,105908},{4,105911}},nil,1074}, -- Normal Warrior Prot
         [40021074] = {{78689,78734,78658,78669,78705},4,4,410,1,{{2,105908},{4,105911}},AL["Heroic %s"],1074}, -- Heroic Warrior Prot
+
+        -- Misc Sets
+        [1087] = {{77949,77950},0,5,416,8,{{2,109939}}}, -- Fangs of the Father
+        [1088] = {{77947,77948},0,4,406,8,{{2,109956}}}, -- Maw of Oblivion
+        [1089] = {{77945,77946},0,4,397,8,{{2,109960}}}, -- Jaws of Retribution
+        [951] = {{63537,63538},0,4,359,0,{{2,95763}}}, -- Agony and Torment
     }
 end
 
@@ -2180,7 +2181,7 @@ function ItemSet.GetPhaseTextureForSetID(setID)
 
         ContentPhaseCache[setID] = phase
     end
-    return ContentPhaseCache[setID]
+    return ContentPhase:GetPhaseTexture(ContentPhaseCache[setID])
 end
 
 function ItemSet.GetSetDescriptionString(setID)

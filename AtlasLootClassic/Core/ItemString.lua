@@ -10,17 +10,16 @@ local ITEM_HEIRLOOM_FORMAT_STRING = "item:%d:0:0:0:0:0:0:0:%d"
 
 
 function ItemString.Create(itemID, isHeirloom, suffixID)
-	suffixID = tonumber(suffixID) or 0
-	--DevTools_Dump(format(ITEM_FORMAT_STRING, itemID, suffixID))
-	if isHeirloom then
-		return format( ITEM_HEIRLOOM_FORMAT_STRING,
-			itemID,					-- itemID
-			UnitLevel("player")		-- playerLvl
-		)
-	else
-		return format( ITEM_FORMAT_STRING,
-			itemID,					-- itemID
-			suffixID				-- suffixID
-		)
-	end
+    suffixID = tonumber(suffixID) or 0
+    if isHeirloom then
+        return format( ITEM_HEIRLOOM_FORMAT_STRING,
+            itemID,					-- itemID
+            UnitLevel("player")		-- playerLvl
+        )
+    else
+        return format( ITEM_FORMAT_STRING,
+            itemID,					-- itemID
+            suffixID				-- suffixID
+        )
+    end
 end
