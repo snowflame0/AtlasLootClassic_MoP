@@ -1026,7 +1026,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [67427] = { ICONS.WARRIOR, 65267, 65272, 0, ICONS.HUNTER, 65207, 0, ICONS.SHAMAN, 65247, 65252, 65257, type = 6}, -- Leggings of the Forlorn Protector
         [67426] = { ICONS.ROGUE, 65242, 0, ICONS.DEATHKNIGHT, 65182, 65187, 0, ICONS.MAGE, 65211, 0, ICONS.DRUID, 65191, 65196, 65201, type = 6}, -- Leggings of the Forlorn Vanquisher
 
-        --- TODO: Add T12 + T13 tokens
+        --- TODO: Add T13 H tokens
         --- T12 / Normal
         -- Head
         [71675] = { ICONS.PALADIN, 71065, 71093, 70948, 0, ICONS.PRIEST, 71272, 71277, 0, ICONS.WARLOCK, 71282, type = 6}, -- Helm of the Fiery Conqueror
@@ -1057,6 +1057,27 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [71678] = { ICONS.PALADIN, 71515, 71520, 71525, 0, ICONS.PRIEST, 71529, 71534, 0, ICONS.WARLOCK, 71596, type = 6}, -- Leggings of the Fiery Conqueror
         [71685] = { ICONS.WARRIOR, 71602, 71607, 0, ICONS.HUNTER, 71504, 0, ICONS.SHAMAN, 71545, 71550, 71555, type = 6}, -- Leggings of the Fiery Protector
         [71671] = { ICONS.ROGUE, 71540, 0, ICONS.DEATHKNIGHT, 71479, 71484, 0, ICONS.MAGE, 71509, 0, ICONS.DRUID, 71489, 71493, 71498, type = 6}, -- Leggings of the Fiery Vanquisher
+        --- T13 / Normal
+        -- Head
+        [78182] = { ICONS.PALADIN, 76767, 77005, 76876, 0, ICONS.PRIEST, 76358, 76347, 0, ICONS.WARLOCK, 76342, type = 6}, -- Crown of Corrupted Conq
+        [78177] = { ICONS.WARRIOR, 76990, 76983, 0, ICONS.HUNTER, 77030, 0, ICONS.SHAMAN, 76758, 77037, 77042, type = 6}, -- Crown of Corrupted Protector
+        [78172] = { ICONS.ROGUE, 77025, 0, ICONS.DEATHKNIGHT, 77010, 76976, 0, ICONS.MAGE, 76213, 0, ICONS.DRUID, 76750, 77019, 77015, type = 6}, -- Crown of Corrupted Vanquisher
+        -- Shoulders
+        [78180] = { ICONS.PALADIN, 76769, 77007, 76878, 0, ICONS.PRIEST, 76361, 76344, 0, ICONS.WARLOCK, 76339, type = 6}, -- Shoulders of the Corrupted Conqueror
+        [78175] = { ICONS.ROGUE, 77027, 0, ICONS.DEATHKNIGHT, 77012, 76978, 0, ICONS.MAGE, 76216, 0, ICONS.DRUID, 76753, 77022, 77017, type = 6}, -- Shoulders of the Corrupted Vanquisher
+        [78170] = { ICONS.WARRIOR, 76992, 76987, 0, ICONS.HUNTER, 77032, 0, ICONS.SHAMAN, 76760, 77035, 77044, type = 6}, -- Shoulders of the Corrupted Protector
+        -- Chest
+        [78184] = { ICONS.PALADIN, 76765, 77003, 76874, 0, ICONS.PRIEST, 76360, 76345, 0, ICONS.WARLOCK, 76340, type = 6}, -- Chest of the Corrupted Conqueror
+        [78179] = { ICONS.WARRIOR, 76988, 76984, 0, ICONS.HUNTER, 77028, 0, ICONS.SHAMAN, 76756, 77039, 77040, type = 6}, -- Chest of Corrupted Protector
+        [78174] = { ICONS.ROGUE, 77023, 0, ICONS.DEATHKNIGHT, 77008, 76974, 0, ICONS.MAGE, 76215, 0, ICONS.DRUID, 76752, 77021, 77013, type = 6}, -- Chest of Corrupted Vanquisher
+        -- Gloves
+        [78183] = { ICONS.PALADIN, 76766, 77004, 76875, 0, ICONS.PRIEST, 76357, 76348, 0, ICONS.WARLOCK, 76343, type = 6}, -- Gloves of the Corrupted Conqueror
+        [78178] = { ICONS.WARRIOR, 76989, 76985, 0, ICONS.HUNTER, 77029, 0, ICONS.SHAMAN, 76757, 77038, 77041, type = 6}, -- Gloves of Corrupted Protector
+        [78173] = { ICONS.ROGUE, 77024, 0, ICONS.DEATHKNIGHT, 77009, 76975, 0, ICONS.MAGE, 76212, 0, ICONS.DRUID, 76749, 77018, 77014, type = 6}, -- Gloves of Corrupted Vanquisher
+        -- Legs
+        [78181] = { ICONS.PALADIN, 76768, 77006, 76877, 0, ICONS.PRIEST, 76359, 76346, 0, ICONS.WARLOCK, 76341, type = 6}, -- Legs of the Corrupted Conqueror
+        [78176] = { ICONS.WARRIOR, 76991, 76986, 0, ICONS.HUNTER, 77031, 0, ICONS.SHAMAN, 76759, 77036, 77043, type = 6}, -- Legs of Corrupted Protector
+        [78171] = { ICONS.ROGUE, 77026, 0, ICONS.DEATHKNIGHT, 77011, 76977, 0, ICONS.MAGE, 76214, 0, ICONS.DRUID, 76751, 77020, 77016, type = 6}, -- Legs of Corrupted Vanquisher
 
         --- Dragonwrath
         [71141] = { {71141,"25"}, {65893,"3"}, {69815,"1000"}, 69848, 0, 71084, 71085, 71086}, -- Eternal Ember
