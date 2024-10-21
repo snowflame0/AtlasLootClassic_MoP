@@ -1,0 +1,25 @@
+name: Pull request test build
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, labeled]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Install and run Luacheck
+        uses: nebularg/actions-luacheck@v1
+        with:
+          args: "--no-color -q"
+          annotate: warning
+
+      - name: Create Package
+        uses: BigWigsMods/packager@master
+        with:
+          args: -l -d -z # Skip localization, upload, and zip creation

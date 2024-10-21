@@ -36,8 +36,5 @@ jobs:
 
       - name: Package (don't release)
         uses: BigWigsMods/packager@master
-        env:
-          CF_API_KEY: ${{ secrets.CF_API_KEY }}
-          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: -d -z # No upload or file creation
+          args: -l -d -z # Skip localization, upload, and zip creation
