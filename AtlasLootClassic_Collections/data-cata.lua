@@ -59,15 +59,15 @@ local COLLECTIONS_CONTENT = data:AddContentType(AL["Collections"], ATLASLOOT_COL
 local WORLD_EVENT_CONTENT = data:AddContentType(AL["World Events"], ATLASLOOT_SEASONALEVENTS_COLOR)
 
 -- colors
-local BLUE = "|cff6666ff%s|r"
+local BLUE = "|cff0070dd%s|r"
 -- local GREY = "|cff999999%s|r"
 local GREEN = "|cff66cc33%s|r"
 local _RED = "|cffcc6666%s|r"
-local PURPLE = "|cff9900ff%s|r"
+local PURPLE = "|cffa335ee%s|r"
 -- local WHIT = "|cffffffff%s|r"
 
 data["JusticePoints346"] = {
-    name = format(AL["'%s' Vendor"], AL["Justice Points '346"]),
+    name = format(AL["'%s' Vendor"], AL["Justice Points '|cff0070dd346|r""]),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
@@ -196,7 +196,7 @@ data["JusticePoints346"] = {
     } }
 }
 data["JusticePoints359"] = {
-    name = format(AL["'%s' Vendor"], AL["Justice Points '359"]),
+    name = format(AL["'%s' Vendor"], AL["Justice Points '|cffa335ee359|r"]),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
