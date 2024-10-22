@@ -1042,15 +1042,15 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [71670] = { ICONS.ROGUE, 71539, 0, ICONS.DEATHKNIGHT, 71478, 71483, 0, ICONS.MAGE, 71508, 0, ICONS.DRUID, 71488, 71492, 71497, type = 6}, -- Crown of the Fiery Vanquisher
         -- Shoulders
         [71680] = { ICONS.PALADIN, 71516, 71521, 71526, 0, ICONS.PRIEST, 71531, 71536, 0, ICONS.WARLOCK, 71598, type = 6}, -- Shoulders of the Fiery Conqueror
-        [71687] = { ICONS.WARRIOR, 71603, 71608, 0, ICONS.HUNTER, 71505, 0, ICONS.SHAMAN, 71543, 71551, 71556, type = 6}, -- Shoulders of the Fiery Protector
+        [71687] = { ICONS.WARRIOR, 71603, 71608, 0, ICONS.HUNTER, 71505, 0, ICONS.SHAMAN, 71546, 71551, 71556, type = 6}, -- Shoulders of the Fiery Protector
         [71673] = { ICONS.ROGUE, 71541, 0, ICONS.DEATHKNIGHT, 71480, 71485, 0, ICONS.MAGE, 71511, 0, ICONS.DRUID, 71490, 71495, 71500, type = 6}, -- Shoulders of the Fiery Vanquisher
         -- Chest
         [71679] = { ICONS.PALADIN, 71512, 71517, 71522, 0, ICONS.PRIEST, 71530, 71535, 0, ICONS.WARLOCK, 71597, type = 6}, -- Chest of the Fiery Conqueror
-        [71686] = { ICONS.WARRIOR, 71600, 71604, 0, ICONS.HUNTER, 71501, 0, ICONS.SHAMAN, 71546, 71547, 71552, type = 6}, -- Chest of the Fiery Protector
+        [71686] = { ICONS.WARRIOR, 71600, 71604, 0, ICONS.HUNTER, 71501, 0, ICONS.SHAMAN, 71542, 71547, 71552, type = 6}, -- Chest of the Fiery Protector
         [71672] = { ICONS.ROGUE, 71537, 0, ICONS.DEATHKNIGHT, 71476, 71481, 0, ICONS.MAGE, 71510, 0, ICONS.DRUID, 71486, 71494, 71499, type = 6}, -- Chest of the Fiery Vanquisher
         -- Hands
         [71676] = { ICONS.PALADIN, 71513, 71518, 71523, 0, ICONS.PRIEST, 71527, 71532, 0, ICONS.WARLOCK, 71594, type = 6}, -- Gauntlets of the Fiery Conqueror
-        [71683] = { ICONS.WARRIOR, 71601, 71605, 0, ICONS.HUNTER, 71502, 0, ICONS.SHAMAN, 71542, 71548, 71553, type = 6}, -- Gauntlets of the Fiery Protector
+        [71683] = { ICONS.WARRIOR, 71601, 71605, 0, ICONS.HUNTER, 71502, 0, ICONS.SHAMAN, 71543, 71548, 71553, type = 6}, -- Gauntlets of the Fiery Protector
         [71669] = { ICONS.ROGUE, 71538, 0, ICONS.DEATHKNIGHT, 71477, 71482, 0, ICONS.MAGE, 71507, 0, ICONS.DRUID, 71487, 71491, 71496, type = 6}, -- Gauntlets of the Fiery Vanquisher
         -- Leggings
         [71678] = { ICONS.PALADIN, 71515, 71520, 71525, 0, ICONS.PRIEST, 71529, 71534, 0, ICONS.WARLOCK, 71596, type = 6}, -- Leggings of the Fiery Conqueror
