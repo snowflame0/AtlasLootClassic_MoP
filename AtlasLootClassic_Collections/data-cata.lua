@@ -67,7 +67,7 @@ local PURPLE = "|cff9900ff%s|r"
 -- local WHIT = "|cffffffff%s|r"
 
 data["JusticePoints346"] = {
-    name = format(AL["'%s' Vendor"], AL["Justice Points '346"] .. " - " .. AL["P1"]),
+    name = format(AL["'%s' Vendor"], AL["Justice Points '346"]),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
