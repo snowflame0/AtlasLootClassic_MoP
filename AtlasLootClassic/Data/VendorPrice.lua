@@ -1775,7 +1775,6 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [71279] = "ValorPoints:2200", -- Vestment of the Cleansing Flame
         [71276] = "ValorPoints:1650", -- Gloves of the Cleansing Flame
         [71278] = "ValorPoints:2200", -- Leggings of the Cleansing Flame
-        
         -- CA vendor
         [65433] = "chefs:5", -- Recipe: South Island Iced Tea
         [65432] = "chefs:5", -- Recipe: Fortune Cookie
