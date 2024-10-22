@@ -11,6 +11,8 @@ local AL = AtlasLoot.Locales
 local ClickHandler = AtlasLoot.ClickHandler
 local GetAlTooltip = AtlasLoot.Tooltip.GetTooltip
 
+local CurrencyClickHandler = nil
+
 local QUALITY_COLORS = {}
 local DUMMY_ITEM_ICON = "Interface\\Icons\\INV_Misc_QuestionMark"
 
