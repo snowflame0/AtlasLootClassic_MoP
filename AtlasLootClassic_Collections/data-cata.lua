@@ -66,8 +66,137 @@ local _RED = "|cffcc6666%s|r"
 local PURPLE = "|cff9900ff%s|r"
 -- local WHIT = "|cffffffff%s|r"
 
-data["JusticePoints"] = {
-    name = format(AL["'%s' Vendor"], AL["Justice Points"]),
+data["JusticePoints346"] = {
+    name = format(AL["'%s' Vendor"], AL["Justice Points '346"] .. " - " .. AL["P1"]),
+    ContentType = VENDOR_CONTENT,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    extraList = true,
+    items = { {
+        name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
+        [NORMAL_DIFF] = { -- Head
+            { 1,  58155 }, -- Cowl of Pleasant Gloom
+            { 16, 58161 }, -- Mask of New Snow
+            -- Shoulder
+            { 3,  58157 }, -- Meadow Mantle
+            { 18, 58162 }, -- Summer Song Shoulderwraps
+            -- Chest
+            { 5,  58153 }, -- Robes of Embalmed Darkness
+            { 20, 58159 }, -- Musk Rose Robes
+            -- Hands
+            { 7,  58158 }, -- Gloves of the Painless Midnight
+            { 22, 58163 }, -- Gloves of Purification
+            -- Waist
+            { 9,  57921 }, -- Incense Infused Cummerbund
+            { 24, 57922 }, -- Belt of the Falling Rain
+            -- Legs
+            { 11, 58154 }, -- Pensive Legwraps
+            { 26, 58160 } -- Leggings of Charity
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Leather"],
+        [NORMAL_DIFF] = { -- Head
+            { 1,  58150 }, -- Cluster of Stars
+            { 16, 58133 }, -- Mask of Vines
+            -- Shoulder
+            { 3,  58151 }, -- Somber Shawl
+            { 18, 58134 }, -- Embrace of the Night
+            -- Chest
+            { 5,  58139 }, -- Chestguard of Forgetfulness
+            { 20, 58131 }, -- Tunic of Sinking Envy
+            -- Hands
+            { 7,  58152 }, -- Blessed Hands of Elune
+            { 22, 58138 }, -- Sticky Fingers
+            -- Waist
+            { 9,  57919 }, -- Thatch Eave Vines
+            { 24, 57918 }, -- Sash of Musing
+            -- Legs
+            { 11, 58140 }, -- Leggings of Late Blooms
+            { 26, 58132 } -- Leggings of the Burrowing Mole
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
+        [NORMAL_DIFF] = { -- Head
+            { 1,  58128 }, -- Helm of the Inward Eye
+            { 16, 58123 }, -- Willow Mask
+            -- Shoulder
+            { 3,  58129 }, -- Seafoam Mantle
+            { 18, 58124 }, -- Wrap of the Valley Glades
+            -- Chest
+            { 5,  58126 }, -- Vest of the Waking Dream
+            { 20, 58121 }, -- Vest of the True Companion
+            -- Hands
+            { 7,  58130 }, -- Gleaning Gloves
+            { 22, 58125 }, -- Gloves of the Passing Night
+            -- Waist
+            { 9,  57917 }, -- Belt of the Still Stream
+            { 24, 57916 }, -- Belt of the Dim Forest
+            -- Legs
+            { 11, 58127 }, -- Leggings of Soothing Silence
+            { 26, 58122 } -- Hillside Striders
+        }
+    }, {
+        name = ALIL["Armor"] .. " - " .. ALIL["Plate"],
+        [NORMAL_DIFF] = { -- Head
+            { 1,  58103 }, -- Helm of the Proud
+            { 2,  58098 }, -- Helm of Easeful Death
+            { 3,  58108 }, -- Crown of the Blazing Sun
+            -- Shoulder
+            { 5,  58104 }, -- Sunburnt Pauldrons
+            { 6,  58100 }, -- Pauldrons of the High Requiem
+            { 7,  58109 }, -- Pauldrons of the Forlorn
+            -- Chest
+            { 9,  58101 }, -- Chestplate of the Steadfast
+            { 10, 58096 }, -- Breastplate of Raging Fury
+            { 11, 58106 }, -- Chestguard of Dancing Waves
+            -- Hands
+            { 16, 58105 }, -- Numbing Handguards
+            { 17, 58099 }, -- Reaping Gauntlets
+            { 18, 58110 }, -- Gloves of Curious Conscience
+            -- Waist
+            { 20, 57914 }, -- Girdle of the Mountains
+            { 21, 57913 }, -- Beech Green Belt
+            { 22, 57915 }, -- Belt of Barred Clouds
+            -- Legs
+            { 24, 58102 }, -- Greaves of Splendor
+            { 25, 58097 }, -- Greaves of Gallantry
+            { 26, 58107 } -- Legguards of the Gentle
+        }
+    }, {
+        name = ALIL["Neck"],
+        [NORMAL_DIFF] = { -- Head
+            { 1, 57932 }, -- The Lustrous Eye
+            { 2, 57934 }, -- Celadon Pendant
+            { 3, 57933 }, -- String of Beaded Bubbles
+            { 4, 57931 }, -- Amulet of Dull Dreaming
+            { 5, 57930 } -- Pendant of Quiet Breath
+        }
+    }, {
+        name = ALIL["Off-Hand/Shield"],
+        [NORMAL_DIFF] = { -- Head
+            { 1, 57927 }, -- Throat Slasher
+            { 2, 57928 }, -- Windslicer
+            { 3, 57929 }, -- Dawnblaze Blade
+            { 5, 57926 }, -- Shield of the Four Grey Towers
+            { 6, 57925 }, -- Shield of the Mists
+            { 8, 57924 }, -- Apple-Bent Bough
+            { 9, 57923 } -- Hermit's Lamp
+        }
+    }, {
+        name = ALIL["Misc"],
+        [NORMAL_DIFF] = { -- Head
+            { 1, 52185 }, -- Elementium Ore
+            { 2, 53010 }, -- Embersilk Cloth
+            { 3, 52976 }, -- Savage Leather
+            { 4, 52721 }, -- Heavenly Shard
+            { 5, 52555 }, -- Hypnotic Dust
+            { 6, 68813 }, -- Satchel of Freshly-Picked Herbs
+            { 7, 52719 } -- Greater Celestial Essence
+        }
+    } }
+}
+data["JusticePoints359"] = {
+    name = format(AL["'%s' Vendor"], AL["Justice Points '359"]),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
@@ -201,7 +330,6 @@ data["JusticePoints"] = {
         }
     } }
 }
-
 data["ValorPoints"] = {
     name = format(AL["'%s' Vendor"], AL["Valor Points"]),
     ContentType = VENDOR_CONTENT,
@@ -437,136 +565,6 @@ data["FissureStoneFragments"] = {
         }
     },
     }
-}
-
-data["JusticePointsP1"] = {
-    name = format(AL["'%s' Vendor"], AL["Justice Points"] .. " - " .. AL["P1"]),
-    ContentType = VENDOR_CONTENT,
-    TableType = NORMAL_ITTYPE,
-    gameVersion = AtlasLoot.CATA_VERSION_NUM,
-    extraList = true,
-    items = { {
-        name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
-        [NORMAL_DIFF] = { -- Head
-            { 1,  58155 }, -- Cowl of Pleasant Gloom
-            { 16, 58161 }, -- Mask of New Snow
-            -- Shoulder
-            { 3,  58157 }, -- Meadow Mantle
-            { 18, 58162 }, -- Summer Song Shoulderwraps
-            -- Chest
-            { 5,  58153 }, -- Robes of Embalmed Darkness
-            { 20, 58159 }, -- Musk Rose Robes
-            -- Hands
-            { 7,  58158 }, -- Gloves of the Painless Midnight
-            { 22, 58163 }, -- Gloves of Purification
-            -- Waist
-            { 9,  57921 }, -- Incense Infused Cummerbund
-            { 24, 57922 }, -- Belt of the Falling Rain
-            -- Legs
-            { 11, 58154 }, -- Pensive Legwraps
-            { 26, 58160 } -- Leggings of Charity
-        }
-    }, {
-        name = ALIL["Armor"] .. " - " .. ALIL["Leather"],
-        [NORMAL_DIFF] = { -- Head
-            { 1,  58150 }, -- Cluster of Stars
-            { 16, 58133 }, -- Mask of Vines
-            -- Shoulder
-            { 3,  58151 }, -- Somber Shawl
-            { 18, 58134 }, -- Embrace of the Night
-            -- Chest
-            { 5,  58139 }, -- Chestguard of Forgetfulness
-            { 20, 58131 }, -- Tunic of Sinking Envy
-            -- Hands
-            { 7,  58152 }, -- Blessed Hands of Elune
-            { 22, 58138 }, -- Sticky Fingers
-            -- Waist
-            { 9,  57919 }, -- Thatch Eave Vines
-            { 24, 57918 }, -- Sash of Musing
-            -- Legs
-            { 11, 58140 }, -- Leggings of Late Blooms
-            { 26, 58132 } -- Leggings of the Burrowing Mole
-        }
-    }, {
-        name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
-        [NORMAL_DIFF] = { -- Head
-            { 1,  58128 }, -- Helm of the Inward Eye
-            { 16, 58123 }, -- Willow Mask
-            -- Shoulder
-            { 3,  58129 }, -- Seafoam Mantle
-            { 18, 58124 }, -- Wrap of the Valley Glades
-            -- Chest
-            { 5,  58126 }, -- Vest of the Waking Dream
-            { 20, 58121 }, -- Vest of the True Companion
-            -- Hands
-            { 7,  58130 }, -- Gleaning Gloves
-            { 22, 58125 }, -- Gloves of the Passing Night
-            -- Waist
-            { 9,  57917 }, -- Belt of the Still Stream
-            { 24, 57916 }, -- Belt of the Dim Forest
-            -- Legs
-            { 11, 58127 }, -- Leggings of Soothing Silence
-            { 26, 58122 } -- Hillside Striders
-        }
-    }, {
-        name = ALIL["Armor"] .. " - " .. ALIL["Plate"],
-        [NORMAL_DIFF] = { -- Head
-            { 1,  58103 }, -- Helm of the Proud
-            { 2,  58098 }, -- Helm of Easeful Death
-            { 3,  58108 }, -- Crown of the Blazing Sun
-            -- Shoulder
-            { 5,  58104 }, -- Sunburnt Pauldrons
-            { 6,  58100 }, -- Pauldrons of the High Requiem
-            { 7,  58109 }, -- Pauldrons of the Forlorn
-            -- Chest
-            { 9,  58101 }, -- Chestplate of the Steadfast
-            { 10, 58096 }, -- Breastplate of Raging Fury
-            { 11, 58106 }, -- Chestguard of Dancing Waves
-            -- Hands
-            { 16, 58105 }, -- Numbing Handguards
-            { 17, 58099 }, -- Reaping Gauntlets
-            { 18, 58110 }, -- Gloves of Curious Conscience
-            -- Waist
-            { 20, 57914 }, -- Girdle of the Mountains
-            { 21, 57913 }, -- Beech Green Belt
-            { 22, 57915 }, -- Belt of Barred Clouds
-            -- Legs
-            { 24, 58102 }, -- Greaves of Splendor
-            { 25, 58097 }, -- Greaves of Gallantry
-            { 26, 58107 } -- Legguards of the Gentle
-        }
-    }, {
-        name = ALIL["Neck"],
-        [NORMAL_DIFF] = { -- Head
-            { 1, 57932 }, -- The Lustrous Eye
-            { 2, 57934 }, -- Celadon Pendant
-            { 3, 57933 }, -- String of Beaded Bubbles
-            { 4, 57931 }, -- Amulet of Dull Dreaming
-            { 5, 57930 } -- Pendant of Quiet Breath
-        }
-    }, {
-        name = ALIL["Off-Hand/Shield"],
-        [NORMAL_DIFF] = { -- Head
-            { 1, 57927 }, -- Throat Slasher
-            { 2, 57928 }, -- Windslicer
-            { 3, 57929 }, -- Dawnblaze Blade
-            { 5, 57926 }, -- Shield of the Four Grey Towers
-            { 6, 57925 }, -- Shield of the Mists
-            { 8, 57924 }, -- Apple-Bent Bough
-            { 9, 57923 } -- Hermit's Lamp
-        }
-    }, {
-        name = ALIL["Misc"],
-        [NORMAL_DIFF] = { -- Head
-            { 1, 52185 }, -- Elementium Ore
-            { 2, 53010 }, -- Embersilk Cloth
-            { 3, 52976 }, -- Savage Leather
-            { 4, 52721 }, -- Heavenly Shard
-            { 5, 52555 }, -- Hypnotic Dust
-            { 6, 68813 }, -- Satchel of Freshly-Picked Herbs
-            { 7, 52719 } -- Greater Celestial Essence
-        }
-    } }
 }
 
 --[[ Let's not add this till P4 to keep it cleaner
