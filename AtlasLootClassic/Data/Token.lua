@@ -25,7 +25,6 @@ local TOKEN_TYPE_TEXT = {
     [9]  = format(TOKEN_FORMAT_STRING, AL["Show loot."]),
     [10] = format(TOKEN_FORMAT_STRING, AL["Show Achievements."]),
     [11] = format(TOKEN_FORMAT_STRING, AL["Contains."]),
-    --[12] = format(TOKEN_FORMAT_STRING, AL["Show possible items."]), -- with Suffix
     -- classes get set with the init
     -- "DRUID", "HUNTER", "MAGE", "PALADIN", "PRIEST", "ROGUE", "SHAMAN", "WARLOCK", "WARRIOR", "DEATHKNIGHT"
 }
@@ -1285,6 +1284,35 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [74034] = { {74034, 12}, 0, 74035, type = 3 }, -- Pit Fighter
         --- Darkmoon Faire Achievements
         ["AC_DarkmoonFaire"] = {"ac6019", "ac6020", "ac6021", "ac6022", "ac6023", "ac6024", "ac6025", "ac6026", "ac6027", "ac6028", "ac6029", "ac6030", "ac6031", "ac6032", type = 10},
+        --- Protocol Inferno Satchels
+        [232947] = {"i69879suf-121","i69879suf-122","i69879suf-120","i69879suf-118",type=2}, -- Satchel of the Cloudburst Cloak
+        [232968] = {"i65378suf-136","i65378suf-133","i65378suf-137","i65378suf-135",type=2}, -- Satchel of the Star Chaser Legguards
+        [232953] = {"i65386suf-131","i65386suf-130","i65386suf-138","i65386suf-132",type=2}, -- Satchel of the Lightning Well Legguards
+        [232969] = {"i65375suf-131","i65375suf-130","i65375suf-138","i65375suf-132",type=2}, -- Satchel of the Tempest Keeper Belt
+        [232954] = {"i65367suf-136","i65367suf-133","i65367suf-137","i65367suf-135",type=2}, -- Satchel of the Mistral Circle
+        [232955] = {"i69884suf-136","i69884suf-133","i69884suf-137","i69884suf-135",type=2}, -- Satchel of the Mistral Drape
+        [232952] = {"i65377suf-131","i65377suf-130","i65377suf-138","i65377suf-132",type=2}, -- Satchel of the Lightning Well Belt
+        [232963] = {"i65369suf-121","i65369suf-122","i65369suf-120","i65369suf-118",type=2}, -- Satchel of the Sky Strider Belt
+        [232973] = {"i65371suf-136","i65371suf-133","i65371suf-137","i65371suf-135",type=2}, -- Satchel of the Wind Stalker Belt
+        [232964] = {"i65379suf-121","i65379suf-122","i65379suf-120","i65379suf-118",type=2}, -- Satchel of the Sky Strider Greaves
+        [232965] = {"i65376suf-131","i65376suf-129","i65376suf-114","i65376suf-130","i65376suf-138","i65376suf-132",type=2}, -- Satchel of the Soul Breath Belt
+        [232948] = {"i69885suf-121","i69885suf-122","i69885suf-120","i69885suf-118",type=2}, -- Satchel of the Cloudburst Necklace
+        [232971] = {"i65370suf-128","i65370suf-125","i65370suf-127",type=2}, -- Satchel of the Thunder Wall Belt
+        [232966] = {"i65383suf-131","i65383suf-129","i65383suf-114","i65383suf-130","i65383suf-138","i65383suf-132",type=2}, -- Satchel of the Soul Breath Leggings
+        [232970] = {"i65385suf-131","i65385suf-130","i65385suf-138","i65385suf-132",type=2}, -- Satchel of the Tempest Keeper Leggings
+        [232958] = {"i69883suf-128","i69883suf-125","i69883suf-127",type=2}, -- Satchel of the Permafrost Choker
+        [232972] = {"i65380suf-128","i65380suf-125","i65380suf-127",type=2}, -- Satchel of the Thunder Wall Greaves
+        [232949] = {"i65382suf-121","i65382suf-122","i65382suf-120","i65382suf-118",type=2}, -- Satchel of the Cloudburst Ring
+        [232974] = {"i65381suf-136","i65381suf-133","i65381suf-137","i65381suf-135",type=2}, -- Satchel of the Wind Stalker Leggings
+        [232967] = {"i65368suf-136","i65368suf-133","i65368suf-137","i65368suf-135",type=2}, -- Satchel of the Star Chaser Belt
+        [232961] = {"i65373suf-131","i65373suf-129","i65373suf-114","i65373suf-130","i65373suf-138","i65373suf-132",type=2}, -- Satchel of the Planetary Band
+        [232962] = {"i69881suf-131","i69881suf-129","i69881suf-114","i69881suf-130","i69881suf-138","i69881suf-132",type=2},  -- Satchel of the Planetary Drape
+        [232951] = {"i65384suf-131","i65384suf-130","i65384suf-138","i65384suf-132",type=2}, -- Satchel of the Gale Rouser Leggings
+        [232956] = {"i69880suf-136","i69880suf-133","i69880suf-137","i69880suf-135",type=2}, -- Satchel of the Mistral Pendant
+        [232950] = {"i65374suf-131","i65374suf-130","i65374suf-138","i65374suf-132",type=2}, -- Satchel of the Gale Rouser Belt
+        [232957] = {"i69878suf-128","i69878suf-125","i69878suf-127",type=2}, -- Satchel of the Permafrost Cape
+        [232959] = {"i65372suf-128","i65372suf-125","i65372suf-127",type=2}, -- Satchel of the Permafrost Signet
+        [232960] = {"i69882suf-131","i69882suf-129","i69882suf-114","i69882suf-130","i69882suf-138","i69882suf-132",type=2}, -- Satchel of the Planetary Amulet
     }
 end
 

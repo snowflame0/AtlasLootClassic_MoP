@@ -388,4 +388,3 @@ function Faction.ShowToolTipFrame(button)
 	frame:SetHeight(20+21+frame.desc:GetHeight()+5)
 	frame:Show()
 end
-

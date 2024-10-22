@@ -22,7 +22,7 @@ local ALIL = AtlasLoot.IngameLocales
 local RAIDFINDER_DIFF = data:AddDifficulty("Raid Finder", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
-
+local INFERNO_DIFF = data:AddDifficulty(AL["Elemental Rune Inferno"], "ERI", nil, nil, true)
 
 local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
 
@@ -382,7 +382,18 @@ data["BlackrockCaverns"] = {
             { 3, 56310 },	-- Skullcracker Ring
             { 4, 56312 },	-- Torturer's Mercy
             { 5, 56314 },	-- Shield of the Iron Maiden
-            { 16, "ac5281" },
+            { 16, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+            { 18, "ac5281" },
+        },
+        [INFERNO_DIFF] = {
+            { 1, 56311 },	-- Inquisition Robes
+            { 2, 56313 },	-- Manacles of Pain
+            { 3, 56310 },	-- Skullcracker Ring
+            { 4, 56312 },	-- Torturer's Mercy
+            { 5, 56314 },	-- Shield of the Iron Maiden
+            { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+            { 19, "ac5281" },
         },
     },
     { -- Corla, Herald of Twilight
@@ -403,6 +414,15 @@ data["BlackrockCaverns"] = {
         { 5, 56296 },	-- Corla's Baton
         { 16, "ac5282" },
     },
+    [INFERNO_DIFF] = {
+        { 1, 56297 },	-- Armbands of Change
+        { 2, 56298 },	-- Renouncer's Cowl
+        { 3, 56299 },	-- Signet of Transformation
+        { 4, 56295 },	-- Grace of the Herald
+        { 5, 56296 },	-- Corla's Baton
+        { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 18, "ac5282" },
+    },
 },
 { -- Karsh Steelbender
 name = AL["Karsh Steelbender"],
@@ -422,6 +442,15 @@ EncounterJournalID = 107,
     { 5, 56302 },	-- Steelbender's Masterpiece
     { 16, "ac5283" },
 },
+[INFERNO_DIFF] = {
+    { 1, 56304 },	-- Burned Gatherings
+    { 2, 56303 },	-- Heat Wave Leggings
+    { 3, 56301 },	-- Bracers of Cooled Anger
+    { 4, 56300 },	-- Quicksilver Amulet
+    { 5, 56302 },	-- Steelbender's Masterpiece
+    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 18, "ac5283" },
+},
 },
 { -- Beauty
 name = AL["Beauty"],
@@ -439,6 +468,14 @@ EncounterJournalID = 108,
     { 3, 56308 },	-- Beauty's Plate
     { 4, 56307 },	-- Kibble
     { 5, 56306 },	-- Beauty's Favorite Bone
+},
+[INFERNO_DIFF] = {
+    { 1, 56305 },	-- Beauty's Silken Ribbon
+    { 2, 56309 },	-- Beauty's Chew Toy
+    { 3, 56308 },	-- Beauty's Plate
+    { 4, 56307 },	-- Kibble
+    { 5, 56306 },	-- Beauty's Favorite Bone
+    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
 },
 },
 { -- Ascendant Lord Obsidius
@@ -471,6 +508,24 @@ EncounterJournalID = 109,
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
     { 16, "ac5060" },
     { 17, "ac5284" },
+},
+[INFERNO_DIFF] = {
+    { 1, 56315 },	-- Twitching Shadows
+    { 2, 56324 },	-- Kyrstel Mantle
+    { 3, 56321 },	-- Willowy Crown
+    { 4, 56318 },	-- Raz's Pauldrons
+    { 5, 56323 },	-- Clutches of Dying Light
+    { 6, 56319 },	-- Carrier Wave Pendant
+    { 7, 56320 },	-- Witching Hourglass
+    { 8, 56317 },	-- Amber Messenger
+    { 9, 56322 },	-- Crepuscular Shield
+    { 10,56316 },   -- Sandshift Relic
+    { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
+    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
+    { 18, "ac41139"},
+    { 19, "ac5060" },
+    { 20, "ac5284" },
+
 },
 },
 {	--BlackrockCavernsTrash

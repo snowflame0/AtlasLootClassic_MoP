@@ -90,7 +90,6 @@ local T7_SET = {
     name = format(AL["Tier %s Sets"], "7"),
     ExtraList = true,
     TableType = SET_ITTYPE,
-    -- ContentPhaseBC = 6,
     IgnoreAsSource = true,
     [RAID10_DIFF] = {{1, 3100802}, -- Warlock
     {3, 3100804}, -- Priest / Heal

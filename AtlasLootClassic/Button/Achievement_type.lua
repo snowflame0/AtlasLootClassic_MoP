@@ -54,7 +54,7 @@ function AC.OnMouseAction(button, mouseButton)
 	if mouseButton == "WoWHeadLink" then
 		AtlasLoot.Button:OpenWoWHeadLink(button, "achievement", button.AcID)
     elseif mouseButton == "ChatLink" then
-        AtlasLoot.Button:AddChatLink(GetAchievementLink(button.AcID) or "achievement:"..button.AcID)
+        AtlasLoot.Button:AddChatLink(GetAchievementLink(button.AcID) or ("achievement:"..button.AcID))
 	elseif mouseButton == "GoTo" then
 		if not IsAddOnLoaded("Blizzard_AchievementUI") then
 			LoadAddOn("Blizzard_AchievementUI")
@@ -129,4 +129,3 @@ end
 function AC.ShowToolTipFrame(button)
 
 end
-

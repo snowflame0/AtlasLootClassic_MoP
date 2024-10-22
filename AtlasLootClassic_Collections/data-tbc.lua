@@ -608,14 +608,14 @@ data["TabardsBC"] = {
 }
 
 data["LegendarysBC"] = {
-    name = AL["Legendarys"],
+    name = AL["Legendaries"],
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.BC_VERSION_NUM,
     CorrespondingFields = private.LEGENDARYS,
     items = {{
-        name = AL["Legendarys"],
+        name = AL["Legendaries"],
         [NORMAL_DIFF] = {
         {1, 34334, "ac725"}, -- Thori'dal, the Stars' Fury
         {3, 32837, "ac426"}, -- Warglaive of Azzinoth

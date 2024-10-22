@@ -1283,7 +1283,7 @@ data["Tabards"] = {
 }
 
 data["Legendarys"] = {
-    name = AL["Legendarys"],
+    name = AL["Legendaries"],
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
@@ -1291,7 +1291,7 @@ data["Legendarys"] = {
     CorrespondingFields = private.LEGENDARYS,
     items = {
         {
-            name = AL["Legendarys"],
+            name = AL["Legendaries"],
             [NORMAL_DIFF] = {
                 { 1,  19019, "ac428" }, -- Thunderfury, Blessed Blade of the Windseeker
 
