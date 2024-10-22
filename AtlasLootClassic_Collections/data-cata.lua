@@ -67,7 +67,7 @@ local PURPLE = "|cffa335ee%s|r"
 -- local WHIT = "|cffffffff%s|r"
 
 data["JusticePoints346"] = {
-    name = AL["Justice Points '|cff0070dd346|r""],
+    name = AL["Justice Points '|cff0070dd346|r'"],
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
@@ -196,7 +196,7 @@ data["JusticePoints346"] = {
     } }
 }
 data["JusticePoints359"] = {
-    name = AL["Justice Points '|cffa335ee359|r"],
+    name = AL["Justice Points '|cffa335ee359|r'"],
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
