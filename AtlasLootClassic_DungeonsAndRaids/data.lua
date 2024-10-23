@@ -45,8 +45,6 @@ local DUNGEON_CONTENT = data:AddContentType(AL["Dungeons"], ATLASLOOT_DUNGEON_CO
 local RAID20_CONTENT = data:AddContentType(AL["20 Raids"], ATLASLOOT_RAID20_COLOR)
 local RAID40_CONTENT = data:AddContentType(AL["40 Raids"], ATLASLOOT_RAID40_COLOR)
 
-local ATLAS_MODULE_NAME = "Atlas_ClassicWoW"
-
 local BLUE = "|cff6666ff%s|r"
 --local GREY = "|cff999999%s|r"
 local GREEN = "|cff66cc33%s|r"
@@ -266,9 +264,6 @@ local DM_BOOKS = { -- DMBooks
 data["Ragefire"] = {
     MapID = 2437,
     InstanceID = 389,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "Ragefire",
-    AtlasMapFile = "RagefireChasm",
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({10, 13, 18}, {8, 13, 16}),
@@ -278,7 +273,6 @@ data["Ragefire"] = {
             npcID = 11520,
             Level = 16,
             DisplayIDs = {{7970}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  14149 }, -- Subterranean Cape
                 { 2,  14148 }, -- Crystalline Cuffs
@@ -290,7 +284,6 @@ data["Ragefire"] = {
             npcID = 11518,
             Level = 16,
             DisplayIDs = {{11429}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  14150 }, -- Robe of Evocation
                 { 2,  14147 }, -- Cavedweller Bracers
@@ -304,10 +297,6 @@ data["WailingCaverns"] = {
     MapID = 718,
     InstanceID = 43,
     SubAreaIDs = { 15285, 15301, 15294, 15300, 15292, 17731 },
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "WailingCaverns",
-    AtlasMapFile = {"CL_WailingCaverns", "CL_WailingCavernsEnt"},
-    AtlasMapFile_AL = {"WailingCaverns", "WailingCavernsEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({10, 17, 24}, {10, 17, 21}),
@@ -318,7 +307,6 @@ data["WailingCaverns"] = {
             Level = 20,
             SubAreaID = 15300,
             DisplayIDs = {{4213}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  6460 }, -- Cobrahn's Grasp
                 { 2,  10410 }, -- Leggings of the Fang
@@ -330,7 +318,6 @@ data["WailingCaverns"] = {
             npcID = 3671,
             Level = 20,
             DisplayIDs = {{4313}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  10412 }, -- Belt of the Fang
                 { 3,  5404 }, -- Serpent's Shoulders
@@ -342,7 +329,6 @@ data["WailingCaverns"] = {
             npcID = 3653,
             Level = 20,
             DisplayIDs = {{5126}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  13245 }, -- Kresh's Back
                 { 3,  6447 }, -- Worn Turtle Shell Shield
@@ -354,7 +340,6 @@ data["WailingCaverns"] = {
             Level = GetForVersion(21, 20),
             SubAreaID = 17731,
             DisplayIDs = {{4214}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  6472 }, -- Stinging Viper
                 { 3,  6473 }, -- Armor of the Fang
@@ -365,7 +350,6 @@ data["WailingCaverns"] = {
             npcID = 3674,
             Level = GetForVersion(21, 20),
             DisplayIDs = {{4203}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  6449 }, -- Glowing Lizardscale Cloak
                 { 3,  6448 }, -- Tail Spike
@@ -376,7 +360,6 @@ data["WailingCaverns"] = {
             npcID = 3673,
             Level = GetForVersion(21, 20),
             DisplayIDs = {{4215}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  6469 }, -- Venomstrike
                 { 3,  5970 }, -- Serpent Gloves
@@ -389,7 +372,6 @@ data["WailingCaverns"] = {
             npcID = 5775,
             Level = GetForVersion(21, 20),
             DisplayIDs = {{4256}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  6630 }, -- Seedcloud Buckler
                 { 2,  6631 }, -- Living Root
@@ -402,7 +384,6 @@ data["WailingCaverns"] = {
             Level = GetForVersion(22, 20),
             SubAreaID = 15294,
             DisplayIDs = {{4088}},
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  6461 }, -- Slime-encrusted Pads
                 { 2,  6627 }, -- Mutant Scale Breastplate
@@ -415,7 +396,6 @@ data["WailingCaverns"] = {
             npcID = 5912,
             Level = GetForVersion(19, 20),
             DisplayIDs = {{1267}},
-            AtlasMapBossID = 10,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  5243 }, -- Firebelcher
@@ -550,10 +530,6 @@ data["ShadowfangKeepCata"] = {
 data["BlackfathomDeeps"] = {
     MapID = 719,
     InstanceID = 48,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "BlackfathomDeeps",
-    AtlasMapFile = {"CL_BlackfathomDeepsA", "CL_BlackfathomDeepsEnt"},
-    AtlasMapFile_AL = {"BlackfathomDeeps", "BlackfathomDeepsEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({15, 24, 32}, {19, 22, 24}),
@@ -563,7 +539,6 @@ data["BlackfathomDeeps"] = {
             npcID = 4887,
             Level = GetForVersion(25,23),
             DisplayIDs = {{5027}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  6907 }, -- Tortoise Armor
                 { 3,  6908 }, -- Ghamoo-ra's Bind
@@ -574,7 +549,6 @@ data["BlackfathomDeeps"] = {
             npcID = 4831,
             Level = GetForVersion(25,23),
             DisplayIDs = {{4979}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  888 }, -- Naga Battle Gloves
                 { 3,  3078 }, -- Naga Heartpiercer
@@ -586,7 +560,6 @@ data["BlackfathomDeeps"] = {
             npcID = 6243,
             Level = GetForVersion(26,24),
             DisplayIDs = {{1773}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  6906 }, -- Algae Fists
                 { 3,  6905 }, -- Reef Axe
@@ -598,8 +571,6 @@ data["BlackfathomDeeps"] = {
             npcID = 12876,
             Level = GetForVersion(28,24),
             DisplayIDs = {{110}},
-            AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  16782 }, -- Strange Water Globe
             },
@@ -609,8 +580,6 @@ data["BlackfathomDeeps"] = {
             npcID = 4832,
             Level = GetForVersion(27,24),
             DisplayIDs = {{4939}},
-            AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  1155 }, -- Rod of the Sleepwalker
                 { 3,  6903 }, -- Gaze Dreamer Pants
@@ -621,8 +590,6 @@ data["BlackfathomDeeps"] = {
             npcID = 4830,
             Level = GetForVersion(26,24),
             DisplayIDs = {{1816}},
-            AtlasMapFile = {"CL_BlackfathomDeepsC", "CL_BlackfathomDeepsEnt"},
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  6901 }, -- Glowing Thresher Cape
                 { 2,  6904 }, -- Bite of Serra'kis
@@ -634,8 +601,6 @@ data["BlackfathomDeeps"] = {
             npcID = 4829,
             Level = GetForVersion(28,24),
             DisplayIDs = {{2837}},
-            AtlasMapBossID = 10,
-            AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
             [NORMAL_DIFF] = {
                 { 1,  6911 }, -- Moss Cinch
                 { 2,  6910 }, -- Leech Pants
@@ -665,10 +630,6 @@ data["BlackfathomDeeps"] = {
 data["TheStockade"] = {
     MapID = 717,
     InstanceID = 34,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "TheStockade",
-    AtlasMapFile = "CL_TheStockade",
-    AtlasMapFile_AL = "TheStockade",
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = {15, 22, 30},
@@ -678,7 +639,6 @@ data["TheStockade"] = {
             npcID = 46383,
             Level = 25,
             DisplayIDs = {{35068}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  63345 }, -- Noble's Robe
                 { 2,  63344 }, -- Standard Issue Prisoner Shoes
@@ -690,7 +650,6 @@ data["TheStockade"] = {
             npcID = 46264,
             Level = 25,
             DisplayIDs = {{1204}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  1929 }, -- Silk-Threaded Trousers
                 { 2,  5967 }, -- Girdle of Nobility
@@ -702,7 +661,6 @@ data["TheStockade"] = {
             npcID = 46254,
             Level = 25,
             DisplayIDs = {{501}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  2168 }, -- Corpse Rompers
                 { 2,  1934 }, -- Hogger's Trousers
@@ -722,10 +680,6 @@ data["TheStockade"] = {
 data["Gnomeregan"] = {
     MapID = 721,
     InstanceID = 90,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "Gnomeregan",
-    AtlasMapFile = {"CL_Gnomeregan", "CL_GnomereganEnt"},
-    AtlasMapFile_AL = {"Gnomeregan", "GnomereganEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({19, 29, 38},{15, 25, 28}),
@@ -744,7 +698,6 @@ data["Gnomeregan"] = {
             npcID = 7361,
             Level = GetForVersion(32,28),
             DisplayIDs = {{6533}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  9445 }, -- Grubbis Paws
             },
@@ -754,7 +707,6 @@ data["Gnomeregan"] = {
             npcID = 7079,
             Level = GetForVersion(30,28),
             DisplayIDs = {{5497}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  9454 }, -- Acidic Walkers
                 { 2,  9453 }, -- Toxic Revenger
@@ -766,7 +718,6 @@ data["Gnomeregan"] = {
             npcID = 6235,
             Level = GetForVersion(32,28),
             DisplayIDs = {{6915}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  9447 }, -- Electrocutioner Lagnut
                 { 2,  9446 }, -- Electrocutioner Leg
@@ -779,7 +730,6 @@ data["Gnomeregan"] = {
             npcID = 6229,
             Level = GetForVersion(32,28),
             DisplayIDs = {{6774}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  9449 }, -- Manual Crowd Pummeler
                 { 3,  9450 }, -- Gnomebot Operating Boots
@@ -790,7 +740,6 @@ data["Gnomeregan"] = {
             npcID = 6228,
             Level = GetForVersion(33,28),
             DisplayIDs = {{6669}},
-            AtlasMapBossID = 7,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  9455 }, -- Emissary Cuffs
@@ -803,7 +752,6 @@ data["Gnomeregan"] = {
             npcID = 7800,
             Level = GetForVersion(34,28),
             DisplayIDs = {{6980}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  9492 }, -- Electromagnetic Gigaflux Reactivator
                 { 2,  9461 }, -- Charged Gear
@@ -855,10 +803,6 @@ data["Gnomeregan"] = {
 data["RazorfenKraul"] = {
     MapID = 491,
     InstanceID = 47,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "RazorfenKraul",
-    AtlasMapFile = "CL_RazorfenKraul",
-    AtlasMapFile_AL = "RazorfenKraul",
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({25, 29, 38},{17, 24, 27}),
@@ -868,7 +812,6 @@ data["RazorfenKraul"] = {
             npcID = 4424,
             Level = GetForVersion(30,26),
             DisplayIDs = {{6097}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  6681 }, -- Thornspike
             },
@@ -878,7 +821,6 @@ data["RazorfenKraul"] = {
             npcID = 4428,
             Level = GetForVersion(30,27),
             DisplayIDs = {{4644}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  2816 }, -- Death Speaker Scepter
                 { 3,  6685 }, -- Death Speaker Mantle
@@ -890,7 +832,6 @@ data["RazorfenKraul"] = {
             npcID = 4420,
             Level = GetForVersion(32,27),
             DisplayIDs = {{4652}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  6687 }, -- Corpsemaker
                 { 3,  6686 }, -- Tusken Helm
@@ -901,7 +842,6 @@ data["RazorfenKraul"] = {
             npcID = 4438,
             Level = GetForVersion({29, 30},27),
             DisplayIDs = {{6078}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  6679 }, -- Armor Piercer
             },
@@ -911,7 +851,6 @@ data["RazorfenKraul"] = {
             npcID = 4422,
             Level = GetForVersion(33,27),
             DisplayIDs = {{2450}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  6691 }, -- Swinetusk Shank
                 { 3,  6690 }, -- Ferine Leggings
@@ -922,7 +861,6 @@ data["RazorfenKraul"] = {
             npcID = 4425,
             Level = GetForVersion(32,27),
             DisplayIDs = {{4735}},
-            AtlasMapBossID = 6,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  6695 }, -- Stygian Bone Amulet
@@ -935,7 +873,6 @@ data["RazorfenKraul"] = {
             npcID = 4421,
             Level = GetForVersion(33,27),
             DisplayIDs = {{4642}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  6693 }, -- Agamaggan's Clutch
                 { 2,  6694 }, -- Heart of Agamaggan
@@ -948,7 +885,6 @@ data["RazorfenKraul"] = {
             npcID = 4842,
             Level = GetForVersion(32,27),
             DisplayIDs = {{6102}},
-            AtlasMapBossID = 9,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  6689 }, -- Wind Spirit Staff
@@ -979,10 +915,6 @@ data["ScarletMonasteryGraveyard"] = {
     InstanceID = 189,
     SubAreaIDs = { 21379, 24000, 23805 },
     name = C_Map.GetAreaInfo(796) .." - ".. AL["Graveyard"],
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "ScarletMonastery",
-    AtlasMapFile = {"CL_SMGraveyard", "CL_ScarletMonasteryEnt"},
-    AtlasMapFile_AL = {"SMGraveyard", "SMEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({20, 26, 36},{20, 30, 32}),
@@ -994,7 +926,6 @@ data["ScarletMonasteryGraveyard"] = {
             Level = 32,
             DisplayIDs = {{2044}},
             SubAreaID = 21379,
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  7682 }, -- Torturing Poker
                 { 3,  7683 }, -- Bloody Brass Knuckles
@@ -1006,7 +937,6 @@ data["ScarletMonasteryGraveyard"] = {
             Level = GetForVersion(33,32),
             DisplayIDs = {{5534}},
             SubAreaID = 24000,
-            AtlasMapBossID = "1'",
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  7709 }, -- Blighted Leggings
@@ -1020,7 +950,6 @@ data["ScarletMonasteryGraveyard"] = {
             Level = GetForVersion(33,32),
             DisplayIDs = {{5230}},
             specialType = "rare",
-            AtlasMapBossID = "1'",
             [NORMAL_DIFF] = {
                 { 1,  7691 }, -- Embalmed Shroud
                 { 2,  7690 }, -- Ebon Vise
@@ -1032,7 +961,6 @@ data["ScarletMonasteryGraveyard"] = {
             npcID = 6489,
             Level = GetForVersion(33,32),
             DisplayIDs = {{5231}},
-            AtlasMapBossID = "1'",
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  7688 }, -- Ironspine's Ribcage
@@ -1046,7 +974,6 @@ data["ScarletMonasteryGraveyard"] = {
             Level = GetForVersion(33,32),
             SubAreaID = 23805,
             DisplayIDs = {{11396}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  7685 }, -- Orb of the Forgotten Seer
                 { 3,  7684 }, -- Bloodmage Mantle
@@ -1076,7 +1003,6 @@ data["ScarletMonasteryGraveyard"] = {
             name = AL["Scorn"],
             npcID = 14693,
             DisplayIDs = {{16197}},
-            AtlasMapBossID = 1,
             specialType = "scourgeInvasion",
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -1090,7 +1016,6 @@ data["ScarletMonasteryGraveyard"] = {
             npcID = 23682,
             Level = 87,
             DisplayIDs = {{22351}},
-            AtlasMapBossID = nil,
             ExtraList = true,
             [NORMAL_DIFF] = {
                 { 1, 71327 }, -- Band of Ghoulish Glee
@@ -1119,10 +1044,6 @@ data["ScarletMonasteryLibrary"] = {
     InstanceID = 189,
     SubAreaIDs = { 21426, 21444, 21420 },
     name = C_Map.GetAreaInfo(796) .." - ".. AL["Library"],
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "ScarletMonastery",
-    AtlasMapFile = {"CL_SMLibrary", "CL_ScarletMonasteryEnt"},
-    AtlasMapFile_AL = {"SMLibrary", "SMEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({20, 29, 39},{20, 33, 35}),
@@ -1134,7 +1055,6 @@ data["ScarletMonasteryLibrary"] = {
             Level = 34,
             SubAreaID = 21444,
             DisplayIDs = {{2040}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  7710 }, -- Loksey's Training Stick
                 { 3,  7756 }, -- Dog Training Gloves
@@ -1147,7 +1067,6 @@ data["ScarletMonasteryLibrary"] = {
             Level = GetForVersion(37,34),
             SubAreaID = 21420,
             DisplayIDs = {{5266}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  7714 }, -- Hypnotic Blade
                 { 2,  7713 }, -- Illusionary Rod
@@ -1188,7 +1107,6 @@ data["ScarletMonasteryLibrary"] = {
         {
             name = AL["Doan's Strongbox"],
             ExtraList = true,
-            AtlasMapBossID = "1'",
             [NORMAL_DIFF] = {
                 { 1,  7146 }, -- The Scarlet Key
             },
@@ -1202,10 +1120,6 @@ data["ScarletMonasteryArmory"] = {
     InstanceID = 189,
     SubAreaIDs = { 21460, 21455, 21448, 21457 },
     name = C_Map.GetAreaInfo(796) .." - ".. AL["Armory"],
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "ScarletMonastery",
-    AtlasMapFile = {"CL_SMArmory", "CL_ScarletMonasteryEnt"},
-    AtlasMapFile_AL = {"SMArmory", "SMEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({20, 32, 42},{20, 35, 37}),
@@ -1217,7 +1131,6 @@ data["ScarletMonasteryArmory"] = {
             Level = GetForVersion(40,37),
             SubAreaID = 21448,
             DisplayIDs = {{2041}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  7719 }, -- Raging Berserker's Helm
                 { 2,  7718 }, -- Herod's Shoulder
@@ -1264,10 +1177,6 @@ data["ScarletMonasteryCathedral"] = {
     InstanceID = 189,
     SubAreaIDs = { 21401, 21410 },
     name = C_Map.GetAreaInfo(796) .." - ".. AL["Cathedral"],
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "ScarletMonastery",
-    AtlasMapFile = {"CL_SMCathedral", "CL_ScarletMonasteryEnt"},
-    AtlasMapFile_AL = {"SMCathedral", "SMEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({20, 35, 45},{20, 36, 40}),
@@ -1278,7 +1187,6 @@ data["ScarletMonasteryCathedral"] = {
             npcID = 4542,
             Level = 40,
             DisplayIDs = {{2605}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  19507 }, -- Inquisitor's Shawl
                 { 2,  19508 }, -- Branded Leather Bracers
@@ -1290,7 +1198,6 @@ data["ScarletMonasteryCathedral"] = {
             npcID = 3976,
             Level = GetForVersion(42,40),
             DisplayIDs = {{2042}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  7724 }, -- Gauntlets of Divinity
                 { 2,  10330 }, -- Scarlet Leggings
@@ -1303,7 +1210,6 @@ data["ScarletMonasteryCathedral"] = {
             npcID = 3977,
             Level = GetForVersion(42,40),
             DisplayIDs = {{2043}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  7720 }, -- Whitemane's Chapeau
                 { 2,  7722 }, -- Triune Amulet
@@ -1349,10 +1255,6 @@ data["ScarletMonasteryCathedral"] = {
 data["RazorfenDowns"] = {
     MapID = 722,
     InstanceID = 129,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "RazorfenDowns",
-    AtlasMapFile = "CL_RazorfenDowns",
-    AtlasMapFile_AL = "RazorfenDowns",
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({35, 37, 46},{25, 34, 37}),
@@ -1362,7 +1264,6 @@ data["RazorfenDowns"] = {
             npcID = 7355,
             Level = GetForVersion(40,37),
             DisplayIDs = {{7845}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  10776 }, -- Silky Spider Cape
                 { 2,  10775 }, -- Carapace of Tuten'kash
@@ -1374,7 +1275,6 @@ data["RazorfenDowns"] = {
             npcID = 7357,
             Level = GetForVersion(39,37),
             DisplayIDs = {{8055}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  10769 }, -- Glowing Eye of Mordresh
                 { 2,  10771 }, -- Deathmage Sash
@@ -1386,7 +1286,6 @@ data["RazorfenDowns"] = {
             npcID = 8567,
             Level = GetForVersion(40,37),
             DisplayIDs = {{7864}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  10774 }, -- Fleshhide Shoulders
                 { 3,  10772 }, -- Glutton's Cleaver
@@ -1397,7 +1296,6 @@ data["RazorfenDowns"] = {
             npcID = 7354,
             Level = GetForVersion(40,37),
             DisplayIDs = {{11382}},
-            AtlasMapBossID = 5,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  10768 }, -- Boar Champion's Belt
@@ -1410,7 +1308,6 @@ data["RazorfenDowns"] = {
             npcID = 7358,
             Level = GetForVersion(41,37),
             DisplayIDs = {{7971}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  10763 }, -- Icemetal Barbute
                 { 2,  10762 }, -- Robes of the Lich
@@ -1424,7 +1321,6 @@ data["RazorfenDowns"] = {
             npcID = 7356,
             Level = GetForVersion(40,37),
             DisplayIDs = {{6124}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  10766 }, -- Plaguerot Sprig
                 { 3,  10760 }, -- Swine Fists
@@ -1452,7 +1348,6 @@ data["RazorfenDowns"] = {
             name = AL["Lady Falther'ess"],
             npcID = 14686,
             DisplayIDs = {{10698}},
-            AtlasMapBossID = 2,
             specialType = "scourgeInvasion",
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -1464,7 +1359,6 @@ data["RazorfenDowns"] = {
             name = AL["Henry Stern"],
             npcID = 8696,
             DisplayIDs = {{8029}},
-            AtlasMapBossID = 2,
             ExtraList = true,
             [NORMAL_DIFF] = {
                 { 1,  3826 }, -- Mighty Troll's Blood Potion
@@ -1477,12 +1371,8 @@ data["RazorfenDowns"] = {
 data["Uldaman"] = {
     MapID = 1337, -- just no...
     InstanceID = 70,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "Uldaman",
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
-    AtlasMapFile = {"CL_Uldaman", "CL_UldamanEnt"},
-    AtlasMapFile_AL = {"Uldaman", "UldamanEnt"},
     LevelRange = GetForVersion({30, 41, 51},{30, 36, 40}),
     items = {
         { -- UldEric
@@ -1490,7 +1380,6 @@ data["Uldaman"] = {
             npcID = 6907,
             Level = GetForVersion(40,39),
             DisplayIDs = {{5708}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  9394 }, -- Horned Viking Helmet
                 { 3,  9398 }, -- Worn Running Boots
@@ -1502,7 +1391,6 @@ data["Uldaman"] = {
             npcID = 6906,
             Level = GetForVersion(41,39),
             DisplayIDs = {{5710}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  9401 }, -- Nordic Longshank
                 { 3,  9399 }, -- Precision Arrow
@@ -1514,7 +1402,6 @@ data["Uldaman"] = {
             npcID = 6908,
             Level = GetForVersion(40,39),
             DisplayIDs = {{5709}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  9404 }, -- Olaf's All Purpose Shield
                 { 3,  9403 }, -- Battered Viking Shield
@@ -1526,7 +1413,6 @@ data["Uldaman"] = {
             npcID = 6910,
             Level = GetForVersion(40,39),
             DisplayIDs = {{5945}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  9389 }, -- Revelosh's Spaulders
                 { 2,  9388 }, -- Revelosh's Armguards
@@ -1540,7 +1426,6 @@ data["Uldaman"] = {
             npcID = 7228,
             Level = GetForVersion(40,39),
             DisplayIDs = {{6089}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  9409 }, -- Ironaya's Bracers
                 { 2,  9407 }, -- Stoneweaver Leggings
@@ -1552,7 +1437,6 @@ data["Uldaman"] = {
             npcID = 7023,
             Level = GetForVersion(42,40),
             DisplayIDs = {{5285}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  8053 }, -- Obsidian Power Source
             },
@@ -1562,7 +1446,6 @@ data["Uldaman"] = {
             npcID = 7206,
             Level = GetForVersion(44,40),
             DisplayIDs = {{10798}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  9410 }, -- Cragfists
                 { 3,  9411 }, -- Rockshard Pauldrons
@@ -1573,7 +1456,6 @@ data["Uldaman"] = {
             npcID = 7291,
             Level = GetForVersion(45,40),
             DisplayIDs = {{6059}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  11310 }, -- Flameseer Mantle
                 { 2,  9412 }, -- Galgann's Fireblaster
@@ -1586,7 +1468,6 @@ data["Uldaman"] = {
             npcID = 4854,
             Level = GetForVersion(45,40),
             DisplayIDs = {{11165}},
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  9415 }, -- Grimlok's Tribal Vestments
                 { 2,  9416 }, -- Grimlok's Charge
@@ -1599,7 +1480,6 @@ data["Uldaman"] = {
             npcID = 2748,
             Level = GetForVersion(47,40),
             DisplayIDs = {{5988}},
-            AtlasMapBossID = 10,
             [NORMAL_DIFF] = {
                 { 1,  11118 }, -- Archaedic Stone
                 { 2,  9413 }, -- The Rockpounder
@@ -1640,7 +1520,6 @@ data["Uldaman"] = {
         { -- UldBaelogsChest
             name = AL["Baelog's Chest"],
             ExtraList = true,
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  7740 }, -- Gni'kiv Medallion
             },
@@ -1648,7 +1527,6 @@ data["Uldaman"] = {
         { -- UldConspicuousUrn
             name = AL["Conspicuous Urn"],
             ExtraList = true,
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  7671 }, -- Shattered Necklace Topaz
             },
@@ -1656,7 +1534,6 @@ data["Uldaman"] = {
         { -- UldShadowforgeCache
             name = AL["Shadowforge Cache"],
             ExtraList = true,
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  7669 }, -- Shattered Necklace Ruby
             },
@@ -1664,7 +1541,6 @@ data["Uldaman"] = {
         { -- UldTabletofWill
             name = AL["Tablet of Will"],
             ExtraList = true,
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  5824 }, -- Tablet of Will
             },
@@ -1675,10 +1551,6 @@ data["Uldaman"] = {
 data["Zul'Farrak"] = {
     MapID = 1176,
     InstanceID = 209,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "Zul'Farrak",
-    AtlasMapFile = "CL_ZulFarrak",
-    AtlasMapFile_AL = "ZulFarrak",
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({39, 44, 54},{35, 42, 46}),
@@ -1688,7 +1560,6 @@ data["Zul'Farrak"] = {
             npcID = 8127,
             Level = GetForVersion(48,46),
             DisplayIDs = {{7353}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  9640 }, -- Vice Grips
                 { 2,  9641 }, -- Lifeblood Amulet
@@ -1701,7 +1572,6 @@ data["Zul'Farrak"] = {
             npcID = 7272,
             Level = GetForVersion({45, 46},46),
             DisplayIDs = {{6696}},
-            AtlasMapBossID = 2,
             specialType = "quest",
             [NORMAL_DIFF] = {
                 { 1,  10660 }, -- First Mosh'aru Tablet
@@ -1713,7 +1583,6 @@ data["Zul'Farrak"] = {
             Level = 45,
             DisplayIDs = {{9291}},
             IgnoreAsSource = true,
-            --AtlasMapBossID = 2,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  9523, [ATLASLOOT_IT_AMOUNT1] = "2-4" }, -- First Mosh'aru Tablet
@@ -1724,7 +1593,6 @@ data["Zul'Farrak"] = {
             npcID = 7271,
             Level = 46,
             DisplayIDs = {{6434}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  18083 }, -- Jumanza Grips
                 { 2,  18082 }, -- Zum'rah's Vexing Cane
@@ -1735,7 +1603,6 @@ data["Zul'Farrak"] = {
             npcID = 7796,
             Level = GetForVersion({45, 46},45),
             DisplayIDs = {{6690}},
-            AtlasMapBossID = 4,
             specialType = "quest",
             [NORMAL_DIFF] = {
                 { 1,  9471 }, -- Nekrum's Medallion
@@ -1746,7 +1613,6 @@ data["Zul'Farrak"] = {
             npcID = 7275,
             Level = GetForVersion(47,46),
             DisplayIDs = {{6441}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  9470 }, -- Bad Mojo Mask
                 { 2,  9473 }, -- Jinxed Hoodoo Skin
@@ -1759,7 +1625,6 @@ data["Zul'Farrak"] = {
             npcID = 10081,
             Level = GetForVersion(47,46),
             DisplayIDs = {{9292}},
-            AtlasMapBossID = 4,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  12471 }, -- Desertwalker Cane
@@ -1770,7 +1635,6 @@ data["Zul'Farrak"] = {
             npcID = 7274,
             Level = 46,
             DisplayIDs = {{6440}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  8444 }, -- Executioner's Key
             },
@@ -1780,7 +1644,6 @@ data["Zul'Farrak"] = {
             npcID = 7604,
             Level = 45,
             DisplayIDs = {{6433}},
-            AtlasMapBossID = 5,
             specialType = "quest",
             [NORMAL_DIFF] = {
                 { 1,  8548 }, -- Divino-matic Rod
@@ -1791,7 +1654,6 @@ data["Zul'Farrak"] = {
             npcID = 7795,
             Level = 46,
             DisplayIDs = {{6685}},
-            AtlasMapBossID = 6,
             specialType = "quest",
             [NORMAL_DIFF] = {
                 { 1,  9234 }, -- Tiara of the Deep
@@ -1803,7 +1665,6 @@ data["Zul'Farrak"] = {
             npcID = 7273,
             Level = 46,
             DisplayIDs = {{7271}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  9469 }, -- Gahz'rilla Scale Armor
                 { 3,  9467 }, -- Gahz'rilla Fang
@@ -1814,7 +1675,6 @@ data["Zul'Farrak"] = {
             npcID = 7267,
             Level = GetForVersion(48,46),
             DisplayIDs = {{6439}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  9479 }, -- Embrace of the Lycan
                 { 2,  9476 }, -- Big Bad Pauldrons
@@ -1828,7 +1688,6 @@ data["Zul'Farrak"] = {
             npcID = 10082,
             Level = 45,
             DisplayIDs = {{9293}},
-            AtlasMapBossID = 8,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  12470 }, -- Sandstalker Ankleguards
@@ -1858,10 +1717,6 @@ data["Zul'Farrak"] = {
 data["Maraudon"] = {
     MapID = 2100,
     InstanceID = 349,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "Maraudon",
-    AtlasMapFile = {"CL_Maraudon", "CL_MaraudonEnt"},
-    AtlasMapFile_AL = {"Maraudon", "MaraudonEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({25, 46, 55},{30, 43, 48}),
@@ -1870,7 +1725,6 @@ data["Maraudon"] = {
             name = AL["Veng"],
             npcID = 13738,
             DisplayIDs = {{9418}},
-            AtlasMapBossID = 1,
             specialType = "quest",
             [NORMAL_DIFF] = {
                 { 1,  17765 }, -- Gem of the Fifth Khan
@@ -1881,7 +1735,6 @@ data["Maraudon"] = {
             npcID = 13282,
             Level = GetForVersion(48,46),
             DisplayIDs = {{11172}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  17746 }, -- Noxxion's Shackles
                 { 2,  17744 }, -- Heart of Noxxion
@@ -1893,7 +1746,6 @@ data["Maraudon"] = {
             npcID = 12258,
             Level = GetForVersion(48,46),
             DisplayIDs = {{12389}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  17749 }, -- Phytoskin Spaulders
                 { 2,  17748 }, -- Vinerot Sandals
@@ -1905,7 +1757,6 @@ data["Maraudon"] = {
             name = AL["Maraudos"],
             npcID = 13739,
             DisplayIDs = {{9441}},
-            AtlasMapBossID = 4,
             specialType = "quest",
             [NORMAL_DIFF] = {
                 { 1,  17764 }, -- Gem of the Fourth Khan
@@ -1916,7 +1767,6 @@ data["Maraudon"] = {
             npcID = 12236,
             Level = GetForVersion(47,44),
             DisplayIDs = {{12334}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  17755 }, -- Satyrmane Sash
                 { 2,  17754 }, -- Infernal Trickster Leggings
@@ -1928,7 +1778,6 @@ data["Maraudon"] = {
             npcID = 12237,
             Level = 48,
             DisplayIDs = {{9014}},
-            AtlasMapBossID = 6,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  17767 }, -- Bloomsprout Headpiece
@@ -1941,7 +1790,6 @@ data["Maraudon"] = {
             npcID = 12225,
             Level = GetForVersion(49,46),
             DisplayIDs = {{12350}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  17740 }, -- Soothsayer's Headdress
                 { 2,  17739 }, -- Grovekeeper's Drape
@@ -1953,7 +1801,6 @@ data["Maraudon"] = {
             npcID = 12203,
             Level = GetForVersion(50,48),
             DisplayIDs = {{12293}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  17734 }, -- Helm of the Mountain
                 { 2,  17736 }, -- Rockgrip Gauntlets
@@ -1966,7 +1813,6 @@ data["Maraudon"] = {
             npcID = 13601,
             Level = GetForVersion(50,48),
             DisplayIDs = {{7125}},
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  17718 }, -- Gizlock's Hypertech Buckler
                 { 2,  17717 }, -- Megashot Rifle
@@ -1978,7 +1824,6 @@ data["Maraudon"] = {
             npcID = 13596,
             Level = GetForVersion(50,48),
             DisplayIDs = {{13589}},
-            AtlasMapBossID = 10,
             [NORMAL_DIFF] = {
                 { 1,  17732 }, -- Rotgrip Mantle
                 { 2,  17728 }, -- Albino Crocscale Boots
@@ -1990,7 +1835,6 @@ data["Maraudon"] = {
             npcID = 12201,
             Level = GetForVersion(51,48),
             DisplayIDs = {{12292}},
-            AtlasMapBossID = 11,
             [NORMAL_DIFF] = {
                 { 1,  17780 }, -- Blade of Eternal Darkness
                 { 3,  17715 }, -- Eye of Theradras
@@ -2006,9 +1850,6 @@ data["Maraudon"] = {
             name = AL["The Nameless Prophet"],
             npcID = 13718,
             DisplayIDs = {{9426}},
-            AtlasMapFile = "CL_MaraudonEnt",
-            AtlasMapFile_AL = "MaraudonEnt",
-            AtlasMapBossID = "*A",
             ExtraList = true,
             specialType = "quest",
             [NORMAL_DIFF] = {
@@ -2019,9 +1860,6 @@ data["Maraudon"] = {
             name = AL["Kolk"],
             npcID = 13742,
             DisplayIDs = {{4860}},
-            AtlasMapFile = "CL_MaraudonEnt",
-            AtlasMapFile_AL = "MaraudonEnt",
-            AtlasMapBossID = "*1",
             ExtraList = true,
             specialType = "quest",
             [NORMAL_DIFF] = {
@@ -2032,9 +1870,6 @@ data["Maraudon"] = {
             name = AL["Gelk"],
             npcID = 13741,
             DisplayIDs = {{9427}},
-            AtlasMapFile = "CL_MaraudonEnt",
-            AtlasMapFile_AL = "MaraudonEnt",
-            AtlasMapBossID = "*2",
             ExtraList = true,
             specialType = "quest",
             [NORMAL_DIFF] = {
@@ -2045,9 +1880,6 @@ data["Maraudon"] = {
             name = AL["Magra"],
             npcID = 13740,
             DisplayIDs = {{9433}},
-            AtlasMapFile = "CL_MaraudonEnt",
-            AtlasMapFile_AL = "MaraudonEnt",
-            AtlasMapBossID = "*3",
             ExtraList = true,
             specialType = "quest",
             [NORMAL_DIFF] = {
@@ -2060,10 +1892,6 @@ data["Maraudon"] = {
 data["TheTempleOfAtal'Hakkar"] = {
     MapID = 1477,
     InstanceID = 109,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "TheTempleOfAtal'Hakkar",
-    AtlasMapFile = { "CL_TheSunkenTemple", "CL_TheSunkenTempleEnt" },
-    AtlasMapFile_AL = { "TheSunkenTemple", "TheSunkenTempleEnt" },
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({45, 50, 60},{35, 47, 50}),
@@ -2073,7 +1901,6 @@ data["TheTempleOfAtal'Hakkar"] = {
             npcID = 5710,
             Level = GetForVersion(54,50),
             DisplayIDs = {{6708}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  10806 }, -- Vestments of the Atal'ai Prophet
                 { 2,  10808 }, -- Gloves of the Atal'ai Prophet
@@ -2085,7 +1912,6 @@ data["TheTempleOfAtal'Hakkar"] = {
             npcID = 5711,
             Level = GetForVersion(53,49),
             DisplayIDs = {{6709}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  10805 }, -- Eater of the Dead
                 { 2,  10803 }, -- Blade of the Wretched
@@ -2097,7 +1923,6 @@ data["TheTempleOfAtal'Hakkar"] = {
             npcID = 5721,
             Level = GetForVersion(53,50),
             DisplayIDs = {{7553}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  12465 }, -- Nightfall Drape
                 { 2,  12466 }, -- Dawnspire Cord
@@ -2114,7 +1939,6 @@ data["TheTempleOfAtal'Hakkar"] = {
             npcID = 5720,
             Level = GetForVersion(51,50),
             DisplayIDs = {{6375}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  12465 }, -- Nightfall Drape
                 { 2,  12466 }, -- Dawnspire Cord
@@ -2131,7 +1955,6 @@ data["TheTempleOfAtal'Hakkar"] = {
             npcID = 5722,
             Level = GetForVersion(53,50),
             DisplayIDs = {{9584}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  12465 }, -- Nightfall Drape
                 { 2,  12466 }, -- Dawnspire Cord
@@ -2148,7 +1971,6 @@ data["TheTempleOfAtal'Hakkar"] = {
             npcID = 5719,
             Level = GetForVersion(52,50),
             DisplayIDs = {{7975}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  12465 }, -- Nightfall Drape
                 { 2,  12466 }, -- Dawnspire Cord
@@ -2165,7 +1987,6 @@ data["TheTempleOfAtal'Hakkar"] = {
             npcID = 5709,
             Level = GetForVersion(55,50),
             DisplayIDs = {{7806}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  10847 }, -- Dragon's Call
                 { 3,  10833 }, -- Horns of Eranikus
@@ -2207,10 +2028,6 @@ data["BlackrockDepths"] = {
     MapID = 1584,
     InstanceID = 230,
     SubAreaIDs = { 26758, 26761, 26747, 26733, 26755, 26740, 26751, 26759, 26735, 26769, 26768, 26766, 26781, 26765, 26764, 26742, 26750, 26745, 26784, 26749 },
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "BlackrockDepths",
-    AtlasMapFile = {"CL_BlackrockDepths", "CL_BlackrockMountainEnt"},
-    AtlasMapFile_AL = {"BlackrockDepths", "BlackrockMountainEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({42, 52, 60},{40, 48, 56}),
@@ -2221,7 +2038,6 @@ data["BlackrockDepths"] = {
             Level = 51,
             SubAreaID = 26735,
             DisplayIDs = {{5781}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  22234 }, -- Mantle of Lost Hope
                 { 2,  11632 }, -- Earthslag Shoulders
@@ -2238,7 +2054,6 @@ data["BlackrockDepths"] = {
             Level = 52,
             SubAreaID = 26733,
             DisplayIDs = {{8761}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  11626 }, -- Blackveil Cape
                 { 2,  11624 }, -- Kentic Amice
@@ -2253,7 +2068,6 @@ data["BlackrockDepths"] = {
             Level = 52,
             SubAreaID = 26735,
             DisplayIDs = {{9212}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  11623 }, -- Spritecaster Cape
                 { 2,  11627 }, -- Fleetfoot Greaves
@@ -2269,7 +2083,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(56,52),
             SubAreaID = 26742,
             DisplayIDs = {{8760}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  11726 }, -- Savage Gladiator Chain
                 { 2,  22271 }, -- Leggings of Frenzied Magic
@@ -2283,7 +2096,6 @@ data["BlackrockDepths"] = {
             npcID = 9028,
             Level = GetForVersion(54,52),
             DisplayIDs = {{7873}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  11722 }, -- Dregmetal Spaulders
                 { 2,  11703 }, -- Stonewall Girdle
@@ -2299,7 +2111,6 @@ data["BlackrockDepths"] = {
             npcID = 9029,
             Level = GetForVersion(54,52),
             DisplayIDs = {{523}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  11685 }, -- Splinthide Shoulders
                 { 2,  11679 }, -- Rubicund Armguards
@@ -2313,7 +2124,6 @@ data["BlackrockDepths"] = {
             npcID = 9030,
             Level = GetForVersion(54,53),
             DisplayIDs = {{11538}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  11665 }, -- Ogreseer Fists
                 { 2,  11662 }, -- Ban'thok Sash
@@ -2327,7 +2137,6 @@ data["BlackrockDepths"] = {
             npcID = 9031,
             Level = GetForVersion(54,52),
             DisplayIDs = {{3004}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  11678 }, -- Carapace of Anub'shiah
                 { 2,  11677 }, -- Graverot Cape
@@ -2341,7 +2150,6 @@ data["BlackrockDepths"] = {
             npcID = 9032,
             Level = GetForVersion(53,52),
             DisplayIDs = {{8271}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  11633 }, -- Spiderfang Carapace
                 { 2,  11634 }, -- Silkweb Gloves
@@ -2356,7 +2164,6 @@ data["BlackrockDepths"] = {
             Level = 52,
             SubAreaID = 26745,
             DisplayIDs = {{8762}},
-            AtlasMapBossID = 7,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  11747 }, -- Flamestrider Robes
@@ -2371,7 +2178,6 @@ data["BlackrockDepths"] = {
             SubAreaID = 26758,
             npcID = {9438, 9442, 9443, 9439, 9437, 9441},
             DisplayIDs = {{8592},{8595},{8596},{8593},{8591},{8594}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1, "INV_Box_01", nil, AL["Dark Keeper"], nil },
                 { 2,  11197 }, -- Dark Keeper Key
@@ -2396,7 +2202,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(56,54),
             SubAreaID = 26758,
             DisplayIDs = {{9089}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  11782 }, -- Boreal Mantle
                 { 2,  22241 }, -- Dark Warder's Pauldrons
@@ -2410,7 +2215,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(55,53),
             SubAreaID = 26758,
             DisplayIDs = {{9019}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  11755 }, -- Verek's Collar
                 { 2,  22242 }, -- Verek's Leash
@@ -2422,7 +2226,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(55,54),
             SubAreaID = 26758,
             DisplayIDs = {{8655}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  22205 }, -- Black Steel Bindings
                 { 2,  22255 }, -- Magma Forged Band
@@ -2436,7 +2239,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(54,53),
             SubAreaID = 26759,
             DisplayIDs = {{8704}},
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  11839 }, -- Chief Architect's Monocle
                 { 2,  22223 }, -- Foreman's Head Protector
@@ -2451,7 +2253,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(55,53),
             SubAreaID = 26750,
             DisplayIDs = {{1204}},
-            AtlasMapBossID = 10,
             [NORMAL_DIFF] = {
                 { 1,  11766 }, -- Flameweave Cuffs
                 { 2,  11764 }, -- Cinderhide Armsplints
@@ -2467,7 +2268,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(54,52),
             SubAreaID = 26747,
             DisplayIDs = {{12162}},
-            AtlasMapBossID = 11,
             [NORMAL_DIFF] = {
                 { 1,  11807 }, -- Sash of the Burning Heart
                 { 2,  11802 }, -- Lavacrest Leggings
@@ -2481,7 +2281,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(57,55),
             SubAreaID = 26749,
             DisplayIDs = {{8756}},
-            AtlasMapBossID = 13,
             [NORMAL_DIFF] = {
                 { 1,  11820 }, -- Royal Decorated Armor
                 { 2,  11821 }, -- Warstrife Leggings
@@ -2497,7 +2296,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(57,55),
             SubAreaID = 26781,
             DisplayIDs = {{8759}},
-            AtlasMapBossID = 14,
             [NORMAL_DIFF] = {
                 { 1,  11823 }, -- Luminary Kilt
                 { 2,  11822 }, -- Omnicast Boots
@@ -2511,7 +2309,6 @@ data["BlackrockDepths"] = {
             npcID = {9537, 12944, 9543, 9499},
             Level = 55,
             DisplayIDs = {{8658},{14666},{8667},{8652}},
-            AtlasMapBossID = 15,
             [NORMAL_DIFF] = {
                 { 1, "INV_Box_01", nil, AL["Hurley Blackbreath"], nil },
                 { 2,  11735 }, -- Ragefury Eyepatch
@@ -2541,7 +2338,6 @@ data["BlackrockDepths"] = {
             Level = 55,
             SubAreaID = 26751,
             DisplayIDs = {{8177}},
-            AtlasMapBossID = 15,
             [NORMAL_DIFF] = {
                 { 1,  22212 }, -- Golem Fitted Pauldrons
                 { 2,  11745 }, -- Fists of Phalanx
@@ -2555,7 +2351,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(57,55),
             SubAreaID = 26761,
             DisplayIDs = {{8329}},
-            AtlasMapBossID = 16,
             [NORMAL_DIFF] = {
                 { 1,  11808 }, -- Circle of Flame
                 { 3,  11812 }, -- Cape of the Fire Salamander
@@ -2571,7 +2366,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(57,56),
             SubAreaID = 26764,
             DisplayIDs = {{8270}},
-            AtlasMapBossID = 17,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  22245 }, -- Soot Encrusted Footwear
@@ -2587,7 +2381,6 @@ data["BlackrockDepths"] = {
             ObjectID = 169243,
             Level = GetForVersion({55, 57},{55, 56}),
             DisplayIDs = {{8690},{8686},{8692},{8689},{8691},{8687},{8688}},
-            AtlasMapBossID = 18,
             [NORMAL_DIFF] = {
                 { 1,  11925 }, -- Ghostshroud
                 { 2,  11926 }, -- Deathdealer Breastplate
@@ -2605,7 +2398,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(57,56),
             SubAreaID = 26768,
             DisplayIDs = {{12162}},
-            AtlasMapBossID = 20,
             [NORMAL_DIFF] = {
                 { 1,  11746 }, -- Golem Skull Helm
                 { 2,  11935 }, -- Magmus Stone
@@ -2620,7 +2412,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(58,55),
             SubAreaID = 26769,
             DisplayIDs = {{8705}},
-            AtlasMapBossID = 21,
             [NORMAL_DIFF] = {
                 { 1,  12557 }, -- Ebonsteel Spaulders
                 { 2,  12554 }, -- Hands of the Exalted Herald
@@ -2634,7 +2425,6 @@ data["BlackrockDepths"] = {
             Level = GetForVersion(59,56),
             SubAreaID = 26769,
             DisplayIDs = {{8807}},
-            AtlasMapBossID = 21,
             [NORMAL_DIFF] = {
                 { 1,  11684 }, -- Ironfoe
                 { 3,  11933 }, -- Imperial Jewel
@@ -2692,7 +2482,6 @@ data["BlackrockDepths"] = {
             name = AL["Theldren"].." - "..format(AL["Tier %s Sets"], "0.5"),
             npcID = 16059,
             DisplayIDs = {{15981}},
-            AtlasMapBossID = 6,
             Level = 60,
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -2706,7 +2495,6 @@ data["BlackrockDepths"] = {
             name = AL["Coren Direbrew"],
             npcID = 23872,
             DisplayIDs = {{21824}},
-            AtlasMapBossID = 15,
             Level = 87,
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -2732,10 +2520,6 @@ data["LowerBlackrockSpire"] = {
     MapID = 1583,
     InstanceID = 229,
     SubAreaIDs = { 26683, 26718, 26711, 26713, 26686, 32528, 26688 },
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "LowerBlackrockSpire",
-    AtlasMapFile = {"CL_BlackrockSpireLower", "CL_BlackrockMountainEnt"},
-    AtlasMapFile_AL = {"BlackrockSpireLower", "BlackrockMountainEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({48, 55, 60}, {45, 54, 60}),
@@ -2745,7 +2529,6 @@ data["LowerBlackrockSpire"] = {
             npcID = 10263,
             Level = {56, 57},
             DisplayIDs = {{5047}},
-            AtlasMapBossID = 1,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  13181 }, -- Demonskin Gloves
@@ -2757,7 +2540,6 @@ data["LowerBlackrockSpire"] = {
             npcID = 9219,
             Level = 57,
             DisplayIDs = {{11574}},
-            AtlasMapBossID = 4,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  12608 }, -- Butcher's Apron
@@ -2770,7 +2552,6 @@ data["LowerBlackrockSpire"] = {
             Level = GetForVersion(59,57),
             SubAreaID = 26713,
             DisplayIDs = {{11565}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  16670 }, -- Boots of Elements
                 { 3,  13166 }, -- Slamshot Shoulders
@@ -2787,7 +2568,6 @@ data["LowerBlackrockSpire"] = {
             npcID = 9218,
             Level = 58,
             DisplayIDs = {{11576}},
-            AtlasMapBossID = 6,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  13284 }, -- Swiftdart Battleboots
@@ -2799,7 +2579,6 @@ data["LowerBlackrockSpire"] = {
             npcID = 9217,
             Level = {57, 58},
             DisplayIDs = {{11578}},
-            AtlasMapBossID = 6,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  13282 }, -- Ogreseer Tower Boots
@@ -2813,7 +2592,6 @@ data["LowerBlackrockSpire"] = {
             Level = 58,
             SubAreaID = 26688,
             DisplayIDs = {{9732}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  16712 }, -- Shadowcraft Gloves
                 { 3,  13257 }, -- Demonic Runed Spaulders
@@ -2830,7 +2608,6 @@ data["LowerBlackrockSpire"] = {
             Level = GetForVersion(59,58),
             SubAreaID = 26688,
             DisplayIDs = {{9733}},
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  16676 }, -- Beaststalker's Gloves
                 { 3,  13177 }, -- Talisman of Evasion
@@ -2846,7 +2623,6 @@ data["LowerBlackrockSpire"] = {
             npcID = 9596,
             Level = 59,
             DisplayIDs = {{9668}},
-            AtlasMapBossID = 12,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  12637 }, -- Backusarian Gauntlets
@@ -2862,7 +2638,6 @@ data["LowerBlackrockSpire"] = {
             Level = 59,
             SubAreaID = 26686,
             DisplayIDs = {{9929}},
-            AtlasMapBossID = 13,
             [NORMAL_DIFF] = {
                 { 1,  16715 }, -- Wildheart Boots
                 { 3,  13244 }, -- Gilded Gauntlets
@@ -2876,7 +2651,6 @@ data["LowerBlackrockSpire"] = {
             Level = 60,
             SubAreaID = 26686,
             DisplayIDs = {{9755}},
-            AtlasMapBossID = 14,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  13185 }, -- Sunderseer Mantle
@@ -2889,7 +2663,6 @@ data["LowerBlackrockSpire"] = {
             npcID = 10584,
             Level = 60,
             DisplayIDs = {{11583}},
-            AtlasMapBossID = 15,
             [NORMAL_DIFF] = {
                 { 1,  13258 }, -- Slaghide Gauntlets
                 { 2,  22232 }, -- Marksman's Girdle
@@ -2904,7 +2677,6 @@ data["LowerBlackrockSpire"] = {
             Level = 59,
             SubAreaID = 32528,
             DisplayIDs = {{9738}},
-            AtlasMapBossID = 16,
             [NORMAL_DIFF] = {
                 { 1,  13247 }, -- Quartermaster Zigris' Footlocker
                 { 3,  13253 }, -- Hands of Power
@@ -2919,7 +2691,6 @@ data["LowerBlackrockSpire"] = {
             Level = 59,
             SubAreaID = 26711,
             DisplayIDs = {{9567}},
-            AtlasMapBossID = 17,
             [NORMAL_DIFF] = {
                 { 1,  13212 }, -- Halycon's Spiked Collar
                 { 2,  22313 }, -- Ironweave Bracers
@@ -2933,7 +2704,6 @@ data["LowerBlackrockSpire"] = {
             Level = 60,
             SubAreaID = 26711,
             DisplayIDs = {{9564}},
-            AtlasMapBossID = 17,
             [NORMAL_DIFF] = {
                 { 1,  16718 }, -- Wildheart Spaulders
                 { 3,  13208 }, -- Bleak Howler Armguards
@@ -2946,7 +2716,6 @@ data["LowerBlackrockSpire"] = {
             npcID = 9718,
             Level = 59,
             DisplayIDs = {{11809}},
-            AtlasMapBossID = 18,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  13203 }, -- Armswake Cloak
@@ -2960,7 +2729,6 @@ data["LowerBlackrockSpire"] = {
             Level = 60,
             SubAreaID = 26718,
             DisplayIDs = {{8711}},
-            AtlasMapBossID = 19,
             [NORMAL_DIFF] = {
                 { 1,  13143 }, -- Mark of the Dragon Lord
                 { 3,  16679 }, -- Beaststalker's Mantle
@@ -3006,7 +2774,6 @@ data["LowerBlackrockSpire"] = {
             npcID = 16080,
             DisplayIDs = {{15997}},
             ExtraList = true,
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  22306 }, -- Ironweave Belt
                 { 2,  22325 }, -- Belt of the Trickster
@@ -3023,10 +2790,6 @@ data["UpperBlackrockSpire"] = {
     MapID = 1583,
     InstanceID = 229,
     SubAreaIDs = { 26670, 26668, 26684, 26662, 26642, 26683, 15492, 26666, 26715 },
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "UpperBlackrockSpire",
-    AtlasMapFile = {"CL_BlackrockSpireUpper", "CL_BlackrockMountainEnt"},
-    AtlasMapFile_AL = {"BlackrockSpireUpper", "BlackrockMountainEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({48, 55, 60}, {45, 58, 60}),
@@ -3037,7 +2800,6 @@ data["UpperBlackrockSpire"] = {
             Level = 60,
             SubAreaID = 26662,
             DisplayIDs = {{2172}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  16672 }, -- Gauntlets of Elements
                 { 3,  12929 }, -- Emberfury Talisman
@@ -3053,7 +2815,6 @@ data["UpperBlackrockSpire"] = {
             Level = 60,
             SubAreaID = 26666,
             DisplayIDs = {{9581}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  16695 }, -- Devout Mantle
                 { 3,  12609 }, -- Polychromatic Visionwrap
@@ -3069,7 +2830,6 @@ data["UpperBlackrockSpire"] = {
             Level = 59,
             SubAreaID = 26642,
             DisplayIDs = {{9686}},
-            AtlasMapBossID = 4,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  12604 }, -- Starfire Tiara
@@ -3083,7 +2843,6 @@ data["UpperBlackrockSpire"] = {
             Level = 61,
             SubAreaID = 26642,
             DisplayIDs = {{10222}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  13502 }, -- Handcrafted Mastersmith Girdle
                 { 2,  13498 }, -- Handcrafted Mastersmith Leggings
@@ -3103,7 +2862,6 @@ data["UpperBlackrockSpire"] = {
             Level = 62,
             SubAreaID = 26670,
             DisplayIDs = {{9806}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  12871 }, -- Chromatic Carapace
                 { 3,  16669 }, -- Pauldrons of Elements
@@ -3120,7 +2878,6 @@ data["UpperBlackrockSpire"] = {
             Level = 62,
             SubAreaID = 26670,
             DisplayIDs = {{9778}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  12590 }, -- Felstriker
                 { 3,  16733 }, -- Spaulders of Valor
@@ -3143,7 +2900,6 @@ data["UpperBlackrockSpire"] = {
             Level = 62,
             SubAreaID = 26684,
             DisplayIDs = {{10193}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  12731 }, -- Pristine Hide of the Beast
                 { 3,  16729 }, -- Lightforge Spaulders
@@ -3166,7 +2922,6 @@ data["UpperBlackrockSpire"] = {
             Level = 62,
             SubAreaID = 26715,
             DisplayIDs = {{10115}},
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  12592 }, -- Blackblade of Shahram
                 { 3,  22267 }, -- Spellweaver's Turban
@@ -3210,7 +2965,6 @@ data["UpperBlackrockSpire"] = {
         {
             name = AL["Darkstone Tablet"],
             ExtraList = true,
-            AtlasMapBossID = 3,
             specialType = "quest",
             [NORMAL_DIFF] = {
                 { 1,  12358 }, -- Darkstone Tablet
@@ -3221,7 +2975,6 @@ data["UpperBlackrockSpire"] = {
             npcID = 16042,
             DisplayIDs = {{14308}},
             ExtraList = true,
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  22302 }, -- Ironweave Cowl
                 { 2,  22340 }, -- Pendant of Celerity
@@ -3241,9 +2994,6 @@ data["DireMaulEast"] = {
     MapID = 2557,
     --InstanceID = 429,
     SubAreaIDs = { 34776, 33730 },
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "DireMaul",
-    AtlasMapFile = {"DireMaulEast", "DireMaulEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = {31, 55, 60},
@@ -3253,7 +3003,6 @@ data["DireMaulEast"] = {
             npcID = 14354,
             Level = 57,
             DisplayIDs = {{7552}},
-            AtlasMapBossID = "1-2",
             [NORMAL_DIFF] = {
                 { 1,  18267 }, -- Recipe: Runn Tum Tuber Surprise
                 { 3,  18249 }, -- Crescent Key
@@ -3264,7 +3013,6 @@ data["DireMaulEast"] = {
             npcID = 11490,
             Level = 57,
             DisplayIDs = {{11335}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  18319 }, -- Fervent Helm
                 { 2,  18313 }, -- Helm of Awareness
@@ -3278,7 +3026,6 @@ data["DireMaulEast"] = {
             npcID = 13280,
             Level = 57,
             DisplayIDs = {{5489}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  18317 }, -- Tempest Talisman
                 { 2,  18322 }, -- Waterspout Boots
@@ -3293,7 +3040,6 @@ data["DireMaulEast"] = {
             npcID = 14327,
             Level = 57,
             DisplayIDs = {{14378}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  18325 }, -- Felhide Cap
                 { 2,  18311 }, -- Quel'dorai Channeling Rod
@@ -3306,7 +3052,6 @@ data["DireMaulEast"] = {
             npcID = 11492,
             Level = 58,
             DisplayIDs = {{14416}},
-            AtlasMapBossID = 5,
             SubAreaID = 33730,
             [NORMAL_DIFF] = {
                 { 1,  18328 }, -- Shadewood Cloak
@@ -3341,7 +3086,6 @@ data["DireMaulEast"] = {
             npcID = 16097,
             DisplayIDs = {{16000}},
             ExtraList = true,
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  22304 }, -- Ironweave Gloves
                 { 2,  22472 }, -- Boots of Ferocity
@@ -3361,9 +3105,6 @@ data["DireMaulWest"] = {
     MapID = 2557,
     --InstanceID = 429,
     SubAreaIDs = { 33748, 33749, 33750, 33710 },
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "DireMaul",
-    AtlasMapFile = {"DireMaulWest", "DireMaulEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = {31, 58, 60},
@@ -3373,7 +3114,6 @@ data["DireMaulWest"] = {
             npcID = 11489,
             Level = 60,
             DisplayIDs = {{14383}},
-            AtlasMapBossID = 2,
             SubAreaID = 33748,
             [NORMAL_DIFF] = {
                 { 1,  18393 }, -- Warpwood Binding
@@ -3388,7 +3128,6 @@ data["DireMaulWest"] = {
             Level = 60,
             DisplayIDs = {{11270}},
             SubAreaID = 33749,
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  18383 }, -- Force Imbued Gauntlets
                 { 2,  18386 }, -- Padre's Trousers
@@ -3401,7 +3140,6 @@ data["DireMaulWest"] = {
             npcID = 11487,
             Level = 60,
             DisplayIDs = {{14384}},
-            AtlasMapBossID = 4,
             SubAreaID = 33749,
             [NORMAL_DIFF] = {
                 { 1,  18374 }, -- Flamescarred Shoulders
@@ -3419,7 +3157,6 @@ data["DireMaulWest"] = {
             Level = 60,
             DisplayIDs = {{11250}},
             specialType = "rare",
-            AtlasMapBossID = 5,
             SubAreaID = 33749,
             [NORMAL_DIFF] = {
                 { 1,  18387 }, -- Brightspark Gloves
@@ -3432,7 +3169,6 @@ data["DireMaulWest"] = {
             npcID = 11496,
             Level = 61,
             DisplayIDs = {{14173}},
-            AtlasMapBossID = 6,
             SubAreaID = 33750,
             [NORMAL_DIFF] = {
                 { 1,  18381 }, -- Evil Eye Pendant
@@ -3452,7 +3188,6 @@ data["DireMaulWest"] = {
             npcID = 11486,
             Level = 61,
             DisplayIDs = {{11256}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  18382 }, -- Fluctuating Cloak
                 { 2,  18373 }, -- Chestplate of Tranquility
@@ -3482,7 +3217,6 @@ data["DireMaulWest"] = {
             name = AL["Revanchion"],
             npcID = 14690,
             DisplayIDs = {{14695}},
-            AtlasMapBossID = 2,
             specialType = "scourgeInvasion",
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -3496,7 +3230,6 @@ data["DireMaulWest"] = {
             npcID = 14371,
             DisplayIDs = {{14412}},
             ExtraList = true,
-            AtlasMapBossID = "1'",
             IgnoreAsSource = true,
             [NORMAL_DIFF] = {
                 { 1,  18487, [PRICE_EXTRA_ITTYPE] = "money:40000" }, -- Pattern: Mooncloth Robe
@@ -3508,7 +3241,6 @@ data["DireMaulWest"] = {
             npcID = 14506,
             DisplayIDs = {{14556}},
             ExtraList = true,
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  18757 }, -- Diabolic Mantle
                 { 2,  18754 }, -- Fel Hardened Bracers
@@ -3526,9 +3258,6 @@ data["DireMaulNorth"] = {
     MapID = 2557,
     --InstanceID = 429,
     SubAreaIDs = { 33774, 33775 },
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "DireMaulNorth",
-    AtlasMapFile = {"DireMaulNorth", "DireMaulEnt"},
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = {31, 58, 60},
@@ -3538,7 +3267,6 @@ data["DireMaulNorth"] = {
             npcID = 14326,
             Level = 59,
             DisplayIDs = {{11561}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  18494 }, -- Denwatcher's Shoulders
                 { 2,  18493 }, -- Bulky Iron Spaulders
@@ -3562,7 +3290,6 @@ data["DireMaulNorth"] = {
             npcID = 14322,
             Level = 59,
             DisplayIDs = {{11545}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  18425 }, -- Kreeg's Mug
                 { 16, "INV_Box_01", nil, AL["Sells:"], nil },
@@ -3578,7 +3305,6 @@ data["DireMaulNorth"] = {
             npcID = 14321,
             Level = 59,
             DisplayIDs = {{11561}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  18450 }, -- Robe of Combustion
                 { 2,  18458 }, -- Modest Armguards
@@ -3598,7 +3324,6 @@ data["DireMaulNorth"] = {
             npcID = 14323,
             Level = 59,
             DisplayIDs = {{11561}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  18494 }, -- Denwatcher's Shoulders
                 { 2,  18493 }, -- Bulky Iron Spaulders
@@ -3618,7 +3343,6 @@ data["DireMaulNorth"] = {
         },
         { -- DMNThimblejack
             name = AL["Knot Thimblejack's Cache"],
-            AtlasMapBossID = 4,
             npcID = 14338,
             ObjectID = 179501,
             [NORMAL_DIFF] = {
@@ -3642,7 +3366,6 @@ data["DireMaulNorth"] = {
             npcID = 14325,
             Level = 61,
             DisplayIDs = {{11564}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  18503 }, -- Kromcrush's Chestplate
                 { 2,  18505 }, -- Mugger's Belt
@@ -3655,7 +3378,6 @@ data["DireMaulNorth"] = {
             npcID = 14324,
             Level = 60,
             DisplayIDs = {{11537}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  18490 }, -- Insightful Hood
                 { 2,  18483 }, -- Mana Channeling Wand
@@ -3668,7 +3390,6 @@ data["DireMaulNorth"] = {
             npcID = 11501,
             Level = 62,
             DisplayIDs = {{11583}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  18526 }, -- Crown of the Ogre King
                 { 2,  18525 }, -- Bracers of Prosperity
@@ -3731,10 +3452,6 @@ data["Scholomance"] = {
     MapID = 2057,
     InstanceID = 289,
     SubAreaIDs = { 32549, 32574, 32567, 32577, 32566, 32565, 32581, 32579, 32573, 32568, 32576, 32569 },
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "Scholomance",
-    AtlasMapFile = "CL_Scholomance",
-    AtlasMapFile_AL = "Scholomance",
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = {45, 58, 60},
@@ -3745,7 +3462,6 @@ data["Scholomance"] = {
             Level = 61,
             SubAreaID = 32573,
             DisplayIDs = {{10925}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  13523 }, -- Blood of Innocents
             },
@@ -3756,7 +3472,6 @@ data["Scholomance"] = {
             Level = 60,
             SubAreaID = 32574,
             DisplayIDs = {{7534}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  16734 }, -- Boots of Valor
                 { 3,  13960 }, -- Heart of the Fiend
@@ -3774,7 +3489,6 @@ data["Scholomance"] = {
             npcID = 10503,
             Level = 61,
             DisplayIDs = {{11073}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  16701 }, -- Dreadmist Mantle
                 { 3,  14548 }, -- Royal Cap Spaulders
@@ -3793,7 +3507,6 @@ data["Scholomance"] = {
             Level = 61,
             SubAreaID = 32577,
             DisplayIDs = {{12073}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  16711 }, -- Shadowcraft Boots
                 { 3,  14539 }, -- Bone Ring Helm
@@ -3812,7 +3525,6 @@ data["Scholomance"] = {
             Level = 61,
             SubAreaID = 32577,
             DisplayIDs = {{14591}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  18760 }, -- Necromantic Band
                 { 2,  18761 }, -- Oblivion's Touch
@@ -3826,7 +3538,6 @@ data["Scholomance"] = {
             Level = 58,
             SubAreaID = 32576,
             DisplayIDs = {{10248}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  18692 }, -- Death Knight Sabatons
                 { 2,  14576 }, -- Ebon Hilt of Marduk
@@ -3838,7 +3549,6 @@ data["Scholomance"] = {
             Level = 60,
             SubAreaID = 32576,
             DisplayIDs = {{2606}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  18691 }, -- Dark Advisor's Pendant
                 { 2,  14577 }, -- Skullsmoke Pants
@@ -3850,7 +3560,6 @@ data["Scholomance"] = {
             Level = 62,
             SubAreaID = 32579,
             DisplayIDs = {{7919}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  13314 }, -- Alanna's Embrace
                 { 3,  16689 }, -- Magister's Mantle
@@ -3874,7 +3583,6 @@ data["Scholomance"] = {
             Level = 60,
             SubAreaID = 32567,
             DisplayIDs = {{11069}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  16710 }, -- Shadowcraft Bracers
                 { 4,  18681 }, -- Burial Shawl
@@ -3912,7 +3620,6 @@ data["Scholomance"] = {
             Level = 60,
             SubAreaID = 32565,
             DisplayIDs = {{10901}},
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  16684 }, -- Magister's Gloves
                 { 2,  14617 }, -- Sawbones Shirt
@@ -3951,7 +3658,6 @@ data["Scholomance"] = {
             Level = 60,
             SubAreaID = 32566,
             DisplayIDs = {{11492}},
-            AtlasMapBossID = 10,
             [NORMAL_DIFF] = {
                 { 1,  16705 }, -- Dreadmist Wraps
                 { 4,  18681 }, -- Burial Shawl
@@ -3989,7 +3695,6 @@ data["Scholomance"] = {
             Level = 60,
             SubAreaID = 32569,
             DisplayIDs = {{10433}},
-            AtlasMapBossID = 11,
             [NORMAL_DIFF] = {
                 { 1,  16716 }, -- Wildheart Belt
                 { 4,  18681 }, -- Burial Shawl
@@ -4027,7 +3732,6 @@ data["Scholomance"] = {
             Level = 60,
             SubAreaID = 32549,
             DisplayIDs = {{11072}},
-            AtlasMapBossID = 12,
             [NORMAL_DIFF] = {
                 { 1,  16722 }, -- Lightforge Bracers
                 { 4,  18681 }, -- Burial Shawl
@@ -4065,7 +3769,6 @@ data["Scholomance"] = {
             Level = 60,
             SubAreaID = 32568,
             DisplayIDs = {{11835}},
-            AtlasMapBossID = 13,
             [NORMAL_DIFF] = {
                 { 4,  18681 }, -- Burial Shawl
                 { 5,  14633 }, -- Necropile Mantle
@@ -4102,7 +3805,6 @@ data["Scholomance"] = {
             Level = 61,
             SubAreaID = 32581,
             DisplayIDs = {{11070}},
-            AtlasMapBossID = 14,
             [NORMAL_DIFF] = {
                 { 1,  13937 }, -- Headmaster's Charge
                 { 2,  14514 }, -- Pattern: Robe of the Void
@@ -4161,7 +3863,6 @@ data["Scholomance"] = {
             name = AL["Lord Blackwood"],
             npcID = 14695,
             DisplayIDs = {{14699}},
-            AtlasMapBossID = 2,
             specialType = "scourgeInvasion",
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -4175,7 +3876,6 @@ data["Scholomance"] = {
             npcID = 16118,
             DisplayIDs = {{16020}},
             ExtraList = true,
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  22303 }, -- Ironweave Pants
                 { 2,  22326 }, -- Amalgam's Band
@@ -4199,10 +3899,6 @@ data["Stratholme"] = {
         -- Ziggurats
         32344, 32345, 32349,
     },
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "Stratholme",
-    AtlasMapFile = "CL_Stratholme",
-    AtlasMapFile_AL = "Stratholme",
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({37, 58, 60}, {45, 58, 60}),
@@ -4213,7 +3909,6 @@ data["Stratholme"] = {
             npcID = 10393,
             Level = 58,
             DisplayIDs = {{2606}},
-            AtlasMapBossID = 1,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  13395 }, -- Skul's Fingerbone Claws
@@ -4227,7 +3922,6 @@ data["Stratholme"] = {
             npcID = 11082,
             Level = 57,
             DisplayIDs = {{10547}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  13303 }, -- Crusaders' Square Postbox Key
                 { 2,  13305 }, -- Elders' Square Postbox Key
@@ -4244,7 +3938,6 @@ data["Stratholme"] = {
             Level = 57,
             SubAreaID = 32277,
             DisplayIDs = {{10482}},
-            AtlasMapBossID = 3,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  16682 }, -- Magister's Boots
@@ -4261,7 +3954,6 @@ data["Stratholme"] = {
             Level = 57,
             SubAreaID = 32281,
             DisplayIDs = {{10771}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  16717 }, -- Wildheart Gloves
                 { 3,  13404 }, -- Mask of the Unforgiven
@@ -4276,7 +3968,6 @@ data["Stratholme"] = {
             npcID = 11143,
             Level = 60,
             DisplayIDs = {{10669}},
-            AtlasMapBossID = "6'",
             [NORMAL_DIFF] = {
                 { 1,  13390 }, -- The Postmaster's Band
                 { 2,  13388 }, -- The Postmaster's Tunic
@@ -4293,7 +3984,6 @@ data["Stratholme"] = {
             Level = 58,
             SubAreaID = 32319,
             DisplayIDs = {{571}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  16724 }, -- Lightforge Gauntlets
                 { 3,  13400 }, -- Vambraces of the Sadist
@@ -4310,7 +4000,6 @@ data["Stratholme"] = {
             Level = 60,
             SubAreaID = 32319,
             DisplayIDs = {{10458}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1, "INV_Box_01", nil, AL["Malors Strongbox"], nil },
                 { 2,  12845 }, -- Medallion of Faith
@@ -4323,7 +4012,6 @@ data["Stratholme"] = {
             Level = 60,
             SubAreaID = 32357,
             DisplayIDs = {{10637}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  18781 }, -- Bottom Half of Advanced Armorsmithing: Volume II
                 --{ 3,  12824 }, -- Plans: Enchanted Battlehammer
@@ -4336,7 +4024,6 @@ data["Stratholme"] = {
             Level = 60,
             SubAreaID = 32357,
             DisplayIDs = {{10674}},
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  16708 }, -- Shadowcraft Spaulders
                 { 3,  22407 }, -- Helm of the New Moon
@@ -4359,7 +4046,6 @@ data["Stratholme"] = {
             Level = 60,
             SubAreaID = 32331,
             DisplayIDs = {{10544}},
-            AtlasMapBossID = 10,
             [NORMAL_DIFF] = {
                 { 1,  16692 }, -- Devout Gloves
                 { 3,  13386 }, -- Archivist Cape
@@ -4377,7 +4063,6 @@ data["Stratholme"] = {
             Level = 999,
             SubAreaID = 32367,
             DisplayIDs = {{10545}, {10691}},
-            AtlasMapBossID = 11,
             [NORMAL_DIFF] = {
                 { 1,  13353 }, -- Book of the Dead
                 { 2,  14512 }, -- Pattern: Truefaith Vestments
@@ -4403,7 +4088,6 @@ data["Stratholme"] = {
             Level = 58,
             SubAreaID = 32342,
             DisplayIDs = {{10433}},
-            AtlasMapBossID = 12,
             [NORMAL_DIFF] = {
                 { 1,  18727 }, -- Crimson Felt Hat
                 { 2,  13376 }, -- Royal Tribunal Cloak
@@ -4421,7 +4105,6 @@ data["Stratholme"] = {
             Level = 60,
             SubAreaID = 32303,
             DisplayIDs = {{7856}},
-            AtlasMapBossID = 14,
             specialType = "rare",
             [NORMAL_DIFF] = {
                 { 1,  13397 }, -- Stoneskin Gargoyle Cape
@@ -4436,7 +4119,6 @@ data["Stratholme"] = {
             Level = 59,
             SubAreaID = 32344,
             DisplayIDs = {{10698}},
-            AtlasMapBossID = 15,
             [NORMAL_DIFF] = {
                 { 1,  16704 }, -- Dreadmist Sandals
                 { 3,  18728 }, -- Anastari Heirloom
@@ -4457,7 +4139,6 @@ data["Stratholme"] = {
             Level = {61, 62},
             SubAreaID = 32345,
             DisplayIDs = {{775}},
-            AtlasMapBossID = 15,
             [NORMAL_DIFF] = {
                 { 1,  18783 }, -- Bottom Half of Advanced Armorsmithing: Volume III
                 --{ 2,  12725 }, -- Plans: Enchanted Thorium Helm
@@ -4473,7 +4154,6 @@ data["Stratholme"] = {
             Level = 60,
             SubAreaID = 32345,
             DisplayIDs = {{9793}},
-            AtlasMapBossID = 16,
             [NORMAL_DIFF] = {
                 { 1,  16675 }, -- Beaststalker's Boots
                 { 3,  18740 }, -- Thuzadin Sash
@@ -4494,7 +4174,6 @@ data["Stratholme"] = {
             Level = 61,
             SubAreaID = 32349,
             DisplayIDs = {{10546}},
-            AtlasMapBossID = 17,
             [NORMAL_DIFF] = {
                 { 1,  16691 }, -- Devout Sandals
                 { 3,  18734 }, -- Pale Moon Cloak
@@ -4516,7 +4195,6 @@ data["Stratholme"] = {
             Level = 61,
             SubAreaID = 32301,
             DisplayIDs = {{12818}},
-            AtlasMapBossID = 18,
             [NORMAL_DIFF] = {
                 { 1,  16737 }, -- Gauntlets of Valor
                 { 3,  18723 }, -- Animated Chain Necklace
@@ -4534,7 +4212,6 @@ data["Stratholme"] = {
             Level = 62,
             SubAreaID = 32352,
             DisplayIDs = {{10729}},
-            AtlasMapBossID = 19,
             [NORMAL_DIFF] = {
                 { 1,  13335 }, -- Deathcharger's Reins
                 { 2,  13505 }, -- Runeblade of Baron Rivendare
@@ -4608,7 +4285,6 @@ data["Stratholme"] = {
             name = AL["Atiesh"],
             NameColor = GREEN,
             ExtraList = true,
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  22736 }, -- Andonisus, Reaper of Souls
             },
@@ -4620,7 +4296,6 @@ data["Stratholme"] = {
             specialType = "scourgeInvasion",
             npcID = 14684,
             DisplayIDs = {{7919}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  23126 }, -- Waistband of Balzaphon
                 { 2,  23125 }, -- Chains of the Lich
@@ -4631,7 +4306,6 @@ data["Stratholme"] = {
             name = AL["Sothos and Jarien's Heirlooms"].." - "..format(AL["Tier %s Sets"], "0.5"),
             NameColor = GREEN,
             ExtraList = true,
-            AtlasMapBossID = 11,
             [NORMAL_DIFF] = {
                 { 1,  22327 }, -- Amulet of the Redeemed
                 { 2,  22301 }, -- Ironweave Robe
@@ -4649,17 +4323,14 @@ data["Stratholme"] = {
 -- ########################
 data["WorldBosses"] = {
     name = AL["World Bosses"],
-    AtlasMapFile = "Azuregos",
     ContentType = RAID40_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     items = {
         { -- AAzuregos
             name = AL["Azuregos"],
-            AtlasMapFile = "Azuregos",
             npcID = 6109,
             Level = 999,
             DisplayIDs = {{11460}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  19132 }, -- Crystal Adorned Crown
                 { 2,  18208 }, -- Drape of Benediction
@@ -4683,11 +4354,9 @@ data["WorldBosses"] = {
         },
         { -- KKazzak
             name = AL["Lord Kazzak"],
-            AtlasMapFile = "LordKazzak",
             npcID = 12397,
             Level = 999,
             DisplayIDs = {{12449}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  18546 }, -- Infernal Headcage
                 { 2,  17111 }, -- Blazefury Medallion
@@ -4711,7 +4380,6 @@ data["WorldBosses"] = {
         },
         { -- DLethon
             name = AL["Lethon"],
-            AtlasMapFile = "FourDragons",
             npcID = 14888,
             Level = 999,
             DisplayIDs = {{15365}},
@@ -4745,7 +4413,6 @@ data["WorldBosses"] = {
         },
         { -- DEmeriss
             name = AL["Emeriss"],
-            AtlasMapFile = "FourDragons",
             npcID = 14889,
             Level = 999,
             DisplayIDs = {{15366}},
@@ -4777,7 +4444,6 @@ data["WorldBosses"] = {
         },
         { -- DTaerar
             name = AL["Taerar"],
-            AtlasMapFile = "FourDragons",
             npcID = 14890,
             Level = 999,
             DisplayIDs = {{15363}, {15367}},
@@ -4809,7 +4475,6 @@ data["WorldBosses"] = {
         },
         { -- DYsondre
             name = AL["Ysondre"],
-            AtlasMapFile = "FourDragons",
             npcID = 14887,
             Level = 999,
             DisplayIDs = {{15364}},
@@ -4846,10 +4511,6 @@ data["WorldBosses"] = {
 data["MoltenCore"] = {
     MapID = 2717,
     InstanceID = 409,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "MoltenCore",
-    AtlasMapFile = "CL_MoltenCore",
-    AtlasMapFile_AL = "MoltenCore",
     ContentType = RAID40_CONTENT,
     LoadDifficulty = RAID40_DIFF,
     items = {
@@ -4858,7 +4519,6 @@ data["MoltenCore"] = {
             npcID = 12118,
             Level = 999,
             DisplayIDs = {{13031},{12030}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1, 16800 },	-- Arcanist Boots
                 { 2, 16805 },	-- Felheart Gloves
@@ -4885,7 +4545,6 @@ data["MoltenCore"] = {
             npcID = 11982,
             Level = 999,
             DisplayIDs = {{10193}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  16814 },	-- Pants of Prophecy
                 { 2,  16796 },	-- Arcanist Leggings
@@ -4918,7 +4577,6 @@ data["MoltenCore"] = {
             npcID = 12259,
             Level = 999,
             DisplayIDs = {{13030},{12002}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  16812 },	-- Gloves of Prophecy
                 { 2,  16826 },	-- Nightslayer Gloves
@@ -4943,7 +4601,6 @@ data["MoltenCore"] = {
             npcID = 12057,
             Level = 999,
             DisplayIDs = {{12110}, {5781}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1, 18564 },	-- Bindings of the Windseeker
                 { 3,  16813 },	-- Circlet of Prophecy
@@ -4977,7 +4634,6 @@ data["MoltenCore"] = {
             npcID = 12264,
             Level = 999,
             DisplayIDs = {{13032}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  16811 },	-- Boots of Prophecy
                 { 2,  16801 },	-- Arcanist Gloves
@@ -5002,7 +4658,6 @@ data["MoltenCore"] = {
             npcID = 12056,
             Level = 999,
             DisplayIDs = {{12129}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  18563 },	-- Bindings of the Windseeker
                 { 3,  16797 },	-- Arcanist Mantle
@@ -5029,7 +4684,6 @@ data["MoltenCore"] = {
             npcID = 11988,
             Level = 999,
             DisplayIDs = {{11986}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  16815 },	-- Robes of Prophecy
                 { 2,  16798 },	-- Arcanist Robes
@@ -5062,7 +4716,6 @@ data["MoltenCore"] = {
             npcID = 12098,
             Level = 999,
             DisplayIDs = {{13030},{12030}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  16816 }, -- Mantle of Prophecy
                 { 2,  16823 }, -- Nightslayer Shoulder Pads
@@ -5087,7 +4740,6 @@ data["MoltenCore"] = {
             Level = 999,
             ObjectID = 179703,
             DisplayIDs = {{12029},{13029},{12002}},
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  19139 }, -- Fireguard Shoulders
                 { 2,  18810 }, -- Wild Growth Spaulders
@@ -5108,7 +4760,6 @@ data["MoltenCore"] = {
             npcID = 11502,
             Level = 999,
             DisplayIDs = {{11121}},
-            AtlasMapBossID = 10,
             [NORMAL_DIFF] = {
                 { 1, 17204 }, -- Eye of Sulfuras
                 { 2, 19017 }, -- Essence of the Firelord
@@ -5187,10 +4838,6 @@ data["MoltenCore"] = {
 data["Onyxia"] = {
     MapID = 2159,
     InstanceID = 249,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "Onyxia",
-    AtlasMapFile = "CL_OnyxiasLair",
-    AtlasMapFile_AL = "OnyxiasLair",
     ContentType = RAID40_CONTENT,
     LoadDifficulty = RAID40_DIFF,
     items = {
@@ -5199,7 +4846,6 @@ data["Onyxia"] = {
             npcID = 10184,
             Level = 999,
             DisplayIDs = {{8570}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  16921 }, -- Halo of Transcendence
                 { 2,  16914 }, -- Netherwind Crown
@@ -5236,10 +4882,6 @@ data["Onyxia"] = {
 data["Zul'GurubClassic"] = {
     MapID = 1977,
     InstanceID = 309,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "Zul'Gurub", -- ??
-    AtlasMapFile = "CL_ZulGurub",
-    AtlasMapFile_AL = "ZulGurub",
     ContentType = RAID20_CONTENT,
     LoadDifficulty = RAID20_DIFF,
     items = {
@@ -5248,7 +4890,6 @@ data["Zul'GurubClassic"] = {
             npcID = 14517,
             Level = 999,
             DisplayIDs = {{15219}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  19721 }, -- Primal Hakkari Shawl
                 { 2,  19724 }, -- Primal Hakkari Aegis
@@ -5273,7 +4914,6 @@ data["Zul'GurubClassic"] = {
             npcID = 14507,
             Level = 999,
             DisplayIDs = {{15217}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  19721 }, -- Primal Hakkari Shawl
                 { 2,  19724 }, -- Primal Hakkari Aegis
@@ -5297,7 +4937,6 @@ data["Zul'GurubClassic"] = {
             npcID = 14510,
             Level = 999,
             DisplayIDs = {{15220}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  19721 }, -- Primal Hakkari Shawl
                 { 2,  19724 }, -- Primal Hakkari Aegis
@@ -5321,7 +4960,6 @@ data["Zul'GurubClassic"] = {
             npcID = 11382,
             Level = 999,
             DisplayIDs = {{11288}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  19721 }, -- Primal Hakkari Shawl
                 { 2,  19724 }, -- Primal Hakkari Aegis
@@ -5353,7 +4991,6 @@ data["Zul'GurubClassic"] = {
             npcID = 15082,
             Level = 999,
             DisplayIDs = {{8390}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  19961 }, -- Gri'lek's Grinder
                 { 2,  19962 }, -- Gri'lek's Carver
@@ -5365,7 +5002,6 @@ data["Zul'GurubClassic"] = {
             npcID = 15083,
             Level = 999,
             DisplayIDs = {{15267}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  19967 }, -- Thoughtblighter
                 { 2,  19968 }, -- Fiery Retributer
@@ -5377,7 +5013,6 @@ data["Zul'GurubClassic"] = {
             npcID = 15084,
             Level = 999,
             DisplayIDs = {{15268}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  19964 }, -- Renataki's Soul Conduit
                 { 2,  19963 }, -- Pitchfork of Madness
@@ -5389,7 +5024,6 @@ data["Zul'GurubClassic"] = {
             npcID = 15085,
             Level = 999,
             DisplayIDs = {{15269}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  19993 }, -- Hoodoo Hunting Bow
                 { 2,  19965 }, -- Wushoolay's Poker
@@ -5401,7 +5035,6 @@ data["Zul'GurubClassic"] = {
             npcID = 15114,
             Level = 999,
             DisplayIDs = {{15288}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  19945 }, -- Foror's Eyepatch
                 { 2,  19944 }, -- Nat Pagle's Fish Terminator
@@ -5415,7 +5048,6 @@ data["Zul'GurubClassic"] = {
             npcID = 14509,
             Level = 999,
             DisplayIDs = {{15216}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  19721 }, -- Primal Hakkari Shawl
                 { 2,  19724 }, -- Primal Hakkari Aegis
@@ -5441,7 +5073,6 @@ data["Zul'GurubClassic"] = {
             npcID = 14515,
             Level = 999,
             DisplayIDs = {{15218}},
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  19721 }, -- Primal Hakkari Shawl
                 { 2,  19724 }, -- Primal Hakkari Aegis
@@ -5465,7 +5096,6 @@ data["Zul'GurubClassic"] = {
             npcID = 11380,
             Level = 999,
             DisplayIDs = {{11311}},
-            AtlasMapBossID = 10,
             [NORMAL_DIFF] = {
                 { 1,  19721 }, -- Primal Hakkari Shawl
                 { 2,  19724 }, -- Primal Hakkari Aegis
@@ -5496,7 +5126,6 @@ data["Zul'GurubClassic"] = {
             npcID = 14834,
             Level = 999,
             DisplayIDs = {{15295}},
-            AtlasMapBossID = 11,
             [NORMAL_DIFF] = {
                 { 1,  19857 }, -- Cloak of Consumption
                 { 2,  20257, [ATLASLOOT_IT_ALLIANCE] = 20264 }, -- Seafury Gauntlets
@@ -5588,7 +5217,6 @@ data["Zul'GurubClassic"] = {
         { -- ZGMuddyChurningWaters
             name = AL["Muddy Churning Waters"],
             ExtraList = true,
-            AtlasMapBossID = "1'",
             [NORMAL_DIFF] = {
                 { 1,  19975 }, -- Zulian Mudskunk
             },
@@ -5596,7 +5224,6 @@ data["Zul'GurubClassic"] = {
         { -- ZGJinxedHoodooPile
             name = AL["Jinxed Hoodoo Pile"],
             ExtraList = true,
-            AtlasMapBossID = "2'",
             [NORMAL_DIFF] = {
                 { 1,  19727 }, -- Blood Scythe
                 { 3,  19820 }, -- Punctured Voodoo Doll
@@ -5616,10 +5243,6 @@ data["Zul'GurubClassic"] = {
 data["BlackwingLair"] = {
     MapID = 2677,
     InstanceID = 469,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "BlackwingLair",
-    AtlasMapFile = "CL_BlackwingLair",
-    AtlasMapFile_AL = "BlackwingLair",
     ContentType = RAID40_CONTENT,
     LoadDifficulty = RAID40_DIFF,
     items = {
@@ -5628,7 +5251,6 @@ data["BlackwingLair"] = {
             npcID = 12435,
             Level = 999,
             DisplayIDs = {{10115}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  16926 }, -- Bindings of Transcendence
                 { 2,  16918 }, -- Netherwind Bindings
@@ -5652,7 +5274,6 @@ data["BlackwingLair"] = {
             npcID = 13020,
             Level = 999,
             DisplayIDs = {{13992}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  16925 }, -- Belt of Transcendence
                 { 2,  16818 }, -- Netherwind Belt
@@ -5676,7 +5297,6 @@ data["BlackwingLair"] = {
             npcID = 12017,
             Level = 999,
             DisplayIDs = {{14308}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  16919 }, -- Boots of Transcendence
                 { 2,  16912 }, -- Netherwind Boots
@@ -5701,7 +5321,6 @@ data["BlackwingLair"] = {
             npcID = 11983,
             Level = 999,
             DisplayIDs = {{6377}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  16920 }, -- Handguards of Transcendence
                 { 2,  16913 }, -- Netherwind Gloves
@@ -5733,7 +5352,6 @@ data["BlackwingLair"] = {
             npcID = 14601,
             Level = 999,
             DisplayIDs = {{6377}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  16920 }, -- Handguards of Transcendence
                 { 2,  16913 }, -- Netherwind Gloves
@@ -5764,7 +5382,6 @@ data["BlackwingLair"] = {
             npcID = 11981,
             Level = 999,
             DisplayIDs = {{6377}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  16920 }, -- Handguards of Transcendence
                 { 2,  16913 }, -- Netherwind Gloves
@@ -5794,7 +5411,6 @@ data["BlackwingLair"] = {
             npcID = 14020,
             Level = 999,
             DisplayIDs = {{14367}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1,  16924 }, -- Pauldrons of Transcendence
                 { 2,  16917 }, -- Netherwind Mantle
@@ -5825,7 +5441,6 @@ data["BlackwingLair"] = {
             npcID = 11583,
             Level = 999,
             DisplayIDs = {{11380}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  16923 }, -- Robes of Transcendence
                 { 2,  16916 }, -- Netherwind Robes
@@ -5881,10 +5496,6 @@ data["BlackwingLair"] = {
 data["TheRuinsofAhnQiraj"] = { -- AQ20
     MapID = 3429,
     InstanceID = 509,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "TheRuinsofAhnQiraj",
-    AtlasMapFile = "CL_TheRuinsofAhnQiraj",
-    AtlasMapFile_AL = "TheRuinsofAhnQiraj",
     ContentType = RAID20_CONTENT,
     LoadDifficulty = RAID20_DIFF,
     items = {
@@ -5893,7 +5504,6 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
             npcID = 15348,
             Level = 999,
             DisplayIDs = {{15742}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  21499 }, -- Vestments of the Shifting Sands
                 { 2,  21498 }, -- Qiraji Sacrificial Dagger
@@ -5912,7 +5522,6 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
             npcID = 15341,
             Level = 999,
             DisplayIDs = {{15376}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  21493 }, -- Boots of the Vanguard
                 { 2,  21492 }, -- Manslayer of the Qiraji
@@ -5935,7 +5544,6 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
             npcID = 15340,
             Level = 999,
             DisplayIDs = {{15392}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  21472 }, -- Dustwind Turban
                 { 2,  21467 }, -- Thick Silithid Chestguard
@@ -5963,7 +5571,6 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
             npcID = 15370,
             Level = 999,
             DisplayIDs = {{15654}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  21487, [ATLASLOOT_IT_ALLIANCE] = 21486 }, -- Slimy Scaled Gauntlets
                 --{ 2,  21486 }, -- Gloves of the Swarm
@@ -5985,7 +5592,6 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
             npcID = 15369,
             Level = 999,
             DisplayIDs = {{15431}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  21479 }, -- Gauntlets of the Immovable
                 { 2,  21478 }, -- Bow of Taut Sinew
@@ -6008,7 +5614,6 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
             npcID = 15339,
             Level = 999,
             DisplayIDs = {{15432}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  21460 }, -- Helm of Domination
                 { 2,  21454, [ATLASLOOT_IT_ALLIANCE] = 21453 }, -- Runic Stone Shoulders
@@ -6104,10 +5709,6 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
 data["TheTempleofAhnQiraj"] = { -- AQ40
     MapID = 3428,
     InstanceID = 531,
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "TheTempleofAhnQiraj",
-    AtlasMapFile = "CL_TheTempleofAhnQiraj",
-    AtlasMapFile_AL = "TheTempleofAhnQiraj",
     ContentType = RAID40_CONTENT,
     LoadDifficulty = RAID40_DIFF,
     items = {
@@ -6116,7 +5717,6 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
             npcID = 15263,
             Level = 999,
             DisplayIDs = {{15345}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  21699 }, -- Barrage Shoulders
                 { 2,  21814 }, -- Breastplate of Annihilation
@@ -6142,7 +5742,6 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
             npcID = {15543, 15544, 15511},
             Level = 999,
             DisplayIDs = {{15657},{15658},{15656}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  21693 }, -- Guise of the Devourer
                 { 2,  21694 }, -- Ternary Mantle
@@ -6175,7 +5774,6 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
             npcID = 15516,
             Level = 999,
             DisplayIDs = {{15583}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  21669 }, -- Creeping Vine Helm
                 { 2,  21678 }, -- Necklace of Purity
@@ -6199,7 +5797,6 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
             npcID = 15510,
             Level = 999,
             DisplayIDs = {{15743}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  21665 }, -- Mantle of Wicked Revenge
                 { 2,  21639 }, -- Pauldrons of the Unrelenting
@@ -6223,7 +5820,6 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
             npcID = 15299,
             Level = 999,
             DisplayIDs = {{15686}},
-            AtlasMapBossID = 5,
             [NORMAL_DIFF] = {
                 { 1,  21624 }, -- Gauntlets of Kalimdor
                 { 2,  21623 }, -- Gauntlets of the Righteous Champion
@@ -6243,7 +5839,6 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
             npcID = 15509,
             Level = 999,
             DisplayIDs = {{15739}},
-            AtlasMapBossID = 6,
             [NORMAL_DIFF] = {
                 { 1,  21621 }, -- Cloak of the Golden Hive
                 { 2,  21618 }, -- Hive Defiler Wristguards
@@ -6262,7 +5857,6 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
             npcID = {15275, 15276},
             Level = 999,
             DisplayIDs = {{15761},{15778}},
-            AtlasMapBossID = 7,
             [NORMAL_DIFF] = {
                 { 1, "INV_Box_01", nil, AL["Emperor Vek'lor"], nil },
                 { 2,  20930 }, -- Vek'lor's Diadem
@@ -6292,7 +5886,6 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
             npcID = 15517,
             Level = 999,
             DisplayIDs = {{15509}},
-            AtlasMapBossID = 8,
             [NORMAL_DIFF] = {
                 { 1,  21615 }, -- Don Rigoberto's Lost Hat
                 { 2,  21611 }, -- Burrower Bracers
@@ -6311,7 +5904,6 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
             npcID = 15727,
             Level = 999,
             DisplayIDs = {{15787}},
-            AtlasMapBossID = 9,
             [NORMAL_DIFF] = {
                 { 1,  22732 }, -- Mark of C'Thun
                 { 2,  21583 }, -- Cloak of Clarity
@@ -6358,10 +5950,6 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 data["Naxxramas"] = {
     MapID = 3456,
     InstanceID = AtlasLoot:GameVersion_LT(AtlasLoot.WRATH_VERSION_NUM,533,nil),
-    AtlasModule = ATLAS_MODULE_NAME,
-    AtlasMapID = "Naxxramas",
-    AtlasMapFile = "CL_Naxxramas",
-    AtlasMapFile_AL = "Naxxramas",
     ContentType = RAID40_CONTENT,
     LoadDifficulty = RAID40_DIFF,
     items = {
@@ -6371,7 +5959,6 @@ data["Naxxramas"] = {
             npcID = 15956,
             Level = 999,
             DisplayIDs = {{15931}},
-            AtlasMapBossID = "1",
             NameColor = BLUE,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
@@ -6391,7 +5978,6 @@ data["Naxxramas"] = {
             npcID = 15953,
             Level = 999,
             DisplayIDs = {{15940}},
-            AtlasMapBossID = "2",
             NameColor = BLUE,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
@@ -6411,7 +5997,6 @@ data["Naxxramas"] = {
             npcID = 15952,
             Level = 999,
             DisplayIDs = {{15928}},
-            AtlasMapBossID = "3",
             NameColor = BLUE,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
@@ -6432,7 +6017,6 @@ data["Naxxramas"] = {
             npcID = 15954,
             Level = 999,
             DisplayIDs = {{16590}},
-            AtlasMapBossID = "1",
             NameColor = PURP,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
@@ -6454,7 +6038,6 @@ data["Naxxramas"] = {
             npcID = 15936,
             Level = 999,
             DisplayIDs = {{16309}},
-            AtlasMapBossID = "2",
             NameColor = PURP,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
@@ -6474,7 +6057,6 @@ data["Naxxramas"] = {
             npcID = 16011,
             Level = 999,
             DisplayIDs = {{16110}},
-            AtlasMapBossID = "3",
             NameColor = PURP,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
@@ -6495,7 +6077,6 @@ data["Naxxramas"] = {
             npcID = 16061,
             Level = 999,
             DisplayIDs = {{16582}},
-            AtlasMapBossID = "1",
             NameColor = _RED,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
@@ -6516,7 +6097,6 @@ data["Naxxramas"] = {
             npcID = 16060,
             Level = 999,
             DisplayIDs = {{16279}},
-            AtlasMapBossID = "2",
             NameColor = _RED,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
@@ -6536,7 +6116,6 @@ data["Naxxramas"] = {
             npcID = {16064, 16065, 16062, 16063},
             Level = 999,
             DisplayIDs = {{16155},{16153},{16139},{16154}},
-            AtlasMapBossID = "3",
             NameColor = _RED,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
@@ -6558,7 +6137,6 @@ data["Naxxramas"] = {
             npcID = 16028,
             Level = 999,
             DisplayIDs = {{16174}},
-            AtlasMapBossID = 1,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
                 { 2,  22727 }, -- Frame of Atiesh
@@ -6577,7 +6155,6 @@ data["Naxxramas"] = {
             npcID = 15931,
             Level = 999,
             DisplayIDs = {{16035}},
-            AtlasMapBossID = 2,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
                 { 2,  22727 }, -- Frame of Atiesh
@@ -6596,7 +6173,6 @@ data["Naxxramas"] = {
             npcID = 15932,
             Level = 999,
             DisplayIDs = {{16064}},
-            AtlasMapBossID = 3,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
                 { 2,  22727 }, -- Frame of Atiesh
@@ -6624,7 +6200,6 @@ data["Naxxramas"] = {
             npcID = 15928,
             Level = 999,
             DisplayIDs = {{16137}},
-            AtlasMapBossID = 4,
             [NORMAL_DIFF] = {
                 { 1,  22726 }, -- Splinter of Atiesh
                 { 2,  22727 }, -- Frame of Atiesh
@@ -6644,7 +6219,6 @@ data["Naxxramas"] = {
             npcID = 15989,
             Level = 999,
             DisplayIDs = {{16033}},
-            AtlasMapBossID = "1",
             NameColor = GREEN,
             [NORMAL_DIFF] = {
                 { 1,  23050 }, -- Cloak of the Necropolis
@@ -6668,7 +6242,6 @@ data["Naxxramas"] = {
             npcID = 15990,
             Level = 999,
             DisplayIDs = {{15945}},
-            AtlasMapBossID = "2",
             NameColor = GREEN,
             [NORMAL_DIFF] = {
                 { 1,  23057 }, -- Gem of Trapped Innocents

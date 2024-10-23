@@ -21,7 +21,6 @@ local CLASS_SORT = ALPrivate.CLASS_SORT
 
 -- AL functions
 local GetAlTooltip = AtlasLoot.Tooltip.GetTooltip
-local IsMapsModuleAviable = AtlasLoot.Loader.IsMapsModuleAviable
 
 local GUI_CREATED = false
 local FIRST_SHOW = true
@@ -55,7 +54,6 @@ local function UpdateFrames(noPageUpdate, forceContentUpdate)
 	end
 	local frame, contentFrame = GUI.frame, GUI.frame.contentFrame
 	local contentName, contentIndex, contentColor = moduleData[dataID]:GetContentType()
-	local name, description, _, loreImage, dungeonAreaMapID
 	contentColor = contentColor or ATLASLOOT_UNKNOWN_COLOR
 
 	-- Set Boss name
@@ -70,33 +68,6 @@ local function UpdateFrames(noPageUpdate, forceContentUpdate)
 	}
 
 	GUI.RefreshContentBackGround()
-
-	--[[ set MapID
-	if not moduleData[dataID].MapID and dungeonAreaMapID and dungeonAreaMapID > 0 then
-		GUI.frame.contentFrame.mapButton.mapID = dungeonAreaMapID
-		GUI.frame.contentFrame.mapButton:Show()
-	elseif moduleData[dataID].MapID then
-		GUI.frame.contentFrame.mapButton.mapID = moduleData[dataID].MapID
-		GUI.frame.contentFrame.mapButton:Show()
-	else
-		GUI.frame.contentFrame.mapButton.mapID = nil
-		GUI.frame.contentFrame.mapButton:Hide()
-	end
-	]]--
-	if moduleData[dataID] and moduleData[dataID].AtlasMapFile and IsMapsModuleAviable(moduleData[dataID].items[bossID].AtlasModule or moduleData[dataID].AtlasModule) then
-		GUI.frame.contentFrame.map.atlasMapModule = moduleData[dataID].items[bossID].AtlasModule or moduleData[dataID].AtlasModule
-		if GUI.frame.contentFrame.map.atlasMapModule then
-			GUI.frame.contentFrame.map.atlasMapFile = moduleData[dataID].items[bossID].AtlasMapFile or moduleData[dataID].AtlasMapFile
-		else
-			GUI.frame.contentFrame.map.atlasMapFile = moduleData[dataID].items[bossID].AtlasMapFile_AL or moduleData[dataID].AtlasMapFile_AL or moduleData[dataID].items[bossID].AtlasMapFile or moduleData[dataID].AtlasMapFile
-		end
-		GUI.frame.contentFrame.mapButton:Show()
-	else
-		GUI.frame.contentFrame.map.atlasMapFile = nil
-		GUI.frame.contentFrame.map.atlasMapModule = nil
-		GUI.frame.contentFrame.mapButton:Hide()
-	end
-	contentFrame.map:SetMap(GUI.frame.contentFrame.map.atlasMapFile)
 
 	-- MODEL
 	if moduleData[dataID].items[bossID].DisplayIDs then
@@ -148,23 +119,6 @@ local function UpdateFrames(noPageUpdate, forceContentUpdate)
 	else
 		contentFrame.searchBox:Hide()
 	end
-
-	--[[ AtlasMapID
-	if AtlasLoot.AtlasIntegration and (AtlasLoot.AtlasIntegration.IsEnabled() and moduleData[dataID].AtlasMapID and AtlasLoot.AtlasIntegration.GetAtlasZoneData(moduleData[dataID].AtlasMapID)) then
-		contentFrame.AtlasMapButton.AtlasMapID = moduleData[dataID].AtlasMapID
-		contentFrame.AtlasMapButton:Show()
-		if (contentFrame.soundsButton:IsVisible()) then
-			contentFrame.AtlasMapButton:SetPoint("RIGHT", contentFrame.soundsButton, "LEFT", -2, 0)
-		elseif (contentFrame.modelButton:IsVisible()) then
-			contentFrame.AtlasMapButton:SetPoint("RIGHT", contentFrame.modelButton, "LEFT", -2, 0)
-		else
-			contentFrame.AtlasMapButton:SetPoint("RIGHT", contentFrame.nextPageButton, "LEFT", 0, 0)
-		end
-	else
-		contentFrame.AtlasMapButton.AtlasMapID = nil
-		contentFrame.AtlasMapButton:Hide()
-	end
-	]]--
 
 	-- BaseLvl for Items
 	GUI.ItemFrame.ItemBaseLvl = moduleData[dataID].ItemBaseLvl
@@ -289,33 +243,6 @@ end
 local function ModelButtonOnClick(self)
 	GUI.ModelFrame:Show()
 	UpdateFrames(true)
-end
-
--- Atlas
-local function AtlasMapButton_OnClick(self, button)
-	if (AtlasLoot.AtlasIntegration.IsEnabled()) then
-		if (button == "RightButton") then
-			if ( AtlasFrameSmall:IsVisible() ) then
-				HideUIPanel(AtlasFrameSmall)
-			end
-		else
-			if (self.AtlasMapID) then
-				AtlasLoot.AtlasIntegration.ShowMap(self.AtlasMapID)
-			end
-		end
-	end
-end
-
-local function AtlasMapButton_OnEnter(self, owner)
-	local tooltip = GetAlTooltip()
-	tooltip:ClearLines()
-	if owner and type(owner) == "table" then
-		tooltip:SetOwner(owner[1], owner[2], owner[3], owner[4])
-	else
-		tooltip:SetOwner(self, "ANCHOR_RIGHT", -(self:GetWidth() * 0.5), 5)
-	end
-	tooltip:AddLine(AL["Click to open Atlas instance map."].."\n"..AL["Right-click to close Atlas window."])
-	tooltip:Show()
 end
 
 -- Class Filter
@@ -604,88 +531,6 @@ local function SearchBoxOnTextChanged(self, pI)
 	end
 end
 
--- AtlasMaps
-local ATLAS_MAPS_PATH = "Interface\\AddOns\\AtlasLootClassic_Maps\\%s"
-local ATLAS_MODULE_MAP_PATH_FORMAT = "Interface\\AddOns\\%s\\Images\\%s"
-local function AtlasMaps_GetMapPath(mapName, atlasModule)
-	if atlasModule then
-		return format(ATLAS_MODULE_MAP_PATH_FORMAT, atlasModule, mapName)
-	else
-		return format(ATLAS_MAPS_PATH, mapName)
-	end
-end
-
-local function AtlasMaps_SetMaps(self, map, entranceMap)
-	if map == self.map and self.entranceMap == entranceMap then
-		self:ShowOverlay(true)
-		return
-	end
-	if not map or not IsMapsModuleAviable(self.atlasMapModule) then
-		self:Hide()
-		self.overlay:Hide()
-		return
-	else
-		self:Show()
-	end
-	if type(map) == "table" then
-		return AtlasMaps_SetMaps(self, unpack(map))
-	end
-
-	self.map = map
-	self.atlasModule = self.atlasMapModule
-	self.entranceMap = entranceMap
-
-	self:ShowEntranceMap(false, true, true)
-end
-
-local function AtlasMaps_ShowEntranceMap(self, flag, showOverlay, force)
-	if (self.isEntranceMap and not flag) or (not flag and force) then
-		self:SetTexture(AtlasMaps_GetMapPath(self.map, self.atlasModule))
-		self.isEntranceMap = false
-	elseif (not self.isEntranceMap and flag and self.entranceMap) or (flag and self.entranceMap and force) then
-		self:SetTexture(AtlasMaps_GetMapPath(self.entranceMap, self.atlasModule))
-		self.isEntranceMap = true
-	end
-	self:Show()
-	self:ShowOverlay(showOverlay)
-end
-
-local function AtlasMaps_ShowOverlay(self, flag)
-	if flag then
-		self.overlay:Show()
-	else
-		self.overlay:Hide()
-	end
-end
-
-local function MapButtonOnClick(self, button)
-	if GUI.frame.contentFrame.shownFrame then
-		GUI.frame.contentFrame.shownFrame:Clear()
-	end
-	if button == "RightButton" then
-		self.mapData:ShowEntranceMap(true)
-	else
-		self.mapData:ShowEntranceMap(false)
-	end
-	self.mapData:ShowOverlay(false)
-end
-
-local function MapButtonOnEnter(self, owner)
-	local tooltip = GetAlTooltip()
-	tooltip:ClearLines()
-	if owner and type(owner) == "table" then
-		tooltip:SetOwner(owner[1], owner[2], owner[3], owner[4])
-	else
-		tooltip:SetOwner(self, "ANCHOR_RIGHT", -(self:GetWidth() * 0.5), 5)
-	end
-	tooltip:AddLine(AL["Atlas map"])
-	tooltip:AddLine(format(TT_ENTRY, AL["Left Click"], AL["Show dungeon map"]))
-	if self.mapData.entranceMap then
-		tooltip:AddLine(format(TT_ENTRY, AL["Right Click"], AL["Show entrance map"]))
-	end
-	tooltip:Show()
-end
-
 -- Info Button
 local function GUI_InfoOnEnter(self)
     local tooltip = GetAlTooltip()
@@ -815,8 +660,6 @@ function GUI:ShowLoadingInfo(addonName, noWipe, displayType)
 		GUI.frame.difficulty:SetData(nil)
 		GUI.frame.boss:SetData(nil)
 		GUI.frame.extra:SetData(nil)
-		GUI.frame.contentFrame.mapButton:Hide()
-		--GUI.frame.contentFrame.AtlasMapButton:Hide()
 		GUI.frame.contentFrame.modelButton:Hide()
 		GUI.frame.contentFrame.itemsButton:Hide()
 		GUI.frame.contentFrame.nextPageButton.info = nil
@@ -1116,11 +959,6 @@ function GUI.Init()
 
 	AtlasLoot.SlashCommands:AddResetFunction(GUI.ResetFrames, "frames", "gui")
 	AtlasLoot.SlashCommands:Add("togglebg", function() db.hideBGImage = not db.hideBGImage end, AL["/al togglebg - Toggle the background image on loottables."])
-
-	-- if auto-select is enabled, pre-load all instance modules to save the first-time AL frame's loading time
-	if (AtlasLoot.db.GUI.autoselect) then
-		--AtlasLoot:PreLoadAtlasLootModules();
-	end
 end
 AtlasLoot:AddInitFunc(GUI.Init)
 
@@ -1314,24 +1152,6 @@ function GUI:Create()
 	frame.contentFrame.itemBG:SetHeight(450)
 	frame.contentFrame.itemBG:SetTexCoord(0.1, 0.7, 0.1, 0.7)
 
-	-- Map frame
-	frame.contentFrame.map = frame.contentFrame:CreateTexture(frameName.."-map1","BACKGROUND")
-	frame.contentFrame.map:SetAllPoints(frame.contentFrame.itemBG)
-	frame.contentFrame.map:SetDrawLayer(frame.contentFrame.itemBG:GetDrawLayer(), 2)
-	frame.contentFrame.map:Hide()
-
-	frame.contentFrame.map.overlay = frame.contentFrame:CreateTexture(frameName.."-map3","BACKGROUND")
-	frame.contentFrame.map.overlay:SetAllPoints(frame.contentFrame.itemBG)
-	frame.contentFrame.map.overlay:SetDrawLayer(frame.contentFrame.itemBG:GetDrawLayer(), 4)
-	frame.contentFrame.map.overlay:SetColorTexture(0, 0, 0, 0.7)
-	frame.contentFrame.map.overlay:Hide()
-
-	frame.contentFrame.map.maxWidth = frame.contentFrame.map:GetWidth()
-	frame.contentFrame.map.maxHeight = frame.contentFrame.map:GetHeight()
-	frame.contentFrame.map.SetMap = AtlasMaps_SetMaps
-	frame.contentFrame.map.ShowEntranceMap = AtlasMaps_ShowEntranceMap
-	frame.contentFrame.map.ShowOverlay = AtlasMaps_ShowOverlay
-
 	-- #####
 	-- Right -> Left
 	-- #####
@@ -1347,38 +1167,9 @@ function GUI:Create()
 	frame.contentFrame.nextPageButton:SetScript("OnClick", NextPrevButtonOnClick)
 	frame.contentFrame.nextPageButton.typ = "next"
 
-	-- mapButton
-	frame.contentFrame.mapButton = CreateFrame("Button", frameName.."-mapButton")
-	frame.contentFrame.mapButton:SetParent(frame.contentFrame)
-	frame.contentFrame.mapButton:SetWidth(48)
-	frame.contentFrame.mapButton:SetHeight(32)
-	frame.contentFrame.mapButton:RegisterForClicks("AnyDown")
-	frame.contentFrame.mapButton:SetPoint("RIGHT", frame.contentFrame.nextPageButton, "LEFT", 0, 0)
-	frame.contentFrame.mapButton:SetScript("OnClick", MapButtonOnClick)
-	frame.contentFrame.mapButton:SetScript("OnMouseDown", function(self) self.texture:SetTexCoord(0.125, 0.875, 0.5, 1.0) end)
-	frame.contentFrame.mapButton:SetScript("OnMouseUp", function(self) self.texture:SetTexCoord(0.125, 0.875, 0.0, 0.5) end)
-	frame.contentFrame.mapButton:SetScript("OnEnter", MapButtonOnEnter)
-	frame.contentFrame.mapButton:SetScript("OnLeave", function(self) GetAlTooltip():Hide() end)
-	frame.contentFrame.mapButton.mapData = frame.contentFrame.map
-	frame.contentFrame.mapButton:Hide()
-
-	frame.contentFrame.mapButton.texture = frame.contentFrame.mapButton:CreateTexture(frameName.."-mapButton-texture","ARTWORK")
-	frame.contentFrame.mapButton.texture:SetPoint("RIGHT", frame.contentFrame.mapButton)
-	frame.contentFrame.mapButton.texture:SetWidth(48)
-	frame.contentFrame.mapButton.texture:SetHeight(32)
-	frame.contentFrame.mapButton.texture:SetTexture("Interface\\QuestFrame\\UI-QuestMap_Button")
-	frame.contentFrame.mapButton.texture:SetTexCoord(0.125, 0.875, 0.0, 0.5)
-
-	frame.contentFrame.mapButton.highlight = frame.contentFrame.mapButton:CreateTexture(frameName.."-mapButton-highlight","HIGHLIGHT")
-	frame.contentFrame.mapButton.highlight:SetPoint("RIGHT", frame.contentFrame.mapButton, -7, 0)
-	frame.contentFrame.mapButton.highlight:SetWidth(36)
-	frame.contentFrame.mapButton.highlight:SetHeight(25)
-	frame.contentFrame.mapButton.highlight:SetTexture("Interface\\BUTTONS\\ButtonHilight-Square")
-	frame.contentFrame.mapButton.highlight:SetBlendMode("ADD")
-
 	-- Model
 	frame.contentFrame.modelButton = GUI.CreateButton()
-	frame.contentFrame.modelButton:SetPoint("RIGHT", frame.contentFrame.mapButton, "LEFT", 0, 0)
+	frame.contentFrame.modelButton:SetPoint("RIGHT", frame.contentFrame.nextPageButton, "LEFT", 0, 0)
 	frame.contentFrame.modelButton:SetText(AL["Model"])
 	frame.contentFrame.modelButton:SetScript("OnClick", ModelButtonOnClick)
 	frame.contentFrame.modelButton:Hide()
@@ -1391,36 +1182,7 @@ function GUI:Create()
 	frame.contentFrame.contentPhaseButton:SetHeight(25)
 	frame.contentFrame.contentPhaseButton:SetPoint("RIGHT", frame.contentFrame.modelButton, "LEFT", -5, 0)
 	frame.contentFrame.contentPhaseButton:SetScript("OnClick", ContentPhaseButton_OnClick)
-	--frame.contentFrame.contentPhaseButton:SetScript("OnShow", ContentPhaseButton_OnShow)
-	--frame.contentFrame.contentPhaseButton:SetScript("OnEnter", ContentPhaseButton_OnEnter)
-	--frame.contentFrame.contentPhaseButton:SetScript("OnLeave", ContentPhaseButton_OnLeave)
 	frame.contentFrame.contentPhaseButton.mainButton = true
-	--frame.contentFrame.clasFilterButton:Hide()
-
-	--[[ AtlasMapButton
-	frame.contentFrame.AtlasMapButton = CreateFrame("Button", frameName.."-AtlasMapButton")
-	frame.contentFrame.AtlasMapButton:SetParent(frame.contentFrame)
-	frame.contentFrame.AtlasMapButton:SetWidth(32)
-	frame.contentFrame.AtlasMapButton:SetHeight(32)
-	frame.contentFrame.AtlasMapButton:SetPoint("RIGHT", frame.contentFrame.modelButton, "LEFT", -2, 0)
-	frame.contentFrame.AtlasMapButton:RegisterForClicks("LeftButtonDown", "RightButtonDown")
-	frame.contentFrame.AtlasMapButton:SetScript("OnClick", AtlasMapButton_OnClick)
-	frame.contentFrame.AtlasMapButton:SetScript("OnEnter", AtlasMapButton_OnEnter)
-	frame.contentFrame.AtlasMapButton:SetScript("OnLeave", function(self) GetAlTooltip():Hide() end)
-
-	frame.contentFrame.AtlasMapButton.texture = frame.contentFrame.AtlasMapButton:CreateTexture(frameName.."-AtlasMapButton-texture","ARTWORK")
-	frame.contentFrame.AtlasMapButton.texture:SetPoint("RIGHT", frame.contentFrame.AtlasMapButton)
-	frame.contentFrame.AtlasMapButton.texture:SetWidth(32)
-	frame.contentFrame.AtlasMapButton.texture:SetHeight(32)
-	frame.contentFrame.AtlasMapButton.texture:SetTexture("Interface\\AddOns\\AtlasLoot\\Images\\Atlas_Button")
-
-	frame.contentFrame.AtlasMapButton.highlight = frame.contentFrame.AtlasMapButton:CreateTexture(frameName.."-AtlasMapButton-highlight","HIGHLIGHT")
-	frame.contentFrame.AtlasMapButton.highlight:SetPoint("CENTER", frame.contentFrame.AtlasMapButton, 0, 0)
-	frame.contentFrame.AtlasMapButton.highlight:SetWidth(48)
-	frame.contentFrame.AtlasMapButton.highlight:SetHeight(48)
-	frame.contentFrame.AtlasMapButton.highlight:SetTexture("Interface\\Buttons\\UI-Common-MouseHilight")
-	frame.contentFrame.AtlasMapButton.highlight:SetBlendMode("ADD")
-	]]--
 
 	-- Sound
 	frame.contentFrame.soundsButton = GUI.CreateButton()

@@ -136,7 +136,6 @@ local PVP_RANKS = {	-- Keys
 
 data["AlteracValley"] = {
 	MapID = 2597,
-	AtlasMapID = "AlteracValley",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	ContentPhase = 2.5,
@@ -259,7 +258,6 @@ data["AlteracValley"] = {
 
 data["WarsongGulch"] = {
 	MapID = 3277,
-	AtlasMapID = "WarsongGulch",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	ContentPhase = 2.5,
@@ -488,7 +486,6 @@ data["WarsongGulch"] = {
 
 data["ArathiBasin"] = {
 	MapID = 3358,
-	AtlasMapID = "ArathiBasin",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	ContentPhase = 4,

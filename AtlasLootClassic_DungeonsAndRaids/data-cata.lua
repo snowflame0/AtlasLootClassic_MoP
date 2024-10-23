@@ -36,8 +36,6 @@ local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
 local DUNGEON_CONTENT = data:AddContentType(AL["Dungeons"], ATLASLOOT_DUNGEON_COLOR)
 local RAID_CONTENT = data:AddContentType(AL["Raids"], ATLASLOOT_RAID40_COLOR)
 
---local ATLAS_MODULE_NAME = "Atlas_Cataclysm"
-
 -- extra
 local CLASS_NAME = AtlasLoot:GetColoredClassNames()
 

@@ -13,7 +13,6 @@ AtlasLoot.AtlasLootDBDefaults = {
 		enableAutoSelect = true,
 		enableAutoSelectBoss = true,
 		showDropRate = true,
-		enableAtlasMapIntegration = true,
 		enableColorsInNames = true,
 		ContentPhases = {
 			enableOnLootTable = true,
@@ -64,14 +63,6 @@ AtlasLoot.AtlasLootDBDefaults = {
 		},
 		OptionsFrame = {
 			point = { "CENTER", nil, "CENTER", 0, 0 },
-		},
-		Map = {		-- Map\
-			point = {"CENTER"},
-			locked = false,
-		},
-		WorldMap = {
-			showbutton = true,
-			buttonOnTitleBar = true,
 		},
 		minimap = {
 			shown = true,

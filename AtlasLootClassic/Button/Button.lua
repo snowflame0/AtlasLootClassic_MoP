@@ -38,7 +38,6 @@ local GetAlTooltip = AtlasLoot.Tooltip.GetTooltip
 local DEFAULT_BACKGROUND_COLOR = {0.82, 0.82, 0.82, 0.4}
 
 -- UnitFactionGroup("player")		"Alliance", "Horde", "Neutral" or nil.
--- :SetAtlas()
 local WOW_HEAD_LINK, WOW_HEAD_LINK_LOC
 if AtlasLoot:GetGameVersion() == AtlasLoot.BC_VERSION_NUM then
 	WOW_HEAD_LINK, WOW_HEAD_LINK_LOC = "https://tbc.wowhead.com/%s=%d", "https://%s.tbc.wowhead.com/%s=%d"

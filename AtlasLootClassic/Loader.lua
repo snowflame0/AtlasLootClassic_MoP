@@ -24,10 +24,7 @@ local AllLoaded
 local LoaderQueue = {}
 local LoaderQueueSaves = {}
 local ModuleList = {}
-local AtlasModuleList = {}
 local LoadModuleSpam = {}
-
-local AtlasMapsModuleLoaded = false
 
 -- A list of officiel AtlasLoot modules
 local ATLASLOOT_MODULE_LIST = {
@@ -119,8 +116,6 @@ function Loader.Init()
 				moduleName = GetAddOnMetadata(tmp[1], "X-AtlasLootClassic-ModuleName") or tmp[1],
 				lootModule = GetAddOnMetadata(tmp[1], "X-AtlasLootClassic-LootModule"),
 			}
-		elseif tmp[1] and str_find(tmp[1], "Atlas_") then
-			AtlasModuleList[tmp[1]] = GetAddOnEnableState(playerName, i) ~= 0
 		end
 	end
 	IsInit = true
@@ -129,12 +124,6 @@ function Loader.Init()
 		local loadCustom = AllLoaded == "loadAll" and true or false
 		AllLoaded = nil
 		Loader:LoadAllModules(loadCustom)
-	end
-
-	if ModuleList["AtlasLootClassic_Maps"] and ModuleList["AtlasLootClassic_Maps"].enabled then
-		Loader:LoadModule("AtlasLootClassic_Maps", function() AtlasMapsModuleLoaded = true end)
-	else
-		AtlasMapsModuleLoaded = false
 	end
 
 	AtlasLoot.Data.AutoSelect:RefreshOptions()
@@ -260,17 +249,5 @@ function Loader:LoadAllModules(loadCustom)
 		for k,v in ipairs(moduleList.custom) do
 			Loader:LoadModule(v.addonName)
 		end
-	end
-end
-
-function Loader.IsMapsModuleAviable(moduleName)
-	if moduleName then
-		if AtlasLoot.db.enableAtlasMapIntegration then
-			return AtlasModuleList[moduleName]
-		else
-			return false
-		end
-	else
-		return AtlasMapsModuleLoaded
 	end
 end

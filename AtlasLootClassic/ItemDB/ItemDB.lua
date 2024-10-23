@@ -20,8 +20,6 @@ local LEVEL_RANGE_FORMAT = "  (|cffff0000%d|r: |cffff8040%d|r - |cff40bf40%d|r)"
 local LEVEL_RANGE_FORMAT2 = "  (|cffff8040%d|r - |cff40bf40%d|r)"
 local CONTENT_PHASE_FORMAT = "|cff00FF96".."<P: %g>".."|r"
 
-local IsMapsModuleAviable = AtlasLoot.Loader.IsMapsModuleAviable
-
 -- Saves all the items ;)
 ItemDB.Storage = {}
 
@@ -558,9 +556,6 @@ function ItemDB.ContentProto:GetNameForItemTable(index, raw)
     if not raw then
         if AtlasLoot.db.ContentPhases.enableOnLootTable and not ContentPhase:IsActive(GetContentPhaseFromTable(index), index.gameVersion or self.gameVersion) then
             addEnd = addEnd.." "..format(CONTENT_PHASE_FORMAT, GetContentPhaseFromTable(index))
-        end
-        if IsMapsModuleAviable(self.AtlasModule or index.AtlasModule) and index.AtlasMapBossID then
-            addStart = addStart.."|cffffffff"..index.AtlasMapBossID..")|r "
         end
         if AtlasLoot.db.enableBossLevel and index.Level then
             if type(index.Level) == "table" then

@@ -2,8 +2,6 @@
 
 ### AtlasLootClassic Cata is a forked and revised version of the AtlasLootClassic updated for Cataclysm Classic. It allows for various loot tables to be browsed in-game.
 
-### !! This is still mostly a  work in progress !! 
-
 #### If you appreciate the work and want to help support my broke ass while I keep working on this, please feel free to buy me a coffee @ https://buymeacoffee.com/snowflame0
 
 ## Features
@@ -23,15 +21,8 @@
 Please report any bugs on Github, I will keep adding missing features. Special thanks to everyone who has helped out adding missing items, sets, and etc!
 
 
-## Releases
-### v4.0.1 beta1 (June 4, 2024)
-- First Cata beta
-- Only compatible with Cataclysm Classic (Classic Era players continue to use Original version)
-- All modules have most data, some problems still exist
-- Most item sources should work, report any that don't
-- Only S9 PvP items added so far
-- Collections may be missing items, will add as they come
-- Many, many commits!
+## Latest Release
+### v4.2.0 (TBD)
 
 
 ## Credits
