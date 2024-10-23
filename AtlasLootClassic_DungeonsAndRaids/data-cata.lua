@@ -1371,7 +1371,7 @@ EncounterJournalID = 130,
     { 9, 56433 },	-- Blade of the Burning Sun
     { 10, 56430 },	-- Sun Strike
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points                    
+    { 16, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 18, "ac5065" },
     { 19, "ac5295" },
 },
