@@ -1245,7 +1245,7 @@ EncounterJournalID = 126,
     { 3, 57867 },	-- Boots of Crumbling Ruin
     { 4, 57869 },	-- Omega Breastplate
     { 5, 57870 },	-- Alpha Bracers
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+    { 16, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac5296" },
 },
 [INFERNO_DIFF] = {
@@ -1743,6 +1743,16 @@ data["ShadowfangKeep"] = {
             { 5, 63434 },	-- Gloves of the Greymane Wall
             { 16, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 18, "ac5503" },
+        },
+        [INFERNO_DIFF] = {
+            { 1, 63433 },	-- Robes of Arugal
+            { 2, 63437 },	-- Baron Ashbury's Cuffs
+            { 3, 63435 },	-- Boots of the Predator
+            { 4, 63436 },	-- Traitor's Grips
+            { 5, 63434 },	-- Gloves of the Greymane Wall
+            { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+            { 19, "ac5503" },
         },
     },
     { -- Baron Silverlaine
