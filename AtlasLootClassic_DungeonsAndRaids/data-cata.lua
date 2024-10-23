@@ -1187,6 +1187,7 @@ data["HallsOfOrigination"] = {
             { 5, 56407 },	-- Anhuur's HymnaL
             { 16, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 18, "ac5293" },
+        },
         [INFERNO_DIFF] = {
             { 1, 56409 },	-- Poison Fang Bracers
             { 2, 56408 },	-- Awakening Footfalls
