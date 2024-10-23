@@ -290,6 +290,22 @@ CoinTexture = "Achievement",
 }
 }
 
+local PROTOCOL_INFERNO_AC_TABLE = {	--[Protocol Inferno: Terminated]
+AchievementID = 41148,
+TableType = AC_ITTYPE,
+ExtraList = true,
+IgnoreAsSource = true,
+CoinTexture = "Achievement",
+[INFERNO_DIFF] = {
+    { 1, 41148 },            
+    { 2, 41139 },			{ 17, 41140 },
+    { 3, 41141 },			{ 18, 41142 },
+    { 4, 41143 },			{ 19, 41144 },
+    { 5, 41145 },			{ 20, 41146 },
+    { 6, 41147 }
+}
+}
+
 local CATA_RAID1_AC_TABLE = {	--[Glory of the Cataclysm Raider]
 AchievementID = 4853,
 TableType = AC_ITTYPE,
@@ -412,8 +428,8 @@ data["BlackrockCaverns"] = {
         { 3, 56299 },	-- Signet of Transformation
         { 4, 56295 },	-- Grace of the Herald
         { 5, 56296 },	-- Corla's Baton
-        { 18, "ac5282" },
         { 16, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+        { 18, "ac5282" },
     },
     [INFERNO_DIFF] = {
         { 1, 56297 },	-- Armbands of Change
@@ -442,8 +458,8 @@ EncounterJournalID = 107,
     { 3, 56301 },	-- Bracers of Cooled Anger
     { 4, 56300 },	-- Quicksilver Amulet
     { 5, 56302 },	-- Steelbender's Masterpiece
-    { 18, "ac5283" },
     { 16, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+    { 18, "ac5283" },
 },
 [INFERNO_DIFF] = {
     { 1, 56304 },	-- Burned Gatherings
@@ -547,6 +563,7 @@ ExtraList = true,
 CATA_DUNGEON_HERO_AC_TABLE,
 CATA_DEFENDER_AC_TABLE,
 CATA_GLORY_OF_THE_HERO_AC_TABLE,
+PROTOCOL_INFERNO_AC_TABLE,
 }
 }
 
@@ -610,8 +627,8 @@ data["ThroneOfTheTides"] = {
         { 3, 56274 },	-- Chromis Chestpiece
         { 4, 56272 },	-- Harp Shell Pauldrons
         { 5, 56271 },	-- Cerith Spire Staff
-        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
 },
 },
 { -- Mindbender Ghur'sha
@@ -638,8 +655,8 @@ EncounterJournalID = 103,
     { 3, 56278 },	-- Anomuran Helm
     { 4, 56280 },	-- Porcelain Crab
     { 5, 56279 },   -- Conch of Thundering Waves
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
 },
 },
 { -- Ozumat
@@ -686,10 +703,11 @@ EncounterJournalID = 104,
     { 9, 56289 },	-- Bioluminescent Lamp
     { 10, 56284 },	-- Whitefin Axe
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
-    { 19, "ac5061" },
-    { 20, "ac5286" },
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+    { 19, "ac41140" },
+    { 20, "ac5061" },
+    { 21, "ac5286" },
 },
 },
 { -- Trash
@@ -704,6 +722,7 @@ ExtraList = true,
 CATA_DUNGEON_HERO_AC_TABLE,
 CATA_DEFENDER_AC_TABLE,
 CATA_GLORY_OF_THE_HERO_AC_TABLE,
+PROTOCOL_INFERNO_AC_TABLE,
 }
 }
 
@@ -738,8 +757,8 @@ data["TheStonecore"] = {
             { 3, 56332 },	-- Phosphorescent Ring
             { 4, 56328 },	-- Key to the Endless Chamber
             { 5, 56329 },	-- Fist of Pained Senses
-            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         },
     },
     { -- Slabhide
@@ -759,8 +778,8 @@ data["TheStonecore"] = {
         { 3, 56333 },	-- Rose Quartz Band
         { 4, 56335 },	-- Quicksilver Blade
         { 5, 56337 },   -- Stalagmite Dragon
-        { 16, 63043 },	-- Reins of the Vitreous Stone Drake
-        { 18, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+        { 16, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+        { 18, 63043 },	-- Reins of the Vitreous Stone Drake
     },
     [INFERNO_DIFF] = {
         { 1, 56334 },	-- Deep Delving Gloves
@@ -768,9 +787,9 @@ data["TheStonecore"] = {
         { 3, 56333 },	-- Rose Quartz Band
         { 4, 56335 },	-- Quicksilver Blade
         { 5, 56337 },   -- Stalagmite Dragon
-        { 16, 63043 },	-- Reins of the Vitreous Stone Drake
-        { 19, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
-        { 18, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+        { 19, 63043 },	-- Reins of the Vitreous Stone Drake
     },
 },
 { -- Ozruk
@@ -797,8 +816,8 @@ EncounterJournalID = 112,
     { 3, 56338 },	-- Pendant of the Lightless Grotto
     { 4, 56339 },	-- Tendrils of Burrowing Dark
     { 5, 56342 },	-- Sword of the Bottomless Pit
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
 },
 },
 { -- High Priestess Azil
@@ -845,10 +864,11 @@ EncounterJournalID = 113,
     { 9, 56343 },	-- Darkling Staff
     { 10, 56350},   -- Book of Dark Prophecies
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
-    { 19, "ac5063" },
-    { 20, "ac5287" },
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+    { 19, "ac41141" },
+    { 20, "ac5063" },
+    { 21, "ac5287" },
 },
 },
 { -- Trash
@@ -863,6 +883,7 @@ ExtraList = true,
 CATA_DUNGEON_HERO_AC_TABLE,
 CATA_DEFENDER_AC_TABLE,
 CATA_GLORY_OF_THE_HERO_AC_TABLE,
+PROTOCOL_INFERNO_AC_TABLE,
 }
 }
 
@@ -900,8 +921,8 @@ data["TheVortexPinnacle"] = {
             { 4, 56360 },	-- Red Sky Pendant
             { 5, 56357 },	-- Biting Wind
             { 7, 65660, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Grand Vizier Ertan's Heart
-            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         },
     },
     { -- Altairus
@@ -921,8 +942,8 @@ data["TheVortexPinnacle"] = {
         { 3, 56362 },	-- Amulet of Tender Breath
         { 4, 56365 },	-- Skyshard Ring
         { 5, 56364 },	-- Axe of the Eclipse
-        { 16, 63040 },	-- Reins of the Drake of the North Wind
-        { 18, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+        { 16, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+        { 18, 63040 },	-- Reins of the Drake of the North Wind
     },
     [INFERNO_DIFF] = {
         { 1, 56361 },	-- Mantle of Bestilled Winds
@@ -930,9 +951,9 @@ data["TheVortexPinnacle"] = {
         { 3, 56362 },	-- Amulet of Tender Breath
         { 4, 56365 },	-- Skyshard Ring
         { 5, 56364 },	-- Axe of the Eclipse
-        { 16, 63040 },	-- Reins of the Drake of the North Wind
-        { 19, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
-        { 18, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+        { 19, 63040 },	-- Reins of the Drake of the North Wind
     },
 },
 { -- Asaad, Caliph of Zephyrs
@@ -982,8 +1003,8 @@ EncounterJournalID = 116,
     { 10, 56376 },	-- Thundercall
     { 11, 56372 },  -- Captured Lightning
     { 13, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac5064" },
     { 20, "ac5288" },
 },
@@ -999,6 +1020,7 @@ ExtraList = true,
 CATA_DUNGEON_HERO_AC_TABLE,
 CATA_DEFENDER_AC_TABLE,
 CATA_GLORY_OF_THE_HERO_AC_TABLE,
+PROTOCOL_INFERNO_AC_TABLE,
 }
 }
 
@@ -1033,8 +1055,8 @@ data["LostCityOfTolvir"] = {
             { 3, 56381 },	-- Greaves of Wu the Elder
             { 4, 56380 },	-- Spirit Creeper Ring
             { 5, 56382 },	-- Seliza's Spear
-            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         },
     },
     { -- Lockmaw
@@ -1062,8 +1084,8 @@ data["LostCityOfTolvir"] = {
         { 3, 56391 },	-- Veneficial Band
         { 4, 56393 },	-- Heart of Solace
         { 5, 56390 },	-- Barim's Main Gauche
-        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         { 19, "ac5291" },
     },
 },
@@ -1092,8 +1114,8 @@ EncounterJournalID = 119,
     { 3, 56385 },	-- Tauntka's Necklace
     { 4, 56388 },	-- Ring of the Darkest Day
     { 5, 56384 },	-- Resonant Kris
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac5290" },
 },
 },
@@ -1143,8 +1165,9 @@ EncounterJournalID = 122,
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
-    { 19, "ac5066" },
-    { 20, "ac5292" },
+    { 19, "ac41145" },
+    { 20, "ac5066" },
+    { 21, "ac5292" },
 },
 },
 { -- Trash
@@ -1159,6 +1182,7 @@ ExtraList = true,
 CATA_DUNGEON_HERO_AC_TABLE,
 CATA_DEFENDER_AC_TABLE,
 CATA_GLORY_OF_THE_HERO_AC_TABLE,
+PROTOCOL_INFERNO_AC_TABLE,
 }
 }
 
@@ -1194,8 +1218,8 @@ data["HallsOfOrigination"] = {
             { 3, 56410 },	-- Belt of Petrified Tears
             { 4, 56411 },	-- Darkhowl Amulet
             { 5, 56407 },	-- Anhuur's Hymnal
-            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 19, "ac5293" },
         },
     },
@@ -1224,8 +1248,8 @@ data["HallsOfOrigination"] = {
         { 3, 56422 },	-- Mouth of the Earth
         { 4, 56424 },	-- Soul Releaser
         { 5, 56426 },	-- Bulwark of the Primordial Mound
-        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         { 19, "ac5294" },
     },
 },
@@ -1254,8 +1278,8 @@ EncounterJournalID = 126,
     { 3, 57867 },	-- Boots of Crumbling Ruin
     { 4, 57869 },	-- Omega Breastplate
     { 5, 57870 },	-- Alpha Bracers
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac5296" },
 },
 },
@@ -1283,8 +1307,8 @@ EncounterJournalID = 127,
     { 3, 56415 },	-- Nova Band
     { 4, 56412 },	-- Ring of Blinding Stars
     { 5, 56414 },	-- Blood of Isiset
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
 },
 },
 { -- Ammunae, Construct of Life
@@ -1311,8 +1335,8 @@ EncounterJournalID = 128,
     { 3, 56421 },	-- Seedling Pod
     { 4, 56418 },	-- Band of Life Energy
     { 5, 56420 },   -- Slashing Thorns
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
 },
 },
 { -- Setesh, Construct of Destruction
@@ -1339,8 +1363,8 @@ EncounterJournalID = 129,
     { 3, 57875 },	-- Chaotic Wrappings
     { 4, 57873 },	-- Helm of Setesh
     { 5, 57872 },	-- Scepter of Power
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
 },
 },
 { -- Rajh, Construct of Sun
@@ -1387,10 +1411,11 @@ EncounterJournalID = 130,
     { 9, 56433 },	-- Blade of the Burning Sun
     { 10, 56430 },	-- Sun Strike
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
-    { 19, "ac5065" },
-    { 20, "ac5295" },
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+    { 19, "ac41144" },
+    { 21, "ac5065" },
+    { 22, "ac5295" },
 },
 },
 { -- Trash
@@ -1405,6 +1430,7 @@ ExtraList = true,
 CATA_DUNGEON_HERO_AC_TABLE,
 CATA_DEFENDER_AC_TABLE,
 CATA_GLORY_OF_THE_HERO_AC_TABLE,
+PROTOCOL_INFERNO_AC_TABLE,
 }
 }
 
@@ -1440,8 +1466,8 @@ data["GrimBatol"] = {
             { 3, 56444 },	-- Umbriss Band
             { 4, 56440 },	-- Skardyn's Grace
             { 5, 56441 },	-- Modgud's Blade
-            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 19, "ac5297" },
         },
     },
@@ -1469,8 +1495,8 @@ data["GrimBatol"] = {
         { 3, 56445 },	-- Ring of Dun Algaz
         { 4, 56449 },	-- Throngus's Finger
         { 5, 56446 },	-- Wand of Untainted Power
-        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     },
 },
 { -- Drahga Shadowburner
@@ -1500,8 +1526,8 @@ EncounterJournalID = 133,
     { 4, 56452 },	-- Earthshape Pauldrons
     { 5, 56454 },	-- Windwalker Blade
     { 7, 66927, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Missive to Cho'gall
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
 },
 },
 { -- Erudax, the Duke of Below
@@ -1548,10 +1574,11 @@ EncounterJournalID = 134,
     { 9, 56456 },	-- Wild Hammer
     { 10, 56461 },	-- Staff of Siphoned Essences
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
-    { 19, "ac5062" },
-    { 20, "ac5298" },
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+    { 19, "ac41143" },
+    { 20, "ac5062" },
+    { 21, "ac5298" },
 },
 },
 { -- Trash
@@ -1566,6 +1593,7 @@ ExtraList = true,
 CATA_DUNGEON_HERO_AC_TABLE,
 CATA_DEFENDER_AC_TABLE,
 CATA_GLORY_OF_THE_HERO_AC_TABLE,
+PROTOCOL_INFERNO_AC_TABLE,
 }
 }
 
@@ -1593,8 +1621,8 @@ data["Deadmines"] = {
             { 3, 63471 },	-- Vest of the Curious Visitor
             { 4, 63470 },	-- Missing Diplomat's Pauldrons
             { 5, 65163 },	-- Buzzer Blade
-            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+            { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 19, "ac5366" },
         },
     },
@@ -1616,8 +1644,8 @@ data["Deadmines"] = {
         { 3, 63476 },	-- Gearbreaker's Bindings
         { 4, 63474 },	-- Gear-Marked Gauntlets
         { 5, 65164 },	-- Cruel Barb
-        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         { 19, "ac5367" },
     },
 },
@@ -1635,8 +1663,8 @@ EncounterJournalID = 91,
     { 1, 65166 },	-- Buzz Saw
     { 2, 65165 },	-- Foe Reaper
     { 3, 65167 },	-- Emberstone Staff
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac5368" },
 },
 },
@@ -1654,8 +1682,8 @@ EncounterJournalID = 92,
     { 1, 65169 },	-- Lavishly Jeweled Ring
     { 2, 65170 },	-- Smite's Reaver
     { 3, 65168 },	-- Rockslicer
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac5369" },
 },
 },
@@ -1677,8 +1705,8 @@ EncounterJournalID = 93,
     { 3, 65173 },	-- Thief's Blade
     { 4, 65171 },	-- Cookie's Tenderizer
     { 5, 65172 },	-- Cookie's Stirring Rod
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac5370" },
 },
 },
@@ -1713,15 +1741,17 @@ EncounterJournalID = 95,
     { 9, 63480 },   -- Record of the Brotherhood's End
     { 10, 63487 },  -- Book of the Well Sung Song
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
-    { 19, "ac5083" },
-    { 20, "ac5371" },
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+    { 19, "ac41146" },
+    { 20, "ac5083" },
+    { 21, "ac5371" },
 },
 },
 CATA_DUNGEON_HERO_AC_TABLE,
 CATA_DEFENDER_AC_TABLE,
 CATA_GLORY_OF_THE_HERO_AC_TABLE,
+PROTOCOL_INFERNO_AC_TABLE,
 }
 }
 
@@ -1772,8 +1802,8 @@ data["ShadowfangKeep"] = {
         { 3, 63444 },	-- Baron Silverlaine's Greaves
         { 4, 63438 },	-- Baroness Silverlaine's Locket
         { 5, 63441 },	-- Pendant of the Keep
-        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     },
 },
 { -- Commander Springvale
@@ -1794,8 +1824,8 @@ EncounterJournalID = 98,
     { 3, 63447 },	-- Breastplate of the Stilled Heart
     { 4, 63446 },	-- Haunting Footfalls
     { 5, 63445 },	-- Arced War Axe
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac5504" },
 },
 },
@@ -1816,8 +1846,8 @@ EncounterJournalID = 99,
     { 3, 63452 },	-- Burden of Lost Humanity
     { 4, 63450 },	-- Phantom Armor
     { 5, 63453 },	-- Iron Will Girdle
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
 },
 },
 { -- Lord Godfrey
@@ -1851,10 +1881,11 @@ EncounterJournalID = 100,
     { 9, 63461 },	-- Staff of Isolation
     { 10, 63460} ,  -- Relic of Arathor
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
-    { 19, "ac5093" },
-    { 20, "ac5505" },
+    { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+    { 19, "ac41147" },
+    { 20, "ac5093" },
+    { 21, "ac5505" },
 },
 },
 {
@@ -1880,6 +1911,7 @@ EncounterJournalID = 100,
 CATA_DUNGEON_HERO_AC_TABLE,
 CATA_DEFENDER_AC_TABLE,
 CATA_GLORY_OF_THE_HERO_AC_TABLE,
+PROTOCOL_INFERNO_AC_TABLE,
 }
 }
 
