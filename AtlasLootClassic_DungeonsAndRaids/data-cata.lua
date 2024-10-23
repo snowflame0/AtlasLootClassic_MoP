@@ -610,8 +610,8 @@ data["ThroneOfTheTides"] = {
         { 3, 56274 },	-- Chromis Chestpiece
         { 4, 56272 },	-- Harp Shell Pauldrons
         { 5, 56271 },	-- Cerith Spire Staff
-        { 16, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
-        { 17, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
+        { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
 },
 },
 { -- Mindbender Ghur'sha
