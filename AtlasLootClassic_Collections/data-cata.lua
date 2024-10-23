@@ -456,7 +456,7 @@ data["ValorPoints"] = {
 }
 
 data["FissureStoneFragments"] = {
-    name = format(AL["'%s' Vendor"], AL["Fissure Stone Fragment"]),
+    name = AL["Fissure Stone Fragment"],
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
