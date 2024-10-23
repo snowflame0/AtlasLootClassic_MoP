@@ -1257,7 +1257,7 @@ EncounterJournalID = 126,
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
     { 19, "ac5296" },
-},                
+},
 },
 { -- Isiset, Construct of Magic
 name = AL["Isiset, Construct of Magic"],
@@ -1313,7 +1313,7 @@ EncounterJournalID = 128,
     { 5, 56420 },   -- Slashing Thorns
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
-},                
+},
 },
 { -- Setesh, Construct of Destruction
 name = AL["Setesh, Construct of Destruction"],
@@ -1341,7 +1341,7 @@ EncounterJournalID = 129,
     { 5, 57872 },	-- Scepter of Power
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
-},                
+},
 },
 { -- Rajh, Construct of Sun
 name = AL["Rajh, Construct of Sun"],
@@ -1391,7 +1391,7 @@ EncounterJournalID = 130,
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
     { 19, "ac5065" },
     { 20, "ac5295" },
-},                
+},
 },
 { -- Trash
 name = AL["Trash Mobs"],
@@ -1443,7 +1443,7 @@ data["GrimBatol"] = {
             { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
             { 19, "ac5297" },
-        },               
+        },
     },
     { -- Forgemaster Throngus
     name = AL["Forgemaster Throngus"],
@@ -1471,7 +1471,7 @@ data["GrimBatol"] = {
         { 5, 56446 },	-- Wand of Untainted Power
         { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
-    },                
+    },
 },
 { -- Drahga Shadowburner
 name = AL["Drahga Shadowburner"],
@@ -1502,7 +1502,7 @@ EncounterJournalID = 133,
     { 7, 66927, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Missive to Cho'gall
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
-},                
+},
 },
 { -- Erudax, the Duke of Below
 name = AL["Erudax, the Duke of Below"],
@@ -1552,7 +1552,7 @@ EncounterJournalID = 134,
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
     { 19, "ac5062" },
     { 20, "ac5298" },
-},                
+},
 },
 { -- Trash
 name = AL["Trash Mobs"],
@@ -1596,7 +1596,7 @@ data["Deadmines"] = {
             { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
             { 19, "ac5366" },
-        },            
+        },
     },
     { -- Helix Gearbreaker
     name = AL["Helix Gearbreaker"],
@@ -1619,7 +1619,7 @@ data["Deadmines"] = {
         { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
         { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
         { 19, "ac5367" },
-    },                
+    },
 },
 { -- Foe Reaper 5000
 name = AL["Foe Reaper 5000"],
@@ -1638,7 +1638,7 @@ EncounterJournalID = 91,
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
     { 19, "ac5368" },
-},                
+},
 },
 { -- Admiral Ripsnarl
 name = AL["Admiral Ripsnarl"],
@@ -1657,7 +1657,7 @@ EncounterJournalID = 92,
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
     { 19, "ac5369" },
-},                
+},
 },
 { -- "Captain" Cookie
 name = AL["\"Captain\" Cookie"],
@@ -1680,7 +1680,7 @@ EncounterJournalID = 93,
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
     { 19, "ac5370" },
-},                
+},
 },
 { -- Vanessa VanCleef
 name = AL["Vanessa VanCleef"],
@@ -1717,7 +1717,7 @@ EncounterJournalID = 95,
     { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
     { 19, "ac5083" },
     { 20, "ac5371" },
-},                
+},
 },
 CATA_DUNGEON_HERO_AC_TABLE,
 CATA_DEFENDER_AC_TABLE,
