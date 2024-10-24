@@ -55,6 +55,8 @@ function ModelFrame.ButtonOnClick(self)
 	--- Looks up NpcID in Data/Model.lua table because SetDisplayInfo() has been
 	--- broken for over a year AND calls SetCreature() function twice with
 	--- a small delay in between calls because SetCreature() is also bugged
+	--- may cause models to appear glitchy and has a small load time,
+	--- it is what it is...
 	--- :)
 	local NpcID = Model:GetNpcID(self.displayInfo)
 	if not NpcID then
