@@ -72,6 +72,7 @@ Data\Requirements.lua
 Data\ClassFilter.lua
 Data\ItemSet.lua
 Data\VendorPrice.lua
+Data\Model.lua
 
 ItemDB\ItemDB.lua
 ItemDB\SoundData.lua

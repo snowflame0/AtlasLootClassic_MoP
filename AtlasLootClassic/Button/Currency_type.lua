@@ -106,6 +106,9 @@ function Currency.Refresh(button)
 
     -- TODO: maybe add max currency data
     local currencyInfo = GetCurrencyInfo(button.CurrencyID)
+	if not currencyInfo then
+		return false
+	end
     local currencyName, currencyTexture, currencyQuality = currencyInfo.name, currencyInfo.iconFileID, currencyInfo.quality
 
 	button.RawName = currencyName

@@ -420,7 +420,6 @@ data["DeadminesCata"] = {
     items = {
         { -- Glubtok
             name = AL["Glubtok"],
-            EncounterJournalID = 89,
             [NORMAL_DIFF] = {
                 { 1, 5195 }, -- Gold-Flecked Gloves
                 { 2, 2169 }, -- Buzzer Blade
@@ -429,7 +428,6 @@ data["DeadminesCata"] = {
         },
         { -- Helix Gearbreaker
             name = AL["Helix Gearbreaker"],
-            EncounterJournalID = 90,
             [NORMAL_DIFF] = {
                 { 1, 5200 }, -- Impaling Harpoon
                 { 2, 5191 }, -- Cruel Barb
@@ -439,7 +437,6 @@ data["DeadminesCata"] = {
         },
         { -- Foe Reaper 5000
             name = AL["Foe Reaper 5000"],
-            EncounterJournalID = 91,
             [NORMAL_DIFF] = {
                 { 1, 1937 }, -- Buzz Saw
                 { 2, 5187 }, -- Foe Reaper
@@ -448,7 +445,6 @@ data["DeadminesCata"] = {
         },
         { -- Admiral Ripsnarl
             name = AL["Admiral Ripsnarl"],
-            EncounterJournalID = 92,
             [NORMAL_DIFF] = {
                 { 1, 1156 }, -- Lavishly Jeweled Ring
                 { 2, 5196 }, -- Smite's Reaver
@@ -457,7 +453,6 @@ data["DeadminesCata"] = {
         },
         { -- "Captain" Cookie
             name = AL["\"Captain\" Cookie"],
-            EncounterJournalID = 93,
             [NORMAL_DIFF] = {
                 { 1, 5193 }, -- Cape of the Brotherhood
                 { 2, 5202 }, -- Corsair's Overshirt
@@ -478,7 +473,6 @@ data["ShadowfangKeepCata"] = {
     items = {
         { -- Baron Ashbury
             name = AL["Baron Ashbury"],
-            EncounterJournalID = 96,
             [NORMAL_DIFF] = {
                 { 1, 6314 }, -- Wolfmaster Cape
                 { 2, 6323 }, -- Baron's Scepter
@@ -487,7 +481,6 @@ data["ShadowfangKeepCata"] = {
         },
         { -- Baron Silverlaine
             name = AL["Baron Silverlaine"],
-            EncounterJournalID = 97,
             [NORMAL_DIFF] = {
                 { 1, 6321 }, -- Silverlaine's Family Seal
                 { 2, 6319 }, -- Girdle of the Blindwatcher
@@ -497,7 +490,6 @@ data["ShadowfangKeepCata"] = {
         },
         { -- Commander Springvale
             name = AL["Commander Springvale"],
-            EncounterJournalID = 98,
             [NORMAL_DIFF] = {
                 { 1, 3191 }, -- Arced War Axe
                 { 2, 6320 }, -- Commander's Crest
@@ -505,7 +497,6 @@ data["ShadowfangKeepCata"] = {
         },
         { -- Lord Walden
             name = AL["Lord Walden"],
-            EncounterJournalID = 99,
             [NORMAL_DIFF] = {
                 { 1, 1292 }, -- Butcher's Cleaver
                 { 2, 6341 }, -- Eerie Stable Lantern
@@ -515,7 +506,6 @@ data["ShadowfangKeepCata"] = {
         },
         { -- Lord Godfrey
             name = AL["Lord Godfrey"],
-            EncounterJournalID = 100,
             [NORMAL_DIFF] = {
                 { 1, 6641 }, -- Haunting Blade
                 { 2, 6318 }, -- Odo's Ley Staff

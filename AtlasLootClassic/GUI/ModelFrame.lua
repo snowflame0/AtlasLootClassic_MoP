@@ -3,6 +3,7 @@ local GUI = AtlasLoot.GUI
 local ModelFrame = {}
 AtlasLoot.GUI.ModelFrame = ModelFrame
 local AL = AtlasLoot.Locales
+local Model = AtlasLoot.Data.Model
 
 -- lua
 local next = next
@@ -45,11 +46,28 @@ function ModelFrame.ButtonOnClick(self)
 	if ModelFrame.SelectedCreature then
 		ModelFrame.SelectedCreature:Enable()
 	end
+
 	ModelFrame.frame:SetDisplayInfo(self.displayInfo)
 	ModelFrame.frame:SetPosition(0,0,0)
-
-	self:Disable()
 	ModelFrame.SelectedCreature = self
+	self:Disable()
+
+	--- Temporary workaround: STILL BROKEN in game SetDisplayInfo
+	--- Looks up NpcID in Data/Model.lua table because SetDisplayInfo() has been
+	--- broken for over a year AND calls SetCreature() function twice with
+	--- a small delay in between calls because SetCreature() is also bugged
+	--- :)
+	local NpcID = Model:GetNpcID(self.displayInfo)
+	if not NpcID then
+		ModelFrame.frame:ClearModel()
+		return
+	end
+
+	ModelFrame.frame:SetCreature(NpcID, self.displayInfo)
+	C_Timer.After(1, function()
+		ModelFrame.frame:SetCreature(NpcID, self.displayInfo)
+	end)
+	--- End Workaround
 end
 
 function ModelFrame:AddButton(name, desc, displayInfo)
@@ -94,7 +112,7 @@ function ModelFrame:Create()
 	frame.Clear = ModelFrame.Clear
 	frame:Hide()
 
-	frame:SetCamDistanceScale(3) -- maybe change this later
+	frame:SetCamDistanceScale(3)
 end
 
 function ModelFrame:Show()

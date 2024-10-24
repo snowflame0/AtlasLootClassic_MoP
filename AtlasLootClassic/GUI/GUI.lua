@@ -76,12 +76,8 @@ local function UpdateFrames(noPageUpdate, forceContentUpdate)
 		end
 		GUI.ModelFrame.DisplayIDs = moduleData[dataID].items[bossID].DisplayIDs
 		contentFrame.modelButton:Show()
-	elseif moduleData[dataID].items[bossID].EncounterJournalID then
-		GUI.ModelFrame.EncounterJournalID = moduleData[dataID].items[bossID].EncounterJournalID
-		contentFrame.modelButton:Show()
 	else
 		GUI.ModelFrame.DisplayIDs = nil
-		GUI.ModelFrame.EncounterJournalID = nil
 		contentFrame.modelButton:Hide()
 	end
 
@@ -726,7 +722,7 @@ local function SubCatSelectFunction(self, id, arg)
 				if not dataExtra then dataExtra = {} end
 				local name = moduleData[id]:GetNameForItemTable(i)
 				local tt_title = moduleData[id]:GetNameForItemTable(i)
-				local tt_text = tabVal.info -- or AtlasLoot.EncounterJournal:GetBossInfo(tabVal.EncounterJournalID)
+				local tt_text = tabVal.info
 				if Favourites then
 					local favouriteCounts = Favourites:CountFavouritesByList(db.selected[1], db.selected[2], i)
 					local favouriteOverall = 0
@@ -747,8 +743,8 @@ local function SubCatSelectFunction(self, id, arg)
 					name_org = name,
 					coinTexture = tabVal.CoinTexture,
 					tt_title = tt_title,
-					tt_text = tt_text, -- or AtlasLoot.EncounterJournal:GetBossInfo(tabVal.EncounterJournalID)
-					tt_text_org = tt_text -- or AtlasLoot.EncounterJournal:GetBossInfo(tabVal.EncounterJournalID)
+					tt_text = tt_text,
+					tt_text_org = tt_text
 				}
 				if not dataExtra[#dataExtra].name then dataExtra[#dataExtra] = nil end
 			else
@@ -758,8 +754,8 @@ local function SubCatSelectFunction(self, id, arg)
 					name_org = moduleData[id]:GetNameForItemTable(i),
 					coinTexture = tabVal.CoinTexture,
 					tt_title = moduleData[id]:GetNameForItemTable(i),
-					tt_text = tabVal.info, -- or AtlasLoot.EncounterJournal:GetBossInfo(tabVal.EncounterJournalID)
-					tt_text_org = tabVal.info -- or AtlasLoot.EncounterJournal:GetBossInfo(tabVal.EncounterJournalID)
+					tt_text = tabVal.info,
+					tt_text_org = tabVal.info
 				}
 				if not data[#data].name then data[#data] = nil end
 				if linkedContentLastBoss and data[#data] and data[#data].name  == linkedContentLastBoss.name then
