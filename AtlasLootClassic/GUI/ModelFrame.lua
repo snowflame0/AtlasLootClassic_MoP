@@ -47,7 +47,6 @@ function ModelFrame.ButtonOnClick(self)
 		ModelFrame.SelectedCreature:Enable()
 	end
 
-	ModelFrame.frame:SetDisplayInfo(self.displayInfo)
 	ModelFrame.frame:SetPosition(0,0,0)
 	ModelFrame.SelectedCreature = self
 	self:Disable()
