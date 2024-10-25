@@ -18,6 +18,7 @@ local MAX_CREATURES_PER_ENCOUNTER = 9
 local BUTTON_COUNT = 0
 
 ModelFrame.SelectedCreature = nil
+ModelFrame.creatureDisplayID = nil
 local Creatures = {}
 local cache = {}
 local buttons = {}
@@ -45,16 +46,18 @@ function ModelFrame.ButtonOnClick(self)
 		ModelFrame.SelectedCreature:Enable()
 	end
 
-	if self.displayInfo and (self.creatureDisplayID ~= self.displayInfo) then
+	-- Only set new model actor if it's changed or isn't already set
+	if self.displayInfo and (ModelFrame.creatureDisplayID ~= self.displayInfo) then
+		-- TODO: Figure out another way to get modelsceneID without having to add it to data or get from EJ
 		ModelFrame.frame:SetFromModelSceneID(9, true)
 		local creature = ModelFrame.frame:GetActorByTag("creature");
 		if creature then
 			creature:SetModelByCreatureDisplayID(self.displayInfo, true);
 		end
-
-		self.creatureDisplayID = self.displayInfo;
 	end
 
+	-- Update selected creature and displayed model
+	ModelFrame.creatureDisplayID = self.displayInfo;
 	ModelFrame.SelectedCreature = self
 	self:Disable()
 end
@@ -89,19 +92,19 @@ function ModelFrame:Create()
 	local frameName = "AtlasLoot_GUI-ModelFrame"
 
 	self.frame = CreateFrame("ModelScene", frameName, GUI.frame, "ModelSceneMixinTemplate")
+    ModelFrame.RotateLeftButton = CreateFrame("Button", nil, self.frame, "RotateOrbitCameraLeftButtonTemplate")
+    ModelFrame.RotateLeftButton:SetPoint("TOPRIGHT", self.frame, "BOTTOM", -5, 35)
+    ModelFrame.RotateRightButton = CreateFrame("Button", nil, self.frame, "RotateOrbitCameraRightButtonTemplate")
+    ModelFrame.RotateRightButton:SetPoint("TOPLEFT", self.frame, "BOTTOM", 5, 35)
 	local frame = self.frame
 	frame:ClearAllPoints()
 	frame:SetParent(GUI.frame)
 	frame:SetPoint("TOPLEFT", GUI.frame.contentFrame.itemBG)
 	frame:SetSize(560, 450)
-	frame.minZoom = 0.0
-	frame.maxZoom = 1.0
-	--frame:SetBackdropColor(0, 0, 0, 1)
 	frame.Refresh = ModelFrame.Refresh
 	frame.Clear = ModelFrame.Clear
 	frame:Hide()
-	--frame:SetCamDistanceScale(3)
-	self.creatureDisplayID = 0
+	ModelFrame.creatureDisplayID = 0
 end
 
 function ModelFrame:Show()
@@ -144,6 +147,6 @@ end
 
 function ModelFrame.Clear()
 	ClearButtonList()
-	ModelFrame.frame.GetActorAtIndex(ModelFrame.frame, 1).ClearModel(ModelFrame.frame)
+	ModelFrame.frame:ClearScene();
 	ModelFrame.frame:Hide()
 end
