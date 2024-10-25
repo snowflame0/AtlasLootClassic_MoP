@@ -3,7 +3,6 @@ local GUI = AtlasLoot.GUI
 local ModelFrame = {}
 AtlasLoot.GUI.ModelFrame = ModelFrame
 local AL = AtlasLoot.Locales
-local Model = AtlasLoot.Data.Model
 
 -- lua
 local next = next
@@ -20,7 +19,6 @@ local BUTTON_COUNT = 0
 
 ModelFrame.SelectedCreature = nil
 local Creatures = {}
-
 local cache = {}
 local buttons = {}
 
@@ -47,28 +45,18 @@ function ModelFrame.ButtonOnClick(self)
 		ModelFrame.SelectedCreature:Enable()
 	end
 
-	ModelFrame.frame:SetPosition(0,0,0)
-	ModelFrame.SelectedCreature = self
-	self:Disable()
+	if self.displayInfo and (self.creatureDisplayID ~= self.displayInfo) then
+		ModelFrame.frame:SetFromModelSceneID(9, true)
+		local creature = ModelFrame.frame:GetActorByTag("creature");
+		if creature then
+			creature:SetModelByCreatureDisplayID(self.displayInfo, true);
+		end
 
-	--- Temporary workaround: STILL BROKEN in game SetDisplayInfo
-	--- Looks up NpcID in Data/Model.lua table because SetDisplayInfo() has been
-	--- broken for over a year AND calls SetCreature() function twice with
-	--- a small delay in between calls because SetCreature() is also bugged
-	--- may cause models to appear glitchy and has a small load time,
-	--- it is what it is...
-	--- :)
-	local NpcID = Model:GetNpcID(self.displayInfo)
-	if not NpcID then
-		ModelFrame.frame:ClearModel()
-		return
+		self.creatureDisplayID = self.displayInfo;
 	end
 
-	ModelFrame.frame:SetCreature(NpcID, self.displayInfo)
-	C_Timer.After(1, function()
-		ModelFrame.frame:SetCreature(NpcID, self.displayInfo)
-	end)
-	--- End Workaround
+	ModelFrame.SelectedCreature = self
+	self:Disable()
 end
 
 function ModelFrame:AddButton(name, desc, displayInfo)
@@ -100,20 +88,20 @@ function ModelFrame:Create()
 	if self.frame then return end
 	local frameName = "AtlasLoot_GUI-ModelFrame"
 
-	self.frame = CreateFrame("PlayerModel", frameName, GUI.frame, "ModelWithControlsTemplate")
+	self.frame = CreateFrame("ModelScene", frameName, GUI.frame, "ModelSceneMixinTemplate")
 	local frame = self.frame
 	frame:ClearAllPoints()
 	frame:SetParent(GUI.frame)
 	frame:SetPoint("TOPLEFT", GUI.frame.contentFrame.itemBG)
-	frame:SetWidth(560)
-	frame:SetHeight(450)
+	frame:SetSize(560, 450)
 	frame.minZoom = 0.0
 	frame.maxZoom = 1.0
+	--frame:SetBackdropColor(0, 0, 0, 1)
 	frame.Refresh = ModelFrame.Refresh
 	frame.Clear = ModelFrame.Clear
 	frame:Hide()
-
-	frame:SetCamDistanceScale(3)
+	--frame:SetCamDistanceScale(3)
+	self.creatureDisplayID = 0
 end
 
 function ModelFrame:Show()
@@ -143,7 +131,6 @@ end
 function ModelFrame:SetDisplayID(displayID)
 	if not self.frame then ModelFrame:Create() end
 	ClearButtonList()
-	ModelFrame.frame:ClearModel()
 	wipe(Creatures)
 	ModelFrame.SelectedCreature = nil
 	if not displayID then
@@ -157,5 +144,6 @@ end
 
 function ModelFrame.Clear()
 	ClearButtonList()
+	ModelFrame.frame.GetActorAtIndex(ModelFrame.frame, 1).ClearModel(ModelFrame.frame)
 	ModelFrame.frame:Hide()
 end
