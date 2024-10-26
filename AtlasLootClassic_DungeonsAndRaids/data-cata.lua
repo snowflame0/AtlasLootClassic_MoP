@@ -1926,7 +1926,7 @@ data["ZulAman"] = {
     },
     { -- Nalorakk
     name = AL["Nalorakk"],
-    DisplayIDs = {21631}},
+    DisplayIDs = {{21631}},
     ContentPhaseCata = 2,
     [HEROIC_DIFF] = {
         { 1, 69555 },	-- Boots of the Ursine
