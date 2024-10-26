@@ -4050,7 +4050,7 @@ data["Ulduar"] = {
         NameColor = GREEN,
         npcID = 33186,
         Level = 999,
-        -DisplayIDs = {{28787}},
+        DisplayIDs = {{28787}},
         [RAID10_DIFF] = {{1, 45138}, -- Drape of the Drakerider
         {2, 45150}, -- Collar of the Wyrmhunter
         {3, 45146}, -- Shackles of the Odalisque
@@ -4140,7 +4140,7 @@ data["Ulduar"] = {
         NameColor = BLUE,
         npcID = 32857,
         Level = 999,
-        DisplayIDs = {{28324},{28381},{28344}}
+        DisplayIDs = {{28324},{28381},{28344}},
         [RAID10_DIFF] = {{1, 45224}, -- Drape of the Lithe
         {2, 45240}, -- Raiments of the Iron Council
         {3, 45238}, -- Overload Legwraps
