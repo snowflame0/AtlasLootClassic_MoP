@@ -1492,7 +1492,7 @@ data["GrimBatol"] = {
 },
 { -- Drahga Shadowburner
 name = AL["Drahga Shadowburner"],
-DisplayIDs = {{31792}},
+DisplayIDs = {{31792},{31795}},
 [NORMAL_DIFF] = {
     { 1, 56126 },	-- Azureborne Cloak
     { 2, 56125 },	-- Crimsonborne Bracers
@@ -1523,7 +1523,7 @@ DisplayIDs = {{31792}},
 },
 { -- Erudax, the Duke of Below
 name = AL["Erudax, the Duke of Below"],
-DisplayIDs = {{31795}},
+DisplayIDs = {{33428}},
 [NORMAL_DIFF] = {
     { 1, 56133 },	-- Crown of Enfeebled Bodies
     { 2, 56128 },	-- Vest of Misshapen Hides
@@ -2382,7 +2382,7 @@ DisplayIDs = {{34825},{34824},{34821},{34822},{34823}},
 },
 { -- Cho'gall
 name = AL["Cho'gall"],
---DisplayIDs = {{34576}},
+DisplayIDs = {{34576}},
 [NORMAL_DIFF] = {
     { 1, 59498 },	-- Hands of the Twilight Council
     { 2, 59490 },	-- Membrane of C'Thun
@@ -3749,7 +3749,7 @@ ContentPhaseCata = 4,
 },
 { -- Warmaster Blackhorn
 name = AL["Warmaster Blackhorn"],
---DisplayIDs = {{39399}},
+DisplayIDs = {{39399}},
 ContentPhaseCata = 4,
 [RAIDFINDER_DIFF] = {
     { 1, 78457 },	-- Janglespur Jackboots
