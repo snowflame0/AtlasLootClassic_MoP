@@ -172,7 +172,7 @@ data["JusticePoints346"] = {
             { 5, 57930 } -- Pendant of Quiet Breath
         }
     }, {
-        name = ALIL["Off-Hand/Shield"],
+        name = ALIL["Off Hand"] .. "/" .. ALIL["Shield"],
         [NORMAL_DIFF] = { -- Head
             { 1, 57927 }, -- Throat Slasher
             { 2, 57928 }, -- Windslicer
@@ -195,6 +195,7 @@ data["JusticePoints346"] = {
         }
     } }
 }
+
 data["JusticePoints359"] = {
     name = AL["Justice Points '|cffa335ee359|r'"],
     ContentType = VENDOR_CONTENT,
@@ -330,6 +331,7 @@ data["JusticePoints359"] = {
         }
     } }
 }
+
 data["ValorPoints"] = {
     name = AL["Valor Points"],
     ContentType = VENDOR_CONTENT,
@@ -467,6 +469,8 @@ data["FissureStoneFragments"] = {
             { 3, 65043 }, -- Mantle of Nefarius
             { 5, 65019 }, -- Shadowblaze Robes
             { 7, 60238 }, -- Bracers of the Dark Mother
+            { 8, 65056 }, -- Bracers of the Burningeye
+            { 9, 65138 }, -- Bracers of the Bronze Dragonflight
             { 16, 232965 }, -- Satchel of the Soul Breath Belt
             { 18, 232966 }, -- Satchel of the Soul Breath Leggings
         }
@@ -476,7 +480,9 @@ data["FissureStoneFragments"] = {
         [NORMAL_DIFF] = {
             { 1, 60231 }, -- Belt of the Fallen Brood
             { 2, 65057 }, -- Belt of the Nightmare
-            { 4, 60236 }, -- Nightmare Rider's Boots
+            { 4, 65021 }, -- Manacles of the Sleeping Beast
+            { 5, 65050 }, -- Parasitic Bands
+            { 7, 60236 }, -- Nightmare Rider's Boots
             { 16, 232950 }, -- Satchel of the Gale Rouser Belt
             { 17, 232973 }, -- Satchel of the Wind Stalker Belt
             { 19, 232951 }, -- Satchel of the Gale Rouser Leggings
@@ -488,7 +494,9 @@ data["FissureStoneFragments"] = {
         [NORMAL_DIFF] = {
             { 1, 65074 }, -- Spaulders of the Scarred Lady
             { 3, 60230 }, -- Twilight Scale Leggings
-            { 5, 60235 }, -- Boots of Az'galada
+            { 5, 65028 }, -- Chimaeron Armguards
+            { 6, 65068 }, -- Chaos Beast Bracers
+            { 8, 60235 }, -- Boots of Az'galada
             { 16, 232952 }, -- Satchel of the Lightning Well Belt
             { 17, 232967 }, -- Satchel of the Star Chaser Belt
             { 19, 232953 }, -- Satchel of the Lightning Well Legguards
@@ -501,14 +509,50 @@ data["FissureStoneFragments"] = {
             { 1, 65027 }, -- Pauldrons of the Apocalypse
             { 3, 60228 }, -- Bracers of the Mat'redor
             { 4, 60234 }, -- Bindings of Bleak Betrayal
-            { 6, 65022 }, -- Belt of the Blackhand
-            { 8, 60229 }, -- War-Torn Crushers
+            { 5, 65085 }, -- Electron Inductor Coils
+            { 6, 65143 }, -- Bracers of Impossible Strength
+            { 7, 65127}, -- Shackles of the End of Days
+            { 9, 65022 }, -- Belt of the Blackhand
+            { 11, 60229 }, -- War-Torn Crushers
             { 16, 232963 }, -- Satchel of the Sky Strider Belt
             { 17, 232969 }, -- Satchel of the Tempest Keeper Belt
             { 18, 232971 }, -- Satchel of the Thunder Wall Belt
             { 20, 232964 }, -- Satchel of the Sky Strider Greaves
             { 21, 232970 }, -- Satchel of the Tempest Keeper Leggings
             { 22, 232972 }, -- Satchel of the Thunder Wall Greaves
+        }
+    },
+    {
+        name = ALIL["Weapon"],
+        [NORMAL_DIFF] = {
+            { 1, 63679 }, -- Reclaimed Ashkandi, Greatsword of the Brotherhood
+            { 2, 59330 }, -- Shalug'doom, the Axe of Unmaking
+            { 3, 59492 }, -- Akirus the Worm Breaker
+            { 5, 59474 }, -- Malevolence
+            { 7, 59333 }, -- Lava Spine
+            { 9, 63533 }, -- Fang of Twilight
+            { 11, 59347 }, -- Mace of Acrid Death
+            { 13, 59443 }, -- Crul'korak, the Lighting's Arc
+            { 16, 59122 }, -- Organic Lifeform Inverter
+            { 17, 59494 }, -- Uhn'agh Fash, the Darkest Betrayal
+            { 19, 59341 }, -- Incineratus
+            { 20, 63536 }, -- Blade of the Witching Hour
+            { 22, 63680 }, -- Twilight's Hammer
+            { 23, 59459 }, -- Andoros, Fist of the Dragon King
+            { 25, 59320 }, -- Themios the Darkbringer
+            { 26, 63532 }, -- Dragonheart Piercer
+            { 27, 59314 }, -- Pip's Solution Agitator
+
+
+        }
+    },
+    {
+        name = ALIL["Off Hand"] .. "/" .. ALIL["Shield"],
+        [NORMAL_DIFF] = {
+            { 1, 59484 }, -- Book of Binding Will
+            { 2, 59513 }, -- Scepter of Ice
+            { 16, 59444 }, -- Akmin-Kurai, Dominion's Shield
+            { 17, 59327 }, -- Kingdom's Heart
         }
     },
     {
@@ -549,8 +593,11 @@ data["FissureStoneFragments"] = {
             { 1, 65048 },-- Symbiotic Worm
             { 2, 65072 }, -- Heart of Rage
             { 3, 65026 }, -- Prestor's Talisman of Machination
+            { 4, 65140 }, -- Essence of the Cyclone
             { 16, 65053 }, -- Bell of Enraging Resonance
-            { 17, 60233 }, -- Shard of Woe
+            { 17, 65105 }, -- Theralion's Mirror
+            { 18, 60233 }, -- Shard of Woe
+            { 19, 65124 }, -- Fall of Mortality
         }
     },
     {
@@ -562,6 +609,12 @@ data["FissureStoneFragments"] = {
             { 16, 63683 }, -- Helm of the Forlorn Conqueror
             { 17, 63684 }, -- Helm of the Forlorn Protector
             { 18, 63682 }, -- Helm of the Forlorn Vanquisher
+        }
+    },
+    {
+        name = AL["Misc"],
+        [NORMAL_DIFF] = {
+            {1, 234446 }, -- Commendation of Service
         }
     },
     }
