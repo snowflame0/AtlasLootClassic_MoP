@@ -3271,9 +3271,9 @@ data["PitOfSaron"] = {
         {16, "ac4524"}}
     }, { -- PoSKrickIck / 272
         name = AL["Ick & Krick"],
-        npcID = {36476, 36477},
+        npcID = 36476,
         Level = 80,
-        -- DisplayIDs = {{30347, 30331}},
+        DisplayIDs = {{30347},{30331}},
         [NORMAL_DIFF] = {{1, 49809}, -- Wristguards of Subterranean Moss
         {2, 49810}, -- Scabrous Zombie Leather Belt
         {3, 49811}, -- Black Dragonskin Breeches
