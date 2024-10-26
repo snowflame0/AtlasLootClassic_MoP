@@ -4878,9 +4878,9 @@ data["TrialoftheCrusader"] = {
         {26, "ac3997"}})
     }, { -- TrialoftheCrusader FactionChampions
         name = AL["Faction Champions"],
-        npcID = 34816,
+        npcID = 35108,
         Level = 999,
-        --DisplayIDs = {{29615}},
+        DisplayIDs = {{28927}}, -- TEMP
         [RAID10_DIFF] = AtlasLoot:GetRetByFaction({ -- horde
         {1, 47873}, -- Sunreaver Magus' Sandals
         {2, 47878}, -- Sunreaver Assassin's Gloves
@@ -5673,8 +5673,8 @@ data["IcecrownCitadel"] = {
         {23, "ac4611"}}
     }, { -- ICC GunshipBattle
         name = AL["Icecrown Gunship Battle"],
-        --npcID = 36612,
-        --DisplayIDs = {{31119}},
+        npcID = 23754,
+        DisplayIDs = {{21723}}, -- TEMP
         Level = 999,
         [RAID10_DIFF] = {{1, 50791}, -- Saronite Gargoyle Cloak
         {2, 50795}, -- Cord of Dark Suffering
