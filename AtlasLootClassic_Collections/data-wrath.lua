@@ -64,12 +64,16 @@ local COLLECTIONS_CONTENT = data:AddContentType(AL["Collections"], ATLASLOOT_COL
 local WORLD_EVENT_CONTENT = data:AddContentType(AL["World Events"], ATLASLOOT_SEASONALEVENTS_COLOR)
 
 -- colors
-local BLUE = "|cff6666ff%s|r"
--- local GREY = "|cff999999%s|r"
-local GREEN = "|cff66cc33%s|r"
-local _RED = "|cffcc6666%s|r"
-local PURPLE = "|cff9900ff%s|r"
--- local WHIT = "|cffffffff%s|r"
+local SUPERIOR_QUALITY = "|cff0070dd%s|r"
+local EPIC_QUALITY = "|cffa335ee%s|r"
+local BOA_QUALITY = "|cff00ccff%s|r"
+local LEGENDARY_QUALITY = "|cffff8000%s|r"
+--local BLUE = "|cff6666ff%s|r"
+--local GREY = "|cff999999%s|r"
+--local GREEN = "|cff66cc33%s|r"
+--local _RED = "|cffcc6666%s|r"
+--local PURPLE = "|cff9900ff%s|r"
+--local WHIT = "|cffffffff%s|r"
 
 data["DalaranVendor"] = {
     name = format(AL["'%s' Vendor"], C_Map.GetAreaInfo(4395)),
@@ -1213,7 +1217,7 @@ data["TabardsWrath"] = {
 }
 
 data["LegendarysWrath"] = {
-    name = AL["Legendaries"],
+    name = format(LEGENDARY_QUALITY, AL["Legendaries"]),
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
@@ -1229,7 +1233,7 @@ data["LegendarysWrath"] = {
 }
 
 data["HeirloomWrath"] = {
-    name = AL["Heirloom"],
+    name = format(BOA_QUALITY, AL["Heirloom"]),
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
