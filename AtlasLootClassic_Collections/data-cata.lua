@@ -60,6 +60,8 @@ local WORLD_EVENT_CONTENT = data:AddContentType(AL["World Events"], ATLASLOOT_SE
 -- colors
 local SUPERIOR_QUALITY = "|cff0070dd%s|r"
 local EPIC_QUALITY = "|cffa335ee%s|r"
+local BOA_QUALITY = "|cff00ccff%s|r"
+local LEGENDARY_QUALITY = "|cffff8000%s|r"
 --local BLUE = "|cff0070dd%s|r"
 -- local GREY = "|cff999999%s|r"
 -- local GREEN = "|cff66cc33%s|r"
@@ -978,7 +980,7 @@ data["TabardsCata"] = {
 }
 
 data["LegendarysCata"] = {
-    name = AL["Legendaries"],
+    name = format(LEGENDARY_QUALITY, AL["Legendaries"]),
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
@@ -995,7 +997,7 @@ data["LegendarysCata"] = {
 }
 
 data["HeirloomCata"] = {
-    name = ALIL["Heirloom"],
+    name = format(BOA_QUALITY, ALIL["Heirloom"]),
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
