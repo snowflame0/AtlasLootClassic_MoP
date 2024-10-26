@@ -295,7 +295,7 @@ ExtraList = true,
 IgnoreAsSource = true,
 CoinTexture = "Achievement",
 [INFERNO_DIFF] = {
-    { 1, 41148 },            
+    { 1, 41148 },
     { 2, 41139 },			{ 17, 41140 },
     { 3, 41141 },			{ 18, 41142 },
     { 4, 41143 },			{ 19, 41144 },
