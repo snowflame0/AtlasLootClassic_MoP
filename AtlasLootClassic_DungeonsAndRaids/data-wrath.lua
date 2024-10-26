@@ -3869,14 +3869,14 @@ data["NaxxramasWrath"] = {
 data["TheEyeOfEternity"] = {
     nameFormat = NAME_NEXUS,
     MapID = 4500,
-    InstanceID = 616,
+    InstanceID = 756,
     ContentType = RAID_CONTENT,
-    -- LevelRange = {80, 80, 80},
+    LevelRange = {80, 80, 80},
     items = {{ -- Malygos / 180
         name = AL["Malygos"],
         npcID = 28859,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{26752}},
         [NORMAL_DIFF] = {{1, 40562}, -- Hood of Rationality
         {2, 40555}, -- Mantle of Dissemination
         {3, 40194}, -- Blanketing Robes of Snow
@@ -3908,12 +3908,12 @@ data["ObsidianSanctum"] = {
     MapID = 4493,
     InstanceID = 615,
     ContentType = RAID_CONTENT,
-    -- LevelRange = {80, 80, 80},
+    LevelRange = {80, 80, 80},
     items = {{ -- CoTHillsbradDrake
         name = AL["Sartharion"],
         npcID = 28860,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{27035}},
         [NORMAL_DIFF] = {{1, 40437}, -- Concealment Shoulderpads
         {2, 40439}, -- Mantle of the Eternal Sentinel
         {3, 40451}, -- Hyaline Helm of the Sniper
@@ -3934,7 +3934,7 @@ data["ObsidianSanctum"] = {
         name = format(BONUS_LOOT_SPLIT, AL["Sartharion"], AL["Bonus Loot"]),
         npcID = 28860,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{27035}},
         [NORMAL_DIFF] = {{1, "INV_Box_01", nil, AL["One Drake Left"]}, {2, 44002}, -- The Sanctum's Flowing Vestments
         {3, 44003}, -- Upstanding Spaulders
         {4, 44004}, -- Bountiful Gauntlets
@@ -3954,13 +3954,13 @@ data["Ulduar"] = {
     InstanceID = 603,
     ContentType = RAID_CONTENT,
     -- LoadDifficulty = NORMAL_DIFF,
-    -- LevelRange = {80, 80, 80},
+    LevelRange = {80, 80, 80},
     items = {{ -- UlduarLeviathan
         name = AL["Flame Leviathan"],
         NameColor = GREEN,
         npcID = 33113,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{28875}},
         [RAID10_DIFF] = {{1, 45117}, -- Constructor's Handwraps
         {2, 45119}, -- Embrace of the Leviathan
         {3, 45108}, -- Mechanist's Bindings
@@ -4011,7 +4011,7 @@ data["Ulduar"] = {
         NameColor = GREEN,
         npcID = 33118,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{29185}},
         [RAID10_DIFF] = {{1, 45186}, -- Soot-Covered Mantle
         {2, 45185}, -- Flamewrought Cinch
         {3, 45162}, -- Flamestalker Boots
@@ -4050,7 +4050,7 @@ data["Ulduar"] = {
         NameColor = GREEN,
         npcID = 33186,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        -DisplayIDs = {{28787}},
         [RAID10_DIFF] = {{1, 45138}, -- Drape of the Drakerider
         {2, 45150}, -- Collar of the Wyrmhunter
         {3, 45146}, -- Shackles of the Odalisque
@@ -4089,7 +4089,7 @@ data["Ulduar"] = {
         NameColor = GREEN,
         npcID = 33293,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{28611}},
         [RAID10_DIFF] = {{1, 45253}, -- Mantle of Wavering Calm
         {2, 45258}, -- Sandals of Rash Temperament
         {3, 45260}, -- Boots of Hasty Revival
@@ -4140,7 +4140,7 @@ data["Ulduar"] = {
         NameColor = BLUE,
         npcID = 32857,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{28324},{28381},{28344}}
         [RAID10_DIFF] = {{1, 45224}, -- Drape of the Lithe
         {2, 45240}, -- Raiments of the Iron Council
         {3, 45238}, -- Overload Legwraps
@@ -4194,7 +4194,7 @@ data["Ulduar"] = {
         NameColor = BLUE,
         npcID = 32930,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{28638}},
         [RAID10_DIFF] = {{1, 45272}, -- Robes of the Umbral Brute
         {2, 45275}, -- Bracers of Unleashed Magic
         {3, 45273}, -- Handwraps of Plentiful Recovery
@@ -4233,7 +4233,7 @@ data["Ulduar"] = {
         NameColor = BLUE,
         npcID = 32871,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{28641}},
         [RAID10_DIFF] = {{1, 46042}, -- Drape of the Messenger
         {2, 46045}, -- Pulsar Gloves
         {3, 46050}, -- Starlight Treads
@@ -4274,7 +4274,7 @@ data["Ulduar"] = {
         name = AL["Auriaya"],
         npcID = 33515,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{28651}},
         [RAID10_DIFF] = {{1, 45319}, -- Cloak of the Makers
         {2, 45435}, -- Cowl of the Absolute
         {3, 45441}, -- Sandals of the Ancient Keeper
@@ -4312,7 +4312,7 @@ data["Ulduar"] = {
         name = AL["Hodir"],
         npcID = 32845,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{28743}},
         [RAID10_DIFF] = {{1, 45453}, -- Winter's Icy Embrace
         {2, 45454}, -- Frost-bound Chain Bracers
         {3, 45452}, -- Frostplate Greaves
@@ -4349,7 +4349,7 @@ data["Ulduar"] = {
         name = AL["Thorim"],
         npcID = 32865,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{28977},{28488}},
         [RAID10_DIFF] = {{1, 45468}, -- Leggings of Lost Love
         {2, 45467}, -- Belt of the Betrayed
         {3, 45469}, -- Sif's Promise
@@ -4386,7 +4386,7 @@ data["Ulduar"] = {
         name = AL["Freya"],
         npcID = 32906,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{28777},{29176},{29175},{29174}},
         [RAID10_DIFF] = {{1, 45483}, -- Boots of the Servant
         {2, 45482}, -- Leggings of the Lifetender
         {3, 45481}, -- Gauntlets of Ruthless Reprisal
@@ -4425,7 +4425,7 @@ data["Ulduar"] = {
         name = AL["Mimiron"],
         npcID = 33350,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{28578}},
         [RAID10_DIFF] = {{1, 45493}, -- Asimov's Drape
         {2, 45492}, -- Malleable Steelweave Mantle
         {3, 45491}, -- Waistguard of the Creator
@@ -4463,7 +4463,7 @@ data["Ulduar"] = {
         NameColor = PURPLE,
         npcID = 33271,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{28548}},
         [RAID10_DIFF] = {{1, 45514}, -- Mantle of the Unknowing
         {2, 45508}, -- Belt of the Darkspeaker
         {3, 45512}, -- Grips of the Unbroken
@@ -4512,7 +4512,7 @@ data["Ulduar"] = {
         NameColor = PURPLE,
         npcID = 33271,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{28817}},
         [RAID10_DIFF] = {{1, 45529}, -- Shawl of Haunted Memories
         {2, 45532}, -- Cowl of Dark Whispers
         {3, 45523}, -- Garona's Guise
@@ -4613,9 +4613,12 @@ data["TrialoftheCrusader"] = {
     InstanceID = 649,
     MapID = 4722,
     ContentType = RAID_CONTENT,
-    -- LevelRange = {80, 80, 80},
+    LevelRange = {80, 80, 80},
     items = {{ -- TrialoftheCrusader NorthrendBeasts
         name = AL["The Beasts of Northrend"],
+        npcID = 34796,
+        Level = 999,
+        DisplayIDs = {{29614},{29815},{21601}},
         [RAID10_DIFF] = AtlasLoot:GetRetByFaction({ -- horde
         {1, 47855}, -- Icehowl Binding
         {2, 47857}, -- Pauldrons of the Glacial Wilds
@@ -4742,6 +4745,9 @@ data["TrialoftheCrusader"] = {
         {24, "ac3937"}, {25, "ac3813"}})
     }, { -- TrialoftheCrusader LordJaraxxus
         name = AL["Lord Jaraxxus"],
+        npcID = 34780,
+        Level = 999,
+        DisplayIDs = {{29615}},
         [RAID10_DIFF] = AtlasLoot:GetRetByFaction({ -- horde
         {1, 47861}, -- Felspark Bracers
         {2, 47865}, -- Legwraps of the Demonic Messenger
@@ -4872,6 +4878,9 @@ data["TrialoftheCrusader"] = {
         {26, "ac3997"}})
     }, { -- TrialoftheCrusader FactionChampions
         name = AL["Faction Champions"],
+        npcID = 34816,
+        Level = 999,
+        --DisplayIDs = {{29615}},
         [RAID10_DIFF] = AtlasLoot:GetRetByFaction({ -- horde
         {1, 47873}, -- Sunreaver Magus' Sandals
         {2, 47878}, -- Sunreaver Assassin's Gloves
@@ -4990,6 +4999,9 @@ data["TrialoftheCrusader"] = {
         })
     }, { -- TrialoftheCrusader TwinValkyrs
         name = AL["The Twin Val'kyr"],
+        npcID = 34497,
+        Level = 999,
+        DisplayIDs = {{29240},{29267}},
         [RAID10_DIFF] = AtlasLoot:GetRetByFaction({ -- horde
         {1, 47889}, -- Looming Shadow Wraps
         {2, 49232}, -- Sandals of the Grieving Soul
@@ -5120,6 +5132,9 @@ data["TrialoftheCrusader"] = {
         {21, "ac3815"}})
     }, { -- TrialoftheCrusader Anubarak
         name = AL["Anub'arak"],
+        npcID = 34564,
+        Level = 999,
+        DisplayIDs = {{29268}},
         [RAID10_DIFF] = AtlasLoot:GetRetByFaction({ -- horde
         {1, 47906}, -- Robes of the Sleepless
         {2, 47909}, -- Belt of the Eternal
@@ -5522,6 +5537,9 @@ data["IcecrownCitadel"] = {
     -- LevelRange = {80, 80, 80},
     items = {{ -- ICC LordMarrowgar
         name = AL["Lord Marrowgar"],
+        npcID = 36612,
+        DisplayIDs = {{31119}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 50764}, -- Shawl of Nerubian Silk
         {2, 50773}, -- Cord of the Patronizing Practitioner
         {3, 50774}, -- Coldwraith Bracers
@@ -5587,6 +5605,9 @@ data["IcecrownCitadel"] = {
         {23, "ac4610"}}
     }, { -- ICC LadyDeathwhisper
         name = AL["Lady Deathwhisper"],
+        npcID = 36855,
+        DisplayIDs = {{30893}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 50785}, -- Bracers of Dark Blessings
         {2, 50782}, -- Sister's Handshrouds
         {3, 50780}, -- Chestguard of the Frigid Noose
@@ -5652,6 +5673,9 @@ data["IcecrownCitadel"] = {
         {23, "ac4611"}}
     }, { -- ICC GunshipBattle
         name = AL["Icecrown Gunship Battle"],
+        --npcID = 36612,
+        --DisplayIDs = {{31119}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 50791}, -- Saronite Gargoyle Cloak
         {2, 50795}, -- Cord of Dark Suffering
         {3, 50797}, -- Ice-Reinforced Vrykul Helm
@@ -5717,6 +5741,9 @@ data["IcecrownCitadel"] = {
         {24, "ac4612"}}
     }, { -- ICC Saurfang
         name = AL["Deathbringer Saurfang"],
+        npcID = 37813,
+        DisplayIDs = {{30790}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 50807}, -- Thaumaturge's Crackling Cowl
         {2, 50804}, -- Icecrown Spire Sandals
         {3, 50799}, -- Scourge Stranglers
@@ -5774,6 +5801,9 @@ data["IcecrownCitadel"] = {
         {24, "ac4613"}}
     }, { -- ICC Festergut
         name = AL["Festergut"],
+        npcID = 36626,
+        DisplayIDs = {{31006}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 50859}, -- Cloak of Many Skins
         {2, 50988}, -- Bloodstained Surgeon's Shoulderguards
         {3, 50990}, -- Kilt of Untreated Wounds
@@ -5843,6 +5873,9 @@ data["IcecrownCitadel"] = {
         {27, "ac4615"}}
     }, { -- ICC Rotface
         name = AL["Rotface"],
+        npcID = 36627,
+        DisplayIDs = {{31005}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 51007}, -- Ether-Soaked Bracers
         {2, 51005}, -- Gloves of Broken Fingers
         {3, 51009}, -- Chestguard of the Failed Experiment
@@ -5908,6 +5941,9 @@ data["IcecrownCitadel"] = {
         {25, "ac4614"}}
     }, { -- ICC Putricide
         name = AL["Professor Putricide"],
+        npcID = 36678,
+        DisplayIDs = {{30881}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 51020}, -- Shoulders of Ruinous Senility
         {2, 51017}, -- Cauterized Cord
         {3, 51013}, -- Discarded Bag of Entrails
@@ -5965,6 +6001,9 @@ data["IcecrownCitadel"] = {
         {24, "ac4616"}}
     }, { -- ICC Council
         name = AL["Blood Prince Council"],
+        npcID = 37970,
+        DisplayIDs = {{30858},{30856},{30857}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 51382}, -- Heartsick Mender's Cape
         {2, 51379}, -- Bloodsoul Raiment
         {3, 51380}, -- Pale Corpse Boots
@@ -6030,6 +6069,9 @@ data["IcecrownCitadel"] = {
         {26, "ac4617"}}
     }, { -- ICC Lanathel
         name = AL["Blood-Queen Lana'thel"],
+        npcID = 37955,
+        DisplayIDs = {{31165}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 51554}, -- Cowl of Malefic Repose
         {2, 51552}, -- Shoulderpads of the Searing Kiss
         {3, 51550}, -- Ivory-Inlaid Leggings
@@ -6089,6 +6131,9 @@ data["IcecrownCitadel"] = {
         {24, "ac4618"}}
     }, { -- ICC Valithria
         name = AL["Valithria Dreamwalker"],
+        npcID = 36789,
+        DisplayIDs = {{30318}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 51584}, -- Lich Wrappings
         {2, 51777}, -- Leggings of the Refracted Mind
         {3, 51585}, -- Sister Svalna's Spangenhelm
@@ -6154,6 +6199,9 @@ data["IcecrownCitadel"] = {
         {26, "ac4619"}}
     }, { -- ICC Sindragosa
         name = AL["Sindragosa"],
+        npcID = 36853,
+        DisplayIDs = {{30362}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 51790}, -- Robes of Azure Downfall
         {2, 51783}, -- Vambraces of the Frost Wyrm Queen
         {3, 51789}, -- Icicle Shapers
@@ -6211,6 +6259,9 @@ data["IcecrownCitadel"] = {
         {24, "ac4620"}}
     }, { -- ICC LichKing
         name = AL["The Lich King"],
+        npcID = 36597,
+        DisplayIDs = {{30721}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 51801}, -- Pugius, Fist of Defiance
         {2, 51803}, -- Tel'thas, Dagger of the Blood King
         {3, 51800}, -- Stormfury, Black Blade of the Betrayer
@@ -6291,6 +6342,9 @@ data["RubySanctum"] = {
     -- LevelRange = {80, 80, 80},
     items = {{ -- Halion
         name = AL["Halion"],
+        npcID = 39863,
+        DisplayIDs = {{31952}},
+        Level = 999,
         [RAID10_DIFF] = {{1, 53115}, -- Abduction's Cover
         {2, 53118}, -- Misbegotten Belt
         {3, 53114}, -- Gloaming Sark
@@ -6364,7 +6418,7 @@ data["VaultofArchavon"] = {
         name = AL["Archavon the Stone Watcher"],
         npcID = 31125,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{26967}},
         [RAID10_DIFF] = {{1, "CLASS_WARLOCK", nil, CLASS_NAME["WARLOCK"], nil, "VoA_A_WARLOCK_10"},
                          {3, "CLASS_PRIEST", nil, CLASS_NAME["PRIEST"], AL["Holy"], "VoA_A_PRIEST_10_H"},
                          {4, "CLASS_PRIEST", nil, CLASS_NAME["PRIEST"], AL["Shadow"], "VoA_A_PRIEST_10_D"},
@@ -6407,7 +6461,7 @@ data["VaultofArchavon"] = {
         name = AL["Emalon the Storm Watcher"],
         npcID = 33993,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{27108}},
         [RAID10_DIFF] = {{1, "CLASS_WARLOCK", nil, CLASS_NAME["WARLOCK"], nil, "VoA_E_WARLOCK_10"},
                          {3, "CLASS_PRIEST", nil, CLASS_NAME["PRIEST"], AL["Holy"], "VoA_E_PRIEST_10_H"},
                          {4, "CLASS_PRIEST", nil, CLASS_NAME["PRIEST"], AL["Shadow"], "VoA_E_PRIEST_10_D"},
@@ -6450,7 +6504,7 @@ data["VaultofArchavon"] = {
         name = AL["Koralon the Flame Watcher"],
         npcID = 35013,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{29524}},
         [RAID10_DIFF] = {{1, "CLASS_WARLOCK", nil, CLASS_NAME["WARLOCK"], nil,
                           AtlasLoot:GetRetByFaction("VoA_KH_WARLOCK_10", "VoA_KA_WARLOCK_10")},
                          {3, "CLASS_PRIEST", nil, CLASS_NAME["PRIEST"], AL["Holy"],
@@ -6549,7 +6603,7 @@ data["VaultofArchavon"] = {
         name = AL["Toravon the Ice Watcher"],
         npcID = 38433,
         Level = 999,
-        -- DisplayIDs = {{17386}},
+        DisplayIDs = {{31089}},
         [RAID10_DIFF] = {{1, "CLASS_WARLOCK", nil, CLASS_NAME["WARLOCK"], nil, "VoA_T_WARLOCK_10"},
                          {3, "CLASS_PRIEST", nil, CLASS_NAME["PRIEST"], AL["Holy"], "VoA_T_PRIEST_10_H"},
                          {4, "CLASS_PRIEST", nil, CLASS_NAME["PRIEST"], AL["Shadow"], "VoA_T_PRIEST_10_D"},
