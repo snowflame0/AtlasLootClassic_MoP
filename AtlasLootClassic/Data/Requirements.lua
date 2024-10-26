@@ -5865,7 +5865,7 @@ end
 
 if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
     ReqData_RAW.CATA = {
-        -- TODO: Add requirements for other items (pets, mounts, any missing class specific items)
+        -- TODO: Add requirements for any missing items
         --- Tier pieces
         [76976] = {32}, [76978] = {32}, [76974] = {32}, [76975] = {32}, [76977] = {32},
         [77015] = {1024}, [77017] = {1024}, [77013] = {1024}, [77014] = {1024}, [77016] = {1024},

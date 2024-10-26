@@ -144,7 +144,6 @@ local FILTER_DATA = {
             [LE_ITEM_ARMOR_PLATE] 	    = C.WARRIOR + C.PALADIN + C.DEATHKNIGHT, -- Plate
             [LE_ITEM_ARMOR_COSMETIC]    = true, -- Cosmetic
             [LE_ITEM_ARMOR_SHIELD] 	    = C.WARRIOR + C.PALADIN + C.SHAMAN, -- Shields
-            -- #TODO: fix
             [LE_ITEM_ARMOR_LIBRAM] 	    = C.PALADIN, -- Librams
             [LE_ITEM_ARMOR_IDOL] 	    = C.DRUID, -- Idols
             [LE_ITEM_ARMOR_TOTEM] 	    = C.SHAMAN, -- Totems
