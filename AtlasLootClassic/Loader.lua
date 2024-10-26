@@ -36,6 +36,13 @@ local ATLASLOOT_MODULE_LIST = {
 		tt_text = nil,		-- ToolTip text
 	},
 	{
+		addonName = "AtlasLootClassic_Collections",
+		--icon = "Interface\\ICONS\\Inv_ChampionsOfAzeroth",
+		name = AL["Collections"],
+		tt_title = nil,		-- ToolTip title
+		tt_text = nil,		-- ToolTip text
+	},
+	{
 		addonName = "AtlasLootClassic_Crafting",
 		--icon = "Interface\\ICONS\\Inv_ChampionsOfAzeroth",
 		name = AL["Crafting"],
@@ -53,13 +60,6 @@ local ATLASLOOT_MODULE_LIST = {
 		addonName = "AtlasLootClassic_PvP",
 		--icon = "Interface\\ICONS\\Inv_ChampionsOfAzeroth",
 		name = AL["PvP"],
-		tt_title = nil,		-- ToolTip title
-		tt_text = nil,		-- ToolTip text
-	},
-	{
-		addonName = "AtlasLootClassic_Collections",
-		--icon = "Interface\\ICONS\\Inv_ChampionsOfAzeroth",
-		name = AL["Collections"],
 		tt_title = nil,		-- ToolTip title
 		tt_text = nil,		-- ToolTip text
 	},
