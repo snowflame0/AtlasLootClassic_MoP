@@ -63,6 +63,13 @@ private.HERBALISM_LINK = {
     [AtlasLoot.CATA_VERSION_NUM]        = "HerbalismCata",
 }
 
+private.SKINNING_LINK = {
+    [AtlasLoot.CLASSIC_VERSION_NUM]     = "Skinning",
+    [AtlasLoot.BC_VERSION_NUM]          = "SkinningBC",
+    [AtlasLoot.WRATH_VERSION_NUM]       = "SkinningWrath",
+    [AtlasLoot.CATA_VERSION_NUM]        = "SkinningCata",
+}
+
 private.COOKING_LINK = {
     [AtlasLoot.CLASSIC_VERSION_NUM]     = "Cooking",
     [AtlasLoot.BC_VERSION_NUM]          = "CookingBC",
