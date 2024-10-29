@@ -24,14 +24,9 @@ local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 local INFERNO_DIFF = data:AddDifficulty(AL["Elemental Rune Inferno"], "ERI", nil, nil, true)
 
-local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
-
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
 local AC_ITTYPE = data:AddItemTableType("Achievement", "Item")
-
-local QUEST_EXTRA_ITTYPE = data:AddExtraItemTableType("Quest")
-local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
 
 local DUNGEON_CONTENT = data:AddContentType(AL["Dungeons"], ATLASLOOT_DUNGEON_COLOR)
 local RAID_CONTENT = data:AddContentType(AL["Raids"], ATLASLOOT_RAID40_COLOR)
@@ -44,12 +39,12 @@ local NAME_COLOR, NAME_COLOR_BOSS = "|cffC0C0C0", "|cffC0C0C0"
 local NAME_CAVERNS_OF_TIME = NAME_COLOR..AL["CoT"]..":|r %s" -- Caverns of Time
 
 -- colors
-local BLUE = "|cff6666ff%s|r"
+--local BLUE = "|cff6666ff%s|r"
 --local GREY = "|cff999999%s|r"
-local GREEN = "|cff66cc33%s|r"
-local _RED = "|cffcc6666%s|r"
+--local GREEN = "|cff66cc33%s|r"
+local RED = "|cffcc6666%s|r"
 local PURPLE = "|cff9900ff%s|r"
---local WHIT = "|cffffffff%s|r"
+local WHITE = "|cffffffff%s|r"
 
 -- format
 local BONUS_LOOT_SPLIT = "%s - %s"
@@ -541,7 +536,7 @@ name = AL["Ascendant Lord Obsidius"],
     { 9, 56322 },	-- Crepuscular Shield
     { 10,56316 },   -- Sandshift Relic
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
+    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Fissure Stone Fragment
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac41139"},
     { 20, "ac5060" },
@@ -699,7 +694,7 @@ name = AL["Ozumat"],
     { 9, 56289 },	-- Bioluminescent Lamp
     { 10, 56284 },	-- Whitefin Axe
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
+    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Fissure Stone Fragment
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac41140" },
     { 20, "ac5061" },
@@ -859,7 +854,7 @@ name = AL["High Priestess Azil"],
     { 9, 56343 },	-- Darkling Staff
     { 10, 56350},   -- Book of Dark Prophecies
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
+    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Fissure Stone Fragment
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac41141" },
     { 20, "ac5063" },
@@ -997,7 +992,7 @@ name = AL["Asaad, Caliph of Zephyrs"],
     { 10, 56376 },	-- Thundercall
     { 11, 56372 },  -- Captured Lightning
     { 13, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
+    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Fissure Stone Fragment
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac5064" },
     { 20, "ac5288" },
@@ -1157,7 +1152,7 @@ name = AL["Siamat"],
     { 10, 56402 },	-- Zora's Ward
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
-    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
+    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Fissure Stone Fragment
     { 19, "ac41145" },
     { 20, "ac5066" },
     { 21, "ac5292" },
@@ -1403,7 +1398,7 @@ name = AL["Rajh, Construct of Sun"],
     { 9, 56433 },	-- Blade of the Burning Sun
     { 10, 56430 },	-- Sun Strike
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
+    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Fissure Stone Fragment
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac41144" },
     { 21, "ac5065" },
@@ -1565,7 +1560,7 @@ DisplayIDs = {{33428}},
     { 9, 56456 },	-- Wild Hammer
     { 10, 56461 },	-- Staff of Siphoned Essences
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
+    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Fissure Stone Fragment
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac41143" },
     { 20, "ac5062" },
@@ -1732,7 +1727,7 @@ DisplayIDs = {{32806}},
     { 9, 63480 },   -- Record of the Brotherhood's End
     { 10, 63487 },  -- Book of the Well Sung Song
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
+    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Fissure Stone Fragment
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac41146" },
     { 20, "ac5083" },
@@ -1871,7 +1866,7 @@ DisplayIDs = {{34611}},
     { 9, 63461 },	-- Staff of Isolation
     { 10, 63460} ,  -- Relic of Arathor
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2-5" }, -- Fissure Stone Fragment
+    { 16, "c3148", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Fissure Stone Fragment
     { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     { 19, "ac41147" },
     { 20, "ac5093" },
@@ -2306,8 +2301,9 @@ data["TheBastionOfTwilight"] = {
             { 17, 67424 },	-- Chest of the Forlorn Protector
             { 18, 67425 },	-- Chest of the Forlorn Vanquisher
             { 20, 65139 },	-- Malevolence
-            { 22, "ac5118" },
-            { 23, "ac5300" },
+            { 22, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+            { 24, "ac5118" },
+            { 25, "ac5300" },
         },
     },
     { -- Theralion and Valiona
@@ -2341,8 +2337,9 @@ data["TheBastionOfTwilight"] = {
         { 16, 65094 },	-- Fang of Twilight
         { 17, 65091 },	-- Blade of the Witching Hour
         { 18, 65095 },	-- Dragonheart Piercer
-        { 20, "ac5117" },
-        { 21, "ac4852" },
+        { 20, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+        { 22, "ac5117" },
+        { 23, "ac4852" },
     },
 },
 { -- Ascendant Council
@@ -2376,8 +2373,9 @@ DisplayIDs = {{34825},{34824},{34821},{34822},{34823}},
     { 16, 65118 },	-- Crushing Weight
     { 17, 65110 },	-- Heart of Ignacious
     { 18, 65111 },	-- Scepter of Ice
-    { 20, "ac5119" },
-    { 21, "ac5311" },
+    { 20, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+    { 22, "ac5119" },
+    { 23, "ac5311" },
 },
 },
 { -- Cho'gall
@@ -2419,8 +2417,9 @@ DisplayIDs = {{34576}},
     { 20, 68600 },	-- Uhn'agh Fash, the Darkest Betrayal
     { 21, 65145 },	-- Shalug'doom, the Axe of Unmaking
     { 22, 65090 },	-- Twilight's Hammer
-    { 24, "ac5120" },
-    { 25, "ac5312" },
+    { 24, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+    { 26, "ac5120" },
+    { 27, "ac5312" },
 },
 },
 { -- Sinestra
@@ -2440,7 +2439,8 @@ DisplayIDs = {{34335}},
     { 16, 60227 },	-- Caelestrasz's Will
     { 17, 60226 },	-- Dargonax's Signet
     { 18, 60233 },	-- Shard of Woe
-    { 20, "ac5121" },
+    { 20, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+    { 22, "ac5121" },
 },
 },
 { -- Trash
@@ -2500,8 +2500,9 @@ data["BlackwingDescent"] = {
             { 16, 65076 },	-- Security Measure Alpha
             { 17, 65082 },	-- Lightning Conductor Band
             { 19, 65081 },	-- Organic Lifeform Inverter
-            { 21, "ac5107" },
-            { 22, "ac5307" },
+            { 21, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+            { 23, "ac5107" },
+            { 24, "ac5307" },
         },
     },
     { -- Magmaw
@@ -2538,8 +2539,9 @@ data["BlackwingDescent"] = {
         { 20, 65047 },	-- Lava Spine
         { 21, 65007 },	-- Akirus the Worm-Breaker
         { 22, 65041 },	-- Incineratus
-        { 24, "ac5094" },
-        { 25, "ac5306" },
+        { 24, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+        { 26, "ac5094" },
+        { 27, "ac5306" },
     },
 },
 { -- Atramedes
@@ -2573,8 +2575,9 @@ DisplayIDs = {{34547}},
     { 17, 65053 },	-- Bell of Enraging Resonance
     { 18, 65058 },	-- Themios the Darkbringer
     { 19, 65052 },	-- Kingdom's Heart
-    { 21, "ac5109" },
-    { 22, "ac5308" },
+    { 21, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+    { 22, "ac5109" },
+    { 23, "ac5308" },
 },
 },
 { -- Chimaeron
@@ -2608,8 +2611,9 @@ DisplayIDs = {{33308}},
     { 16, 65070 },	-- Bile-O-Tron Nut
     { 17, 65072 },	-- Heart of Rage
     { 19, 65064 },	-- Finkle's Mixer Upper
-    { 21, "ac5115" },
-    { 22, "ac5309" },
+    { 21, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+    { 22, "ac5115" },
+    { 23, "ac5309" },
 },
 },
 { -- Maloriak
@@ -2646,8 +2650,9 @@ DisplayIDs = {{33186}},
     { 18, 67426 },	-- Leggings of the Forlorn Vanquisher
     { 20, 65029 },	-- Jar of Ancient Remedies
     { 22, 65036 },	-- Mace of Acrid Death
-    { 24, "ac5108" },
-    { 25, "ac5310" },
+    { 24, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+    { 26, "ac5108" },
+    { 27, "ac5310" },
 },
 },
 { -- Nefarian's End
@@ -2689,8 +2694,9 @@ DisplayIDs = {{32716},{32569}},
     { 21, 65003 },	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
     { 22, 65017 },	-- Andoros, Fist of the Dragon King
     { 23, 65023 },	-- Akmin-Kurai, Dominion's Shield
-    { 25, "ac5116" },
-    { 26, "ac4849" },
+    { 25, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+    { 27, "ac5116" },
+    { 28, "ac4849" },
 },
 },
 { -- Trash
@@ -2751,8 +2757,9 @@ data["ThroneOfTheFourWinds"] = {
             { 16, 65367 },	-- Mistral Circle
             { 17, 65372 },	-- Permafrost Signet
             { 18, 65373 },	-- Planetary Band
-            { 20, "ac5122" },
-            { 21, "ac5304" },
+            { 20, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+            { 22, "ac5122" },
+            { 23, "ac5304" },
         },
     },
     { -- Al'Akir
@@ -2786,7 +2793,7 @@ data["ThroneOfTheFourWinds"] = {
         { 26, 69830 },	-- Planetary Amulet
         { 27, 63499 },	-- Cloudburst Ring
         { 29, 63041 },	-- Reins of the Drake of the South Wind
-        { 116, "ac5305" },
+        { 101, "ac5305" },
     },
     [HEROIC_DIFF] = {
         { 1, 69879 },	-- Cloudburst Cloak
@@ -2816,7 +2823,8 @@ data["ThroneOfTheFourWinds"] = {
         { 26, 69883 },	-- Permafrost Choker
         { 27, 69882 },	-- Planetary Amulet
         { 28, 65382 },	-- Cloudburst Ring
-        { 30, 63041 },	-- Reins of the Drake of the South Wind
+        { 30, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
+        { 101, 63041 },	-- Reins of the Drake of the South Wind
         { 116, "ac5123" },
         { 117, "ac5305" },
     },
@@ -2855,7 +2863,8 @@ data["Firelands"] = {
             { 20, 71141 },	-- Eternal Ember
             { 21, 69815 },	-- Seething Cinder
             { 22, 69237 },	-- Living Ember
-            { 24, "ac5821" },
+            { 24, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+            { 26, "ac5821" },
         },
         [HEROIC_DIFF] = {
             { 1, 71407 },	-- Robes of Smoldering Devastation
@@ -2875,400 +2884,414 @@ data["Firelands"] = {
             { 20, 71141 },	-- Eternal Ember
             { 21, 69815 },	-- Seething Cinder
             { 22, 69237 },	-- Living Ember
-            { 24, "ac5807" },
-            { 25, "ac5821" },
+            { 24, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+            { 26, "ac5807" },
+            { 27, "ac5821" },
         },
-    },
-    { -- Lord Rhyolith
-    name = AL["Lord Rhyolith"],
-    DisplayIDs = {{38414}},
-    ContentPhaseCata = 3,
-    [NORMAL_DIFF] = {
-        { 1, 70992 },	-- Dreadfire Drape
-        { 2, 71011 },	-- Flickering Cowl
-        { 3, 71003 },	-- Hood of Rampant Disdain
-        { 4, 71010 },	-- Incendic Chestguard
-        { 5, 71005 },	-- Flaming Core Chestguard
-        { 6, 71009 },	-- Lava Line Wristbands
-        { 7, 71004 },	-- Earthcrack Bracers
-        { 8, 70993 },	-- Fireskin Gauntlets
-        { 9, 71007 },	-- Grips of the Raging Giant
-        { 10, 70912 },	-- Cracked Obsidian Stompers
-        { 12, 71012 },	-- Heartstone of Rhyolith
-        { 16, 71006 },	-- Volcanospike
-        { 17, 70991 },	-- Arbalest of Erupting Fury
-        { 19, 71141 },	-- Eternal Ember
-        { 20, 69815 },	-- Seething Cinder
-        { 21, 69237 },	-- Living Ember
-        { 23, "ac5810" },
-    },
-    [HEROIC_DIFF] = {
-        { 1, 71415 },	-- Dreadfire Drape
-        { 2, 71421 },	-- Flickering Cowl
-        { 3, 71416 },	-- Hood of Rampant Disdain
-        { 4, 71424 },	-- Incendic Chestguard
-        { 5, 71417 },	-- Flaming Core Chestguard
-        { 6, 71425 },	-- Lava Line Wristbands
-        { 7, 71418 },	-- Earthcrack Bracers
-        { 8, 71419 },	-- Fireskin Gauntlets
-        { 9, 71426 },	-- Grips of the Raging Giant
-        { 10, 71420 },	-- Cracked Obsidian Stompers
-        { 12, 71423 },	-- Heartstone of Rhyolith
-        { 16, 71422 },	-- Volcanospike
-        { 17, 71414 },	-- Arbalest of Erupting Fury
-        { 19, 71141 },	-- Eternal Ember
-        { 20, 69815 },	-- Seething Cinder
-        { 21, 69237 },	-- Living Ember
-        { 23, "ac5808" },
-        { 24, "ac5810" },
-    },
-},
-{ -- Alysrazor
-name = AL["Alysrazor"],
-DisplayIDs = {{38446}},
-ContentPhaseCata = 3,
-[NORMAL_DIFF] = {
-    { 1, 70990 },	-- Wings of Flame
-    { 2, 70989 },	-- Leggings of Billowing Fire
-    { 3, 70735 },	-- Flickering Wristbands
-    { 4, 70987 },	-- Phoenix-Down Treads
-    { 5, 70985 },	-- Craterflame Spaulders
-    { 6, 70986 },	-- Clawshaper Gauntlets
-    { 7, 70736 },	-- Moltenfeather Leggings
-    { 8, 70734 },	-- Greathelm of the Voracious Maw
-    { 9, 70737 },	-- Spaulders of Recurring Flame
-    { 10, 70988 },	-- Clutch of the Firemother
-    { 11, 70739 },	-- Lavaworm Legplates
-    { 13, 70738 },	-- Alysrazor's Band
-    { 14, 68983 },	-- Eye of Blazing Power
-    { 16, 70733 },	-- Alysra's Razor
-    { 18, 71665, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Flametalon of Alysrazor
-    { 20, 71141 },	-- Eternal Ember
-    { 21, 69815 },	-- Seething Cinder
-    { 22, 69237 },	-- Living Ember
-    { 24, "ac5813" },
-},
-[HEROIC_DIFF] = {
-    { 1, 71434 },	-- Wings of Flame
-    { 2, 71435 },	-- Leggings of Billowing Fire
-    { 3, 71428 },	-- Flickering Wristbands
-    { 4, 71436 },	-- Phoenix-Down Treads
-    { 5, 71438 },	-- Craterflame Spaulders
-    { 6, 71437 },	-- Clawshaper Gauntlets
-    { 7, 71429 },	-- Moltenfeather Leggings
-    { 8, 71430 },	-- Greathelm of the Voracious Maw
-    { 9, 71432 },	-- Spaulders of Recurring Flame
-    { 10, 71439 },	-- Clutch of the Firemother
-    { 11, 71431 },	-- Lavaworm Legplates
-    { 13, 71433 },	-- Alysrazor's Band
-    { 14, 69149 },	-- Eye of Blazing Power
-    { 16, 71427 },	-- Alysra's Razor
-    { 18, 71679 },	-- Chest of the Fiery Conqueror
-    { 19, 71686 },	-- Chest of the Fiery Protector
-    { 20, 71672 },	-- Chest of the Fiery Vanquisher
-    { 22, 71665, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Flametalon of Alysrazor
-    { 24, 71141 },	-- Eternal Ember
-    { 25, 69815 },	-- Seething Cinder
-    { 26, 69237 },	-- Living Ember
-    { 28, "ac5809" },
-    { 29, "ac5813" },
-},
-},
-{ -- Shannox
-name = AL["Shannox"],
-DisplayIDs = {{38448}},
-ContentPhaseCata = 3,
-[NORMAL_DIFF] = {
-    { 1, 71023 },	-- Coalwalker Sandals
-    { 2, 71025 },	-- Flickering Shoulderpads
-    { 3, 71020 },	-- Gloves of Dissolving Smoke
-    { 4, 71018 },	-- Scalp of the Bandit Prince
-    { 5, 71027 },	-- Treads of Implicit Obedience
-    { 6, 71026 },	-- Bracers of the Dread Hunter
-    { 7, 71021 },	-- Uncrushable Belt of Fury
-    { 8, 71028 },	-- Legplates of Absolute Control
-    { 9, 70913 },	-- Legplates of Frenzied Devotion
-    { 11, 71019 },	-- Necklace of Fetishes
-    { 12, 71024 },	-- Crystal Prison Band
-    { 13, 71022 },	-- Goblet of Anger
-    { 16, 71014 },	-- Skullstealer Greataxe
-    { 17, 71013 },	-- Feeding Frenzy
-    { 19, 71141 },	-- Eternal Ember
-    { 20, 69815 },	-- Seething Cinder
-    { 21, 69237 },	-- Living Ember
-    { 23, "ac5829" },
-},
-[HEROIC_DIFF] = {
-    { 1, 71447 },	-- Coalwalker Sandals
-    { 2, 71450 },	-- Flickering Shoulderpads
-    { 3, 71440 },	-- Gloves of Dissolving Smoke
-    { 4, 71442 },	-- Scalp of the Bandit Prince
-    { 5, 71451 },	-- Treads of Implicit Obedience
-    { 6, 71452 },	-- Bracers of the Dread Hunter
-    { 7, 71443 },	-- Uncrushable Belt of Fury
-    { 8, 71453 },	-- Legplates of Absolute Control
-    { 9, 71444 },	-- Legplates of Frenzied Devotion
-    { 11, 71446 },	-- Necklace of Fetishes
-    { 12, 71449 },	-- Crystal Prison Band
-    { 13, 71448 },	-- Goblet of Anger
-    { 16, 71445 },	-- Skullstealer Greataxe
-    { 17, 71441 },	-- Feeding Frenzy
-    { 19, 71678 },	-- Leggings of the Fiery Conqueror
-    { 20, 71685 },	-- Leggings of the Fiery Protector
-    { 21, 71671 },	-- Leggings of the Fiery Vanquisher
-    { 23, 71141 },	-- Eternal Ember
-    { 24, 69815 },	-- Seething Cinder
-    { 25, 69237 },	-- Living Ember
-    { 27, "ac5806" },
-    { 28, "ac5829" },
-},
-},
-{ -- Baleroc, the Gatekeeper
-name = AL["Baleroc, the Gatekeeper"],
-DisplayIDs = {{38621}},
-ContentPhaseCata = 3,
-[NORMAL_DIFF] = {
-    { 1, 71343 },	-- Mantle of Closed Doors
-    { 2, 71345 },	-- Shoulderpads of the Forgotten Gate
-    { 3, 71314 },	-- Breastplate of the Incendiary Soul
-    { 4, 71341 },	-- Glowing Wing Bracers
-    { 5, 71340 },	-- Gatekeeper's Embrace
-    { 6, 71315 },	-- Decimation Treads
-    { 7, 71342 },	-- Casque of Flame
-    { 8, 70916 },	-- Helm of Blazing Glory
-    { 9, 70917 },	-- Flickering Handguards
-    { 11, 68982 },	-- Necromantic Focus
-    { 12, 71323 },	-- Molten Scream
-    { 16, 71312 },	-- Gatecrasher
-    { 17, 70915 },	-- Shard of Torment
-    { 19, 71141 },	-- Eternal Ember
-    { 20, 69815 },	-- Seething Cinder
-    { 21, 69237 },	-- Living Ember
-    { 23, "ac5830" },
-},
-[HEROIC_DIFF] = {
-    { 1, 71461 },	-- Mantle of Closed Doors
-    { 2, 71456 },	-- Shoulderpads of the Forgotten Gate
-    { 3, 71455 },	-- Breastplate of the Incendiary Soul
-    { 4, 71463 },	-- Glowing Wing Bracers
-    { 5, 71464 },	-- Gatekeeper's Embrace
-    { 6, 71457 },	-- Decimation Treads
-    { 7, 71465 },	-- Casque of Flame
-    { 8, 71459 },	-- Helm of Blazing Glory
-    { 9, 71458 },	-- Flickering Handguards
-    { 11, 69139 },	-- Necromantic Focus
-    { 12, 71462 },	-- Molten Scream
-    { 16, 71454 },	-- Gatecrasher
-    { 17, 71460 },	-- Shard of Torment
-    { 19, 71676 },	-- Gauntlets of the Fiery Conqueror
-    { 20, 71683 },	-- Gauntlets of the Fiery Protector
-    { 21, 71669 },	-- Gauntlets of the Fiery Vanquisher
-    { 23, 71141 },	-- Eternal Ember
-    { 24, 69815 },	-- Seething Cinder
-    { 25, 69237 },	-- Living Ember
-    { 27, "ac5805" },
-    { 28, "ac5830" },
-},
-},
-{ -- Majordomo Staghelm
-name = AL["Majordomo Staghelm"],
-DisplayIDs = {{37953}},
-ContentPhaseCata = 3,
-[NORMAL_DIFF] = {
-    { 1, 71350 },	-- Wristwraps of Arrogant Doom
-    { 2, 71349 },	-- Firecat Leggings
-    { 3, 71313 },	-- Sandals of Leaping Coals
-    { 4, 71346 },	-- Grips of Unerring Precision
-    { 5, 71344 },	-- Breastplate of Shifting Visions
-    { 6, 70920 },	-- Bracers of the Fiery Path
-    { 7, 71351 },	-- Treads of the Penitent Man
-    { 9, 71348 },	-- Flowform Choker
-    { 10, 68927 },	-- The Hungerer
-    { 11, 68926 },	-- Jaws of Defeat
-    { 13, 69897 },	-- Fandral's Flamescythe
-    { 14, 71347 },	-- Stinger of the Flaming Scorpion
-    { 16, 71681 },	-- Mantle of the Fiery Conqueror
-    { 17, 71688 },	-- Mantle of the Fiery Protector
-    { 18, 71674 },	-- Mantle of the Fiery Vanquisher
-    { 20, 71141 },	-- Eternal Ember
-    { 21, 69815 },	-- Seething Cinder
-    { 22, 69237 },	-- Living Ember
-    { 24, "ac5799" },
-},
-[HEROIC_DIFF] = {
-    { 1, 71471 },	-- Wristwraps of Arrogant Doom
-    { 2, 71474 },	-- Firecat Leggings
-    { 3, 71467 },	-- Sandals of Leaping Coals
-    { 4, 71468 },	-- Grips of Unerring Precision
-    { 5, 71469 },	-- Breastplate of Shifting Visions
-    { 6, 71470 },	-- Bracers of the Fiery Path
-    { 7, 71475 },	-- Treads of the Penitent Man
-    { 9, 71472 },	-- Flowform Choker
-    { 10, 69112 },	-- The Hungerer
-    { 11, 69111 },	-- Jaws of Defeat
-    { 13, 71466 },	-- Fandral's Flamescythe
-    { 14, 71473 },	-- Stinger of the Flaming Scorpion
-    { 16, 71680 },	-- Shoulders of the Fiery Conqueror
-    { 17, 71687 },	-- Shoulders of the Fiery Protector
-    { 18, 71673 },	-- Shoulders of the Fiery Vanquisher
-    { 20, 71141 },	-- Eternal Ember
-    { 21, 69815 },	-- Seething Cinder
-    { 22, 69237 },	-- Living Ember
-    { 24, "ac5804" },
-    { 25, "ac5799" },
-},
-},
-{ -- Ragnaros
-name = AL["Ragnaros"],
-DisplayIDs = {{37875}},
-ContentPhaseCata = 3,
-[NORMAL_DIFF] = {
-    { 1, 71358 },	-- Fingers of Incineration
-    { 2, 71357 },	-- Majordomo's Chain of Office
-    { 3, 71356 },	-- Crown of Flame
-    { 4, 70921 },	-- Pauldrons of Roaring Flame
-    { 6, 71354 },	-- Choker of the Vanquished Lord
-    { 7, 68994 },	-- Matrix Restabilizer
-    { 8, 68925 },	-- Variable Pulse Lightning Capacitor
-    { 9, 68995 },	-- Vessel of Acceleration
-    { 11, 71355 },	-- Ko'gun, Hammer of the Firelord
-    { 12, 71352 },	-- Sulfuras, the Extinguished Hand
-    { 13, 71798 },	-- Sho'ravon, Greatstaff of Annihilation
-    { 14, 71353 },	-- Arathar, the Eye of Flame
-    { 16, 71675 },	-- Helm of the Fiery Conqueror
-    { 17, 71682 },	-- Helm of the Fiery Protector
-    { 18, 71668 },	-- Helm of the Fiery Vanquisher
-    { 20, 69224 },	-- Smoldering Egg of Millagazor
-    { 22, 71141 },	-- Eternal Ember
-    { 23, 69815 },	-- Seething Cinder
-    { 24, 69848 },  -- Heart of Flame
-    { 25, 69237 },	-- Living Ember
-    { 27, "ac5855" },
-},
-[HEROIC_DIFF] = {
-    { 1, 71614 },	-- Fingers of Incineration
-    { 2, 71613 },	-- Majordomo's Chain of Office
-    { 3, 71616 },	-- Crown of Flame
-    { 4, 71612 },	-- Pauldrons of Roaring Flame
-    { 6, 71610 },	-- Choker of the Vanquished Lord
-    { 7, 69150 },	-- Matrix Restabilizer
-    { 8, 69110 },	-- Variable Pulse Lightning Capacitor
-    { 9, 69167 },	-- Vessel of Acceleration
-    { 11, 71615 },	-- Ko'gun, Hammer of the Firelord
-    { 12, 70723 },	-- Sulfuras, the Extinguished Hand
-    { 13, 71797 },	-- Sho'ravon, Greatstaff of Annihilation
-    { 14, 71611 },	-- Arathar, the Eye of Flame
-    { 16, 71677 },	-- Crown of the Fiery Conqueror
-    { 17, 71684 },	-- Crown of the Fiery Protector
-    { 18, 71670 },	-- Crown of the Fiery Vanquisher
-    { 20, 69224 },	-- Smoldering Egg of Millagazor
-    { 22, 71141 },	-- Eternal Ember
-    { 23, 69815 },	-- Seething Cinder
-    { 24, 69848 },  -- Heart of Flame
-    { 25, 69237 },	-- Living Ember
-    { 27, "ac5803" },
-    { 28, "ac5855" },
-},
-},
-{ -- Shared Boss Loot
-name = AL["Shared Boss Loot"],
-ContentPhaseCata = 3,
---ExtraList = true,
-[NORMAL_DIFF] = {
-    { 1, 71779 },	-- Avool's Incendiary Shanker
-    { 2, 71787 },	-- Entrail Disgorger
-    { 3, 71785 },	-- Firethorn Mindslicer
-    { 4, 71780 },	-- Zoid's Firelit Greatsword
-    { 5, 71776 },	-- Eye of Purification
-    { 6, 71782 },	-- Shatterskull Bonecrusher
-    { 7, 71775 },	-- Smoldering Censer of Purity
-},
-[HEROIC_DIFF] = {
-    { 1, 71778 },	-- Avool's Incendiary Shanker
-    { 2, 71786 },	-- Entrail Disgorger
-    { 3, 71784 },	-- Firethorn Mindslicer
-    { 4, 71781 },	-- Zoid's Firelit Greatsword
-    { 5, 71777 },	-- Eye of Purification
-    { 6, 71783 },	-- Shatterskull Bonecrusher
-    { 7, 71774 },	-- Smoldering Censer of Purity
-    { 16, 71617 },	-- Crystallized Firestone
-},
-},
-{	--Firelands Trash
-name = AL["Trash Mobs"],
-ContentPhaseCata = 3,
-ExtraList = true,
-[NORMAL_DIFF] = {
-    { 1, 71640 },	-- Riplimb's Lost Collar
-    { 2, 71365 },	-- Hide-Bound Chains
-    { 4, 70929 },	-- Firebound Gorget
-    { 5, 71367 },	-- Theck's Emberseal
-    { 6, 68972 },	-- Apparatus of Khaz'goroth
-    { 7, 68915 },	-- Scales of Life
-    { 16, 71359 },	-- Chelley's Sterilized Scalpel
-    { 17, 71362 },	-- Obsidium Cleaver
-    { 18, 71361 },	-- Ranseur of Hatred
-    { 19, 71360 },	-- Spire of Scarlet Pain
-    { 20, 71366 },	-- Lava Bolt Crossbow
-},
-},
-{ -- Firestones
-name = ALIL["Firestone Vendor"],
-ContentPhaseCata = 3,
-ExtraList = true,
-[NORMAL_DIFF] = {
-    { 1, 71641 },	-- Riplimb's Lost Collar
-    { 2, 71561 },	-- Hide-Bound Chains
-    { 4, 71563 },	-- Firebound Gorget
-    { 5, 71564 },	-- Theck's Emberseal
-    { 6, 69113 },	-- Apparatus of Khaz'goroth
-    { 7, 69109 },	-- Scales of Life
-    { 9, 71560 },	-- Chelley's Sterilized Scalpel
-    { 10, 71562 },	-- Obsidium Cleaver
-    { 11, 71557 },	-- Ranseur of Hatred
-    { 12, 71559 },	-- Spire of Scarlet Pain
-    { 13, 71558 },	-- Lava Bolt Crossbow
-    { 16, 71579 },	-- Scorchvine Wand
-    { 17, 71575 },	-- Trail of Embers
-    { 19, 71590 },  -- Deathclutch Figurine
-    { 20, 71587 },  -- Relic of the Elemental Lords
-    { 21, 71577 },  -- Singed Plume of Aviana
-    { 22, 71567 },  -- Covenant of the Flame
-    { 23, 71580 },  -- Soulflame Vial
-    { 25, 71568 },  -- Morningstar Shard
-    { 26, 71593 },  -- Giantslicer
-    { 27, 71592 },  -- Deflecting Star
-    { 29, 71617 },	-- Crystallized Firestone
-},
-},
-{ -- Patterns
-name = AL["Patterns"],
-ContentPhaseCata = 3,
-ExtraList = true,
-[NORMAL_DIFF] = {
-    { 1, 69976 },	-- Pattern: Boots of the Black Flame
-    { 2, 69966 },	-- Pattern: Don Tayo's Inferno Mittens
-    { 3, 69975 },	-- Pattern: Endless Dream Walkers
-    { 4, 69965 },	-- Pattern: Grips of Altered Reality
-    { 6, 69962 },	-- Pattern: Clutches of Evil
-    { 7, 69960 },	-- Pattern: Dragonfire Gloves
-    { 8, 69971 },	-- Pattern: Earthen Scale Sabatons
-    { 9, 69974 },	-- Pattern: Ethereal Footfalls
-    { 10, 69972 },	-- Pattern: Footwraps of Quenched Fire
-    { 11, 69961 },	-- Pattern: Gloves of Unforgiving Flame
-    { 12, 69963 },	-- Pattern: Heavenly Gloves of the Moon
-    { 13, 69973 },	-- Pattern: Treads of the Craft
-    { 16, 69970 },	-- Plans: Emberforged Elementium Boots
-    { 17, 69969 },	-- Plans: Mirrored Boots
-    { 18, 69968 },	-- Plans: Warboots of Mighty Lords
-    { 19, 69958 },	-- Plans: Eternal Elementium Handguards
-    { 20, 69957 },	-- Plans: Fists of Fury
-    { 21, 69959 },	-- Plans: Holy Flame Gauntlets
-},
-},
-T12_SET,
-CATA_RAID2_AC_TABLE,
-}
+        },
+        { -- Lord Rhyolith
+            name = AL["Lord Rhyolith"],
+            DisplayIDs = {{38414}},
+            ContentPhaseCata = 3,
+            [NORMAL_DIFF] = {
+                { 1, 70992 },	-- Dreadfire Drape
+                { 2, 71011 },	-- Flickering Cowl
+                { 3, 71003 },	-- Hood of Rampant Disdain
+                { 4, 71010 },	-- Incendic Chestguard
+                { 5, 71005 },	-- Flaming Core Chestguard
+                { 6, 71009 },	-- Lava Line Wristbands
+                { 7, 71004 },	-- Earthcrack Bracers
+                { 8, 70993 },	-- Fireskin Gauntlets
+                { 9, 71007 },	-- Grips of the Raging Giant
+                { 10, 70912 },	-- Cracked Obsidian Stompers
+                { 12, 71012 },	-- Heartstone of Rhyolith
+                { 16, 71006 },	-- Volcanospike
+                { 17, 70991 },	-- Arbalest of Erupting Fury
+                { 19, 71141 },	-- Eternal Ember
+                { 20, 69815 },	-- Seething Cinder
+                { 21, 69237 },	-- Living Ember
+                { 23, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+                { 25, "ac5810" },
+            },
+            [HEROIC_DIFF] = {
+                { 1, 71415 },	-- Dreadfire Drape
+                { 2, 71421 },	-- Flickering Cowl
+                { 3, 71416 },	-- Hood of Rampant Disdain
+                { 4, 71424 },	-- Incendic Chestguard
+                { 5, 71417 },	-- Flaming Core Chestguard
+                { 6, 71425 },	-- Lava Line Wristbands
+                { 7, 71418 },	-- Earthcrack Bracers
+                { 8, 71419 },	-- Fireskin Gauntlets
+                { 9, 71426 },	-- Grips of the Raging Giant
+                { 10, 71420 },	-- Cracked Obsidian Stompers
+                { 12, 71423 },	-- Heartstone of Rhyolith
+                { 16, 71422 },	-- Volcanospike
+                { 17, 71414 },	-- Arbalest of Erupting Fury
+                { 19, 71141 },	-- Eternal Ember
+                { 20, 69815 },	-- Seething Cinder
+                { 21, 69237 },	-- Living Ember
+                { 23, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+                { 25, "ac5808" },
+                { 26, "ac5810" },
+            },
+        },
+        { -- Alysrazor
+            name = AL["Alysrazor"],
+            DisplayIDs = {{38446}},
+            ContentPhaseCata = 3,
+            [NORMAL_DIFF] = {
+                { 1, 70990 },	-- Wings of Flame
+                { 2, 70989 },	-- Leggings of Billowing Fire
+                { 3, 70735 },	-- Flickering Wristbands
+                { 4, 70987 },	-- Phoenix-Down Treads
+                { 5, 70985 },	-- Craterflame Spaulders
+                { 6, 70986 },	-- Clawshaper Gauntlets
+                { 7, 70736 },	-- Moltenfeather Leggings
+                { 8, 70734 },	-- Greathelm of the Voracious Maw
+                { 9, 70737 },	-- Spaulders of Recurring Flame
+                { 10, 70988 },	-- Clutch of the Firemother
+                { 11, 70739 },	-- Lavaworm Legplates
+                { 13, 70738 },	-- Alysrazor's Band
+                { 14, 68983 },	-- Eye of Blazing Power
+                { 16, 70733 },	-- Alysra's Razor
+                { 18, 71665, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Flametalon of Alysrazor
+                { 20, 71141 },	-- Eternal Ember
+                { 21, 69815 },	-- Seething Cinder
+                { 22, 69237 },	-- Living Ember
+                { 24, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+                { 26, "ac5813" },
+            },
+            [HEROIC_DIFF] = {
+                { 1, 71434 },	-- Wings of Flame
+                { 2, 71435 },	-- Leggings of Billowing Fire
+                { 3, 71428 },	-- Flickering Wristbands
+                { 4, 71436 },	-- Phoenix-Down Treads
+                { 5, 71438 },	-- Craterflame Spaulders
+                { 6, 71437 },	-- Clawshaper Gauntlets
+                { 7, 71429 },	-- Moltenfeather Leggings
+                { 8, 71430 },	-- Greathelm of the Voracious Maw
+                { 9, 71432 },	-- Spaulders of Recurring Flame
+                { 10, 71439 },	-- Clutch of the Firemother
+                { 11, 71431 },	-- Lavaworm Legplates
+                { 13, 71433 },	-- Alysrazor's Band
+                { 14, 69149 },	-- Eye of Blazing Power
+                { 16, 71427 },	-- Alysra's Razor
+                { 18, 71679 },	-- Chest of the Fiery Conqueror
+                { 19, 71686 },	-- Chest of the Fiery Protector
+                { 20, 71672 },	-- Chest of the Fiery Vanquisher
+                { 22, 71665, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Flametalon of Alysrazor
+                { 24, 71141 },	-- Eternal Ember
+                { 25, 69815 },	-- Seething Cinder
+                { 26, 69237 },	-- Living Ember
+                { 28, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+                { 30, "ac5809" },
+                { 31, "ac5813" },
+            },
+        },
+        { -- Shannox
+            name = AL["Shannox"],
+            DisplayIDs = {{38448}},
+            ContentPhaseCata = 3,
+            [NORMAL_DIFF] = {
+                { 1, 71023 },	-- Coalwalker Sandals
+                { 2, 71025 },	-- Flickering Shoulderpads
+                { 3, 71020 },	-- Gloves of Dissolving Smoke
+                { 4, 71018 },	-- Scalp of the Bandit Prince
+                { 5, 71027 },	-- Treads of Implicit Obedience
+                { 6, 71026 },	-- Bracers of the Dread Hunter
+                { 7, 71021 },	-- Uncrushable Belt of Fury
+                { 8, 71028 },	-- Legplates of Absolute Control
+                { 9, 70913 },	-- Legplates of Frenzied Devotion
+                { 11, 71019 },	-- Necklace of Fetishes
+                { 12, 71024 },	-- Crystal Prison Band
+                { 13, 71022 },	-- Goblet of Anger
+                { 16, 71014 },	-- Skullstealer Greataxe
+                { 17, 71013 },	-- Feeding Frenzy
+                { 19, 71141 },	-- Eternal Ember
+                { 20, 69815 },	-- Seething Cinder
+                { 21, 69237 },	-- Living Ember
+                { 23, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+                { 25, "ac5829" },
+            },
+            [HEROIC_DIFF] = {
+                { 1, 71447 },	-- Coalwalker Sandals
+                { 2, 71450 },	-- Flickering Shoulderpads
+                { 3, 71440 },	-- Gloves of Dissolving Smoke
+                { 4, 71442 },	-- Scalp of the Bandit Prince
+                { 5, 71451 },	-- Treads of Implicit Obedience
+                { 6, 71452 },	-- Bracers of the Dread Hunter
+                { 7, 71443 },	-- Uncrushable Belt of Fury
+                { 8, 71453 },	-- Legplates of Absolute Control
+                { 9, 71444 },	-- Legplates of Frenzied Devotion
+                { 11, 71446 },	-- Necklace of Fetishes
+                { 12, 71449 },	-- Crystal Prison Band
+                { 13, 71448 },	-- Goblet of Anger
+                { 16, 71445 },	-- Skullstealer Greataxe
+                { 17, 71441 },	-- Feeding Frenzy
+                { 19, 71678 },	-- Leggings of the Fiery Conqueror
+                { 20, 71685 },	-- Leggings of the Fiery Protector
+                { 21, 71671 },	-- Leggings of the Fiery Vanquisher
+                { 23, 71141 },	-- Eternal Ember
+                { 24, 69815 },	-- Seething Cinder
+                { 25, 69237 },	-- Living Ember
+                { 27, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+                { 29, "ac5806" },
+                { 30, "ac5829" },
+            },
+        },
+        { -- Baleroc, the Gatekeeper
+            name = AL["Baleroc, the Gatekeeper"],
+            DisplayIDs = {{38621}},
+            ContentPhaseCata = 3,
+            [NORMAL_DIFF] = {
+                { 1, 71343 },	-- Mantle of Closed Doors
+                { 2, 71345 },	-- Shoulderpads of the Forgotten Gate
+                { 3, 71314 },	-- Breastplate of the Incendiary Soul
+                { 4, 71341 },	-- Glowing Wing Bracers
+                { 5, 71340 },	-- Gatekeeper's Embrace
+                { 6, 71315 },	-- Decimation Treads
+                { 7, 71342 },	-- Casque of Flame
+                { 8, 70916 },	-- Helm of Blazing Glory
+                { 9, 70917 },	-- Flickering Handguards
+                { 11, 68982 },	-- Necromantic Focus
+                { 12, 71323 },	-- Molten Scream
+                { 16, 71312 },	-- Gatecrasher
+                { 17, 70915 },	-- Shard of Torment
+                { 19, 71141 },	-- Eternal Ember
+                { 20, 69815 },	-- Seething Cinder
+                { 21, 69237 },	-- Living Ember
+                { 23, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+                { 25, "ac5830" },
+            },
+            [HEROIC_DIFF] = {
+                { 1, 71461 },	-- Mantle of Closed Doors
+                { 2, 71456 },	-- Shoulderpads of the Forgotten Gate
+                { 3, 71455 },	-- Breastplate of the Incendiary Soul
+                { 4, 71463 },	-- Glowing Wing Bracers
+                { 5, 71464 },	-- Gatekeeper's Embrace
+                { 6, 71457 },	-- Decimation Treads
+                { 7, 71465 },	-- Casque of Flame
+                { 8, 71459 },	-- Helm of Blazing Glory
+                { 9, 71458 },	-- Flickering Handguards
+                { 11, 69139 },	-- Necromantic Focus
+                { 12, 71462 },	-- Molten Scream
+                { 16, 71454 },	-- Gatecrasher
+                { 17, 71460 },	-- Shard of Torment
+                { 19, 71676 },	-- Gauntlets of the Fiery Conqueror
+                { 20, 71683 },	-- Gauntlets of the Fiery Protector
+                { 21, 71669 },	-- Gauntlets of the Fiery Vanquisher
+                { 23, 71141 },	-- Eternal Ember
+                { 24, 69815 },	-- Seething Cinder
+                { 25, 69237 },	-- Living Ember
+                { 27, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+                { 29, "ac5805" },
+                { 30, "ac5830" },
+            },
+        },
+        { -- Majordomo Staghelm
+            name = AL["Majordomo Staghelm"],
+            DisplayIDs = {{37953}},
+            ContentPhaseCata = 3,
+            [NORMAL_DIFF] = {
+                { 1, 71350 },	-- Wristwraps of Arrogant Doom
+                { 2, 71349 },	-- Firecat Leggings
+                { 3, 71313 },	-- Sandals of Leaping Coals
+                { 4, 71346 },	-- Grips of Unerring Precision
+                { 5, 71344 },	-- Breastplate of Shifting Visions
+                { 6, 70920 },	-- Bracers of the Fiery Path
+                { 7, 71351 },	-- Treads of the Penitent Man
+                { 9, 71348 },	-- Flowform Choker
+                { 10, 68927 },	-- The Hungerer
+                { 11, 68926 },	-- Jaws of Defeat
+                { 13, 69897 },	-- Fandral's Flamescythe
+                { 14, 71347 },	-- Stinger of the Flaming Scorpion
+                { 16, 71681 },	-- Mantle of the Fiery Conqueror
+                { 17, 71688 },	-- Mantle of the Fiery Protector
+                { 18, 71674 },	-- Mantle of the Fiery Vanquisher
+                { 20, 71141 },	-- Eternal Ember
+                { 21, 69815 },	-- Seething Cinder
+                { 22, 69237 },	-- Living Ember
+                { 24, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+                { 26, "ac5799" },
+            },
+            [HEROIC_DIFF] = {
+                { 1, 71471 },	-- Wristwraps of Arrogant Doom
+                { 2, 71474 },	-- Firecat Leggings
+                { 3, 71467 },	-- Sandals of Leaping Coals
+                { 4, 71468 },	-- Grips of Unerring Precision
+                { 5, 71469 },	-- Breastplate of Shifting Visions
+                { 6, 71470 },	-- Bracers of the Fiery Path
+                { 7, 71475 },	-- Treads of the Penitent Man
+                { 9, 71472 },	-- Flowform Choker
+                { 10, 69112 },	-- The Hungerer
+                { 11, 69111 },	-- Jaws of Defeat
+                { 13, 71466 },	-- Fandral's Flamescythe
+                { 14, 71473 },	-- Stinger of the Flaming Scorpion
+                { 16, 71680 },	-- Shoulders of the Fiery Conqueror
+                { 17, 71687 },	-- Shoulders of the Fiery Protector
+                { 18, 71673 },	-- Shoulders of the Fiery Vanquisher
+                { 20, 71141 },	-- Eternal Ember
+                { 21, 69815 },	-- Seething Cinder
+                { 22, 69237 },	-- Living Ember
+                { 24, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+                { 26, "ac5804" },
+                { 27, "ac5799" },
+            },
+        },
+        { -- Ragnaros
+            name = AL["Ragnaros"],
+            DisplayIDs = {{37875}},
+            ContentPhaseCata = 3,
+            [NORMAL_DIFF] = {
+                { 1, 71358 },	-- Fingers of Incineration
+                { 2, 71357 },	-- Majordomo's Chain of Office
+                { 3, 71356 },	-- Crown of Flame
+                { 4, 70921 },	-- Pauldrons of Roaring Flame
+                { 6, 71354 },	-- Choker of the Vanquished Lord
+                { 7, 68994 },	-- Matrix Restabilizer
+                { 8, 68925 },	-- Variable Pulse Lightning Capacitor
+                { 9, 68995 },	-- Vessel of Acceleration
+                { 11, 71355 },	-- Ko'gun, Hammer of the Firelord
+                { 12, 71352 },	-- Sulfuras, the Extinguished Hand
+                { 13, 71798 },	-- Sho'ravon, Greatstaff of Annihilation
+                { 14, 71353 },	-- Arathar, the Eye of Flame
+                { 16, 71675 },	-- Helm of the Fiery Conqueror
+                { 17, 71682 },	-- Helm of the Fiery Protector
+                { 18, 71668 },	-- Helm of the Fiery Vanquisher
+                { 20, 69224 },	-- Smoldering Egg of Millagazor
+                { 22, 71141 },	-- Eternal Ember
+                { 23, 69815 },	-- Seething Cinder
+                { 24, 69848 },  -- Heart of Flame
+                { 25, 69237 },	-- Living Ember
+                { 27, "c396", [ATLASLOOT_IT_AMOUNT1] = 200 }, -- Valor Points
+                { 29, "ac5855" },
+            },
+            [HEROIC_DIFF] = {
+                { 1, 71614 },	-- Fingers of Incineration
+                { 2, 71613 },	-- Majordomo's Chain of Office
+                { 3, 71616 },	-- Crown of Flame
+                { 4, 71612 },	-- Pauldrons of Roaring Flame
+                { 6, 71610 },	-- Choker of the Vanquished Lord
+                { 7, 69150 },	-- Matrix Restabilizer
+                { 8, 69110 },	-- Variable Pulse Lightning Capacitor
+                { 9, 69167 },	-- Vessel of Acceleration
+                { 11, 71615 },	-- Ko'gun, Hammer of the Firelord
+                { 12, 70723 },	-- Sulfuras, the Extinguished Hand
+                { 13, 71797 },	-- Sho'ravon, Greatstaff of Annihilation
+                { 14, 71611 },	-- Arathar, the Eye of Flame
+                { 16, 71677 },	-- Crown of the Fiery Conqueror
+                { 17, 71684 },	-- Crown of the Fiery Protector
+                { 18, 71670 },	-- Crown of the Fiery Vanquisher
+                { 20, 69224 },	-- Smoldering Egg of Millagazor
+                { 22, 71141 },	-- Eternal Ember
+                { 23, 69815 },	-- Seething Cinder
+                { 24, 69848 },  -- Heart of Flame
+                { 25, 69237 },	-- Living Ember
+                { 27, "c396", [ATLASLOOT_IT_AMOUNT1] = 200 }, -- Valor Points
+                { 29, "ac5803" },
+                { 30, "ac5855" },
+            },
+        },
+        { -- Shared Boss Loot
+            name = AL["Shared Boss Loot"],
+            ContentPhaseCata = 3,
+            NameColor = WHITE,
+            --ExtraList = true,
+            [NORMAL_DIFF] = {
+                { 1, 71779 },	-- Avool's Incendiary Shanker
+                { 2, 71787 },	-- Entrail Disgorger
+                { 3, 71785 },	-- Firethorn Mindslicer
+                { 4, 71780 },	-- Zoid's Firelit Greatsword
+                { 5, 71776 },	-- Eye of Purification
+                { 6, 71782 },	-- Shatterskull Bonecrusher
+                { 7, 71775 },	-- Smoldering Censer of Purity
+            },
+            [HEROIC_DIFF] = {
+                { 1, 71778 },	-- Avool's Incendiary Shanker
+                { 2, 71786 },	-- Entrail Disgorger
+                { 3, 71784 },	-- Firethorn Mindslicer
+                { 4, 71781 },	-- Zoid's Firelit Greatsword
+                { 5, 71777 },	-- Eye of Purification
+                { 6, 71783 },	-- Shatterskull Bonecrusher
+                { 7, 71774 },	-- Smoldering Censer of Purity
+                { 16, 71617 },	-- Crystallized Firestone
+            },
+        },
+        {	--Firelands Trash
+            name = AL["Trash Mobs"],
+            ContentPhaseCata = 3,
+            ExtraList = true,
+            [NORMAL_DIFF] = {
+                { 1, 71640 },	-- Riplimb's Lost Collar
+                { 2, 71365 },	-- Hide-Bound Chains
+                { 4, 70929 },	-- Firebound Gorget
+                { 5, 71367 },	-- Theck's Emberseal
+                { 6, 68972 },	-- Apparatus of Khaz'goroth
+                { 7, 68915 },	-- Scales of Life
+                { 16, 71359 },	-- Chelley's Sterilized Scalpel
+                { 17, 71362 },	-- Obsidium Cleaver
+                { 18, 71361 },	-- Ranseur of Hatred
+                { 19, 71360 },	-- Spire of Scarlet Pain
+                { 20, 71366 },	-- Lava Bolt Crossbow
+            },
+        },
+        { -- Firestones
+            name = ALIL["Firestone Vendor"],
+            ContentPhaseCata = 3,
+            ExtraList = true,
+            [NORMAL_DIFF] = {
+                { 1, 71641 },	-- Riplimb's Lost Collar
+                { 2, 71561 },	-- Hide-Bound Chains
+                { 4, 71563 },	-- Firebound Gorget
+                { 5, 71564 },	-- Theck's Emberseal
+                { 6, 69113 },	-- Apparatus of Khaz'goroth
+                { 7, 69109 },	-- Scales of Life
+                { 9, 71560 },	-- Chelley's Sterilized Scalpel
+                { 10, 71562 },	-- Obsidium Cleaver
+                { 11, 71557 },	-- Ranseur of Hatred
+                { 12, 71559 },	-- Spire of Scarlet Pain
+                { 13, 71558 },	-- Lava Bolt Crossbow
+                { 16, 71579 },	-- Scorchvine Wand
+                { 17, 71575 },	-- Trail of Embers
+                { 19, 71590 },  -- Deathclutch Figurine
+                { 20, 71587 },  -- Relic of the Elemental Lords
+                { 21, 71577 },  -- Singed Plume of Aviana
+                { 22, 71567 },  -- Covenant of the Flame
+                { 23, 71580 },  -- Soulflame Vial
+                { 25, 71568 },  -- Morningstar Shard
+                { 26, 71593 },  -- Giantslicer
+                { 27, 71592 },  -- Deflecting Star
+                { 29, 71617 },	-- Crystallized Firestone
+            },
+        },
+        { -- Patterns
+            name = AL["Patterns"],
+            ContentPhaseCata = 3,
+            ExtraList = true,
+            [NORMAL_DIFF] = {
+                { 1, 69976 },	-- Pattern: Boots of the Black Flame
+                { 2, 69966 },	-- Pattern: Don Tayo's Inferno Mittens
+                { 3, 69975 },	-- Pattern: Endless Dream Walkers
+                { 4, 69965 },	-- Pattern: Grips of Altered Reality
+                { 6, 69962 },	-- Pattern: Clutches of Evil
+                { 7, 69960 },	-- Pattern: Dragonfire Gloves
+                { 8, 69971 },	-- Pattern: Earthen Scale Sabatons
+                { 9, 69974 },	-- Pattern: Ethereal Footfalls
+                { 10, 69972 },	-- Pattern: Footwraps of Quenched Fire
+                { 11, 69961 },	-- Pattern: Gloves of Unforgiving Flame
+                { 12, 69963 },	-- Pattern: Heavenly Gloves of the Moon
+                { 13, 69973 },	-- Pattern: Treads of the Craft
+                { 16, 69970 },	-- Plans: Emberforged Elementium Boots
+                { 17, 69969 },	-- Plans: Mirrored Boots
+                { 18, 69968 },	-- Plans: Warboots of Mighty Lords
+                { 19, 69958 },	-- Plans: Eternal Elementium Handguards
+                { 20, 69957 },	-- Plans: Fists of Fury
+                { 21, 69959 },	-- Plans: Holy Flame Gauntlets
+            },
+        },
+        T12_SET,
+        CATA_RAID2_AC_TABLE,
+    }
 }
 
 local END_TIME_ECHO_LOOT = {
@@ -3514,6 +3537,7 @@ data["DragonSoul"] = {
         name = AL["Morchok"],
         DisplayIDs = {{39094}},
         ContentPhaseCata = 4,
+        NameColor = PURPLE,
         [RAIDFINDER_DIFF] = {
             { 1, 78381 },	-- Mosswrought Shoulderguards
             { 2, 78380 },	-- Robe of Glowing Stone
@@ -3564,6 +3588,7 @@ data["DragonSoul"] = {
     name = AL["Warlord Zon'ozz"],
     DisplayIDs = {{39138}},
     ContentPhaseCata = 4,
+    NameColor = PURPLE,
     [RAIDFINDER_DIFF] = {
         { 1, 78398 },	-- Cord of the Slain Champion
         { 2, 78395 },	-- Belt of Flayed Skin
@@ -3610,6 +3635,7 @@ data["DragonSoul"] = {
 name = AL["Yor'sahj the Unsleeping"],
 DisplayIDs = {{39101}},
 ContentPhaseCata = 4,
+NameColor = PURPLE,
 [RAIDFINDER_DIFF] = {
     { 1, 78408 },	-- Interrogator's Bloody Footpads
     { 2, 78411 },	-- Mindstrainer Treads
@@ -3654,6 +3680,7 @@ ContentPhaseCata = 4,
 name = AL["Hagara the Stormbinder"],
 DisplayIDs = {{39318}},
 ContentPhaseCata = 4,
+NameColor = PURPLE,
 [RAIDFINDER_DIFF] = {
     { 1, 78425 },	-- Bracers of the Banished
     { 2, 78428 },	-- Girdle of the Grotesque
@@ -3700,6 +3727,7 @@ ContentPhaseCata = 4,
 name = AL["Ultraxion"],
 DisplayIDs = {{39099}},
 ContentPhaseCata = 4,
+NameColor = RED,
 [RAIDFINDER_DIFF] = {
     { 1, 78442 },	-- Treads of Sordid Screams
     { 2, 78443 },	-- Imperfect Specimens 27 and 28
@@ -3751,6 +3779,7 @@ ContentPhaseCata = 4,
 name = AL["Warmaster Blackhorn"],
 DisplayIDs = {{39399}},
 ContentPhaseCata = 4,
+NameColor = RED,
 [RAIDFINDER_DIFF] = {
     { 1, 78457 },	-- Janglespur Jackboots
     { 2, 78454 },	-- Shadow Wing Armbands
@@ -3799,6 +3828,7 @@ ContentPhaseCata = 4,
 name = AL["Spine of Deathwing"],
 DisplayIDs = {{35268}},
 ContentPhaseCata = 4,
+NameColor = RED,
 [RAIDFINDER_DIFF] = {
     { 1, 78466 },	-- Gloves of Liquid Smoke
     { 2, 78467 },	-- Molten Blood Footpads
@@ -3843,6 +3873,7 @@ ContentPhaseCata = 4,
 name = AL["Madness of Deathwing"],
 DisplayIDs = {{40087}},
 ContentPhaseCata = 4,
+NameColor = RED,
 [RAIDFINDER_DIFF] = {
     { 1, 78484 },	-- Rathrak, the Poisonous Mind
     { 2, 78483 },	-- Blade of the Unmaker
@@ -4018,7 +4049,7 @@ data["BaradinHold"] = {
             { 26, "CLASS_PALADIN", nil, CLASS_NAME["PALADIN"], AL["Protection"], "BH_A_PALADIN_T"},
             { 27, "CLASS_PALADIN", nil, CLASS_NAME["PALADIN"], AL["Holy"], "BH_A_PALADIN_H"},
             { 28, "CLASS_PALADIN", nil, CLASS_NAME["PALADIN"], AL["Retribution"], "BH_A_PALADIN_D"},
-            { 30, "ac5416" },
+            { 30, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
             { 101, "SLOT_CLOTH", nil, ALIL["Cloth"], nil, "BH_A_CLOTH"},
             { 102, "SLOT_LEATHER", nil, ALIL["Leather"], nil, "BH_A_LEATHER"},
             { 103, "SLOT_MAIL", nil, ALIL["Mail"], nil, "BH_A_MAIL"},
@@ -4028,6 +4059,7 @@ data["BaradinHold"] = {
             { 108, "SLOT_FINGER", nil, ALIL["Finger"], nil, "BH_A_FINGER"},
             { 109, "SLOT_TRINKET", nil, ALIL["Trinket"], nil,
             AtlasLoot:GetRetByFaction("BH_AH_TRINKET", "BH_AA_TRINKET")},
+            { 116, "ac5416" },
         },
     },
     { -- Occu'thar
@@ -4054,7 +4086,7 @@ data["BaradinHold"] = {
         { 26, "CLASS_PALADIN", nil, CLASS_NAME["PALADIN"], AL["Protection"], "BH_O_PALADIN_T"},
         { 27, "CLASS_PALADIN", nil, CLASS_NAME["PALADIN"], AL["Holy"], "BH_O_PALADIN_H"},
         { 28, "CLASS_PALADIN", nil, CLASS_NAME["PALADIN"], AL["Retribution"], "BH_O_PALADIN_D"},
-        { 30, "ac6045" },
+        { 30, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
         { 101, "SLOT_CLOTH", nil, ALIL["Cloth"], nil, "BH_O_CLOTH"},
         { 102, "SLOT_LEATHER", nil, ALIL["Leather"], nil, "BH_O_LEATHER"},
         { 103, "SLOT_MAIL", nil, ALIL["Mail"], nil, "BH_O_MAIL"},
@@ -4064,6 +4096,7 @@ data["BaradinHold"] = {
         { 108, "SLOT_FINGER", nil, ALIL["Finger"], nil, "BH_O_FINGER"},
         { 109, "SLOT_TRINKET", nil, ALIL["Trinket"], nil,
         AtlasLoot:GetRetByFaction("BH_OH_TRINKET", "BH_OA_TRINKET")},
+        { 116, "ac6045" },
     },
 },
 { -- Alizabal, Mistress of Hate
@@ -4090,7 +4123,7 @@ ContentPhaseCata = 4,
     { 26, "CLASS_PALADIN", nil, CLASS_NAME["PALADIN"], AL["Protection"], "BH_AL_PALADIN_T"},
     { 27, "CLASS_PALADIN", nil, CLASS_NAME["PALADIN"], AL["Holy"], "BH_AL_PALADIN_H"},
     { 28, "CLASS_PALADIN", nil, CLASS_NAME["PALADIN"], AL["Retribution"], "BH_AL_PALADIN_D"},
-    { 30, "ac6108" },
+    { 30, "c396", [ATLASLOOT_IT_AMOUNT1] = "35/45" }, -- Valor Points
     { 101, "SLOT_CLOTH", nil, ALIL["Cloth"], nil, "BH_AL_CLOTH"},
     { 102, "SLOT_LEATHER", nil, ALIL["Leather"], nil, "BH_AL_LEATHER"},
     { 103, "SLOT_MAIL", nil, ALIL["Mail"], nil, "BH_AL_MAIL"},
@@ -4100,6 +4133,7 @@ ContentPhaseCata = 4,
     { 108, "SLOT_FINGER", nil, ALIL["Finger"], nil, "BH_AL_FINGER"},
     { 109, "SLOT_TRINKET", nil, ALIL["Trinket"], nil,
     AtlasLoot:GetRetByFaction("BH_ALH_TRINKET", "BH_ALA_TRINKET")},
+    { 116, "ac6108" },
 },
 },
 },

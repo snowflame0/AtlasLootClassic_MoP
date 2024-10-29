@@ -782,6 +782,108 @@ data["ValorPointsP4"] = {
 }
 --]]
 
+data["MoltenFront"] = {
+    name = AL["Molten Front"],
+    ContentType = VENDOR_CONTENT,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    ContentPhaseCata = 2.5,
+    items = {
+        { -- Favors of the World Tree
+            name = AL["Favors of the World Tree"],
+            [VENDOR_DIFF] = {
+                { 1,  70108 }, -- Pyrelord Greaves
+                { 3,  70107 }, -- Fireheart Necklace
+                { 16,  70106 }, -- Nightweaver's Amulet
+                { 17,  70105 }, -- Matoclaw's Band
+            }
+        },
+        { -- Additional Armaments
+            name = AL["Additional Armaments"],
+            [VENDOR_DIFF] = {
+                { 1, 70116 }, -- Gauntlets of Living Obsidium
+                { 2, 70118 }, -- Widow's Clutches
+                { 4, 70120 }, -- Rickety Belt
+                { 5, 70117 }, -- Belt of Living Obsidium
+                { 6, 70114 }, -- Fireplume Girdle
+                { 16, 70115 }, -- Fiery Treads
+                { 18, 70121 }, -- Ricket's Gun Show
+                { 20, 70119 }, -- Meteorite Ring
+                { 22, 70144 }, -- Ricket's Magnetic Fireball
+            }
+        },
+        { -- Calling the Ancients
+            name = AL["Calling the Ancients"],
+            [VENDOR_DIFF] = {
+                { 1, 70122 }, -- Aviana's Grips
+                { 3, 70123 }, -- Lancer's Greaves
+                { 5, 70126 }, -- Nemesis Shell Band
+                { 6, 70127 }, -- Lylagar Horn Ring
+                { 7, 70124 }, -- Spirit Fragment Band
+                { 9, 70141 }, -- Dwyer's Caber
+                { 16, 70125 }, -- Relic of Lo'Gosh
+                { 17, 70128 }, -- Relic of Tortolla
+                { 19, 70140 }, -- Hyjal Bear Cub
+                { 20, 70159 }, -- Mylune's Call
+        }
+        },
+        { -- Filling the Moonwell
+            name = AL["Filling the Moonwell"],
+            [VENDOR_DIFF] = {
+                { 1,  70113 }, -- Moon Blessed Band
+                { 2,  70110 }, -- Band of Glittering Lights
+                { 4,  70112 }, -- Globe of Moonlight
+                { 6,  70142 }, -- Moonwell Chalice
+                { 7,  70143 }, -- Moonwell Phial
+                { 16, 70109 }, -- Relic of Elune's Shadow
+                { 17, 70111 }, -- Relic of Elune's Light
+                { 19, 70160 }, -- Crimson Lasher
+                { 20, 70161 }, -- Mushroom Chair
+            }
+        },
+        { -- Patterns
+            name = AL["Patterns"],
+            ExtraList = true,
+            [VENDOR_DIFF] = {
+                { 1, "INV_SWORD_DRAENEI_05", nil, AL["Additional Armaments"] },
+                { 2,  70177 }, -- Schematic: Flintlocke's Woodchucker
+                { 3,  71078 }, -- Schematic: Extreme-Impact Hole Puncher
+                { 5,  70166 }, -- Plans: Brainsplinter
+                { 6,  70167 }, -- Plans: Masterwork Elementium Spellblade
+                { 7,  70168 }, -- Plans: Lightforged Elementium Hammer
+                { 8,  70169 }, -- Plans: Elementium-Edged Scalper
+                { 9,  70170 }, -- Plans: Pyrium Spellward
+                { 10,  70171 }, -- Plans: Unbreakable Guardian
+                { 11,  70172 }, -- Plans: Masterwork Elementium Deathblade
+                { 12, 70173 }, -- Plans: Witch-Hunter's Harvester
+                { 16, "INV_MISC_HEAD_ELF_02", nil, AL["Filling the Moonwell"] },
+                { 17,  70174 }, -- Pattern: Royal Scribe's Satchel
+                { 19,  70175 }, -- Pattern: Triple-Reinforced Mining Bag
+                { 18,  70176 }, -- Pattern: Luxurious Silk Gem Bag
+            }
+        },
+        { -- Misc
+            name = AL["Misc"],
+            [VENDOR_DIFF] = {
+                { 1, "INV_ELEMENTAL_PRIMAL_FIRE", nil, AL["All Quests Done"] },
+                { 2,  AtlasLoot:GetRetByFaction(70149, 70152) },
+                { 3,  AtlasLoot:GetRetByFaction(70154, 70145) },
+                { 4,  AtlasLoot:GetRetByFaction(70150, 70148) },
+                { 5,  AtlasLoot:GetRetByFaction(70153, 70147) },
+                { 6,  AtlasLoot:GetRetByFaction(70151, 70146) },
+                { 7,  AtlasLoot:GetRetByFaction(71088, 71087) },
+                { 17, 71631 }, -- Zen'Vorka's Cache
+                { 18, 34955 }, -- Scorched Stone
+                { 20, 69213 }, -- Flameward Hippogryph
+                { 21, 71259 }, -- Leyara's Locket
+                { 23, "ac5879" },
+                { 24, "ac5866" },
+                { 25, "ac5859" },
+            },
+        },
+    },
+}
+
 -- shared!
 data["WorldEpicsCata"] = {
     name = AL["World Epics"],
@@ -1461,102 +1563,6 @@ data["WinterVeilCata"] = {
                 { 16, 17303 }, -- Blue Ribboned Wrapping Paper
                 { 17, 17304 }, -- Green Ribboned Wrapping Paper
                 { 18, 17307 }, -- Purple Ribboned Wrapping Paper
-            },
-        },
-    },
-}
-
-data["MoltenFront"] = {
-    name = AL["Molten Front"],
-    ContentType = COLLECTIONS_CONTENT,
-    LoadDifficulty = NORMAL_DIFF,
-    TableType = NORMAL_ITTYPE,
-    gameVersion = AtlasLoot.CATA_VERSION_NUM,
-    ContentPhaseCata = 2.5,
-    items = {
-        { -- Additional Armaments
-            name = AL["Additional Armaments"],
-            [NORMAL_DIFF] = {
-                { 1,  70177 }, -- Schematic: Flintlocke's Woodchucker
-                { 2,  71078 }, -- Schematic: Extreme-Impact Hole Puncher
-                { 3,  70166 }, -- Plans: Brainsplinter
-                { 4,  70167 }, -- Plans: Masterwork Elementium Spellblade
-                { 5,  70168 }, -- Plans: Lightforged Elementium Hammer
-                { 6,  70169 }, -- Plans: Elementium-Edged Scalper
-                { 7,  70170 }, -- Plans: Pyrium Spellward
-                { 8,  70171 }, -- Plans: Unbreakable Guardian
-                { 9,  70172 }, -- Plans: Masterwork Elementium Deathblade
-                { 10, 70173 }, -- Plans: Witch-Hunter's Harvester
-                { 12, 70118 }, -- Widow's Clutches
-                { 13, 70114 }, -- Fireplume Girdle
-                { 14, 70115 }, -- Fiery Treads
-                { 15, 70116 }, -- Gauntlets of Living Obsidium
-                { 16, 70119 }, -- Meteorite Ring
-                { 17, 70120 }, -- Rickety Belt
-                { 18, 70121 }, -- Ricket's Gun Show
-                { 19, 70117 }, -- Belt of Living Obsidium
-                { 20, 70144 }, -- Ricket's Magnetic Fireball
-            }
-        },
-        { -- Filling the Moonwell
-            name = AL["Filling the Moonwell"],
-            [NORMAL_DIFF] = {
-                { 1,  70174 }, -- Pattern: Royal Scribe's Satchel
-                { 2,  70175 }, -- Pattern: Triple-Reinforced Mining Bag
-                { 3,  70176 }, -- Pattern: Luxurious Silk Gem Bag
-                { 5,  70110 }, -- Band of Glittering Lights
-                { 6,  70112 }, -- Globe of Moonlight
-                { 7,  70113 }, -- Moon Blessed Band
-                { 8,  70142 }, -- Moonwell Chalice
-                { 9,  70143 }, -- Moonwell Phial
-                { 11, 70160 }, -- Crimson Lasher
-                { 12, 70161 }, -- Mushroom Chair
-            }
-        },
-        { -- Calling the Ancients
-            name = AL["Calling the Ancients"],
-            [NORMAL_DIFF] = {
-                { 1, 70122 }, -- Aviana's Grips
-                { 2, 70123 }, -- Lancer's Greaves
-                { 3, 70124 }, -- Spirit Fragment Band
-                { 4, 70126 }, -- Nemesis Shell Band
-                { 5, 70127 }, -- Lylagar Horn Ring
-                { 6, 70141 }, -- Dwyer's Caber
-                { 8, 70140 }, -- Hyjal Bear Cub
-                { 9, 70159 }, -- Mylune's Call
-            }
-        },
-        { -- Favors of the World Tree
-            name = AL["Favors of the World Tree"],
-            [NORMAL_DIFF] = {
-                { 1,  70105 }, -- Matoclaw's Band
-                { 2,  70106 }, -- Nightweaver's Amulet
-                { 3,  70107 }, -- Fireheart Necklace
-                { 4,  70108 }, -- Pyrelord Greaves
-                { 6,  70145 }, -- Darnassus Writ of Commendation
-                { 7,  70146 }, -- Exodar Writ of Commendation
-                { 8,  70147 }, -- Gnomeregan Writ of Commendation
-                { 9,  70148 }, -- Ironforge Writ of Commendation
-                { 13, 70149 }, -- Orgrimmar Writ of Commendation
-                { 14, 70150 }, -- Sen'jin Writ of Commendation
-                { 15, 70151 }, -- Silvermoon Writ of Commendation
-                { 10, 70152 }, -- Stormwind Writ of Commendation
-                { 16, 70153 }, -- Thunder Bluff Writ of Commendation
-                { 17, 70154 }, -- Undercity Writ of Commendation
-                { 11, 71087 }, -- Gilneas Writ of Commendation
-                { 18, 71088 }, -- Bilgewater Writ of Commendation
-                { 20, 71631 }, -- Zen'Vorka's Cache
-                { 21, 34955 }, -- Scorched Stone
-            }
-        },
-        { -- Misc
-            name = AL["Misc"],
-            [NORMAL_DIFF] = {
-                { 1, 69213 }, -- Flameward Hippogryph
-                { 2, 71259 }, -- Leyara's Locket
-                { 4, "ac5866" },
-                { 5, "ac5879" },
-                { 6, "ac5859" },
             },
         },
     },

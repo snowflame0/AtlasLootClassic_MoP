@@ -64,7 +64,7 @@ local NAME_AT = NAME_COLOR .. AL["AT"] .. ":|r %s" -- Argent Tournament
 local BLUE = "|cff6666ff%s|r"
 -- local GREY = "|cff999999%s|r"
 local GREEN = "|cff66cc33%s|r"
-local _RED = "|cffcc6666%s|r"
+local RED = "|cffcc6666%s|r"
 local PURPLE = "|cff9900ff%s|r"
 -- local WHIT = "|cffffffff%s|r"
 
@@ -3590,7 +3590,7 @@ data["NaxxramasWrath"] = {
         npcID = 16061,
         Level = 999,
         DisplayIDs = {{16582}},
-        NameColor = _RED,
+        NameColor = RED,
         [NORMAL_DIFF] = {{1, 40325}, -- Bindings of the Expansive Mind
         {2, 40326}, -- Boots of Forlorn Wishes
         {3, 40305}, -- Spaulders of Egotism
@@ -3620,7 +3620,7 @@ data["NaxxramasWrath"] = {
         npcID = 16060,
         Level = 999,
         DisplayIDs = {{16279}},
-        NameColor = _RED,
+        NameColor = RED,
         [NORMAL_DIFF] = {{1, 40250}, -- Aged Winter Cloak
         {2, 40254}, -- Cloak of Averted Crisis
         {3, 40252}, -- Cloak of the Shadowed Sun
@@ -3651,7 +3651,7 @@ data["NaxxramasWrath"] = {
         npcID = {16064, 16065, 16062, 16063},
         Level = 999,
         DisplayIDs = {{16155}, {16153}, {16139}, {16154}},
-        NameColor = _RED,
+        NameColor = RED,
         [NORMAL_DIFF] = {{1, 40349}, -- Gloves of Peaceful Death
         {2, 40344}, -- Helm of the Grave
         {3, 40352}, -- Leggings of Voracious Shadows
@@ -5804,6 +5804,7 @@ data["IcecrownCitadel"] = {
         npcID = 36626,
         DisplayIDs = {{31006}},
         Level = 999,
+        NameColor = GREEN,
         [RAID10_DIFF] = {{1, 50859}, -- Cloak of Many Skins
         {2, 50988}, -- Bloodstained Surgeon's Shoulderguards
         {3, 50990}, -- Kilt of Untreated Wounds
@@ -5876,6 +5877,7 @@ data["IcecrownCitadel"] = {
         npcID = 36627,
         DisplayIDs = {{31005}},
         Level = 999,
+        NameColor = GREEN,
         [RAID10_DIFF] = {{1, 51007}, -- Ether-Soaked Bracers
         {2, 51005}, -- Gloves of Broken Fingers
         {3, 51009}, -- Chestguard of the Failed Experiment
@@ -5944,6 +5946,7 @@ data["IcecrownCitadel"] = {
         npcID = 36678,
         DisplayIDs = {{30881}},
         Level = 999,
+        NameColor = GREEN,
         [RAID10_DIFF] = {{1, 51020}, -- Shoulders of Ruinous Senility
         {2, 51017}, -- Cauterized Cord
         {3, 51013}, -- Discarded Bag of Entrails
@@ -6004,6 +6007,7 @@ data["IcecrownCitadel"] = {
         npcID = 37970,
         DisplayIDs = {{30858},{30856},{30857}},
         Level = 999,
+        NameColor = RED,
         [RAID10_DIFF] = {{1, 51382}, -- Heartsick Mender's Cape
         {2, 51379}, -- Bloodsoul Raiment
         {3, 51380}, -- Pale Corpse Boots
@@ -6072,6 +6076,7 @@ data["IcecrownCitadel"] = {
         npcID = 37955,
         DisplayIDs = {{31165}},
         Level = 999,
+        NameColor = RED,
         [RAID10_DIFF] = {{1, 51554}, -- Cowl of Malefic Repose
         {2, 51552}, -- Shoulderpads of the Searing Kiss
         {3, 51550}, -- Ivory-Inlaid Leggings
@@ -6134,6 +6139,7 @@ data["IcecrownCitadel"] = {
         npcID = 36789,
         DisplayIDs = {{30318}},
         Level = 999,
+        NameColor = BLUE,
         [RAID10_DIFF] = {{1, 51584}, -- Lich Wrappings
         {2, 51777}, -- Leggings of the Refracted Mind
         {3, 51585}, -- Sister Svalna's Spangenhelm
@@ -6202,6 +6208,7 @@ data["IcecrownCitadel"] = {
         npcID = 36853,
         DisplayIDs = {{30362}},
         Level = 999,
+        NameColor = BLUE,
         [RAID10_DIFF] = {{1, 51790}, -- Robes of Azure Downfall
         {2, 51783}, -- Vambraces of the Frost Wyrm Queen
         {3, 51789}, -- Icicle Shapers
@@ -6262,6 +6269,7 @@ data["IcecrownCitadel"] = {
         npcID = 36597,
         DisplayIDs = {{30721}},
         Level = 999,
+        NameColor = PURPLE,
         [RAID10_DIFF] = {{1, 51801}, -- Pugius, Fist of Defiance
         {2, 51803}, -- Tel'thas, Dagger of the Blood King
         {3, 51800}, -- Stormfury, Black Blade of the Betrayer
