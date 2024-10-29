@@ -79,8 +79,10 @@ function Currency.OnEnter(button, owner)
 	else
 		tooltip:SetOwner(button, "ANCHOR_RIGHT", -(button:GetWidth() * 0.5), 5)
 	end
-	tooltip:SetHyperlink(GetCurrencyLink(button.CurrencyID, 1))
-	tooltip:Show()
+	if C_CurrencyInfo.GetCurrencyInfo(button.CurrencyID) then
+		tooltip:SetHyperlink(GetCurrencyLink(button.CurrencyID, 1))
+		tooltip:Show()
+	end
 end
 
 function Currency.OnLeave(button)
@@ -104,12 +106,16 @@ end
 function Currency.Refresh(button)
 	if not button.CurrencyID then return end
 
-    -- TODO: maybe add max currency data
+    -- Maybe add current/max currency display
+	local currencyName, currencyTexture, currencyQuality
     local currencyInfo = GetCurrencyInfo(button.CurrencyID)
+	-- Deal with currency not existing on client
 	if not currencyInfo then
-		return false
+		currencyName, currencyTexture, currencyQuality = "", DUMMY_ITEM_ICON, 1
+	else
+		currencyName, currencyTexture, currencyQuality = currencyInfo.name, currencyInfo.iconFileID, currencyInfo.quality
 	end
-    local currencyName, currencyTexture, currencyQuality = currencyInfo.name, currencyInfo.iconFileID, currencyInfo.quality
+    
 
 	button.RawName = currencyName
 
@@ -117,7 +123,7 @@ function Currency.Refresh(button)
 	button.overlay:SetQualityBorder(currencyQuality)
 
 	if button.type == "secButton" then
-		button:SetTexture(currencyTexture or DUMMY_ITEM_ICON)
+		button:SetTexture(currencyTexture)
 	else
 		-- ##################
 		-- name
@@ -127,7 +133,7 @@ function Currency.Refresh(button)
 		-- ##################
 		-- icon
 		-- ##################
-		button.icon:SetTexture(currencyTexture or DUMMY_ITEM_ICON)
+		button.icon:SetTexture(currencyTexture)
 	end
 
 	return true

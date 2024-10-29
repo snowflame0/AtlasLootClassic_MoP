@@ -2407,7 +2407,7 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
 		[70175] = {3,500,100586}, -- Pattern: Triple-Reinforced Mining Bag
 		[70176] = {8,515,100585}, -- Pattern: Luxurious Silk Gem Bag
 		--[recipe] = {scroll#,skill,spell},
-		-- TODO: Add missing recipes
+		-- TODO: Add missing recipes, JC
 	}
 end
 
