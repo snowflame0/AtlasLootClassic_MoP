@@ -1209,80 +1209,74 @@ data["Tabards"] = {
     gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
     CorrespondingFields = private.TABARDS,
     items = {
-        {
-            name = ALIL["Tabard"],
-            [NORMAL_DIFF] = {
-                { 1, 23192 }, -- Tabard of the Scarlet Crusade
-            },
-        },
         { -- Faction
-            name = AL["Capitals"],
-            CoinTexture = "Reputation",
-            [ALLIANCE_DIFF] = {
-                { 1, 45579 },	-- Darnassus Tabard
-                { 2, 45577 },	-- Ironforge Tabard
-                { 3, 45578 },	-- Gnomeregan Tabard
-                { 4, 45574 },	-- Stormwind Tabard
-                { 16, 45580 },	-- Exodar Tabard
-                AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 17, 64882 }),	-- Gilneas Tabard
-            },
-            [HORDE_DIFF] = {
-                { 1, 45582 },	-- Darkspear Tabard
-                { 2, 45581 },	-- Orgrimmar Tabard
-                { 3, 45584 },	-- Thunder Bluff Tabard
-                { 4, 45583 },	-- Undercity Tabard
-                AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 16, 45585 }),	-- Silvermoon City Tabard
-            },
+        name = AL["Capitals"],
+        CoinTexture = "Reputation",
+        [ALLIANCE_DIFF] = {
+            { 1, 45579 },	-- Darnassus Tabard
+            { 2, 45577 },	-- Ironforge Tabard
+            { 3, 45578 },	-- Gnomeregan Tabard
+            { 4, 45574 },	-- Stormwind Tabard
+            { 16, 45580 },	-- Exodar Tabard
+            { 17, 64882 },	-- Gilneas Tabard
         },
-        {
-            name = format("%s - %s", AL["Factions"], AL["Classic"]),
-            CoinTexture = "Reputation",
-            [NORMAL_DIFF] = {
-                { 1, 43154 }, -- Tabard of the Argent Crusade
-            },
+        [HORDE_DIFF] = {
+            { 1, 45582 },	-- Darkspear Tabard
+            { 2, 45581 },	-- Orgrimmar Tabard
+            { 3, 45584 },	-- Thunder Bluff Tabard
+            { 4, 45583 },	-- Undercity Tabard
+            { 16, 45585 },	-- Silvermoon City Tabard
+            { 17, 64884 },  -- Bilgewater Cartel Tabard
         },
-        { -- PvP
-            name = AL["PvP"],
-            [ALLIANCE_DIFF] = {
-                { 1, 15196 },	-- Private's Tabard
-                { 2, 15198 },	-- Knight's Colors
-                { 16, 19506 },	-- Silverwing Battle Tabard
-                { 17, 19032 },	-- Stormpike Battle Tabard
-                { 18, 20132 },	-- Arathor Battle Tabard
-            },
-            [HORDE_DIFF] = {
-                { 1, 15197 },	-- Scout's Tabard
-                { 2, 15199 },	-- Stone Guard's Herald
-                { 16, 19505 },	-- Warsong Battle Tabard
-                { 17, 19031 },	-- Frostwolf Battle Tabard
-                { 18, 20131 },	-- Battle Tabard of the Defilers
-            },
+    },
+    {
+        name = format("%s - %s", AL["Factions"], AL["Classic"]),
+        CoinTexture = "Reputation",
+        [NORMAL_DIFF] = {
+            { 1, 43154 }, -- Tabard of the Argent Crusade
         },
-        { -- PvP
-            name = AL["Arena"],
-            [NORMAL_DIFF] = {
-                { 1, 45983 },	-- Furious Gladiator's Tabard
-                { 2, 49086, },	-- Relentless Gladiator's Tabard
-                { 3, 51534 },	-- Wrathful Gladiator's Tabard
-            },
+    },
+    { -- PvP
+        name = AL["PvP"],
+        [ALLIANCE_DIFF] = {
+            { 1, 15196 },	-- Private's Tabard
+            { 2, 15198 },	-- Knight's Colors
+            { 16, 19506 },	-- Silverwing Battle Tabard
+            { 17, 19032 },	-- Stormpike Battle Tabard
+            { 18, 20132 },	-- Arathor Battle Tabard
         },
-        { -- Unobtainable Tabards
-            name = AL["Unobtainable"],
-            [NORMAL_DIFF] = {
-                { 1, 19160 },	-- Contest Winner's Tabard
-                AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 3, 36941 }), -- Competitor's Tabard
-                AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 5, 28788 }), -- Tabard of the Protector
-                { 16, "INV_Box_01", nil, AL["Card Game Tabards"], nil },
-                { 17, 38312 },	-- Tabard of Brilliance
-                { 18, 23705 },	-- Tabard of Flame
-                { 19, 23709 },	-- Tabard of Frost
-                { 20, 38313 },	-- Tabard of Fury
-                { 21, 38309 },	-- Tabard of Nature
-                { 22, 38310 },	-- Tabard of the Arcane
-                { 23, 38314 },	-- Tabard of the Defender
-                { 24, 38311 },	-- Tabard of the Void
-            },
+        [HORDE_DIFF] = {
+            { 1, 15197 },	-- Scout's Tabard
+            { 2, 15199 },	-- Stone Guard's Herald
+            { 16, 19505 },	-- Warsong Battle Tabard
+            { 17, 19031 },	-- Frostwolf Battle Tabard
+            { 18, 20131 },	-- Battle Tabard of the Defilers
         },
+    },
+    {
+        name = AL["Misc"],
+        [NORMAL_DIFF] = {
+            { 1, 23192 }, -- Tabard of the Scarlet Crusade
+        },
+    },
+    { -- Unobtainable Tabards
+        name = AL["Unobtainable"],
+        ExtraList = true,
+        [NORMAL_DIFF] = {
+            { 1, 19160 },	-- Contest Winner's Tabard
+            { 3, 36941 }, -- Competitor's Tabard
+            { 5, 28788 }, -- Tabard of the Protector
+            { 16, "INV_Box_01", nil, AL["Card Game Tabards"], nil },
+            { 17, 38312 },	-- Tabard of Brilliance
+            { 18, 23705 },	-- Tabard of Flame
+            { 19, 23709 },	-- Tabard of Frost
+            { 20, 38313 },	-- Tabard of Fury
+            { 21, 38309 },	-- Tabard of Nature
+            { 22, 38310 },	-- Tabard of the Arcane
+            { 23, 38314 },	-- Tabard of the Defender
+            { 24, 38311 },	-- Tabard of the Void
+        },
+    },
     },
 }
 

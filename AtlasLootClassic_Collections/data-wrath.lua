@@ -1209,12 +1209,48 @@ data["TabardsWrath"] = {
     items = {{
         name = AL["Factions"],
         CoinTexture = "Reputation",
-        [ALLIANCE_DIFF] = {{1, 43155}, -- Tabard of the Ebon Blade
-        {2, 43157}, -- Tabard of the Kirin Tor
-        {3, 43156} -- Tabard of the Wyrmrest Accord
-        -- TODO: Add missing
+        [NORMAL_DIFF] = {
+            { 1, 43154 }, -- Tabard of the Argent Crusade
+            { 2, 43155 }, -- Tabard of the Ebon Blade
+            { 3, 43157 }, -- Tabard of the Kirin Tor
+            { 4, 43156 }, -- Tabard of the Wyrmrest Accord
+            { 5, 206392 }, -- Tabard of the Sons of Hodir
+            { 16, 46874 } -- Argent Crusader's Tabard
         }
-    }}
+    },
+    { -- PvP
+        name = AL["Achievements"],
+        [NORMAL_DIFF] = {
+            { 1, 40643 }, -- Tabard of the Achiever
+            { 2, 43300 }, -- Loremaster's Colors
+            { 3, 43348 }, -- Tabard of the Explorer
+        },
+    },
+    { -- PvP
+        name = AL["Arena"],
+        [NORMAL_DIFF] = {
+            { 1, 45983 }, -- Furious Gladiator's Tabard
+            { 2, 49086, }, -- Relentless Gladiator's Tabard
+            { 3, 51534 }, -- Wrathful Gladiator's Tabard
+            { 16, 43349 }, -- Tabard of Brute Force
+        },
+    },
+    { -- PvP
+        name = AL["Battlegrounds"],
+        [ALLIANCE_DIFF] = {
+            {1, 49052} -- Tabard of Conquest
+        },
+        [HORDE_DIFF] = {
+            {1, 49054}, -- Tabard of Conquest
+        }
+    },
+    {
+        name = AL["Misc"],
+        [NORMAL_DIFF] = {
+            {1, 52252} -- Tabard of the Lightbringer
+        },
+    },
+}
 }
 
 data["LegendarysWrath"] = {

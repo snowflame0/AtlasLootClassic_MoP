@@ -584,7 +584,8 @@ data["TabardsBC"] = {
     items = {{
         name = AL["Factions"],
         CoinTexture = "Reputation",
-        [ALLIANCE_DIFF] = {{1, 31779}, -- Aldor Tabard
+        [ALLIANCE_DIFF] = {
+        {1, 31779}, -- Aldor Tabard
         {2, 31780}, -- Scryers Tabard
         {4, 31804}, -- Cenarion Expedition Tabard
         {5, 31776}, -- Consortium Tabard
@@ -596,17 +597,25 @@ data["TabardsBC"] = {
         {11, 31775}, -- Sporeggar Tabard
         {12, 35221}, -- Tabard of the Shattered Sun
         {16, 23999}, -- Honor Hold Tabard
-        {17, 31774} -- Honor Hold Tabard
+        {17, 31774} -- Kurenai Tabard
         },
         [HORDE_DIFF] = {
             GetItemsFromDiff = ALLIANCE_DIFF,
-            {1, 24004}, -- Thrallmar Tabard
-            {16, 31773} -- Mag'har Tabard
+            {16, 24004}, -- Thrallmar Tabard
+            {17, 31773} -- Mag'har Tabard
+        }
+    }, {
+        -- Quests
+        name = AL["Quest"],
+        [NORMAL_DIFF] = {
+            {1, 31404}, -- Green Trophy Tabard of the Illidari
+            {2, 31405}, -- Purple Trophy Tabard of the Illidari
         }
     }, { -- Unobtainable Tabards
         name = AL["Unobtainable Tabards"],
-        [NORMAL_DIFF] = {{1, 36941}, -- Competitor's Tabard
-        {16, 28788} -- Tabard of the Protector
+        [NORMAL_DIFF] = {
+            {1, 36941}, -- Competitor's Tabard
+            {16, 28788} -- Tabard of the Protector
         }
     }}
 }

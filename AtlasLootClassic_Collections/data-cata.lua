@@ -1114,18 +1114,20 @@ data["TabardsCata"] = {
             { 5, 65909 }, -- Tabard of the Dragonmaw Clan
         }
     }, {
-        name = AL["PvP"],
-        CoinTexture = "PvP",
+        name = AL["Guild"],
         [NORMAL_DIFF] = {
-            { 1, [ATLASLOOT_IT_ALLIANCE] = { 63379 }, [ATLASLOOT_IT_HORDE] = { 63378 } }, -- Baradin's Wardens Tabard / Hellscream's Reach Tabard
+            { 1, 5976 }, -- Guild Tabard
+            { 2, 69209 }, -- Illustrious Guild Tabard
+            { 3, 69210 }, -- Renowned Guild Tabard
         }
     }, {
-        name = AL["Achievements"],
-        CoinTexture = "Achievement",
-        [NORMAL_DIFF] = {
-            { 1, 43349 }, -- Tabard of Brute Force
-            { 2, 43348 }, -- Tabard of the Achiever
-            { 3, 40643 }, -- Tabard of the Explorer
+        name = AL["PvP"],
+        CoinTexture = "PvP",
+        [ALLIANCE_DIFF] = {
+            { 1, 63379 }, -- Baradin's Wardens Tabard
+        },
+        [HORDE_DIFF] = {
+            {1 , 63378 }, -- Hellscream's Reach Tabard
         }
     }, {
         name = AL["Misc"],
@@ -1133,7 +1135,6 @@ data["TabardsCata"] = {
         [NORMAL_DIFF] = {
             { 1, 35280 }, -- Tabard of Summer Flames
             { 2, 35279 }, -- Tabard of Summer Skies
-            { 3, 89196 }, -- Theramore Tabard
         }
     } }
 }
