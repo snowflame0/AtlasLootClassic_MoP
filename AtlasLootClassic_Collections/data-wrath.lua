@@ -120,6 +120,7 @@ data["CookingVendorWrath"] = {
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
+    CorrespondingFields = private.COOKING_VENDOR,
     items = {{
         name = AL["Misc"],
         [NORMAL_DIFF] = {{1, 46349}, -- Chef's Hat

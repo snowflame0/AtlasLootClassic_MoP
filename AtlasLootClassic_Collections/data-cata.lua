@@ -69,6 +69,63 @@ local LEGENDARY_QUALITY = "|cffff8000%s|r"
 -- local PURPLE = "|cffa335ee%s|r"
 -- local WHIT = "|cffffffff%s|r"
 
+data["CookingVendorCata"] = {
+    name = format(AL["'%s' Vendor"], ALIL["Cooking"]),
+    ContentType = VENDOR_CONTENT,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.COOKING_VENDOR,
+    items = {{
+        name = AL["Recipe"],
+        [VENDOR_DIFF] = {
+            { 1, 65406 }, -- Recipe: Whitecrest Gumbo
+            { 2, 65407 }, -- Recipe: Lavascale Fillet
+            { 3, 65409 }, -- Recipe: Lavascale Minestrone
+            { 4, 65410 }, -- Recipe: Salted Eye
+            { 5, 65411 }, -- Recipe: Broiled Mountain Trout
+            { 6, 65412 }, -- Recipe: Lightly Fried Lurker
+            { 7, 65413 }, -- Recipe: Seasoned Crab
+            { 8, 65414 }, -- Recipe: Starfire Espresso
+            { 9, 65408 }, -- Recipe: Feathered Lure
+            { 10, 65415 }, -- Recipe: Highland Spirits
+            { 11, 65416 }, -- Recipe: Lurker Lunch
+            { 12, 65417 }, -- Recipe: Pickled Guppy
+            { 13, 65418 }, -- Recipe: Hearty Seafood Soup
+            { 14, 65419 }, -- Recipe: Tender Baked Turtle
+            { 16, 65420 }, -- Recipe: Mushroom Sauce Mudfish
+            { 17, 65421 }, -- Recipe: Severed Sagefish Head
+            { 18, 65422 }, -- Recipe: Delicious Sagefish Tail
+            { 19, 65423 }, -- Recipe: Fish Fry
+            { 20, 68688 }, -- Recipe: Scalding Murglesnout
+            { 21, 65424 }, -- Recipe: Blackbelly Sushi
+            { 22, 65425 }, -- Recipe: Skewered Eel
+            { 23, 65426 }, -- Recipe: Baked Rockfish
+            { 24, 65427 }, -- Recipe: Basilisk Liverdog
+            { 25, 65428 }, -- Recipe: Grilled Dragon
+            { 26, 65429 }, -- Recipe: Beer-Basted Crocolisk
+            { 27, 65430 }, -- Recipe: Crocolisk Au Gratin
+            { 28, 65431 }, -- Recipe: Chocolate Cookie
+            { 29, 65432 }, -- Recipe: Fortune Cookie
+            { 30, 65433 }, -- Recipe: South Island Iced Tea
+        }
+    }, {
+        name = AL["Misc"],
+        [VENDOR_DIFF] = {
+            { 1, 68689 }, -- Imported Supplies
+            { 16, 65513 }, -- Crate of Tasty Meat
+        }
+    }, {
+        name = AL["Guild"],
+        ExtraList = true;
+        [VENDOR_DIFF] = {
+            { 1, 62799 }, -- Recipe: Broiled Dragon Feast
+            { 2, "ac5467"}, -- Set the Oven to "Cataclysmic"
+            { 16, 62800 }, -- Recipe: Seafood Magnifique Feast
+            { 17, "ac5036"}, -- That's a Lot of Bait
+        }
+    }}
+}
+
 data["JusticePoints"] = {
     name = format(AL["'%s' Vendor"], format(SUPERIOR_QUALITY, AL["Justice Points"])),
     ContentType = VENDOR_CONTENT,

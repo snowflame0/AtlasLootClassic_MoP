@@ -36,6 +36,11 @@ private.COMPANIONS = {
     [AtlasLoot.CATA_VERSION_NUM]        = "CompanionsCata",
 }
 
+private.COOKING_VENDOR = {
+    [AtlasLoot.WRATH_VERSION_NUM]       = "CookingVendorWrath",
+    [AtlasLoot.CATA_VERSION_NUM]        = "CookingVendorCata"
+}
+
 private.SCOURGE_INVASION = {
     [AtlasLoot.CLASSIC_VERSION_NUM]     = "ScourgeInvasion",
     [AtlasLoot.WRATH_VERSION_NUM]       = "ScourgeInvasionWrath",
