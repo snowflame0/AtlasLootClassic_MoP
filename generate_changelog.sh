@@ -23,7 +23,9 @@ fi
 date=$( git log -1 --date=short --format="%ad" )
 url=$( git remote get-url origin | sed -e 's/^git@\(.*\):/https:\/\/\1\//' -e 's/\.git$//' )
 
-echo -ne "# [${version}](${url}/tree/${current}) ($date)\n\n[Full Changelog](${url}/compare/${previous}...${current})\n\n" > "CHANGELOG.md"
+cat AtlasLootClassic/Documentation/Release_Notes.md > "Changelog.md"
+
+echo -ne "# [${version}](${url}/tree/${current}) ($date)\n\n[Full Changelog](${url}/compare/${previous}...${current})\n\n" >> "CHANGELOG.md"
 
 if [ "$version" = "$tag" ]; then # on a tag
   echo -ne "## Commits\n\n" >> "CHANGELOG.md"

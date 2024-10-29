@@ -16,7 +16,6 @@ local CurrencyClickHandler = nil
 local QUALITY_COLORS = {}
 local DUMMY_ITEM_ICON = "Interface\\Icons\\INV_Misc_QuestionMark"
 
-
 ClickHandler:Add(
 	"Currency",
 	{
@@ -115,7 +114,6 @@ function Currency.Refresh(button)
 	else
 		currencyName, currencyTexture, currencyQuality = currencyInfo.name, currencyInfo.iconFileID, currencyInfo.quality
 	end
-    
 
 	button.RawName = currencyName
 
