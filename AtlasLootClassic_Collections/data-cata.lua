@@ -645,14 +645,18 @@ data["FissureStoneFragments"] = {
     {
         name = ALIL["Trinket"],
         [VENDOR_DIFF] = {
-            { 1, 65048 },-- Symbiotic Worm
-            { 2, 65072 }, -- Heart of Rage
-            { 3, 65026 }, -- Prestor's Talisman of Machination
-            { 4, 65140 }, -- Essence of the Cyclone
+            { 1, 65048 }, -- Symbiotic Worm
+            { 2, 65109 }, -- Vial of Stolen Memories
+            { 4, 65072 }, -- Heart of Rage
+            { 5, 65118 }, -- Crushing Weight
+            { 7, 65026 }, -- Prestor's Talisman of Machination
+            { 8, 65140 }, -- Essence of the Cyclone
             { 16, 65053 }, -- Bell of Enraging Resonance
             { 17, 65105 }, -- Theralion's Mirror
-            { 18, 60233 }, -- Shard of Woe
-            { 19, 65124 }, -- Fall of Mortality
+            { 18, 65110 }, -- Heart of Ignacious
+            { 20, 60233 }, -- Shard of Woe
+            { 21, 65124 }, -- Fall of Mortality
+            { 22, 65029 }, -- Vial of Ancient Remedies
         }
     },
     {
@@ -669,7 +673,8 @@ data["FissureStoneFragments"] = {
     {
         name = AL["Misc"],
         [VENDOR_DIFF] = {
-            {1, 234446 }, -- Commendation of Service
+            { 1, 234446 }, -- Commendation of Service
+            { 16, "c396", [ATLASLOOT_IT_AMOUNT1] = 10 } -- Valor Points
         }
     },
     }
