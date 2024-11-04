@@ -675,7 +675,7 @@ data["DungeonSets"] = {
     name = AL["Dungeon Sets"],
     ContentType = SET_CONTENT,
     TableType = SET_ITTYPE,
-    gameVersion = AtlasLoot.BC_VERSION_NUM,
+    gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
     items = {
         { -- T0 / D1
             name = format(AL["Dungeon Set %s"], "1"),
