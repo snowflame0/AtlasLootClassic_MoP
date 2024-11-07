@@ -37,6 +37,7 @@ end
 local SET1_DIFF = data:AddDifficulty(format(AL["Bloodthirsty%s"], ""), "set1", nil, 1)
 local SET2_DIFF = data:AddDifficulty(format(AL["Vicious%s"], ""), "set2", nil, 1)
 local SET3_DIFF = data:AddDifficulty(format(AL["Vicious Elite%s"], ""), "set3", nil, 1)
+local SET6_DIFF = data:AddDifficulty(format(AL["Vicious%s"], ""), "set2", nil, 1)
 local SET4_DIFF = data:AddDifficulty(format(AL["Ruthless%s"], ""), "set4", nil, 1)
 local SET5_DIFF = data:AddDifficulty(format(AL["Ruthless Elite%s"], ""), "set5", nil, 1)
 
@@ -50,6 +51,7 @@ local SET_EXTRA_ITTYPE = data:AddExtraItemTableType("Set")
 
 local PVP_CONTENT = data:AddContentType(AL["Battlegrounds"], ATLASLOOT_PVP_COLOR)
 local ARENA_CONTENT = data:AddContentType(AL["Arena"], ATLASLOOT_PVP_COLOR)
+local UNOBTAINABLE_CONTENT = data:AddContentType(AL["Unobtainable"], ATLASLOOT_PVP_COLOR)
 --local OPEN_WORLD_CONTENT = data:AddContentType(AL["Open World"], ATLASLOOT_PVP_COLOR)
 local GENERAL_CONTENT = data:AddContentType(GENERAL, ATLASLOOT_RAID40_COLOR)
 
@@ -74,7 +76,7 @@ data["PvPMountsCata"] = {
 
 data["ArenaS9PvP"] = {
     name = format(AL["Season %s"], "9"),
-    ContentType = ARENA_CONTENT,
+    ContentType = UNOBTAINABLE_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
     items = {{
@@ -510,6 +512,24 @@ data["ArenaS10PvP"] = {
             {24, 4004912}, -- Shaman Enhancement
             {26, 4004918}, -- Paladin Holy
             {27, 4004917} -- Paladin Melee
+        },
+        [SET6_DIFF] = {
+            {1, 4005910}, -- Warlock
+            {3, 4005916}, -- Priest Healing
+            {4, 4005915}, -- Priest Shadow
+            {6, 4005914}, -- Rogue
+            {8, 4005920}, -- Hunter
+            {10, 4005909}, -- Warrior Melee
+            {13, 4005924}, -- Death Knight Melee
+            {16, 4005919}, -- Mage
+            {18, 4005923}, -- Druid Resto
+            {19, 4005921}, -- Druid Balance
+            {20, 4005922}, -- Druid Feral
+            {22, 4005913}, -- Shaman Resto
+            {23, 4005911}, -- Shaman Elemental
+            {24, 4005912}, -- Shaman Enhancement
+            {26, 4005918}, -- Paladin Holy
+            {27, 4005917} -- Paladin Melee
         },
     }, {
         name = AL["Weapons"] .. " - " .. AL["One-Handed"],
