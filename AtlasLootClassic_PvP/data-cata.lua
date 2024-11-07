@@ -629,6 +629,15 @@ data["ArenaS10PvP"] = {
         },
     }, {
         name = ALIL["Cloak"],
+        [SET6_DIFF] = {
+            { 1, 70531 }, -- Vicious Gladiator's Cape of Cruelty
+            { 2, 70532 }, -- Vicious Gladiator's Cape of Prowess
+            { 4, 70542 }, -- Vicious Gladiator's Cloak of Alacrity
+            { 5, 70543 }, -- Vicious Gladiator's Cloak of Prowess
+            { 16, 70555 }, -- Vicious Gladiator's Drape of Diffusion
+            { 17, 70556 }, -- Vicious Gladiator's Drape of Meditation
+            { 18, 70557 }, -- Vicious Gladiator's Drape of Prowess
+        },
         [SET4_DIFF] = {
             { 1, 70386 }, -- Ruthless Gladiator's Cape of Cruelty
             { 2, 70385 }, -- Ruthless Gladiator's Cape of Prowess
@@ -646,6 +655,12 @@ data["ArenaS10PvP"] = {
             { 3, 70406 }, -- Ruthless Gladiator's Relic of Salvation
             { 4, 70407 }, -- Ruthless Gladiator's Relic of Triumph
         },
+        [SET6_DIFF] = {
+            { 1, 70628 }, -- Vicious Gladiator's Relic of Conquest
+            { 2, 70629 }, -- Vicious Gladiator's Relic of Dominance
+            { 3, 70630 }, -- Vicious Gladiator's Relic of Salvation
+            { 4, 70631 }, -- Vicious Gladiator's Relic of Triumph
+        },
     }, {
         name = ALIL["Neck"],
         [SET4_DIFF] = {
@@ -656,6 +671,15 @@ data["ArenaS10PvP"] = {
             { 16, 70377 }, -- Ruthless Gladiator's Pendant of Alacrity
             { 17, 70376 }, -- Ruthless Gladiator's Pendant of Diffusion
             { 18, 70378 }, -- Ruthless Gladiator's Pendant of Meditation
+        },
+        [SET6_DIFF] = {
+            { 1, 70538 }, -- Vicious Gladiator's Choker of Accuracy
+            { 2, 70539 }, -- Vicious Gladiator's Choker of Proficiency
+            { 5, 70613 }, -- Vicious Gladiator's Necklace of Proficiency
+            { 6, 70614 }, -- Vicious Gladiator's Necklace of Prowess
+            { 16, 70620 }, -- Vicious Gladiator's Pendant of Alacrity
+            { 17, 70621 }, -- Vicious Gladiator's Pendant of Diffusion
+            { 18, 70622 }, -- Vicious Gladiator's Pendant of Meditation
         },
     }, {
         name = ALIL["Finger"],
@@ -668,7 +692,17 @@ data["ArenaS10PvP"] = {
             { 17, 70369 }, -- Ruthless Gladiator's Band of Cruelty
             { 18, 70371 }, -- Ruthless Gladiator's Band of Meditation
         },
+        [SET6_DIFF] = {
+            { 1, 70653 }, -- Vicious Gladiator's Signet of Accuracy
+            { 2, 70654 }, -- Vicious Gladiator's Signet of Cruelty
+            { 4, 70637 }, -- Vicious Gladiator's Ring of Accuracy
+            { 5, 70638 }, -- Vicious Gladiator's Ring of Cruelty
+            { 16, 70520 }, -- Vicious Gladiator's Band of Accuracy
+            { 17, 70521 }, -- Vicious Gladiator's Band of Cruelty
+            { 18, 70522 }, -- Vicious Gladiator's Band of Meditation
+        },
     }, {
+        ---TODO--- Add 371ilvl Vicious Gladiator
         name = format(AL["Non Set '%s'"], ALIL["Cloth"]),
         [SET4_DIFF] = {
             { 1, 70364 }, -- Ruthless Gladiator's Treads of Alacrity
