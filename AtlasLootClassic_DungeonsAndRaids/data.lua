@@ -1908,6 +1908,20 @@ data["TheTempleOfAtal'Hakkar"] = {
                 { 3,  10804 }, -- Fist of the Damned
             },
         },
+        { -- STAvatar
+            name = AL["Avatar of Hakkar"],
+            npcID = 8443,
+            Level = GetForVersion(53,50),
+            DisplayIDs = {{8053}},
+            [NORMAL_DIFF] = {
+                { 1,  10843 }, -- Featherskin Cape
+                { 2,  10842 }, -- Windscale Sarong
+                { 3,  10846 }, -- BloodShot Greaves
+                { 4,  10845 }, -- Warrior's Embrace
+                { 5,  10838 }, -- Might of Hakkar
+                { 6,  10844 }, -- Spire of Hakkar
+            },
+        },
         { -- STDreamscythe
             name = AL["Dreamscythe"],
             npcID = 5721,
