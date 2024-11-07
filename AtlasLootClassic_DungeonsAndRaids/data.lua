@@ -1880,7 +1880,7 @@ data["Maraudon"] = {
 }
 
 data["TheTempleOfAtal'Hakkar"] = {
-    MapID = 1477,
+    MapID = 1417,
     InstanceID = 109,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
