@@ -34,12 +34,12 @@ else
     HORDE_DIFF = data:AddDifficulty(FACTION_HORDE, "horde", nil, 1)
     LOAD_DIFF = ALLIANCE_DIFF
 end
-local SET1_DIFF = data:AddDifficulty(format(AL["Bloodthirsty%s"], ""), "set1", nil, 1)
-local SET2_DIFF = data:AddDifficulty(format(AL["Vicious%s"], ""), "set2", nil, 1)
-local SET3_DIFF = data:AddDifficulty(format(AL["Vicious Elite%s"], ""), "set3", nil, 1)
-local SET6_DIFF = data:AddDifficulty(format(AL["Vicious%s"], ""), "set2", nil, 1)
-local SET4_DIFF = data:AddDifficulty(format(AL["Ruthless%s"], ""), "set4", nil, 1)
-local SET5_DIFF = data:AddDifficulty(format(AL["Ruthless Elite%s"], ""), "set5", nil, 1)
+local SET1_DIFF = data:AddDifficulty(format(AL["Bloodthirsty %s"], ""), "set1", nil, 1)
+local SET2_DIFF = data:AddDifficulty(format(AL["Vicious %s"], ""), "set2", nil, 1)
+local SET3_DIFF = data:AddDifficulty(format(AL["Vicious (Elite) %s"], ""), "set3", nil, 1)
+local SET4_DIFF = data:AddDifficulty(format(AL["Ruthless %s"], ""), "set4", nil, 1)
+local SET5_DIFF = data:AddDifficulty(format(AL["Ruthless (Elite) %s"], ""), "set5", nil, 1)
+local SET6_DIFF = data:AddDifficulty(format(AL["Vicious %s"], ""), "set2", nil, 1)
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
@@ -51,7 +51,6 @@ local SET_EXTRA_ITTYPE = data:AddExtraItemTableType("Set")
 
 local PVP_CONTENT = data:AddContentType(AL["Battlegrounds"], ATLASLOOT_PVP_COLOR)
 local ARENA_CONTENT = data:AddContentType(AL["Arena"], ATLASLOOT_PVP_COLOR)
-local UNOBTAINABLE_CONTENT = data:AddContentType(AL["Unobtainable"], ATLASLOOT_PVP_COLOR)
 --local OPEN_WORLD_CONTENT = data:AddContentType(AL["Open World"], ATLASLOOT_PVP_COLOR)
 local GENERAL_CONTENT = data:AddContentType(GENERAL, ATLASLOOT_RAID40_COLOR)
 
@@ -76,7 +75,7 @@ data["PvPMountsCata"] = {
 
 data["ArenaS9PvP"] = {
     name = format(AL["Season %s"], "9"),
-    ContentType = UNOBTAINABLE_CONTENT,
+    ContentType = ARENA_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
     items = {{
