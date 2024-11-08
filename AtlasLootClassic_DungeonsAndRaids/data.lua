@@ -1879,54 +1879,47 @@ data["Maraudon"] = {
     },
 }
 
-data["TheTempleOfAtal'Hakkar"] = {
+data["SunkenTemple"] = {
     MapID = 1417,
     InstanceID = 109,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
-    LevelRange = GetForVersion({45, 50, 60},{35, 47, 50}),
+    LevelRange = {47, 50, 60},
     items = {
-        { -- STJammalan
+        { -- Jammal'an
             name = AL["Jammal'an the Prophet"],
-            npcID = 5710,
+            npcID = 5710, -- 5711
             Level = GetForVersion(54,50),
-            DisplayIDs = {{6708}},
+            DisplayIDs = {{6708}, {6709}},
             [NORMAL_DIFF] = {
                 { 1,  10806 }, -- Vestments of the Atal'ai Prophet
                 { 2,  10808 }, -- Gloves of the Atal'ai Prophet
                 { 3,  10807 }, -- Kilt of the Atal'ai Prophet
+                { 16,  10805 }, -- Eater of the Dead
+                { 17,  10803 }, -- Blade of the Wretched
+                { 18,  10804 }, -- Fist of the Damned
             },
         },
-        { -- STOgom
-            name = AL["Ogom the Wretched"],
-            npcID = 5711,
-            Level = GetForVersion(53,49),
-            DisplayIDs = {{6709}},
-            [NORMAL_DIFF] = {
-                { 1,  10805 }, -- Eater of the Dead
-                { 2,  10803 }, -- Blade of the Wretched
-                { 3,  10804 }, -- Fist of the Damned
-            },
-        },
-        { -- STAvatar
+        { -- Avatar
             name = AL["Avatar of Hakkar"],
             npcID = 8443,
             Level = GetForVersion(53,50),
             DisplayIDs = {{8053}},
             [NORMAL_DIFF] = {
-                { 1,  10843 }, -- Featherskin Cape
-                { 2,  10842 }, -- Windscale Sarong
-                { 3,  10846 }, -- BloodShot Greaves
-                { 4,  10845 }, -- Warrior's Embrace
-                { 5,  10838 }, -- Might of Hakkar
-                { 6,  10844 }, -- Spire of Hakkar
+                { 1, 12462 }, -- Embrace of the Wind Serpent
+                { 3,  10843 }, -- Featherskin Cape
+                { 4,  10842 }, -- Windscale Sarong
+                { 5,  10846 }, -- BloodShot Greaves
+                { 6,  10845 }, -- Warrior's Embrace
+                { 7,  10838 }, -- Might of Hakkar
+                { 8,  10844 }, -- Spire of Hakkar
             },
         },
-        { -- STDreamscythe
-            name = AL["Dreamscythe"],
+        { -- Wardens of the Dream
+            name = AL["Wardens of the Dream"],
             npcID = 5721,
             Level = GetForVersion(53,50),
-            DisplayIDs = {{7553}},
+            DisplayIDs = {{7553},{6375},{9584},{7975}},
             [NORMAL_DIFF] = {
                 { 1,  12465 }, -- Nightfall Drape
                 { 2,  12466 }, -- Dawnspire Cord
@@ -1938,55 +1931,7 @@ data["TheTempleOfAtal'Hakkar"] = {
                 { 8,  10796 }, -- Drakestone
             },
         },
-        { -- STWeaver
-            name = AL["Weaver"],
-            npcID = 5720,
-            Level = GetForVersion(51,50),
-            DisplayIDs = {{6375}},
-            [NORMAL_DIFF] = {
-                { 1,  12465 }, -- Nightfall Drape
-                { 2,  12466 }, -- Dawnspire Cord
-                { 3,  12464 }, -- Bloodfire Talons
-                { 4,  10797 }, -- Firebreather
-                { 5,  12463 }, -- Drakefang Butcher
-                { 6,  12243 }, -- Smoldering Claw
-                { 7,  10795 }, -- Drakeclaw Band
-                { 8,  10796 }, -- Drakestone
-            },
-        },
-        { -- STHazzas
-            name = AL["Hazzas"],
-            npcID = 5722,
-            Level = GetForVersion(53,50),
-            DisplayIDs = {{9584}},
-            [NORMAL_DIFF] = {
-                { 1,  12465 }, -- Nightfall Drape
-                { 2,  12466 }, -- Dawnspire Cord
-                { 3,  12464 }, -- Bloodfire Talons
-                { 4,  10797 }, -- Firebreather
-                { 5,  12463 }, -- Drakefang Butcher
-                { 6,  12243 }, -- Smoldering Claw
-                { 7,  10795 }, -- Drakeclaw Band
-                { 8,  10796 }, -- Drakestone
-            },
-        },
-        { -- STMorphaz
-            name = AL["Morphaz"],
-            npcID = 5719,
-            Level = GetForVersion(52,50),
-            DisplayIDs = {{7975}},
-            [NORMAL_DIFF] = {
-                { 1,  12465 }, -- Nightfall Drape
-                { 2,  12466 }, -- Dawnspire Cord
-                { 3,  12464 }, -- Bloodfire Talons
-                { 4,  10797 }, -- Firebreather
-                { 5,  12463 }, -- Drakefang Butcher
-                { 6,  12243 }, -- Smoldering Claw
-                { 7,  10795 }, -- Drakeclaw Band
-                { 8,  10796 }, -- Drakestone
-            },
-        },
-        { -- STEranikus
+        { -- ST Eranikus
             name = AL["Shade of Eranikus"],
             npcID = 5709,
             Level = GetForVersion(55,50),
