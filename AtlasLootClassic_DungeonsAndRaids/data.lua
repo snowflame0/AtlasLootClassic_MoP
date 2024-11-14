@@ -44,6 +44,7 @@ local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
 local DUNGEON_CONTENT = data:AddContentType(AL["Dungeons"], ATLASLOOT_DUNGEON_COLOR)
 local RAID20_CONTENT = data:AddContentType(AL["20 Raids"], ATLASLOOT_RAID20_COLOR)
 local RAID40_CONTENT = data:AddContentType(AL["40 Raids"], ATLASLOOT_RAID40_COLOR)
+local REMOVED_CONTENT = data:AddContentType(AL["Removed"], ATLASLOOT_REMOVED_COLOR)
 
 local BLUE = "|cff6666ff%s|r"
 --local GREY = "|cff999999%s|r"
@@ -4272,7 +4273,7 @@ data["UpperBlackrockSpire"] = {
 -- ########################
 data["WorldBosses"] = {
     name = AL["World Bosses"],
-    ContentType = RAID40_CONTENT,
+    ContentType = REMOVED_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     items = {
         { -- AAzuregos
@@ -4831,7 +4832,7 @@ data["Onyxia"] = {
 data["Zul'GurubClassic"] = {
     MapID = 1977,
     InstanceID = 309,
-    ContentType = RAID20_CONTENT,
+    ContentType = REMOVED_CONTENT,
     LoadDifficulty = RAID20_DIFF,
     items = {
         { -- ZGJeklik
@@ -5899,7 +5900,7 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 data["Naxxramas"] = {
     MapID = 3456,
     InstanceID = AtlasLoot:GameVersion_LT(AtlasLoot.WRATH_VERSION_NUM,533,nil),
-    ContentType = RAID40_CONTENT,
+    ContentType = REMOVED_CONTENT,
     LoadDifficulty = RAID40_DIFF,
     items = {
         -- The Arachnid Quarter

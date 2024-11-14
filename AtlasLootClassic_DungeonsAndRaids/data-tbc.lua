@@ -35,6 +35,7 @@ local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
 local DUNGEON_CONTENT = data:AddContentType(AL["Dungeons"], ATLASLOOT_DUNGEON_COLOR)
 local RAID10_CONTENT = data:AddContentType(AL["10 Raids"], ATLASLOOT_RAID20_COLOR)
 local RAID25_CONTENT = data:AddContentType(AL["25 Raids"], ATLASLOOT_RAID40_COLOR)
+local REMOVED_CONTENT = data:AddContentType(AL["Removed"], ATLASLOOT_REMOVED_COLOR)
 
 -- name formats
 local NAME_COLOR, NAME_COLOR_BOSS = "|cffC0C0C0", "|cffC0C0C0"
@@ -2630,7 +2631,7 @@ data["Karazhan"] = {
 data["ZulAmanClassic"] = {
 	MapID = 3805,
 	InstanceID = 568,
-	ContentType = RAID10_CONTENT,
+	ContentType = REMOVED_CONTENT,
 	items = {
         { -- ZAAkilZon
             name = AL["Akil'zon"],

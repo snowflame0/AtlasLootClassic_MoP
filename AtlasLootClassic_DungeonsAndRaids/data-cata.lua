@@ -23,6 +23,7 @@ local RAIDFINDER_DIFF = data:AddDifficulty("Raid Finder", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 local INFERNO_DIFF = data:AddDifficulty(AL["Elemental Rune Inferno"], "ERI", nil, nil, true)
+local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
@@ -3239,7 +3240,7 @@ data["Firelands"] = {
             name = ALIL["Firestone Vendor"],
             ContentPhaseCata = 3,
             ExtraList = true,
-            [NORMAL_DIFF] = {
+            [VENDOR_DIFF] = {
                 { 1, 71641 },	-- Riplimb's Lost Collar
                 { 2, 71561 },	-- Hide-Bound Chains
                 { 4, 71563 },	-- Firebound Gorget
