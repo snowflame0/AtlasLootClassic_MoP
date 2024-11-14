@@ -1493,27 +1493,12 @@ data["WinterVeilCata"] = {
         { -- Winterviel1
             name = AL["Misc"],
             [NORMAL_DIFF] = {
-                { 1,  66540 }, -- Miniature Winter Veil Tree
-                { 2,  34425 }, -- Clockwork Rocket Bot
-                { 3,  54436 }, -- Blue Clockwork Rocket Bot
-                { 4,  73797 }, -- Lump of Coal
-                { 5,  46709 }, -- MiniZep Controller
-                { 6,  44606 }, -- Toy Train Set
-                { 7,  37710 }, -- Crashin' Thrashin' Racer Controller
-                { 8,  46725 }, -- Red Rider Air Rifle
-                { 9,  54437 }, -- Tiny Green Ragdoll
-                { 10, 54438 }, -- Tiny Blue Ragdoll
-                { 11, 34498 }, -- Paper Zeppelin Kit
-                { 12, 44599 }, -- Zippy Copper Racer
-                { 13, 44601 }, -- Heavy Copper Racer
-                { 14, 44481 }, -- Grindgear Toy Gorilla
-                { 15, 44482 }, -- Trusty Copper Racer
-                { 16, 21525 }, -- Green Winter Hat
-                { 17, 21524 }, -- Red Winter Hat
-                { 18, 17712 }, -- Winter Veil Disguise Kit
-                { 19, 17202 }, -- Snowball
-                { 20, 21212 }, -- Fresh Holly
-                { 21, 21519 }, -- Mistletoe
+                { 1, 21525 }, -- Green Winter Hat
+                { 2, 21524 }, -- Red Winter Hat
+                { 3, 17712 }, -- Winter Veil Disguise Kit
+                { 4, 17202 }, -- Snowball
+                { 5, 21212 }, -- Fresh Holly
+                { 6, 21519 }, -- Mistletoe
             },
         },
         {
@@ -1571,5 +1556,26 @@ data["WinterVeilCata"] = {
                 { 18, 17307 }, -- Purple Ribboned Wrapping Paper
             },
         },
+        {
+            name = AL["Stolen Present"],
+            [NORMAL_DIFF] = {
+                { 1,  66540 }, -- Miniature Winter Veil Tree
+                { 2,  34425 }, -- Clockwork Rocket Bot
+                { 3,  54436 }, -- Blue Clockwork Rocket Bot
+                { 4,  73797 }, -- Lump of Coal
+                { 5,  46709 }, -- MiniZep Controller
+                { 6,  44606 }, -- Toy Train Set
+                { 7,  37710 }, -- Crashin' Thrashin' Racer Controller
+                { 8,  46725 }, -- Red Rider Air Rifle
+                { 9,  54437 }, -- Tiny Green Ragdoll
+                { 10, 54438 }, -- Tiny Blue Ragdoll
+                { 11, 34498 }, -- Paper Zeppelin Kit
+                { 12, 44599 }, -- Zippy Copper Racer
+                { 13, 44601 }, -- Heavy Copper Racer
+                { 14, 44481 }, -- Grindgear Toy Gorilla
+                { 15, 44482 }, -- Trusty Copper Racer
+            },
+        },
     },
 }
+
