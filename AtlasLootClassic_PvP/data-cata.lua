@@ -718,7 +718,7 @@ data["ArenaS10PvP"] = {
             { 1, 70660 }, -- Vicious Gladiator's Treads of Alacrity
             { 2, 70661 }, -- Vicious Gladiator's Treads of Cruelty
             { 3, 70662 }, -- Vicious Gladiator's Treads of Meditation
-            { 5, 70554 }, -- Vicious Gladiator's Cord of Accuracy
+            { 5, 70544 }, -- Vicious Gladiator's Cord of Accuracy
             { 6, 70545 }, -- Vicious Gladiator's Cord of Cruelty
             { 7, 70546 }, -- Vicious Gladiator's Cord of Meditation
             { 16, 70547 }, -- Vicious Gladiator's Cuffs of Accuracy
