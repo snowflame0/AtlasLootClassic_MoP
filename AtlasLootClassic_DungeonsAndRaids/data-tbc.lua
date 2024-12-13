@@ -778,6 +778,24 @@ data["SethekkHalls"] = {
                 { 19, 25461 }, -- Book of Forgotten Names
             }
         },
+        { -- AuchSethekkRavenGod
+            name = AL["Anzu"],
+            npcID = 23035,
+            Level = 72,
+            DisplayIDs = {{21492}},
+            [HEROIC_DIFF] = {
+                { 1, 29434 }, -- Badge of Justice
+                { 2, 32768 }, -- Reins of the Raven Lord
+                { 3, 30553 }, -- Pristine Fire Opal
+                { 4, 30554 }, -- Stalwart Fire Opal
+                { 5, 30552 }, -- Blessed Tanzanite
+                { 7, 32769 }, -- Belt of the Raven Lord
+                { 8, 32778 }, -- Boots of Righteous Fortitude
+                { 9, 32779 }, -- Band of Frigid Elements
+                { 10, 32781 }, -- Talon of Anzu
+                { 11, 32780 }, -- The Boomstick
+            },
+        },
         { -- AuchSethekkTalonKing
             name = AL["Talon King Ikiss"],
             npcID = {18473, 20706},
@@ -824,25 +842,6 @@ data["SethekkHalls"] = {
                 { 29, 27632 }, -- Terokk's Quill
                 { 30, 33834 }, -- The Headfeathers of Ikiss
             }
-        },
-        { -- AuchSethekkRavenGod
-            name = AL["Anzu"],
-            npcID = 23035,
-            Level = 72,
-            DisplayIDs = {{21492}},
-            ExtraList = true,
-            [HEROIC_DIFF] = {
-                { 1, 29434 }, -- Badge of Justice
-                { 2, 32768 }, -- Reins of the Raven Lord
-                { 3, 30553 }, -- Pristine Fire Opal
-                { 4, 30554 }, -- Stalwart Fire Opal
-                { 5, 30552 }, -- Blessed Tanzanite
-                { 7, 32769 }, -- Belt of the Raven Lord
-                { 8, 32778 }, -- Boots of Righteous Fortitude
-                { 9, 32779 }, -- Band of Frigid Elements
-                { 10, 32781 }, -- Talon of Anzu
-                { 11, 32780 }, -- The Boomstick
-            },
         },
         { -- AuchSethekkTheSagaofTerokk
             name = AL["The Saga of Terokk"],
