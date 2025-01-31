@@ -1881,11 +1881,11 @@ DisplayIDs = {{34611}},
     DisplayIDs = {{31167}},
     ExtraList = true,
     [NORMAL_DIFF] = {
-        { 1,  68175 }, -- Winking Eye of Love
-        { 2,  68176 }, -- Heartbreak Charm
-        { 3,  68172 }, -- Shard of Pirouetting Happiness
-        { 4,  68174 }, -- Sweet Perfume Broach
-        { 5,  68173 }, -- Choker of the Pure Heart
+        { 1,  238334 }, -- Heartbreak Charm
+        { 2,  238335 }, -- Winking Eye of Love
+        { 3,  238336 }, -- Sweet Perfume Broach
+        { 4,  238337 }, -- Choker of the Pure Heart
+        { 5,  238338 }, -- Shard of Pirouetting Happiness
         { 7,  49641 }, -- Faded Lovely Greeting Card
         { 8,  49715 }, -- Forever-Lovely Rose
         { 9,  50250 }, -- X-45 Heartbreaker
