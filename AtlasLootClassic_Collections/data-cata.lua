@@ -1550,11 +1550,11 @@ data["WinterVeilCata"] = {
                 { 7,  17406 }, -- Holiday Cheesewheel
                 { 8,  17407 }, -- Graccu's Homemade Meat Pie
                 { 9,  17408 }, -- Spicy Beefstick
-                { 10,  34410 }, -- Honeyed Holiday Ham
-                { 11,  17404 }, -- Blended Bean Brew
-                { 12,  17405 }, -- Green Garden Tea
-                { 13,  34412 }, -- Sparkling Apple Cider
-                { 14,  17196 }, -- Holiday Spirits
+                { 10, 34410 }, -- Honeyed Holiday Ham
+                { 11, 17404 }, -- Blended Bean Brew
+                { 12, 17405 }, -- Green Garden Tea
+                { 13, 34412 }, -- Sparkling Apple Cider
+                { 14, 17196 }, -- Holiday Spirits
                 { 15, 17403 }, -- Steamwheedle Fizzy Spirits
                 { 16, 17402 }, -- Greatfather's Winter Ale
                 { 17, 17194 }, -- Holiday Spices
