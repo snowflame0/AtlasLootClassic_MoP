@@ -802,8 +802,8 @@ name = AL["Ozumat"],
     { 9, 56289 },	-- Bioluminescent Lamp
     { 10, 56284 },	-- Whitefin Axe
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, 77977 }, -- Eye of Unmaking
-    -- { 17, } TODO
+    { 16, 78486 }, -- Ti'tahk, the Steps of Time
+    { 17, 77977 }, -- Eye of Unmaking
     { 18, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
     { 20, "c3281", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Obsidian Fragment
     { 21, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
