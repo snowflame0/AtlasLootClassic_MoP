@@ -411,7 +411,7 @@ data["BlackrockCaverns"] = {
             { 3, 56310 },	-- Skullcracker Ring
             { 4, 56312 },	-- Torturer's Mercy
             { 5, 56314 },	-- Shield of the Iron Maiden
-            { 16, "c3281", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+            { 16, "c3281", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Obsidian Fragment
             { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
             { 19, "ac5281" },
         },
@@ -593,11 +593,10 @@ name = AL["Ascendant Lord Obsidius"],
     { 7, 56320 },	-- Witching Hourglass
     { 8, 56317 },	-- Amber Messenger
     { 9, 56322 },	-- Crepuscular Shield
-    { 10, 56316 },   -- Sandshift Relic
+    { 10, 56316 },  -- Sandshift Relic
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-
-    { 16, 78482 }, -- Kiril, Fury of Beasts
-    { 17, 77975 }, -- Will of Unbinding
+    { 16, 78482 },  -- Kiril, Fury of Beasts
+    { 17, 77975 },  -- Will of Unbinding
     { 18, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
     { 20, "c3281", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Obsidian Fragment
     { 21, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
@@ -802,8 +801,8 @@ name = AL["Ozumat"],
     { 9, 56289 },	-- Bioluminescent Lamp
     { 10, 56284 },	-- Whitefin Axe
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, 78486 }, -- Ti'tahk, the Steps of Time
-    { 17, 77977 }, -- Eye of Unmaking
+    { 16, 78486 },  -- Ti'tahk, the Steps of Time
+    { 17, 77977 },  -- Eye of Unmaking
     { 18, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
     { 20, "c3281", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Obsidian Fragment
     { 21, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
@@ -1011,8 +1010,8 @@ name = AL["High Priestess Azil"],
     { 9, 56343 },	-- Darkling Staff
     { 10, 56350},   -- Book of Dark Prophecies
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, 78487 }, -- Gurthalak, Voice of the Deeps
-    { 17, 78427 }, -- Ring of the Riven
+    { 16, 78487 },  -- Gurthalak, Voice of the Deeps
+    { 17, 78427 },  -- Ring of the Riven
     { 18, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
     { 20, "c3281", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Obsidian Fragment
     { 21, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
@@ -1190,8 +1189,8 @@ name = AL["Asaad, Caliph of Zephyrs"],
     { 10, 56376 },	-- Thundercall
     { 11, 56372 },  -- Captured Lightning
     { 13, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, 78485 }, -- Maw of the Dragonlord
-    { 17, }, -- TODO
+    { 16, 78485 },  -- Maw of the Dragonlord
+    { 17, 77974 },  -- Wrath of Unchaining
     { 18, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
     { 20, "c3281", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Obsidian Fragment
     { 21, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
@@ -1400,8 +1399,8 @@ name = AL["Siamat"],
     { 9, 56396 },	-- Hammer of Sparks
     { 10, 56402 },	-- Zora's Ward
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, 78481 }, -- No'Kaled, the Elements of Death
-    { 17, }, -- TODO
+    { 16, 78481 },  -- No'Kaled, the Elements of Death
+    { 17, 78382 },  -- Petrified Fungal Heart
     { 18, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
     { 20, "c3281", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Obsidian Fragment
     { 21, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
@@ -1725,8 +1724,8 @@ name = AL["Rajh, Construct of Sun"],
     { 9, 56433 },	-- Blade of the Burning Sun
     { 10, 56430 },	-- Sun Strike
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, 78480 }, -- Vishanka, Jaws of the Eearth
-    { 17, 77976 }, -- Heart of Unliving
+    { 16, 78480 },  -- Vishanka, Jaws of the Eearth
+    { 17, 77976 },  -- Heart of Unliving
     { 18, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
     { 20, "c3281", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Obsidian Fragment
     { 21, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
@@ -1830,7 +1829,7 @@ data["GrimBatol"] = {
         { 3, 56445 },	-- Ring of Dun Algaz
         { 4, 56449 },	-- Throngus's Finger
         { 5, 56446 },	-- Wand of Untainted Power
-        { 16, "c3281", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Fissure Stone Fragment
+        { 16, "c3281", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- Obsidian Fragment
         { 17, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
     },
 },
@@ -1937,8 +1936,8 @@ DisplayIDs = {{33428}},
     { 9, 56456 },	-- Wild Hammer
     { 10, 56461 },	-- Staff of Siphoned Essences
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, 78484 }, -- Rathrak, the Poisonous Mind
-    { 17, 77978 }, -- Resolve of Undying
+    { 16, 78484 },  -- Rathrak, the Poisonous Mind
+    { 17, 77978 },  -- Resolve of Undying
     { 18, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
     { 20, "c3281", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Obsidian Fragment
     { 21, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
@@ -2171,8 +2170,8 @@ DisplayIDs = {{32806}},
     { 9, 63480 },   -- Record of the Brotherhood's End
     { 10, 63487 },  -- Book of the Well Sung Song
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, 78483 }, -- Blade of the Unmaker
-    { 17, }, -- TODO
+    { 16, 78483 },  -- Blade of the Unmaker
+    { 17, 78440 },  -- Cursed Twilight Claw
     { 18, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
     { 20, "c3281", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Obsidian Fragment
     { 21, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
@@ -2369,8 +2368,8 @@ DisplayIDs = {{34611}},
     { 9, 63461 },	-- Staff of Isolation
     { 10, 63460} ,  -- Relic of Arathor
     { 12, 52078, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Chaos Orb
-    { 16, 78488 }, -- Souldrinker
-    { 17, 78421 }, -- Signet of Grasping Mouths
+    { 16, 78488 },  -- Souldrinker
+    { 17, 78421 },  -- Signet of Grasping Mouths
     { 18, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
     { 20, "c3281", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- Obsidian Fragment
     { 21, "c395", [ATLASLOOT_IT_AMOUNT1] = 70 }, -- Justice Points
