@@ -1270,29 +1270,31 @@ data["ValentinesdayCata"] = {
         name = AL["Love is in the Air"],
         [NORMAL_DIFF] = { { 1, 22206 },                                               -- Bouquet of Red Roses
             { 3, "INV_ValentinesBoxOfChocolates02", nil, AL["Gift of Adoration"] }, { 4, 22279 }, -- Lovely Black Dress
-            { 5,  22235 },                                                            -- Truesilver Shafted Arrow
-            { 6,  22200 },                                                            -- Silver Shafted Arrow
-            { 7,  22261 },                                                            -- Love Fool
-            { 8,  22218 },                                                            -- Handful of Rose Petals
-            { 9,  21813 },                                                            -- Bag of Candies
-            { 11, "INV_Box_02", nil, AL["Box of Chocolates"] }, { 12, 22237 },        -- Dark Desire
-            { 13, 22238 },                                                            -- Very Berry Cream
-            { 14, 22236 },                                                            -- Buttermilk Delight
-            { 15, 22239 },                                                            -- Sweet Surprise
-            { 16, 22276 },                                                            -- Lovely Red Dress
-            { 17, 22278 },                                                            -- Lovely Blue Dress
-            { 18, 22280 },                                                            -- Lovely Purple Dress
-            { 19, 22277 },                                                            -- Red Dinner Suit
-            { 20, 22281 },                                                            -- Blue Dinner Suit
-            { 21, 22282 }                                                             -- Purple Dinner Suit
+            { 5,  72146 },                                                            -- Swift Lovebird
+            { 6,  22235 },                                                            -- Truesilver Shafted Arrow
+            { 7,  22200 },                                                            -- Silver Shafted Arrow
+            { 8,  34480 },                                                            -- Romantic Picnic Basket
+            { 9,  22261 },                                                            -- Love Fool
+            { 10, 22218 },                                                            -- Handful of Rose Petals
+            { 11, 21813 },                                                            -- Bag of Candies
+            { 13, "INV_Box_02", nil, AL["Box of Chocolates"] }, { 14, 22237 },        -- Dark Desire
+            { 15, 22238 },                                                            -- Very Berry Cream
+            { 16, 22236 },                                                            -- Buttermilk Delight
+            { 17, 22239 },                                                            -- Sweet Surprise
+            { 18, 22276 },                                                            -- Lovely Red Dress
+            { 19, 22278 },                                                            -- Lovely Blue Dress
+            { 20, 22280 },                                                            -- Lovely Purple Dress
+            { 21, 22277 },                                                            -- Red Dinner Suit
+            { 22, 22281 },                                                            -- Blue Dinner Suit
+            { 23, 22282 }                                                             -- Purple Dinner Suit
         }
     }, {                                                                              -- SFKApothecaryH
         name = C_Map_GetAreaInfo(209) .. " - " .. AL["Apothecary Hummel"],
-        [NORMAL_DIFF] = { { 1, 68175 },                                               -- Winking Eye of Love
-            { 2,  68176 },                                                            -- Heartbreak Charm
-            { 3,  68172 },                                                            -- Shard of Pirouetting Happiness
-            { 4,  68174 },                                                            -- Sweet Perfume Broach
-            { 5,  68173 },                                                            -- Choker of the Pure Heart
+        [NORMAL_DIFF] = { { 1, 238334 },                                              -- Heartbreak Charm
+            { 2,  238335 },                                                           -- Winking Eye of Love
+            { 3,  238336 },                                                           -- Sweet Perfume Broach
+            { 4,  238337 },                                                           -- Choker of the Pure Heart
+            { 5,  238338 },                                                           -- Shard of Pirouetting Happiness
             { 7,  49641 },                                                            -- Faded Lovely Greeting Card
             { 8,  49715 },                                                            -- Forever-Lovely Rose
             { 9,  50250 },                                                            -- X-45 Heartbreaker
@@ -1541,19 +1543,24 @@ data["WinterVeilCata"] = {
             [NORMAL_DIFF] = {
                 { 1,  17201 }, -- Recipe: Egg Nog
                 { 2,  17200 }, -- Recipe: Gingerbread Cookie
-                { 3,  17344 }, -- Candy Cane
-                { 4,  17406 }, -- Holiday Cheesewheel
-                { 5,  17407 }, -- Graccu's Homemade Meat Pie
-                { 6,  17408 }, -- Spicy Beefstick
-                { 7,  17404 }, -- Blended Bean Brew
-                { 8,  17405 }, -- Green Garden Tea
-                { 9,  17196 }, -- Holiday Spirits
-                { 10, 17403 }, -- Steamwheedle Fizzy Spirits
-                { 11, 17402 }, -- Greatfather's Winter Ale
-                { 12, 17194 }, -- Holiday Spices
-                { 16, 17303 }, -- Blue Ribboned Wrapping Paper
-                { 17, 17304 }, -- Green Ribboned Wrapping Paper
-                { 18, 17307 }, -- Purple Ribboned Wrapping Paper
+                { 3,  34413 }, -- Recipe: Hot Apple Cider
+                { 4,  34261 }, -- Pattern: Green Winter Clothes
+                { 5,  34262 }, -- Pattern: Winter Boots
+                { 6,  17344 }, -- Candy Cane
+                { 7,  17406 }, -- Holiday Cheesewheel
+                { 8,  17407 }, -- Graccu's Homemade Meat Pie
+                { 9,  17408 }, -- Spicy Beefstick
+                { 10, 34410 }, -- Honeyed Holiday Ham
+                { 11, 17404 }, -- Blended Bean Brew
+                { 12, 17405 }, -- Green Garden Tea
+                { 13, 34412 }, -- Sparkling Apple Cider
+                { 14, 17196 }, -- Holiday Spirits
+                { 15, 17403 }, -- Steamwheedle Fizzy Spirits
+                { 16, 17402 }, -- Greatfather's Winter Ale
+                { 17, 17194 }, -- Holiday Spices
+                { 18, 17303 }, -- Blue Ribboned Wrapping Paper
+                { 19, 17304 }, -- Green Ribboned Wrapping Paper
+                { 20, 17307 }, -- Purple Ribboned Wrapping Paper
             },
         },
         {
