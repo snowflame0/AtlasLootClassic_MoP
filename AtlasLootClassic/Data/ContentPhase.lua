@@ -7,10 +7,10 @@ local AL = AtlasLoot.Locales
 local IMAGE_PATH = ALPrivate.IMAGE_PATH
 local ACTIVE_PHASE_LIST = {
     [0] = 99, -- dummy
-    [AtlasLoot.CLASSIC_VERSION_NUM] = 6, -- classic
-    [AtlasLoot.BC_VERSION_NUM]      = 5, -- bc
-    [AtlasLoot.WRATH_VERSION_NUM]   = 5, -- wrath
-    [AtlasLoot.CATA_VERSION_NUM]    = 3, -- cata
+    --[AtlasLoot.CLASSIC_VERSION_NUM] = 6, -- classic
+    --[AtlasLoot.BC_VERSION_NUM]      = 5, -- bc
+    --[AtlasLoot.WRATH_VERSION_NUM]   = 5, -- wrath
+    [AtlasLoot.CATA_VERSION_NUM]    = 4, -- cata
 }
 local ACTIVE_PHASE = ACTIVE_PHASE_LIST[AtlasLoot:GetGameVersion()] or ACTIVE_PHASE_LIST[1]
 
@@ -19,6 +19,7 @@ local PHASE_ITEMS = {}
 
 if AtlasLoot:GameVersion_EQ(AtlasLoot.CATA_VERSION_NUM) then
     PHASE_ITEMS = {
+        --[[ Comment out, no need to load these going into MoP+
         [78782] = 4,[78831] = 4,[78754] = 4,[78765] = 4,[78802] = 4,
         [76976] = 4,[76978] = 4,[76974] = 4,[76975] = 4,[76977] = 4,
         [78687] = 4,[78736] = 4,[78659] = 4,[78670] = 4,[78707] = 4,
@@ -558,6 +559,7 @@ if AtlasLoot:GameVersion_EQ(AtlasLoot.CATA_VERSION_NUM) then
         [71914] = 4,
         [71924] = 4,
         [71892] = 4,
+        --]]
     }
 end
 
