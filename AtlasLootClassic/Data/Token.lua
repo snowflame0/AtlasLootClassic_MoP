@@ -1348,6 +1348,15 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [71030] = {"i71030suf-288","i71030suf-289","i71030suf-290","i71030suf-291",type=2}, -- Flickering Shoulders N
         [71428] = {"i71428suf-133","i71428suf-135","i71428suf-136","i71428suf-137",type=2}, -- Flickering Wristbands H
         [70735] = {"i70735suf-133","i70735suf-135","i70735suf-136","i70735suf-137",type=2}, -- Flickering Wristbands N
+        -- Elemental Rune Twilight
+        ["Tier13ElementalRuneTokens"] = {
+            78869, 78870, 78868, 0,
+            78875, 78876, 78874, 0,
+            78863, 78864, 78862, 0,
+            78866, 78867, 78865, 0,
+            78872, 78873, 78871, 0,
+            type = 9
+        },
     }
 end
 
