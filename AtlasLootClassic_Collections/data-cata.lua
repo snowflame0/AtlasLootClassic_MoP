@@ -31,6 +31,7 @@ local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 
 local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
 local VENDOR_DIFF_P1 = data:AddDifficulty(AL["Vendor"] .. " - " .. AL["P1"], "vendor", 0)
+local VENDOR_DIFF_P2 = data:AddDifficulty(AL["Vendor"] .. " - " .. AL["P2"], "vendor", 0)
 
 local ALLIANCE_DIFF, HORDE_DIFF, LOAD_DIFF
 if UnitFactionGroup("player") == "Horde" then
@@ -171,6 +172,25 @@ data["JusticePoints"] = {
             -- Legs
             { 11, 58154 }, -- Pensive Legwraps
             { 26, 58160 } -- Leggings of Charity
+        },
+        [VENDOR_DIFF_P2] = { -- Mage
+            { 1,  71289 }, -- Firehawk Robes
+            { 2,  71286 }, -- Firehawk Gloves
+            { 3,  71288 }, -- Firehawk Leggings
+            -- Warlock
+            { 5,  71284 }, -- Balespider's Robes
+            { 6,  71281 }, -- Balespider's Handwraps
+            { 7,  71283 }, -- Balespider's Leggings
+            -- Priest
+            { 16, 71274 }, -- Robes of the Cleansing Flame
+            { 17, 71271 }, -- Handwraps of the Cleansing Flame
+            { 18, 71273 }, -- Legwraps of the Cleansing Flame
+            { 20, 71279 }, -- Vestment of the Cleansing Flame
+            { 21, 71276 }, -- Gloves of the Cleansing Flame
+            { 22, 71278 }, -- Leggings of the Cleansing Flame
+            -- Misc
+            { 9,  71265 }, -- Emberflame Bracers
+            { 10, 71266 } -- Firesoul Wristguards
         }
     }, {
         name = ALIL["Armor"] .. " - " .. ALIL["Leather"],
@@ -210,6 +230,24 @@ data["JusticePoints"] = {
             -- Legs
             { 11, 58140 }, -- Leggings of Late Blooms
             { 26, 58132 } -- Leggings of the Burrowing Mole
+        },
+        [VENDOR_DIFF_P2] = { -- Druid
+            { 1,  71105 }, -- Obsidian Arborweave Tunic
+            { 2,  71102 }, -- Obsidian Arborweave Handwraps
+            { 3,  71104 }, -- Obsidian Arborweave Legwraps
+            { 5,  71100 }, -- Obsidian Arborweave Raiment
+            { 6,  71097 }, -- Obsidian Arborweave Grips
+            { 7,  71099 }, -- Obsidian Arborweave Legguards
+            { 9,  71110 }, -- Obsidian Arborweave Vestment
+            { 10, 71107 }, -- Obsidian Arborweave Gloves
+            { 11, 71109 }, -- Obsidian Arborweave Leggings
+            -- Rouge
+            { 16, 71045 }, -- Dark Phoenix Tunic
+            { 17, 71046 }, -- Dark Phoenix Gloves
+            { 18, 71048 }, -- Dark Phoenix Legguards
+            -- Misc
+            { 13, 71262 }, -- Smolderskull Bindings
+            { 14, 71130 } -- Flamebinder Bracers
         }
     }, {
         name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
@@ -249,6 +287,24 @@ data["JusticePoints"] = {
             -- Legs
             { 11, 58127 }, -- Leggings of Soothing Silence
             { 26, 58122 } -- Hillside Striders
+        },
+        [VENDOR_DIFF_P2] = { -- Shaman
+            { 1,  71294 }, -- Erupting Volcanic Hauberk
+            { 2,  71292 }, -- Erupting Volcanic Gloves
+            { 3,  71291 }, -- Erupting Volcanic Kilt
+            { 5,  71296 }, -- Erupting Volcanic Tunic
+            { 6,  71297 }, -- Erupting Volcanic Handwraps
+            { 7,  71299 }, -- Erupting Volcanic Legwraps
+            { 9,  71301 }, -- Erupting Volcanic Cuirass
+            { 10, 71302 }, -- Erupting Volcanic Grips
+            { 11, 71304 }, -- Erupting Volcanic Legguards
+            -- Rouge
+            { 16, 71054 }, -- Flamewalker's Tunic
+            { 17, 71050 }, -- Flamewalker's Gloves
+            { 18, 71052 }, -- Flamewalker's Legguards
+            -- Misc
+            { 13, 71263 }, -- Bracers of Misting Ash
+            { 14, 71264 } -- Bracers of Forked Lightning
         }
     }, {
         name = ALIL["Armor"] .. " - " .. ALIL["Plate"],
@@ -306,147 +362,8 @@ data["JusticePoints"] = {
             { 24, 58102 }, -- Greaves of Splendor
             { 25, 58097 }, -- Greaves of Gallantry
             { 26, 58107 } -- Legguards of the Gentle
-        }
-    }, {
-        name = ALIL["Cloak"],
-        [VENDOR_DIFF_P1] = {
-            { 1, 58192 }, -- Gray Hair Cloak
-            { 2, 58190 }, -- Floating Web
-            { 4, 58191 }, -- Viewless Wings
-            { 16, 58193 }, -- Haunt of Flies
-            { 17, 58194 }, -- Heavenly Breeze
-        }
-    }, {
-        name = ALIL["Off Hand"] .. "/" .. ALIL["Shield"],
-        [VENDOR_DIFF_P1] = {
-            { 1, 57927 }, -- Throat Slasher
-            { 2, 57928 }, -- Windslicer
-            { 3, 57929 }, -- Dawnblaze Blade
-            { 5, 57926 }, -- Shield of the Four Grey Towers
-            { 6, 57925 }, -- Shield of the Mists
-            { 8, 57924 }, -- Apple-Bent Bough
-            { 9, 57923 } -- Hermit's Lamp
-        }
-    }, {
-        name = ALIL["Neck"],
-        [VENDOR_DIFF_P1] = {
-        { 1, 57932 }, -- The Lustrous Eye
-        { 2, 57934 }, -- Celadon Pendant
-        { 3, 57933 }, -- String of Beaded Bubbles
-        { 4, 57931 }, -- Amulet of Dull Dreaming
-        { 5, 57930 } -- Pendant of Quiet Breath
-    }
-    }, {
-        name = ALIL["Ring"],
-        [VENDOR_DIFF] = {
-            { 1, 58189 }, -- Twined Band of Flowers
-            { 2, 58188 }, -- Band of Secret Names
-            { 3, 58185 }, -- Band of Bees
-            { 4, 68812 }, -- Hornet-Sting Band
-            { 5, 58187 } -- Ring of the Battle Anthem
-        }
-    }, {
-        name = ALIL["Relic"],
-        [VENDOR_DIFF] = {
-            { 1, 64673 }, -- Throat Slasher
-            { 2, 64674 }, -- Windslicer
-            { 3, 64671 }, -- Dawnblaze Blade
-            { 4, 64676 }, -- Shield of the Four Grey Towers
-            { 5, 64672 } -- Shield of the Mists
-        }
-    }, {
-        name = ALIL["Trinket"],
-        [VENDOR_DIFF] = {
-            { 1, 58180 }, -- License to Slay
-            { 2, 58181 }, -- Fluid Death
-            { 3, 58183 }, -- Soul Casket
-            { 4, 58184 }, -- Core of Ripeness
-            { 5, 58182 } -- Bedrock Talisman
-        }
-    }, {
-        name = AL["Misc"],
-        [VENDOR_DIFF_P1] = {
-            { 1, 52185 }, -- Elementium Ore
-            { 2, 53010 }, -- Embersilk Cloth
-            { 3, 52976 }, -- Savage Leather
-            { 4, 52721 }, -- Heavenly Shard
-            { 5, 52555 }, -- Hypnotic Dust
-            { 6, 68813 }, -- Satchel of Freshly-Picked Herbs
-            { 7, 52719 } -- Greater Celestial Essence
-        }
-    } }
-}
-
-data["ValorPoints"] = {
-    name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, AL["Valor Points"])),
-    ContentType = VENDOR_CONTENT,
-    TableType = NORMAL_ITTYPE,
-    gameVersion = AtlasLoot.CATA_VERSION_NUM,
-    ContentPhaseCata = 3,
-    items = { {
-        name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
-        [VENDOR_DIFF] = { -- Mage
-            { 1,  71289 }, -- Firehawk Robes
-            { 2,  71286 }, -- Firehawk Gloves
-            { 3,  71288 }, -- Firehawk Leggings
-            -- Warlock
-            { 5,  71284 }, -- Balespider's Robes
-            { 6,  71281 }, -- Balespider's Handwraps
-            { 7,  71283 }, -- Balespider's Leggings
-            -- Priest
-            { 16, 71274 }, -- Robes of the Cleansing Flame
-            { 17, 71271 }, -- Handwraps of the Cleansing Flame
-            { 18, 71273 }, -- Legwraps of the Cleansing Flame
-            { 20, 71279 }, -- Vestment of the Cleansing Flame
-            { 21, 71276 }, -- Gloves of the Cleansing Flame
-            { 22, 71278 }, -- Leggings of the Cleansing Flame
-            -- Misc
-            { 9,  71265 }, -- Emberflame Bracers
-            { 10, 71266 } -- Firesoul Wristguards
-        }
-    }, {
-        name = ALIL["Armor"] .. " - " .. ALIL["Leather"],
-        [VENDOR_DIFF] = { -- Druid
-            { 1,  71105 }, -- Obsidian Arborweave Tunic
-            { 2,  71102 }, -- Obsidian Arborweave Handwraps
-            { 3,  71104 }, -- Obsidian Arborweave Legwraps
-            { 5,  71100 }, -- Obsidian Arborweave Raiment
-            { 6,  71097 }, -- Obsidian Arborweave Grips
-            { 7,  71099 }, -- Obsidian Arborweave Legguards
-            { 9,  71110 }, -- Obsidian Arborweave Vestment
-            { 10, 71107 }, -- Obsidian Arborweave Gloves
-            { 11, 71109 }, -- Obsidian Arborweave Leggings
-            -- Rouge
-            { 16, 71045 }, -- Dark Phoenix Tunic
-            { 17, 71046 }, -- Dark Phoenix Gloves
-            { 18, 71048 }, -- Dark Phoenix Legguards
-            -- Misc
-            { 13, 71262 }, -- Smolderskull Bindings
-            { 14, 71130 } -- Flamebinder Bracers
-        }
-    }, {
-        name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
-        [VENDOR_DIFF] = { -- Shaman
-            { 1,  71294 }, -- Erupting Volcanic Hauberk
-            { 2,  71292 }, -- Erupting Volcanic Gloves
-            { 3,  71291 }, -- Erupting Volcanic Kilt
-            { 5,  71296 }, -- Erupting Volcanic Tunic
-            { 6,  71297 }, -- Erupting Volcanic Handwraps
-            { 7,  71299 }, -- Erupting Volcanic Legwraps
-            { 9,  71301 }, -- Erupting Volcanic Cuirass
-            { 10, 71302 }, -- Erupting Volcanic Grips
-            { 11, 71304 }, -- Erupting Volcanic Legguards
-            -- Rouge
-            { 16, 71054 }, -- Flamewalker's Tunic
-            { 17, 71050 }, -- Flamewalker's Gloves
-            { 18, 71052 }, -- Flamewalker's Legguards
-            -- Misc
-            { 13, 71263 }, -- Bracers of Misting Ash
-            { 14, 71264 } -- Bracers of Forked Lightning
-        }
-    }, {
-        name = ALIL["Armor"] .. " - " .. ALIL["Plate"],
-        [VENDOR_DIFF] = { -- Paladin
+        },
+        [VENDOR_DIFF_P2] = { -- Paladin
             { 1,  71091 }, -- Immolation Breastplate
             { 2,  71092 }, -- Immolation Sapphirium Gloves
             { 3,  71094 }, -- Immolation Sapphirium Greaves
@@ -476,26 +393,60 @@ data["ValorPoints"] = {
             { 30, 71261 } -- Gigantform Bracers
         }
     }, {
-        name = ALIL["Ranged Weapons"],
-        [VENDOR_DIFF] = {
+        name = ALIL["Cloak"],
+        [VENDOR_DIFF_P1] = {
+            { 1, 58192 }, -- Gray Hair Cloak
+            { 2, 58190 }, -- Floating Web
+            { 4, 58191 }, -- Viewless Wings
+            { 16, 58193 }, -- Haunt of Flies
+            { 17, 58194 }, -- Heavenly Breeze
+        }
+    }, {
+            name = ALIL["Ranged Weapons"],
+        [VENDOR_DIFF_P2] = {
             { 1, 71218 }, -- Deflecting Star
             { 2, 71154 }, -- Giantslicer
             { 4, 71152 }, -- Morningstar Shard
             { 16, 71151 }, -- Trail of Embers
             { 17, 71150 }, -- Scorchvine Wand
+         }
+    }, {
+        name = ALIL["Off Hand"] .. "/" .. ALIL["Shield"],
+        [VENDOR_DIFF_P1] = {
+            { 1, 57927 }, -- Throat Slasher
+            { 2, 57928 }, -- Windslicer
+            { 3, 57929 }, -- Dawnblaze Blade
+            { 5, 57926 }, -- Shield of the Four Grey Towers
+            { 6, 57925 }, -- Shield of the Mists
+            { 8, 57924 }, -- Apple-Bent Bough
+            { 9, 57923 } -- Hermit's Lamp
         }
     }, {
         name = ALIL["Neck"],
-        [VENDOR_DIFF] = {
-            { 1,  70935 }, -- Stoneheart Necklace
-            { 2,  71212 }, -- Stoneheart Choker
-            { 4,  71129 }, -- Necklace of Smoke Signals
-            { 16,  71213 }, -- Amulet of Burning Brilliance
-            { 17,  71214 }, -- Firemind Pendant
+        [VENDOR_DIFF_P1] = {
+        { 1, 57932 }, -- The Lustrous Eye
+        { 2, 57934 }, -- Celadon Pendant
+        { 3, 57933 }, -- String of Beaded Bubbles
+        { 4, 57931 }, -- Amulet of Dull Dreaming
+        { 5, 57930 } -- Pendant of Quiet Breath
+    },
+        [VENDOR_DIFF_P2] = {
+        { 1,  70935 }, -- Stoneheart Necklace
+        { 2,  71212 }, -- Stoneheart Choker
+        { 4,  71129 }, -- Necklace of Smoke Signals
+        { 16,  71213 }, -- Amulet of Burning Brilliance
+        { 17,  71214 }, -- Firemind Pendant
         }
     }, {
         name = ALIL["Ring"],
         [VENDOR_DIFF] = {
+            { 1, 58189 }, -- Twined Band of Flowers
+            { 2, 58188 }, -- Band of Secret Names
+            { 3, 58185 }, -- Band of Bees
+            { 4, 68812 }, -- Hornet-Sting Band
+            { 5, 58187 } -- Ring of the Battle Anthem
+        },
+        [VENDOR_DIFF_P2] = {
             { 1,  70940 }, -- Deflecting Brimstone Band
             { 2,  71208 }, -- Serrated Brimstone Signet
             { 4, 71209 }, -- Splintered Brimstone Seal
@@ -505,13 +456,40 @@ data["ValorPoints"] = {
     }, {
         name = ALIL["Relic"],
         [VENDOR_DIFF] = {
+            { 1, 64673 }, -- Throat Slasher
+            { 2, 64674 }, -- Windslicer
+            { 3, 64671 }, -- Dawnblaze Blade
+            { 4, 64676 }, -- Shield of the Four Grey Towers
+            { 5, 64672 } -- Shield of the Mists
+        },
+        [VENDOR_DIFF_P2] = {
             { 1, 70939 }, -- Deathclutch Figurine
             { 2, 71147 }, -- Relic of the Elemental Lords
             { 4, 71146 }, -- Covenant of the Flame
             { 16, 71148 }, -- Soulflame Vial
             { 17, 71149 }, -- Singed Plume of Aviana
         }
-    }, }
+    }, {
+        name = ALIL["Trinket"],
+        [VENDOR_DIFF] = {
+            { 1, 58180 }, -- License to Slay
+            { 2, 58181 }, -- Fluid Death
+            { 3, 58183 }, -- Soul Casket
+            { 4, 58184 }, -- Core of Ripeness
+            { 5, 58182 } -- Bedrock Talisman
+        }
+    }, {
+        name = AL["Misc"],
+        [VENDOR_DIFF_P1] = {
+            { 1, 52185 }, -- Elementium Ore
+            { 2, 53010 }, -- Embersilk Cloth
+            { 3, 52976 }, -- Savage Leather
+            { 4, 52721 }, -- Heavenly Shard
+            { 5, 52555 }, -- Hypnotic Dust
+            { 6, 68813 }, -- Satchel of Freshly-Picked Herbs
+            { 7, 52719 } -- Greater Celestial Essence
+        }
+    } }
 }
 
 data["FissureStoneFragments"] = {
@@ -674,15 +652,13 @@ data["FissureStoneFragments"] = {
         name = AL["Misc"],
         [VENDOR_DIFF] = {
             { 1, 234446 }, -- Commendation of Service
-            { 16, "c396", [ATLASLOOT_IT_AMOUNT1] = 10 } -- Valor Points
         }
     },
     }
 }
 
---[[ Let's not add this till P4 to keep it cleaner
-data["ValorPointsP4"] = {
-    name = format(AL["'%s' Vendor"], AL["Valor Points"] .. " - " .. AL["P4"]),
+data["ValorPoints"] = {
+    name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, AL["Valor Points"])),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
@@ -783,9 +759,158 @@ data["ValorPointsP4"] = {
             { 28, 77080 }, -- Ripfang Relic
             { 29, 77084 }, -- Stoutheart Talisman
         }
-    } }
+    },
+    }
 }
---]]
+data["ObsidianFragments"] = {
+    name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, AL["Obsidian Fragment"])),
+    ContentType = VENDOR_CONTENT,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    items = {{
+        name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
+        [VENDOR_DIFF] = {
+            { 1, 78381 }, -- Mosswrought Shoulderguards
+            { 3, 78398 }, -- Cord of the Slain Champion
+            { 5, 78457 }, -- Jaglespur Jackboots
+            { 7, 78425 }, -- Bracers of the Banished
+            { 9, 78380 }, -- Robe of Glowing Stone
+            { 11, 78466 }, -- Gloves of Liquid Smoke
+            { 16, 239111 }, -- Satchel of the Flickering Cowl
+        }
+    },
+    {
+        name = ALIL["Armor"] .. " - " .. ALIL["Leather"],
+        [VENDOR_DIFF] = {
+            { 1, 78375 }, -- Underdweller's Spaulders
+            { 3, 78395 }, -- Belt of Flayed Skin
+            { 4, 78428 }, -- Girdle of the Grostesque
+            { 6, 78408 }, -- Interrogators Bloody Footpads
+            { 7, 78442 }, -- Treads of Sordid Screams
+            { 9, 78454 }, -- Shaadow Wing Armbands
+            { 10, 78384 }, -- Mycosynth Wristguards
+            { 12, 78467 }, -- Molten Blood Footpads
+            { 16, 239113 }, -- Satchel of the Flickering Wristbands
+        }
+    },
+    {
+        name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
+        [VENDOR_DIFF] = {
+            { 1, 78443 }, -- Imperfect Specimens
+            { 3, 78455 }, -- Belt of the Beloved Compainion
+            { 4, 78385 }, -- Girdle of the Shattered Stone
+            { 6, 78423 }, -- Treads of Dormant Dreams
+            { 7, 78411 }, -- Mindstrainer Treads
+            { 9, 78438 }, -- Bracers of Looming Darkness
+            { 10, 78400 }, -- Grotesquely Writhing Bracers
+            { 12, 78376 }, -- Sporebeard Gauntlets
+            { 14, 78468 }, -- Belt of Shattered Elementium
+            { 16, 239112 }, -- Satchel of the Flickering Shoulders
+        }
+    },
+    {
+        name = ALIL["Armor"] .. " - " .. ALIL["Plate"],
+        [VENDOR_DIFF] = {
+            { 1, 78378 }, -- Brackenshell Shoulderplates
+            { 3, 78444 }, -- Dragonfracture Belt
+            { 4, 78460 }, -- Gorionas Collar
+            { 5, 78424 }, -- Runescriven Demon Collar
+            { 7, 78386 }, -- Pillarfoot Greaves
+            { 8, 78439}, -- Stillheart Warboots
+            { 9, 78396 }, -- Treads of Crushed Flesh
+            { 11, 78412 }, -- Heartblood Wristplates
+            { 12, 78397 }, -- Graveheart Bracers
+            { 13, 78377 }, -- Rockhide Bracers
+            { 15, 78469 }, -- Gauntlets of the Golden Thorn
+            { 16, 78470 }, -- Backbreaker Spaulders
+            { 18, 239114 }, -- Satchel of the Flickering Handguards
+        }
+    },
+    {
+        name = ALIL["Weapon"],
+        [VENDOR_DIFF] = {
+            { 1, 78484 }, -- Rathrak the Poisonous Mind
+            { 2, 78483 }, -- Blade of the Unmaker
+            { 3, 78488 }, -- Souldrinker
+            { 4, 78487 }, -- Gurthalak
+            { 5, 78481 }, -- No'kaled
+            { 6, 78485 }, -- Maw of the Dragonlord
+            { 8, 78422 }, -- Electrowing Dagger
+            { 10, 78374 }, -- Razor Saronite Chip
+            { 12, 78399 }, -- Finger of Zon'ozz
+            { 16, 78482 }, -- Kiril
+            { 17, 78486 }, -- Ti'tahk
+            { 18, 78480 }, -- Vishanka
+        }
+    },
+    {
+        name = ALIL["Off Hand"] .. "/" .. ALIL["Shield"],
+        [VENDOR_DIFF] = {
+            { 1, 78458 }, -- Timepiece of bronze
+            { 2, 78456 }, -- Blackhorns
+            { 4, 78441 }, -- Ledger
+        }
+    },
+    {
+        name = ALIL["Neck"],
+        [VENDOR_DIFF] = {
+            { 1, 78382 }, -- Petrified Fungal Heart
+        }
+    },
+    {
+        name = ALIL["Ring"],
+        [VENDOR_DIFF] = {
+            { 1, 78440 }, -- Curled Twilight Claw
+            { 2, 78497 }, -- Breathstealer Band
+            { 4, 78496 }, -- Signet of Suturing
+            { 5, 78495 }, -- Infinite Loop
+            { 6, 78427 }, -- Ring of the Riven
+            { 8, 78498 }, -- Hardheart Ring
+            { 10, 78494 }, -- Seal of Primordial Shadow
+            { 11, 78421 }, -- Signet of Grasping Mouths
+        }
+    },
+    {
+        name = ALIL["Trinket"],
+        [VENDOR_DIFF] = {
+            { 1, 77969 }, -- Seal of the Seven Signs
+            { 2, 77971 }, -- Insignia of the Corrupted Mind
+            { 3, 77970 }, -- Soulshifter Vortex
+            { 4, 77972 }, -- Creche of the Final Dragon
+            { 5, 77973 }, -- Starcatcher Compass
+            { 7, 77982 }, -- Bone-link Fetish
+            { 8, 77980 }, -- Cunning of the Cruel
+            { 9, 77983 }, -- Indomitble Pride
+            { 10, 77979 }, -- Vial of Shadows
+            { 11, 77981 }, -- Windward Heart
+            { 16, 77977 }, -- Eye of Unmaking
+            { 17, 77976 }, -- Heart of Unliving
+            { 18, 77975 }, -- Will of Unbinding
+            { 19, 77974 }, -- Wrath of Unchaining
+            { 20, 77978 }, -- Resolved of Undying
+         }
+    },
+    {
+        name = AL["Token"],
+        [VENDOR_DIFF] = {
+            { 1, 71675 }, -- Helm of the Fiery Conqueror
+            { 2, 71682 }, -- Helm of the Fiery Protector
+            { 3, 71668 }, -- Helm of the Fiery Vanquisher
+            { 5, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
+            { 16, 71681 }, -- Mantle of the Fiery Conqueror
+            { 17, 71688 }, -- Mantle of the Fiery Protector
+            { 18, 71674 }, -- Mantle of the Fiery Vanquisher
+        }
+    },
+    {
+        name = AL["Misc"],
+        [VENDOR_DIFF] = {
+            { 1, 234446 }, -- Commendation of Service
+            { 16, "c396", [ATLASLOOT_IT_AMOUNT1] = 10 } -- Valor Points
+        }
+    },
+    }
+}
 
 data["MoltenFront"] = {
     name = AL["Molten Front"],

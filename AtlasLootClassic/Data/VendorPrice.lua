@@ -176,6 +176,9 @@ local PRICE_INFO_LIST = {
     ["Tricky Treat"] = {
         itemID = 33226
     }, -- Tricky Treat
+        ["ObsidianFragment"] = {
+        currencyID = 3281
+    }, -- Obsidian Fragment
 
     --- PvP
     ["honor"] = {
