@@ -895,7 +895,7 @@ data["ObsidianFragments"] = {
         [VENDOR_DIFF] = {
             { 1, 71675 }, -- Helm of the Fiery Conqueror
             { 2, 71682 }, -- Helm of the Fiery Protector
-            { 3, 71688 }, -- Helm of the Fiery Vanquisher
+            { 3, 71668 }, -- Helm of the Fiery Vanquisher
             { 5, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
             { 16, 71681 }, -- Mantle of the Fiery Conqueror
             { 17, 71688 }, -- Mantle of the Fiery Protector
