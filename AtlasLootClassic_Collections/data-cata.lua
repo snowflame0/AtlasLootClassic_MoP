@@ -652,7 +652,6 @@ data["FissureStoneFragments"] = {
         name = AL["Misc"],
         [VENDOR_DIFF] = {
             { 1, 234446 }, -- Commendation of Service
-            { 16, "c396", [ATLASLOOT_IT_AMOUNT1] = 10 } -- Valor Points
         }
     },
     }
@@ -760,7 +759,155 @@ data["ValorPoints"] = {
             { 28, 77080 }, -- Ripfang Relic
             { 29, 77084 }, -- Stoutheart Talisman
         }
-    } }
+    },
+    }   
+}
+data["ObsidianFragments"] = {
+    name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, AL["Obsidian Fragment"])),
+    ContentType = VENDOR_CONTENT,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    items = {{
+        name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
+        [VENDOR_DIFF] = {
+            { 1, 78381 }, -- Mosswrought Shoulderguards
+            { 3, 78398 }, -- Cord of the Slain Champion
+            { 5, 78457 }, -- Jaglespur Jackboots
+            { 7, 78425 }, -- Bracers of the Banished
+            { 9, 78466 }, -- Gloves of Liquid Smoke
+            { 16, 239111 }, -- Satchel of the Flickering Cowl
+        }
+    },
+    {
+        name = ALIL["Armor"] .. " - " .. ALIL["Leather"],
+        [VENDOR_DIFF] = {
+            { 1, 78375 }, -- Underdweller's Spaulders
+            { 3, 78395 }, -- Belt of Flayed Skin
+            { 4, 78428 }, -- Girdle of the Grostesque
+            { 6, 78408 }, -- Interrogators Bloody Footpads
+            { 7, 78442 }, -- Treads of Sordid Screams
+            { 9, 78454 }, -- Shaadow Wing Armbands
+            { 10, 78384 }, -- Mycosynth Wristguards
+            { 12, 78467 }, -- Molten Blood Footpads
+            { 16, 239113 }, -- Satchel of the Flickering Wristbands
+        }
+    },
+    {
+        name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
+        [VENDOR_DIFF] = {
+            { 1, 78443 }, -- Imperfect Specimens
+            { 3, 78455 }, -- Belt of the Beloved Compainion
+            { 4, 78385 }, -- Girdle of the Shattered Stone
+            { 6, 78423 }, -- Treads of Dormant Dreams
+            { 7, 78411 }, -- Mindstrainer Treads
+            { 9, 78438 }, -- Bracers of Looming Darkness
+            { 10, 78400 }, -- Grotesquely Writhing Bracers
+            { 12, 78376 }, -- Sporebeard Gauntlets
+            { 14, 78468 }, -- Belt of Shattered Elementium
+            { 16, 239112 }, -- Satchel of the Flickering Shoulders
+        }
+    },
+    {
+        name = ALIL["Armor"] .. " - " .. ALIL["Plate"],
+        [VENDOR_DIFF] = {
+            { 1, 78378 }, -- Brackenshell Shoulderplates
+            { 3, 78444 }, -- Dragonfracture Belt
+            { 4, 78460 }, -- Gorionas Collar
+            { 5, 78424 }, -- Runescriven Demon Collar
+            { 7, 78386 }, -- Pillarfoot Greaves
+            { 8, 78439}, -- Stillheart Warboots
+            { 9, 78396 }, -- Treads of Crushed Flesh
+            { 11, 78412 }, -- Heartblood Wristplates
+            { 12, 78397 }, -- Graveheart Bracers
+            { 13, 78377 }, -- Rockhide Bracers
+            { 15, 78469 }, -- Gauntlets of the Golden Thorn
+            { 16, 78470 }, -- Backbreaker Spaulders
+            { 18, 232970 }, -- Satchel of the Flickering Wristbands
+        }
+    },
+    {
+        name = ALIL["Weapon"],
+        [VENDOR_DIFF] = {
+            { 1, 78484 }, -- Rathrak the Poisonous Mind
+            { 2, 78483 }, -- Blade of the Unmaker
+            { 3, 78488 }, -- Souldrinker
+            { 4, 78487 }, -- Gurthalak
+            { 5, 78481 }, -- No'kaled
+            { 6, 78485 }, -- Maw of the Dragonlord
+            { 8, 78422 }, -- Electrowing Dagger
+            { 10, 78374 }, -- Razor Saronite Chip
+            { 12, 78399 }, -- Finger of Zon'ozz
+            { 16, 78482 }, -- Kiril
+            { 17, 78486 }, -- Ti'tahk
+            { 18, 78480 }, -- Vishanka
+        }
+    },
+    {
+        name = ALIL["Off Hand"] .. "/" .. ALIL["Shield"],
+        [VENDOR_DIFF] = {
+            { 1, 78458 }, -- Timepiece of bronze
+            { 2, 78456 }, -- Blackhorns
+        }
+    },
+    {
+        name = ALIL["Neck"],
+        [VENDOR_DIFF] = {
+            { 1, 78382 }, -- Petrified Fungal Heart
+        }
+    },
+    {
+        name = ALIL["Ring"],
+        [VENDOR_DIFF] = {
+            { 1, 78440 }, -- Curled Twilight Claw
+            { 2, 78497 }, -- Breathstealer Band
+            { 4, 78496 }, -- Signet of Suturing
+            { 5, 78495 }, -- Infinite Loop
+            { 6, 78427 }, -- Ring of the Riven
+            { 8, 78498 }, -- Hardheart Ring
+            { 10, 78494 }, -- Seal of Primordial Shadow
+            { 11, 78421 }, -- Signet of Grasping Mouths
+        }
+    },
+    {
+        name = ALIL["Trinket"],
+        [VENDOR_DIFF] = {
+            { 1, 77969 }, -- Seal of the Seven Signs
+            { 2, 77971 }, -- Insignia of the Corrupted Mind
+            { 3, 77970 }, -- Soulshifter Vortex
+            { 4, 77972 }, -- Creche of the Final Dragon
+            { 5, 77973 }, -- Starcatcher Compass
+            { 7, 77982 }, -- Bone-link Fetish
+            { 8, 77980 }, -- Cunning of the Cruel
+            { 9, 77983 }, -- Indomitble Pride
+            { 10, 77979 }, -- Vial of Shadows
+            { 11, 77981 }, -- Windward Heart
+            { 16, 77977 }, -- Eye of Unmaking
+            { 17, 77976 }, -- Heart of Unliving
+            { 18, 77975 }, -- Will of Unbinding
+            { 19, 77974 }, -- Wrath of Unchaining
+            { 20, 77978 }, -- Resolved of Undying
+         }
+    },
+    {
+        name = AL["Token"],
+        [VENDOR_DIFF] = {
+            { 1, 63683 }, -- Helm of the Fiery Conqueror
+            { 2, 63684 }, -- Helm of the Fiery Protector
+            { 3, 71688 }, -- Helm of the Fiery Vanquisher
+            { 5, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
+            { 16, 64315 }, -- Mantle of the Fiery Conqueror
+            { 17, 64316 }, -- Mantle of the Fiery Protector
+            { 18, 71674 }, -- Mantle of the Fiery Vanquisher
+        }
+    },
+    {
+        name = AL["Misc"],
+        [VENDOR_DIFF] = {
+            { 1, 234446 }, -- Commendation of Service
+            { 16, "c396", [ATLASLOOT_IT_AMOUNT1] = 10 } -- Valor Points
+        }
+    },
+    }
 }
 
 data["MoltenFront"] = {
