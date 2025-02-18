@@ -760,7 +760,7 @@ data["ValorPoints"] = {
             { 29, 77084 }, -- Stoutheart Talisman
         }
     },
-    }   
+    }
 }
 data["ObsidianFragments"] = {
     name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, AL["Obsidian Fragment"])),
