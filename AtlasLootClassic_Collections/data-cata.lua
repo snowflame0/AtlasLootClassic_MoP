@@ -823,7 +823,7 @@ data["ObsidianFragments"] = {
             { 13, 78377 }, -- Rockhide Bracers
             { 15, 78469 }, -- Gauntlets of the Golden Thorn
             { 16, 78470 }, -- Backbreaker Spaulders
-            { 18, 232970 }, -- Satchel of the Flickering Wristbands
+            { 18, 239113 }, -- Satchel of the Flickering Wristbands
         }
     },
     {
