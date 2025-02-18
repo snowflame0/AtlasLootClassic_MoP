@@ -4437,6 +4437,7 @@ NameColor = RED,
 { -- Shared
 name = AL["Shared Boss Loot"],
 ContentPhaseCata = 4,
+--[[
 [RAIDFINDER_DIFF] = {
     { 1, 78497 },	-- Breathstealer Band
     { 2, 78498 },	-- Hardheart Ring
@@ -4449,6 +4450,7 @@ ContentPhaseCata = 4,
     { 19, 77979 },	-- Vial of Shadows
     { 20, 77981 },	-- Windward Heart
 },
+--]]
 [NORMAL_DIFF] = {
     { 1, 77230 },	-- Breathstealer Band
     { 2, 77232 },	-- Hardheart Ring

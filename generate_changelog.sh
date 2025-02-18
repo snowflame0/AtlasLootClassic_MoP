@@ -23,7 +23,7 @@ fi
 date=$( git log -1 --date=short --format="%ad" )
 url=$( git remote get-url origin | sed -e 's/^git@\(.*\):/https:\/\/\1\//' -e 's/\.git$//' )
 
-cat "AtlasLootClassic/Documentation/Release_Notes.md" > "Changelog.md"
+cat "AtlasLootClassic/Documentation/Release_Notes.md" > "CHANGELOG.md"
 
 echo -ne "# [${version}](${url}/tree/${current}) ($date)\n\n[Full Changelog](${url}/compare/${previous}...${current})\n\n" >> "CHANGELOG.md"
 
