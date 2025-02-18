@@ -774,7 +774,8 @@ data["ObsidianFragments"] = {
             { 3, 78398 }, -- Cord of the Slain Champion
             { 5, 78457 }, -- Jaglespur Jackboots
             { 7, 78425 }, -- Bracers of the Banished
-            { 9, 78466 }, -- Gloves of Liquid Smoke
+            { 9, 78380 }, -- Robe of Glowing Stone
+            { 11, 78466 }, -- Gloves of Liquid Smoke
             { 16, 239111 }, -- Satchel of the Flickering Cowl
         }
     },
@@ -847,6 +848,7 @@ data["ObsidianFragments"] = {
         [VENDOR_DIFF] = {
             { 1, 78458 }, -- Timepiece of bronze
             { 2, 78456 }, -- Blackhorns
+            { 4, 78441 }, -- Ledger
         }
     },
     {
