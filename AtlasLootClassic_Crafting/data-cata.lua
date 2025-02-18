@@ -1152,24 +1152,24 @@ data["JewelcraftingCata"] = {
         {
             name = format(GEM_FORMAT1, ALIL["Red"]),
             [NORMAL_DIFF] = {
+                -- Epic
+                { 1, 101799 }, -- Bold Queen's Garnet
+                { 2, 101797 }, -- Brilliant Queen's Garnet
+                { 3, 101795 }, -- Delicate Queen's Garnet
+                { 4, 101798 }, -- Flashing Queen's Garnet
+                { 5, 101796 }, -- Precise Queen's Garnet
                 -- Rare
-                { 1, 73335 }, -- Bold Inferno Ruby
-                { 2, 73338 }, -- Brilliant Inferno Ruby
-                { 3, 73336 }, -- Delicate Inferno Ruby
-                { 4, 73337 }, -- Flashing Inferno Ruby
-                { 5, 73339 }, -- Precise Inferno Ruby
+                { 7, 73335 }, -- Bold Inferno Ruby
+                { 8, 73338 }, -- Brilliant Inferno Ruby
+                { 9, 73336 }, -- Delicate Inferno Ruby
+                { 10, 73337 }, -- Flashing Inferno Ruby
+                { 11, 73339 }, -- Precise Inferno Ruby
                 -- Uncommon
                 { 16, 73222 }, -- Bold Carnelian
                 { 17, 73225 }, -- Brilliant Carnelian
                 { 18, 73223 }, -- Delicate Carnelian
                 { 19, 73224 }, -- Flashing Carnelian
                 { 20, 73226 }, -- Precise Carnelian
-                -- Epic (move to top after P4)
-                { 7, 101799 }, -- Bold Queen's Garnet
-                { 8, 101797 }, -- Brilliant Queen's Garnet
-                { 9, 101795 }, -- Delicate Queen's Garnet
-                { 10, 101798 }, -- Flashing Queen's Garnet
-                { 11, 101796 }, -- Precise Queen's Garnet
                 -- Perfect Uncommon
                 { 22, "i52176" }, -- Perfect Bold Carnelian
                 { 23, "i52173" }, -- Perfect Brilliant Carnelian
@@ -1181,18 +1181,18 @@ data["JewelcraftingCata"] = {
         {
             name = format(GEM_FORMAT1, ALIL["Yellow"]),
             [NORMAL_DIFF] = {
+                -- Epic
+                { 1, 101803 }, -- Fractured Lightstone
+                { 2, 101804 },	-- Mystic Lightstone
+                { 3, 101802 },	-- Quick Lightstone
+                { 4, 101800 },	-- Smooth Lightstone
+                { 5, 101801 },	-- Subtle Lightstone
                 -- Rare
-                { 1, 73349 }, -- Fractured Amberjewel
-                { 2, 73347 }, -- Mystic Amberjewel
-                { 3, 73348 }, -- Quick Amberjewel
-                { 4, 73346 }, -- Smooth Amberjewel
-                { 5, 73345 }, -- Subtle Amberjewel
-                -- Epic (move to top after P2)
-                { 7, 101803 }, -- Fractured Lightstone
-                { 8, 101804 },	-- Mystic Lightstone
-                { 9, 101802 },	-- Quick Lightstone
-                { 10, 101800 },	-- Smooth Lightstone
-                { 11, 101801 },	-- Subtle Lightstone
+                { 7, 73349 }, -- Fractured Amberjewel
+                { 8, 73347 }, -- Mystic Amberjewel
+                { 9, 73348 }, -- Quick Amberjewel
+                { 10, 73346 }, -- Smooth Amberjewel
+                { 11, 73345 }, -- Subtle Amberjewel
                 -- Uncommon
                 { 16, 73239 }, -- Fractured Alicite
                 { 17, 73233}, -- Mystic Alicite
@@ -1210,16 +1210,16 @@ data["JewelcraftingCata"] = {
         {
             name = format(GEM_FORMAT1, ALIL["Blue"]),
             [NORMAL_DIFF] = {
+                -- Epic
+                { 1, 101735 }, -- Rigid Deepholm Iolite
+                { 2, 101742 }, -- Solid Deepholm Iolite
+                { 3, 101741 }, -- Sparkling Deepholm Iolite
+                { 4, 101740 }, -- Stormy Deepholm Iolite
                 -- Rare
-                { 1, 73344 }, -- Rigid Ocean Sapphire
-                { 2, 73340 }, -- Solid Ocean Sapphire
-                { 3, 73341 }, -- Sparkling Ocean Sapphire
-                { 4, 73343 }, -- Stormy Ocean Sapphire
-                -- Epic (move to top after P2)
-                { 6, 101735 }, -- Rigid Deepholm Iolite
-                { 7, 101742 }, -- Solid Deepholm Iolite
-                { 8, 101741 }, -- Sparkling Deepholm Iolite
-                { 9, 101740 }, -- Stormy Deepholm Iolite
+                { 6, 73344 }, -- Rigid Ocean Sapphire
+                { 7, 73340 }, -- Solid Ocean Sapphire
+                { 8, 73341 }, -- Sparkling Ocean Sapphire
+                { 9, 73343 }, -- Stormy Ocean Sapphire
                 -- Uncommon
                 { 16, 73230 }, -- Rigid Zephyrite
                 { 17, 73227 }, -- Solid Zephyrite
@@ -1235,149 +1235,162 @@ data["JewelcraftingCata"] = {
         {
             name = format(GEM_FORMAT1, ALIL["Orange"]),
             [NORMAL_DIFF] = {
+                -- Epic
+                { 1, 101773 }, -- Adept Lava Coral
+                { 2, 101775 }, -- Artful Lava Coral
+                { 3, 101761 }, -- Deadly Lava Coral
+                { 4, 101769 }, -- Deft Lava Coral
+                { 5, 101772 }, -- Fierce Lava Coral
+                { 6, 101776 }, -- Fine Lava Coral
+                { 7, 101764 }, -- Inscribed Lava Coral
+                { 8, 101774 }, -- Keen Lava Coral
+                { 9, 101765 }, -- Polished Lava Coral
+                { 10, 101763 }, -- Potent Lava Coral
+                { 11, 101771 }, -- Reckless Lava Coral
+                { 16, 101777 }, -- Skillful Lava Coral
+                { 17, 101766 }, -- Resolute Lava Coral
+                { 18, 101782 }, -- Resplendent Lava Coral!
+                { 19, 101780 }, -- Willful Lava Coral
+                { 20, 101778 }, -- Lucent Lava Coral
+                { 21, 101768 }, -- Champion's Lava Coral
+                { 22, 101762 }, -- Crafty Lava Coral
+                { 23, 101781 }, -- Splendid Lava Coral
+                { 24, 101767 }, -- Stalwart Lava Coral
+                { 25, 101779 }, -- Tenuous Lava Coral
+                { 26, 101770 }, -- Wicked Lava Coral
                 -- Rare
-                { 1, 73371 }, -- Adept Ember Topaz
-                { 2, 73373 }, -- Artful Ember Topaz
-                { 3, 73365 }, -- Deadly Ember Topaz
-                { 4, 73368 }, -- Deft Ember Topaz
-                { 5, 73367 }, -- Fierce Ember Topaz
-                { 6, 73372 }, -- Fine Ember Topaz
-                { 7, 73364 }, -- Inscribed Ember Topaz
-                { 8, 73374 }, -- Keen Ember Topaz
-                { 16, 73361 }, -- Polished Ember Topaz
-                { 17, 73366 }, -- Potent Ember Topaz
-                { 18, 73369 }, -- Reckless Ember Topaz
-                { 19, 73370 }, -- Skillful Ember Topaz
-                { 20, 73362 }, -- Resolute Ember Topaz
-                { 21, 95756 }, -- Resplendent Ember Topaz
-                { 22, 95754 }, -- Willful Ember Topaz
-                { 23, 95755 }, -- Lucent Ember Topaz
+                { 101, 73371 }, -- Adept Ember Topaz
+                { 102, 73373 }, -- Artful Ember Topaz
+                { 103, 73365 }, -- Deadly Ember Topaz
+                { 104, 73368 }, -- Deft Ember Topaz
+                { 105, 73367 }, -- Fierce Ember Topaz
+                { 106, 73372 }, -- Fine Ember Topaz
+                { 107, 73364 }, -- Inscribed Ember Topaz
+                { 108, 73374 }, -- Keen Ember Topaz
+                { 116, 73361 }, -- Polished Ember Topaz
+                { 117, 73366 }, -- Potent Ember Topaz
+                { 118, 73369 }, -- Reckless Ember Topaz
+                { 119, 73370 }, -- Skillful Ember Topaz
+                { 120, 73362 }, -- Resolute Ember Topaz
+                { 121, 95756 }, -- Resplendent Ember Topaz
+                { 122, 95754 }, -- Willful Ember Topaz
+                { 123, 95755 }, -- Lucent Ember Topaz
                 -- Uncommon
-                { 101, 73268 },	-- Adept Hessonite
-                { 102, 73270 },	-- Artful Hessonite
-                { 103, 73262 },	-- Deadly Hessonite
-                { 104, 73265 },	-- Deft Hessonite
-                { 105, 73264 },	-- Fierce Hessonite
-                { 106, 73269 },	-- Fine Hessonite
-                { 107, 73260 }, -- Inscribed Hessonite
-                { 108, 73271 }, -- Keen Hessonite
-                { 109, 73258 }, -- Polished Hessonite
-                { 110, 73263 }, -- Potent Hessonite
-                { 111, 73266 }, -- Reckless Hessonite
-                { 112, 73259 }, -- Resolute Hessonite
-                { 113, 73267 }, -- Skillful Hessonite
+                { 201, 73268 },	-- Adept Hessonite
+                { 202, 73270 },	-- Artful Hessonite
+                { 203, 73262 },	-- Deadly Hessonite
+                { 204, 73265 },	-- Deft Hessonite
+                { 205, 73264 },	-- Fierce Hessonite
+                { 206, 73269 },	-- Fine Hessonite
+                { 207, 73260 }, -- Inscribed Hessonite
+                { 208, 73271 }, -- Keen Hessonite
+                { 209, 73258 }, -- Polished Hessonite
+                { 210, 73263 }, -- Potent Hessonite
+                { 211, 73266 }, -- Reckless Hessonite
+                { 212, 73259 }, -- Resolute Hessonite
+                { 213, 73267 }, -- Skillful Hessonite
                 -- Perfect Uncommon
-                { 116, "i52142" },	-- Perfect Adept Hessonite
-                { 117, "i52140" },	-- Perfect Artful Hessonite
-                { 118, "i52148" },	-- Perfect Deadly Hessonite
-                { 119, "i52145" },	-- Perfect Deft Hessonite
-                { 120, "i52146" },	-- Perfect Fierce Hessonite
-                { 121, "i52141" },	-- Perfect Fine Hessonite
-                { 122, "i52149" }, -- Perfect Inscribed Hessonite
-                { 123, "i52139" }, -- Perfect Keen Hessonite
-                { 124, "i52151" }, -- Perfect Polished Hessonite
-                { 125, "i52147" }, -- Perfect Potent Hessonite
-                { 126, "i52144" }, -- Perfect Reckless Hessonite
-                { 127, "i52140" }, -- Perfect Resolute Hessonite
-                { 128, "i52143" }, -- Perfect Skillful Hessonite
-                -- Epic (move to top after P2)
-                { 201, 101773 }, -- Adept Lava Coral
-                { 202, 101775 }, -- Artful Lava Coral
-                { 203, 101761 }, -- Deadly Lava Coral
-                { 204, 101769 }, -- Deft Lava Coral
-                { 205, 101772 }, -- Fierce Lava Coral
-                { 206, 101776 }, -- Fine Lava Coral
-                { 207, 101764 }, -- Inscribed Lava Coral
-                { 208, 101774 }, -- Keen Lava Coral
-                { 209, 101765 }, -- Polished Lava Coral
-                { 210, 101763 }, -- Potent Lava Coral
-                { 211, 101771 }, -- Reckless Lava Coral
-                { 216, 101777 }, -- Skillful Lava Coral
-                { 217, 101766 }, -- Resolute Lava Coral
-                { 218, 101782 }, -- Resplendent Lava Coral!
-                { 219, 101780 }, -- Willful Lava Coral
-                { 220, 101778 }, -- Lucent Lava Coral
-                { 221, 101768 }, -- Champion's Lava Coral
-                { 222, 101762 }, -- Crafty Lava Coral
-                { 223, 101781 }, -- Splendid Lava Coral
-                { 224, 101767 }, -- Stalwart Lava Coral
-                { 225, 101779 }, -- Tenuous Lava Coral
-                { 226, 101770 }, -- Wicked Lava Coral
+                { 216, "i52142" },	-- Perfect Adept Hessonite
+                { 217, "i52140" },	-- Perfect Artful Hessonite
+                { 218, "i52148" },	-- Perfect Deadly Hessonite
+                { 219, "i52145" },	-- Perfect Deft Hessonite
+                { 220, "i52146" },	-- Perfect Fierce Hessonite
+                { 221, "i52141" },	-- Perfect Fine Hessonite
+                { 222, "i52149" }, -- Perfect Inscribed Hessonite
+                { 223, "i52139" }, -- Perfect Keen Hessonite
+                { 224, "i52151" }, -- Perfect Polished Hessonite
+                { 225, "i52147" }, -- Perfect Potent Hessonite
+                { 226, "i52144" }, -- Perfect Reckless Hessonite
+                { 227, "i52140" }, -- Perfect Resolute Hessonite
+                { 228, "i52143" }, -- Perfect Skillful Hessonite
             }
         },
         {
             name = format(GEM_FORMAT1, ALIL["Green"]),
             [NORMAL_DIFF] = {
-                -- Rare
-                { 1, 73380 },	-- Forceful Dream Emerald
-                { 2, 73377 },	-- Jagged Dream Emerald
-                { 3, 73381 },	-- Lightning Dream Emerald
-                { 4, 73376 },	-- Nimble Dream Emerald
-                { 5, 73378 },	-- Piercing Dream Emerald
-                { 6, 73382 },	-- Puissant Dream Emerald
-                { 16, 73375 },	-- Regal Dream Emerald
-                { 17, 73384 },	-- Sensei's Dream Emerald
-                { 18, 73379 },	-- Steady Dream Emerald
-                { 19, 73383 },	-- Zen Dream Emerald
-                { 20, 96226 },	-- Vivid Dream Emerald
-                -- Uncommon
-                { 101, 73277 },	-- Forceful Jasper
-                { 102, 73274 },	-- Jagged Jasper
-                { 103, 73278 },	-- Lightning Jasper
-                { 104, 73273 },	-- Nimble Jasper
-                { 105, 73275 },	-- Piercing Jasper
-                { 106, 73279 },	-- Puissant Jasper
-                { 107, 73272 },	-- Regal Jasper
-                { 108, 73281 },	-- Sensei's Jasper
-                { 109, 73276 },	-- Steady Jasper
-                { 110, 73280 },	-- Zen Jasper
-                -- Perfect Uncommon
-                { 116, "i52133" },	-- Perfect Forceful Jasper
-                { 117, "i52136" },	-- Perfect Jagged Jasper
-                { 118, "i52132" },	-- Perfect Lightning Jasper
-                { 119, "i52137" },	-- Perfect Nimble Jasper
-                { 120, "i52135" },	-- Perfect Piercing Jasper
-                { 121, "i52131" },	-- Perfect Puissant Jasper
-                { 122, "i52138" },	-- Perfect Regal Jasper
-                { 123, "i52129" },	-- Perfect Sensei's Jasper
-                { 124, "i52134" },	-- Perfect Steady Jasper
-                { 125, "i52130" },	-- Perfect Zen Jasper
                 -- Epic (move to top after P2)
-                { 201, 101757 }, -- Forceful Elven Peridot
-                { 202, 101755 }, -- Jagged Elven Peridot
-                { 203, 101745 }, -- Lightning Elven Peridot
-                { 204, 101758 }, -- Nimble Elven Peridot
-                { 205, 101744 }, -- Piercing Elven Peridot
-                { 206, 101759 }, -- Puissant Elven Peridot
-                { 207, 101756 }, -- Regal Elven Peridot
-                { 208, 101746 }, -- Sensei's Elven Peridot
-                { 209, 101760 }, -- Steady Elven Peridot
-                { 216, 101748 }, -- Zen Elven Peridot
-                { 217, 101750 }, -- Vivid Elven Peridot
-                { 218, 101749 }, -- Balanced Elven Peridot
-                { 219, 101754 }, -- Energized Elven Peridot
-                { 220, 101747 }, -- Infused Elven Peridot
-                { 221, 101743 }, -- Misty Elven Peridot
-                { 222, 101752 }, -- Radiant Elven Peridot
-                { 223, 101753 }, -- Shattered Elven Peridot
-                { 224, 101751 }, -- Turbid Elven Peridot
+                { 1, 101757 }, -- Forceful Elven Peridot
+                { 2, 101755 }, -- Jagged Elven Peridot
+                { 3, 101745 }, -- Lightning Elven Peridot
+                { 4, 101758 }, -- Nimble Elven Peridot
+                { 5, 101744 }, -- Piercing Elven Peridot
+                { 6, 101759 }, -- Puissant Elven Peridot
+                { 7, 101756 }, -- Regal Elven Peridot
+                { 8, 101746 }, -- Sensei's Elven Peridot
+                { 9, 101760 }, -- Steady Elven Peridot
+                { 16, 101748 }, -- Zen Elven Peridot
+                { 17, 101750 }, -- Vivid Elven Peridot
+                { 18, 101749 }, -- Balanced Elven Peridot
+                { 19, 101754 }, -- Energized Elven Peridot
+                { 20, 101747 }, -- Infused Elven Peridot
+                { 21, 101743 }, -- Misty Elven Peridot
+                { 22, 101752 }, -- Radiant Elven Peridot
+                { 23, 101753 }, -- Shattered Elven Peridot
+                { 24, 101751 }, -- Turbid Elven Peridot
+                -- Rare
+                { 101, 73380 },	-- Forceful Dream Emerald
+                { 102, 73377 },	-- Jagged Dream Emerald
+                { 103, 73381 },	-- Lightning Dream Emerald
+                { 104, 73376 },	-- Nimble Dream Emerald
+                { 105, 73378 },	-- Piercing Dream Emerald
+                { 106, 73382 },	-- Puissant Dream Emerald
+                { 116, 73375 },	-- Regal Dream Emerald
+                { 117, 73384 },	-- Sensei's Dream Emerald
+                { 118, 73379 },	-- Steady Dream Emerald
+                { 119, 73383 },	-- Zen Dream Emerald
+                { 120, 96226 },	-- Vivid Dream Emerald
+                -- Uncommon
+                { 201, 73277 },	-- Forceful Jasper
+                { 202, 73274 },	-- Jagged Jasper
+                { 203, 73278 },	-- Lightning Jasper
+                { 204, 73273 },	-- Nimble Jasper
+                { 205, 73275 },	-- Piercing Jasper
+                { 206, 73279 },	-- Puissant Jasper
+                { 207, 73272 },	-- Regal Jasper
+                { 208, 73281 },	-- Sensei's Jasper
+                { 209, 73276 },	-- Steady Jasper
+                { 210, 73280 },	-- Zen Jasper
+                -- Perfect Uncommon
+                { 216, "i52133" },	-- Perfect Forceful Jasper
+                { 217, "i52136" },	-- Perfect Jagged Jasper
+                { 218, "i52132" },	-- Perfect Lightning Jasper
+                { 219, "i52137" },	-- Perfect Nimble Jasper
+                { 220, "i52135" },	-- Perfect Piercing Jasper
+                { 221, "i52131" },	-- Perfect Puissant Jasper
+                { 222, "i52138" },	-- Perfect Regal Jasper
+                { 223, "i52129" },	-- Perfect Sensei's Jasper
+                { 224, "i52134" },	-- Perfect Steady Jasper
+                { 225, "i52130" },	-- Perfect Zen Jasper
             }
         },
         {
             name = format(GEM_FORMAT1, ALIL["Purple"]),
             [NORMAL_DIFF] = {
+                -- Epic
+                { 1, 101784 }, -- Accurate Shadow Spinel
+                { 2, 101793 }, -- Defender's Shadow Spinel
+                { 3, 101787 }, -- Etched Shadow Spinel
+                { 4, 101783 }, -- Glinting Shadow Spinel
+                { 5, 101791 }, -- Guardian's Shadow Spinel
+                { 6, 101789 }, -- Purified Shadow Spinel
+                { 7, 101786 }, -- Retaliating Shadow Spinel
+                { 8, 101790 }, -- Shifting Shadow Spinel
+                { 9, 101794 }, -- Sovereign Shadow Spinel
+                { 10, 101792 }, -- Timeless Shadow Spinel
+                { 11, 101785 }, -- Veiled Shadow Spinel
+                { 12, 101788 }, -- Mysterious Shadow Spinel
                 -- Rare
-                { 1, 73360 }, -- Accurate Demonseye
-                { 2, 73352 }, -- Defender's Demonseye
-                { 3, 73356 }, -- Etched Demonseye
-                { 4, 73357 }, -- Glinting Demonseye
-                { 5, 73354 }, -- Guardian's Demonseye
-                { 6, 73355 }, -- Purified Demonseye
-                { 16, 73358 }, -- Retaliating Demonseye
-                { 17, 73351 }, -- Shifting Demonseye
-                { 18, 73350 }, -- Souvereign Demonseye
-                { 19, 73353 }, -- Timeless Demonseye
-                { 20, 73359 }, -- Veiled Demonseye
+                { 16, 73360 }, -- Accurate Demonseye
+                { 17, 73352 }, -- Defender's Demonseye
+                { 18, 73356 }, -- Etched Demonseye
+                { 19, 73357 }, -- Glinting Demonseye
+                { 20, 73354 }, -- Guardian's Demonseye
+                { 21, 73355 }, -- Purified Demonseye
+                { 22, 73358 }, -- Retaliating Demonseye
+                { 23, 73351 }, -- Shifting Demonseye
+                { 24, 73350 }, -- Souvereign Demonseye
+                { 25, 73353 }, -- Timeless Demonseye
+                { 26, 73359 }, -- Veiled Demonseye
                 -- Uncommon
                 { 101, 73250 }, -- Accurate Nightstone
                 { 102, 73242 }, -- Defender's Nightstone
@@ -1402,19 +1415,6 @@ data["JewelcraftingCata"] = {
                 { 124, "i52162" }, -- Perfect Souvereign Nightstone
                 { 125, "i52159" }, -- Perfect Timeless Nightstone
                 { 126, "i52153" }, -- Perfect Veiled Nightstone
-                -- Epic (move to top after P2)
-                { 201, 101784 }, -- Accurate Shadow Spinel
-                { 202, 101793 }, -- Defender's Shadow Spinel
-                { 203, 101787 }, -- Etched Shadow Spinel
-                { 204, 101783 }, -- Glinting Shadow Spinel
-                { 205, 101791 }, -- Guardian's Shadow Spinel
-                { 206, 101789 }, -- Purified Shadow Spinel
-                { 216, 101786 }, -- Retaliating Shadow Spinel
-                { 217, 101790 }, -- Shifting Shadow Spinel
-                { 218, 101794 }, -- Sovereign Shadow Spinel
-                { 219, 101792 }, -- Timeless Shadow Spinel
-                { 220, 101785 }, -- Veiled Shadow Spinel
-                { 221, 101788 }, -- Mysterious Shadow Spinel
             }
         },
         {
