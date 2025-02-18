@@ -18,8 +18,6 @@ local data = AtlasLoot.ItemDB:Add(addonname, 4, AtlasLoot.CATA_VERSION_NUM)
 
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
-
-local RAIDFINDER_DIFF = data:AddDifficulty("Raid Finder", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 local INFERNO_DIFF = data:AddDifficulty(AL["Elemental Rune Inferno"], "ERI", nil, nil, true)
@@ -157,7 +155,7 @@ local T13_SET = {
     TableType = SET_ITTYPE,
     ContentPhaseCata = 4,
     IgnoreAsSource = true,
-    [RAIDFINDER_DIFF] = {
+    [TWILIGHT_DIFF] = {
         {1, 40001072 }, -- Warlock
         {3, 40001066 }, -- Priest Holy
         {4, 40001067 }, -- Priest Shadow
@@ -4043,6 +4041,7 @@ data["DragonSoul"] = {
         DisplayIDs = {{39094}},
         ContentPhaseCata = 4,
         NameColor = PURPLE,
+        --[[
         [RAIDFINDER_DIFF] = {
             { 1, 78381 },	-- Mosswrought Shoulderguards
             { 2, 78380 },	-- Robe of Glowing Stone
@@ -4055,6 +4054,7 @@ data["DragonSoul"] = {
             { 9, 78386 },	-- Pillarfoot Greaves
             { 16, 78382 },	-- Petrified Fungal Heart
         },
+        --]]
         [NORMAL_DIFF] = {
             { 1, 77267 },	-- Mosswrought Shoulderguards
             { 2, 77263 },	-- Robe of Glowing Stone
@@ -4094,6 +4094,7 @@ data["DragonSoul"] = {
     DisplayIDs = {{39138}},
     ContentPhaseCata = 4,
     NameColor = PURPLE,
+    --[[
     [RAIDFINDER_DIFF] = {
         { 1, 78398 },	-- Cord of the Slain Champion
         { 2, 78395 },	-- Belt of Flayed Skin
@@ -4106,6 +4107,7 @@ data["DragonSoul"] = {
         { 18, 78865 },	-- Gauntlets of the Corrupted Vanquisher
         { 20, 78399 },	-- Finger of Zon'ozz
     },
+    --]]
     [NORMAL_DIFF] = {
         { 1, 77255 },	-- Cord of the Slain Champion
         { 2, 77260 },	-- Belt of Flayed Skin
@@ -4141,6 +4143,7 @@ name = AL["Yor'sahj the Unsleeping"],
 DisplayIDs = {{39101}},
 ContentPhaseCata = 4,
 NameColor = PURPLE,
+--[[
 [RAIDFINDER_DIFF] = {
     { 1, 78408 },	-- Interrogator's Bloody Footpads
     { 2, 78411 },	-- Mindstrainer Treads
@@ -4151,6 +4154,7 @@ NameColor = PURPLE,
     { 17, 78873 },	-- Leggings of the Corrupted Protector
     { 18, 78871 },	-- Leggings of the Corrupted Vanquisher
 },
+--]]
 [NORMAL_DIFF] = {
     { 1, 77254 },	-- Interrogator's Bloody Footpads
     { 2, 77252 },	-- Mindstrainer Treads
@@ -4186,6 +4190,7 @@ name = AL["Hagara the Stormbinder"],
 DisplayIDs = {{39318}},
 ContentPhaseCata = 4,
 NameColor = PURPLE,
+--[[
 [RAIDFINDER_DIFF] = {
     { 1, 78425 },	-- Bracers of the Banished
     { 2, 78428 },	-- Girdle of the Grotesque
@@ -4198,6 +4203,7 @@ NameColor = PURPLE,
     { 18, 78874 },	-- Shoulders of the Corrupted Vanquisher
     { 20, 78422 },	-- Electrowing Dagger
 },
+--]]
 [NORMAL_DIFF] = {
     { 1, 77249 },	-- Bracers of the Banished
     { 2, 77248 },	-- Girdle of the Grotesque
@@ -4233,6 +4239,7 @@ name = AL["Ultraxion"],
 DisplayIDs = {{39099}},
 ContentPhaseCata = 4,
 NameColor = RED,
+--[[
 [RAIDFINDER_DIFF] = {
     { 1, 78442 },	-- Treads of Sordid Screams
     { 2, 78443 },	-- Imperfect Specimens 27 and 28
@@ -4246,6 +4253,7 @@ NameColor = RED,
     { 17, 78864 },	-- Chest of the Corrupted Protector
     { 18, 78862 },	-- Chest of the Corrupted Vanquisher
 },
+--]]
 [NORMAL_DIFF] = {
     { 1, 77243 },	-- Treads of Sordid Screams
     { 2, 77242 },	-- Imperfect Specimens 27 and 28
@@ -4285,6 +4293,7 @@ name = AL["Warmaster Blackhorn"],
 DisplayIDs = {{39399}},
 ContentPhaseCata = 4,
 NameColor = RED,
+--[[
 [RAIDFINDER_DIFF] = {
     { 1, 78457 },	-- Janglespur Jackboots
     { 2, 78454 },	-- Shadow Wing Armbands
@@ -4297,6 +4306,7 @@ NameColor = RED,
     { 20, 78456 },	-- Blackhorn's Mighty Bulwark
     { 21, 78458 },	-- Timepiece of the Bronze Flight
 },
+--]]
 [NORMAL_DIFF] = {
     { 1, 77234 },	-- Janglespur Jackboots
     { 2, 77240 },	-- Shadow Wing Armbands
@@ -4334,6 +4344,7 @@ name = AL["Spine of Deathwing"],
 DisplayIDs = {{35268}},
 ContentPhaseCata = 4,
 NameColor = RED,
+--[[
 [RAIDFINDER_DIFF] = {
     { 1, 78466 },	-- Gloves of Liquid Smoke
     { 2, 78467 },	-- Molten Blood Footpads
@@ -4346,6 +4357,7 @@ NameColor = RED,
     { 19, 77974 },	-- Wrath of Unchaining
     { 20, 77978 },	-- Resolve of Undying
 },
+--]]
 [NORMAL_DIFF] = {
     { 1, 78357 },	-- Gloves of Liquid Smoke
     { 2, 77238 },	-- Molten Blood Footpads
@@ -4379,6 +4391,7 @@ name = AL["Madness of Deathwing"],
 DisplayIDs = {{40087}},
 ContentPhaseCata = 4,
 NameColor = RED,
+--[[
 [RAIDFINDER_DIFF] = {
     { 1, 78484 },	-- Rathrak, the Poisonous Mind
     { 2, 78483 },	-- Blade of the Unmaker
@@ -4390,6 +4403,7 @@ NameColor = RED,
     { 17, 78486 },	-- Ti'tahk, the Steps of Time
     { 18, 78480 },	-- Vishanka, Jaws of the Earth
 },
+--]]
 [NORMAL_DIFF] = {
     { 1, 77195 },	-- Rathrak, the Poisonous Mind
     { 2, 77189 },	-- Blade of the Unmaker
@@ -4505,18 +4519,6 @@ ExtraList = true,
     { 19, 72014 },	-- Plans: Soul Redeemer Bracers
     { 20, 72016 },	-- Plans: Titanguard Wristplates
     { 21, 72012 },	-- Plans: Unstoppable Destroyer's Legplates
-},
-},
-{ -- Legendary
-name = AL["Legendary"],
-ExtraList = true,
-TableType = SET_ITTYPE,
-[NORMAL_DIFF] = {
-    { 1, 1089 }, -- Jaws of Retribution / 397
-    { 2, 1088 }, -- Maw of Oblivion / 406
-    { 3, 1087 }, -- Fangs of the Father / 416
-    { 16, "ac6181" },
-    { 17, "ac6182" },
 },
 },
 T13_SET,
