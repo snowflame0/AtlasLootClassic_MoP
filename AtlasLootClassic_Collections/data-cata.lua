@@ -893,12 +893,12 @@ data["ObsidianFragments"] = {
     {
         name = AL["Token"],
         [VENDOR_DIFF] = {
-            { 1, 63683 }, -- Helm of the Fiery Conqueror
-            { 2, 63684 }, -- Helm of the Fiery Protector
+            { 1, 71675 }, -- Helm of the Fiery Conqueror
+            { 2, 71682 }, -- Helm of the Fiery Protector
             { 3, 71688 }, -- Helm of the Fiery Vanquisher
             { 5, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
-            { 16, 64315 }, -- Mantle of the Fiery Conqueror
-            { 17, 64316 }, -- Mantle of the Fiery Protector
+            { 16, 71681 }, -- Mantle of the Fiery Conqueror
+            { 17, 71688 }, -- Mantle of the Fiery Protector
             { 18, 71674 }, -- Mantle of the Fiery Vanquisher
         }
     },
