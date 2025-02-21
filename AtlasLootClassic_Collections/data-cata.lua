@@ -665,18 +665,43 @@ data["ObsidianFragments"] = {
     {
         name = ALIL["Weapon"],
         [VENDOR_DIFF] = {
-            { 1, 78484 }, -- Rathrak the Poisonous Mind
-            { 2, 78483 }, -- Blade of the Unmaker
-            { 3, 78488 }, -- Souldrinker
-            { 4, 78487 }, -- Gurthalak
-            { 5, 78481 }, -- No'kaled
-            { 6, 78485 }, -- Maw of the Dragonlord
-            { 8, 78422 }, -- Electrowing Dagger
-            { 10, 78374 }, -- Razor Saronite Chip
-            { 12, 78399 }, -- Finger of Zon'ozz
-            { 16, 78482 }, -- Kiril
-            { 17, 78486 }, -- Ti'tahk
-            { 18, 78480 }, -- Vishanka
+            {1,70733},-- Alysra's Razor
+            {2,78483},-- Blade of the Unmaker
+            {3,78422},-- Electrowing Dagger
+            {4,71779},-- Avool's Incendiary Shanker
+            {5,71787},-- Entrail Disgorger
+            {6,71013},-- Feeding Frenzy
+            {7,78484},-- Rathrak the Poisonous Mind
+
+            {9,78488},-- Souldrinker
+            {10,78481},-- No'kaled
+            {11,78485},-- Maw of the Dragonlord
+            {12,71776},-- Eye of Purification
+            {13,71785},-- Firethorn Mindslicer
+            {14,71312},-- Gatecrasher
+            {15,71355},-- Ko'gun
+            {16,70922},-- Mandible of Beth'tilac
+            {17,71782},-- Shatterskull Bonecrusher
+
+            {19,78486}, -- Ti'tahk
+            {20,69897},-- Fandral's Flamescythe
+            {21,71039},-- Funeral Pyre
+            {22,71798},-- Sho'ravon
+            {23,71775},-- Smoldering Censer of Purity
+
+            {25,71353},-- Arathar, the Eye of Flame
+            {26,78480}, -- Vishanka
+            {27,70991},-- Arbalest of Erupting Fury
+            {28,78374},-- Razor Saronite Chip
+            {29,78399},-- Finger of Zon'ozz
+            {30,71347},-- Stinger of the Flaming Scorpion
+
+            {101,78487}, -- Gurthalak
+            {102,71352},-- Sulfuras
+            {103,71780},-- Zoid's Firelit Greatsword
+            {104,71014},-- Skullstealer Greataxe
+
+            {106,78482}, -- Kiril
         }
     },
     {
@@ -1721,4 +1746,3 @@ data["WinterVeilCata"] = {
         },
     },
 }
-

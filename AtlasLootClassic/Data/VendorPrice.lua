@@ -2528,6 +2528,40 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [69878] = "FissureStoneFragment:12",
         [65372] = "FissureStoneFragment:12",
         [69882] = "FissureStoneFragment:12",
+        -- Protocol Twilight Currency
+        --- Weapons
+        [70733] = "ObsidianFragment:30", -- Alysra's Razor
+        [71353] = "ObsidianFragment:70", -- Arathar, the Eye of Flame
+        [70991] = "ObsidianFragment:45", -- Arbalest of Erupting Fury
+        [78484] = "ObsidianFragment:75", -- Rathrak the Poisonous Mind
+        [78483] = "ObsidianFragment:70", -- Blade of the Unmaker
+        [78488] = "ObsidianFragment:70", -- Souldrinker
+        [78487] = "ObsidianFragment:100", -- Gurthalak
+        [78481] = "ObsidianFragment:70", -- No'kaled
+        [78485] = "ObsidianFragment:75", -- Maw of the Dragonlord
+        [78422] = "ObsidianFragment:45", -- Electrowing Dagger
+        [78374] = "ObsidianFragment:25", -- Razor Saronite Chip
+        [78399] = "ObsidianFragment:70", -- Finger of Zon'ozz
+        [78482] = "ObsidianFragment:100", -- Kiril
+        [78486] = "ObsidianFragment:100", -- Ti'tahk
+        [78480] = "ObsidianFragment:100", -- Vishanka
+        [71779] = "ObsidianFragment:30", -- Avool's Incendiary Shanker
+        [71787] = "ObsidianFragment:30", -- Entrail Disgorger
+        [71776] = "ObsidianFragment:35", -- Eye of Purification
+        [69897] = "ObsidianFragment:45", -- Fandral's Flamescythe
+        [71013] = "ObsidianFragment:30", -- Feeding Frenzy
+        [71785] = "ObsidianFragment:35", -- Firethorn Mindslicer
+        [71039] = "ObsidianFragment:45", -- Funeral Pyre
+        [71312] = "ObsidianFragment:30", -- Gatecrasher
+        [71355] = "ObsidianFragment:50", -- Ko'gun
+        [70922] = "ObsidianFragment:30", -- Mandible of Beth'tilac
+        [71782] = "ObsidianFragment:30", -- Shatterskull Bonecrusher
+        [71798] = "ObsidianFragment:70", -- Sho'ravon
+        [71014] = "ObsidianFragment:45", -- Skullstealer Greataxe
+        [71775] = "ObsidianFragment:45", -- Smoldering Censer of Purity
+        [71352] = "ObsidianFragment:70", -- Sulfuras
+        [71780] = "ObsidianFragment:45", -- Zoid's Firelit Greatsword
+        [71347] = "ObsidianFragment:45", -- Stinger of the Flaming Scorpion
     }
 end
 
