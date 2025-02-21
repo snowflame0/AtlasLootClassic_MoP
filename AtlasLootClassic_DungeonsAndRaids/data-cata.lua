@@ -4031,7 +4031,7 @@ name = AL["Mannoroth and Varo'then"],
         { 27, "ac6118" },
         { 28, "ac6070" },
     },
-    
+
 },
 { -- Trash
 name = AL["Trash Mobs"],
