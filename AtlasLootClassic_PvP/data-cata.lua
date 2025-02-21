@@ -39,7 +39,10 @@ local SET2_DIFF = data:AddDifficulty(format(AL["Vicious %s"], ""), "set2", nil, 
 local SET3_DIFF = data:AddDifficulty(format(AL["Vicious (Elite) %s"], ""), "set3", nil, 1)
 local SET4_DIFF = data:AddDifficulty(format(AL["Ruthless %s"], ""), "set4", nil, 1)
 local SET5_DIFF = data:AddDifficulty(format(AL["Ruthless (Elite) %s"], ""), "set5", nil, 1)
-local SET6_DIFF = data:AddDifficulty(format(AL["Vicious %s"], ""), "set2", nil, 1)
+local SET6_DIFF = data:AddDifficulty(format(AL["Vicious %s"], ""), "set6", nil, 1) -- Upgraded honor set
+local SET7_DIFF = data:AddDifficulty(format(AL["Cataclysmic %s"], ""), "set7", nil, 1)
+local SET8_DIFF = data:AddDifficulty(format(AL["Cataclysmic (Elite) %s"], ""), "set8", nil, 1)
+local SET9_DIFF = data:AddDifficulty(format(AL["Ruthless %s"], ""), "set9", nil, 1) -- Upgraded honor set 390
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
@@ -877,7 +880,7 @@ data["ArenaS10PvP"] = {
         }
     }}
 }
---[[ Later...
+
 data["ArenaS11PvP"] = {
 name = format(AL["Season %s"], "11"),
 ContentType = ARENA_CONTENT,
@@ -886,71 +889,119 @@ TableType = NORMAL_ITTYPE,
 items = {{
 name = AL["Sets"],
 TableType = SET_ITTYPE,
-[NORMAL_DIFF] = {
+[SET7_DIFF] = {
 }
 }, {
 name = AL["Weapons"] .. " - " .. AL["One-Handed"],
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = AL["Weapons"] .. " - " .. AL["One-Handed"] .. " - R2",
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = AL["Weapons"] .. " - " .. AL["Two-Handed"],
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = AL["Weapons"] .. " - " .. AL["Two-Handed"] .. " - R2",
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = AL["Weapons"] .. " - " .. AL["Ranged"],
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = AL["Weapons"] .. " - " .. AL["Ranged"] .. " - R2",
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = AL["Weapons"] .. " - " .. ALIL["Off Hand"],
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = AL["Weapons"] .. " - " .. ALIL["Shields"],
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = ALIL["Cloak"],
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = ALIL["Relic"],
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = ALIL["Neck"],
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = ALIL["Finger"],
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = format(AL["Non Set '%s'"], ALIL["Cloth"]),
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = format(AL["Non Set '%s'"], ALIL["Leather"]),
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = format(AL["Non Set '%s'"], ALIL["Mail"]),
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = format(AL["Non Set '%s'"], ALIL["Plate"]),
-[NORMAL_DIFF] = {
+[SET9_DIFF] = {
+
+},
+[SET7_DIFF] = {
 }
 }, {
 name = AL["Gladiator Mount"],
@@ -959,4 +1010,3 @@ ExtraList = true,
 }
 }}
 }
-]]

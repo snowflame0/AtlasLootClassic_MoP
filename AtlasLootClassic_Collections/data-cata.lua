@@ -665,43 +665,43 @@ data["ObsidianFragments"] = {
     {
         name = ALIL["Weapon"],
         [VENDOR_DIFF] = {
-            {1,70733},-- Alysra's Razor
-            {2,78483},-- Blade of the Unmaker
-            {3,78422},-- Electrowing Dagger
-            {4,71779},-- Avool's Incendiary Shanker
-            {5,71787},-- Entrail Disgorger
-            {6,71013},-- Feeding Frenzy
-            {7,78484},-- Rathrak the Poisonous Mind
+            { 1,70733 }, -- Alysra's Razor
+            { 2,78483 }, -- Blade of the Unmaker
+            { 3,78422 }, -- Electrowing Dagger
+            { 4,71779 }, -- Avool's Incendiary Shanker
+            { 5,71787 }, -- Entrail Disgorger
+            { 6,71013 }, -- Feeding Frenzy
+            { 7,78484 }, -- Rathrak the Poisonous Mind
 
-            {9,78488},-- Souldrinker
-            {10,78481},-- No'kaled
-            {11,78485},-- Maw of the Dragonlord
-            {12,71776},-- Eye of Purification
-            {13,71785},-- Firethorn Mindslicer
-            {14,71312},-- Gatecrasher
-            {15,71355},-- Ko'gun
-            {16,70922},-- Mandible of Beth'tilac
-            {17,71782},-- Shatterskull Bonecrusher
+            { 9,78488 }, -- Souldrinker
+            { 10,78481 },-- No'kaled
+            { 11,78485 },-- Maw of the Dragonlord
+            { 12,71776 },-- Eye of Purification
+            { 13,71785 },-- Firethorn Mindslicer
+            { 14,71312 },-- Gatecrasher
+            { 15,71355 },-- Ko'gun
+            { 16,70922 },-- Mandible of Beth'tilac
+            { 17,71782 },-- Shatterskull Bonecrusher
 
-            {19,78486}, -- Ti'tahk
-            {20,69897},-- Fandral's Flamescythe
-            {21,71039},-- Funeral Pyre
-            {22,71798},-- Sho'ravon
-            {23,71775},-- Smoldering Censer of Purity
+            { 19,78486 }, -- Ti'tahk
+            { 20,69897 },-- Fandral's Flamescythe
+            { 21,71039 },-- Funeral Pyre
+            { 22,71798 },-- Sho'ravon
+            { 23,71775 },-- Smoldering Censer of Purity
 
-            {25,71353},-- Arathar, the Eye of Flame
-            {26,78480}, -- Vishanka
-            {27,70991},-- Arbalest of Erupting Fury
-            {28,78374},-- Razor Saronite Chip
-            {29,78399},-- Finger of Zon'ozz
-            {30,71347},-- Stinger of the Flaming Scorpion
+            { 25,71353 },-- Arathar, the Eye of Flame
+            { 26,78480 }, -- Vishanka
+            { 27,70991 },-- Arbalest of Erupting Fury
+            { 28,78374 },-- Razor Saronite Chip
+            { 29,78399 },-- Finger of Zon'ozz
+            { 30,71347 },-- Stinger of the Flaming Scorpion
 
-            {101,78487}, -- Gurthalak
-            {102,71352},-- Sulfuras
-            {103,71780},-- Zoid's Firelit Greatsword
-            {104,71014},-- Skullstealer Greataxe
+            { 101,78487 }, -- Gurthalak
+            { 102,71352 },-- Sulfuras
+            { 103,71780 },-- Zoid's Firelit Greatsword
+            { 104,71014 },-- Skullstealer Greataxe
 
-            {106,78482}, -- Kiril
+            { 106,78482 }, -- Kiril
         }
     },
     {
@@ -734,14 +734,14 @@ data["ObsidianFragments"] = {
     {
         name = ALIL["Trinket"],
         [VENDOR_DIFF] = {
-            {1, 69149 }, -- Eye of Blazing Power
-            {2, 69111}, -- Jaws of Defeat
-            {3, 69109}, -- Scales of Life
-            {4, 69138}, -- Spidersilk Spindle
-            {5, 69112}, -- The Hungerer
-            {6, 69150}, -- Matrix Restabilizer
-            {7, 69110}, -- Variable Pulse Lightning Capacitor
-            {8, 69167}, -- Vessel of Acceleration
+            { 1, 69149 }, -- Eye of Blazing Power
+            { 2, 69111 }, -- Jaws of Defeat
+            { 3, 69109 }, -- Scales of Life
+            { 4, 69138 }, -- Spidersilk Spindle
+            { 5, 69112 }, -- The Hungerer
+            { 6, 69150 }, -- Matrix Restabilizer
+            { 7, 69110 }, -- Variable Pulse Lightning Capacitor
+            { 8, 69167 }, -- Vessel of Acceleration
             { 10, 77977 }, -- Eye of Unmaking
             { 11, 77976 }, -- Heart of Unliving
             { 12, 77975 }, -- Will of Unbinding
@@ -760,12 +760,32 @@ data["ObsidianFragments"] = {
          }
     },
     {
-        name = AL["Token"],
+        name = AL["Token"] .. " - " .. AL["Dragon Soul"],
+        [VENDOR_DIFF] = {
+            -- T13 iLvl384 Tokens
+            { 1, 78869 },
+            { 2, 78870 },
+            { 3, 78868 },
+            { 5, 78875 },
+            { 6, 78876 },
+            { 7, 78874 },
+            { 9, 78863 },
+            { 10, 78864 },
+            { 11, 78862 },
+            { 16, 78866 },
+            { 17, 78867 },
+            { 18, 78865 },
+            { 20, 78872 },
+            { 21, 78873 },
+            { 22, 78871 },
+        }
+    },
+    {
+        name = AL["Token"] .. " - " .. AL["Firelands"],
         [VENDOR_DIFF] = {
             { 1, 71675 }, -- Helm of the Fiery Conqueror
             { 2, 71682 }, -- Helm of the Fiery Protector
             { 3, 71668 }, -- Helm of the Fiery Vanquisher
-            { 5, "INV_Box_01", nil, AL["Tier Token iLvl384"], nil, "Tier13ElementalRuneTokens"},
             { 16, 71681 }, -- Mantle of the Fiery Conqueror
             { 17, 71688 }, -- Mantle of the Fiery Protector
             { 18, 71674 }, -- Mantle of the Fiery Vanquisher
@@ -775,9 +795,9 @@ data["ObsidianFragments"] = {
         name = AL["Misc"],
         [VENDOR_DIFF] = {
             { 1, 71617 }, -- Crystallized Firestone
-            { 3, "c3148", [ATLASLOOT_IT_AMOUNT1] = 1}, -- Fissure Stone Fragment
-            { 16, 234446 }, -- Commendation of Service
-            { 17, "c396", [ATLASLOOT_IT_AMOUNT1] = 10 }, -- Valor Points
+            { 16, "c396", [ATLASLOOT_IT_AMOUNT1] = 10 }, -- Valor Points
+            { 17, 234446 }, -- Commendation of Service
+            { 18, "c3148", [ATLASLOOT_IT_AMOUNT1] = 1}, -- Fissure Stone Fragment
         }
     },
     }

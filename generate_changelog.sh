@@ -25,7 +25,7 @@ url=$( git remote get-url origin | sed -e 's/^git@\(.*\):/https:\/\/\1\//' -e 's
 
 cat "AtlasLootClassic/Documentation/Release_Notes.md" > "CHANGELOG.md"
 
-echo -ne "# [${version}](${url}/tree/${current}) ($date)\n\n[Full Changelog](${url}/compare/${previous}...${current})\n\n" >> "CHANGELOG.md"
+echo -ne "($date)\n\n[Full Changelog](${url}/compare/${previous}...${current})\n\n" >> "CHANGELOG.md"
 
 if [ "$version" = "$tag" ]; then # on a tag
   echo -ne "## Commits\n\n" >> "CHANGELOG.md"
