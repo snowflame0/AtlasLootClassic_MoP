@@ -1111,6 +1111,17 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [71086] = 71141, -- Dragonwrath, Tarecgosa's Rest
         [69848] = 71141, -- Heart of Flame
 
+        --- Fangs of the Father
+        [77951] = { {77951,"333"}, {77952,"60"}, 78352, 0, 77945, 77947, 77949, 0, 77946, 77948, 77950}, -- Shadowy Gem
+        [77952] = 77951, -- Elementium Gem Cluster
+        [78352] = 77951, -- Fragment of Deathwing's Jaw
+        [77945] = 77951, -- Fear
+        [77946] = 77951, -- Vengeance
+        [77947] = 77951, -- The Sleeper
+        [77948] = 77951, -- The Dreamer
+        [77949] = 77951, -- Golad, Twilight of Aspects
+        [77950] = 77951, -- Tiriosh, Nightmare of Ages
+
         --- Items with suffixes from Throne
         [68132] = {"i68132suf-131","i68132suf-129","i68132suf-114","i68132suf-130","i68132suf-138","i68132suf-132",type=2}, -- Intellect Sword H
         [68127] = {"i68127suf-131","i68127suf-129","i68127suf-114","i68127suf-130","i68127suf-138","i68127suf-132",type=2}, -- Intellect Sword N
@@ -1354,7 +1365,6 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [239113] = {"i71428suf-133","i71428suf-135","i71428suf-136","i71428suf-137",type=2}, -- Satchel of the Flickering Wristbands
         [239114] = {"i71458suf-275","i71458suf-276","i71458suf-277",type=2}, -- Satchel of the Flickering Handguards
         --[??] =  {"i71450suf-284","i71450suf-285","i71450suf-286","i71450suf-287",type=2}, -- Satchel of the Flickering Shoulderpads
-        -- Blizz forgot Satchel of the Flickering ShoulderPADS lols
         ["Tier13ElementalRuneTokens"] = {
             78869, 78870, 78868, 0,
             78875, 78876, 78874, 0,

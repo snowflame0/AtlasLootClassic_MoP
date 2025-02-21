@@ -4069,7 +4069,11 @@ data["DragonSoul"] = {
             { 18, 77214 },	-- Vagaries of Time
             { 19, 77212 },	-- Hand of Morchok
             { 20, 77213 },  -- Razor Saronite Chip
-            { 22, "ac6174" },
+            { 22, 77952 }, -- Elementium Gem Cluster
+            { 23, 71998 }, -- Essence of Destruction
+            { 25, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+            { 26, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+            { 28, "ac6174" },
         },
         [HEROIC_DIFF] = {
             { 1, 78366 },	-- Mosswrought Shoulderguards
@@ -4085,8 +4089,12 @@ data["DragonSoul"] = {
             { 18, 78363 },	-- Vagaries of Time
             { 19, 78371 },	-- Hand of Morchok
             { 20, 78369 },  -- Razor Saronite Chip
-            { 22, "ac6109" },
-            { 23, "ac6174" },
+            { 22, 77952 }, -- Elementium Gem Cluster
+            { 23, 71998 }, -- Essence of Destruction
+            { 25, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+            { 26, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+            { 28, "ac6109" },
+            { 29, "ac6174" },
         },
     },
     { -- Warlord Zon'ozz
@@ -4120,7 +4128,11 @@ data["DragonSoul"] = {
         { 18, 78173 },	-- Gauntlets of the Corrupted Vanquisher
         { 20, 77215 },	-- Horrifying Horn Arbalest
         { 21, 77216 },	-- Finger of Zon'ozz
-        { 23, "ac6128" },
+        { 23, 77952 }, -- Elementium Gem Cluster
+        { 24, 71998 }, -- Essence of Destruction
+        { 26, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+        { 27, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+        { 29, "ac6128" },
     },
     [HEROIC_DIFF] = {
         { 1, 78391 },	-- Cord of the Slain Champion
@@ -4134,8 +4146,12 @@ data["DragonSoul"] = {
         { 18, 78855 },	-- Gauntlets of the Corrupted Vanquisher
         { 20, 78387 },	-- Horrifying Horn Arbalest
         { 21, 78392 },	-- Finger of Zon'ozz
-        { 23, "ac6110" },
-        { 24, "ac6128" },
+        { 23, 77952 }, -- Elementium Gem Cluster
+        { 24, 71998 }, -- Essence of Destruction
+        { 26, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+        { 27, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+        { 29, "ac6110" },
+        { 30, "ac6128" },
     },
 },
 { -- Yor'sahj the Unsleeping
@@ -4167,7 +4183,11 @@ NameColor = PURPLE,
     { 18, 78171 },	-- Leggings of the Corrupted Vanquisher
     { 20, 77203 },	-- Insignia of the Corrupted Mind
     { 21, 77206 },	-- Soulshifter Vortex
-    { 23, "ac6129" },
+    { 23, 77952 }, -- Elementium Gem Cluster
+    { 24, 71998 }, -- Essence of Destruction
+    { 26, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+    { 27, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+    { 29, "ac6129" },
 },
 [HEROIC_DIFF] = {
     { 1, 78402 },	-- Interrogator's Bloody Footpads
@@ -4181,8 +4201,12 @@ NameColor = PURPLE,
     { 18, 78858 },	-- Leggings of the Corrupted Vanquisher
     { 20, 77991 },	-- Insignia of the Corrupted Mind
     { 21, 77990 },	-- Soulshifter Vortex
-    { 23, "ac6111" },
-    { 24, "ac6129" },
+    { 23, 77952 }, -- Elementium Gem Cluster
+    { 24, 71998 }, -- Essence of Destruction
+    { 26, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+    { 27, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+    { 29, "ac6111" },
+    { 30, "ac6129" },
 },
 },
 { -- Hagara the Stormbinder
@@ -4216,7 +4240,11 @@ NameColor = PURPLE,
     { 18, 78170 },	-- Shoulders of the Corrupted Vanquisher
     { 20, 77221 },	-- Lightning Rod
     { 21, 77220 },	-- Electrowing Dagger
-    { 23, "ac6175" },
+    { 23, 77952 }, -- Elementium Gem Cluster
+    { 24, 71998 }, -- Essence of Destruction
+    { 26, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+    { 27, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+    { 29, "ac6175" },
 },
 [HEROIC_DIFF] = {
     { 1, 78417 },	-- Bracers of the Banished
@@ -4230,8 +4258,12 @@ NameColor = PURPLE,
     { 18, 78861 },	-- Shoulders of the Corrupted Vanquisher
     { 20, 78418 },	-- Lightning Rod
     { 21, 78414 },	-- Electrowing Dagger
-    { 23, "ac6112" },
-    { 24, "ac6175" },
+    { 23, 77952 }, -- Elementium Gem Cluster
+    { 24, 71998 }, -- Essence of Destruction
+    { 26, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+    { 27, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+    { 29, "ac6112" },
+    { 30, "ac6175" },
 },
 },
 { -- Ultraxion
@@ -4263,12 +4295,16 @@ NameColor = RED,
     { 7, 78013 },	-- Curled Twilight Claw
     { 8, 77205 },	-- Creche of the Final Dragon
     { 9, 77245 },	-- Ledger of Revolting Rituals
+    { 11, 77223 },	-- Morningstar of Heroic Will
     { 16, 78184 },	-- Chest of the Corrupted Conqueror
     { 17, 78179 },	-- Chest of the Corrupted Protector
     { 18, 78174 },	-- Chest of the Corrupted Vanquisher
-    { 20, 77223 },	-- Morningstar of Heroic Will
-    { 22, 78919, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Experiment 12-B
-    { 24, "ac6084" },
+    { 20, 78919, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Experiment 12-B
+    { 22, 77952 }, -- Elementium Gem Cluster
+    { 23, 71998 }, -- Essence of Destruction
+    { 25, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+    { 26, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+    { 28, "ac6084" },
 },
 [HEROIC_DIFF] = {
     { 1, 78434 },	-- Treads of Sordid Screams
@@ -4279,13 +4315,17 @@ NameColor = RED,
     { 7, 78432 },	-- Curled Twilight Claw
     { 8, 77992 },	-- Creche of the Final Dragon
     { 9, 78433 },	-- Ledger of Revolting Rituals
+    { 11, 78429 },	-- Morningstar of Heroic Will
     { 16, 78847 },	-- Chest of the Corrupted Conqueror
     { 17, 78848 },	-- Chest of the Corrupted Protector
     { 18, 78849 },	-- Chest of the Corrupted Vanquisher
-    { 20, 78429 },	-- Morningstar of Heroic Will
-    { 22, 78919, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Experiment 12-B
-    { 24, "ac6113" },
-    { 25, "ac6084" },
+    { 20, 78919, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Experiment 12-B
+    { 22, 77952 }, -- Elementium Gem Cluster
+    { 23, 71998 }, -- Essence of Destruction
+    { 25, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+    { 26, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+    { 28, "ac6113" },
+    { 29, "ac6084" },
 },
 },
 { -- Warmaster Blackhorn
@@ -4320,7 +4360,11 @@ NameColor = RED,
     { 17, 78177 },	-- Crown of the Corrupted Protector
     { 18, 78172 },	-- Crown of the Corrupted Vanquisher
     { 20, 77202 },	-- Starcatcher Compass
-    { 22, "ac6105" },
+    { 22, 77952 }, -- Elementium Gem Cluster
+    { 23, 71998 }, -- Essence of Destruction
+    { 25, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+    { 26, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+    { 28, "ac6105" },
 },
 [HEROIC_DIFF] = {
     { 1, 78449 },	-- Janglespur Jackboots
@@ -4335,8 +4379,12 @@ NameColor = RED,
     { 17, 78851 },	-- Crown of the Corrupted Protector
     { 18, 78852 },	-- Crown of the Corrupted Vanquisher
     { 20, 77993 },	-- Starcatcher Compass
-    { 22, "ac6114" },
-    { 23, "ac6105" },
+    { 22, 77952 }, -- Elementium Gem Cluster
+    { 23, 71998 }, -- Essence of Destruction
+    { 25, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+    { 26, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+    { 28, "ac6114" },
+    { 29, "ac6105" },
 },
 },
 { -- Spine of Deathwing
@@ -4369,7 +4417,11 @@ NameColor = RED,
     { 18, 77198 },	-- Will of Unbinding
     { 19, 77197 },	-- Wrath of Unchaining
     { 20, 77201 },	-- Resolve of Undying
-    { 22, "ac6133" },
+    { 22, 77952 }, -- Elementium Gem Cluster
+    { 23, 71998 }, -- Essence of Destruction
+    { 25, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+    { 26, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+    { 28, "ac6133" },
 },
 [HEROIC_DIFF] = {
     { 1, 78461 },	-- Gloves of Liquid Smoke
@@ -4382,8 +4434,12 @@ NameColor = RED,
     { 18, 77995 },	-- Will of Unbinding
     { 19, 77994 },	-- Wrath of Unchaining
     { 20, 77998 },	-- Resolve of Undying
-    { 22, "ac6115" },
-    { 23, "ac6133" },
+    { 22, 77952 }, -- Elementium Gem Cluster
+    { 23, 71998 }, -- Essence of Destruction
+    { 25, "c396", [ATLASLOOT_IT_AMOUNT1] = 100 }, -- Valor Points
+    { 26, "c614", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Mote of Darkness
+    { 28, "ac6115" },
+    { 29, "ac6133" },
 },
 },
 { -- Madness of Deathwing
@@ -4411,12 +4467,17 @@ NameColor = RED,
     { 4, 77191 },	-- Gurthalak, Voice of the Deeps
     { 5, 77188 },	-- No'Kaled, the Elements of Death
     { 6, 77196 },	-- Maw of the Dragonlord
-    { 16, 77194 },	-- Kiril, Fury of Beasts
-    { 17, 77190 },	-- Ti'tahk, the Steps of Time
-    { 18, 78359 },	-- Vishanka, Jaws of the Earth
-    { 20, 77067},	-- Reins of the Blazing Drake
-    { 22, "ac6177" },
-    { 23, "ac6180" },
+    { 7, 77194 },	-- Kiril, Fury of Beasts
+    { 8, 77190 },	-- Ti'tahk, the Steps of Time
+    { 9, 78359 },	-- Vishanka, Jaws of the Earth
+    { 16, 77067},	-- Reins of the Blazing Drake
+    { 18, 77952 }, -- Elementium Gem Cluster
+    { 19, 78352 }, -- Fragment of Deathwing's Jaw
+    { 20, 71998 }, -- Essence of Destruction
+    { 22, "c396", [ATLASLOOT_IT_AMOUNT1] = 200 }, -- Valor Points
+    { 23, "c615", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Essence of Corrupted Deadwing
+    { 25, "ac6177" },
+    { 26, "ac6180" },
 },
 [HEROIC_DIFF] = {
     { 1, 78475 },	-- Rathrak, the Poisonous Mind
@@ -4425,13 +4486,19 @@ NameColor = RED,
     { 4, 78478 },	-- Gurthalak, Voice of the Deeps
     { 5, 78472 },	-- No'Kaled, the Elements of Death
     { 6, 78476 },	-- Maw of the Dragonlord
-    { 16, 78473 },	-- Kiril, Fury of Beasts
-    { 17, 78477 },	-- Ti'tahk, the Steps of Time
-    { 18, 78471 },	-- Vishanka, Jaws of the Earth
-    { 20, 77069 },	-- Life-Binder's Handmaiden
-    { 22, "ac6177" },
-    { 23, "ac6116" },
-    { 24, "ac6180" },
+    { 7, 78473 },	-- Kiril, Fury of Beasts
+    { 8, 78477 },	-- Ti'tahk, the Steps of Time
+    { 9, 78471 },	-- Vishanka, Jaws of the Earth
+    { 16, 77067},	-- Reins of the Blazing Drake
+    { 17, 77069 },	-- Life-Binder's Handmaiden
+    { 19, 77952 }, -- Elementium Gem Cluster
+    { 20, 78352 }, -- Fragment of Deathwing's Jaw
+    { 21, 71998 }, -- Essence of Destruction
+    { 23, "c396", [ATLASLOOT_IT_AMOUNT1] = 200 }, -- Valor Points
+    { 24, "c615", [ATLASLOOT_IT_AMOUNT1] = 1 }, -- Essence of Corrupted Deadwing
+    { 26, "ac6177" },
+    { 27, "ac6116" },
+    { 28, "ac6180" },
 },
 },
 { -- Shared
@@ -4457,8 +4524,6 @@ ContentPhaseCata = 4,
     { 3, 77228 },	-- Infinite Loop
     { 4, 77231 },	-- Seal of Primordial Shadow
     { 5, 77229 },	-- Signet of Suturing
-    { 7, 71998 },	-- Essence of Destruction
-    { 9, 77952 },	-- Elementium Gem Cluster
     { 16, 77210 },	-- Bone-Link Fetish
     { 17, 77208 },	-- Cunning of the Cruel
     { 18, 77211 },	-- Indomitable Pride
@@ -4471,8 +4536,6 @@ ContentPhaseCata = 4,
     { 3, 78490 },	-- Infinite Loop
     { 4, 78489 },	-- Seal of Primordial Shadow
     { 5, 78491 },	-- Signet of Suturing
-    { 7, 71998 },	-- Essence of Destruction
-    { 9, 77952 },	-- Elementium Gem Cluster
     { 16, 78002 },	-- Bone-Link Fetish
     { 17, 78000 },	-- Cunning of the Cruel
     { 18, 78003 },	-- Indomitable Pride
@@ -4522,6 +4585,20 @@ ExtraList = true,
     { 20, 72016 },	-- Plans: Titanguard Wristplates
     { 21, 72012 },	-- Plans: Unstoppable Destroyer's Legplates
 },
+},
+{ -- Geode Trader
+name = AL["Geode"] .. " " .. AL["Vendor"],
+ExtraList = true,
+[NORMAL_DIFF] = {
+    { 1, 78890 }, -- Crystalline Geode
+    { 3, 71805 }, -- Queen's Garnet
+    { 4, 71806 }, -- Lightstone
+    { 5, 71807 }, -- Deepholm Iolite
+    { 6, 71808 }, -- Lava Coral
+    { 7, 71809 }, -- Shadow Spinel
+    { 8, 71810 }, -- Elven Peridot
+    {16, 78891 }, -- Elementium-Coated Geode
+}
 },
 T13_SET,
 CATA_RAID3_AC_TABLE,

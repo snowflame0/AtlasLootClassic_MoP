@@ -164,6 +164,9 @@ local PRICE_INFO_LIST = {
     ["DarkmoonPrizeTicket"] = {
         currencyID = 515
     }, -- Darkmoon Prize Ticket
+    ["Tricky Treat"] = {
+        itemID = 33226
+    }, -- Tricky Treat
     ["MarkWorldTree"] = {
         currencyID = 416
     }, -- Mark of the World Tree
@@ -173,12 +176,15 @@ local PRICE_INFO_LIST = {
     ["FissureStoneFragment"] = {
         currencyID = 3148
     }, -- Fissure Stone Fragment
-    ["Tricky Treat"] = {
-        itemID = 33226
-    }, -- Tricky Treat
     ["ObsidianFragment"] = {
         currencyID = 3281
     }, -- Obsidian Fragment
+    ["MoteOfDarkness"] = {
+        currencyID = 614
+    },
+    ["EssenceOfCorruptedDeadwing"] = {
+        currencyID = 615
+    },
 
     --- PvP
     ["honor"] = {
@@ -2528,6 +2534,9 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [69878] = "FissureStoneFragment:12",
         [65372] = "FissureStoneFragment:12",
         [69882] = "FissureStoneFragment:12",
+        -- DS Gems
+        [78890] = "MoteOfDarkness:1",
+        [78891] = "EssenceOfCorruptedDeadwing:1",
         -- Protocol Twilight Currency
         --- Weapons
         [70733] = "ObsidianFragment:30", -- Alysra's Razor
