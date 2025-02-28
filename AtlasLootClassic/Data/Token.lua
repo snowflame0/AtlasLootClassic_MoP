@@ -1361,10 +1361,10 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [70735] = {"i70735suf-133","i70735suf-135","i70735suf-136","i70735suf-137",type=2}, -- Flickering Wristbands N
         -- Elemental Rune Twilight
         [239111] = {"i71421suf-260","i71421suf-261","i71421suf-262","i71421suf-263","i71421suf-264","i71421suf-271",type=2}, -- Satchel of the Flickering Cowl
-        [239112] = {"i71450suf-284","i71450suf-285","i71450suf-286","i71450suf-287",type=2}, -- Satchel of the Flickering Shoulders
+        [239112] = {"i71403suf-292","i71403suf-293","i71403suf-294","i71403suf-295",type=2}, -- Satchel of the Flickering Shoulders
         [239113] = {"i71428suf-133","i71428suf-135","i71428suf-136","i71428suf-137",type=2}, -- Satchel of the Flickering Wristbands
         [239114] = {"i71458suf-275","i71458suf-276","i71458suf-277",type=2}, -- Satchel of the Flickering Handguards
-        --[??] =  {"i71450suf-284","i71450suf-285","i71450suf-286","i71450suf-287",type=2}, -- Satchel of the Flickering Shoulderpads
+        [239220] = {"i71450suf-284","i71450suf-285","i71450suf-286","i71450suf-287",type=2}, -- Satchel of the Flickering Shoulderpads
         ["Tier13ElementalRuneTokens"] = {
             78869, 78870, 78868, 0,
             78875, 78876, 78874, 0,
