@@ -7,6 +7,7 @@ local IngameLocales = AtlasLoot.IngameLocales
 
 local type, rawset, rawget, setmetatable = type, rawset, rawget, setmetatable
 -- local GetAuctionItemClasses, GetAuctionItemSubClasses = GetAuctionItemClasses, GetAuctionItemSubClasses
+local GetItemClassInfo, GetItemSubClassInfo = C_Item.GetItemClassInfo, C_Item.GetItemSubClassInfo
 
 local LOC_DATA = {
 	[0] = {

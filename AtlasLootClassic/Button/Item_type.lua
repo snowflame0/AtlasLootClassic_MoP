@@ -26,7 +26,8 @@ local format, split, sfind, slower = _G.string.format, _G.string.split, _G.strin
 local str_match = string.match
 
 -- WoW
-local GetItemInfo, IsEquippableItem, GetItemInfoInstant = _G.GetItemInfo, _G.IsEquippableItem, _G.GetItemInfoInstant
+local GetItemInfo, IsEquippableItem, GetItemInfoInstant = C_Item.GetItemInfo, C_Item.IsEquippableItem, C_Item.GetItemInfoInstant
+local GetItemQualityColor = C_Item.GetItemQualityColor
 local LOOT_BORDER_BY_QUALITY = _G["LOOT_BORDER_BY_QUALITY"]
 
 --[[

@@ -8,7 +8,9 @@ local tbl_insert, tbl_remove = table.insert, table.remove
 
 -- WoW
 local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or _G.GetAddOnMetadata
-local GetNumAddOns, GetAddOnInfo, IsAddOnLoaded = GetNumAddOns, GetAddOnInfo, IsAddOnLoaded
+local GetNumAddOns, GetAddOnInfo, IsAddOnLoaded = C_AddOns.GetNumAddOns, C_AddOns.GetAddOnInfo, C_AddOns.IsAddOnLoaded
+local GetAddOnEnableState = C_AddOns.GetAddOnEnableState
+local LoadAddOn = C_AddOns.LoadAddOn
 local GetTime = GetTime
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
@@ -108,7 +110,7 @@ function Loader.Init()
 		if tmp[1] and str_find(tmp[1], "AtlasLootClassic_") then
 			ModuleList[tmp[1]] = {
 				index = i,
-				enabled = GetAddOnEnableState(playerName, i) ~= 0, --tmp[4], -- 0 = Disabled on char, 1 = Enabled only on some chars (including this), 2 = enabled on all chars
+				enabled = GetAddOnEnableState(i, playerName) ~= 0, --tmp[4], -- 0 = Disabled on char, 1 = Enabled only on some chars (including this), 2 = enabled on all chars
 				loaded = IsAddOnLoaded(i),
 				loadReason = tmp[5],
 				standardModule = ATLASLOOT_MODULE_LIST_NAMES[tmp[1]],

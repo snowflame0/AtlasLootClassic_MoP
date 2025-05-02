@@ -58,27 +58,29 @@ local FILTER_DATA = {
         ["INVTYPE_RELIC"] = C.SHAMAN + C.PALADIN + C.DRUID + C.DEATHKNIGHT,			-- Relic
     },
     itemClass = {
-        [10] 			                    = true, -- Moneys
-        [LE_ITEM_CLASS_CONSUMABLE] 			= true,
-        [LE_ITEM_CLASS_CONTAINER] 			= true,
-        [LE_ITEM_CLASS_WEAPON] 				= true,
-        [LE_ITEM_CLASS_GEM] 				= true,
-        [LE_ITEM_CLASS_ARMOR] 				= true,
-        [LE_ITEM_CLASS_REAGENT] 			= true,
-        [LE_ITEM_CLASS_PROJECTILE] 			= true,
-        [LE_ITEM_CLASS_TRADEGOODS] 			= true,
-        [LE_ITEM_CLASS_ITEM_ENHANCEMENT] 	= true,
-        [LE_ITEM_CLASS_RECIPE] 				= true,
-        [LE_ITEM_CLASS_QUIVER] 				= C.HUNTER,
-        [LE_ITEM_CLASS_QUESTITEM] 			= true,
-        [LE_ITEM_CLASS_KEY] 				= true,
-        [LE_ITEM_CLASS_MISCELLANEOUS] 		= true,
+        -- TODO: FIX THIS
+        -- Enum.ItemClass
+        [0] = true, -- Consumable
+        [1] = true, -- Container
+        [2] = true, -- Weapon
+        [3] = true, -- Gem
+        [4] = true, -- Armor
+        [5] = true, -- Reagent
+        [6] = true, -- Projectile
+        [7] = true,
+        [8] = true, -- 	Item Enhancement
+        [9] = true, -- Recipe
+        [10] = true, -- Gold (OBSOLETE)
+        [11] = C.HUNTER, -- Quiver
+        [12] = true,  -- Quest Item
+        [13] = true, -- Key
+        [15] = true, -- Miscellaneous
     },
     itemSubClass = {
         [10] = {
             [0] = true, -- Money
         },
-        [LE_ITEM_CLASS_CONSUMABLE] = {
+        [0] = {
             [0] = true, -- Explosives and Devices
             [1] = true, -- Potion
             [2] = true, -- Elixir
@@ -90,7 +92,7 @@ local FILTER_DATA = {
             [8] = true, -- Other
             [9] = true, -- Vantus Runes
         },
-        [LE_ITEM_CLASS_CONTAINER] = {
+        [1] = {
             [0] = true, -- Bag
             [1] = true, -- Soul Bag
             [2] = true, -- Herb Bag
@@ -103,30 +105,30 @@ local FILTER_DATA = {
             [9] = true, -- Tackle Box
             [10] = true, -- Cooking Bag
         },
-        [LE_ITEM_CLASS_WEAPON] = {
-            [LE_ITEM_WEAPON_AXE1H] 		    = C.HUNTER + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT + AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, C.ROGUE, 0), -- One-Handed Axes
-            [LE_ITEM_WEAPON_AXE2H] 		    = C.HUNTER + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT, -- Two-Handed Axes
-            [LE_ITEM_WEAPON_BOWS] 		    = C.HUNTER + C.ROGUE + C.WARRIOR, -- Bows
-            [LE_ITEM_WEAPON_GUNS] 		    = C.HUNTER + C.ROGUE + C.WARRIOR, -- Guns
-            [LE_ITEM_WEAPON_MACE1H] 		= C.DRUID + C.PALADIN + C.PRIEST + C.ROGUE + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT, -- One-Handed Maces
-            [LE_ITEM_WEAPON_MACE2H] 		= C.DRUID + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT, -- Two-Handed Maces
-            [LE_ITEM_WEAPON_POLEARM] 		= C.DRUID + C.HUNTER + C.PALADIN + C.WARRIOR + C.DEATHKNIGHT, -- Polearms
-            [LE_ITEM_WEAPON_SWORD1H] 		= C.HUNTER + C.MAGE + C.PALADIN + C.ROGUE + C.WARLOCK + C.WARRIOR + C.DEATHKNIGHT, -- One-Handed Swords
-            [LE_ITEM_WEAPON_SWORD2H] 		= C.HUNTER + C.PALADIN + C.WARRIOR + C.DEATHKNIGHT, -- Two-Handed Swords
-            [LE_ITEM_WEAPON_WARGLAIVE] 	    = true, -- Warglaives
-            [LE_ITEM_WEAPON_STAFF] 		    = C.DRUID + C.HUNTER + C.MAGE + C.PRIEST + C.SHAMAN + C.WARLOCK, -- Staves
-            --[LE_ITEM_WEAPON_BEARCLAW] 	= true, -- Bear Claws
-            --[LE_ITEM_WEAPON_CATCLAW] 		= true, -- CatClaws 
-            [LE_ITEM_WEAPON_UNARMED]		= C.DRUID + C.ROGUE + C.SHAMAN + C.WARRIOR + C.HUNTER, -- Fist Weapons
-            [LE_ITEM_WEAPON_GENERIC] 		= true, -- Miscellaneous
-            [LE_ITEM_WEAPON_DAGGER] 		= C.DRUID + C.HUNTER + C.MAGE + C.PRIEST + C.ROGUE + C.SHAMAN + C.WARLOCK + C.WARRIOR, -- Daggers
-            [LE_ITEM_WEAPON_THROWN] 		= C.ROGUE + C.WARRIOR, -- Thrown
+        [2] = {
+            [0] 		    = C.HUNTER + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT + AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, C.ROGUE, 0), -- One-Handed Axes
+            [1] 		    = C.HUNTER + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT, -- Two-Handed Axes
+            [2] 		    = C.HUNTER + C.ROGUE + C.WARRIOR, -- Bows
+            [3] 		    = C.HUNTER + C.ROGUE + C.WARRIOR, -- Guns
+            [4] 		= C.DRUID + C.PALADIN + C.PRIEST + C.ROGUE + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT, -- One-Handed Maces
+            [5] 		= C.DRUID + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT, -- Two-Handed Maces
+            [6] 		= C.DRUID + C.HUNTER + C.PALADIN + C.WARRIOR + C.DEATHKNIGHT, -- Polearms
+            [7] 		= C.HUNTER + C.MAGE + C.PALADIN + C.ROGUE + C.WARLOCK + C.WARRIOR + C.DEATHKNIGHT, -- One-Handed Swords
+            [8] 		= C.HUNTER + C.PALADIN + C.WARRIOR + C.DEATHKNIGHT, -- Two-Handed Swords
+            [9] 	    = true, -- Warglaives
+            [10] 		    = C.DRUID + C.HUNTER + C.MAGE + C.PRIEST + C.SHAMAN + C.WARLOCK, -- Staves
+            --[11] 	= true, -- Bear Claws
+            --[12] 		= true, -- CatClaws 
+            [13]		= C.DRUID + C.ROGUE + C.SHAMAN + C.WARRIOR + C.HUNTER, -- Fist Weapons
+            [14] 		= true, -- Miscellaneous
+            [15] 		= C.DRUID + C.HUNTER + C.MAGE + C.PRIEST + C.ROGUE + C.SHAMAN + C.WARLOCK + C.WARRIOR, -- Daggers
+            [16] 		= C.ROGUE + C.WARRIOR, -- Thrown
             --[17] -- ignore
-            [LE_ITEM_WEAPON_CROSSBOW] 	    = C.HUNTER + C.ROGUE + C.WARRIOR, -- Crossbows
-            [LE_ITEM_WEAPON_WAND] 		    = C.MAGE + C.PRIEST + C.WARLOCK, -- Wands
-            [LE_ITEM_WEAPON_FISHINGPOLE] 	= true, -- Fishing Poles
+            [18] 	    = C.HUNTER + C.ROGUE + C.WARRIOR, -- Crossbows
+            [19] 		    = C.MAGE + C.PRIEST + C.WARLOCK, -- Wands
+            [20] 	= true, -- Fishing Poles
         },
-        [LE_ITEM_CLASS_GEM] = {
+        [3] = {
             [1] = true, -- Blue
             [2] = true, -- Yellow
             [3] = true, -- Purple
@@ -136,33 +138,33 @@ local FILTER_DATA = {
             --[7] = true, -- Simple
             [8] = true, -- Prismatic
         },
-        [LE_ITEM_CLASS_ARMOR] = {
-            [LE_ITEM_ARMOR_GENERIC] 	= true, -- Miscellaneous
-            [LE_ITEM_ARMOR_CLOTH] 	    = C.PRIEST + C.MAGE + C.WARLOCK, -- Cloth
-            [LE_ITEM_ARMOR_LEATHER] 	= C.DRUID + C.ROGUE, -- Leather
-            [LE_ITEM_ARMOR_MAIL] 	    = C.HUNTER + C.SHAMAN, -- Mail
-            [LE_ITEM_ARMOR_PLATE] 	    = C.WARRIOR + C.PALADIN + C.DEATHKNIGHT, -- Plate
-            [LE_ITEM_ARMOR_COSMETIC]    = true, -- Cosmetic
-            [LE_ITEM_ARMOR_SHIELD] 	    = C.WARRIOR + C.PALADIN + C.SHAMAN, -- Shields
-            [LE_ITEM_ARMOR_LIBRAM] 	    = C.PALADIN, -- Librams
-            [LE_ITEM_ARMOR_IDOL] 	    = C.DRUID, -- Idols
-            [LE_ITEM_ARMOR_TOTEM] 	    = C.SHAMAN, -- Totems
-            --[LE_ITEM_ARMOR_SIGIL] 	    = true, -- Sigils (DK)
-            [LE_ITEM_ARMOR_RELIC] 	    = C.SHAMAN + C.PALADIN + C.DRUID + C.DEATHKNIGHT, -- Relic
+        [4] = {
+            [0] 	= true, -- Miscellaneous
+            [1] 	    = C.PRIEST + C.MAGE + C.WARLOCK, -- Cloth
+            [2] 	= C.DRUID + C.ROGUE, -- Leather
+            [3] 	    = C.HUNTER + C.SHAMAN, -- Mail
+            [4] 	    = C.WARRIOR + C.PALADIN + C.DEATHKNIGHT, -- Plate
+            [5]    = true, -- Cosmetic
+            [6] 	    = C.WARRIOR + C.PALADIN + C.SHAMAN, -- Shields
+            [7] 	    = C.PALADIN, -- Librams
+            [8] 	    = C.DRUID, -- Idols
+            [9] 	    = C.SHAMAN, -- Totems
+            --[10] 	    = true, -- Sigils (DK)
+            [11] 	    = C.SHAMAN + C.PALADIN + C.DRUID + C.DEATHKNIGHT, -- Relic
         },
-        [LE_ITEM_CLASS_REAGENT] = {
+        [5] = {
             [0] = true, -- Reagent
             [1] = true, -- Keystone
             [2] = true, -- Context Token
         },
-        [LE_ITEM_CLASS_PROJECTILE] = {
+        [6] = {
             [0] = true, -- Wand
             [1] = true, -- Bolt
             [2] = C.HUNTER + C.ROGUE + C.WARRIOR, -- Arrow
             [3] = C.HUNTER + C.ROGUE + C.WARRIOR, -- Bullet
             [4] = C.HUNTER + C.ROGUE + C.WARRIOR, -- Thrown
         },
-        [LE_ITEM_CLASS_TRADEGOODS] = {
+        [7] = {
             [0] = true, -- Trade Goods (OBSOLETE)
             [1] = true, -- Parts
             [2] = true, -- Explosives (OBSOLETE)
@@ -182,7 +184,7 @@ local FILTER_DATA = {
             [16] = true, -- Inscription
             [17] = true, -- Explosives and Devices (OBSOLETE)
         },
-        [LE_ITEM_CLASS_ITEM_ENHANCEMENT] = {
+        [8] = {
             [0] = true, -- Head
             [1] = true, -- Neck
             [2] = true, -- Shoulder
@@ -199,41 +201,41 @@ local FILTER_DATA = {
             [13] = true, -- Shield/Off-hand
             [14] = true, -- Misc
         },
-        [LE_ITEM_CLASS_RECIPE] = {
-            [LE_ITEM_RECIPE_BOOK] 			    = true, -- Book
-            [LE_ITEM_RECIPE_LEATHERWORKING] 	= true, -- Leatherworking
-            [LE_ITEM_RECIPE_TAILORING] 		    = true, -- Tailoring
-            [LE_ITEM_RECIPE_ENGINEERING] 	    = true, -- Engineering
-            [LE_ITEM_RECIPE_BLACKSMITHING] 	    = true, -- Blacksmithing
-            [LE_ITEM_RECIPE_COOKING] 		    = true, -- Cooking
-            [LE_ITEM_RECIPE_ALCHEMY] 		    = true, -- Alchemy
-            [LE_ITEM_RECIPE_FIRST_AID] 		    = true, -- First Aid
-            [LE_ITEM_RECIPE_ENCHANTING] 		= true, -- Enchanting
-            [LE_ITEM_RECIPE_FISHING] 		    = true, -- Fishing
-            [LE_ITEM_RECIPE_JEWELCRAFTING] 	    = true, -- Jewelcrafting
-            [LE_ITEM_RECIPE_INSCRIPTION] 	    = true, -- Inscription
+        [9] = {
+            [0] 			    = true, -- Book
+            [1] 	= true, -- Leatherworking
+            [2] 		    = true, -- Tailoring
+            [3] 	    = true, -- Engineering
+            [4] 	    = true, -- Blacksmithing
+            [5] 		    = true, -- Cooking
+            [6] 		    = true, -- Alchemy
+            [7] 		    = true, -- First Aid
+            [8] 		= true, -- Enchanting
+            [9] 		    = true, -- Fishing
+            [10] 	    = true, -- Jewelcrafting
+            [11] 	    = true, -- Inscription
         },
-        [LE_ITEM_CLASS_QUIVER] = {
+        [11] = {
             [0] = C.HUNTER, -- Quiver(OBSOLETE)
             [1] = true, -- Bolt(OBSOLETE)
             [2] = C.HUNTER, -- Quiver
             [3] = C.HUNTER, -- Ammo Pouch
         },
-        [LE_ITEM_CLASS_QUESTITEM] = {
+        [12] = {
             [0] = true, -- Quest
         },
-        [LE_ITEM_CLASS_KEY] = {
+        [13] = {
             [0] = true, -- Quest
             [1] = true, -- Lockpick
         },
-        [LE_ITEM_CLASS_MISCELLANEOUS] = {
-            [LE_ITEM_MISCELLANEOUS_JUNK] 			    = true, -- Junk
-            [LE_ITEM_MISCELLANEOUS_REAGENT] 			= true, -- Reagent
-            [LE_ITEM_MISCELLANEOUS_COMPANION_PET] 	    = true, -- Companion Pets
-            [LE_ITEM_MISCELLANEOUS_HOLIDAY] 			= true, -- Holiday
-            [LE_ITEM_MISCELLANEOUS_OTHER] 			    = true, -- Other
-            [LE_ITEM_MISCELLANEOUS_MOUNT] 			    = true, -- Mount
-            --[LE_ITEM_MISCELLANEOUS_MOUNT_EQUIPMENT] 	= true, -- Mount Equipment
+        [15] = {
+            [0] 			    = true, -- Junk
+            [1] 			= true, -- Reagent
+            [2] 	    = true, -- Companion Pets
+            [3] 			= true, -- Holiday
+            [4] 			    = true, -- Other
+            [5] 			    = true, -- Mount
+            --[6] 	= true, -- Mount Equipment
         },
     }
 }
@@ -457,7 +459,7 @@ AtlasLoot.AtlasLootDBDefaults.profile.ClassFilter = {
 }
 
 local ITEM_SUB_CLASS_IGNORE = {
-    [LE_ITEM_CLASS_ARMOR] = {
+    [4] = {
         ["INVTYPE_CLOAK"] = true,
     }
 }

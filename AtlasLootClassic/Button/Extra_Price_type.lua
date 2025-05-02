@@ -6,7 +6,7 @@ local string = string
 local type, tonumber, pairs = type, tonumber, pairs
 local str_split = string.split
 -- WoW
-local GetCurrencyInfo, GetItemInfo, GetItemCount, GetItemIcon = C_CurrencyInfo.GetCurrencyInfo, GetItemInfo, GetItemCount, GetItemIcon
+local GetCurrencyInfo, GetItemInfo, GetItemCount, GetItemIcon = C_CurrencyInfo.GetCurrencyInfo, C_Item.GetItemInfo, C_Item.GetItemCount, C_Item.GetItemIconByID
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------

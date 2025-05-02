@@ -8,14 +8,14 @@ local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
 local IMAGE_PATH = ALPrivate.ICONS_PATH
 
-local GetItemSetInfo = GetItemSetInfo
+local GetItemSetInfo = C_Item.GetItemSetInfo
 
 -- lua
 local assert, type = _G.assert, _G.type
 local format = _G.string.format
 
 -- WoW
-local GetItemQualityColor, GetItemIcon, GetSpellDescription = _G.GetItemQualityColor, _G.GetItemIcon, _G.GetSpellDescription
+local GetItemQualityColor, GetItemIcon, GetSpellDescription = C_Item.GetItemQualityColor, C_Item.GetItemIconByID, _G.GetSpellDescription
 
 local NO_ICON = "Interface\\Icons\\inv_helmet_08"
 local ICON_PATH_CLASS = ALPrivate.CLASS_ICON_PATH

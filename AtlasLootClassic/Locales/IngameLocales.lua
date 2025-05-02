@@ -8,8 +8,9 @@ local format = string.format
 local rawget = _G.rawget
 
 -- WoW
-local GetSpellInfo = GetSpellInfo
-local GetItemClassInfo, GetItemSubClassInfo = GetItemClassInfo, GetItemSubClassInfo
+-- TODO: Fix name of new function bindings
+local GetSpellInfo = C_Spell.GetSpellName
+local GetItemClassInfo, GetItemSubClassInfo = C_Item.GetItemClassInfo, C_Item.GetItemSubClassInfo
 
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
@@ -34,8 +35,7 @@ local months = {
 }
 
 local GLOBAL = setmetatable({}, {__index = function(t,k) return _G[k] or k end})
-local GetMapNameByID = GetMapNameByID
-
+local GetMapNameByID = C_Map.GetMapInfo
 
 local function AtlasLootGLOBALetClassName(class)
 	if (not LOCALIZED_CLASS_NAMES_MALE[class]) then

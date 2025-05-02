@@ -18,7 +18,7 @@ local format = format
 local str_split = string.split
 
 -- WoW
-local GetCurrencyInfo, GetItemIcon = C_CurrencyInfo.GetCurrencyInfo, GetItemIcon
+local GetCurrencyInfo, GetItemIcon, GetSpellTexture = C_CurrencyInfo.GetCurrencyInfo, C_Item.GetItemIcon, C_Spell.GetSpellTexture
 
 -- AtlasLoot
 local PRICE_INFO = VendorPrice.GetPriceInfoList()
@@ -51,7 +51,8 @@ local ICON_TEXTURE = {
 	[13] = format(TEXTURE_ICON_F, GetSpellTexture(7411)),   -- Enchanting
 	[14] = format(TEXTURE_ICON_F, GetSpellTexture(7732)),   -- Fishing
     [15] = format(TEXTURE_ICON_F, GetSpellTexture(8618)),   -- Skinning
-    [16] = format(TEXTURE_ICON_F, GetSpellTexture(2842)),   -- Rogue: Poisons
+    -- TODO: Add version check for cata and below
+    -- [16] = format(TEXTURE_ICON_F, GetSpellTexture(2842)),   -- Rogue: Poisons
     [17] = format(TEXTURE_ICON_F, 134071),                  -- Jewelcrafting
     [18] = format(TEXTURE_ICON_F, 237171),                  -- Inscription
     [19] = format(TEXTURE_ICON_F, 441139),                  -- Archaeology
@@ -73,7 +74,8 @@ local SOURCE_TYPES = {
 	[13] = ALIL["Enchanting"],          -- Enchanting
 	[14] = ALIL["Fishing"],             -- Fishing
     [15] = ALIL["Skinning"],            -- Skinning
-    [16] = ALIL["ROGUE"]..": "..ALIL["Poisons"],             -- Rogue: Poisons
+    -- TODO: Add version check for cata and below
+    -- [16] = ALIL["ROGUE"]..": "..ALIL["Poisons"],             -- Rogue: Poisons
     [17] = ALIL["Jewelcrafting"],       -- Jewelcrafting
     [18] = ALIL["Inscription"],         -- Inscription
     [19] = ALIL["Archaeology"],          -- Archaelogy
@@ -88,7 +90,7 @@ local PRICE_INFO_TT_START = format(TT_F.."  ", ICON_TEXTURE[3], AL["Vendor"]..":
 local DIFF_SPLIT_STRING = " / "
 
 local TooltipsHooked = false
-local TooltipCache, TooltipTextCache = {}
+local TooltipCache, TooltipTextCache = {}, {}
 
 -- Addon
 Sources.DbDefaults = {

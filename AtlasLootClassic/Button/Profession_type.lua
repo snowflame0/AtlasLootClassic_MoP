@@ -8,8 +8,9 @@ local Profession = AtlasLoot.Data.Profession
 
 --lua
 local str_match = string.match
-local GetSpellInfo, GetSpellTexture = GetSpellInfo, GetSpellTexture
-local GetTradeskillLink = AtlasLoot.TooltipScan.GetTradeskillLink
+local GetSpellInfo, GetSpellTexture, GetItemInfo = C_Spell.GetSpellInfo, C_Spell.GetSpellTexture, C_Item.GetItemInfo
+local GetItemQualityColor = C_Item.GetItemQualityColor
+local GetTradeskillLink = AtlasLoot.TooltipScan.GetTradeskillLink	
 
 local ProfClickHandler = nil
 
@@ -123,7 +124,9 @@ end
 
 -- TODO: Add Query?
 function Prof.Refresh(button)
-	local spellName, _, spellTexture = GetSpellInfo(button.SpellID)
+	local spellInfo = GetSpellInfo(button.SpellID)
+	if not spellInfo then return end
+	local spellName, spellTexture = spellInfo.name, spellInfo.iconID
 
 	if Profession.IsProfessionSpell(button.SpellID) then
 		local _, itemName, itemQuality, itemTexture, itemCount

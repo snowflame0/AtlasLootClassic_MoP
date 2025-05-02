@@ -18,6 +18,7 @@ local format, strsub, strmatch, strgmatch, strsplit = _G.format, _G.strsub, _G.s
 local GetItemInfo = _G.GetItemInfo
 local GetServerTime = _G.GetServerTime
 local GetItemInfoInstant = _G.GetItemInfoInstant
+local GetAddOnInfo = C_AddOns.GetAddOnInfo
 local RETRIEVING_ITEM_INFO = _G["RETRIEVING_ITEM_INFO"]
 local ItemExist = _G.C_Item.DoesItemExistByID
 
