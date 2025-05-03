@@ -627,6 +627,7 @@ data["ObsidianFragments"] = {
             { 10, 78384 }, -- Mycosynth Wristguards
             { 12, 78467 }, -- Molten Blood Footpads
             { 16, 239113 }, -- Satchel of the Flickering Wristbands
+            { 17, 239220 }, -- Satchel of the Flickering Shoulderpads
         }
     },
     {
