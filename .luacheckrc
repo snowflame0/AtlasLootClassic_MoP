@@ -83,21 +83,8 @@ globals = {
 	"ATLASLOOT_HORDE_COLOR",
 	"ATLASLOOT_ALLIANCE_COLOR",
 
-	-- Atlas
-	"Atlas",
-	"AtlasFrame",
-	"AtlasFrameSmall",
-	"AtlasFrameLarge",
-	"ElvPrivateDB",
-	"WorldMapTitleButton",
-	"AtlasFrameDropDownType_OnShow",
-	"AtlasFrameDropDown_OnShow",
-	"Atlas_Refresh",
-	"ATLAS_DROPDOWNS",
-	"ATLAS_SMALLFRAME_SELECTED",
-
-	-- Other
-	"Outfitter",
+	-- AtlasLoot Locales
+	"AL",
 
 	-- misc custom
 	"AceGUIWidgetLSMlists",
