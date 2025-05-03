@@ -78,8 +78,8 @@ function Currency.OnEnter(button, owner)
 	else
 		tooltip:SetOwner(button, "ANCHOR_RIGHT", -(button:GetWidth() * 0.5), 5)
 	end
-	if C_CurrencyInfo.GetCurrencyInfo(button.CurrencyID) then
-		tooltip:SetHyperlink(GetCurrencyLink(button.CurrencyID, 1))
+	if GetCurrencyInfo(button.CurrencyID) then
+		tooltip:SetHyperlink(GetCurrencyLink(button.CurrencyID, 1) or nil)
 		tooltip:Show()
 	end
 end

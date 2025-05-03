@@ -18,7 +18,7 @@ local format = format
 local str_split = string.split
 
 -- WoW
-local GetCurrencyInfo, GetItemIcon, GetSpellTexture = C_CurrencyInfo.GetCurrencyInfo, C_Item.GetItemIcon, C_Spell.GetSpellTexture
+local GetCurrencyInfo, GetItemIcon, GetSpellTexture = C_CurrencyInfo.GetCurrencyInfo, C_Item.GetItemIconByID, C_Spell.GetSpellTexture
 
 -- AtlasLoot
 local PRICE_INFO = VendorPrice.GetPriceInfoList()

@@ -18,8 +18,8 @@ local pairs = _G.pairs
 local format = _G.format
 
 -- WoW
-local GetItemQuality, GetItemIcon, GetItemInfoInstant, ItemExist = _G.C_Item.GetItemQualityByID, _G.C_Item.GetItemIconByID, _G.GetItemInfoInstant, _G.C_Item.DoesItemExistByID
-local GetItemCount = _G.GetItemCount
+local GetItemQuality, GetItemIcon, GetItemInfoInstant, ItemExist = C_Item.GetItemQualityByID, C_Item.GetItemIconByID, C_Item.GetItemInfoInstant, C_Item.DoesItemExistByID
+local GetItemCount, GetItemInfo = C_Item.GetItemCount, C_Item.GetItemInfo
 
 -- AL
 local GetAlTooltip = AtlasLoot.Tooltip.GetTooltip

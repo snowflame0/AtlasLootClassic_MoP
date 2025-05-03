@@ -7,7 +7,7 @@ local AL = AtlasLoot.Locales
 local Requirements = AtlasLoot.Data.Requirements
 
 -- ## WoW
-local GetItemInfoInstant = GetItemInfoInstant
+local GetItemInfoInstant = C_Item.GetItemInfoInstant
 
 -- ## lua
 local wipe = table.wipe

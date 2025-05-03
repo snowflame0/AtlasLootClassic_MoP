@@ -12,6 +12,7 @@ local type = _G.type
 
 -- WoW
 local UnitGUID = _G.UnitGUID
+local GetItemInfo = C_Item.GetItemInfo
 
 local STANDART_TOOLTIP = "AtlasLootTooltip"
 local COLOR = "|cFF00ccff%s|r"

@@ -13,6 +13,7 @@ local format, str_match = string.format, _G.string.match
 
 -- WoW
 local GetAchievementLink = GetAchievementLink
+local IsAddOnLoaded, LoadAddOn = C_AddOns.IsAddOnLoaded, C_AddOns.LoadAddOn
 
 -- AC
 local AC_COLOR = "|cffffff00"

@@ -15,12 +15,12 @@ local next, pairs, tblconcat, tblsort = _G.next, _G.pairs, _G.table.concat, _G.t
 local format, strsub, strmatch, strgmatch, strsplit = _G.format, _G.strsub, _G.strmatch, _G.gmatch, _G.strsplit
 
 -- WoW
-local GetItemInfo = _G.GetItemInfo
-local GetServerTime = _G.GetServerTime
-local GetItemInfoInstant = _G.GetItemInfoInstant
+local GetItemInfo, GetItemInfoInstant = C_Item.GetItemInfo, C_Item.GetItemInfoInstant
 local GetAddOnInfo = C_AddOns.GetAddOnInfo
+local GetServerTime = _G.GetServerTime
+local ItemExist = C_Item.DoesItemExistByID
+
 local RETRIEVING_ITEM_INFO = _G["RETRIEVING_ITEM_INFO"]
-local ItemExist = _G.C_Item.DoesItemExistByID
 
 -- locals
 local ICONS_PATH = ALPrivate.ICONS_PATH
@@ -35,7 +35,7 @@ local KEY_WEAK_MT = {__mode="k"}
 local ChatLinkPending = false
 local ChatLinkData = false
 local TooltipsHooked = false
-local TooltipCache, TooltipTextCache = {}
+local TooltipCache, TooltipTextCache = {}, {}
 local ListNameCache
 local ListNoteCache
 local ListBiSCache

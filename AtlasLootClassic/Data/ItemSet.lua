@@ -16,6 +16,7 @@ local format = _G.string.format
 
 -- WoW
 local GetItemQualityColor, GetItemIcon, GetSpellDescription = C_Item.GetItemQualityColor, C_Item.GetItemIconByID, _G.GetSpellDescription
+local GetItemSubClassInfo = C_Item.GetItemSubClassInfo
 
 local NO_ICON = "Interface\\Icons\\inv_helmet_08"
 local ICON_PATH_CLASS = ALPrivate.CLASS_ICON_PATH
