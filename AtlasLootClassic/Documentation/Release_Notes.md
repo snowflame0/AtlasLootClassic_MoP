@@ -1,12 +1,12 @@
+# 4.3.1 (May 3, 2025)
+- Changes to API calls to prepare for MoP (should load in current "Beta")
+- Clean up to prepare for MoP
+- Several fixes to missing loot
+- Season 11 PvP Sets, need to add rest of S11 pieces still.
+
 # v4.3.0 (Feb 20, 2025)
 - Cleaned up Dragon Soul loot
 - Added more legendary dagger and epic gem information
 - Firelands weapons have been added
 - Add cost data for Twilight vendor
 - PvP gear still needs to be added
-
-# v4.3.0-beta (Feb 18, 2025)
-- THIS RELEASE IS A WORK IN PROGRESS, things still need to be added and organized/simplified
-- Added Procotol Twilight items, still missing Firelands items and costs
-- Added Phase 4 VP/JP items
-- Shoutout to @Firsthunterz for help adding lots of items manually in this release
