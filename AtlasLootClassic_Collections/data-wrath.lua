@@ -9,7 +9,7 @@ local format = string.format
 -- WoW
 local function C_Map_GetAreaInfo(id)
     local d = C_Map.GetAreaInfo(id)
-    return d or "GetAreaInfo" .. id
+    return d or ("GetAreaInfo" .. id)
 end
 
 -- ----------------------------------------------------------------------------
@@ -987,7 +987,7 @@ data["WorldEpicsWrath"] = {
         {16, 44310}, -- Namlak's Supernumerary Sticker
         {17, 44311}, -- Avool's Sword of Jin
         {18, 44313}, -- Zom's Crackling Bulwark
-        {20, 43575, nil, nil, GetSpellInfo(921)}, -- Reinforced Junkbox
+        {20, 43575, nil, nil, C_Spell.GetSpellInfo(921)}, -- Reinforced Junkbox
         {21, 43613}, -- The Dusk Blade
         {22, 43611} -- Krol Cleaver
         }

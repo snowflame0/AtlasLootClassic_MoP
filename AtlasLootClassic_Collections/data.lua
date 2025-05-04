@@ -9,7 +9,7 @@ local format = string.format
 -- WoW
 local function C_Map_GetAreaInfo(id)
     local d = C_Map.GetAreaInfo(id)
-    return d or "GetAreaInfo"..id
+    return d or ("GetAreaInfo"..id)
 end
 
 -- ----------------------------------------------------------------------------
