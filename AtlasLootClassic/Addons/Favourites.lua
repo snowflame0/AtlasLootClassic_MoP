@@ -40,7 +40,6 @@ local ListNameCache
 local ListNoteCache
 local ListBiSCache
 local ItemCountCache
-local PluginOutfitterLoading
 setmetatable(TooltipCache, KEY_WEAK_MT)
 
 Favourites.BASE_NAME_P, Favourites.BASE_NAME_G = BASE_NAME_P, BASE_NAME_G
@@ -221,29 +220,6 @@ local function PopulateListBiS(db, dest)
             local equipItemId = itemSetItems[invSlot]
             if equipItemId then
                 itemsEquipped[equipItemId] = true
-            end
-        end
-    end
-    -- Outfitter sets
-    local _, pluginOutfitter = GetAddOnInfo("Outfitter")
-    if pluginOutfitter then
-        if Outfitter and Outfitter.Settings and Outfitter.Settings.Outfits then
-            -- Check outfitter equip sets
-            local outfits = Outfitter.Settings.Outfits
-            for outfitType, outfitList in pairs(outfits) do
-                for outfitIndex, outfitData in ipairs(outfitList) do
-                    local outfitItems = outfitData:GetItems()
-                    for outfitterSlot, outfitterItem in pairs(outfitItems) do
-                        if outfitterItem.Code then
-                            itemsEquipped[outfitterItem.Code] = true
-                        end
-                    end
-                end
-            end
-        else
-            -- Outfitter not (yet) loaded, add callback to populate database again once Outfitter was loaded
-            if not PluginOutfitterLoading then
-                PluginOutfitterLoading = true
             end
         end
     end
@@ -912,10 +888,6 @@ function Favourites:GetFavouriteItemText(itemId, listId)
 end
 
 function Favourites:IsItemEquippedOrObsolete(itemId, listId)
-    if PluginOutfitterLoading then
-        PluginOutfitterLoading = false
-        self:UpdateDb()
-    end
     if not listId then
         for listId, listData in pairs(self.db.lists) do
             local obsoleteType = self:IsItemEquippedOrObsolete(itemId, listId)

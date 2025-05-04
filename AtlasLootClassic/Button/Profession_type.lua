@@ -10,7 +10,7 @@ local Profession = AtlasLoot.Data.Profession
 local str_match = string.match
 local GetSpellInfo, GetSpellTexture, GetItemInfo = C_Spell.GetSpellInfo, C_Spell.GetSpellTexture, C_Item.GetItemInfo
 local GetItemQualityColor = C_Item.GetItemQualityColor
-local GetTradeskillLink = AtlasLoot.TooltipScan.GetTradeskillLink	
+local GetTradeskillLink = AtlasLoot.TooltipScan.GetTradeskillLink
 
 local ProfClickHandler = nil
 
