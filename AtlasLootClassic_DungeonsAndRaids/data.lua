@@ -5575,9 +5575,10 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
                 { 7,  21458 }, -- Gauntlets of New Life
                 { 8,  21463 }, -- Ossirian's Binding
                 { 9, 21461 }, -- Leggings of the Black Blizzard
-                { 10, 21459 }, -- Crossbow of Imminent Doom
-                { 11, 21715 }, -- Sand Polished Hammer
-                { 12, 21452 }, -- Staff of the Ruins
+                { 10, 21454 }, -- Runic Stone Shoulders
+                { 11, 21459 }, -- Crossbow of Imminent Doom
+                { 12, 21715 }, -- Sand Polished Hammer
+                { 13, 21452 }, -- Staff of the Ruins
                 { 16, 20890 }, -- Qiraji Ornate Hilt
                 { 17, 20886 }, -- Qiraji Spiked Hilt
                 { 20, 20888 }, -- Qiraji Ceremonial Ring
