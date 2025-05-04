@@ -1,10 +1,10 @@
-﻿## Interface: 40402
+﻿## Interface: 50500
 ## Author: Snowflame0
 ## Version: @project-version@
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
 
-## Title: AtlasLootClassic |cFFFF5733Cata|r |cFF0099FF[Factions]|r
+## Title: AtlasLootClassic |cFF33FFBDMoP|r |cFF0099FF[Factions]|r
 ## Notes: AtlasLoot Faction loot tables
 
 ## Title-deDE: @localization(locale="deDE", key="Title-Factions", namespace="ToC")@
@@ -39,3 +39,4 @@ data.lua
 data-tbc.lua
 data-wrath.lua
 data-cata.lua
+data-mop.lua

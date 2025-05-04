@@ -1,4 +1,4 @@
-﻿## Interface: 40402
+﻿## Interface: 50500
 ## Author: Snowflame0
 ## Version: @project-version@
 ## SavedVariables: AtlasLootClassicDB
@@ -6,7 +6,7 @@
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
 
-## Title: AtlasLootClassic |cFFFF5733Cata|r |cFF22B14C[Core]|r
+## Title: AtlasLootClassic |cFF33FFBDMoP|r |cFF22B14C[Core]|r
 ## Notes: Displays loot tables from various aspects of the game
 
 ## Title-deDE: @localization(locale="deDE", key="Title-AtlasLoot", namespace="ToC")@

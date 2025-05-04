@@ -10,3 +10,5 @@
 - Firelands weapons have been added
 - Add cost data for Twilight vendor
 - PvP gear still needs to be added
+
+# v5.0.0-beta (?????, 2025)

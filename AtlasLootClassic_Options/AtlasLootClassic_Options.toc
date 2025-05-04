@@ -1,10 +1,10 @@
-﻿## Interface: 40402
+﻿## Interface: 50500
 ## Author: Snowflame0
 ## Version: @project-version@
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
 
-## Title: AtlasLootClassic |cFFFF5733Cata|r |cFF0099FF[Options]|r
+## Title: AtlasLootClassic |cFF33FFBDMoP|r |cFF0099FF[Options]|r
 ## Notes: AtlasLootClassic Options module
 
 ## Title-deDE: @localization(locale="deDE", key="Title-Options", namespace="ToC")@

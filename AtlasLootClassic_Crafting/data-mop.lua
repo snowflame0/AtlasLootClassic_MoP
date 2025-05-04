@@ -14,8 +14,8 @@ local RAID_CLASS_COLORS = _G["RAID_CLASS_COLORS"]
 -- ----------------------------------------------------------------------------
 local addonname, private = ...
 local AtlasLoot = _G.AtlasLoot
-if AtlasLoot:GameVersion_LT(AtlasLoot.CATA_VERSION_NUM) then return end
-local data = AtlasLoot.ItemDB:Add(addonname, 1, AtlasLoot.CATA_VERSION_NUM)
+if AtlasLoot:GameVersion_LT(AtlasLoot.MOP_VERSION_NUM) then return end
+local data = AtlasLoot.ItemDB:Add(addonname, 1, AtlasLoot.MOP_VERSION_NUM)
 
 local GetColorSkill = AtlasLoot.Data.Profession.GetColorSkillRankNoSpell
 

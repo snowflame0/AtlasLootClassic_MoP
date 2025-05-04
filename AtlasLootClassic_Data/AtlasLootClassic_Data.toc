@@ -1,10 +1,10 @@
-﻿## Interface: 40402
+﻿## Interface: 50500
 ## Author: Snowflame0
 ## Version: @project-version@
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
 
-## Title: AtlasLootClassic |cFFFF5733Cata|r |cFFFF0000[Data]|r
+## Title: AtlasLootClassic |cFF33FFBDMoP|r |cFFFF0000[Data]|r
 ## Notes: AtlasLoot Data module
 
 ## Title-deDE: @localization(locale="deDE", key="Title-Data", namespace="ToC")@
@@ -39,3 +39,4 @@ source.lua
 source-tbc.lua
 source-wrath.lua
 source-cata.lua
+source-mop.lua
