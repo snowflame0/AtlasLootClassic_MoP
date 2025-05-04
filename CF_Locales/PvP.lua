@@ -1,6 +1,7 @@
 AL["|cff33ff99Rank:|r %s"] = "|cff33ff99Rank:|r %s"
 AL["Battlegrounds"] = "Battlegrounds"
 AL["Class Sets"] = "Class Sets"
+AL["Gladiator"] = "Gladiator"
 AL["Gladiator Mount"] = "Gladiator Mount"
 AL["Honor"] = "Honor"
 AL["Insignia"] = "Insignia"

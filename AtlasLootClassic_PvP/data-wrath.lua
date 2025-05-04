@@ -34,9 +34,10 @@ else
     HORDE_DIFF = data:AddDifficulty(FACTION_HORDE, "horde", nil, 1)
     LOAD_DIFF = ALLIANCE_DIFF
 end
-local SET1_DIFF = data:AddDifficulty(format(AL["Savage %s"], ""), "set1", nil, 1)
-local SET2_DIFF = data:AddDifficulty(format(AL["Hateful %s"], ""), "set2", nil, 1)
-local SET3_DIFF = data:AddDifficulty(format(AL["Deadly %s"], ""), "set3", nil, 1)
+local SET1_DIFF = data:AddDifficulty(format(AL["Savage %s"], AL["Gladiator"]), "set1", nil, 1)
+local SET2_DIFF = data:AddDifficulty(format(AL["Hateful %s"], AL["Gladiator"]), "set2", nil, 1)
+local SET3_DIFF = data:AddDifficulty(format(AL["Deadly %s"], AL["Gladiator"]), "set3", nil, 1)
+-- TODO: Add missing set names
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
