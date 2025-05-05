@@ -47,34 +47,6 @@ local NAME_HELLFIRE_CITADEL = NAME_COLOR..AL["HC"]..":|r %s"-- Hellfire Citadel
 local NAME_KARA_QUARTERS = NAME_COLOR_BOSS..AL["Servant Quarters"]..":|r %s" -- Servant Quarters
 local NAME_KARA_OPERA = NAME_COLOR_BOSS..AL["The Opera Event"]..":|r %s" -- The Opera Even
 
-
-local KEYS = {	-- Keys
-	name = AL["Keys"],
-	TableType = NORMAL_ITTYPE,
-	ExtraList = true,
-	IgnoreAsSource = true,
-	[NORMAL_DIFF] = {
-        { 1, "INV_Box_01", nil, AL["Normal"], nil },
-		{ 2, 27991 }, -- Shadow Labyrinth Key
-		{ 3, 28395 }, -- Shattered Halls Key
-		{ 4, 31084 }, -- Key to the Arcatraz
-		{ 6, "INV_Box_01", nil, AL["Heroic"], nil },
-		{ 7, 30637, [ATLASLOOT_IT_ALLIANCE] = 30622 }, -- Flamewrought Key
-		{ 8, 30623 }, -- Reservoir Key
-		{ 9, 30633 }, -- Auchenai Key
-		{ 10, 30635 }, -- Key of Time
-		{ 11, 30634 }, -- Warpforged Key
-		{ 16, "INV_Box_01", nil, AL["Raid"], nil },
-		{ 17, 32649 }, -- Medallion of Karabor
-		{ 18, 31704 }, -- The Tempest Key
-		{ 19, 24490 }, -- The Master's Key
-		{ 21, "INV_Box_01", nil, AL["Misc"], nil },
-		{ 22, 32092 }, -- The Eye of Haramad
-		{ 23, 24140 }, -- Blackened Urn
-		{ 24, 32449 }, -- Essence-Infused Moonstone
-    }
-}
-
 local T4_SET = {
 	name = format(AL["Tier %s Sets"], "4"),
 	ExtraList = true,
