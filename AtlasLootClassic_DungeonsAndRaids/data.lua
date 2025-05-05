@@ -2871,7 +2871,6 @@ data["DireMaulNorth"] = {
                 { 13, 18464 }, -- Gordok Nose Ring
                 { 14, 18460 }, -- Unsophisticated Hand Cannon
                 { 16, 18250 }, -- Gordok Shackle Key
-                { 17, 18268 }, -- Gordok Inner Door Key
             },
         },
         { -- DMNStomperKreeg
@@ -2904,8 +2903,6 @@ data["DireMaulNorth"] = {
                 { 7,  18464 }, -- Gordok Nose Ring
                 { 8,  18460 }, -- Unsophisticated Hand Cannon
                 { 10, 18250 }, -- Gordok Shackle Key
-                { 16, "INV_Box_01", nil, AL["Fengus's Chest"], nil },
-                { 17, 18266 }, -- Gordok Courtyard Key
             },
         },
         { -- DMNGuardSlipkik
