@@ -5516,9 +5516,9 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
             Level = 999,
             DisplayIDs = {{15654}},
             [NORMAL_DIFF] = {
-                { 1,  21487, [ATLASLOOT_IT_ALLIANCE] = 21486 }, -- Slimy Scaled Gauntlets
-                --{ 2,  21486 }, -- Gloves of the Swarm
-                { 2,  21485 }, -- Buru's Skull Fragment
+                { 1,  21487 }, -- Slimy Scaled Gauntlets
+                { 2,  21486 }, -- Gloves of the Swarm
+                { 3,  21485 }, -- Buru's Skull Fragment
                 { 5,  21491 }, -- Scaled Bracers of the Gorger
                 { 6,  21489 }, -- Quicksand Waders
                 { 7,  21490 }, -- Slime Kickers
@@ -5560,19 +5560,19 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
             DisplayIDs = {{15432}},
             [NORMAL_DIFF] = {
                 { 1,  21460 }, -- Helm of Domination
-                { 2,  21454, [ATLASLOOT_IT_ALLIANCE] = 21453 }, -- Runic Stone Shoulders
-                --{ 3,  21453 }, -- Mantle of the Horusath
-                { 3,  21456 }, -- Sandstorm Cloak
-                { 4,  21464 }, -- Shackles of the Unscarred
-                { 5,  21457 }, -- Bracers of Brutality
-                { 6,  21462 }, -- Gloves of Dark Wisdom
-                { 7,  21458 }, -- Gauntlets of New Life
-                { 8,  21463 }, -- Ossirian's Binding
-                { 9, 21461 }, -- Leggings of the Black Blizzard
-                { 10, 21454 }, -- Runic Stone Shoulders
-                { 11, 21459 }, -- Crossbow of Imminent Doom
-                { 12, 21715 }, -- Sand Polished Hammer
-                { 13, 21452 }, -- Staff of the Ruins
+                { 2,  21454 }, -- Runic Stone Shoulders
+                { 3,  21453 }, -- Mantle of the Horusath
+                { 4,  21456 }, -- Sandstorm Cloak
+                { 5,  21464 }, -- Shackles of the Unscarred
+                { 6,  21457 }, -- Bracers of Brutality
+                { 7,  21462 }, -- Gloves of Dark Wisdom
+                { 8,  21458 }, -- Gauntlets of New Life
+                { 9,  21463 }, -- Ossirian's Binding
+                { 10, 21461 }, -- Leggings of the Black Blizzard
+                { 11, 21454 }, -- Runic Stone Shoulders
+                { 12, 21459 }, -- Crossbow of Imminent Doom
+                { 13, 21715 }, -- Sand Polished Hammer
+                { 14, 21452 }, -- Staff of the Ruins
                 { 16, 20890 }, -- Qiraji Ornate Hilt
                 { 17, 20886 }, -- Qiraji Spiked Hilt
                 { 20, 20888 }, -- Qiraji Ceremonial Ring
