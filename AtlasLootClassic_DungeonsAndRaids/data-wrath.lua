@@ -71,19 +71,6 @@ local PURPLE = "|cff9900ff%s|r"
 -- format
 local BONUS_LOOT_SPLIT = "%s - %s"
 
-local KEYS = { -- Keys
-    name = AL["Keys"],
-    TableType = NORMAL_ITTYPE,
-    ExtraList = true,
-    IgnoreAsSource = true,
-    [NORMAL_DIFF] = {{1, "INV_Box_01", nil, AL["Normal"], nil}, {2, 44582}, -- Key to the Focusing Iris
-    {3, 45796}, -- Celestial Planetarium Key
-    {4, 42482}, -- The Violet Hold Key
-    {16, "INV_Box_01", nil, AL["Heroic"], nil}, {17, 44581}, -- Heroic Key to the Focusing Iris
-    {18, 45798} -- Heroic Celestial Planetarium Key
-    }
-}
-
 local T7_SET = {
     name = format(AL["Tier %s Sets"], "7"),
     ExtraList = true,
