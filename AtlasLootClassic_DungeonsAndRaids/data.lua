@@ -69,14 +69,9 @@ local KEYS = {	-- Keys
         { 5, 7146, },
         { 6, 12382,},
         { 7, 6893, },
-        { 8, 11000,},
-        { 9, 11140,},
-        { 10, 18249, },
-        { 11, 13704, },
-        { 12, 11197, },
-        { 13, 18266, },
-        { 14, 18268, },
-        { 15, 13873, },
+        { 8, 11140,},
+        { 9, 18249, },
+        { 10, 11197, },
         { 16, "INV_Box_01", nil, AL["Misc"], nil },
         { 17, 19931 },
         { 18, 18250 },
@@ -178,7 +173,6 @@ local AQ_SCARABS = { -- AQ40Trash2
         { 6,  20877 }, -- Idol of the Sage
         { 7,  20874 }, -- Idol of the Sun
         { 8,  20882 }, -- Idol of War
-        { 10, 21762 }, -- Greater Scarab Coffer Key
         { 12, 21156 }, -- Scarab Bag
         { 14, 21230 }, -- Ancient Qiraji Artifact
         { 16, 20864 }, -- Bone Scarab
@@ -5590,9 +5584,9 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
             name = AL["Trash"],
             ExtraList = true,
             [NORMAL_DIFF] = {
-                { 1,  21804, [ATLASLOOT_IT_ALLIANCE] = 21803 }, -- Coif of Elemental Fury
-                --{ 2,  21803 }, -- Helm of the Holy Avenger
-                { 2,  21805 }, -- Polished Obsidian Pauldrons
+                { 1,  21804 }, -- Coif of Elemental Fury
+                { 2,  21803 }, -- Helm of the Holy Avenger
+                { 3,  21805 }, -- Polished Obsidian Pauldrons
                 { 5,  20873 }, -- Alabaster Idol
                 { 6,  20869 }, -- Amber Idol
                 { 7,  20866 }, -- Azure Idol
@@ -5601,7 +5595,6 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
                 { 10, 20871 }, -- Obsidian Idol
                 { 11, 20867 }, -- Onyx Idol
                 { 12, 20872 }, -- Vermillion Idol
-                { 14, 21761 }, -- Scarab Coffer Key
                 { 15, 21156 }, -- Scarab Bag
                 { 16, 21801 }, -- Antenna of Invigoration
                 { 17, 21800 }, -- Silithid Husked Launcher
