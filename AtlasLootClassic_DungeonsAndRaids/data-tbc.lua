@@ -235,7 +235,6 @@ data["HellfireRamparts"] = {
                 { 25, 23891 }, -- Ominous Letter
             }
         },
-        KEYS
     }
 }
 
@@ -331,7 +330,6 @@ data["TheBloodFurnace"] = {
                 { 28, 33814 }, -- Keli'dan's Feathered Stave
             }
         },
-        KEYS
     }
 }
 
@@ -479,7 +477,6 @@ data["TheShatteredHalls"] = {
                 { 1, 22554 }, -- Formula: Enchant 2H Weapon - Savagery
             }
         },
-        KEYS
     }
 }
 
@@ -615,7 +612,6 @@ data["Mana-Tombs"] = {
                 { 3, 22543 }, -- Formula: Enchant Boots - Fortitude
             }
         },
-        KEYS
     }
 }
 
@@ -707,7 +703,6 @@ data["AuchenaiCrypts"] = {
                 { 3, 22544 }, -- Formula: Enchant Boots - Dexterity
             }
         },
-        KEYS
 	},
 }
 
@@ -831,7 +826,6 @@ data["SethekkHalls"] = {
                 { 3, 29669 }, -- Pattern: Shadow Armor Kit
             }
         },
-        KEYS
     }
 }
 
@@ -990,7 +984,6 @@ data["ShadowLabyrinth"] = {
                 { 1, 23607 }, -- Plans: Felsteel Helm
             }
         },
-        KEYS
     }
 }
 
@@ -1110,7 +1103,6 @@ data["TheSlavePens"] = {
                 { 20, 35557 }, -- Huge Snowball
             },
         }),
-        KEYS
     }
 }
 
@@ -1235,7 +1227,6 @@ data["TheUnderbog"] = {
                 { 28, 33826 }, -- Black Stalker Egg
             }
         },
-        KEYS
     }
 }
 
@@ -1357,7 +1348,6 @@ data["TheSteamvault"] = {
                 { 6, 24368 }, -- Coilfang Armaments
             }
         },
-        KEYS
     }
 }
 
@@ -1504,7 +1494,6 @@ data["OldHillsbradFoothills"] = {
                 { 1, 25729 }, -- Pattern: Stylin' Adventure Hat
             }
         },
-        KEYS
     }
 }
 
@@ -1620,7 +1609,6 @@ data["TheBlackMorass"] = {
                 { 1, 25730 }, -- Pattern: Stylin' Jungle Hat
             }
         },
-        KEYS
     }
 }
 
@@ -1769,7 +1757,6 @@ data["TheArcatraz"] = {
                 { 5, 21905 }, -- Pattern: Arcanoweave Bracers
             }
         },
-        KEYS
     }
 }
 
@@ -1942,7 +1929,6 @@ data["TheBotanica"] = {
                 { 1, 24172 }, -- Design: Coronet of Verdant Flame
             }
         },
-        KEYS
     }
 }
 
@@ -2258,7 +2244,6 @@ data["MagistersTerrace"] = {
                 { 1, 35516 }, -- Sun Touched Satchel
             }
         },
-        KEYS
     }
 }
 
