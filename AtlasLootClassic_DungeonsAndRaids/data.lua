@@ -56,39 +56,6 @@ local WHIT = "|cffffffff%s|r"
 local NAME_COLOR, NAME_COLOR_BOSS = "|cffC0C0C0", "|cffC0C0C0"
 local NAME_BRD_RING_OF_LAW = NAME_COLOR_BOSS..AL["Ring of Law"]..":|r %s" -- Tempest Keep
 
-local KEYS = {	-- Keys
-    name = AL["Keys"],
-    TableType = NORMAL_ITTYPE,
-    ExtraList = true,
-    IgnoreAsSource = true,
-    [NORMAL_DIFF] = {
-        { 1, "INV_Box_01", nil, AL["Key"], nil },
-        { 2, 16309,},
-        { 3, 12344,},
-        { 4, 17191,},
-        { 5, 7146, },
-        { 6, 12382,},
-        { 7, 6893, },
-        { 8, 11140,},
-        { 9, 18249, },
-        { 10, 11197, },
-        { 16, "INV_Box_01", nil, AL["Misc"], nil },
-        { 17, 19931 },
-        { 18, 18250 },
-        { 19, 9240 },
-        { 20, 17333 },
-        { 21, 22754 },
-        { 22, 13523 },
-        { 23, 18746 },
-        { 24, 18663 },
-        { 25, 19974 },
-        { 26, 7733 },
-        { 27, 10818 },
-        { 29, 22057 },
-        { 30, 21986 },
-    },
-}
-
 local T1_SET = {
     name = format(AL["Tier %s Sets"], "1"),
     ExtraList = true,
@@ -1020,7 +987,6 @@ data["ScarletMonasteryGraveyard"] = {
                 { 24, 33154 }, -- Sinister Squashling
             }
         }),
-        KEYS,
     },
 }
 
@@ -1089,14 +1055,6 @@ data["ScarletMonasteryLibrary"] = {
                 { 23, 7757 }, -- Windweaver Staff
             },
         },
-        {
-            name = AL["Doan's Strongbox"],
-            ExtraList = true,
-            [NORMAL_DIFF] = {
-                { 1,  7146 }, -- The Scarlet Key
-            },
-        },
-        KEYS,
     },
 }
 
@@ -1328,7 +1286,6 @@ data["ScarletMonasteryArmory"] = {
                 { 26, 23192 }, -- Tabard of the Scarlet Crusade
             },
         },
-        KEYS,
     },
 }
 
@@ -1408,7 +1365,6 @@ data["ScarletMonasteryCathedral"] = {
                 { 27, 10329 }, -- Scarlet Belt
             },
         },
-        KEYS,
     },
 }
 
@@ -2028,7 +1984,6 @@ data["Scholomance"] = {
                 { 5,  22333 }, -- Hammer of Divine Might
             },
         },
-        KEYS,
     },
 }
 
@@ -2139,7 +2094,6 @@ data["DireMaulEast"] = {
             },
         },
         DM_BOOKS,
-        KEYS,
     },
 }
 
@@ -2685,7 +2639,6 @@ data["Stratholme"] = {
                 { 5,  22329 }, -- Scepter of Interminable Focus
             },
         },
-        KEYS,
     },
 }
 
@@ -2838,7 +2791,6 @@ data["DireMaulWest"] = {
             },
         },
         DM_BOOKS,
-        KEYS,
     },
 }
 
@@ -3030,7 +2982,6 @@ data["DireMaulNorth"] = {
             },
         },
         DM_BOOKS,
-        KEYS,
     },
 }
 
