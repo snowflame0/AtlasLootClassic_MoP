@@ -1873,55 +1873,55 @@ data["ArchaeologyCata"] = {
         {
             name = AL["Endgame Gear"],
             [NORMAL_DIFF] = {
-                { 1, "TRADE_ARCHAEOLOGY_TROLL_TABLET", nil, ALIL["Troll"] },
+                { 1, "TRADE_ARCHAEOLOGY_TROLL_TABLET", nil, AL["Troll"] },
                 { 2, 90608 }, -- Zin'rokh, Destroyer of Worlds
-                { 4, "TRADE_ARCHAEOLOGY_HIGHBORNE_SCROLL", nil, ALIL["Night Elf"] },
+                { 4, "TRADE_ARCHAEOLOGY_HIGHBORNE_SCROLL", nil, AL["Night Elf"] },
                 { 5, 91757 }, -- Tyrande's Favorite Doll
-                { 7, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, ALIL["Tol'vir"] },
+                { 7, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, AL["Tol'vir"] },
                 { 8, 92163 }, -- Scimitar of the Sirocco
                 { 9, 92139 }, -- Staff of Ammunae
                 { 10, 92168 }, -- Ring of the Boy Emperor
-                { 16, "TRADE_ARCHAEOLOGY_DWARF_RUNESTONE", nil, ALIL["Dwarf"] },
+                { 16, "TRADE_ARCHAEOLOGY_DWARF_RUNESTONE", nil, AL["Dwarf"] },
                 { 17, 91227 }, -- Staff of Sorcerer-Thane Thaurissan
-                { 19, "TRADE_ARCHAEOLOGY_FOSSIL_SNAILSHELL", nil, ALIL["Fossil"] },
+                { 19, "TRADE_ARCHAEOLOGY_FOSSIL_SNAILSHELL", nil, AL["Fossil"] },
                 { 20, 98533 }, -- Extinct Turtle Shell
             },
         },
         {
             name = AL["Leveling Gear"],
             [NORMAL_DIFF] = {
-                { 1, "TRADE_ARCHAEOLOGY_VRYKUL_RUNESTICK", nil, ALIL["Vrykul"] },
+                { 1, "TRADE_ARCHAEOLOGY_VRYKUL_RUNESTICK", nil, AL["Vrykul"] },
                 { 2, 90997 }, -- Nifflevar Bearded Axe
-                { 4, "TRADE_ARCHAEOLOGY_ORC_BLOODTEXT", nil, ALIL["Orc"] },
+                { 4, "TRADE_ARCHAEOLOGY_ORC_BLOODTEXT", nil, AL["Orc"] },
                 { 5, 90843 }, -- Headdress of the First Shaman
-                { 16, "TRADE_ARCHAEOLOGY_HIGHBORNE_SCROLL", nil, ALIL["Night Elf"] },
+                { 16, "TRADE_ARCHAEOLOGY_HIGHBORNE_SCROLL", nil, AL["Night Elf"] },
                 { 17, 90616 }, -- Queen Azshara's Dressing Gown
             },
         },
         {
             name = AL["Toys"],
             [NORMAL_DIFF] = {
-                { 1, "TRADE_ARCHAEOLOGY_HIGHBORNE_SCROLL", nil, ALIL["Night Elf"] },
+                { 1, "TRADE_ARCHAEOLOGY_HIGHBORNE_SCROLL", nil, AL["Night Elf"] },
                 { 2, 91761 }, -- Bones of Transformation
                 { 3, 91773 }, -- Wisp Amulet
                 { 4, 90464 }, -- Highborne Soul Mirror
                 { 5, 90614 }, -- Kaldorei Wind Chimes
                 { 6, 90493 }, -- Druid and Priest Statue Set
-                { 8, "TRADE_ARCHAEOLOGY_TROLL_TABLET", nil, ALIL["Troll"] },
+                { 8, "TRADE_ARCHAEOLOGY_TROLL_TABLET", nil, AL["Troll"] },
                 { 9, 98556 }, -- Haunted War Drum
-                { 11, "TRADE_ARCHAEOLOGY_VRYKUL_RUNESTICK", nil, ALIL["Vrykul"] },
+                { 11, "TRADE_ARCHAEOLOGY_VRYKUL_RUNESTICK", nil, AL["Vrykul"] },
                 { 12, 98569 }, -- Vrykul Drinking Horn
-                { 14, "TRADE_ARCHAEOLOGY_FOSSIL_SNAILSHELL", nil, ALIL["Fossil"] },
+                { 14, "TRADE_ARCHAEOLOGY_FOSSIL_SNAILSHELL", nil, AL["Fossil"] },
                 { 15, 98560 }, -- Ancient Amber
-                { 16, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, ALIL["Tol'vir"] },
+                { 16, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, AL["Tol'vir"] },
                 { 17, 92145 }, -- Pendant of the Scarab Storm
-                { 19, "TRADE_ARCHAEOLOGY_NERUBIAN_OBELISK", nil, ALIL["Nerubian"] },
+                { 19, "TRADE_ARCHAEOLOGY_NERUBIAN_OBELISK", nil, AL["Nerubian"] },
                 { 20, 91214 }, -- Blessing of the Old God
                 { 21, 91215 }, -- Puzzle Box of Yogg-Saron
-                { 23, "TRADE_ARCHAEOLOGY_DRAENEI_TOME", nil, ALIL["Draenei"] },
+                { 23, "TRADE_ARCHAEOLOGY_DRAENEI_TOME", nil, AL["Draenei"] },
                 { 24, 90984 }, -- The Last Relic of Argus
                 { 25, 90983 }, -- Arrival of the Naaru
-                { 27, "TRADE_ARCHAEOLOGY_DWARF_RUNESTONE", nil, ALIL["Dwarf"] },
+                { 27, "TRADE_ARCHAEOLOGY_DWARF_RUNESTONE", nil, AL["Dwarf"] },
                 { 28, 91226 }, -- The Innkeeper's Daughter
                 { 29, 90553 }, -- Chalice of the Mountain Kings
             },
@@ -1929,22 +1929,22 @@ data["ArchaeologyCata"] = {
         {
             name = AL["Mounts"],
             [NORMAL_DIFF] = {
-                { 1, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, ALIL["Tol'vir"] },
+                { 1, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, AL["Tol'vir"] },
                 { 2, 92148 }, -- Scepter of Azj'Aqir
-                { 16, "TRADE_ARCHAEOLOGY_FOSSIL_SNAILSHELL", nil, ALIL["Fossil"] },
+                { 16, "TRADE_ARCHAEOLOGY_FOSSIL_SNAILSHELL", nil, AL["Fossil"] },
                 { 17, 90619 }, -- Fossilized Raptor
             },
         },
         {
             name = AL["Pets"],
             [NORMAL_DIFF] = {
-                { 1, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, ALIL["Tol'vir"] },
+                { 1, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, AL["Tol'vir"] },
                 { 2, 92137 }, -- Crawling Claw
-                { 4, "TRADE_ARCHAEOLOGY_TROLL_TABLET", nil, ALIL["Troll"] },
+                { 4, "TRADE_ARCHAEOLOGY_TROLL_TABLET", nil, AL["Troll"] },
                 { 5, 98588 }, -- Voodoo Figurine
-                { 16, "TRADE_ARCHAEOLOGY_DWARF_RUNESTONE", nil, ALIL["Dwarf"] },
+                { 16, "TRADE_ARCHAEOLOGY_DWARF_RUNESTONE", nil, AL["Dwarf"] },
                 { 17, 90521 }, -- Clockwork Gnome
-                { 19, "TRADE_ARCHAEOLOGY_FOSSIL_SNAILSHELL", nil, ALIL["Fossil"] },
+                { 19, "TRADE_ARCHAEOLOGY_FOSSIL_SNAILSHELL", nil, AL["Fossil"] },
                 { 20, 98582 }, -- Pterrordax Hatchling
                 { 21, 89693 }, -- Fossilized Hatchling
             },
@@ -1952,7 +1952,7 @@ data["ArchaeologyCata"] = {
         {
             name = AL["Misc"],
             [NORMAL_DIFF] = {
-                { 1, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, ALIL["Tol'vir"] },
+                { 1, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, AL["Tol'vir"] },
                 { 2, 91790 }, -- Canopic Jar
                 { 16, "i52843" }, -- Dwarf Rune Stone
                 { 17, "i63127" }, -- Highborne Scroll
