@@ -1130,21 +1130,23 @@ data["CompanionsWrath"] = {
         }
     }, {
         name = AL["Argent Tournament"],
-        [HORDE_DIFF] = {{1, 44971}, --  Tirisfal Batling
-        {2, 44973}, --  Durotar Scorpion
-        {3, 44980}, --  Mulgore Hatchling
-        {4, 45606}, --  Sen'jin Fetish
-        {5, 44974}, -- Enchanted Broom -- { 50, 44982 }, --  Enchanted Broom
-        {6, 45022}, --  Argent Gruntling
-        {16, 46821} --  Shimmering Wyrmling
+        [HORDE_DIFF] = {
+            {1, 44971}, --  Tirisfal Batling
+            {2, 44973}, --  Durotar Scorpion
+            {3, 44980}, --  Mulgore Hatchling
+            {4, 45606}, --  Sen'jin Fetish
+            {5, 44982}, -- Enchanted Broom
+            {6, 45022}, --  Argent Gruntling
+            {16, 46821} --  Shimmering Wyrmling
         },
-        [ALLIANCE_DIFF] = {{1, 44965}, --  Teldrassil Sproutling
-        {2, 44970}, --  Dun Morogh Cub
-        {3, 44974}, --  Elwynn Lamb
-        {4, 45002}, --  Mechanopeep
-        {5, 44984}, --  Ammen Vale Lashling
-        {6, 44998}, --  Argent Squire
-        {16, 46820} --  Shimmering Wyrmling
+        [ALLIANCE_DIFF] = {
+            {1, 44965}, --  Teldrassil Sproutling
+            {2, 44970}, --  Dun Morogh Cub
+            {3, 44974}, --  Elwynn Lamb
+            {4, 45002}, --  Mechanopeep
+            {5, 44984}, --  Ammen Vale Lashling
+            {6, 44998}, --  Argent Squire
+            {16, 46820} --  Shimmering Wyrmling
         }
     }, {
         name = ALIL["Fishing"],

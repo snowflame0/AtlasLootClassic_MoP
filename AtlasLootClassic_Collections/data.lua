@@ -1757,6 +1757,7 @@ data["Noblegarden"] = {
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+    CorrespondingFields = private.NOBLEGARDEN,
     items = {
         { -- Noblegarden
             name = AL["Brightly Colored Egg"],

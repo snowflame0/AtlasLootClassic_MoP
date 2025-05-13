@@ -444,21 +444,22 @@ local function GameVersionSelect_OnClick(self, mouseButton)
 			return button
 		end
 
-		local classicButton = createGVButton(AtlasLoot.CLASSIC_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.CLASSIC_VERSION_NUM])
+		-- NOTE: Might need a redesign now that we're going on the 4th expansion
+		local classicButton = createGVButton(AtlasLoot.CATA_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.CATA_VERSION_NUM])
 		classicButton:SetPoint("TOP", frame, "TOP", 0, -5)
 
-		if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
-			local bcButton = createGVButton(AtlasLoot.BC_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.BC_VERSION_NUM])
+		if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
+			local bcButton = createGVButton(AtlasLoot.WRATH_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.WRATH_VERSION_NUM])
 			bcButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
 		end
 
-		if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
-			local wrathButton = createGVButton(AtlasLoot.WRATH_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.WRATH_VERSION_NUM])
+		if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
+			local wrathButton = createGVButton(AtlasLoot.BC_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.BC_VERSION_NUM])
 			wrathButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
 		end
 
-		if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
-			local cataButton = createGVButton(AtlasLoot.CATA_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.CATA_VERSION_NUM])
+		if AtlasLoot:GameVersion_GE(AtlasLoot.CLASSIC_VERSION_NUM) then
+			local cataButton = createGVButton(AtlasLoot.CLASSIC_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.CLASSIC_VERSION_NUM])
 			cataButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
 		end
 

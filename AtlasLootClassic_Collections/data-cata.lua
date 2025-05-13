@@ -1497,7 +1497,7 @@ data["NoblegardenCata"] = {
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
     CorrespondingFields = private.NOBLEGARDEN,
     items = { {
-            name = AL["Noblegarden Vendor"],
+            name = AL["Noblegarden"] .. " " .. AL["Vendor"],
             [NORMAL_DIFF] = {
                 { 1,  44818 }, -- Noblegarden Egg
                 { 2,  45073 }, -- Spring Flowers
