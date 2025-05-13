@@ -1,3 +1,9 @@
+# 4.3.2 (May 13, 2025)
+- Add rest of S11 PvP gear
+- Noblegarden items added
+- Several small fixes to old world loot
+- Change order of expansions to put newest one on top first
+
 # 4.3.1 (May 3, 2025)
 - Changes to API calls to prepare for MoP (should load in current "Beta")
 - Clean up to prepare for MoP

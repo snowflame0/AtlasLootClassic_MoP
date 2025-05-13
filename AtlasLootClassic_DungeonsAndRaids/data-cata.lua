@@ -3730,7 +3730,7 @@ ExtraList = true,
 },
 },
 { -- Firestones
-name = ALIL["Firestone Vendor"],
+name = AL["Firestone Vendor"],
 ContentPhaseCata = 3,
 ExtraList = true,
 [VENDOR_DIFF] = {

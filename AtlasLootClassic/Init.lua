@@ -93,17 +93,12 @@ elseif WOW_PROJECT_ID == WOW_PROJECT_MOP_CLASSIC then
 elseif WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC then
 	CurrentGameVersion = AtlasLoot.CATA_VERSION_NUM
 	AtlasLoot.IS_CATA = true
-elseif WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC then
-	if LE_EXPANSION_LEVEL_CURRENT == LE_EXPANSION_WRATH_OF_THE_LICH_KING then
-		CurrentGameVersion = AtlasLoot.WRATH_VERSION_NUM
-		AtlasLoot.IS_WRATH = true
-	elseif LE_EXPANSION_LEVEL_CURRENT == LE_EXPANSION_BURNING_CRUSADE then
-		CurrentGameVersion = AtlasLoot.BC_VERSION_NUM
-		AtlasLoot.IS_BC = true
-	end
 elseif WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC then
 	CurrentGameVersion = AtlasLoot.WRATH_VERSION_NUM
 	AtlasLoot.IS_WRATH = true
+elseif WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC then
+	CurrentGameVersion = AtlasLoot.BC_VERSION_NUM
+	AtlasLoot.IS_BC = true
 elseif WOW_PROJECT_ID == WOW_PROJECT_CLASSIC then
 	CurrentGameVersion = AtlasLoot.CLASSIC_VERSION_NUM
 	AtlasLoot.IS_CLASSIC = true
