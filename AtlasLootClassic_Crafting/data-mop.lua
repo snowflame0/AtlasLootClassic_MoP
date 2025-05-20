@@ -46,7 +46,7 @@ local PROF_CLASS_CONTENT = data:AddContentType(AL["Class Professions"], ATLASLOO
 local GEM_FORMAT1 = ALIL["Gems"].." - %s"
 local GEM_FORMAT2 = ALIL["Gems"].." - %s & %s"
 
-data["AlchemyCata"] = {
+data["AlchemyMoP"] = {
     name = ALIL["Alchemy"],
     ContentType = PROF_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -143,7 +143,7 @@ data["AlchemyCata"] = {
     },
 }
 
-data["BlacksmithingCata"] = {
+data["BlacksmithingMoP"] = {
     name = ALIL["Blacksmithing"],
     ContentType = PROF_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -328,7 +328,7 @@ data["BlacksmithingCata"] = {
     }
 }
 
-data["EnchantingCata"] = {
+data["EnchantingMoP"] = {
     name = ALIL["Enchanting"],
     ContentType = PROF_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -443,7 +443,7 @@ data["EnchantingCata"] = {
     }
 }
 
-data["EngineeringCata"] = {
+data["EngineeringMoP"] = {
     name = ALIL["Engineering"],
     ContentType = PROF_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -548,7 +548,7 @@ data["EngineeringCata"] = {
     }
 }
 
-data["InscriptionCata"] = {
+data["InscriptionMoP"] = {
     name = ALIL["Inscription"],
     ContentType = PROF_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -1064,7 +1064,7 @@ data["InscriptionCata"] = {
     }
 }
 
-data["JewelcraftingCata"] = {
+data["JewelcraftingMoP"] = {
     name = ALIL["Jewelcrafting"],
     ContentType = PROF_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -1459,7 +1459,7 @@ data["JewelcraftingCata"] = {
     }
 }
 
-data["LeatherworkingCata"] = {
+data["LeatherworkingMoP"] = {
     name = ALIL["Leatherworking"],
     ContentType = PROF_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -1652,7 +1652,7 @@ data["LeatherworkingCata"] = {
     }
 }
 
-data["TailoringCata"] = {
+data["TailoringMoP"] = {
     name = ALIL["Tailoring"],
     ContentType = PROF_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -1801,7 +1801,7 @@ data["TailoringCata"] = {
     }
 }
 
-data["MiningCata"] = {
+data["MiningMoP"] = {
     name = ALIL["Mining"],
     ContentType = PROF_GATH_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -1820,7 +1820,7 @@ data["MiningCata"] = {
     }
 }
 
-data["HerbalismCata"] = {
+data["HerbalismMoP"] = {
     name = ALIL["Herbalism"],
     ContentType = PROF_GATH_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -1843,7 +1843,7 @@ data["HerbalismCata"] = {
     }
 }
 
-data["SkinningCata"] = {
+data["SkinningMoP"] = {
     name = ALIL["Skinning"],
     ContentType = PROF_GATH_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -1863,7 +1863,7 @@ data["SkinningCata"] = {
     }
 }
 
-data["ArchaeologyCata"] = {
+data["ArchaeologyMoP"] = {
     name = ALIL["Archaeology"],
     ContentType = PROF_SEC_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -1967,7 +1967,7 @@ data["ArchaeologyCata"] = {
     }
 }
 
-data["CookingCata"] = {
+data["CookingMoP"] = {
     name = ALIL["Cooking"],
     ContentType = PROF_SEC_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -2086,7 +2086,7 @@ data["CookingCata"] = {
     }
 }
 
-data["FirstAidCata"] = {
+data["FirstAidMoP"] = {
     name = ALIL["First Aid"],
     ContentType = PROF_SEC_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -2105,7 +2105,7 @@ data["FirstAidCata"] = {
     }
 }
 
-data["FishingCata"] = {
+data["FishingMoP"] = {
     name = ALIL["Fishing"],
     ContentType = PROF_SEC_CONTENT,
     LoadDifficulty = NORMAL_DIFF,

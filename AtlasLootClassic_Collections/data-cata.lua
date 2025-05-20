@@ -127,12 +127,13 @@ data["CookingVendorCata"] = {
     }}
 }
 
-data["ValorPoints"] = {
+data["ValorPointsCata"] = {
     name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, AL["Valor Points"])),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
     ContentPhaseCata = 4,
+    CorrespondingFields = private.VALOR_POINTS,
     items = { {
         name = ALIL["Armor"] .. " - " .. ALIL["Cloth / Leather"],
         [VENDOR_DIFF] = { -- Cloth
@@ -233,11 +234,12 @@ data["ValorPoints"] = {
     }
 }
 
-data["JusticePoints"] = {
+data["JusticePointsCata"] = {
     name = format(AL["'%s' Vendor"], format(SUPERIOR_QUALITY, AL["Justice Points"])),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.JUSTICE_POINTS,
     items = { {
         name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
         [VENDOR_DIFF] = { -- Mage

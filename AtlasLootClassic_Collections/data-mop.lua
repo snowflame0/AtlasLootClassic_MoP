@@ -79,26 +79,30 @@ data["CookingVendorMoP"] = {
     items = {{
         name = AL["Recipe"],
         [VENDOR_DIFF] = {
+            { 1,  77147 }, -- Hood of Hidden Flesh
         }
     }, {
         name = AL["Misc"],
         [VENDOR_DIFF] = {
+            { 1,  77147 }, -- Hood of Hidden Flesh
 
         }
     }, {
         name = AL["Guild"],
         ExtraList = true;
         [VENDOR_DIFF] = {
+            { 1,  77147 }, -- Hood of Hidden Flesh
         }
     }}
 }
 
-data["ValorPoints"] = {
+data["ValorPointsMoP"] = {
     name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, AL["Valor Points"])),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.MOP_VERSION_NUM,
     -- ContentPhaseCata = 4,
+    CorrespondingFields = private.VALOR_POINTS,
     items = { {
         name = ALIL["Armor"] .. " - " .. ALIL["Cloth / Leather"],
         [VENDOR_DIFF] = { -- Cloth
@@ -199,11 +203,12 @@ data["ValorPoints"] = {
     }
 }
 
-data["JusticePoints"] = {
+data["JusticePointsMoP"] = {
     name = format(AL["'%s' Vendor"], format(SUPERIOR_QUALITY, AL["Justice Points"])),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.MOP_VERSION_NUM,
+    CorrespondingFields = private.JUSTICE_POINTS,
     items = { {
         name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
         [VENDOR_DIFF] = { -- Mage
@@ -618,6 +623,7 @@ data["Weapon Sets"] = {
             }
         } }
 }
+
 data["MountsMoP"] = {
     name = ALIL["Mounts"],
     ContentType = COLLECTIONS_CONTENT,
@@ -775,6 +781,7 @@ data["TabardsMoP"] = {
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.MOP_VERSION_NUM,
     CorrespondingFields = private.TABARDS,
     items = { {
         name = AL["Factions"],
