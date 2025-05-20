@@ -444,28 +444,28 @@ local function GameVersionSelect_OnClick(self, mouseButton)
             return button
         end
 
+		-- Create game version buttons from newest xpac to oldest
+		local gameVersions = {}
         if AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM) then
-            local mopButton = createGVButton(AtlasLoot.MOP_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.MOP_VERSION_NUM])
-            mopButton:SetPoint("TOP", frame, "TOP", 0, -5)
+            table.insert(gameVersions, AtlasLoot.MOP_VERSION_NUM)
         end
-
         if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
-            local cataButton = createGVButton(AtlasLoot.CATA_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.CATA_VERSION_NUM])
-            cataButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
+            table.insert(gameVersions, AtlasLoot.CATA_VERSION_NUM)
         end
-
         if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
-            local wrathButton = createGVButton(AtlasLoot.WRATH_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.WRATH_VERSION_NUM])
-            wrathButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
+            table.insert(gameVersions, AtlasLoot.WRATH_VERSION_NUM)
         end
-
         if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
-            local bcButton = createGVButton(AtlasLoot.BC_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.BC_VERSION_NUM])
-            bcButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
+            table.insert(gameVersions, AtlasLoot.BC_VERSION_NUM)
         end
+        table.insert(gameVersions, AtlasLoot.CLASSIC_VERSION_NUM)
 
-        local classicButton = createGVButton(AtlasLoot.CLASSIC_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.CLASSIC_VERSION_NUM])
-        classicButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
+		local GVButton = createGVButton(gameVersions[1], GAME_VERSION_TEXTURES[gameVersions[1]])
+        GVButton:SetPoint("TOP", frame, "TOP", 0, -5)
+		for i = 2, #gameVersions do
+			GVButton = createGVButton(gameVersions[i], GAME_VERSION_TEXTURES[gameVersions[i]])
+			GVButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
+		end
 
         frame:SetSize(width, height + (#frame.buttons * 32) + ((#frame.buttons-1) * buttonGap))
         frame:Hide()
