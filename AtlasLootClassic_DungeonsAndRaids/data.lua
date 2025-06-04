@@ -948,10 +948,10 @@ data["ScarletMonastery"] = {
                 { 7,  71638 }, -- Ornate Weapon
             },
         },
-        { -- SMHCommanderDurand
-            name = AL["Commander Durand"],
-            npcID = 60040,
-            DisplayIDs = {{41220}},
+        { -- SMWhitemane
+            name = AL["High Inquisitor Whitemane"],
+            npcID = 3977,
+            DisplayIDs = {{2043}},
             [NORMAL_DIFF] = {
                 { 1,  88294 }, -- Flashing Steel Talisman
                 { 2,  88295 }, -- Dashing Strike Treads
