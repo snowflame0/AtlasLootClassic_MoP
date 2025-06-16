@@ -863,13 +863,15 @@ data["RazorfenKraul"] = {
 }
 
 --[[ data["ScarletHalls"] = {
-    MapID = 1001,
+	EncounterJournalID = 311,
+    MapID = 431,
     InstanceID = 6052,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({20, 29, 36},{20, 30, 32}),
     items = {
-        { -- SHHoundmasterBraun
+        { --SHBraun
+			EncounterJournalID = 660,
             name = AL["Houndmaster Braun"],
             npcID = 59303,
             DisplayIDs = {{42264}},
@@ -881,7 +883,8 @@ data["RazorfenKraul"] = {
                 { 5,  88268 }, -- Canine Commander's Breastplate
             },
         },
-        { -- SHArmsmasterHarlan
+        { -- SHHarlan
+            EncounterJournalID = 654,
             name = AL["Armsmaster Harlan"],
             npcID = 58632,
             DisplayIDs = {{40293}},
@@ -895,7 +898,8 @@ data["RazorfenKraul"] = {
                 { 8,  23192 }, -- Tabard of the Scarlet Crusade
             },
         },
-        { -- SHFlameweaverKoegler
+        { -- SHKoegler
+			EncounterJournalID = 656,
             name = AL["Flameweaver Koegler"],
             npcID = 59150,
             DisplayIDs = {{40597}},
@@ -917,13 +921,15 @@ data["RazorfenKraul"] = {
 }
 
 data["ScarletMonastery"] = {
-    MapID = 1004,
+    EncounterJournalID = 316,
+    MapID = 435,
     InstanceID = 6109,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({20, 29, 39},{20, 33, 35}),
     items = {
-        { -- SMThalnosSoulrender
+        { -- SMThalnos
+            EncounterJournalID = 688,
             name = AL["Thalnos the Soulrender"],
             npcID = 59789,
             DisplayIDs = {{27705}},
@@ -935,7 +941,8 @@ data["ScarletMonastery"] = {
                 { 5,  88288 }, -- Soulrender Greatcloak
             },
         },
-        { -- SMBrotherKorloff
+        { -- SMKorloff
+            EncounterJournalID = 671,
             name = AL["Brother Korloff"],
             npcID = 59223,
             DisplayIDs = {{41154}},
@@ -949,6 +956,7 @@ data["ScarletMonastery"] = {
             },
         },
         { -- SMWhitemane
+            EncounterJournalID = 674,
             name = AL["High Inquisitor Whitemane"],
             npcID = 3977,
             DisplayIDs = {{2043}},
@@ -1349,13 +1357,15 @@ data["Uldaman"] = {
 }
 
 data["Scholomance"] = {
-    MapID = 6066,
+	EncounterJournalID = 246,
+	MapID = 476,
     InstanceID = 1007,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = {33, 38, 48},
     items = {
-        { -- NewSCHOLOInstructorChillheart
+        { -- ScholoChillheart
+            EncounterJournalID = 659,
             name = AL["Instructor Chillheart"],
             npcID = 58633,
             DisplayIDs = {{40301}},
@@ -1367,7 +1377,8 @@ data["Scholomance"] = {
                 { 5,  88339 }, -- Gravetouch Greatsword
             },
         },
-        { -- NewSCHOLOJandiceBarov
+        { -- ScholoJandice
+            EncounterJournalID = 663,
             name = AL["Jandice Barov"],
             npcID = 59184,
             DisplayIDs = {{43460}},
@@ -1379,7 +1390,8 @@ data["Scholomance"] = {
                 { 5,  88349 }, -- Phantasmal Drape
             },
         },
-        { -- NewSCHOLORattlegore
+        { -- ScholoRattlegore
+            EncounterJournalID = 665,
             name = AL["Rattlegore"],
             npcID = 59153,
             DisplayIDs = {{31092}},
@@ -1391,7 +1403,8 @@ data["Scholomance"] = {
                 { 5,  88344 }, -- Goresoaked Headreaper
             },
         },
-        { -- NewSCHOLOLilianVoss
+        { -- ScholoVoss
+            EncounterJournalID = 666,
             name = AL["Lilian Voss"],
             npcID = 58722,
             DisplayIDs = {{40256}},
@@ -1403,7 +1416,8 @@ data["Scholomance"] = {
                 { 5,  88354 }, -- Necklace of the Dark Blaze
             },
         },
-        { -- NewSCHOLODarkmasterGandling
+        { -- ScholoGandling
+			EncounterJournalID = 684,
             name = AL["Darkmaster Gandling"],
             npcID = 59080,
             DisplayIDs = {{40322}},
