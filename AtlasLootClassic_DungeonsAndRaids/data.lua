@@ -862,10 +862,10 @@ data["RazorfenKraul"] = {
     },
 }
 
---[[ data["ScarletHalls"] = {
+data["ScarletHalls"] = {
 	EncounterJournalID = 311,
-    MapID = 431,
-    InstanceID = 6052,
+    MapID = 6052,
+    InstanceID = 1001,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({20, 29, 36},{20, 30, 32}),
@@ -922,8 +922,8 @@ data["RazorfenKraul"] = {
 
 data["ScarletMonastery"] = {
     EncounterJournalID = 316,
-    MapID = 435,
-    InstanceID = 6109,
+    MapID = 6109,
+    InstanceID = 1004,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({20, 29, 39},{20, 33, 35}),
@@ -999,7 +999,6 @@ data["ScarletMonastery"] = {
         }),
     },
 }
-]]
 
 data["Maraudon"] = {
     MapID = 2100,
@@ -1358,7 +1357,7 @@ data["Uldaman"] = {
 
 data["Scholomance"] = {
 	EncounterJournalID = 246,
-	MapID = 476,
+	MapID = 6066,
     InstanceID = 1007,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
