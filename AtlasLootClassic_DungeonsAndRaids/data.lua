@@ -865,15 +865,12 @@ data["RazorfenKraul"] = {
 data["ScarletHalls"] = {
 	EncounterJournalID = 311,
     MapID = 6052,
-    InstanceID = 1001,
+--    InstanceID = 1001,
     ContentType = DUNGEON_CONTENT,
-    LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({20, 29, 36},{20, 30, 32}),
     items = {
-        { --SHBraun
+        { -- SHBraun
 			EncounterJournalID = 660,
-            name = AL["Houndmaster Braun"],
-            npcID = 59303,
             DisplayIDs = {{42264}},
             [NORMAL_DIFF] = {
                 { 1,  88264 }, -- Houndmaster's Compound Crossbow
@@ -885,8 +882,6 @@ data["ScarletHalls"] = {
         },
         { -- SHHarlan
             EncounterJournalID = 654,
-            name = AL["Armsmaster Harlan"],
-            npcID = 58632,
             DisplayIDs = {{40293}},
             [NORMAL_DIFF] = {
                 { 1,  88269 }, -- Scarlet Sandals
@@ -900,8 +895,6 @@ data["ScarletHalls"] = {
         },
         { -- SHKoegler
 			EncounterJournalID = 656,
-            name = AL["Flameweaver Koegler"],
-            npcID = 59150,
             DisplayIDs = {{40597}},
             [NORMAL_DIFF] = {
                 { 1,  88274 }, -- Koegler's Ritual Knife
@@ -923,15 +916,12 @@ data["ScarletHalls"] = {
 data["ScarletMonastery"] = {
     EncounterJournalID = 316,
     MapID = 6109,
-    InstanceID = 1004,
+    -- InstanceID = 1004,
     ContentType = DUNGEON_CONTENT,
-    LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({20, 29, 39},{20, 33, 35}),
     items = {
         { -- SMThalnos
             EncounterJournalID = 688,
-            name = AL["Thalnos the Soulrender"],
-            npcID = 59789,
             DisplayIDs = {{27705}},
             [NORMAL_DIFF] = {
                 { 1,  88284 }, -- Forgotten Bloodmage Mantle
@@ -943,8 +933,6 @@ data["ScarletMonastery"] = {
         },
         { -- SMKorloff
             EncounterJournalID = 671,
-            name = AL["Brother Korloff"],
-            npcID = 59223,
             DisplayIDs = {{41154}},
             [NORMAL_DIFF] = {
                 { 1,  88289 }, -- Firestorm Greatstaff
@@ -957,8 +945,6 @@ data["ScarletMonastery"] = {
         },
         { -- SMWhitemane
             EncounterJournalID = 674,
-            name = AL["High Inquisitor Whitemane"],
-            npcID = 3977,
             DisplayIDs = {{2043}},
             [NORMAL_DIFF] = {
                 { 1,  88294 }, -- Flashing Steel Talisman
@@ -1358,15 +1344,11 @@ data["Uldaman"] = {
 data["Scholomance"] = {
 	EncounterJournalID = 246,
 	MapID = 6066,
-    InstanceID = 1007,
     ContentType = DUNGEON_CONTENT,
-    LoadDifficulty = NORMAL_DIFF,
     LevelRange = {33, 38, 48},
     items = {
         { -- ScholoChillheart
             EncounterJournalID = 659,
-            name = AL["Instructor Chillheart"],
-            npcID = 58633,
             DisplayIDs = {{40301}},
             [NORMAL_DIFF] = {
                 { 1,  88335 }, -- Anarchist's Pendant
@@ -1378,8 +1360,6 @@ data["Scholomance"] = {
         },
         { -- ScholoJandice
             EncounterJournalID = 663,
-            name = AL["Jandice Barov"],
-            npcID = 59184,
             DisplayIDs = {{43460}},
             [NORMAL_DIFF] = {
                 { 1,  88345 }, -- Barovian Ritual Hood
@@ -1391,8 +1371,6 @@ data["Scholomance"] = {
         },
         { -- ScholoRattlegore
             EncounterJournalID = 665,
-            name = AL["Rattlegore"],
-            npcID = 59153,
             DisplayIDs = {{31092}},
             [NORMAL_DIFF] = {
                 { 1,  88340 }, -- Deadwalker Bracers
@@ -1404,8 +1382,6 @@ data["Scholomance"] = {
         },
         { -- ScholoVoss
             EncounterJournalID = 666,
-            name = AL["Lilian Voss"],
-            npcID = 58722,
             DisplayIDs = {{40256}},
             [NORMAL_DIFF] = {
                 { 1,  88350 }, -- Leggings of Unleashed Anguish
@@ -1417,8 +1393,6 @@ data["Scholomance"] = {
         },
         { -- ScholoGandling
 			EncounterJournalID = 684,
-            name = AL["Darkmaster Gandling"],
-            npcID = 59080,
             DisplayIDs = {{40322}},
             [NORMAL_DIFF] = {
                 { 1,  88355 }, -- Searing Words
