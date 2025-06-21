@@ -520,6 +520,8 @@ function ItemDB.ContentProto:GetName(raw)
     end
     if self.name then
         name = self.name..addEnd
+    elseif self.EncounterJournalID then
+        name = EJ_GetInstanceInfo(self.EncounterJournalID)..addEnd or "EncounterJournalID:"..self.EncounterJournalID
     elseif self.MapID then
         name = C_Map.GetAreaInfo(self.MapID)..addEnd or "MapID:"..self.MapID
     elseif self.FactionID then
@@ -541,6 +543,8 @@ end
 function ItemDB.ContentProto:GetInfo()
     if self.info then
         return self.info
+    elseif self.EncounterJournalID then
+        return select(2, EJ_GetInstanceInfo(self.EncounterJournalID))
     elseif self.FactionID then
         return select(2, GetFactionInfoByID(self.FactionID))
     end
@@ -572,6 +576,8 @@ function ItemDB.ContentProto:GetNameForItemTable(index, raw)
     end
     if index.name then
         name = addStart..index.name..addEnd
+    elseif index.EncounterJournalID then
+        name = addStart..EJ_GetEncounterInfo(index.EncounterJournalID)..addEnd or "EncounterJournalID:"..index.EncounterJournalID
     elseif index.FactionID then
         name = addStart..GetFactionInfoByID(index.FactionID)..addEnd
     elseif index.MapID then
