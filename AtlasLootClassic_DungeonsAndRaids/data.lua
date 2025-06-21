@@ -223,36 +223,48 @@ local DM_BOOKS = { -- DMBooks
     },
 }
 
-data["Ragefire"] = {
+data["RagefireChasm"] = {
+	EncounterJournalID = 226,
     MapID = 2437,
-    InstanceID = 389,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({10, 15, 20}),
-    items = {
-        { -- RFCTaragaman
-            name = AL["Taragaman the Hungerer"],
-            npcID = 11520,
-            Level = 16,
-            DisplayIDs = {{7970}},
+	items = {
+		{ --Adarogg
+			EncounterJournalID = 694,
             [NORMAL_DIFF] = {
-                { 1,  14149 }, -- Subterranean Cape
-                { 2,  14148 }, -- Crystalline Cuffs
-                { 3,  14145 }, -- Cursed Felblade
+                { 1, 82772 }, -- Snarlmouth Leggings
+                { 2, 82879 }, -- Collarspike Bracers
+                { 3, 82880 }, -- Fang of Adarogg
             },
         },
-        { -- RFCJergosh
-            name = AL["Jergosh the Invoker"],
-            npcID = 11518,
-            Level = 16,
-            DisplayIDs = {{11429}},
+		{ --Dark Shaman Koranthal
+			EncounterJournalID = 695,
             [NORMAL_DIFF] = {
-                { 1,  14150 }, -- Robe of Evocation
-                { 2,  14147 }, -- Cavedweller Bracers
-                { 3,  14151 }, -- Chanting Blade
+                { 1, 82877 }, -- Grasp of the Broken Totem
+                { 2, 82881 }, -- Cuffs of Black Elements
+                { 3, 82882 }, -- Dark Ritual Cape
+                { 5, 82605 }, -- Corrupted Insignia
             },
         },
-    },
+		{ --Slagmaw
+			EncounterJournalID = 696,
+            [NORMAL_DIFF] = {
+                { 1, 82878 }, -- Fireworm Robes
+                { 2, 82884 }, -- Chitonous Bracers
+                { 3, 82885 }, -- Flameseared Carapace
+            },
+        },
+		{ --Lava Guard Gordoth
+			EncounterJournalID = 697,
+            [NORMAL_DIFF] = {
+                { 1, 82883 }, -- Bloodcursed Felblade
+                { 2, 82886 }, -- Gorewalker Treads
+                { 3, 82888 }, -- Heartboiler Staff
+            },
+        },
+		CLASSIC_INSTANCE_AC_TABLE,
+	}
 }
 
 data["DeadminesCata"] = {
