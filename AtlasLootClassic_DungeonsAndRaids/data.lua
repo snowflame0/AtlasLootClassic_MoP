@@ -303,7 +303,7 @@ data["DeadminesCata"] = {
             [NORMAL_DIFF] = {
                 { 1, 1156 }, -- Lavishly Jeweled Ring
                 { 2, 5196 }, -- Smite's Reaver
-                { 3, 872 },    -- Rockslicer
+                { 3, 872 }, -- Rockslicer
             },
         },
         { -- "Captain" Cookie
@@ -3369,24 +3369,24 @@ data["MoltenCore"] = {
             npcID = 12118,
             DisplayIDs = {{13031},{12030}},
             [NORMAL_DIFF] = {
-                { 1, 16800 },    -- Arcanist Boots
-                { 2, 16805 },    -- Felheart Gloves
-                { 3, 16829 },    -- Cenarion Boots
-                { 4, 16837 },    -- Earthfury Boots
-                { 5, 16859 },    -- Lawbringer Boots
-                { 6, 16863 },    -- Gauntlets of Might
-                { 16, 18870 },    -- Helm of the Lifegiver
-                { 17, 17109 },    -- Choker of Enlightenment
-                { 18, 19145 },    -- Robe of Volatile Power
-                { 19, 19146 },    -- Wristguards of Stability
-                { 20, 18872 },    -- Manastorm Leggings
-                { 21, 18875 },    -- Salamander Scale Pants
-                { 22, 18861 },    -- Flamewaker Legplates
-                { 23, 18879 },    -- Heavy Dark Iron Ring
-                { 24, 19147 },    -- Ring of Spell Power
-                { 25, 17077 },    -- Crimson Shocker
-                { 26, 18878 },    -- Sorcerous Dagger
-                { 30, 16665 },    -- Tome of Tranquilizing Shot
+                { 1, 16800 }, -- Arcanist Boots
+                { 2, 16805 }, -- Felheart Gloves
+                { 3, 16829 }, -- Cenarion Boots
+                { 4, 16837 }, -- Earthfury Boots
+                { 5, 16859 }, -- Lawbringer Boots
+                { 6, 16863 }, -- Gauntlets of Might
+                { 16, 18870 }, -- Helm of the Lifegiver
+                { 17, 17109 }, -- Choker of Enlightenment
+                { 18, 19145 }, -- Robe of Volatile Power
+                { 19, 19146 }, -- Wristguards of Stability
+                { 20, 18872 }, -- Manastorm Leggings
+                { 21, 18875 }, -- Salamander Scale Pants
+                { 22, 18861 }, -- Flamewaker Legplates
+                { 23, 18879 }, -- Heavy Dark Iron Ring
+                { 24, 19147 }, -- Ring of Spell Power
+                { 25, 17077 }, -- Crimson Shocker
+                { 26, 18878 }, -- Sorcerous Dagger
+                { 30, 16665 }, -- Tome of Tranquilizing Shot
             },
         },
         {    --MCMagmadar
@@ -3394,31 +3394,31 @@ data["MoltenCore"] = {
             npcID = 11982,
             DisplayIDs = {{10193}},
             [NORMAL_DIFF] = {
-                { 1,  16814 },    -- Pants of Prophecy
-                { 2,  16796 },    -- Arcanist Leggings
-                { 3,  16810 },    -- Felheart Pants
-                { 4,  16822 },    -- Nightslayer Pants
-                { 5,  16835 },    -- Cenarion Leggings
-                { 6,  16847 },    -- Giantstalker's Leggings
-                { 7,  16843 },    -- Earthfury Legguards
-                { 8,  16855 },    -- Lawbringer Legplates
-                { 9,  16867 },    -- Legplates of Might
-                { 11, 18203 },    -- Eskhandar's Right Claw
-                { 12, 17065 },    -- Medallion of Steadfast Might
-                { 13, 18829 },    -- Deep Earth Spaulders
-                { 14, 18823 },    -- Aged Core Leather Gloves
-                { 15, 19143 },    -- Flameguard Gauntlets
-                { 16, 19136 },    -- Mana Igniting Cord
-                { 17, 18861 },    -- Flamewaker Legplates
-                { 18, 19144 },    -- Sabatons of the Flamewalker
-                { 19, 18824 },    -- Magma Tempered Boots
-                { 20, 18821 },    -- Quick Strike Ring
-                { 21, 18820 },    -- Talisman of Ephemeral Power
-                { 22, 19142 },    -- Fire Runed Grimoire
-                { 23, 17069 },    -- Striker's Mark
-                { 24, 17073 },    -- Earthshaker
-                { 25, 18822 },    -- Obsidian Edged Blade
-                { 27, 93034 },    -- Blazing Rune
+                { 1,  16814 }, -- Pants of Prophecy
+                { 2,  16796 }, -- Arcanist Leggings
+                { 3,  16810 }, -- Felheart Pants
+                { 4,  16822 }, -- Nightslayer Pants
+                { 5,  16835 }, -- Cenarion Leggings
+                { 6,  16847 }, -- Giantstalker's Leggings
+                { 7,  16843 }, -- Earthfury Legguards
+                { 8,  16855 }, -- Lawbringer Legplates
+                { 9,  16867 }, -- Legplates of Might
+                { 11, 18203 }, -- Eskhandar's Right Claw
+                { 12, 17065 }, -- Medallion of Steadfast Might
+                { 13, 18829 }, -- Deep Earth Spaulders
+                { 14, 18823 }, -- Aged Core Leather Gloves
+                { 15, 19143 }, -- Flameguard Gauntlets
+                { 16, 19136 }, -- Mana Igniting Cord
+                { 17, 18861 }, -- Flamewaker Legplates
+                { 18, 19144 }, -- Sabatons of the Flamewalker
+                { 19, 18824 }, -- Magma Tempered Boots
+                { 20, 18821 }, -- Quick Strike Ring
+                { 21, 18820 }, -- Talisman of Ephemeral Power
+                { 22, 19142 }, -- Fire Runed Grimoire
+                { 23, 17069 }, -- Striker's Mark
+                { 24, 17073 }, -- Earthshaker
+                { 25, 18822 }, -- Obsidian Edged Blade
+                { 27, 93034 }, -- Blazing Rune
             },
         },
         {    --MCGehennas
@@ -3426,22 +3426,22 @@ data["MoltenCore"] = {
             npcID = 12259,
             DisplayIDs = {{13030},{12002}},
             [NORMAL_DIFF] = {
-                { 1,  16812 },    -- Gloves of Prophecy
-                { 2,  16826 },    -- Nightslayer Gloves
-                { 3,  16849 },    -- Giantstalker's Boots
-                { 4,  16839 },    -- Earthfury Gauntlets
-                { 5,  16860 },    -- Lawbringer Gauntlets
-                { 6,  16862 },    -- Sabatons of Might
-                { 16, 18870 },    -- Helm of the Lifegiver
-                { 17, 19145 },    -- Robe of Volatile Power
-                { 18, 19146 },    -- Wristguards of Stability
-                { 19, 18872 },    -- Manastorm Leggings
-                { 20, 18875 },    -- Salamander Scale Pants
-                { 21, 18861 },    -- Flamewaker Legplates
-                { 22, 18879 },    -- Heavy Dark Iron Ring
-                { 23, 19147 },    -- Ring of Spell Power
-                { 24, 17077 },    -- Crimson Shocker
-                { 25, 18878 },    -- Sorcerous Dagger
+                { 1,  16812 }, -- Gloves of Prophecy
+                { 2,  16826 }, -- Nightslayer Gloves
+                { 3,  16849 }, -- Giantstalker's Boots
+                { 4,  16839 }, -- Earthfury Gauntlets
+                { 5,  16860 }, -- Lawbringer Gauntlets
+                { 6,  16862 }, -- Sabatons of Might
+                { 16, 18870 }, -- Helm of the Lifegiver
+                { 17, 19145 }, -- Robe of Volatile Power
+                { 18, 19146 }, -- Wristguards of Stability
+                { 19, 18872 }, -- Manastorm Leggings
+                { 20, 18875 }, -- Salamander Scale Pants
+                { 21, 18861 }, -- Flamewaker Legplates
+                { 22, 18879 }, -- Heavy Dark Iron Ring
+                { 23, 19147 }, -- Ring of Spell Power
+                { 24, 17077 }, -- Crimson Shocker
+                { 25, 18878 }, -- Sorcerous Dagger
             },
         },
         {    --MCGarr
@@ -3449,31 +3449,31 @@ data["MoltenCore"] = {
             npcID = 12057,
             DisplayIDs = {{12110}, {5781}},
             [NORMAL_DIFF] = {
-                { 1, 18564 },    -- Bindings of the Windseeker
-                { 3,  16813 },    -- Circlet of Prophecy
-                { 4,  16795 },    -- Arcanist Crown
-                { 5,  16808 },    -- Felheart Horns
-                { 6,  16821 },    -- Nightslayer Cover
-                { 7,  16834 },    -- Cenarion Helm
-                { 8,  16846 },    -- Giantstalker's Helmet
-                { 9,  16842 },    -- Earthfury Helmet
-                { 10,  16854 },    -- Lawbringer Helm
-                { 11,  16866 },    -- Helm of Might
-                { 16, 18829 },    -- Deep Earth Spaulders
-                { 17, 18823 },    -- Aged Core Leather Gloves
-                { 18, 19143 },    -- Flameguard Gauntlets
-                { 19, 19136 },    -- Mana Igniting Cord
-                { 20, 18861 },    -- Flamewaker Legplates
-                { 21, 19144 },    -- Sabatons of the Flamewalker
-                { 22, 18824 },    -- Magma Tempered Boots
-                { 23, 18821 },    -- Quick Strike Ring
-                { 24, 18820 },    -- Talisman of Ephemeral Power
-                { 25, 19142 },    -- Fire Runed Grimoire
-                { 26, 17066 },    -- Drillborer Disk
-                { 27, 17071 },    -- Gutgore Ripper
-                { 28, 17105 },    -- Aurastone Hammer
-                { 29, 18832 },    -- Brutality Blade
-                { 30, 18822 },    -- Obsidian Edged Blade
+                { 1, 18564 }, -- Bindings of the Windseeker
+                { 3,  16813 }, -- Circlet of Prophecy
+                { 4,  16795 }, -- Arcanist Crown
+                { 5,  16808 }, -- Felheart Horns
+                { 6,  16821 }, -- Nightslayer Cover
+                { 7,  16834 }, -- Cenarion Helm
+                { 8,  16846 }, -- Giantstalker's Helmet
+                { 9,  16842 }, -- Earthfury Helmet
+                { 10,  16854 }, -- Lawbringer Helm
+                { 11,  16866 }, -- Helm of Might
+                { 16, 18829 }, -- Deep Earth Spaulders
+                { 17, 18823 }, -- Aged Core Leather Gloves
+                { 18, 19143 }, -- Flameguard Gauntlets
+                { 19, 19136 }, -- Mana Igniting Cord
+                { 20, 18861 }, -- Flamewaker Legplates
+                { 21, 19144 }, -- Sabatons of the Flamewalker
+                { 22, 18824 }, -- Magma Tempered Boots
+                { 23, 18821 }, -- Quick Strike Ring
+                { 24, 18820 }, -- Talisman of Ephemeral Power
+                { 25, 19142 }, -- Fire Runed Grimoire
+                { 26, 17066 }, -- Drillborer Disk
+                { 27, 17071 }, -- Gutgore Ripper
+                { 28, 17105 }, -- Aurastone Hammer
+                { 29, 18832 }, -- Brutality Blade
+                { 30, 18822 }, -- Obsidian Edged Blade
             },
         },
         {    --MCShazzrah
@@ -3481,22 +3481,22 @@ data["MoltenCore"] = {
             npcID = 12264,
             DisplayIDs = {{13032}},
             [NORMAL_DIFF] = {
-                { 1,  16811 },    -- Boots of Prophecy
-                { 2,  16801 },    -- Arcanist Gloves
-                { 3,  16803 },    -- Felheart Slippers
-                { 4,  16824 },    -- Nightslayer Boots
-                { 5,  16831 },    -- Cenarion Gloves
-                { 6,  16852 },    -- Giantstalker's Gloves
-                { 16, 18870 },    -- Helm of the Lifegiver
-                { 17, 19145 },    -- Robe of Volatile Power
-                { 18, 19146 },    -- Wristguards of Stability
-                { 19, 18872 },    -- Manastorm Leggings
-                { 20, 18875 },    -- Salamander Scale Pants
-                { 21, 18861 },    -- Flamewaker Legplates
-                { 22, 18879 },    -- Heavy Dark Iron Ring
-                { 23, 19147 },    -- Ring of Spell Power
-                { 24, 17077 },    -- Crimson Shocker
-                { 25, 18878 },    -- Sorcerous Dagger
+                { 1,  16811 }, -- Boots of Prophecy
+                { 2,  16801 }, -- Arcanist Gloves
+                { 3,  16803 }, -- Felheart Slippers
+                { 4,  16824 }, -- Nightslayer Boots
+                { 5,  16831 }, -- Cenarion Gloves
+                { 6,  16852 }, -- Giantstalker's Gloves
+                { 16, 18870 }, -- Helm of the Lifegiver
+                { 17, 19145 }, -- Robe of Volatile Power
+                { 18, 19146 }, -- Wristguards of Stability
+                { 19, 18872 }, -- Manastorm Leggings
+                { 20, 18875 }, -- Salamander Scale Pants
+                { 21, 18861 }, -- Flamewaker Legplates
+                { 22, 18879 }, -- Heavy Dark Iron Ring
+                { 23, 19147 }, -- Ring of Spell Power
+                { 24, 17077 }, -- Crimson Shocker
+                { 25, 18878 }, -- Sorcerous Dagger
             },
         },
         {    --MCGeddon
@@ -3504,24 +3504,24 @@ data["MoltenCore"] = {
             npcID = 12056,
             DisplayIDs = {{12129}},
             [NORMAL_DIFF] = {
-                { 1,  18563 },    -- Bindings of the Windseeker
-                { 3,  16797 },    -- Arcanist Mantle
-                { 4,  16807 },    -- Felheart Shoulder Pads
-                { 5,  16836 },    -- Cenarion Spaulders
-                { 6,  16844 },    -- Earthfury Epaulets
-                { 7,  16856 },    -- Lawbringer Spaulders
-                { 16, 18829 },    -- Deep Earth Spaulders
-                { 17, 18823 },    -- Aged Core Leather Gloves
-                { 18, 19143 },    -- Flameguard Gauntlets
-                { 19, 19136 },    -- Mana Igniting Cord
-                { 20, 18861 },    -- Flamewaker Legplates
-                { 21, 19144 },    -- Sabatons of the Flamewalker
-                { 22, 18824 },    -- Magma Tempered Boots
-                { 23, 18821 },    -- Quick Strike Ring
-                { 24, 17110 },    -- Seal of the Archmagus
-                { 25, 18820 },    -- Talisman of Ephemeral Power
-                { 26, 19142 },    -- Fire Runed Grimoire
-                { 27, 18822 },    -- Obsidian Edged Blade
+                { 1,  18563 }, -- Bindings of the Windseeker
+                { 3,  16797 }, -- Arcanist Mantle
+                { 4,  16807 }, -- Felheart Shoulder Pads
+                { 5,  16836 }, -- Cenarion Spaulders
+                { 6,  16844 }, -- Earthfury Epaulets
+                { 7,  16856 }, -- Lawbringer Spaulders
+                { 16, 18829 }, -- Deep Earth Spaulders
+                { 17, 18823 }, -- Aged Core Leather Gloves
+                { 18, 19143 }, -- Flameguard Gauntlets
+                { 19, 19136 }, -- Mana Igniting Cord
+                { 20, 18861 }, -- Flamewaker Legplates
+                { 21, 19144 }, -- Sabatons of the Flamewalker
+                { 22, 18824 }, -- Magma Tempered Boots
+                { 23, 18821 }, -- Quick Strike Ring
+                { 24, 17110 }, -- Seal of the Archmagus
+                { 25, 18820 }, -- Talisman of Ephemeral Power
+                { 26, 19142 }, -- Fire Runed Grimoire
+                { 27, 18822 }, -- Obsidian Edged Blade
             },
         },
         {    --MCGolemagg
@@ -3529,31 +3529,31 @@ data["MoltenCore"] = {
             npcID = 11988,
             DisplayIDs = {{11986}},
             [NORMAL_DIFF] = {
-                { 1,  16815 },    -- Robes of Prophecy
-                { 2,  16798 },    -- Arcanist Robes
-                { 3,  16809 },    -- Felheart Robes
-                { 4,  16820 },    -- Nightslayer Chestpiece
-                { 5,  16833 },    -- Cenarion Vestments
-                { 6,  16845 },    -- Giantstalker's Breastplate
-                { 7,  16841 },    -- Earthfury Vestments
-                { 8,  16853 },    -- Lawbringer Chestguard
-                { 9,  16865 },    -- Breastplate of Might
-                { 11, 18829 },    -- Deep Earth Spaulders
-                { 12, 18823 },    -- Aged Core Leather Gloves
-                { 13, 19143 },    -- Flameguard Gauntlets
-                { 14, 19136 },    -- Mana Igniting Cord
-                { 15, 18861 },    -- Flamewaker Legplates
-                { 16, 19144 },    -- Sabatons of the Flamewalker
-                { 17, 18824 },    -- Magma Tempered Boots
-                { 18, 18821 },    -- Quick Strike Ring
-                { 19, 18820 },    -- Talisman of Ephemeral Power
-                { 20, 19142 },    -- Fire Runed Grimoire
-                { 21, 17072 },    -- Blastershot Launcher
-                { 22, 17103 },    -- Azuresong Mageblade
-                { 23, 18822 },    -- Obsidian Edged Blade
-                { 24, 18842 },    -- Staff of Dominance
-                { 26, 17203 },    -- Sulfuron Ingot
-                { 27, 93035 },    -- Core of Hardened Ash
+                { 1,  16815 }, -- Robes of Prophecy
+                { 2,  16798 }, -- Arcanist Robes
+                { 3,  16809 }, -- Felheart Robes
+                { 4,  16820 }, -- Nightslayer Chestpiece
+                { 5,  16833 }, -- Cenarion Vestments
+                { 6,  16845 }, -- Giantstalker's Breastplate
+                { 7,  16841 }, -- Earthfury Vestments
+                { 8,  16853 }, -- Lawbringer Chestguard
+                { 9,  16865 }, -- Breastplate of Might
+                { 11, 18829 }, -- Deep Earth Spaulders
+                { 12, 18823 }, -- Aged Core Leather Gloves
+                { 13, 19143 }, -- Flameguard Gauntlets
+                { 14, 19136 }, -- Mana Igniting Cord
+                { 15, 18861 }, -- Flamewaker Legplates
+                { 16, 19144 }, -- Sabatons of the Flamewalker
+                { 17, 18824 }, -- Magma Tempered Boots
+                { 18, 18821 }, -- Quick Strike Ring
+                { 19, 18820 }, -- Talisman of Ephemeral Power
+                { 20, 19142 }, -- Fire Runed Grimoire
+                { 21, 17072 }, -- Blastershot Launcher
+                { 22, 17103 }, -- Azuresong Mageblade
+                { 23, 18822 }, -- Obsidian Edged Blade
+                { 24, 18842 }, -- Staff of Dominance
+                { 26, 17203 }, -- Sulfuron Ingot
+                { 27, 93035 }, -- Core of Hardened Ash
             },
         },
         { -- MCSulfuron
