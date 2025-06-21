@@ -774,7 +774,7 @@ data["ScarletMonasteryMoP"] = {
     }
 }
 
-data["Scholomance"] = {
+data["ScholomanceMoP"] = {
     EncounterJournalID = 246,
     MapID = 6066,
     ContentType = DUNGEON_CONTENT,
