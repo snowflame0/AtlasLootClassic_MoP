@@ -101,38 +101,37 @@ data["Golden Lotus"] = {
             name = ALIL["Honored"],
             [NORMAL_DIFF] = {
                 {1, "f1269rep6"},
-                {2, 86376}, -- Pattern: Greater Cerulean Spellthread
-                {3, 86273}, -- Pattern: Gloves of Earthen Harmony
-                {4, 86370}, -- Pattern: Robes of Creation
-                {5, 86368}, -- Pattern: Spelltwister's Grand Robe
-                {6, 86237}, -- Pattern: Chestguard of Earthen Harmony
-                {7, 89344}, -- Windwalker Spaulders
-                {8, 86295}, -- Pattern: Shadowleather Leg Armor
-                {9, 86375}, -- Pattern: Greater Pearlescent Spellthread
-                {10, 86308}, -- Pattern: Wildblood Gloves
-                {11, 86309}, -- Pattern: Wildblood Vest
-                {12, 89070}, -- Anji's Keepsake
-                {13, 86371}, -- Pattern: Gloves of Creation
-                {14, 89342}, -- Whitepetal Shouldergarb
-                {15, 86274}, -- Pattern: Greyshadow Chestguard
-                {16, 89345}, -- Stonetoe Spaulders
-                {17, 89072}, -- Simple Harmonius Ring
-                {18, 86369}, -- Pattern: Spelltwister's Gloves
-                {19, 86275}, -- Pattern: Greyshadow Gloves
-                {20, 86276}, -- Pattern: Ironscale Leg Armor
-                {21, 89339}, -- Tenderheart Shoulders
-                {22, 89340}, -- Mantle of the Golden Sun
-                {23, 86278}, -- Pattern: Lifekeeper's Robe
-                {24, 89343}, -- Mindbender Shoulders
-                {25, 86235}, -- Pattern: Angerhide Leg Armor
-                {26, 86277}, -- Pattern: Lifekeeper's Gloves
-                {27, 89069}, -- Ring of the Golden Stair
-                {28, 89071}, -- Alani's Inflexible Ring
-                {29, 89341}, -- Imperion Spaulders
-                {30, 89347}, -- Paleblade Shoulderguards
-                {31, 89346}, -- Shoulders of Autumnlight
-                {32, 89073}, -- Leven's Circle of Hope
-                {33, 98048}, -- Simple Harmonius Ring
+                {2, 89339}, -- Tenderheart Shoulders
+                {3, 89340}, -- Mantle of the Golden Sun
+                {4, 89341}, -- Imperion Spaulders
+                {5, 89342}, -- Whitepetal Shouldergarb
+                {6, 89344}, -- Windwalker Spaulders
+                {7, 89343}, -- Mindbender Shoulders
+                {8, 89345}, -- Stonetoe Spaulders
+                {9, 89347}, -- Paleblade Shoulderguards
+                {10, 89346}, -- Shoulders of Autumnlight
+                {16, 89072}, -- Simple Harmonius Ring
+                {17, 89073}, -- Leven's Circle of Hope
+                {18, 89070}, -- Anji's Keepsake
+                {19, 89069}, -- Ring of the Golden Stair
+                {20, 89071}, -- Alani's Inflexible Ring
+                {101, 86295}, -- Pattern: Shadowleather Leg Armor
+                {102, 86235}, -- Pattern: Angerhide Leg Armor
+                {103, 86276}, -- Pattern: Ironscale Leg Armor
+                {104, 86273}, -- Pattern: Gloves of Earthen Harmony
+                {105, 86237}, -- Pattern: Chestguard of Earthen Harmony
+                {106, 86308}, -- Pattern: Wildblood Gloves
+                {107, 86309}, -- Pattern: Wildblood Vest
+                {108, 86274}, -- Pattern: Greyshadow Chestguard
+                {109, 86275}, -- Pattern: Greyshadow Gloves
+                {110, 86278}, -- Pattern: Lifekeeper's Robe
+                {111, 86277}, -- Pattern: Lifekeeper's Gloves
+                {116, 86376}, -- Pattern: Greater Cerulean Spellthread
+                {117, 86375}, -- Pattern: Greater Pearlescent Spellthread
+                {118, 86370}, -- Pattern: Robes of Creation
+                {119, 86371}, -- Pattern: Gloves of Creation
+                {120, 86368}, -- Pattern: Spelltwister's Grand Robe
+                {121, 86369}, -- Pattern: Spelltwister's Gloves
             },
         },
     },
@@ -147,52 +146,52 @@ data["Shado-Pan"] = {
             name = ALIL["Exalted"],
             [NORMAL_DIFF] = {
                 {1, "f1270rep8"},
-                {2, 90846}, -- Replica Shado-Pan Helmet
-                {3, 89306}, -- Reins of the Red Shado-Pan Riding Tiger
-                {4, 89307}, -- Reins of the Blue Shado-Pan Riding Tiger
-                {5, 90844}, -- Replica Shado-Pan Helmet
-                {6, 89801}, -- Replica Shado-Pan Helmet
-                {7, 89305}, -- Reins of the Green Shado-Pan Riding Tiger
-                {8, 89800}, -- Shado-Pan Tabard
-                {9, 90845}, -- Replica Shado-Pan Helmet
+                {2, 89801}, -- Replica Shado-Pan Helmet
+                {3, 90844}, -- Replica Shado-Pan Helmet
+                {4, 90845}, -- Replica Shado-Pan Helmet
+                {5, 90846}, -- Replica Shado-Pan Helmet
+                {7, 89306}, -- Reins of the Red Shado-Pan Riding Tiger
+                {8, 89307}, -- Reins of the Blue Shado-Pan Riding Tiger
+                {9, 89305}, -- Reins of the Green Shado-Pan Riding Tiger
+                {16, 89800}, -- Shado-Pan Tabard
             },
         },
         { -- Revered 7
             name = ALIL["Revered"],
             [NORMAL_DIFF] = {
                 {1, "f1270rep7"},
-                {2, 84583}, -- Formula: Enchant Weapon - Jade Spirit
-                {3, 89337}, -- Firecracker Corona
-                {4, 84584}, -- Formula: Enchant Weapon - Dancing Steel
-                {5, 84580}, -- Formula: Enchant Weapon - River's Song
-                {6, 89096}, -- Six Pool's Open Helm
-                {7, 89300}, -- Red Smoke Bandana
-                {8, 89280}, -- Voice Amplyifying Greathelm
-                {9, 89216}, -- Yi's Least Favorite Helmet
-                {10, 93220}, -- Grand Commendation of the Shado-Pan
-                {11, 89291}, -- Hawkmaster's Headguard
-                {12, 89308}, -- Snowdrift Helm
-                {13, 89296}, -- Nightwatcher's Helm
-                {14, 89338}, -- Yalia's Cowl
+                {2, 89337}, -- Firecracker Corona
+                {3, 89338}, -- Yalia's Cowl
+                {4, 89300}, -- Red Smoke Bandana
+                {5, 89308}, -- Snowdrift Helm
+                {6, 89291}, -- Hawkmaster's Headguard
+                {7, 89296}, -- Nightwatcher's Helm
+                {8, 89096}, -- Six Pool's Open Helm
+                {9, 89280}, -- Voice Amplyifying Greathelm
+                {10, 89216}, -- Yi's Least Favorite Helmet
+                {12, 84583}, -- Formula: Enchant Weapon - Jade Spirit
+                {13, 84584}, -- Formula: Enchant Weapon - Dancing Steel
+                {14, 84580}, -- Formula: Enchant Weapon - River's Song
+                {16, 93220}, -- Grand Commendation of the Shado-Pan
             },
         },
         { -- Honored 6
             name = ALIL["Honored"],
             [NORMAL_DIFF] = {
                 {1, "f1270rep6"},
-                {2, 89079}, -- Lao-Chin's Liquid Courage
+                {2, 89078}, -- Sagewhisper's Wrap
                 {3, 89077}, -- Cloak of Snow Blossoms
                 {4, 89074}, -- Cloak of the Dark Disciple
-                {5, 89081}, -- Blossom of Pure Snow
-                {6, 89083}, -- Iron Belly Wok
-                {7, 89076}, -- Blackguard Cape
-                {8, 89075}, -- Yi's Cloak of Courage
-                {9, 89082}, -- Hawkmaster's Talon
-                {10, 89078}, -- Sagewhisper's Wrap
-                {11, 89080}, -- Scroll of Revered Ancestors
-                {12, 89301}, -- Stack of Wooden Boards
-                {13, 89302}, -- Stack of Bamboo
-                {14, 89303}, -- Stack of Stone Blocks
+                {5, 89076}, -- Blackguard Cape
+                {6, 89075}, -- Yi's Cloak of Courage
+                {8, 89081}, -- Blossom of Pure Snow
+                {9, 89083}, -- Iron Belly Wok
+                {10, 89082}, -- Hawkmaster's Talon
+                {11, 89079}, -- Lao-Chin's Liquid Courage
+                {12, 89080}, -- Scroll of Revered Ancestors
+                {16, 89301}, -- Stack of Wooden Boards
+                {17, 89302}, -- Stack of Bamboo
+                {18, 89303}, -- Stack of Stone Blocks
             },
         },
     },
@@ -208,23 +207,23 @@ data["Order of the Cloud Serpent"] = {
                 {1, "f1271rep8"},
                 {2, 85429}, -- Reins of the Golden Cloud Serpent
                 {3, 79802}, -- Reins of the Jade Cloud Serpent
-                {4, 83877}, -- Design: Jeweled Onyx Panther
-                {5, 85430}, -- Reins of the Azure Cloud Serpent
-                {6, 89796}, -- Order of the Cloud Serpent Tabard
+                {4, 85430}, -- Reins of the Azure Cloud Serpent
+                {6, 83877}, -- Design: Jeweled Onyx Panther
+                {16, 89796}, -- Order of the Cloud Serpent Tabard
             },
         },
         { -- Revered 7
             name = ALIL["Revered"],
             [NORMAL_DIFF] = {
                 {1, "f1271rep7"},
-                {2, 93229}, -- Grand Commendation of the Order of the Cloud Serpent
-                {3, 83931}, -- Design: Ruby Panther
-                {4, 83932}, -- Design: Sapphire Panther
+                {2, 83931}, -- Design: Ruby Panther
+                {3, 83932}, -- Design: Sapphire Panther
                 {5, 89222}, -- Cloud Ring
                 {6, 89223}, -- Racing Flag
                 {7, 89224}, -- Floating Racing Flag
                 {8, 89227}, -- Floating Finish Line
                 {9, 89225}, -- Finish Line
+                {16, 93229}, -- Grand Commendation of the Order of the Cloud Serpent
             },
         },
         { -- Honored 6
@@ -246,22 +245,22 @@ data["The Tillers"] = {
             name = ALIL["Exalted"],
             [NORMAL_DIFF] = {
                 {1, "f1272rep8"},
-                {2, 90175}, -- Gin-Ji Knife Set
-                {3, 89391}, -- Reins of the Black Riding Goat
-                {4, 80914}, -- Mourning Glory
-                {5, 89390}, -- Reins of the White Riding Goat
-                {6, 89362}, -- Reins of the Brown Riding Goat
-                {7, 89784}, -- Tillers Tabard
+                {2, 89391}, -- Reins of the Black Riding Goat
+                {3, 89390}, -- Reins of the White Riding Goat
+                {4, 89362}, -- Reins of the Brown Riding Goat
+                {6, 80914}, -- Mourning Glory
+                {7, 90175}, -- Gin-Ji Knife Set
+                {16, 89784}, -- Tillers Tabard
             },
         },
         { -- Revered 7
             name = ALIL["Revered"],
             [NORMAL_DIFF] = {
                 {1, "f1272rep7"},
-                {2, 89869}, -- Pandaren Scarecrow
-                {3, 74657}, -- Recipe: Spicy Salmon
-                {4, 93226}, -- Grand Commendation of the Tillers
-                {5, 74658}, -- Recipe: Spicy Vegetable Chips
+                {2, 74657}, -- Recipe: Spicy Salmon
+                {3, 74658}, -- Recipe: Spicy Vegetable Chips
+                {5, 89869}, -- Pandaren Scarecrow
+                {16, 93226}, -- Grand Commendation of the Tillers
             },
         },
     },
@@ -277,10 +276,10 @@ data["The Anglers"] = {
                 {1, "f1302rep8"},
                 {2, 81354}, -- Reins of the Azure Water Strider
                 {3, 87791}, -- Reins of the Crimson Water Strider
-                {4, 89401}, -- Anglers Tabard
-                {5, 87793}, -- Reins of the Jade Water Strider
-                {6, 87792}, -- Reins of the Orange Water Strider
-                {7, 87794}, -- Reins of the Golden Water Strider
+                {4, 87793}, -- Reins of the Jade Water Strider
+                {5, 87792}, -- Reins of the Orange Water Strider
+                {6, 87794}, -- Reins of the Golden Water Strider
+                {16, 89401}, -- Anglers Tabard
             },
         },
         { -- Revered 7
@@ -291,7 +290,7 @@ data["The Anglers"] = {
                 {3, 84661}, -- Dragon Fishing Pole
                 {4, 107950}, -- Bipsi's Bobbing Berg
                 {5, 88535}, -- Sharpened Tuskarr Spear
-                {6, 93225}, -- Grand Commendation of the Anglers
+                {16, 93225}, -- Grand Commendation of the Anglers
             },
         },
         { -- Honored 6
@@ -460,10 +459,10 @@ data["The Lorewalkers"] = {
             [NORMAL_DIFF] = {
                 {1, "f1345rep8"},
                 {2, 89363}, -- Disc of the Red Flying Cloud
-                {3, 95509}, -- Mantid Artifact Sonic Locator
-                {4, 89795}, -- Lorewalkers Tabard
+                {4, 95509}, -- Mantid Artifact Sonic Locator
                 {5, 87548}, -- Lorewalker's Lodestone
                 {6, 87549}, -- Lorewalker's Map
+                {16, 89795}, -- Lorewalkers Tabard
             },
         },
         { -- Revered 7
