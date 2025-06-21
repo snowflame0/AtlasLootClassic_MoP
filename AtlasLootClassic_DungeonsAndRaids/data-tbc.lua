@@ -38,14 +38,14 @@ local RAID25_CONTENT = data:AddContentType(AL["25 Raids"], ATLASLOOT_RAID40_COLO
 local REMOVED_CONTENT = data:AddContentType(AL["Removed"], ATLASLOOT_REMOVED_COLOR)
 
 -- name formats
-local NAME_COLOR, NAME_COLOR_BOSS = "|cffC0C0C0", "|cffC0C0C0"
-local NAME_TEMPEST_KEEP = NAME_COLOR..AL["TK"]..":|r %s" -- Tempest Keep
-local NAME_CAVERNS_OF_TIME = NAME_COLOR..AL["CoT"]..":|r %s" -- Caverns of Time
-local NAME_AUCHINDOUN = NAME_COLOR..AL["Auch"]..":|r %s" -- Auchindoun
-local NAME_COILFANG_RESERVOIR = NAME_COLOR..AL["CR"]..":|r %s"-- Coilfang Reservoir
-local NAME_HELLFIRE_CITADEL = NAME_COLOR..AL["HC"]..":|r %s"-- Hellfire Citadel
-local NAME_KARA_QUARTERS = NAME_COLOR_BOSS..AL["Servant Quarters"]..":|r %s" -- Servant Quarters
-local NAME_KARA_OPERA = NAME_COLOR_BOSS..AL["The Opera Event"]..":|r %s" -- The Opera Even
+local NAME_COLOR, NAME_COLOR_BOSS = "|cffC0C0C0", "|cffC0C0C0" -- name formats
+local NAME_TEMPEST_KEEP = NAME_COLOR .. AL["TK"] .. ":|r %s" -- Tempest Keep
+local NAME_CAVERNS_OF_TIME = NAME_COLOR .. AL["CoT"] .. ":|r %s" -- Caverns of Time
+local NAME_AUCHINDOUN = NAME_COLOR .. AL["Auch"] .. ":|r %s" -- Auchindoun
+local NAME_COILFANG_RESERVOIR = NAME_COLOR .. AL["CR"] .. ":|r %s" -- Coilfang Reservoir
+local NAME_HELLFIRE_CITADEL = NAME_COLOR .. AL["HC"] .. ":|r %s" -- Hellfire Citadel
+local NAME_KARA_QUARTERS = NAME_COLOR_BOSS .. AL["Servant Quarters"] .. ":|r %s" -- Servant Quarters
+local NAME_KARA_OPERA = NAME_COLOR_BOSS .. AL["The Opera Event"] .. ":|r %s" -- The Opera Even
 
 local T4_SET = {
     name = format(AL["Tier %s Sets"], "4"),
@@ -53,23 +53,23 @@ local T4_SET = {
     TableType = SET_ITTYPE,
     IgnoreAsSource = true,
     [NORMAL_DIFF] = {
-        { 1,    645 }, -- Warlock
-        { 3,    663 }, -- Priest / Heal
-        { 4,    664 }, -- Priest / Shadow
-        { 6,    621 }, -- Rogue
-        { 8,    651 }, -- Hunter
-        { 10,    654 }, -- Warrior / Prot
-        { 11,    655 }, -- Warrior / DD
-        { 16,   648 }, -- Mage
-        { 18,   638 }, -- Druid / Heal
-        { 19,   639 }, -- Druid / Owl
-        { 20,   640 }, -- Druid / Feral
-        { 22,   631 }, -- Shaman / Heal
-        { 23,   632 }, -- Shaman / Ele
-        { 24,   633 }, -- Shaman / Enh
-        { 26,   624 }, -- Paladin / Heal
-        { 27,   625 }, -- Paladin / Prot
-        { 28,   626 }, -- Paladin / DD
+        { 1,  645 }, -- Warlock
+        { 3,  663 }, -- Priest / Heal
+        { 4,  664 }, -- Priest / Shadow
+        { 6,  621 }, -- Rogue
+        { 8,  651 }, -- Hunter
+        { 10, 654 }, -- Warrior / Prot
+        { 11, 655 }, -- Warrior / DD
+        { 16, 648 }, -- Mage
+        { 18, 638 }, -- Druid / Heal
+        { 19, 639 }, -- Druid / Owl
+        { 20, 640 }, -- Druid / Feral
+        { 22, 631 }, -- Shaman / Heal
+        { 23, 632 }, -- Shaman / Ele
+        { 24, 633 }, -- Shaman / Enh
+        { 26, 624 }, -- Paladin / Heal
+        { 27, 625 }, -- Paladin / Prot
+        { 28, 626 }, -- Paladin / DD
     },
 }
 
@@ -79,23 +79,23 @@ local T5_SET = {
     TableType = SET_ITTYPE,
     IgnoreAsSource = true,
     [NORMAL_DIFF] = {
-        { 1,    646 }, -- Warlock
-        { 3,    665 }, -- Priest / Heal
-        { 4,    666 }, -- Priest / Shadow
-        { 6,    622 }, -- Rogue
-        { 8,    652 }, -- Hunter
-        { 10,    656 }, -- Warrior / Prot
-        { 11,    657 }, -- Warrior / DD
-        { 16,   649 }, -- Mage
-        { 18,   642 }, -- Druid / Heal
-        { 19,   643 }, -- Druid / Owl
-        { 20,   641 }, -- Druid / Feral
-        { 22,   634 }, -- Shaman / Heal
-        { 23,   635 }, -- Shaman / Ele
-        { 24,   636 }, -- Shaman / Enh
-        { 26,   627 }, -- Paladin / Heal
-        { 27,   628 }, -- Paladin / Prot
-        { 28,   629 }, -- Paladin / DD
+        { 1,  646 }, -- Warlock
+        { 3,  665 }, -- Priest / Heal
+        { 4,  666 }, -- Priest / Shadow
+        { 6,  622 }, -- Rogue
+        { 8,  652 }, -- Hunter
+        { 10, 656 }, -- Warrior / Prot
+        { 11, 657 }, -- Warrior / DD
+        { 16, 649 }, -- Mage
+        { 18, 642 }, -- Druid / Heal
+        { 19, 643 }, -- Druid / Owl
+        { 20, 641 }, -- Druid / Feral
+        { 22, 634 }, -- Shaman / Heal
+        { 23, 635 }, -- Shaman / Ele
+        { 24, 636 }, -- Shaman / Enh
+        { 26, 627 }, -- Paladin / Heal
+        { 27, 628 }, -- Paladin / Prot
+        { 28, 629 }, -- Paladin / DD
     },
 }
 
@@ -105,39 +105,37 @@ local T6_SET = {
     TableType = SET_ITTYPE,
     IgnoreAsSource = true,
     [NORMAL_DIFF] = {
-        { 1,    670 }, -- Warlock
-        { 3,    675 }, -- Priest / Heal
-        { 4,    674 }, -- Priest / Shadow
-        { 6,    668 }, -- Rogue
-        { 8,    669 }, -- Hunter
-        { 10,    673 }, -- Warrior / Prot
-        { 11,    672 }, -- Warrior / DD
-        { 16,   671 }, -- Mage
-        { 18,   678 }, -- Druid / Heal
-        { 19,   677 }, -- Druid / Owl
-        { 20,   676 }, -- Druid / Feral
-        { 22,   683 }, -- Shaman / Heal
-        { 23,   684 }, -- Shaman / Ele
-        { 24,   682 }, -- Shaman / Enh
-        { 26,   681 }, -- Paladin / Heal
-        { 27,   679 }, -- Paladin / Prot
-        { 28,   680 }, -- Paladin / DD
+        { 1,  670 }, -- Warlock
+        { 3,  675 }, -- Priest / Heal
+        { 4,  674 }, -- Priest / Shadow
+        { 6,  668 }, -- Rogue
+        { 8,  669 }, -- Hunter
+        { 10, 673 }, -- Warrior / Prot
+        { 11, 672 }, -- Warrior / DD
+        { 16, 671 }, -- Mage
+        { 18, 678 }, -- Druid / Heal
+        { 19, 677 }, -- Druid / Owl
+        { 20, 676 }, -- Druid / Feral
+        { 22, 683 }, -- Shaman / Heal
+        { 23, 684 }, -- Shaman / Ele
+        { 24, 682 }, -- Shaman / Enh
+        { 26, 681 }, -- Paladin / Heal
+        { 27, 679 }, -- Paladin / Prot
+        { 28, 680 }, -- Paladin / DD
     },
 }
 
 
 data["HellfireRamparts"] = {
     nameFormat = NAME_HELLFIRE_CITADEL,
+    EncounterJournalID = 248,
     MapID = 3562,
-    InstanceID = 543,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {57, 59, 67},
     items = {
         { -- HCRampWatchkeeper
-            name = AL["Watchkeeper Gargolmar"],
-            npcID = {17306,18436},
-            Level = 62,
+            EncounterJournalID = 527,
             DisplayIDs = {{18236}},
             [NORMAL_DIFF] = {
                 { 1, 24024 }, -- Pauldrons of Arcane Rage
@@ -161,9 +159,7 @@ data["HellfireRamparts"] = {
             }
         },
         { -- HCRampOmor
-            name = AL["Omor the Unscarred"],
-            npcID = {17308,18433},
-            Level = 62,
+            EncounterJournalID = 528,
             DisplayIDs = {{18237}},
             [NORMAL_DIFF] = {
                 { 1, 24090 }, -- Bloodstained Ravager Gauntlets
@@ -195,10 +191,8 @@ data["HellfireRamparts"] = {
             }
         },
         { -- HCRampFelIronChest
-            name = AL["Nazan & Vazruden"],
-            npcID = {17537,18434,17536,18432},
+            EncounterJournalID = 529,
             ObjectID = 185168,
-            Level = 62,
             DisplayIDs = {{18812},{18407}},
             [NORMAL_DIFF] = {
                 { 1, 24150 }, -- Mok'Nathal Wildercloak
@@ -240,16 +234,14 @@ data["HellfireRamparts"] = {
 
 data["TheBloodFurnace"] = {
     nameFormat = NAME_HELLFIRE_CITADEL,
+    EncounterJournalID = 256,
     MapID = 3713,
-    InstanceID = 542,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {58, 60, 68},
     items = {
         { -- HCFurnaceMaker
-            name = AL["The Maker"],
-            npcID = {17381,18621},
-            Level = 62,
+            EncounterJournalID = 555,
             DisplayIDs = {{18369}},
             [NORMAL_DIFF] = {
                 { 1, 24388 }, -- Girdle of the Gale Storm
@@ -271,9 +263,7 @@ data["TheBloodFurnace"] = {
             }
         },
         { -- HCFurnaceBroggok
-            name = AL["Broggok"],
-            npcID = {17380,18601},
-            Level = 63,
+            EncounterJournalID = 556,
             DisplayIDs = {{19372}},
             [NORMAL_DIFF] = {
                 { 1, 24392 }, -- Arcing Bracers
@@ -295,9 +285,7 @@ data["TheBloodFurnace"] = {
             }
         },
         { -- HCFurnaceBreaker
-            name = AL["Keli'dan the Breaker"],
-            npcID = {17377,18607},
-            Level = 63,
+            EncounterJournalID = 557,
             DisplayIDs = {{17153}},
             [NORMAL_DIFF] = {
                 { 1, 24397 }, -- Raiments of Divine Authority
@@ -335,16 +323,14 @@ data["TheBloodFurnace"] = {
 
 data["TheShatteredHalls"] = {
     nameFormat = NAME_HELLFIRE_CITADEL,
+    EncounterJournalID = 259,
     MapID = 3714,
-    InstanceID = 540,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {65, 69, 70},
     items = {
         { -- HCHallsNethekurse
-        name = AL["Grand Warlock Nethekurse"],
-            npcID = {16807,20568},
-            Level = 71,
+            EncounterJournalID = 566,
             DisplayIDs = {{16628}},
             [NORMAL_DIFF] = {
                 { 1, 24312 }, -- Pattern: Spellstrike Hood
@@ -373,9 +359,7 @@ data["TheShatteredHalls"] = {
             }
         },
         { -- HCHallsPorung
-            name = AL["Blood Guard Porung"],
-            npcID = 20923,
-            Level = 72,
+            EncounterJournalID = 728,
             DisplayIDs = {{17725}},
             [HEROIC_DIFF] = {
                 { 1, 29434 }, -- Badge of Justice
@@ -390,9 +374,7 @@ data["TheShatteredHalls"] = {
             }
         },
         { -- HCHallsOmrogg
-            name = AL["Warbringer O'mrogg"],
-            npcID = {16809,20596},
-            Level = 72,
+            EncounterJournalID = 568,
             DisplayIDs = {{18031}},
             [NORMAL_DIFF] = {
                 { 1, 27525 }, -- Jeweled Boots of Sanctification
@@ -416,9 +398,7 @@ data["TheShatteredHalls"] = {
             }
         },
         { -- HCHallsKargath
-            name = AL["Warchief Kargath Bladefist"],
-            npcID = {16808,20597},
-            Level = 72,
+            EncounterJournalID = 569,
             DisplayIDs = {{19799}},
             [NORMAL_DIFF] = {
                 { 1, 27527 }, -- Greaves of the Shatterer
@@ -463,7 +443,6 @@ data["TheShatteredHalls"] = {
         { -- HCHallsExecutioner
             name = AL["Shattered Hand Executioner"],
             npcID = {17301,20585},
-            Level = 70,
             DisplayIDs = {{16969}},
             ExtraList = true,
             [HEROIC_DIFF] = {
@@ -482,16 +461,14 @@ data["TheShatteredHalls"] = {
 
 data["Mana-Tombs"] = {
     nameFormat = NAME_AUCHINDOUN,
+    EncounterJournalID = 250,
     MapID = 3792,
-    InstanceID = 557,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {61, 63, 70},
     items = {
         { -- AuchManaPandemonius
-            name = AL["Pandemonius"],
-            npcID = {18341, 20267},
-            Level = 66,
+            EncounterJournalID = 534,
             DisplayIDs = {{19338}},
             [NORMAL_DIFF] = {
                 { 1, 25941 }, -- Boots of the Outlander
@@ -515,9 +492,7 @@ data["Mana-Tombs"] = {
             }
         },
         { -- AuchManaTavarok
-            name = AL["Tavarok"],
-            npcID = {18343, 20268},
-            Level = 66,
+            EncounterJournalID = 535,
             DisplayIDs = {{19332}},
             [NORMAL_DIFF] = {
                 { 1, 25945 }, -- Cloak of Revival
@@ -541,9 +516,7 @@ data["Mana-Tombs"] = {
             }
         },
         { -- AuchManaNexusPrince
-            name = AL["Nexus-Prince Shaffar"],
-            npcID = {18344, 20266},
-            Level = 66,
+            EncounterJournalID = 537,
             DisplayIDs = {{19780}},
             [NORMAL_DIFF] = {
                 { 1, 25957 }, -- Ethereal Boots of the Skystrider
@@ -582,9 +555,7 @@ data["Mana-Tombs"] = {
             }
         },
         { -- AuchManaYor
-            name = AL["Yor <Void Hound of Shaffar>"],
-            npcID = 22930,
-            Level = 70,
+            EncounterJournalID = 536,
             DisplayIDs = {{14173}},
             ExtraList = true,
             [HEROIC_DIFF] = {
@@ -617,16 +588,14 @@ data["Mana-Tombs"] = {
 
 data["AuchenaiCrypts"] = {
     nameFormat = NAME_AUCHINDOUN,
+    EncounterJournalID = 247,
     MapID = 3790,
-    InstanceID = 558,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {62, 64, 70},
     items = {
         { -- AuchCryptsShirrak
-            name = AL["Shirrak the Dead Watcher"],
-            npcID = {18371, 20318},
-            Level = 66,
+            EncounterJournalID = 523,
             DisplayIDs = {{18916}},
             [NORMAL_DIFF] = {
                 { 1, 27410 }, -- Collar of Command
@@ -649,9 +618,7 @@ data["AuchenaiCrypts"] = {
             }
         },
         { -- AuchCryptsExarch
-            name = AL["Exarch Maladaar"],
-            npcID = {18373, 20306},
-            Level = 67,
+            EncounterJournalID = 524,
             DisplayIDs = {{17715}},
             [NORMAL_DIFF] = {
                 { 1, 27411 }, -- Slippers of Serenity
@@ -683,9 +650,7 @@ data["AuchenaiCrypts"] = {
         { -- AuchCryptsAvatar
             name = AL["Avatar of the Martyred"],
             npcID = 18478,
-            Level = 72,
             DisplayIDs = {{18142}},
-            ExtraList = true,
             [HEROIC_DIFF] = {
                 { 1, 27878 }, -- Auchenai Death Shroud
                 { 2, 28268 }, -- Natural Mender's Wraps
@@ -708,16 +673,14 @@ data["AuchenaiCrypts"] = {
 
 data["SethekkHalls"] = {
     nameFormat = NAME_AUCHINDOUN,
+    EncounterJournalID = 252,
     MapID = 3791,
-    InstanceID = 556,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {63, 66, 70},
     items = {
         { -- AuchSethekkDarkweaver
-            name = AL["Darkweaver Syth"],
-            npcID = {18472, 20690},
-            Level = 69,
+            EncounterJournalID = 541,
             DisplayIDs = {{20599}},
             [NORMAL_DIFF] = {
                 { 1, 27919 }, -- Light-Woven Slippers
@@ -746,9 +709,7 @@ data["SethekkHalls"] = {
             }
         },
         { -- AuchSethekkRavenGod
-            name = AL["Anzu"],
-            npcID = 23035,
-            Level = 72,
+            EncounterJournalID = 542,
             DisplayIDs = {{21492}},
             [HEROIC_DIFF] = {
                 { 1, 29434 }, -- Badge of Justice
@@ -764,9 +725,7 @@ data["SethekkHalls"] = {
             },
         },
         { -- AuchSethekkTalonKing
-            name = AL["Talon King Ikiss"],
-            npcID = {18473, 20706},
-            Level = 69,
+            EncounterJournalID = 543,
             DisplayIDs = {{18636}},
             [NORMAL_DIFF] = {
                 { 1, 27946 }, -- Avian Cloak of Feathers
@@ -831,16 +790,14 @@ data["SethekkHalls"] = {
 
 data["ShadowLabyrinth"] = {
     nameFormat = NAME_AUCHINDOUN,
+    EncounterJournalID = 253,
     MapID = 3789,
-    InstanceID = 555,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {65, 69, 70},
     items = {
         { -- AuchShadowHellmaw
-            name = AL["Ambassador Hellmaw"],
-            npcID = {18731, 20636},
-            Level = 72,
+            EncounterJournalID = 544,
             DisplayIDs = {{18821}},
             [NORMAL_DIFF] = {
                 { 1, 27889 }, -- Jaedenfire Gloves of Annihilation
@@ -864,9 +821,7 @@ data["ShadowLabyrinth"] = {
             }
         },
         { -- AuchShadowBlackheart
-            name = AL["Blackheart the Inciter"],
-            npcID = {18667, 20637},
-            Level = 72,
+            EncounterJournalID = 545,
             DisplayIDs = {{18058}},
             [NORMAL_DIFF] = {
                 { 1, 27892 }, -- Cloak of the Inciter
@@ -894,9 +849,7 @@ data["ShadowLabyrinth"] = {
             }
         },
         { -- AuchShadowGrandmaster
-            name = AL["Grandmaster Vorpil"],
-            npcID = {18732, 20653},
-            Level = 72,
+            EncounterJournalID = 546,
             DisplayIDs = {{18535}},
             [NORMAL_DIFF] = {
                 { 1, 27897 }, -- Breastplate of Many Graces
@@ -922,9 +875,7 @@ data["ShadowLabyrinth"] = {
             }
         },
         { -- AuchShadowMurmur
-            name = AL["Murmur"],
-            npcID = {18708, 20657},
-            Level = 72,
+            EncounterJournalID = 547,
             DisplayIDs = {{18839}},
             [NORMAL_DIFF] = {
                 { 1, 24309 }, -- Pattern: Spellstrike Pants
@@ -970,7 +921,6 @@ data["ShadowLabyrinth"] = {
         { -- AuchShadowFirstFragmentGuardian
             name = AL["First Fragment Guardian"],
             npcID = 22890,
-            Level = 70,
             DisplayIDs = {{19113}},
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -989,16 +939,14 @@ data["ShadowLabyrinth"] = {
 
 data["TheSlavePens"] = {
     nameFormat = NAME_COILFANG_RESERVOIR,
+    EncounterJournalID = 260,
     MapID = 3717,
-    InstanceID = 547,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {59, 61, 69},
     items = {
         { -- CFRSlaveMennu
-            name = AL["Mennu the Betrayer"],
-            npcID = {17941, 19893},
-            Level = 64,
+            EncounterJournalID = 570,
             DisplayIDs = {{17728}},
             [NORMAL_DIFF] = {
                 { 1, 24359 }, -- Princely Reign Leggings
@@ -1023,9 +971,7 @@ data["TheSlavePens"] = {
             }
         },
         { -- CFRSlaveRokmar
-            name = AL["Rokmar the Crackler"],
-            npcID = {17991, 19895},
-            Level = 64,
+            EncounterJournalID = 571,
             DisplayIDs = {{17729}},
             [NORMAL_DIFF] = {
                 { 1, 24379 }, -- Bogstrok Scale Cloak
@@ -1048,9 +994,7 @@ data["TheSlavePens"] = {
             },
         },
         { -- CFRSlaveQuagmirran
-            name = AL["Quagmirran"],
-            npcID = {17942, 19894},
-            Level = 64,
+            EncounterJournalID = 572,
             DisplayIDs = {{18224}},
             [NORMAL_DIFF] = {
                 { 1, 24362 }, -- Spore-Soaked Vaneer
@@ -1083,20 +1027,19 @@ data["TheSlavePens"] = {
                 { 28, 27741 }, -- Bleeding Hollow Warhammer
             }
         },
-        AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM, { -- CFRSlaveAhune
+        AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM, { -- CFRSlaveAhune
             name = AL["Ahune <The Frost Lord>"],
             npcID = 25740,
-            Level = 87,
             DisplayIDs = {{23344}},
             ExtraList = true,
             [NORMAL_DIFF] = {
                 { 1, 54536 }, -- Satchel of Chilled Goods
-                { 2, 69771 }, -- Frostscythe of Lord Ahune
-                { 4, 69768 }, -- Shroud of Winter's Chill
-                { 5, 69766 }, -- The Frost Lord's War Cloak
-                { 6, 69770 }, -- Icebound Cloak
-                { 7, 69769 }, -- Cloak of the Frigid Winds
-                { 8, 69767 }, -- The Frost Lord's Battle Shroud
+                { 2, 95426 }, -- Frostscythe of Lord Ahune
+                { 4, 95425 }, -- Cloak of the Frigid Winds
+                { 5, 95427 }, -- Icebound Cloak
+                { 6, 95428 }, -- Shroud of Winter's Chill
+                { 7, 95429 }, -- The Frost Lord's Battle Shroud
+                { 8, 95430 }, -- The Frost Lord's War Cloak
                 { 10, 35723 }, -- Shards of Ahune
                 { 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
                 { 18, 53641 }, -- Ice Chip
@@ -1108,16 +1051,14 @@ data["TheSlavePens"] = {
 
 data["TheUnderbog"] = {
     nameFormat = NAME_COILFANG_RESERVOIR,
+    EncounterJournalID = 262,
     MapID = 3716,
-    InstanceID = 546,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {60, 62, 70},
     items = {
         { -- CFRUnderHungarfen
-            name = AL["Hungarfen"],
-            npcID = {17770,20169},
-            Level = 65,
+            EncounterJournalID = 576,
             DisplayIDs = {{17228}},
             [NORMAL_DIFF] = {
                 { 1, 24450 }, -- Manaspark Gloves
@@ -1140,9 +1081,7 @@ data["TheUnderbog"] = {
             }
         },
         { -- CFRUnderGhazan
-            name = AL["Ghaz'an"],
-            npcID = {18105,20168},
-            Level = 65,
+            EncounterJournalID = 577,
             DisplayIDs = {{17528}},
             [NORMAL_DIFF] = {
                 { 1, 24459 }, -- Cloak of Healing Rays
@@ -1165,9 +1104,7 @@ data["TheUnderbog"] = {
             }
         },
         { -- CFRUnderSwamplord
-            name = AL["Swamplord Musel'ek"],
-            npcID = {17826,20183},
-            Level = 65,
+            EncounterJournalID = 578,
             DisplayIDs = {{18570}},
             [NORMAL_DIFF] = {
                 { 1, 24454 }, -- Cloak of Enduring Swiftness
@@ -1190,9 +1127,7 @@ data["TheUnderbog"] = {
             }
         },
         { -- CFRUnderStalker
-            name = AL["The Black Stalker"],
-            npcID = {17882,20184},
-            Level = 65,
+            EncounterJournalID = 579,
             DisplayIDs = {{18194}},
             [NORMAL_DIFF] = {
                 { 1, 24481 }, -- Robes of the Augurer
@@ -1232,16 +1167,14 @@ data["TheUnderbog"] = {
 
 data["TheSteamvault"] = {
     nameFormat = NAME_COILFANG_RESERVOIR,
+    EncounterJournalID = 261,
     MapID = 3715,
-    InstanceID = 545,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {65, 69, 70},
     items = {
         { -- CFRSteamThespia
-            name = AL["Hydromancer Thespia"],
-            npcID = {17797, 20629},
-            Level = 72,
+            EncounterJournalID = 573,
             DisplayIDs = {{11268}},
             [NORMAL_DIFF] = {
                 { 1, 27789 }, -- Cloak of Whispering Shells
@@ -1267,9 +1200,7 @@ data["TheSteamvault"] = {
             }
         },
         { -- CFRSteamSteamrigger
-            name = AL["Mekgineer Steamrigger"],
-            npcID = {17796, 20630},
-            Level = 72,
+            EncounterJournalID = 574,
             DisplayIDs = {{18638}},
             [NORMAL_DIFF] = {
                 { 1, 27793 }, -- Earth Mantle Handwraps
@@ -1293,9 +1224,7 @@ data["TheSteamvault"] = {
             }
         },
         { -- CFRSteamWarlord
-            name = AL["Warlord Kalithresh"],
-            npcID = {17798, 20633},
-            Level = 72,
+            EncounterJournalID = 575,
             DisplayIDs = {{20235}},
             [NORMAL_DIFF] = {
                 { 1, 24313 }, -- Pattern: Battlecast Hood
@@ -1353,16 +1282,14 @@ data["TheSteamvault"] = {
 
 data["OldHillsbradFoothills"] = {
     nameFormat = NAME_CAVERNS_OF_TIME,
+    EncounterJournalID = 251,
     MapID = 2367,
-    InstanceID = 560,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {63, 66, 70},
     items = {
         { -- CoTHillsbradDrake
-            name = AL["Lieutenant Drake"],
-            npcID = {17848,20535},
-            Level = 68,
+            EncounterJournalID = 538,
             DisplayIDs = {{17386}},
             [NORMAL_DIFF] = {
                 { 1, 27423 }, -- Cloak of Impulsiveness
@@ -1385,9 +1312,7 @@ data["OldHillsbradFoothills"] = {
             }
         },
         { -- CoTHillsbradSkarloc
-            name = AL["Captain Skarloc"],
-            npcID = {17862,20521},
-            Level = 68,
+            EncounterJournalID = 539,
             DisplayIDs = {{17387}},
             [NORMAL_DIFF] = {
                 { 1, 27428 }, -- Stormfront Gauntlets
@@ -1414,9 +1339,7 @@ data["OldHillsbradFoothills"] = {
             }
         },
         { -- CoTHillsbradHunter
-            name = AL["Epoch Hunter"],
-            npcID = {18096,20531},
-            Level = 68,
+            EncounterJournalID = 540,
             DisplayIDs = {{19135}},
             [NORMAL_DIFF] = {
                 { 1, 24173 }, -- Design: Circlet of Arcane Might
@@ -1454,7 +1377,6 @@ data["OldHillsbradFoothills"] = {
         { -- CoTHillsbradDonCarlos
             name = AL["Don Carlos"],
             npcID = {28132,28171},
-            Level = 68,
             DisplayIDs = {{25124}},
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -1499,16 +1421,14 @@ data["OldHillsbradFoothills"] = {
 
 data["TheBlackMorass"] = {
     nameFormat = NAME_CAVERNS_OF_TIME,
+    EncounterJournalID = 255,
     MapID = 2366,
-    InstanceID = 269,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {65, 68, 70},
     items = {
         { -- CoTMorassDeja
-            name = AL["Chrono Lord Deja"],
-            npcID = {17879,20738},
-            Level = 72,
+            EncounterJournalID = 552,
             DisplayIDs = {{20513}},
             [NORMAL_DIFF] = {
                 { 1, 27988 }, -- Burnoose of Shifting Ages
@@ -1534,9 +1454,7 @@ data["TheBlackMorass"] = {
             }
         },
         { -- CoTMorassTemporus
-            name = AL["Temporus"],
-            npcID = {17880,20745},
-            Level = 72,
+            EncounterJournalID = 553,
             DisplayIDs = {{19066}},
             [NORMAL_DIFF] = {
                 { 1, 28185 }, -- Khadgar's Kilt of Abjuration
@@ -1560,9 +1478,7 @@ data["TheBlackMorass"] = {
             }
         },
         { -- CoTMorassAeonus
-            name = AL["Aeonus"],
-            npcID = {17881,20737},
-            Level = 72,
+            EncounterJournalID = 554,
             DisplayIDs = {{20510}},
             [NORMAL_DIFF] = {
                 { 1, 28206 }, -- Cowl of the Guiltless
@@ -1614,16 +1530,14 @@ data["TheBlackMorass"] = {
 
 data["TheArcatraz"] = {
     nameFormat = NAME_TEMPEST_KEEP,
+    EncounterJournalID = 254,
     MapID = 3848,
-    InstanceID = 552,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {65, 69, 70},
     items = {
         { -- TKArcUnbound
-            name = AL["Zereketh the Unbound"],
-            npcID = {20870,21626},
-            Level = 72,
+            EncounterJournalID = 548,
             DisplayIDs = {{19882}},
             [NORMAL_DIFF] = {
                 { 1, 28373 }, -- Cloak of Scintillating Auras
@@ -1645,9 +1559,7 @@ data["TheArcatraz"] = {
             }
         },
         { -- TKArcDalliah
-            name = AL["Dalliah the Doomsayer"],
-            npcID = {20885,21590},
-            Level = 72,
+            EncounterJournalID = 549,
             DisplayIDs = {{19888}},
             [NORMAL_DIFF] = {
                 { 1, 24308 }, -- Pattern: Whitemend Pants
@@ -1671,9 +1583,7 @@ data["TheArcatraz"] = {
             }
         },
         { -- TKArcScryer
-            name = AL["Wrath-Scryer Soccothrates"],
-            npcID = {20886,21624},
-            Level = 72,
+            EncounterJournalID = 550,
             DisplayIDs = {{19977}},
             [NORMAL_DIFF] = {
                 { 1, 28396 }, -- Gloves of the Unbound
@@ -1695,9 +1605,7 @@ data["TheArcatraz"] = {
             }
         },
         { -- TKArcHarbinger
-            name = AL["Harbinger Skyriss"],
-            npcID = {20912,21599},
-            Level = 72,
+            EncounterJournalID = 551,
             DisplayIDs = {{19943}},
             [NORMAL_DIFF] = {
                 { 1, 28406 }, -- Sigil-Laced Boots
@@ -1740,7 +1648,6 @@ data["TheArcatraz"] = {
         { -- TKArcThirdFragmentGuardian
             name = AL["Third Fragment Guardian"],
             npcID = 22892,
-            Level = 70,
             DisplayIDs = {{19113}},
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -1762,16 +1669,14 @@ data["TheArcatraz"] = {
 
 data["TheBotanica"] = {
     nameFormat = NAME_TEMPEST_KEEP,
+    EncounterJournalID = 257,
     MapID = 3847,
-    InstanceID = 553,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {65, 69, 70},
     items = {
         { -- TKBotSarannis
-            name = AL["Commander Sarannis"],
-            npcID = {17976,21551},
-            Level = 72,
+            EncounterJournalID = 558,
             DisplayIDs = {{18929}},
             [NORMAL_DIFF] = {
                 { 1, 28301 }, -- Syrannis' Mystic Sheen
@@ -1794,9 +1699,7 @@ data["TheBotanica"] = {
             }
         },
         { -- TKBotFreywinn
-            name = AL["High Botanist Freywinn"],
-            npcID = {17975,21558},
-            Level = 72,
+            EncounterJournalID = 559,
             DisplayIDs = {{19045}},
             [NORMAL_DIFF] = {
                 { 1, 28317 }, -- Energis Armwraps
@@ -1824,9 +1727,7 @@ data["TheBotanica"] = {
             }
         },
         { -- TKBotThorngrin
-            name = AL["Thorngrin the Tender"],
-            npcID = {17978,21581},
-            Level = 72,
+            EncounterJournalID = 560,
             DisplayIDs = {{14416}},
             [NORMAL_DIFF] = {
                 { 1, 24310 }, -- Pattern: Battlecast Pants
@@ -1850,9 +1751,7 @@ data["TheBotanica"] = {
             }
         },
         { -- TKBotLaj
-            name = AL["Laj"],
-            npcID = {17980,21559},
-            Level = 72,
+            EncounterJournalID = 561,
             DisplayIDs = {{13109}},
             [NORMAL_DIFF] = {
                 { 1, 28328 }, -- Mithril-Bark Cloak
@@ -1874,9 +1773,7 @@ data["TheBotanica"] = {
             }
         },
         { -- TKBotSplinter
-            name = AL["Warp Splinter"],
-            npcID = {17977,21582},
-            Level = 72,
+            EncounterJournalID = 562,
             DisplayIDs = {{19438}},
             [NORMAL_DIFF] = {
                 { 1, 24311 }, -- Pattern: Whitemend Hood
@@ -1934,16 +1831,14 @@ data["TheBotanica"] = {
 
 data["TheMechanar"] = {
     nameFormat = NAME_TEMPEST_KEEP,
+    EncounterJournalID = 258,
     MapID = 3849,
-    InstanceID = 554,
     ContentType = DUNGEON_CONTENT,
     --LoadDifficulty = NORMAL_DIFF,
     LevelRange = {65, 68, 70},
     items = {
         { -- TKMechCapacitus
-            name = AL["Mechano-Lord Capacitus"],
-            npcID = {19219,21533},
-            Level = 72,
+            EncounterJournalID = 563,
             DisplayIDs = {{19162}},
             [NORMAL_DIFF] = {
                 { 1, 28256 }, -- Thoriumweave Cloak
@@ -1967,9 +1862,7 @@ data["TheMechanar"] = {
             }
         },
         { -- TKMechSepethrea
-            name = AL["Nethermancer Sepethrea"],
-            npcID = {19221,21536},
-            Level = 72,
+            EncounterJournalID = 564,
             DisplayIDs = {{19166}},
             [NORMAL_DIFF] = {
                 { 1, 28262 }, -- Jade-Skull Breastplate
@@ -1995,9 +1888,7 @@ data["TheMechanar"] = {
             }
         },
         { -- TKMechCalc
-            name = AL["Pathaleon the Calculator"],
-            npcID = {19220,21537},
-            Level = 72,
+            EncounterJournalID = 565,
             DisplayIDs = {{20033}},
             [NORMAL_DIFF] = {
                 { 1, 28269 }, -- Baba's Cloak of Arcanistry
@@ -2057,7 +1948,6 @@ data["TheMechanar"] = {
         { -- TKMechGyro
             name = AL["Gatewatcher Gyro-Kill"],
             npcID = {19218,21525},
-            Level = 72,
             DisplayIDs = {{18816}},
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -2067,7 +1957,6 @@ data["TheMechanar"] = {
         { -- TKMechIron
             name = AL["Gatewatcher Iron-Hand"],
             npcID = {19710,21526},
-            Level = 72,
             DisplayIDs = {{21191}},
             ExtraList = true,
             [NORMAL_DIFF] = {
@@ -2094,15 +1983,13 @@ data["TheMechanar"] = {
 }
 
 data["MagistersTerrace"] = {
+    EncounterJournalID = 249,
     MapID = 4131,
-    InstanceID = 585,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {65, 69, 70},
     items = {
         { -- SMTFireheart
-            name = AL["Selin Fireheart"],
-            npcID = {24723, 25562},
-            Level = 71,
+            EncounterJournalID = 530,
             DisplayIDs = {{22642}},
             [NORMAL_DIFF] = {
                 { 1, 34702 }, -- Cloak of Swift Mending
@@ -2122,9 +2009,7 @@ data["MagistersTerrace"] = {
             }
         },
         { -- SMTVexallus
-            name = AL["Vexallus"],
-            npcID = {24744, 25573},
-            Level = 71,
+            EncounterJournalID = 531,
             DisplayIDs = {{22731}},
             [NORMAL_DIFF] = {
                 { 1, 34708 }, -- Cloak of the Coming Night
@@ -2144,9 +2029,7 @@ data["MagistersTerrace"] = {
             }
         },
         { -- SMTDelrissa
-            name = AL["Priestess Delrissa"],
-            npcID = {24560, 25560},
-            Level = 70,
+            EncounterJournalID = 532,
             DisplayIDs = {{22596},{22540},{22542},{22539},{20986},{22598},{2007},{22541},{17457}},
             [NORMAL_DIFF] = {
                 { 1, 34792 }, -- Cloak of the Betrayed
@@ -2168,9 +2051,7 @@ data["MagistersTerrace"] = {
             }
         },
         { -- SMTKaelthas
-            name = AL["Kael'thas Sunstrider"],
-            npcID = {24664,24857},
-            Level = 72,
+            EncounterJournalID = 533,
             DisplayIDs = {{22906}},
             [NORMAL_DIFF] = {
                 { 1, 34810 }, -- Cloak of Blade Turning
@@ -2256,7 +2137,6 @@ data["Karazhan"] = {
         { -- KaraAttumen
             name = AL["Attumen the Huntsman"],
             npcID = 16152,
-            Level = 999,
             DisplayIDs = {{16040}},
             [NORMAL_DIFF] = {
                 { 1, 28477 }, -- Harbinger Bands
@@ -2280,7 +2160,6 @@ data["Karazhan"] = {
             name = AL["Rokad the Ravager"],
             nameFormat = NAME_KARA_QUARTERS,
             npcID = 16181,
-            Level = 999,
             DisplayIDs = {{16054}},
             specialType = "rare",
             [NORMAL_DIFF] = {
@@ -2294,7 +2173,6 @@ data["Karazhan"] = {
             name = AL["Shadikith the Glider"],
             nameFormat = NAME_KARA_QUARTERS,
             npcID = 16180,
-            Level = 999,
             DisplayIDs = {{16053}},
             specialType = "rare",
             [NORMAL_DIFF] = {
@@ -2308,7 +2186,6 @@ data["Karazhan"] = {
             name = AL["Hyakiss the Lurker"],
             nameFormat = NAME_KARA_QUARTERS,
             npcID = 16179,
-            Level = 999,
             DisplayIDs = {{15938}},
             specialType = "rare",
             [NORMAL_DIFF] = {
@@ -2321,7 +2198,6 @@ data["Karazhan"] = {
         { -- KaraMoroes
             name = AL["Moroes"],
             npcID = 15687,
-            Level = 999,
             DisplayIDs = {{16540},{19327},{16637},{16640},{16639},{19328},{16638}},
             [NORMAL_DIFF] = {
                 { 1, 28529 }, -- Royal Cloak of Arathi Kings
@@ -2343,7 +2219,6 @@ data["Karazhan"] = {
         { -- KaraMaiden
             name = AL["Maiden of Virtue"],
             npcID = 16457,
-            Level = 999,
             DisplayIDs = {{16198}},
             [NORMAL_DIFF] = {
                 { 1, 28511 }, -- Bands of Indwelling
@@ -2365,7 +2240,6 @@ data["Karazhan"] = {
             name = AL["The Wizard of Oz"],
             nameFormat = NAME_KARA_OPERA,
             npcID = {18168,17535,17548,17543,17547,17546},
-            Level = 999,
             DisplayIDs = {{18168},{17069},{17079},{17076},{17187},{18261}},
             [NORMAL_DIFF] = {
                 { 1, 28586 }, -- Wicked Witch's Hat
@@ -2385,7 +2259,6 @@ data["Karazhan"] = {
             name = AL["The Big Bad Wolf"],
             nameFormat = NAME_KARA_OPERA,
             npcID = 17521,
-            Level = 999,
             DisplayIDs = {{17121},{17053}},
             [NORMAL_DIFF] = {
                 { 1, 28582 }, -- Red Riding Hood's Cloak
@@ -2406,7 +2279,6 @@ data["Karazhan"] = {
             name = AL["Romulo and Julianne"],
             nameFormat = NAME_KARA_OPERA,
             npcID = {17533,17534},
-            Level = 999,
             DisplayIDs = {{17067},{17068}},
             [NORMAL_DIFF] = {
                 { 1, 28578 }, -- Masquerade Gown
@@ -2425,7 +2297,6 @@ data["Karazhan"] = {
         { -- KaraCurator
             name = AL["The Curator"],
             npcID = 15691,
-            Level = 999,
             DisplayIDs = {{16958}},
             [NORMAL_DIFF] = {
                 { 1, 28612 }, -- Pauldrons of the Solace-Giver
@@ -2444,7 +2315,6 @@ data["Karazhan"] = {
         { -- KaraIllhoof
             name = AL["Terestian Illhoof"],
             npcID = 15688,
-            Level = 999,
             DisplayIDs = {{11343}},
             [NORMAL_DIFF] = {
                 { 1, 28660 }, -- Gilded Thorium Cloak
@@ -2467,7 +2337,6 @@ data["Karazhan"] = {
         { -- KaraAran
             name = AL["Shade of Aran"],
             npcID = 16524,
-            Level = 999,
             DisplayIDs = {{16621}},
             [NORMAL_DIFF] = {
                 { 1, 28672 }, -- Drape of the Dark Reavers
@@ -2490,7 +2359,6 @@ data["Karazhan"] = {
         { -- KaraNetherspite
             name = AL["Netherspite"],
             npcID = 15689,
-            Level = 999,
             DisplayIDs = {{15363}},
             [NORMAL_DIFF] = {
                 { 1, 28744 }, -- Uni-Mind Headdress
@@ -2511,7 +2379,6 @@ data["Karazhan"] = {
         { -- KaraChess
             name = AL["Chess Event"],
             ObjectID = 185119,
-            Level = 999,
             DisplayIDs = {{51}},
             [NORMAL_DIFF] = {
                 { 1, 28756 }, -- Headdress of the High Potentate
@@ -2532,7 +2399,6 @@ data["Karazhan"] = {
         { -- KaraPrince
             name = AL["Prince Malchezaar"],
             npcID = 15690,
-            Level = 999,
             DisplayIDs = {{19274}},
             [NORMAL_DIFF] = {
                 { 1, 28765 }, -- Stainless Cloak of the Pure Hearted
@@ -2557,7 +2423,6 @@ data["Karazhan"] = {
         { -- KaraNightbane
             name = AL["Nightbane"],
             npcID = 17225,
-            Level = 999,
             DisplayIDs = {{18062}},
             specialType = "summon",
             [NORMAL_DIFF] = {
@@ -2604,7 +2469,6 @@ data["Karazhan"] = {
         AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, { -- KaraPrinceT
             name = AL["Prince Tenris Mirkblood"],
             npcID = 28194,
-            Level = 999,
             DisplayIDs = {{25541}},
             specialType = "scourgeInvasion",
             ExtraList = true,
@@ -2625,7 +2489,6 @@ data["ZulAmanClassic"] = {
         { -- ZAAkilZon
             name = AL["Akil'zon"],
             npcID = 23574,
-            Level = 999,
             DisplayIDs = {{21630}},
             [NORMAL_DIFF] = {
                 { 1, 29434 }, -- Badge of Justice
@@ -2642,7 +2505,6 @@ data["ZulAmanClassic"] = {
         { -- ZANalorakk
             name = AL["Nalorakk"],
             npcID = 23576,
-            Level = 999,
             DisplayIDs = {{21631}},
             [NORMAL_DIFF] = {
                 { 1, 29434 }, -- Badge of Justice
@@ -2659,7 +2521,6 @@ data["ZulAmanClassic"] = {
         { -- ZAJanAlai
             name = AL["Jan'alai"],
             npcID = 23578,
-            Level = 999,
             DisplayIDs = {{21633}},
             [NORMAL_DIFF] = {
                 { 1, 29434 }, -- Badge of Justice
@@ -2676,7 +2537,6 @@ data["ZulAmanClassic"] = {
         { -- ZAHalazzi
             name = AL["Halazzi"],
             npcID = 23577,
-            Level = 999,
             DisplayIDs = {{21632}},
             [NORMAL_DIFF] = {
                 { 1, 29434 }, -- Badge of Justice
@@ -2693,7 +2553,6 @@ data["ZulAmanClassic"] = {
         { -- ZAMalacrass
             name = AL["Hex Lord Malacrass"],
             npcID = 24239,
-            Level = 999,
             DisplayIDs = {{22332}},
             [NORMAL_DIFF] = {
                 { 1, 29434 }, -- Badge of Justice
@@ -2717,7 +2576,6 @@ data["ZulAmanClassic"] = {
         { -- ZAZuljin
             name = AL["Zul'jin"],
             npcID = 23863,
-            Level = 999,
             DisplayIDs = {{21899}},
             [NORMAL_DIFF] = {
                 { 1, 29434 }, -- Badge of Justice
@@ -2789,7 +2647,6 @@ data["WorldBossesBC"] = {
         { -- DDoomwalker
             name = AL["Doomwalker"],
             npcID = 17711,
-            Level = 999,
             DisplayIDs = {{21435}},
             [NORMAL_DIFF] = {
                 { 1, 30729 }, -- Black-Iron Battlecloak
@@ -2807,7 +2664,6 @@ data["WorldBossesBC"] = {
         { -- KKruul
             name = AL["Doom Lord Kazzak"],
             npcID = 18728,
-            Level = 999,
             DisplayIDs = {{17887}},
             [NORMAL_DIFF] = {
                 { 1, 30735 }, -- Ancient Spellcloak of the Highborne
@@ -2833,7 +2689,6 @@ data["MagtheridonsLair"] = {
         { -- HCMagtheridon
             name = AL["Magtheridon"],
             npcID = 17257,
-            Level = 999,
             DisplayIDs = {{18527}},
             [NORMAL_DIFF] = {
                 { 1, 28777 }, -- Cloak of the Pit Stalker
@@ -2868,7 +2723,6 @@ data["GruulsLair"] = {
         { -- GruulsLairHighKingMaulgar
             name = AL["High King Maulgar"],
             npcID = 18831,
-            Level = 999,
             DisplayIDs = {{18649},{12472},{11585},{20195},{20194}},
             [NORMAL_DIFF] = {
                 { 1, 28797 }, -- Brute Cloak of the Ogre-Magi
@@ -2885,7 +2739,6 @@ data["GruulsLair"] = {
         { -- GruulGruul
             name = AL["Gruul the Dragonkiller"],
             npcID = 19044,
-            Level = 999,
             DisplayIDs = {{18698}},
             [NORMAL_DIFF] = {
                 { 1, 28804 }, -- Collar of Cho'gall
@@ -2919,7 +2772,6 @@ data["SerpentshrineCavern"] = {
         { -- CFRSerpentHydross
             name = AL["Hydross the Unstable"],
             npcID = 21216,
-            Level = 999,
             DisplayIDs = {{20162}},
             [NORMAL_DIFF] = {
                 { 1, 30056 }, -- Robe of Hateful Echoes
@@ -2942,7 +2794,6 @@ data["SerpentshrineCavern"] = {
         { -- CFRSerpentLurker
             name = AL["The Lurker Below"],
             npcID = 21217,
-            Level = 999,
             DisplayIDs = {{20216}},
             [NORMAL_DIFF] = {
                 { 1, 30064 }, -- Cord of Screaming Terrors
@@ -2963,7 +2814,6 @@ data["SerpentshrineCavern"] = {
         { -- CFRSerpentLeotheras
             name = AL["Leotheras the Blind"],
             npcID = 21215,
-            Level = 999,
             DisplayIDs = {{20514}},
             [NORMAL_DIFF] = {
                 { 1, 30092 }, -- Orca-Hide Boots
@@ -2980,7 +2830,6 @@ data["SerpentshrineCavern"] = {
         { -- CFRSerpentKarathress
             name = AL["Fathom-Lord Karathress"],
             npcID = 21214,
-            Level = 999,
             DisplayIDs = {{20662},{20671},{20670},{20672}},
             [NORMAL_DIFF] = {
                 { 1, 30100 }, -- Soul-Strider Boots
@@ -2997,7 +2846,6 @@ data["SerpentshrineCavern"] = {
         { -- CFRSerpentMorogrim
             name = AL["Morogrim Tidewalker"],
             npcID = 21213,
-            Level = 999,
             DisplayIDs = {{20739}},
             [NORMAL_DIFF] = {
                 { 1, 30098 }, -- Razor-Scale Battlecloak
@@ -3019,7 +2867,6 @@ data["SerpentshrineCavern"] = {
         { -- CFRSerpentVashj
             name = AL["Lady Vashj"],
             npcID = 21212,
-            Level = 999,
             DisplayIDs = {{20748}},
             [NORMAL_DIFF] = {
                 { 1, 30107 }, -- Vestments of the Sea-Witch
@@ -3083,7 +2930,6 @@ data["TempestKeep"] = {
         { -- TKEyeAlar
             name = AL["Al'ar"],
             npcID = 19514,
-            Level = 999,
             DisplayIDs = {{18945}},
             [NORMAL_DIFF] = {
                 { 1, 29925 }, -- Phoenix-Wing Cloak
@@ -3105,7 +2951,6 @@ data["TempestKeep"] = {
         { -- TKEyeVoidReaver
             name = AL["Void Reaver"],
             npcID = 19516,
-            Level = 999,
             DisplayIDs = {{18951}},
             [NORMAL_DIFF] = {
                 { 1, 29986 }, -- Cowl of the Grand Engineer
@@ -3124,7 +2969,6 @@ data["TempestKeep"] = {
         { -- TKEyeSolarian
             name = AL["High Astromancer Solarian"],
             npcID = 18805,
-            Level = 999,
             DisplayIDs = {{18239}},
             [NORMAL_DIFF] = {
                 { 1, 29977 }, -- Star-Soul Breeches
@@ -3146,7 +2990,6 @@ data["TempestKeep"] = {
         { -- TKEyeKaelthas
             name = AL["Kael'thas Sunstrider"],
             npcID = 19622,
-            Level = 999,
             DisplayIDs = {{20023}},
             [NORMAL_DIFF] = {
                 { 1, 29992 }, -- Royal Cloak of the Sunstriders
@@ -3225,7 +3068,6 @@ data["HyjalSummit"] = {
         { -- MountHyjalWinterchill
             name = AL["Rage Winterchill"],
             npcID = 17767,
-            Level = 999,
             DisplayIDs = {{17444}},
             [NORMAL_DIFF] = {
                 { 1, 30871 }, -- Bracers of Martyrdom
@@ -3246,7 +3088,6 @@ data["HyjalSummit"] = {
         { -- MountHyjalAnetheron
             name = AL["Anetheron"],
             npcID = 17808,
-            Level = 999,
             DisplayIDs = {{21069}},
             [NORMAL_DIFF] = {
                 { 1, 30884 }, -- Hatefury Mantle
@@ -3266,7 +3107,6 @@ data["HyjalSummit"] = {
         { -- MountHyjalKazrogal
             name = AL["Kaz'rogal"],
             npcID = 17888,
-            Level = 999,
             DisplayIDs = {{17886}},
             [NORMAL_DIFF] = {
                 { 1, 30895 }, -- Angelista's Sash
@@ -3286,7 +3126,6 @@ data["HyjalSummit"] = {
         { -- MountHyjalAzgalor
             name = AL["Azgalor"],
             npcID = 17842,
-            Level = 999,
             DisplayIDs = {{18526}},
             [NORMAL_DIFF] = {
                 { 1, 30899 }, -- Don Rodrigo's Poncho
@@ -3303,7 +3142,6 @@ data["HyjalSummit"] = {
         { -- MountHyjalArchimonde
             name = AL["Archimonde"],
             npcID = 17968,
-            Level = 999,
             DisplayIDs = {{20939}},
             [NORMAL_DIFF] = {
                 { 1, 30913 }, -- Robes of Rhonin
@@ -3360,7 +3198,6 @@ data["BlackTemple"] = {
         { -- BTNajentus
             name = AL["High Warlord Naj'entus"],
             npcID = 22887,
-            Level = 999,
             DisplayIDs = {{21174}},
             [NORMAL_DIFF] = {
                 { 1, 32239 }, -- Slippers of the Seacaller
@@ -3382,7 +3219,6 @@ data["BlackTemple"] = {
         { -- BTSupremus
             name = AL["Supremus"],
             npcID = 22898,
-            Level = 999,
             DisplayIDs = {{21145}},
             [NORMAL_DIFF] = {
                 { 1, 32256 }, -- Waistwrap of Infinity
@@ -3403,7 +3239,6 @@ data["BlackTemple"] = {
         { -- BTAkama
             name = AL["Shade of Akama"],
             npcID = 22841,
-            Level = 999,
             DisplayIDs = {{21357}},
             [NORMAL_DIFF] = {
                 { 1, 32273 }, -- Amice of Brilliant Light
@@ -3425,7 +3260,6 @@ data["BlackTemple"] = {
         { -- BTBloodboil
             name = AL["Gurtogg Bloodboil"],
             npcID = 22948,
-            Level = 999,
             DisplayIDs = {{21443}},
             [NORMAL_DIFF] = {
                 { 1, 32337 }, -- Shroud of Forgiveness
@@ -3446,7 +3280,6 @@ data["BlackTemple"] = {
         { -- BTEssencofSouls
             name = AL["Reliquary of the Lost"],
             npcID = 22856,
-            Level = 999,
             DisplayIDs = {{21146}},
             [NORMAL_DIFF] = {
                 { 1, 32353 }, -- Gloves of Unfailing Faith
@@ -3467,7 +3300,6 @@ data["BlackTemple"] = {
         { -- BTGorefiend
             name = AL["Teron Gorefiend"],
             npcID = 22871,
-            Level = 999,
             DisplayIDs = {{21254}},
             [NORMAL_DIFF] = {
                 { 1, 32323 }, -- Shadowmoon Destroyer's Drape
@@ -3487,7 +3319,6 @@ data["BlackTemple"] = {
         { -- BTShahraz
             name = AL["Mother Shahraz"],
             npcID = 22947,
-            Level = 999,
             DisplayIDs = {{21252}},
             [NORMAL_DIFF] = {
                 { 1, 32367 }, -- Leggings of Devastation
@@ -3504,7 +3335,6 @@ data["BlackTemple"] = {
         { -- BTCouncil
             name = AL["The Illidari Council"],
             npcID = {23426, 22949, 22950, 22951, 22952},
-            Level = 999,
             DisplayIDs = {{21416},{21417},{21419},{21418}},
             [NORMAL_DIFF] = {
                 { 1, 32331 }, -- Cloak of the Illidari Council
@@ -3521,7 +3351,6 @@ data["BlackTemple"] = {
         { -- BTIllidanStormrage
             name = AL["Illidan Stormrage"],
             npcID = 22917,
-            Level = 999,
             DisplayIDs = {{21135}},
             [NORMAL_DIFF] = {
                 { 1, 32524 }, -- Shroud of the Highborne
@@ -3606,7 +3435,6 @@ data["SunwellPlateau"] = {
         { -- SPKalecgos
             name = AL["Kalecgos"],
             npcID = {24850,24892},
-            Level = 999,
             DisplayIDs = {{23345},{6686}},
             [NORMAL_DIFF] = {
                 { 1, 34170 }, -- Pantaloons of Calming Strife
@@ -3627,7 +3455,6 @@ data["SunwellPlateau"] = {
         { -- SPBrutallus
             name = AL["Brutallus"],
             npcID = 24882,
-            Level = 999,
             DisplayIDs = {{22711}},
             [NORMAL_DIFF] = {
                 { 1, 34181 }, -- Leggings of Calamity
@@ -3645,7 +3472,6 @@ data["SunwellPlateau"] = {
         { -- SPFelmyst
             name = AL["Felmyst"],
             npcID = 25038,
-            Level = 999,
             DisplayIDs = {{22838}},
             [NORMAL_DIFF] = {
                 { 1, 34352 }, -- Borderland Fortress Grips
@@ -3664,7 +3490,6 @@ data["SunwellPlateau"] = {
         { -- SPEredarTwins
             name = AL["Eredar Twins"],
             npcID = {25166,25165},
-            Level = 999,
             DisplayIDs = {{23334},{23177}},
             [NORMAL_DIFF] = {
                 { 1, 34205 }, -- Shroud of Redeemed Souls
@@ -3699,7 +3524,6 @@ data["SunwellPlateau"] = {
         { -- SPMuru
             name = AL["M'uru"],
             npcID = {25741,25840},
-            Level = 999,
             DisplayIDs = {{23404},{23428}},
             [NORMAL_DIFF] = {
                 { 1, 34232 }, -- Fel Conquerer Raiments
@@ -3735,7 +3559,6 @@ data["SunwellPlateau"] = {
         { -- SPKiljaeden
             name = AL["Kil'jaeden"],
             npcID = 25315,
-            Level = 999,
             DisplayIDs = {{23200}},
             [NORMAL_DIFF] = {
                 { 1, 34241 }, -- Cloak of Unforgivable Sin
