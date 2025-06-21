@@ -905,7 +905,7 @@ data["ScarletMonastery"] = {
                 { 10,  88303 }, -- Crown of Holy Flame
             },
         },
-        AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM, { -- SMHeadlessHorseman
+        AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM, { -- SMHeadlessHorseman
             name = AL["Headless Horseman"],
             npcID = 23682,
             DisplayIDs = {{22351}},
@@ -2660,7 +2660,7 @@ data["BlackrockDepths"] = {
                 { 4,  22317 }, -- Lefty's Brass Knuckle
             },
         },
-        AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM, { -- BRRDCorenDirebrew
+        AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM, { -- BRRDCorenDirebrew
             name = AL["Coren Direbrew"],
             npcID = 23872,
             DisplayIDs = {{21824}},
