@@ -37,6 +37,7 @@ end
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
+local AC_ITTYPE = data:AddItemTableType("Achievement", "Item")
 
 local QUEST_EXTRA_ITTYPE = data:AddExtraItemTableType("Quest")
 local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
@@ -54,7 +55,39 @@ local PURP = "|cff9900ff%s|r"
 local WHIT = "|cffffffff%s|r"
 
 local NAME_COLOR, NAME_COLOR_BOSS = "|cffC0C0C0", "|cffC0C0C0"
-local NAME_BRD_RING_OF_LAW = NAME_COLOR_BOSS .. AL["Ring of Law"] .. ":|r %s" -- Tempest Keep
+local NAME_BRD_RING_OF_LAW = NAME_COLOR_BOSS .. AL["Ring of Law"] .. ":|r %s"
+
+local CLASSIC_INSTANCE_AC_TABLE = {	--[Classic Dungeonmaster]
+	name = select(2, GetAchievementInfo(1283)),
+	TableType = AC_ITTYPE,
+	ExtraList = true,
+	CoinTexture = "Achievement",
+	[NORMAL_DIFF] = {
+		{ 1, 1283 },
+		{ 2, 628 },			{ 17, 629 },
+		{ 3, 630 },			{ 18, 631 },
+		{ 4, 632 },			{ 19, 633 },
+		{ 5, 634 },			{ 20, 635 },
+		{ 6, 636 },			{ 21, 637 },
+		{ 7, 638 },			{ 22, 639 },
+		{ 8, 640 },			{ 23, 641 },
+		{ 9, 642 },			{ 24, 643 },
+		{ 10, 644 },			{ 25, 645 },
+		{ 11, 646 }
+	},
+}
+
+local CLASSIC_RAID_AC_TABLE = {	--[Classic Raider]
+	name = select(2, GetAchievementInfo(1285)),
+	TableType = AC_ITTYPE,
+	ExtraList = true,
+	CoinTexture = "Achievement",
+	[NORMAL_DIFF] = {
+		{ 1, 1285 },
+		{ 2, 685 },			{ 17, 686 },
+		{ 3, 687 },			{ 18, 689 },
+	},
+}
 
 local T1_SET = {
     name = format(AL["Tier %s Sets"], "1"),
@@ -317,6 +350,7 @@ data["DeadminesCata"] = {
                 { 16, "ac628" },
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     }
 }
 
@@ -369,6 +403,7 @@ data["ShadowfangKeepCata"] = {
                 { 16, "ac631" },
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     }
 }
 
@@ -467,6 +502,7 @@ data["WailingCaverns"] = {
                 { 1,  10413 }, -- Gloves of the Fang
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -555,6 +591,7 @@ data["BlackfathomDeeps"] = {
                 { 11, 2271 }, -- Staff of the Blessed Seer
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -599,6 +636,7 @@ data["TheStockade"] = {
                 { 1,  1076 }, -- Defias Renegade Ring
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -709,7 +747,7 @@ data["Gnomeregan"] = {
                 { 26, 9316 }, -- Prismatic Punch Card
             },
         },
-
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -807,6 +845,7 @@ data["RazorfenKraul"] = {
                 { 10, 2549 }, -- Staff of the Shade
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -925,6 +964,7 @@ data["ScarletMonastery"] = {
                 { 20, 33154 }, -- Sinister Squashling
             }
         }),
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -1025,6 +1065,7 @@ data["Maraudon"] = {
                 { 9,  17766 }, -- Princess Theradras' Scepter
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -1167,6 +1208,7 @@ data["Uldaman"] = {
                 { 1,  5824 }, -- Tablet of Will
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -1235,6 +1277,7 @@ data["Scholomance"] = {
                 { 11,  71637 }, -- Mysterious Grimoire
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -1606,6 +1649,7 @@ data["DireMaul"] = {
             },
         },
         DM_BOOKS,
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -1712,6 +1756,7 @@ data["RazorfenDowns"] = {
                 { 2,  10841 }, -- Goldthorn Tea
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -2095,6 +2140,7 @@ data["Stratholme"] = {
                 { 5,  22329 }, -- Scepter of Interminable Focus
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -2232,6 +2278,7 @@ data["Zul'Farrak"] = {
                 { 13, 9243 }, -- Shriveled Heart
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -2680,6 +2727,7 @@ data["BlackrockDepths"] = {
                 { 21,  38280 }, -- Direbrew's Dire Brew
             },
         }),
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -2766,6 +2814,7 @@ data["SunkenTemple"] = {
                 { 21, 15733 }, -- Pattern: Green Dragonscale Leggings
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -3171,6 +3220,7 @@ data["BlackrockSpire"] = {
                 { 8,  22335 }, -- Lord Valthalak's Staff of Command
             },
         },
+        CLASSIC_INSTANCE_AC_TABLE,
     },
 }
 
@@ -3675,6 +3725,7 @@ data["MoltenCore"] = {
             },
         },
         T1_SET,
+        CLASSIC_RAID_AC_TABLE,
     }
 }
 
@@ -4314,6 +4365,7 @@ data["BlackwingLair"] = {
             },
         },
         T2_SET,
+        CLASSIC_RAID_AC_TABLE,
     },
 }
 
@@ -4521,6 +4573,7 @@ data["TheRuinsofAhnQiraj"] = { -- AQ20
         AQ_SCARABS,
         AQ_ENCHANTS,
         AQ_OPENING,
+        CLASSIC_RAID_AC_TABLE,
     },
 }
 
@@ -4756,6 +4809,7 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
         AQ_SCARABS,
         AQ_ENCHANTS,
         AQ_OPENING,
+        CLASSIC_RAID_AC_TABLE,
     },
 }
 
