@@ -63,57 +63,809 @@ end
 8 - Exalted
 ]]--
 
-data["GoldenLotus"] = {
+-- TODO: Clean up and organize, many items overlap, aren't in game
+--       or are irrelevent
+
+data["Golden Lotus"] = {
     FactionID = 1269,
     ContentType = FACTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
-    --ContentPhaseMoP = 1,
     items = {
         { -- Exalted 8
             name = ALIL["Exalted"],
             [NORMAL_DIFF] = {
                 {1, "f1269rep8"},
-                {2, 71237}, -- Quicksilver Signet of the Avengers
-                {3, 71215}, -- Obsidian Signet of the Avengers
-                {4, 70934}, -- Adamantine Signet of the Avengers
-                {5, 71216}, -- Viridian Signet of the Avengers
-                {6, 71217}, -- Infernal Signet of the Avengers
+                {2, 87782}, -- Reins of the Golden Riding Crane
+                {3, 87781}, -- Reins of the Azure Riding Crane
+                {4, 87783}, -- Reins of the Regal Riding Crane
+                {16, 89797}, -- Golden Lotus Tabard
             },
         },
         { -- Revered 7
             name = ALIL["Revered"],
             [NORMAL_DIFF] = {
                 {1, "f1269rep7"},
-                {2, 69001}, -- Ancient Petrified Seed
-                {3, 68998}, -- Rune of Zeth
-                {4, 69000}, -- Fiery Quintessence
-                {5, 68996}, -- Stay of Execution
-                {6, 69002}, -- Essence of the Eternal Flame
+                {2, 89433}, -- Vestments of Thundering Skies
+                {3, 89434}, -- Robe of the Five Sisters
+                {4, 89431}, -- Softfoot Silentwrap
+                {5, 89429}, -- Robes of the Setting Sun
+                {6, 89420}, -- Dawnblade's Chestguard
+                {7, 89423}, -- Battleguard of Guo-Lai
+                {8, 89421}, -- Cuirass of the Twin Monoliths
+                {9, 89432}, -- Mistfall Robes
+                {10, 89430}, -- Breastplate of the Golden Pagoda
+                {16, 93215}, -- Grand Commendation of the Golden Lotus
             },
         },
         { -- Honored 6
             name = ALIL["Honored"],
             [NORMAL_DIFF] = {
                 {1, "f1269rep6"},
-                {2, 71258}, -- Embereye Belt
-                {3, 71249}, -- Firescar Sash
-                {4, 71131}, -- Flamebinding Girdle
-                {5, 71254}, -- Firemend Cinch
-                {6, 71255}, -- Firearrow Belt
-                {7, 71250}, -- Cinch of the Flaming Ember
-                {8, 70933}, -- Girdle of the Indomitable Flame
-                {9, 71253}, -- Belt of the Seven Seals
+                {2, 89339}, -- Tenderheart Shoulders
+                {3, 89340}, -- Mantle of the Golden Sun
+                {4, 89341}, -- Imperion Spaulders
+                {5, 89342}, -- Whitepetal Shouldergarb
+                {6, 89344}, -- Windwalker Spaulders
+                {7, 89343}, -- Mindbender Shoulders
+                {8, 89345}, -- Stonetoe Spaulders
+                {9, 89347}, -- Paleblade Shoulderguards
+                {10, 89346}, -- Shoulders of Autumnlight
+                {16, 89072}, -- Simple Harmonius Ring
+                {17, 89073}, -- Leven's Circle of Hope
+                {18, 89070}, -- Anji's Keepsake
+                {19, 89069}, -- Ring of the Golden Stair
+                {20, 89071}, -- Alani's Inflexible Ring
+                {101, 86295}, -- Pattern: Shadowleather Leg Armor
+                {102, 86235}, -- Pattern: Angerhide Leg Armor
+                {103, 86276}, -- Pattern: Ironscale Leg Armor
+                {104, 86273}, -- Pattern: Gloves of Earthen Harmony
+                {105, 86237}, -- Pattern: Chestguard of Earthen Harmony
+                {106, 86308}, -- Pattern: Wildblood Gloves
+                {107, 86309}, -- Pattern: Wildblood Vest
+                {108, 86274}, -- Pattern: Greyshadow Chestguard
+                {109, 86275}, -- Pattern: Greyshadow Gloves
+                {110, 86278}, -- Pattern: Lifekeeper's Robe
+                {111, 86277}, -- Pattern: Lifekeeper's Gloves
+                {116, 86376}, -- Pattern: Greater Cerulean Spellthread
+                {117, 86375}, -- Pattern: Greater Pearlescent Spellthread
+                {118, 86370}, -- Pattern: Robes of Creation
+                {119, 86371}, -- Pattern: Gloves of Creation
+                {120, 86368}, -- Pattern: Spelltwister's Grand Robe
+                {121, 86369}, -- Pattern: Spelltwister's Gloves
+            },
+        },
+    },
+}
+
+data["Shado-Pan"] = {
+    FactionID = 1270,
+    ContentType = FACTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1270rep8"},
+                {2, 89801}, -- Replica Shado-Pan Helmet
+                {3, 90844}, -- Replica Shado-Pan Helmet
+                {4, 90845}, -- Replica Shado-Pan Helmet
+                {5, 90846}, -- Replica Shado-Pan Helmet
+                {7, 89306}, -- Reins of the Red Shado-Pan Riding Tiger
+                {8, 89307}, -- Reins of the Blue Shado-Pan Riding Tiger
+                {9, 89305}, -- Reins of the Green Shado-Pan Riding Tiger
+                {16, 89800}, -- Shado-Pan Tabard
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1270rep7"},
+                {2, 89337}, -- Firecracker Corona
+                {3, 89338}, -- Yalia's Cowl
+                {4, 89300}, -- Red Smoke Bandana
+                {5, 89308}, -- Snowdrift Helm
+                {6, 89291}, -- Hawkmaster's Headguard
+                {7, 89296}, -- Nightwatcher's Helm
+                {8, 89096}, -- Six Pool's Open Helm
+                {9, 89280}, -- Voice Amplyifying Greathelm
+                {10, 89216}, -- Yi's Least Favorite Helmet
+                {12, 84583}, -- Formula: Enchant Weapon - Jade Spirit
+                {13, 84584}, -- Formula: Enchant Weapon - Dancing Steel
+                {14, 84580}, -- Formula: Enchant Weapon - River's Song
+                {16, 93220}, -- Grand Commendation of the Shado-Pan
+            },
+        },
+        { -- Honored 6
+            name = ALIL["Honored"],
+            [NORMAL_DIFF] = {
+                {1, "f1270rep6"},
+                {2, 89078}, -- Sagewhisper's Wrap
+                {3, 89077}, -- Cloak of Snow Blossoms
+                {4, 89074}, -- Cloak of the Dark Disciple
+                {5, 89076}, -- Blackguard Cape
+                {6, 89075}, -- Yi's Cloak of Courage
+                {8, 89081}, -- Blossom of Pure Snow
+                {9, 89083}, -- Iron Belly Wok
+                {10, 89082}, -- Hawkmaster's Talon
+                {11, 89079}, -- Lao-Chin's Liquid Courage
+                {12, 89080}, -- Scroll of Revered Ancestors
+                {16, 89301}, -- Stack of Wooden Boards
+                {17, 89302}, -- Stack of Bamboo
+                {18, 89303}, -- Stack of Stone Blocks
+            },
+        },
+    },
+}
+data["Order of the Cloud Serpent"] = {
+    FactionID = 1271,
+    ContentType = FACTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1271rep8"},
+                {2, 85429}, -- Reins of the Golden Cloud Serpent
+                {3, 79802}, -- Reins of the Jade Cloud Serpent
+                {4, 85430}, -- Reins of the Azure Cloud Serpent
+                {6, 83877}, -- Design: Jeweled Onyx Panther
+                {16, 89796}, -- Order of the Cloud Serpent Tabard
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1271rep7"},
+                {2, 83931}, -- Design: Ruby Panther
+                {3, 83932}, -- Design: Sapphire Panther
+                {5, 89222}, -- Cloud Ring
+                {6, 89223}, -- Racing Flag
+                {7, 89224}, -- Floating Racing Flag
+                {8, 89227}, -- Floating Finish Line
+                {9, 89225}, -- Finish Line
+                {16, 93229}, -- Grand Commendation of the Order of the Cloud Serpent
+            },
+        },
+        { -- Honored 6
+            name = ALIL["Honored"],
+            [NORMAL_DIFF] = {
+                {1, "f1271rep6"},
+                {2, 83845}, -- Design: Jade Panther
+                {3, 83830}, -- Design: Sunstone Panther
+            },
+        },
+    },
+}
+data["The Tillers"] = {
+    FactionID = 1272,
+    ContentType = FACTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1272rep8"},
+                {2, 89391}, -- Reins of the Black Riding Goat
+                {3, 89390}, -- Reins of the White Riding Goat
+                {4, 89362}, -- Reins of the Brown Riding Goat
+                {6, 80914}, -- Mourning Glory
+                {7, 90175}, -- Gin-Ji Knife Set
+                {16, 89784}, -- Tillers Tabard
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1272rep7"},
+                {2, 74657}, -- Recipe: Spicy Salmon
+                {3, 74658}, -- Recipe: Spicy Vegetable Chips
+                {5, 89869}, -- Pandaren Scarecrow
+                {16, 93226}, -- Grand Commendation of the Tillers
+            },
+        },
+    },
+}
+data["The Anglers"] = {
+    FactionID = 1302,
+    ContentType = FACTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1302rep8"},
+                {2, 81354}, -- Reins of the Azure Water Strider
+                {3, 87791}, -- Reins of the Crimson Water Strider
+                {4, 87793}, -- Reins of the Jade Water Strider
+                {5, 87792}, -- Reins of the Orange Water Strider
+                {6, 87794}, -- Reins of the Golden Water Strider
+                {16, 89401}, -- Anglers Tabard
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1302rep7"},
+                {2, 85500}, -- Anglers Fishing Raft
+                {3, 84661}, -- Dragon Fishing Pole
+                {4, 107950}, -- Bipsi's Bobbing Berg
+                {5, 88535}, -- Sharpened Tuskarr Spear
+                {16, 93225}, -- Grand Commendation of the Anglers
+            },
+        },
+        { -- Honored 6
+            name = ALIL["Honored"],
+            [NORMAL_DIFF] = {
+                {1, "f1302rep6"},
+                {2, 84660}, -- Pandaren Fishing Pole
+                {3, 85447}, -- Tiny Goldfish
             },
         },
         { -- Friendly 5
             name = ALIL["Friendly"],
             [NORMAL_DIFF] = {
-                {1, "f1269rep5"},
-                {2, 71229}, -- Flowing Flamewrath Cape
-                {3, 71227}, -- Bladed Flamewrath Cover
-                {4, 70930}, -- Durable Flamewrath Greatcloak
-                {5, 71228}, -- Sleek Flamewrath Cloak
-                {6, 71230}, -- Rippling Flamewrath Drape
+                {1, "f1302rep5"},
+                {2, 85502}, -- Recipe: Viseclaw Soup
+                {3, 85505}, -- Recipe: Krasarang Fritters
+            },
+        },
+    },
+}
+data["The August Celestials"] = {
+    FactionID = 1341,
+    ContentType = FACTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1341rep8"},
+                {2, 90655}, -- Reins of the Thundering Ruby Cloud Serpent
+                {3, 86377}, -- Pattern: Royal Satchel
+                {4, 89304}, -- Reins of the Thundering August Cloud Serpent
+                {5, 89799}, -- August Celestials Tabard
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1341rep7"},
+                {2, 84557}, -- Formula: Enchant Bracer - Greater Agility
+                {3, 93224}, -- Grand Commendation of the August Celestials
+                {4, 88868}, -- Tukka-Tuk's Hairy Boots
+                {5, 84559}, -- Formula: Enchant Bracer - Super Intellect
+                {6, 84561}, -- Formula: Enchant Bracer - Exceptional Strength
+                {7, 88866}, -- Steps of the War Serpent
+                {8, 88862}, -- Tankiss Warstompers
+                {9, 88864}, -- Yu'lon Guardian Boots
+                {10, 88867}, -- Sandals of the Elder Sage
+                {11, 88865}, -- Bramblestaff Boots
+                {12, 88876}, -- Boots of the High Adept
+                {13, 88877}, -- Storm-Sing Sandals
+                {14, 88878}, -- Void Flame Slippers
+            },
+        },
+        { -- Honored 6
+            name = ALIL["Honored"],
+            [NORMAL_DIFF] = {
+                {1, "f1341rep6"},
+                {2, 89124}, -- Celestial Offering
+                {3, 88893}, -- Minh's Beaten Bracers
+                {4, 88883}, -- Brewmaster Chani's Bracers
+                {5, 88747}, -- Streetfighter's Iron Knuckles
+                {6, 98069}, -- Minh's Beaten Bracers
+                {7, 88741}, -- Gloves of Red Feathers
+                {8, 88742}, -- Sunspeaker's Flared Gloves
+                {9, 88749}, -- Gauntlets of Jade Sutras
+                {10, 88881}, -- Fallen Sentinel Bracers
+                {11, 88745}, -- Sentinel Commander's Gauntlets
+                {12, 88744}, -- Fingers of the Loneliest Monk
+                {13, 88879}, -- Braided Black and White Bracer
+                {14, 88880}, -- Battle Shadow Bracers
+                {15, 88884}, -- Quillpaw Family Bracers
+                {16, 88885}, -- Clever Ashyo's Armbands
+                {17, 88892}, -- Bracers of Inlaid Jade
+                {18, 88746}, -- Gloves of the Overwhelming Swarm
+                {19, 88748}, -- Ravenmane's Gloves
+                {20, 88882}, -- Tiger-Striped Wristguards
+                {21, 88743}, -- Ogo's Elder Gloves
+            },
+        },
+    },
+}
+data["The Klaxxi"] = {
+    FactionID = 1337,
+    ContentType = FACTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1337rep8"},
+                {2, 85262}, -- Reins of the Amber Scorpion
+                {3, 89394}, -- Amber Spear of Klaxxi'vess
+                {4, 89397}, -- Amber Saber of Klaxxi'vess
+                {5, 89798}, -- Klaxxi Tabard
+                {6, 89393}, -- Amber Slicer of Klaxxi'vess
+                {7, 89395}, -- Amber Scythe of Klaxxi'vess
+                {8, 89396}, -- Amber Espada of Klaxxi'vess
+                {9, 89399}, -- Amber Sprayer of Klaxxi'vess
+                {10, 89392}, -- Amber Spine of Klaxxi'vess
+                {11, 89398}, -- Amber Flammard of Klaxxi'vess
+                {12, 89400}, -- Amber Sledge of Klaxxi'vess
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1337rep7"},
+                {2, 89088}, -- Leggings of the Poisoned Soul
+                {3, 89087}, -- Poisoncrafter's Kilt
+                {4, 89089}, -- Wind-Reaver Greaves
+                {5, 98073}, -- Leggings of the Poisoned Soul
+                {6, 89095}, -- Legguards of the Unscathed
+                {7, 89090}, -- Dreadsworn Slayer Legs
+                {8, 92522}, -- Grand Commendation of the Klaxxi
+                {9, 89091}, -- Swarmkeeper's Leggings
+                {10, 89092}, -- Locust Swarm Legguards
+                {11, 89093}, -- Kovok's Riven Legguards
+                {12, 89094}, -- Ambersmith Legplates
+            },
+        },
+        { -- Honored 6
+            name = ALIL["Honored"],
+            [NORMAL_DIFF] = {
+                {1, "f1337rep6"},
+                {2, 84196}, -- Plans: Living Steel Belt Buckle
+                {3, 89068}, -- Wire of the Wakener
+                {4, 89230}, -- Restorative Amber
+                {5, 84218}, -- Plans: Masterwork Spiritblade Decimator
+                {6, 89064}, -- Bloodseeker's Solitaire
+                {7, 89062}, -- Klaxxi Lash of the Orator
+                {8, 83789}, -- Plans: Living Steel Breastplate
+                {9, 89055}, -- Klaxxi Lash of the Rescinder
+                {10, 83790}, -- Plans: Living Steel Gauntlets
+                {11, 83787}, -- Plans: Ghost Reaver's Breastplate
+                {12, 83792}, -- Plans: Gauntlets of Ancient Steel
+                {13, 84217}, -- Plans: Masterwork Phantasmal Hammer
+                {14, 83791}, -- Plans: Breastplate of Ancient Steel
+                {15, 89063}, -- Klaxxi Lash of the Seeker
+                {16, 89058}, -- Klaxxi Lash of the Winnower
+                {17, 89059}, -- Klaxxi Lash of the Precursor
+                {18, 83788}, -- Plans: Ghost Reaver's Gauntlets
+                {19, 90532}, -- Plans: Living Steel Weapon Chain
+                {20, 89056}, -- Klaxxi Lash of the Consumer
+                {21, 89057}, -- Klaxxi Lash of the Doubter
+                {22, 89065}, -- Choker of the Klaxxi'va
+                {23, 89067}, -- Links of the Lucid
+                {24, 90531}, -- Plans: Ghost Iron Shield Spike
+                {25, 84197}, -- Plans: Masterwork Forgewire Axe
+                {26, 89060}, -- Klaxxi Lash of the Borrower
+                {27, 89061}, -- Klaxxi Lash of the Harbinger
+                {28, 89066}, -- Paragon's Pale Pendant
+                {29, 84198}, -- Plans: Masterwork Ghost Shard
+                {30, 84200}, -- Plans: Masterwork Ghost-Forged Blade
+            },
+        },
+    },
+}
+data["The Lorewalkers"] = {
+    FactionID = 1345,
+    ContentType = FACTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1345rep8"},
+                {2, 89363}, -- Disc of the Red Flying Cloud
+                {4, 95509}, -- Mantid Artifact Sonic Locator
+                {5, 87548}, -- Lorewalker's Lodestone
+                {6, 87549}, -- Lorewalker's Map
+                {16, 89795}, -- Lorewalkers Tabard
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1345rep7"},
+                {2, 93230}, -- Grand Commendation of the Lorewalkers
+            },
+        },
+    },
+}
+data["Dominance Offensive"] = {
+    FactionID = 1375,
+    ContentType = FACTIONS_HORDE_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1375rep8"},
+                {2, 93169}, -- Grand Armored Wyvern
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1375rep7"},
+                {2, 93232}, -- Grand Commendation of the Dominance Offensive
+                {3, 93256}, -- Skullrender Medallion
+                {4, 93253}, -- Woundripper Medallion
+                {5, 93254}, -- Static-Caster's Medallion
+                {6, 93255}, -- Cutstitcher Medallion
+                {7, 93270}, -- Slippers of Soothing Balm
+                {8, 93323}, -- Kwon's Crushing Girdle
+                {9, 93257}, -- Medallion of Mystifying Vapors
+                {10, 93268}, -- Treads of Rejuvenating Mists
+                {11, 93269}, -- Troll-Toe Tabi
+                {12, 93326}, -- Shigi's Chain of Cheerful Summons
+                {13, 93327}, -- Bloodbinder Links
+                {14, 93328}, -- Prevenge's Dagger-Carrier
+                {15, 93329}, -- Bambrick's Striking Strap
+                {16, 93264}, -- Cragchewer Sollerets
+                {17, 93266}, -- Boots of the Healing Stream
+                {18, 93324}, -- Immovable Waistplate
+                {19, 93325}, -- Divide's Greatheart Clasp
+                {20, 93265}, -- Scar Swallower Greatboots
+                {21, 93267}, -- Greaves of Manifest Destiny
+                {22, 93271}, -- Beach-Born Sandals
+                {23, 93330}, -- Chang's Changing Cord
+                {24, 93331}, -- Sash of Surehandedness
+                {25, 93263}, -- Groundbreaker Sabatons
+            },
+        },
+        { -- Honored 6
+            name = ALIL["Honored"],
+            [NORMAL_DIFF] = {
+                {1, "f1375rep6"},
+                {2, 93344}, -- Dominator's Knightly Badge
+                {3, 93345}, -- Dominator's Durable Badge
+                {4, 93252}, -- Dominator's Seal
+                {5, 93341}, -- Dominator's Deadeye Badge
+                {6, 93342}, -- Dominator's Arcane Badge
+                {7, 93251}, -- Dominator's Circle
+                {8, 93343}, -- Dominator's Mending Badge
+                {9, 93248}, -- Dominator's Signet
+                {10, 93249}, -- Dominator's Band
+                {11, 93250}, -- Dominator's Loop
+            },
+        },
+    },
+}
+data["Operation: Shieldwall"] = {
+    FactionID = 1376,
+    ContentType = FACTIONS_ALLI_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1376rep8"},
+                {2, 93168}, -- Grand Armored Gryphon
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1376rep7"},
+                {2, 93259}, -- Shock-Charger Medallion
+                {3, 93340}, -- Sash of Bouncing Power
+                {4, 93338}, -- Soothing Straps
+                {5, 93261}, -- Helmbreaker Medallion
+                {6, 93262}, -- Vaporshield Medallion
+                {7, 93260}, -- Heartwarmer Medallion
+                {8, 93258}, -- Arrowflight Medallion
+                {9, 93276}, -- Odlaw's Everwalkers
+                {10, 93231}, -- Grand Commendation of Operation: Shieldwall
+                {11, 93275}, -- Totem-Binder Boots
+                {12, 93277}, -- Statue Summoner's Treads
+                {13, 93278}, -- Crab-Leather Tabi
+                {14, 93337}, -- Prevenge's Swashbuckling Cinch
+                {15, 93333}, -- Waistplate of Immobility
+                {16, 93334}, -- Divide's Loyal Clasp
+                {17, 93335}, -- Chain of Flaming Arrows
+                {18, 93273}, -- Sea-Soaked Sollerets
+                {19, 93274}, -- Greatboots of Flashing Light
+                {20, 93279}, -- Shieldwarden Slippers
+                {21, 93280}, -- Sandals of Oiled Silk
+                {22, 93336}, -- Links of Bonded Blood
+                {23, 93272}, -- Sabatons of the Sullied Shore
+                {24, 93332}, -- Girdle of Crushing Strength
+                {25, 93339}, -- Bon-iy's Unbreakable Cord
+            },
+        },
+        { -- Honored 6
+            name = ALIL["Honored"],
+            [NORMAL_DIFF] = {
+                {1, "f1376rep6"},
+                {2, 93347}, -- Arcane Badge of the Shieldwall
+                {3, 93243}, -- Signet of the Shieldwall
+                {4, 93350}, -- Durable Badge of the Shieldwall
+                {5, 93346}, -- Deadeye Badge of the Shieldwall
+                {6, 93245}, -- Loop of the Shieldwall
+                {7, 93244}, -- Band of the Shieldwall
+                {8, 93349}, -- Knightly Badge of the Shieldwall
+                {9, 93246}, -- Circle of the Shieldwall
+                {10, 93247}, -- Seal of the Shieldwall
+                {11, 93348}, -- Mending Badge of the Shieldwall
+            },
+        },
+    },
+}
+data["Shado-Pan Assault"] = {
+    FactionID = 1435,
+    ContentType = FACTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1435rep8"},
+                {2, 97131}, -- Shado-Pan Assault Tabard
+                {3, 95101}, -- Halo-Graced Mantle
+                {4, 95102}, -- Frost-Kissed Shoulderwraps
+                {5, 95104}, -- Shoulderguards of Potentiation
+                {6, 95103}, -- Sparksmasher Pauldrons
+                {7, 95096}, -- Shoulders of Demonic Dreams
+                {8, 95097}, -- Heartroot Shoulderguards
+                {9, 95100}, -- Wallwalker Spaulders
+                {10, 95095}, -- Targetblinder Spaulders
+                {11, 95098}, -- Sightblinder Shoulderguards
+                {12, 95099}, -- Lightning Strike Mantle
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1435rep7"},
+                {2, 95559}, -- Grand Commendation of the Shado-Pan Assault
+            },
+        },
+        { -- Friendly 5
+            name = ALIL["Friendly"],
+            [NORMAL_DIFF] = {
+                {1, "f1435rep5"},
+                {2, 94508}, -- Brutal Talisman of the Shado-Pan Assault
+                {3, 94510}, -- Volatile Talisman of the Shado-Pan Assault
+                {4, 94509}, -- Soothing Talisman of the Shado-Pan Assault
+                {5, 94511}, -- Vicious Talisman of the Shado-Pan Assault
+                {6, 95075}, -- Gianttooth Chestplate
+                {7, 95085}, -- Waistplate of Channeled Mending
+                {8, 95091}, -- Girdle of Glowing Light
+                {9, 95136}, -- Troll-Burner Bracers
+                {10, 94507}, -- Steadfast Talisman of the Shado-Pan Assault
+                {11, 95138}, -- Signet of the Shado-Pan Assault
+                {12, 95135}, -- Bracers of Shielding Thought
+                {13, 95087}, -- Cracklebite Links
+                {14, 95090}, -- Firestrike Cord
+                {15, 95108}, -- Daggerfinger Clutches
+                {16, 95074}, -- Hauberk of Gleaming Fire
+                {17, 95082}, -- Robes of Misty Bindings
+                {18, 95084}, -- Reinforced Spiritplate Girdle
+                {19, 95115}, -- Many-Layered Scalecloak
+                {20, 95086}, -- Nightflight Chain
+                {21, 95111}, -- Bloodstained Skullsqueezers
+                {22, 95114}, -- Spikeshard Greatcloak
+                {23, 95117}, -- Shadowspike Cloak
+                {24, 95120}, -- Legguards of Renewal
+                {25, 95123}, -- Charfire Leggings
+                {26, 95129}, -- Axebinder Wristguards
+                {27, 95130}, -- Softscar Armplates
+                {28, 95132}, -- Spiritcaller Cuffs
+                {29, 95137}, -- Seal of the Shado-Pan Assault
+                {30, 95141}, -- Loop of the Shado-Pan Assault
+                {31, 95079}, -- Carapace of Segmented Scale
+                {32, 95081}, -- Fire Support Robes
+                {33, 95083}, -- Swordhook Slingbelt
+                {34, 95089}, -- Martiean's Splitleaf Girdle
+                {35, 95107}, -- Gloves of Enduring Renewal
+                {36, 95109}, -- Gauntlets of the Longbow
+                {37, 95110}, -- Stoneward Handguards
+                {38, 95118}, -- Dreamweaver Drape
+                {39, 95119}, -- Thunderbreaker Legplates
+                {40, 95124}, -- Trousers of Waning Shadow
+                {41, 95125}, -- Legguards of Hidden Knives
+                {42, 95126}, -- Kilt of Rising Thunder
+                {43, 95139}, -- Ring of the Shado-Pan Assault
+                {44, 95140}, -- Band of the Shado-Pan Assault
+                {45, 95077}, -- Roofstalker Shadowwrap
+                {46, 95078}, -- Raiment of Silent Stars
+                {47, 95105}, -- Ghostbinder Grips
+                {48, 95113}, -- Touch of Soothing Mists
+                {49, 95116}, -- Longshot Forestcloak
+                {50, 95122}, -- Wisp-Weave Pantaloons
+                {51, 95131}, -- Powderburn Bracers
+                {52, 95133}, -- Willow-Weave Armbands
+                {53, 95076}, -- Breastplate of Brutal Strikes
+                {54, 95080}, -- Skinsealer Tunic
+                {55, 95088}, -- Darkfang Belt
+                {56, 95106}, -- Flameweaver Handwraps
+                {57, 95112}, -- Totemshaper Gloves
+                {58, 95121}, -- Vaultbreaker Greaves
+                {59, 95127}, -- Homeguard Leggings
+                {60, 95128}, -- Bonecrusher Bracers
+                {61, 95134}, -- Hearthfire Armwraps
+                {62, 98017}, -- Signet of the Shado-Pan Assault
+            },
+        },
+        { -- Neutral 4
+            name = ALIL["Neutral"],
+            [NORMAL_DIFF] = {
+                {1, "f1435rep4"},
+                {2, 95142}, -- Striker's Battletags
+                {3, 95143}, -- Flanker's Battletags
+                {4, 95145}, -- Mender's Battletags
+                {5, 95146}, -- Destroyer's Battletags
+                {6, 98065}, -- Destroyer's Battletags
+                {7, 95144}, -- Vanguard's Battletags
+            },
+        },
+    },
+}
+data["Sunreaver Onslaught"] = {
+    FactionID = 1388,
+    ContentType = FACTIONS_HORDE_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1388rep8"},
+                {2, 95592}, -- Sunreaver Onslaught Tabard
+                {3, 98562}, -- Sunreaver Bounty
+                {4, 95565}, -- Reins of the Crimson Primal Direhorn
+                {5, 97155}, -- Polymorphic Key
+                {6, 97192}, -- Refurbished Band of Jin
+                {7, 97193}, -- Restored Hexxer's Signet
+                {8, 97194}, -- Ancient Primalist's Seal
+                {9, 97195}, -- Refurbished Seal of Jin
+                {10, 98559}, -- Empty Supply Crate
+                {11, 95590}, -- Glorious Standard of the Sunreaver Onslaught
+                {12, 97196}, -- Ancient Overlord's Onyx Band
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1388rep7"},
+                {2, 95548}, -- Grand Commendation of the Sunreaver Onslaught
+                {3, 97210}, -- Shan'ze Gravetender Cloak
+                {4, 97211}, -- Shan'ze Partisan's Greatcloak
+                {5, 97159}, -- Arcane Propellant
+                {6, 97208}, -- Thunder-Chaser Cloak
+                {7, 97209}, -- Static-Collecting Cloak
+                {8, 97156}, -- Frost Rune Trap
+                {9, 97212}, -- Cloak of the Immortal Guardian
+            },
+        },
+        { -- Honored 6
+            name = ALIL["Honored"],
+            [NORMAL_DIFF] = {
+                {1, "f1388rep6"},
+                {2, 97154}, -- Sleep Dust
+                {3, 95517}, -- Shan'ze Scholar's Girdle
+                {4, 95518}, -- Pain-Binder Girdle
+                {5, 95520}, -- Girdle of Shan'ze Glory
+                {6, 95523}, -- Belt of Loa Charms
+                {7, 95519}, -- Skumblade-Tooth Girdle
+                {8, 97158}, -- A Common Rock
+                {9, 95524}, -- Thunder Caressed Waistguard
+                {10, 95525}, -- Skumblade Ritualist Links
+                {11, 95521}, -- Cinch of the Dead Forest's Vigil
+                {12, 95522}, -- Rotting Bog Cinch
+            },
+        },
+        { -- Friendly 5
+            name = ALIL["Friendly"],
+            [NORMAL_DIFF] = {
+                {1, "f1388rep5"},
+                {2, 97157}, -- Potion of Light Steps
+            },
+        },
+    },
+}
+data["Kirin Tor Offensive"] = {
+    FactionID = 1387,
+    ContentType = FACTIONS_ALLI_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1387rep8"},
+                {2, 95564}, -- Reins of the Golden Primal Direhorn
+                {3, 95591}, -- Kirin Tor Offensive Tabard
+                {4, 98560}, -- Arcane Trove
+                {5, 95589}, -- Glorious Standard of the Kirin Tor Offensive
+                {6, 97190}, -- Refurbished Seal of Jin
+                {7, 97187}, -- Refurbished Band of Jin
+                {8, 97191}, -- Ancient Overlord's Onyx Band
+                {9, 95056}, -- Polymorphic Key
+                {10, 97188}, -- Restored Hexxer's Signet
+                {11, 97189}, -- Ancient Primalist's Seal
+                {12, 98558}, -- Empty Supply Crate
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1387rep7"},
+                {2, 95545}, -- Grand Commendation of the Kirin Tor Offensive
+                {3, 95052}, -- Arcane Propellant
+                {4, 97207}, -- Cloak of the Immortal Guardian
+                {5, 95055}, -- Frost Rune Trap
+                {6, 97204}, -- Static-Collecting Cloak
+                {7, 97206}, -- Shan'ze Partisan's Greatcloak
+                {8, 97205}, -- Shan'ze Gravetender Cloak
+                {9, 97203}, -- Thunder-Chaser Cloak
+            },
+        },
+        { -- Honored 6
+            name = ALIL["Honored"],
+            [NORMAL_DIFF] = {
+                {1, "f1387rep6"},
+                {2, 95093}, -- Sleep Dust
+                {3, 95053}, -- A Common Rock
+                {4, 95527}, -- Pain-Binder Girdle
+                {5, 95529}, -- Girdle of Shan'ze Glory
+                {6, 95532}, -- Belt of Loa Charms
+                {7, 95534}, -- Skumblade Ritualist Links
+                {8, 95531}, -- Rotting Bog Cinch
+                {9, 95533}, -- Thunder Caressed Waistguard
+                {10, 95526}, -- Shan'ze Scholar's Girdle
+                {11, 95528}, -- Skumblade-Tooth Girdle
+                {12, 95530}, -- Cinch of the Dead Forest's Vigil
+            },
+        },
+        { -- Friendly 5
+            name = ALIL["Friendly"],
+            [NORMAL_DIFF] = {
+                {1, "f1387rep5"},
+                {2, 95054}, -- Potion of Light Steps
+            },
+        },
+    },
+}
+data["Emperor Shaohao"] = {
+    FactionID = 1492,
+    ContentType = FACTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    items = {
+        { -- Exalted 8
+            name = ALIL["Exalted"],
+            [NORMAL_DIFF] = {
+                {1, "f1492rep8"},
+                {2, 87774}, -- Reins of the Heavenly Golden Cloud Serpent
+            },
+        },
+        { -- Revered 7
+            name = ALIL["Revered"],
+            [NORMAL_DIFF] = {
+                {1, "f1492rep7"},
+                {2, 103685}, -- Celestial Defender's Medallion
+                {3, 104295}, -- Harmonious Porcupette
+            },
+        },
+        { -- Honored 6
+            name = ALIL["Honored"],
+            [NORMAL_DIFF] = {
+                {1, "f1492rep6"},
+                {2, 103678}, -- Time-Lost Artifact
+                {3, 103684}, -- Scroll of Challenge
+                {4, 104014}, -- Pouch of Timeless Coins
+            },
+        },
+        { -- Friendly 5
+            name = ALIL["Friendly"],
+            [NORMAL_DIFF] = {
+                {1, "f1492rep5"},
+                {2, 103683}, -- Mask of Anger
+                {3, 103682}, -- Mask of Violence
+                {4, 103679}, -- Mask of Fear
+                {5, 103680}, -- Mask of Hatred
+                {6, 103681}, -- Mask of Doubt
             },
         },
     },
