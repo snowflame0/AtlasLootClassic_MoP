@@ -115,17 +115,18 @@ data["Golden Lotus"] = {
                 {18, 89070}, -- Anji's Keepsake
                 {19, 89069}, -- Ring of the Golden Stair
                 {20, 89071}, -- Alani's Inflexible Ring
-                {101, 86295}, -- Pattern: Shadowleather Leg Armor
-                {102, 86235}, -- Pattern: Angerhide Leg Armor
-                {103, 86276}, -- Pattern: Ironscale Leg Armor
-                {104, 86273}, -- Pattern: Gloves of Earthen Harmony
-                {105, 86237}, -- Pattern: Chestguard of Earthen Harmony
-                {106, 86308}, -- Pattern: Wildblood Gloves
-                {107, 86309}, -- Pattern: Wildblood Vest
-                {108, 86274}, -- Pattern: Greyshadow Chestguard
-                {109, 86275}, -- Pattern: Greyshadow Gloves
-                {110, 86278}, -- Pattern: Lifekeeper's Robe
-                {111, 86277}, -- Pattern: Lifekeeper's Gloves
+                {101, "f1269rep6"},
+                {102, 86295}, -- Pattern: Shadowleather Leg Armor
+                {103, 86235}, -- Pattern: Angerhide Leg Armor
+                {104, 86276}, -- Pattern: Ironscale Leg Armor
+                {105, 86273}, -- Pattern: Gloves of Earthen Harmony
+                {106, 86237}, -- Pattern: Chestguard of Earthen Harmony
+                {107, 86308}, -- Pattern: Wildblood Gloves
+                {108, 86309}, -- Pattern: Wildblood Vest
+                {109, 86274}, -- Pattern: Greyshadow Chestguard
+                {110, 86275}, -- Pattern: Greyshadow Gloves
+                {111, 86278}, -- Pattern: Lifekeeper's Robe
+                {112, 86277}, -- Pattern: Lifekeeper's Gloves
                 {116, 86376}, -- Pattern: Greater Cerulean Spellthread
                 {117, 86375}, -- Pattern: Greater Pearlescent Spellthread
                 {118, 86370}, -- Pattern: Robes of Creation
@@ -321,9 +322,9 @@ data["The August Celestials"] = {
             [NORMAL_DIFF] = {
                 {1, "f1341rep8"},
                 {2, 90655}, -- Reins of the Thundering Ruby Cloud Serpent
-                {3, 86377}, -- Pattern: Royal Satchel
-                {4, 89304}, -- Reins of the Thundering August Cloud Serpent
-                {5, 89799}, -- August Celestials Tabard
+                {3, 89304}, -- Reins of the Thundering August Cloud Serpent
+                {5, 86377}, -- Pattern: Royal Satchel
+                {16, 89799}, -- August Celestials Tabard
             },
         },
         { -- Revered 7
@@ -331,44 +332,43 @@ data["The August Celestials"] = {
             [NORMAL_DIFF] = {
                 {1, "f1341rep7"},
                 {2, 84557}, -- Formula: Enchant Bracer - Greater Agility
-                {3, 93224}, -- Grand Commendation of the August Celestials
-                {4, 88868}, -- Tukka-Tuk's Hairy Boots
-                {5, 84559}, -- Formula: Enchant Bracer - Super Intellect
-                {6, 84561}, -- Formula: Enchant Bracer - Exceptional Strength
-                {7, 88866}, -- Steps of the War Serpent
-                {8, 88862}, -- Tankiss Warstompers
-                {9, 88864}, -- Yu'lon Guardian Boots
-                {10, 88867}, -- Sandals of the Elder Sage
-                {11, 88865}, -- Bramblestaff Boots
-                {12, 88876}, -- Boots of the High Adept
-                {13, 88877}, -- Storm-Sing Sandals
-                {14, 88878}, -- Void Flame Slippers
+                {3, 84559}, -- Formula: Enchant Bracer - Super Intellect
+                {4, 84561}, -- Formula: Enchant Bracer - Exceptional Strength
+                {6, 88877}, -- Storm-Sing Sandals
+                {7, 88878}, -- Void Flame Slippers
+                {8, 88876}, -- Boots of the High Adept
+                {9, 88868}, -- Tukka-Tuk's Hairy Boots
+                {10, 88866}, -- Steps of the War Serpent
+                {11, 88867}, -- Sandals of the Elder Sage
+                {12, 88862}, -- Tankiss Warstompers
+                {13, 88864}, -- Yu'lon Guardian Boots
+                {14, 88865}, -- Bramblestaff Boots
+                {16, 93224}, -- Grand Commendation of the August Celestials
             },
         },
         { -- Honored 6
             name = ALIL["Honored"],
             [NORMAL_DIFF] = {
                 {1, "f1341rep6"},
-                {2, 89124}, -- Celestial Offering
-                {3, 88893}, -- Minh's Beaten Bracers
-                {4, 88883}, -- Brewmaster Chani's Bracers
-                {5, 88747}, -- Streetfighter's Iron Knuckles
-                {6, 98069}, -- Minh's Beaten Bracers
-                {7, 88741}, -- Gloves of Red Feathers
-                {8, 88742}, -- Sunspeaker's Flared Gloves
-                {9, 88749}, -- Gauntlets of Jade Sutras
+                {2, 88893}, -- Minh's Beaten Bracers
+                {3, 88892}, -- Bracers of Inlaid Jade
+                {4, 88885}, -- Clever Ashyo's Armbands
+                {5, 88884}, -- Quillpaw Family Bracers
+                {6, 88883}, -- Brewmaster Chani's Bracers
+                {7, 88882}, -- Tiger-Striped Wristguards
+                {8, 88879}, -- Braided Black and White Bracer
+                {9, 88880}, -- Battle Shadow Bracers
                 {10, 88881}, -- Fallen Sentinel Bracers
-                {11, 88745}, -- Sentinel Commander's Gauntlets
-                {12, 88744}, -- Fingers of the Loneliest Monk
-                {13, 88879}, -- Braided Black and White Bracer
-                {14, 88880}, -- Battle Shadow Bracers
-                {15, 88884}, -- Quillpaw Family Bracers
-                {16, 88885}, -- Clever Ashyo's Armbands
-                {17, 88892}, -- Bracers of Inlaid Jade
-                {18, 88746}, -- Gloves of the Overwhelming Swarm
-                {19, 88748}, -- Ravenmane's Gloves
-                {20, 88882}, -- Tiger-Striped Wristguards
-                {21, 88743}, -- Ogo's Elder Gloves
+                {12, 89124}, -- Celestial Offering
+                {16, 88741}, -- Gloves of Red Feathers
+                {17, 88742}, -- Sunspeaker's Flared Gloves
+                {18, 88743}, -- Ogo's Elder Gloves
+                {19, 88744}, -- Fingers of the Loneliest Monk
+                {20, 88748}, -- Ravenmane's Gloves
+                {21, 88745}, -- Sentinel Commander's Gauntlets
+                {22, 88747}, -- Streetfighter's Iron Knuckles
+                {23, 88746}, -- Gloves of the Overwhelming Swarm
+                {24, 88749}, -- Gauntlets of Jade Sutras
             },
         },
     },
@@ -385,14 +385,14 @@ data["The Klaxxi"] = {
                 {2, 85262}, -- Reins of the Amber Scorpion
                 {3, 89394}, -- Amber Spear of Klaxxi'vess
                 {4, 89397}, -- Amber Saber of Klaxxi'vess
-                {5, 89798}, -- Klaxxi Tabard
-                {6, 89393}, -- Amber Slicer of Klaxxi'vess
-                {7, 89395}, -- Amber Scythe of Klaxxi'vess
-                {8, 89396}, -- Amber Espada of Klaxxi'vess
-                {9, 89399}, -- Amber Sprayer of Klaxxi'vess
-                {10, 89392}, -- Amber Spine of Klaxxi'vess
-                {11, 89398}, -- Amber Flammard of Klaxxi'vess
-                {12, 89400}, -- Amber Sledge of Klaxxi'vess
+                {5, 89393}, -- Amber Slicer of Klaxxi'vess
+                {6, 89395}, -- Amber Scythe of Klaxxi'vess
+                {7, 89396}, -- Amber Espada of Klaxxi'vess
+                {8, 89399}, -- Amber Sprayer of Klaxxi'vess
+                {9, 89392}, -- Amber Spine of Klaxxi'vess
+                {10, 89398}, -- Amber Flammard of Klaxxi'vess
+                {11, 89400}, -- Amber Sledge of Klaxxi'vess
+                {16, 89798}, -- Klaxxi Tabard
             },
         },
         { -- Revered 7
@@ -402,49 +402,49 @@ data["The Klaxxi"] = {
                 {2, 89088}, -- Leggings of the Poisoned Soul
                 {3, 89087}, -- Poisoncrafter's Kilt
                 {4, 89089}, -- Wind-Reaver Greaves
-                {5, 98073}, -- Leggings of the Poisoned Soul
-                {6, 89095}, -- Legguards of the Unscathed
-                {7, 89090}, -- Dreadsworn Slayer Legs
-                {8, 92522}, -- Grand Commendation of the Klaxxi
-                {9, 89091}, -- Swarmkeeper's Leggings
-                {10, 89092}, -- Locust Swarm Legguards
-                {11, 89093}, -- Kovok's Riven Legguards
-                {12, 89094}, -- Ambersmith Legplates
+                {5, 89090}, -- Dreadsworn Slayer Legs
+                {6, 89091}, -- Swarmkeeper's Leggings
+                {7, 89092}, -- Locust Swarm Legguards
+                {8, 89093}, -- Kovok's Riven Legguards
+                {9, 89095}, -- Legguards of the Unscathed
+                {10, 89094}, -- Ambersmith Legplates
+                {16, 92522}, -- Grand Commendation of the Klaxxi
             },
         },
         { -- Honored 6
             name = ALIL["Honored"],
             [NORMAL_DIFF] = {
                 {1, "f1337rep6"},
-                {2, 84196}, -- Plans: Living Steel Belt Buckle
-                {3, 89068}, -- Wire of the Wakener
-                {4, 89230}, -- Restorative Amber
-                {5, 84218}, -- Plans: Masterwork Spiritblade Decimator
-                {6, 89064}, -- Bloodseeker's Solitaire
-                {7, 89062}, -- Klaxxi Lash of the Orator
-                {8, 83789}, -- Plans: Living Steel Breastplate
-                {9, 89055}, -- Klaxxi Lash of the Rescinder
-                {10, 83790}, -- Plans: Living Steel Gauntlets
-                {11, 83787}, -- Plans: Ghost Reaver's Breastplate
-                {12, 83792}, -- Plans: Gauntlets of Ancient Steel
-                {13, 84217}, -- Plans: Masterwork Phantasmal Hammer
-                {14, 83791}, -- Plans: Breastplate of Ancient Steel
-                {15, 89063}, -- Klaxxi Lash of the Seeker
-                {16, 89058}, -- Klaxxi Lash of the Winnower
-                {17, 89059}, -- Klaxxi Lash of the Precursor
-                {18, 83788}, -- Plans: Ghost Reaver's Gauntlets
-                {19, 90532}, -- Plans: Living Steel Weapon Chain
-                {20, 89056}, -- Klaxxi Lash of the Consumer
-                {21, 89057}, -- Klaxxi Lash of the Doubter
-                {22, 89065}, -- Choker of the Klaxxi'va
-                {23, 89067}, -- Links of the Lucid
-                {24, 90531}, -- Plans: Ghost Iron Shield Spike
-                {25, 84197}, -- Plans: Masterwork Forgewire Axe
-                {26, 89060}, -- Klaxxi Lash of the Borrower
-                {27, 89061}, -- Klaxxi Lash of the Harbinger
-                {28, 89066}, -- Paragon's Pale Pendant
-                {29, 84198}, -- Plans: Masterwork Ghost Shard
-                {30, 84200}, -- Plans: Masterwork Ghost-Forged Blade
+                {2, 89068}, -- Wire of the Wakener
+                {3, 89067}, -- Links of the Lucid
+                {4, 89065}, -- Choker of the Klaxxi'va
+                {5, 89064}, -- Bloodseeker's Solitaire
+                {6, 89066}, -- Paragon's Pale Pendant
+                {16, 89062}, -- Klaxxi Lash of the Orator
+                {17, 89063}, -- Klaxxi Lash of the Seeker
+                {18, 89061}, -- Klaxxi Lash of the Harbinger
+                {19, 89060}, -- Klaxxi Lash of the Borrower
+                {20, 89058}, -- Klaxxi Lash of the Winnower
+                {21, 89059}, -- Klaxxi Lash of the Precursor
+                {22, 89055}, -- Klaxxi Lash of the Rescinder
+                {23, 89056}, -- Klaxxi Lash of the Consumer
+                {24, 89057}, -- Klaxxi Lash of the Doubter
+                {101, "f1337rep6"},
+                {102, 89230}, -- Restorative Amber
+                {103, 90531}, -- Plans: Ghost Iron Shield Spike
+                {104, 84197}, -- Plans: Masterwork Forgewire Axe
+                {105, 83789}, -- Plans: Living Steel Breastplate
+                {106, 84218}, -- Plans: Masterwork Spiritblade Decimator
+                {107, 83790}, -- Plans: Living Steel Gauntlets
+                {108, 83787}, -- Plans: Ghost Reaver's Breastplate
+                {109, 83792}, -- Plans: Gauntlets of Ancient Steel
+                {110, 84217}, -- Plans: Masterwork Phantasmal Hammer
+                {111, 83791}, -- Plans: Breastplate of Ancient Steel
+                {112, 84196}, -- Plans: Living Steel Belt Buckle
+                {113, 84198}, -- Plans: Masterwork Ghost Shard
+                {114, 84200}, -- Plans: Masterwork Ghost-Forged Blade
+                {115, 83788}, -- Plans: Ghost Reaver's Gauntlets
+                {116, 90532}, -- Plans: Living Steel Weapon Chain
             },
         },
     },
@@ -603,17 +603,17 @@ data["Shado-Pan Assault"] = {
             name = ALIL["Exalted"],
             [NORMAL_DIFF] = {
                 {1, "f1435rep8"},
-                {2, 97131}, -- Shado-Pan Assault Tabard
-                {3, 95101}, -- Halo-Graced Mantle
-                {4, 95102}, -- Frost-Kissed Shoulderwraps
-                {5, 95104}, -- Shoulderguards of Potentiation
-                {6, 95103}, -- Sparksmasher Pauldrons
-                {7, 95096}, -- Shoulders of Demonic Dreams
-                {8, 95097}, -- Heartroot Shoulderguards
-                {9, 95100}, -- Wallwalker Spaulders
-                {10, 95095}, -- Targetblinder Spaulders
-                {11, 95098}, -- Sightblinder Shoulderguards
-                {12, 95099}, -- Lightning Strike Mantle
+                {2, 95101}, -- Halo-Graced Mantle
+                {3, 95102}, -- Frost-Kissed Shoulderwraps
+                {4, 95096}, -- Shoulders of Demonic Dreams
+                {5, 95097}, -- Heartroot Shoulderguards
+                {6, 95100}, -- Wallwalker Spaulders
+                {7, 95099}, -- Lightning Strike Mantle
+                {8, 95095}, -- Targetblinder Spaulders
+                {9, 95098}, -- Sightblinder Shoulderguards
+                {10, 95103}, -- Sparksmasher Pauldrons
+                {11, 95104}, -- Shoulderguards of Potentiation
+                {16, 97131}, -- Shado-Pan Assault Tabard
             },
         },
         { -- Revered 7
@@ -656,38 +656,40 @@ data["Shado-Pan Assault"] = {
                 {28, 95132}, -- Spiritcaller Cuffs
                 {29, 95137}, -- Seal of the Shado-Pan Assault
                 {30, 95141}, -- Loop of the Shado-Pan Assault
-                {31, 95079}, -- Carapace of Segmented Scale
-                {32, 95081}, -- Fire Support Robes
-                {33, 95083}, -- Swordhook Slingbelt
-                {34, 95089}, -- Martiean's Splitleaf Girdle
-                {35, 95107}, -- Gloves of Enduring Renewal
-                {36, 95109}, -- Gauntlets of the Longbow
-                {37, 95110}, -- Stoneward Handguards
-                {38, 95118}, -- Dreamweaver Drape
-                {39, 95119}, -- Thunderbreaker Legplates
-                {40, 95124}, -- Trousers of Waning Shadow
-                {41, 95125}, -- Legguards of Hidden Knives
-                {42, 95126}, -- Kilt of Rising Thunder
-                {43, 95139}, -- Ring of the Shado-Pan Assault
-                {44, 95140}, -- Band of the Shado-Pan Assault
-                {45, 95077}, -- Roofstalker Shadowwrap
-                {46, 95078}, -- Raiment of Silent Stars
-                {47, 95105}, -- Ghostbinder Grips
-                {48, 95113}, -- Touch of Soothing Mists
-                {49, 95116}, -- Longshot Forestcloak
-                {50, 95122}, -- Wisp-Weave Pantaloons
-                {51, 95131}, -- Powderburn Bracers
-                {52, 95133}, -- Willow-Weave Armbands
-                {53, 95076}, -- Breastplate of Brutal Strikes
-                {54, 95080}, -- Skinsealer Tunic
-                {55, 95088}, -- Darkfang Belt
-                {56, 95106}, -- Flameweaver Handwraps
-                {57, 95112}, -- Totemshaper Gloves
-                {58, 95121}, -- Vaultbreaker Greaves
-                {59, 95127}, -- Homeguard Leggings
-                {60, 95128}, -- Bonecrusher Bracers
-                {61, 95134}, -- Hearthfire Armwraps
-                {62, 98017}, -- Signet of the Shado-Pan Assault
+                {101, "f1435rep5"},
+                {102, 95081}, -- Fire Support Robes
+                {103, 95083}, -- Swordhook Slingbelt
+                {104, 95089}, -- Martiean's Splitleaf Girdle
+                {105, 95107}, -- Gloves of Enduring Renewal
+                {106, 95109}, -- Gauntlets of the Longbow
+                {107, 95110}, -- Stoneward Handguards
+                {108, 95118}, -- Dreamweaver Drape
+                {109, 95119}, -- Thunderbreaker Legplates
+                {110, 95124}, -- Trousers of Waning Shadow
+                {111, 95125}, -- Legguards of Hidden Knives
+                {112, 95126}, -- Kilt of Rising Thunder
+                {113, 95139}, -- Ring of the Shado-Pan Assault
+                {114, 95140}, -- Band of the Shado-Pan Assault
+                {115, 95077}, -- Roofstalker Shadowwrap
+                {116, 95078}, -- Raiment of Silent Stars
+                {117, 95105}, -- Ghostbinder Grips
+                {118, 95113}, -- Touch of Soothing Mists
+                {119, 95116}, -- Longshot Forestcloak
+                {120, 95122}, -- Wisp-Weave Pantaloons
+                {121, 95131}, -- Powderburn Bracers
+                {122, 95133}, -- Willow-Weave Armbands
+                {123, 95076}, -- Breastplate of Brutal Strikes
+                {124, 95080}, -- Skinsealer Tunic
+                {125, 95088}, -- Darkfang Belt
+                {126, 95106}, -- Flameweaver Handwraps
+                {127, 95112}, -- Totemshaper Gloves
+                {128, 95121}, -- Vaultbreaker Greaves
+                {129, 95127}, -- Homeguard Leggings
+                {130, 95128}, -- Bonecrusher Bracers
+                {201, "f1435rep5"},
+                {202, 95134}, -- Hearthfire Armwraps
+                {203, 98017}, -- Signet of the Shado-Pan Assault
+                {204, 95079}, -- Carapace of Segmented Scale
             },
         },
         { -- Neutral 4
