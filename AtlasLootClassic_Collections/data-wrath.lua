@@ -999,6 +999,7 @@ data["MountsWrath"] = {
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     CorrespondingFields = private.MOUNTS,
     items = {{
         name = AL["Vendors"],
@@ -1208,6 +1209,7 @@ data["TabardsWrath"] = {
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     CorrespondingFields = private.TABARDS,
     items = {{
         name = AL["Factions"],
@@ -1261,8 +1263,8 @@ data["LegendarysWrath"] = {
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
-    CorrespondingFields = private.LEGENDARYS,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
+    CorrespondingFields = private.LEGENDARYS,
     items = {{
         name = AL["Legendaries"],
         [NORMAL_DIFF] = {
@@ -1278,6 +1280,7 @@ data["HeirloomWrath"] = {
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
+    CorrespondingFields = private.HEIRLOOM,
     items = {{
         name = ALIL["Armor"],
         [NORMAL_DIFF] = {
@@ -1303,7 +1306,7 @@ data["HeirloomWrath"] = {
         }
     }, {
         name = ALIL["Weapon"],
-        [NORMAL_ITTYPE] = {{1, 44096}, -- Battleworn Thrash Blade
+        [NORMAL_DIFF] = {{1, 44096}, -- Battleworn Thrash Blade
         {2, 48716}, -- Venerable Mass of McGowan
         {3, 42944}, -- Balanced Heartseeker
         {4, 44091}, -- Sharpened Scarlet Kris
@@ -1321,16 +1324,16 @@ data["HeirloomWrath"] = {
         }
     }, {
         name = ALIL["Trinket"],
-        [NORMAL_ITTYPE] = {{1, 42992}, -- Discerning Eye of the Beast
+        [NORMAL_DIFF] = {{1, 42992}, -- Discerning Eye of the Beast
         {2, 42991} -- Swift Hand of Justice
         }
     }, {
         name = ALIL["Finger"],
-        [NORMAL_ITTYPE] = {{1, 50255} -- Dread Pirate Ring
+        [NORMAL_DIFF] = {{1, 50255} -- Dread Pirate Ring
         }
     }, {
         name = AL["Misc"],
-        [NORMAL_ITTYPE] = {{1, 49177} -- Tome of Cold Weather Flight
+        [NORMAL_DIFF] = {{1, 49177} -- Tome of Cold Weather Flight
         }
     }}
 }
@@ -1570,24 +1573,27 @@ data["HalloweenWrath"] = {
     }}
 }
 
-data["DayoftheDead"] = {
+data["DayoftheDeadWrath"] = {
     name = AL["Day of the Dead"],
     ContentType = WORLD_EVENT_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     CorrespondingFields = private.DAY_OF_THE_DEAD,
-    items = {{ -- DayoftheDead
+    items = {
+        { -- DayoftheDead
         name = AL["Day of the Dead"],
-        [NORMAL_DIFF] = {{1, 46690}, -- Candy Skull
-        {2, 46710}, -- Recipe: Bread of the Dead
-        {3, 46711}, -- Spirit Candle
-        {4, 46718}, -- Orange Marigold
-        {5, 46831}, -- Macabre Marionette
-        {6, 46860}, -- Whimsical Skull Mask
-        {7, 46861} -- Bouquet of Orange Marigolds
+            [NORMAL_DIFF] = {
+                {1, 46690}, -- Candy Skull
+                {2, 46710}, -- Recipe: Bread of the Dead
+                {3, 46711}, -- Spirit Candle
+                {4, 46718}, -- Orange Marigold
+                {5, 46831}, -- Macabre Marionette
+                {6, 46860}, -- Whimsical Skull Mask
+                {7, 46861} -- Bouquet of Orange Marigolds
+            }
         }
-    }}
+    }
 }
 
 data["PilgrimsBounty"] = {
