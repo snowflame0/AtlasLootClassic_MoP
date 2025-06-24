@@ -789,7 +789,7 @@ data["HeirloomMoP"] = {
         {
             name = ALIL["Armor"],
             [NORMAL_DIFF] = {
-            -- Chest  
+            -- Chest
                 { 1,  93860 }, -- Bloodstained Dreadmist Robe
                 { 2,  93863 }, -- Supple Shadowcraft Tunic
                 { 3,  93865 }, -- Majestic Ironfeather Breastplate
@@ -797,7 +797,7 @@ data["HeirloomMoP"] = {
                 { 5,  93885 }, -- Awakened Vest of Elements
                 { 6,  93891 }, -- Gleaming Breastplate of Valor
                 { 7,  93892 }, -- Brushed Breastplate of Might
-            -- Shoulder        
+            -- Shoulder
                 { 9,  93859 }, -- Bloodstained Dreadmist Mantle
                 { 10, 93861 }, -- Prestigious Sunderseer Mantle
                 { 11, 93862 }, -- Supple Shadowcraft Spaulders
@@ -811,11 +811,11 @@ data["HeirloomMoP"] = {
                 { 19, 93890 }, -- Gleaming Spaulders of Valor
                 { 20, 93893 }, -- Brushed Pauldrons of Might
                 { 21, 93894 }, -- Immaculate Lightforge Spaulders
-            -- Shield   
+            -- Shield
                 { 23, 93902 }, -- Flamescarred Draconian Deflector
                 { 24, 93903 }, -- Weathered Observer's Shield
                 { 25, 93904 }, -- Musty Tome of the Lost
-            -- Legs   
+            -- Legs
                 { 27, 62029 }, -- Tattered Dreadmist Leggings
                 { 28, 62026 }, -- Stained Shadowcraft Pants
                 { 29, 62027 }, -- Preened Wildfeather Leggings

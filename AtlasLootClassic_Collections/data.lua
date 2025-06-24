@@ -1603,7 +1603,7 @@ data["Darkmoon"] = {
                 { 25, 93890 }, -- Gleaming Spaulders of Valor
                 { 26, 48685 }, -- Polished Breastplate of Valor
                 { 27,  93891 }, -- Gleaming Breastplate of Valor
-                { 28, 93893 }, -- Brushed Pauldrons of Might  
+                { 28, 93893 }, -- Brushed Pauldrons of Might
                 { 29,  93892 }, -- Brushed Breastplate of Might
                 { 101, 69893 }, -- Bloodsoaked Skullforge Reaver
                 { 102, 93845 }, -- Gore-Steeped Skullforge Reaver
