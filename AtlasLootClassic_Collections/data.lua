@@ -26,7 +26,6 @@ local GetForVersion = AtlasLoot.ReturnForGameVersion
 
 --local RAIDFINDER_DIFF = data:AddDifficulty("Raid Finder", nil, nil, nil, true)
 
-
 local TWILIGHT_DIFF = data:AddDifficulty("Elemental Rune Twilight", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
@@ -1572,7 +1571,9 @@ data["Darkmoon"] = {
                 {21, 77256}, -- Darkmoon "Sword"
                 {22, 78341}, -- Darkmoon Hammer
                 {23, 78340}, -- Cloak of the Darkmoon Faire
-                {25, 74034}, -- Pit Fighter
+                {25, 90899}, -- Darkmoon Whistle
+                {26, 97994}, -- Darkmoon Seesaw
+                {28, 74034}, -- Pit Fighter
                 {30, "SPECIAL_ACHIEVEMENT", nil, AL["Achievements"], nil, "AC_DarkmoonFaire"},
           },
       },
@@ -1786,6 +1787,7 @@ data["ValentinesDay"] = {
         },
     },
 }
+
 data["Noblegarden"] = {
     name = AL["Noblegarden"],
     ContentType = WORLD_EVENT_CONTENT,

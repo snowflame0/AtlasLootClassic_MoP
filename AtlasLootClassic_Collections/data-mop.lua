@@ -76,10 +76,11 @@ data["CookingVendorMoP"] = {
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.MOP_VERSION_NUM,
     CorrespondingFields = private.COOKING_VENDOR,
-    items = {{
-        name = AL["Recipe"],
-        [VENDOR_DIFF] = {
-            { 1,  75017 }, -- Recipe: Great Pandaren Banquet
+    items = {
+        {
+            name = AL["Recipe"],
+            [VENDOR_DIFF] = {
+                { 1,  75017 }, -- Recipe: Great Pandaren Banquet
             }
         },
     }
@@ -582,11 +583,11 @@ data["WorldEpicsMoP"] = {
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.MOP_VERSION_NUM,
     CorrespondingFields = private.WORLD_EPICS,
-     items = {
+    items = {
         {
-        name = AL["World Epics"],
-        [NORMAL_ITTYPE] = {
-            { 1,  90573 }, -- Wang's Unshakable Smile
+            name = AL["World Epics"],
+            [NORMAL_ITTYPE] = {
+                { 1,  90573 }, -- Wang's Unshakable Smile
             }
         }
     }
@@ -720,39 +721,38 @@ data["TabardsMoP"] = {
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.MOP_VERSION_NUM,
     CorrespondingFields = private.TABARDS,
-     items = {
+    items = {
         {
-        name = AL["Factions"],
-        CoinTexture = "Reputation",
-        [ALLIANCE_DIFF] = {
-            { 1, 83079 }, -- Tushui Tabard
-            { 2, 95591 }, -- Kirin Tor Offensive Tabard
-        },
-        [HORDE_DIFF] = {
-            { 1, 83080 }, -- Huojin Tabard
-            { 2, 95592 }, -- Sunreaver Onslaught Tabard
-            }
-        },
-        [NORMAL_DIFF] = {
-            { 1, 89401 }, -- Anglers Tabard
-            { 2, 89784 }, -- Tillers Tabard
-            { 3, 89795 }, -- Lorewalkers Tabard
-            { 4, 89796 }, -- Order of the Cloud Serpent Tabard
-            { 5, 89797 }, -- Golden Lotus Tabard
-            { 6, 89798 }, -- Klaxxi Tabard
-            { 7, 89799 }, -- August Celestials Tabard
-            { 8, 89800 }, -- Shado-Pan Tabard
-            { 9, 97131 }, -- Shado-Pan Assault Tabard
+            name = AL["Factions"],
+            CoinTexture = "Reputation",
+            [ALLIANCE_DIFF] = {
+                { 1, 89401 }, -- Anglers Tabard
+                { 2, 89784 }, -- Tillers Tabard
+                { 3, 89795 }, -- Lorewalkers Tabard
+                { 4, 89796 }, -- Order of the Cloud Serpent Tabard
+                { 5, 89797 }, -- Golden Lotus Tabard
+                { 6, 89798 }, -- Klaxxi Tabard
+                { 7, 89799 }, -- August Celestials Tabard
+                { 8, 89800 }, -- Shado-Pan Tabard
+                { 9, 97131 }, -- Shado-Pan Assault Tabard
+                { 10, 83079 }, -- Tushui Tabard
+                { 11, 95591 }, -- Kirin Tor Offensive Tabard
+            },
+            [HORDE_DIFF] = {
+                GetItemsFromDiff = ALLIANCE_DIFF,
+                { 10, 83080 }, -- Huojin Tabard
+                { 11, 95592 }, -- Sunreaver Onslaught Tabard
             }
         },
         {
-        name = AL["PvP"],
-        CoinTexture = "PvP",
-        [NORMAL_DIFF] = {
-            { 1, 98162 }, -- Tyrannical Gladiator's Tabard
-            { 2, 101697 }, -- Grievous Gladiator's Tabard
-            { 3, 103636 }, -- Prideful Gladiator's Tabard
-        },
+            name = AL["PvP"],
+            CoinTexture = "PvP",
+            [NORMAL_DIFF] = {
+                { 1, 98162 }, -- Tyrannical Gladiator's Tabard
+                { 2, 101697 }, -- Grievous Gladiator's Tabard
+                { 3, 103636 }, -- Prideful Gladiator's Tabard
+            },
+        }
     }
 }
 
@@ -1049,46 +1049,47 @@ data["BrewfestMoP"] = {
     gameVersion = AtlasLoot.MOP_VERSION_NUM,
     CorrespondingFields = private.BREWFEST,
     items = {
-        { -- Brewfest
+        {
         name = AL["Brewfest"],
-        [NORMAL_DIFF] = {
-            { 1, 33968 }, -- Blue Brewfest Hat
-            { 2,  33864 }, -- Brown Brewfest Hat
-            { 3,  33967 }, -- Green Brewfest Hat
-            { 4,  33969 }, -- Purple Brewfest Hat
-            { 5,  33863 }, -- Brewfest Dress
-            { 6,  33862 }, -- Brewfest Regalia
-            { 7,  33966 }, -- Brewfest Slippers
-            { 8,  33868 }, -- Brewfest Boots
-            { 10, 33047 }, -- Belbi's Eyesight Enhancing Romance Goggles (Alliance)
-            { 11, 34008 }, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
-            { 13, 33927 }, -- Brewfest Pony Keg
-            { 15, 37829 }, -- Brewfest Prize Token
-            { 16, 32233 }, -- Wolpertinger's Tankard
-            { 18, 37599 }, -- "Brew of the Month" Club Membership Form
-            { 20, 37750 }, -- Fresh Brewfest Hops
-            { 21, 39477 }, -- Fresh Dwarven Brewfest Hops
-            { 22, 39476 }, -- Fresh Goblin Brewfest Hops
-            { 23, 37816 } -- Preserved Brewfest Hops
+          [NORMAL_DIFF] = {
+                {1, 37829}, -- Brewfest Prize Token
+                {3, 33968}, -- Blue Brewfest Hat
+                {4, 33864}, -- Brown Brewfest Hat
+                {5, 33967}, -- Green Brewfest Hat
+                {6, 33969}, -- Purple Brewfest Hat
+                {7, 33863}, -- Brewfest Dress
+                {8, 33862}, -- Brewfest Regalia
+                {9, 33966}, -- Brewfest Slippers
+                {10, 33868}, -- Brewfest Boots
+                {12, 33047}, -- Belbi's Eyesight Enhancing Romance Goggles (Alliance)
+                {13, 34008}, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
+                {15, 33927}, -- Brewfest Pony Keg
+                {16, 90427}, -- Pandaren Brewpack
+                {18, 32233}, -- Wolpertinger's Tankard
+                {20, 37599}, -- "Brew of the Month" Club Membership Form
+                {22, 37750}, -- Fresh Brewfest Hops
+                {24, 39477}, -- Fresh Dwarven Brewfest Hops
+                {24, 39476}, -- Fresh Goblin Brewfest Hops
+                {25, 37816} -- Preserved Brewfest Hops
             }
         },
         {
-        name = AL["Food"],
-        [NORMAL_DIFF] = {
-            { 1, 33043 }, -- The Essential Brewfest Pretzel
-            { 3,  34017 }, -- Small Step Brew
-            { 4,  34018 }, -- long Stride Brew
-            { 5,  34019 }, -- Path of Brew
-            { 6,  34020 }, -- Jungle River Water
-            { 7,  34021 }, -- Brewdoo Magic
-            { 8,  34022 }, -- Stout Shrunken Head
-            { 9,  33034 }, -- Gordok Grog
-            { 10, 33035 }, -- Ogre Mead
-            { 11, 33036 } -- Mudder's Milk
+            name = AL["Food"],
+            [NORMAL_DIFF] = {
+                {1, 33043}, -- The Essential Brewfest Pretzel
+                {3, 34017}, -- Small Step Brew
+                {4, 34018}, -- long Stride Brew
+                {5, 34019}, -- Path of Brew
+                {6, 34020}, -- Jungle River Water
+                {7, 34021}, -- Brewdoo Magic
+                {8, 34022}, -- Stout Shrunken Head
+                {9, 33034}, -- Gordok Grog
+                {10, 33035}, -- Ogre Mead
+                {11, 33036} -- Mudder's Milk
             }
         },
         {
-        name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
+            name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
             [NORMAL_DIFF] = {
                 { 1,  87576 }, -- Bitterest Balebrew Charm
                 { 2,  87575 }, -- Bubbliest Brightbrew Charm
@@ -1098,10 +1099,10 @@ data["BrewfestMoP"] = {
                 { 6,  87571 }, -- Brawler's Statue
                 { 8,  107217 }, -- Direbrew's Bloodied Shanker
                 { 9,  107218 }, -- Tremendous Tankard O' Terror
-                { 16,  33977 }, -- Swift Brewfest Ram
-                { 17,  37828 }, -- Great Brewfest Kodo
-                { 19,  37863 }, -- Direbrew's Remote
-                { 21,  38280 }  -- Direbrew's Dire Brew
+                {16, 33977}, -- Swift Brewfest Ram
+                {17, 37828}, -- Great Brewfest Kodo
+                {19, 37863}, -- Direbrew's Remote
+                {21, 38280} -- Direbrew's Dire Brew
             }
         }
     }
@@ -1199,13 +1200,13 @@ data["DayoftheDeadMoP"] = {
         { -- DayoftheDead
         name = AL["Day of the Dead"],
             [NORMAL_DIFF] = {
-                {1, 46690}, -- Candy Skull
-                {2, 46710}, -- Recipe: Bread of the Dead
-                {3, 46711}, -- Spirit Candle
-                {4, 46718}, -- Orange Marigold
-                {5, 46831}, -- Macabre Marionette
-                {6, 46860}, -- Whimsical Skull Mask
-                {7, 46861} -- Bouquet of Orange Marigolds
+                {1, 46831}, -- Macabre Marionette
+                {3, 46710}, -- Recipe: Bread of the Dead
+                {5, 46690}, -- Candy Skull
+                {6, 46711}, -- Spirit Candle
+                {7, 46718}, -- Orange Marigold
+                {8, 46860}, -- Whimsical Skull Mask
+                {9, 46861} -- Bouquet of Orange Marigolds
             }
         }
     }
@@ -1294,21 +1295,24 @@ data["WinterVeilMoP"] = {
             name = AL["Stolen Present"],
             [NORMAL_DIFF] = {
                 { 1,  93625 }, -- Miniature Winter Veil Tree
-                { 2,  104317 }, -- Rotten Helper Box
-                { 3,  34425 }, -- Clockwork Rocket Bot
-                { 4,  54436 }, -- Blue Clockwork Rocket Bot
-                { 5,  73797 }, -- Lump of Coal
-                { 6,  46709 }, -- MiniZep Controller
-                { 7,  44606 }, -- Toy Train Set
-                { 8,  37710 }, -- Crashin' Thrashin' Racer Controller
-                { 9,  46725 }, -- Red Rider Air Rifle
-                { 10, 54437 }, -- Tiny Green Ragdoll
-                { 11, 54438 }, -- Tiny Blue Ragdoll
-                { 12, 34498 }, -- Paper Zeppelin Kit
-                { 13, 44599 }, -- Zippy Copper Racer
-                { 14, 44601 }, -- Heavy Copper Racer
-                { 15, 44481 }, -- Grindgear Toy Gorilla
-                { 16, 44482 }, -- Trusty Copper Racer
+                { 3,  104317 }, -- Rotten Helper Box
+                { 4,  34425 }, -- Clockwork Rocket Bot
+                { 5,  54436 }, -- Blue Clockwork Rocket Bot
+                { 6,  73797 }, -- Lump of Coal
+                { 8,  104318 }, -- Crashin' Thrashin' Flyer Controller
+                { 9,  46709 }, -- MiniZep Controller
+                { 10,  44606 }, -- Toy Train Set
+                { 11,  90883 }, -- The Pigskin
+                { 12,  90888 }, -- Foot Ball
+                { 13,  37710 }, -- Crashin' Thrashin' Racer Controller
+                { 14, 54437 }, -- Tiny Green Ragdoll
+                { 15, 54438 }, -- Tiny Blue Ragdoll
+                { 17,  46725 }, -- Red Rider Air Rifle
+                { 18, 34498 }, -- Paper Zeppelin Kit
+                { 19, 44599 }, -- Zippy Copper Racer
+                { 20, 44601 }, -- Heavy Copper Racer
+                { 21, 44481 }, -- Grindgear Toy Gorilla
+                { 22, 44482 }, -- Trusty Copper Racer
             },
         },
     },
