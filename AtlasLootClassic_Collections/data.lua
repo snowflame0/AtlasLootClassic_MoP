@@ -1565,16 +1565,18 @@ data["Darkmoon"] = {
                 {14, 73953}, -- Sea Pony
                 {15, 19450}, -- Jubling
                 {16, 91031}, -- Darkmoon Glowfly
-                {18, 77158}, -- Darkmoon "Tiger"
-                {19, 19291}, -- Darkmoon Storage Box
-                {20, 19295}, -- Darkmoon Flower
-                {21, 77256}, -- Darkmoon "Sword"
-                {22, 78341}, -- Darkmoon Hammer
-                {23, 78340}, -- Cloak of the Darkmoon Faire
-                {25, 90899}, -- Darkmoon Whistle
-                {26, 97994}, -- Darkmoon Seesaw
-                {28, 74034}, -- Pit Fighter
-                {30, "SPECIAL_ACHIEVEMENT", nil, AL["Achievements"], nil, "AC_DarkmoonFaire"},
+                {18, 90899}, -- Darkmoon Whistle
+                {19, 97994}, -- Darkmoon Seesaw
+                {20, 105898}, -- Moonfang's Paw
+                {21, 101571}, -- Moonfang Shroud
+                {23, 77158}, -- Darkmoon "Tiger"
+                {24, 19291}, -- Darkmoon Storage Box
+                {25, 19295}, -- Darkmoon Flower
+                {26, 77256}, -- Darkmoon "Sword"
+                {27, 78341}, -- Darkmoon Hammer
+                {28, 78340}, -- Cloak of the Darkmoon Faire
+                {30, 74034}, -- Pit Fighter
+                {101, "SPECIAL_ACHIEVEMENT", nil, AL["Achievements"], nil, "AC_DarkmoonFaire"},
           },
       },
         AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM,{

@@ -621,97 +621,151 @@ data["CompanionsMoP"] = {
         {
         name = AL["Drops"],
         [NORMAL_DIFF] = {
-            { 1,  64403 }, -- Fox Kit
-            { 2,  64494 }, -- Tiny Shale Spider
-            { 3,  68673 }, -- Smolderweb Egg
-            { 16, 61387 }, -- Grubs bag
-            { 17, 66076 }, -- Mr Grubbs
+            { 1,  93040 }, -- Anubisath Idol
+            { 2,  86563 }, -- Aqua Strider
+            { 3, 104156 }, -- Ashleaf Spriteling
+            { 4,  93035 }, -- Ashstone Core
+            { 5, 104157 }, -- Azure Crane Chick
+            { 6, 104158 }, -- Blackfuse Bombling
+            { 7, 104202 }, -- Bonkers
+            { 8,  93038 }, -- Chrominius
+            { 9,  97554 }, -- Coilfang Stalker
+            { 10, 93034 }, -- Corefire Imp
+            { 11, 104160 }, -- Dandelion Frolicker
+            { 12, 91040 }, -- Darkmoon Eye
+            { 13, 80008 }, -- Darkmoon Rabbit
+            { 14, 104161 }, -- Death Adder Hatchling
+            { 15, 93037 }, -- Death Talon Whelpguard
+            { 16, 94573 }, -- Direhorn Runt
+            { 17, 104162 }, -- Droplet of Y'Shaarj
+            { 18, 97551 }, -- Fiendish Imp
+            { 19, 97961 }, -- Filthling
+            { 20, 93032 }, -- Fungal Abomination
+            { 21, 93030 }, -- Giant Bone Spider
+            { 22, 104163 }, -- Gooey Sha-ling
+            { 23, 86564 }, -- Grinder
+            { 24, 104291 }, -- Gu'chi Swarmling
+            { 25, 104169 }, -- Gulp Froglet
+            { 26, 93033 }, -- Harbinger of Flame
+            { 27, 104307 }, -- Jadefire Spirit
+            { 28, 104164 }, -- Jademist Dancer
+            { 29, 94835 }, -- Ji-Kun Hatchling
+            { 30, 104165 }, -- Kovok
+            { 101, 97556 }, -- Lesser Voidcaller
+            { 102, 97548 }, -- Lil' Bad Wolf
+            { 103, 103670 }, -- Lil' Bling
+            { 104, 97959 }, -- Living Fluid
+            { 105, 94125 }, -- Living Sandling
+            { 106, 97549 }, -- Menagerie Custodian
+            { 107, 93041 }, -- Mini Mindslayer
+            { 108, 101570 }, -- Moon Moon
+            { 109, 97550 }, -- Netherspace Abyssal
+            { 110, 104166 }, -- Ominous Flame
+            { 111, 97557 }, -- Phoenix Hawk Hatchling
+            { 112, 97555 }, -- Pocket Reaver
+            { 113, 89587 }, -- Porcupette
+            { 114, 94574 }, -- Pygmy Direhorn
+            { 115, 104159 }, -- Ruby Droplet
+            { 116, 104167 }, -- Skunky Alemental
+            { 117, 94152 }, -- Son of Animus
+            { 118, 94595 }, -- Spawn of G'nathus
+            { 119, 104168 }, -- Spineclaw Crab
+            { 120, 93029 }, -- Stitched Pup
+            { 121, 94124 }, -- Sunreaver Micro-Sentry
+            { 122, 97553 }, -- Tainted Waveling
+            { 123, 85220 }, -- Terrible Turnip
+            { 124, 97552 }, -- Tideskipper
+            { 125, 93036 }, -- Untamed Hatchling
+            { 126, 93039 }, -- Viscidus Globule
+            { 127, 97960 }, -- Viscous Horror
+            { 128, 95422 }, -- Zandalari Anklerender
+            { 129, 95423 }, -- Zandalari Footslasher
+            { 130, 94126 }, -- Zandalari Kneebiter
+            { 201, 95424 }, -- Zandalari Toenibbler
             }
         },
         {
         name = AL["Vendor"],
         [NORMAL_DIFF] = {
-            { 1,  70140 }, -- Hyjal Bear Cub
-            { 2,  70160 }, -- Crimson Lasher
-            { 3,  73905 }, -- Darkmoon Zep
-            { 4,  [ATLASLOOT_IT_ALLIANCE] = 63355, [ATLASLOOT_IT_HORDE] = 64996 }, -- Rustberg Gull
-            { 5,  69239 }, -- Winterspring Cub
-            { 6,  73903 }, -- Darkmoon Tonk
-            { 7,  74981 }, -- Darkmoon Cub
-            { 8,  75042 }, -- Flimsy Yellow Ballon
-            { 9,  75040 }, -- Flimsy Darkmoon Ballon
-            { 10, 75041 }, -- Flimsy Green Balloon
-            { 11, 73762 }, -- Darkmoon Balloon
-            { 12, 73764 }, -- Darkmoon Monkey
-            { 13, 73764 }, -- Darkmoon Turtle
+            { 1,  102145 }, -- Chi-Chi, Hatchling of Chi-Ji
+            { 2,  93025 }, -- Clock'em
+            { 3,  91003 }, -- Darkmoon Hatchling
+            { 4,  97821 }, -- Gahz'rooki
+            { 5,  104295 }, -- Harmonious Porcupette
+            { 6,  88148 }, -- Jade Crane Chick
+            { 7,  85447 }, -- Tiny Goldfish
+            { 8,  103637 }, -- Vengeful Porcupette
+            { 9,  101771 }, -- Xu-Fu, Cub of Xuen
+            { 10, 102147 }, -- Yu'la, Broodling of Yu'lon
+            { 11, 102146 }, -- Zao, Calfling of Niuzao
             }
         },
         {
         name = AL["World Events"],
         [NORMAL_DIFF] = {
-            { 1, 71076 }, -- Creepy Crate
-            { 2, 70908 }, -- Feline Familiar
-            { 4, 73797 }, -- Lump of Coal
-            { 6, 74611 }, -- Festival Lantern
+            { 1, 46831 }, -- Macabre Marionette
+            { 2, 104317 }, -- Rotten Helper Box
             }
         },
         {
         name = ALIL["Achievements"],
         TableType = AC_ITTYPE,
         [NORMAL_DIFF] = {
-            { 1,  63398, "ac5144" }, -- Armadillo Pup
-            { 2,  65361, "ac5031" }, -- Guild Page Ally
-            { 3,  65362, "ac5179" }, -- Guild Page Horde
-            { 4,  65363, "ac5201" }, -- Guild Herald Ally
-            { 5,  65364, "ac5201" }, -- Guild Herald Horde
-            { 16, 71387, "ac5877" }, -- Brilliant Kaliri
-            { 6,  60869, "ac5449" }, -- Pebbles
-            { 7,  63138 },  -- Dark Phoenix Hatchling
-            { 8,  71033, "ac5840" }, -- Lil Tarecgosa
-            { 17, 71140, "ac5876" }, -- Nuts'
+            { 1,  85578, "ac7500" }, -- Feral Vermling
+            { 2,  89686, "ac7521" }, -- Jade Tentacle
+            { 3,  93031, "ac7934" }, -- Mr. Bigglesworth
+            { 4,  94191, "ac8300" }, -- Stunted Direhorn
+            { 5,  97558, "ac8293" }, -- Tito
+            { 16, 89736, "ac7501" }, -- Venus
             }
         },
         {
         name = ALIL["Quests"],
         TableType = AC_ITTYPE,
         [NORMAL_DIFF] = {
-            { 1,  69251 }, -- Lashtail Hatchling
-            { 2,  66080 }, -- Tiny Flamefly
-            { 3,  69648 }, -- Legs
-            { 4,  68833 }, -- Panther Cub
-            { 5,  66067 }, -- Sunflower
-            { 6,  46325 }, -- Withers
-            { 7,  66073 }, -- Snail
-            { 8,  [ATLASLOOT_IT_ALLIANCE] = 72042, [ATLASLOOT_IT_HORDE] = 72045 }, -- A/H Balloons
-            { 9,  65661 }, -- Blue mini jouster
-            { 10, 65661 }, -- Gold mini jouster
+            { 1,  84105 }, -- Fishy
+            { 2,  94210 }, -- Mountain Panda
+            { 3,  92799 }, -- Pandaren Air Spirit
+            { 4,  92800 }, -- Pandaren Earth Spirit
+            { 5,  92798 }, -- Pandaren Fire Spirit
+            { 6,  90173 }, -- Pandaren Water Spirit
+            { 7,  85222 }, -- Red Cricket
+            { 8,  94025 }, -- Red Panda
+            { 9,  94209 }, -- Snowy Panda
+            { 10, 94190 }, -- Spectral Porcupette
+            { 11, 94208 }, -- Sunfur Panda
             }
         },
         {
         name = ALIL["Fishing"],
         [NORMAL_DIFF] = {
-            { 1, 73953 }, -- Sea pony
+            { 1, 94933 }, -- Tiny Blue Carp
+            { 2, 94934 }, -- Tiny Green Carp
+            { 3, 94932 }, -- Tiny Red Carp
+            { 4, 94935 }, -- Tiny White Carp
             }
         },
         {
         name = ALIL["Crafting"],
         [NORMAL_DIFF] = {
-            { 1,  67274 }, -- Enchanted Lantern
-            { 2,  67275 }, -- Magic Lamp
-            { 3,  60847 }, -- Crawling Claw
-            { 4,  67282 }, -- Elementium Geode
-            { 5,  59597 }, -- Personal World Destroyer
-            { 6,  60216 }, -- De-Weaponized Mechanical Companion
-            { 7,  69821 }, -- Pterrordax Hatchling
-            { 8,  60955 }, -- Fossilized Hatchling
-            { 9,  69824 }, -- Voodoo Figurine
-            { 10, 64372 }, -- Clockwork Gnome
+            { 1,  89368 }, -- Chi-Ji Kite
+            { 2,  90900 }, -- Imperial Moth
+            { 3,  90902 }, -- Imperial Silkworm
+            { 4,  82774 }, -- Jade Owl
+            { 5,  87526 }, -- Mechanical Pandaren Dragonling
+            { 6,  94903 }, -- Pierre
+            { 7, 100905 }, -- Rascal-Bot
+            { 8,  82775 }, -- Sapphire Cub
+            { 9,  89367 }, -- Yu'lon Kite
             }
         },
-        {  -- Misc
-        name = AL["Misc"],
-        [NORMAL_DIFF] = {},
-    } }
+        {
+        name = AL["Misc"], -- Misc
+            [NORMAL_DIFF] = {
+            { 1,  85871 }, -- Lucky Quilen Cub
+            },
+        }
+    }
 }
 
 data["TabardsMoP"] = {
@@ -811,7 +865,7 @@ data["HeirloomMoP"] = {
                 { 19, 93890 }, -- Gleaming Spaulders of Valor
                 { 20, 93893 }, -- Brushed Pauldrons of Might
                 { 21, 93894 }, -- Immaculate Lightforge Spaulders
-            -- Shield
+            -- Off-hand
                 { 23, 93902 }, -- Flamescarred Draconian Deflector
                 { 24, 93903 }, -- Weathered Observer's Shield
                 { 25, 93904 }, -- Musty Tome of the Lost
