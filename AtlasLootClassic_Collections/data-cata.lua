@@ -1546,12 +1546,12 @@ data["MidsummerFestivalCata"] = {
         name = C_Map_GetAreaInfo(3717) .. " - " .. AL["Ahune"],
         [NORMAL_DIFF] = {
             { 1,  54536 }, -- Satchel of Chilled Goods
-            { 2,  69771 }, -- Frostscythe of Lord Ahune
-            { 4,  69768 }, -- Shroud of Winter's Chill
-            { 5,  69766 }, -- The Frost Lord's War Cloak
-            { 6,  69770 }, -- Icebound Cloak
-            { 7,  69769 }, -- Cloak of the Frigid Winds
-            { 8,  69767 }, -- The Frost Lord's Battle Shroud
+            { 3,  248747 }, -- Frostscythe of Lord Ahune
+            { 4,  248750 }, -- Shroud of Winter's Chill
+            { 5,  248748 }, -- The Frost Lord's War Cloak
+            { 6,  248752 }, -- Icebound Cloak
+            { 7,  248751 }, -- Cloak of the Frigid Winds
+            { 8,  248749 }, -- The Frost Lord's Battle Shroud
             { 10, 35723 }, -- Shards of Ahune
             { 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
             { 18, 53641 }, -- Ice Chip
