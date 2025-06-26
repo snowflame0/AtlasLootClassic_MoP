@@ -1129,11 +1129,13 @@ data["Weapon Sets"] = {
             }
         } }
 }
+
 data["MountsCata"] = {
     name = ALIL["Mounts"],
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
     CorrespondingFields = private.MOUNTS,
     items = { {
         name = AL["PvP"],
@@ -1286,6 +1288,7 @@ data["TabardsCata"] = {
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
     CorrespondingFields = private.TABARDS,
     items = { {
         name = AL["Factions"],
@@ -1353,6 +1356,7 @@ data["HeirloomCata"] = {
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.HEIRLOOM,
     items = { {
         name = ALIL["Armor"],
         [NORMAL_DIFF] = {
@@ -1548,12 +1552,12 @@ data["MidsummerFestivalCata"] = {
         name = C_Map_GetAreaInfo(3717) .. " - " .. AL["Ahune"],
         [NORMAL_DIFF] = {
             { 1,  54536 }, -- Satchel of Chilled Goods
-            { 2,  69771 }, -- Frostscythe of Lord Ahune
-            { 4,  69768 }, -- Shroud of Winter's Chill
-            { 5,  69766 }, -- The Frost Lord's War Cloak
-            { 6,  69770 }, -- Icebound Cloak
-            { 7,  69769 }, -- Cloak of the Frigid Winds
-            { 8,  69767 }, -- The Frost Lord's Battle Shroud
+            { 3,  248747 }, -- Frostscythe of Lord Ahune
+            { 4,  248750 }, -- Shroud of Winter's Chill
+            { 5,  248748 }, -- The Frost Lord's War Cloak
+            { 6,  248752 }, -- Icebound Cloak
+            { 7,  248751 }, -- Cloak of the Frigid Winds
+            { 8,  248749 }, -- The Frost Lord's Battle Shroud
             { 10, 35723 }, -- Shards of Ahune
             { 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
             { 18, 53641 }, -- Ice Chip
@@ -1569,56 +1573,63 @@ data["BrewfestCata"] = {
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
     CorrespondingFields = private.BREWFEST,
-    items = { {                  -- Brewfest
+    items = {
+        {
         name = AL["Brewfest"],
-        [NORMAL_DIFF] = { { 1, 33968 }, -- Blue Brewfest Hat
-            { 2,  33864 },       -- Brown Brewfest Hat
-            { 3,  33967 },       -- Green Brewfest Hat
-            { 4,  33969 },       -- Purple Brewfest Hat
-            { 5,  33863 },       -- Brewfest Dress
-            { 6,  33862 },       -- Brewfest Regalia
-            { 7,  33966 },       -- Brewfest Slippers
-            { 8,  33868 },       -- Brewfest Boots
-            { 10, 33047 },       -- Belbi's Eyesight Enhancing Romance Goggles (Alliance)
-            { 11, 34008 },       -- Blix's Eyesight Enhancing Romance Goggles (Horde)
-            { 13, 33927 },       -- Brewfest Pony Keg
-            { 15, 37829 },       -- Brewfest Prize Token
-            { 16, 32233 },       -- Wolpertinger's Tankard
-            { 18, 37599 },       -- "Brew of the Month" Club Membership Form
-            { 20, 37750 },       -- Fresh Brewfest Hops
-            { 21, 39477 },       -- Fresh Dwarven Brewfest Hops
-            { 22, 39476 },       -- Fresh Goblin Brewfest Hops
-            { 23, 37816 }        -- Preserved Brewfest Hops
+          [NORMAL_DIFF] = {
+                {1, 37829}, -- Brewfest Prize Token
+                {3, 33968}, -- Blue Brewfest Hat
+                {4, 33864}, -- Brown Brewfest Hat
+                {5, 33967}, -- Green Brewfest Hat
+                {6, 33969}, -- Purple Brewfest Hat
+                {7, 33863}, -- Brewfest Dress
+                {8, 33862}, -- Brewfest Regalia
+                {9, 33966}, -- Brewfest Slippers
+                {10, 33868}, -- Brewfest Boots
+                {12, 33047}, -- Belbi's Eyesight Enhancing Romance Goggles (Alliance)
+                {13, 34008}, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
+                {15, 33927}, -- Brewfest Pony Keg
+                {17, 32233}, -- Wolpertinger's Tankard
+                {19, 37599}, -- "Brew of the Month" Club Membership Form
+                {21, 37750}, -- Fresh Brewfest Hops
+                {22, 39477}, -- Fresh Dwarven Brewfest Hops
+                {23, 39476}, -- Fresh Goblin Brewfest Hops
+                {24, 37816} -- Preserved Brewfest Hops
+            }
+        },
+        {
+            name = AL["Food"],
+            [NORMAL_DIFF] = {
+                {1, 33043}, -- The Essential Brewfest Pretzel
+                {3, 34017}, -- Small Step Brew
+                {4, 34018}, -- long Stride Brew
+                {5, 34019}, -- Path of Brew
+                {6, 34020}, -- Jungle River Water
+                {7, 34021}, -- Brewdoo Magic
+                {8, 34022}, -- Stout Shrunken Head
+                {9, 33034}, -- Gordok Grog
+                {10, 33035}, -- Ogre Mead
+                {11, 33036} -- Mudder's Milk
+            }
+        },
+        {
+            name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
+            [NORMAL_DIFF] = {
+                { 1, 232017 }, -- Bitter Balebrew Charm
+                { 2,  232016 }, -- Bubbling Brightbrew Charm
+                { 3,  232012 }, -- Coren's Chromium Coaster
+                { 4,  232013 }, -- Mithril Pocketwatch
+                { 5,  232014 }, -- Ancient Pickled Egg
+                { 6,  232015 }, -- Brawler's Souvenir
+                { 8,  232030 }, -- Direbrew's Bloody Shanker
+                { 9,  232031 }, -- Tankard O' Terror
+                {16, 33977}, -- Swift Brewfest Ram
+                {17, 37828}, -- Great Brewfest Kodo
+                {19, 37863}, -- Direbrew's Remote
+                {21, 38280} -- Direbrew's Dire Brew
+            }
         }
-    }, {
-        name = AL["Food"],
-        [NORMAL_DIFF] = { { 1, 33043 }, -- The Essential Brewfest Pretzel
-            { 3,  34017 },       -- Small Step Brew
-            { 4,  34018 },       -- long Stride Brew
-            { 5,  34019 },       -- Path of Brew
-            { 6,  34020 },       -- Jungle River Water
-            { 7,  34021 },       -- Brewdoo Magic
-            { 8,  34022 },       -- Stout Shrunken Head
-            { 9,  33034 },       -- Gordok Grog
-            { 10, 33035 },       -- Ogre Mead
-            { 11, 33036 }        -- Mudder's Milk
-        }
-    }, {
-        name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
-        [NORMAL_DIFF] = { { 1, 232017 }, -- Bitter Balebrew Charm
-            { 2,  232016 },       -- Bubbling Brightbrew Charm
-            { 3,  232012 },       -- Coren's Chromium Coaster
-            { 4,  232013 },       -- Mithril Pocketwatch
-            { 5,  232014 },       -- Ancient Pickled Egg
-            { 6,  232015 },       -- Brawler's Souvenir
-            { 8,  232030 },       -- Direbrew's Bloody Shanker
-            { 9,  232031 },       -- Tankard O' Terror
-            { 16, 33977 },        -- Swift Brewfest Ram
-            { 17, 37828 },        -- Great Brewfest Kodo
-            { 19, 37863 },        -- Direbrew's Remote
-            { 21, 38280 }         -- Direbrew's Dire Brew
-        }
-    } }
+    }
 }
 
 data["HalloweenCata"] = {
@@ -1631,10 +1642,10 @@ data["HalloweenCata"] = {
     items = { {                  -- Halloween1
         name = AL["Hallow's End"] .. " - " .. AL["Misc"],
         [NORMAL_DIFF] = { { 1, 20400 }, -- Pumpkin Bag
-            { 3,  70722 },       -- Little Wickerman
-            { 4,  70908 },       -- Feline Familiar
-            { 5,  71076 },       -- Creepy Crate
-            { 16, 33226 },       -- Tricky Treat
+            { 3,  70722 }, -- Little Wickerman
+            { 4,  70908 }, -- Feline Familiar
+            { 5,  71076 }, -- Creepy Crate
+            { 16, 33226 }, -- Tricky Treat
         }
     }, {                         -- Halloween1
         name = AL["Hallow's End"] .. " - " .. AL["Wands"],
@@ -1650,33 +1661,33 @@ data["HalloweenCata"] = {
     }, {                         -- Halloween3
         name = AL["Hallow's End"] .. " - " .. AL["Masks"],
         [NORMAL_DIFF] = { { 1, 20561 }, -- Flimsy Male Dwarf Mask
-            { 2,  20391 },       -- Flimsy Male Gnome Mask
-            { 3,  20566 },       -- Flimsy Male Human Mask
-            { 4,  20564 },       -- Flimsy Male Nightelf Mask
-            { 5,  20570 },       -- Flimsy Male Orc Mask
-            { 6,  20572 },       -- Flimsy Male Tauren Mask
-            { 7,  20568 },       -- Flimsy Male Troll Mask
-            { 8,  20573 },       -- Flimsy Male Undead Mask
-            { 9,  49216 },       -- Worgen Male Mask
-            { 10, 49210 },       -- Goblin Male Mask
-            { 12, 69188 },       -- Murloc Male Mask
-            { 13, 69190 },       -- Naga Male Mask
-            { 14, 69193 },       -- Ogre Male Mask
-            { 15, 69195 },       -- Vrykul Male Mask
-            { 16, 20562 },       -- Flimsy Female Dwarf Mask
-            { 17, 20392 },       -- Flimsy Female Gnome Mask
-            { 18, 20565 },       -- Flimsy Female Human Mask
-            { 19, 20563 },       -- Flimsy Female Nightelf Mask
-            { 20, 20569 },       -- Flimsy Female Orc Mask
-            { 21, 20571 },       -- Flimsy Female Tauren Mask
-            { 22, 20567 },       -- Flimsy Female Troll Mask
-            { 23, 20574 },       -- Flimsy Female Undead Mask
-            { 24, 49215 },       -- Worgen Female Mask
-            { 25, 49212 },       -- Goblin Female Mask
-            { 27, 69187 },       -- Murloc Female Mask
-            { 28, 69189 },       -- Naga Female Mask
-            { 29, 69192 },       -- Ogre Female Mask
-            { 30, 69194 },       -- Vrykul Female Mask
+            { 2,  20391 }, -- Flimsy Male Gnome Mask
+            { 3,  20566 }, -- Flimsy Male Human Mask
+            { 4,  20564 }, -- Flimsy Male Nightelf Mask
+            { 5,  20570 }, -- Flimsy Male Orc Mask
+            { 6,  20572 }, -- Flimsy Male Tauren Mask
+            { 7,  20568 }, -- Flimsy Male Troll Mask
+            { 8,  20573 }, -- Flimsy Male Undead Mask
+            { 9,  49216 }, -- Worgen Male Mask
+            { 10, 49210 }, -- Goblin Male Mask
+            { 12, 69188 }, -- Murloc Male Mask
+            { 13, 69190 }, -- Naga Male Mask
+            { 14, 69193 }, -- Ogre Male Mask
+            { 15, 69195 }, -- Vrykul Male Mask
+            { 16, 20562 }, -- Flimsy Female Dwarf Mask
+            { 17, 20392 }, -- Flimsy Female Gnome Mask
+            { 18, 20565 }, -- Flimsy Female Human Mask
+            { 19, 20563 }, -- Flimsy Female Nightelf Mask
+            { 20, 20569 }, -- Flimsy Female Orc Mask
+            { 21, 20571 }, -- Flimsy Female Tauren Mask
+            { 22, 20567 }, -- Flimsy Female Troll Mask
+            { 23, 20574 }, -- Flimsy Female Undead Mask
+            { 24, 49215 }, -- Worgen Female Mask
+            { 25, 49212 }, -- Goblin Female Mask
+            { 27, 69187 }, -- Murloc Female Mask
+            { 28, 69189 }, -- Naga Female Mask
+            { 29, 69192 }, -- Ogre Female Mask
+            { 30, 69194 }, -- Vrykul Female Mask
         }
     }, {                         -- SMHeadlessHorseman
         name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
@@ -1780,20 +1791,20 @@ data["WinterVeilCata"] = {
             name = AL["Stolen Present"],
             [NORMAL_DIFF] = {
                 { 1,  66540 }, -- Miniature Winter Veil Tree
-                { 2,  34425 }, -- Clockwork Rocket Bot
-                { 3,  54436 }, -- Blue Clockwork Rocket Bot
-                { 4,  73797 }, -- Lump of Coal
-                { 5,  46709 }, -- MiniZep Controller
-                { 6,  44606 }, -- Toy Train Set
-                { 7,  37710 }, -- Crashin' Thrashin' Racer Controller
-                { 8,  46725 }, -- Red Rider Air Rifle
-                { 9,  54437 }, -- Tiny Green Ragdoll
-                { 10, 54438 }, -- Tiny Blue Ragdoll
-                { 11, 34498 }, -- Paper Zeppelin Kit
-                { 12, 44599 }, -- Zippy Copper Racer
-                { 13, 44601 }, -- Heavy Copper Racer
-                { 14, 44481 }, -- Grindgear Toy Gorilla
-                { 15, 44482 }, -- Trusty Copper Racer
+                { 3,  34425 }, -- Clockwork Rocket Bot
+                { 4,  54436 }, -- Blue Clockwork Rocket Bot
+                { 5,  73797 }, -- Lump of Coal
+                { 7,  46709 }, -- MiniZep Controller
+                { 8,  44606 }, -- Toy Train Set
+                { 9,  37710 }, -- Crashin' Thrashin' Racer Controller
+                { 10,  54437 }, -- Tiny Green Ragdoll
+                { 11, 54438 }, -- Tiny Blue Ragdoll
+                { 13,  46725 }, -- Red Rider Air Rifle
+                { 14, 34498 }, -- Paper Zeppelin Kit
+                { 15, 44599 }, -- Zippy Copper Racer
+                { 16, 44601 }, -- Heavy Copper Racer
+                { 17, 44481 }, -- Grindgear Toy Gorilla
+                { 18, 44482 }, -- Trusty Copper Racer
             },
         },
     },

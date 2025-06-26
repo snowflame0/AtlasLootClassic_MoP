@@ -47,6 +47,12 @@ private.COOKING_VENDOR = {
     [AtlasLoot.MOP_VERSION_NUM]         = "CookingVendorMoP",
 }
 
+private.HEIRLOOM = {
+    [AtlasLoot.WRATH_VERSION_NUM]       = "HeirloomWrath",
+    [AtlasLoot.CATA_VERSION_NUM]        = "HeirloomCata",
+    [AtlasLoot.MOP_VERSION_NUM]         = "HeirloomMoP",
+}
+
 private.VALOR_POINTS = {
     [AtlasLoot.CATA_VERSION_NUM]        = "ValorPointsCata",
     [AtlasLoot.MOP_VERSION_NUM]         = "ValorPointsMoP",
@@ -72,10 +78,16 @@ private.VALENTINES_DAY = {
     [AtlasLoot.CLASSIC_VERSION_NUM]     = "ValentinesDay",
     [AtlasLoot.WRATH_VERSION_NUM]       = "ValentinesDayWrath",
     [AtlasLoot.CATA_VERSION_NUM]        = "ValentinesDayCata",
-    [AtlasLoot.MOP_VERSION_NUM]         = "ValentinesdayMoP",
+    [AtlasLoot.MOP_VERSION_NUM]         = "ValentinesDayMoP",
+}
+
+private.NOBLEGARDEN = {
+    [AtlasLoot.CLASSIC_VERSION_NUM]     = "Noblegarden",
+    [AtlasLoot.CATA_VERSION_NUM]        = "NoblegardenCata",
 }
 
 private.CHILDRENS_WEEK = {
+    [AtlasLoot.CLASSIC_VERSION_NUM]     = "ChildrensWeek",
     [AtlasLoot.BC_VERSION_NUM]          = "ChildrensWeekBC",
     [AtlasLoot.WRATH_VERSION_NUM]       = "ChildrensWeekWrath",
 }
@@ -102,14 +114,14 @@ private.HALLOWEEN = {
     [AtlasLoot.MOP_VERSION_NUM]         = "HalloweenMoP",
 }
 
+private.DAY_OF_THE_DEAD = {
+    [AtlasLoot.WRATH_VERSION_NUM]       = "DayoftheDeadWrath",
+    [AtlasLoot.MOP_VERSION_NUM]         = "DayoftheDeadMoP",
+}
+
 private.WINTER_VEIL = {
     [AtlasLoot.CLASSIC_VERSION_NUM]     = "WinterVeil",
     [AtlasLoot.CATA_VERSION_NUM]        = "WinterVeilCata",
     [AtlasLoot.MOP_VERSION_NUM]         = "WinterVeilMoP",
 }
 
-private.NOBLEGARDEN = {
-    [AtlasLoot.CLASSIC_VERSION_NUM]     = "Noblegarden",
-    [AtlasLoot.CATA_VERSION_NUM]        = "NoblegardenCata",
-    [AtlasLoot.MOP_VERSION_NUM]         = "NoblegardenMoP",
-}

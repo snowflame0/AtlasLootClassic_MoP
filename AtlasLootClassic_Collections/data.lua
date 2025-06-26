@@ -26,7 +26,6 @@ local GetForVersion = AtlasLoot.ReturnForGameVersion
 
 --local RAIDFINDER_DIFF = data:AddDifficulty("Raid Finder", nil, nil, nil, true)
 
-
 local TWILIGHT_DIFF = data:AddDifficulty("Elemental Rune Twilight", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
@@ -1353,6 +1352,10 @@ data["Darkmoon"] = {
                 { 17, 62044 },	-- Tsunami Deck
                 { 18, 62045 },	-- Hurricane Deck
                 { 19, 62046 },	-- Earthquake Deck
+                { 21, 79323 },	-- Tiger Deck
+                { 22, 79324 },	-- Ox Deck
+                { 23, 79325 },	-- Crane Deck
+                { 24, 79326 },	-- Serpent Deck
             },
         },
         {
@@ -1555,46 +1558,81 @@ data["Darkmoon"] = {
                 {7, 73903}, -- Darkmoon Tonk
                 {8, 73905}, -- Darkmoon Zeppelin
                 {9, 74981}, -- Darkmoon Cub
-                {11, 73953}, -- Sea Pony
-                {12, 19450}, -- Jubling
-                {14, 77158}, -- Darkmoon "Tiger"
-                {15, 19291}, -- Darkmoon Storage Box
-                {16, 19295}, -- Darkmoon Flower
-                {17, 77256}, -- Darkmoon "Sword"
-                {18, 78341}, -- Darkmoon Hammer
-                {19, 78340}, -- Cloak of the Darkmoon Faire
-                {21, 74034}, -- Pit Fighter
-                {30, "SPECIAL_ACHIEVEMENT", nil, AL["Achievements"], nil, "AC_DarkmoonFaire"},
+                {10, 91003}, -- Darkmoon Hatchling
+                {11, 80008}, -- Darkmoon Rabbit
+                {12, 101570}, -- Moon Moon
+                {13, 91040}, -- Darkmoon Eye
+                {14, 73953}, -- Sea Pony
+                {15, 19450}, -- Jubling
+                {16, 91031}, -- Darkmoon Glowfly
+                {18, 90899}, -- Darkmoon Whistle
+                {19, 97994}, -- Darkmoon Seesaw
+                {20, 105898}, -- Moonfang's Paw
+                {21, 101571}, -- Moonfang Shroud
+                {23, 77158}, -- Darkmoon "Tiger"
+                {24, 19291}, -- Darkmoon Storage Box
+                {25, 19295}, -- Darkmoon Flower
+                {26, 77256}, -- Darkmoon "Sword"
+                {27, 78341}, -- Darkmoon Hammer
+                {28, 78340}, -- Cloak of the Darkmoon Faire
+                {30, 74034}, -- Pit Fighter
+                {101, "SPECIAL_ACHIEVEMENT", nil, AL["Achievements"], nil, "AC_DarkmoonFaire"},
           },
       },
         AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM,{
         name = format(BOA_QUALITY, AL["Heirlooms"]),
         [NORMAL_DIFF] = {
-        {1, 42985}, -- Tattered Dreadmist Mantle
-        {2, 48691}, -- Tattered Dreadmist Robe
-        {4, 42952}, -- Stained Shadowcraft Spaulders
-        {5, 42984}, -- Preened Ironfeather Shoulders
-        {6, 48689}, -- Stained Shadowcraft Tunic
-        {7, 48687}, -- Preened Ironfeather Breastplate
-        {9, 42950}, -- Champion Herod's Shoulder
-        {10, 42951}, -- Mystical Pauldrons of Elements
-        {11, 48677}, -- Champion's Deathdealer Breastplate
-        {12, 48683}, -- Mystical Vest of Elements
-        {14, 42992}, -- Discerning Eye of the Beast
-        {15, 42991}, -- Swift Hand of Justice
-        {16, 42949}, -- Polished Spaulders of Valor
-        {17, 48685}, -- Polished Breastplate of Valor
-        {18, 69890}, -- Burnished Pauldrons of Might
-        {19, 69889}, -- Burnished Breastplate of Might
-        {21, 69893}, -- Bloodsoaked Skullforge Reaver
-        {22, 48716}, -- Venerable Mass of McGowan
-        {23, 42944}, -- Balanced Heartseeker
-        {24, 42945}, -- Venerable Dal'Rend's Sacred Charge
-        {25, 42948}, -- Devout Aurastone Hammer
-        {26, 42947}, -- Dignified Headmaster's Charge
-        {27, 42946}, -- Charmed Ancient Bone Bow
-        {28, 42943}, -- Bloodied Arcanite Reaper
-        {29, 48718}, -- Repurposed Lava Dredger
+                { 1,  42985 }, -- Tattered Dreadmist Mantle
+                { 2,  93859 }, -- Bloodstained Dreadmist Mantle
+                { 3,  48691 }, -- Tattered Dreadmist Robe
+                { 4,  93860 }, -- Bloodstained Dreadmist Robe
+                { 6,  42952 }, -- Stained Shadowcraft Spaulders
+                { 7,  93862 }, -- Supple Shadowcraft Spaulders
+                { 8,  42984 }, -- Preened Ironfeather Shoulders
+                { 9,  93864 }, -- Majestic Ironfeather Shoulders
+                { 10, 48689 }, -- Stained Shadowcraft Tunic
+                { 11, 93863 }, -- Supple Shadowcraft Tunic
+                { 12,  48687 }, -- Preened Ironfeather Breastplate
+                { 13, 93865 }, -- Majestic Ironfeather Breastplate
+                { 15, 42950 }, -- Champion Herod's Shoulder
+                { 16, 93887 }, -- Grand Champion Herod's Shoulder
+                { 17, 42951 }, -- Mystical Pauldrons of Elements
+                { 18, 93876 }, -- Awakened Pauldrons of Elements
+                { 19, 48677 }, -- Champion's Deathdealer Breastplate
+                { 20, 93888 }, -- Furious Deathdealer Breastplate
+                { 21, 48683 }, -- Mystical Vest of Elements
+                { 22, 93885 }, -- Awakened Vest of Elements
+                { 24, 42949 }, -- Polished Spaulders of Valor
+                { 25, 93890 }, -- Gleaming Spaulders of Valor
+                { 26, 48685 }, -- Polished Breastplate of Valor
+                { 27,  93891 }, -- Gleaming Breastplate of Valor
+                { 28, 93893 }, -- Brushed Pauldrons of Might
+                { 29,  93892 }, -- Brushed Breastplate of Might
+                { 101, 69893 }, -- Bloodsoaked Skullforge Reaver
+                { 102, 93845 }, -- Gore-Steeped Skullforge Reaver
+                { 103, 48716 }, -- Venerable Mass of McGowan
+                { 104, 93847 }, -- Crushing Mass of McGowan
+                { 105, 42944 }, -- Balanced Heartseeker
+                { 106, 93857 }, -- Vengeful Heartseeker
+                { 107, 42945 }, -- Venerable Dal'Rend's Sacred Charge
+                { 108, 93856 }, -- Noble Dal'Rend's Sacred Charge
+                { 109, 42948 }, -- Devout Aurastone Hammer
+                { 110, 93853 }, -- Pious Aurastone Hammer
+                { 111, 42947 }, -- Dignified Headmaster's Charge
+                { 112, 93854 }, -- Scholarly Headmaster's Charge
+                { 113, 42946 }, -- Charmed Ancient Bone Bow
+                { 114, 93855 }, -- War-Torn Ancient Bone Bow
+                { 115, 42943 }, -- Bloodied Arcanite Reaper
+                { 116, 93843 }, -- Hardened Arcanite Reaper
+                { 117, 48718 }, -- Repurposed Lava Dredger
+                { 118, 93846 }, -- Re-Engineered Lava Dredger
+                { 120, 42992 }, -- Discerning Eye of the Beast
+                { 121, 93897 }, -- Piercing Eye of the Beast
+                { 122, 42991 }, -- Swift Hand of Justice
+                { 123, 93896 }, -- Forceful Hand of Justice
+                { 125, 93902 }, -- Flamescarred Draconian Deflector
+                { 126, 93903 }, -- Weathered Observer's Shield
+                { 127, 93904 }, -- Musty Tome of the Lost
             },
         }),
     },
@@ -1751,6 +1789,7 @@ data["ValentinesDay"] = {
         },
     },
 }
+
 data["Noblegarden"] = {
     name = AL["Noblegarden"],
     ContentType = WORLD_EVENT_CONTENT,
