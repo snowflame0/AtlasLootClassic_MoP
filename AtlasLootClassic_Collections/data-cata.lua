@@ -1137,54 +1137,66 @@ data["MountsCata"] = {
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
     CorrespondingFields = private.MOUNTS,
-    items = { {
-        name = AL["PvP"],
-        [NORMAL_DIFF] = { { 1, [ATLASLOOT_IT_ALLIANCE] = 70909, [ATLASLOOT_IT_HORDE] = 70910 }, -- Vicious War Steed / Vicious War Wolf
-            { 2, 71339 },                                                                     -- Vicious Gladiator's Twilight Drake
-            { 3, 71954 },                                                                     -- Ruthless Gladiator's Twilight Drake
+    items = {
+        {
+            name = AL["PvP"],
+            [NORMAL_DIFF] = {
+                { 1, [ATLASLOOT_IT_ALLIANCE] = 70909, [ATLASLOOT_IT_HORDE] = 70910 }, -- Vicious War Steed / Vicious War Wolf
+                { 2, 71339 }, -- Vicious Gladiator's Twilight Drake
+                { 3, 71954 },  -- Ruthless Gladiator's Twilight Drake
+            }
+        },
+        {
+            name = AL["Drops"], -- Drops
+            [NORMAL_DIFF] = {
+                { 1, 63043 }, -- Reins of the Vitreous Stone Drake
+                { 2,  63042 }, -- Reins of the Phosphorescent Stone Drake
+                { 4,  63040 }, -- Reins of the Drake of the North Wind
+                { 5,  63041 }, -- Reins of the Drake of the South Wind
+                { 7,  69224 }, -- Smoldering Egg of Millagazor
+                { 8,  71665 }, -- Flametalon of Alysrazor
+                { 10, 77067 }, -- Reins of the Blazing Drake
+                { 11, 77069 }, -- Life-Binder's Handmaiden
+                { 12, 78919 }, -- Experiment 12-B
+                { 14, 68823 }, -- Armored Razzashi Raptor
+                { 15, 68824 }, -- Swift Zulian Panther
+                { 16, 69747 }, -- Amani Battle Bear
+                { 18, 67151 }, -- Reins of Poseidus
+            }
+        },
+        {
+            name = AL["Crafting"],
+            [NORMAL_DIFF] = {
+                { 1, 65891 }, -- Vial of the Sands
+                { 3, 60954 }, -- Fossilized Raptor
+                { 5, 64883 }, -- Scepter of Azj'Aqir
+            }
+        },
+        {
+            name = AL["Factions"],
+            [NORMAL_DIFF] = {
+                { 1, [ATLASLOOT_IT_ALLIANCE] = 63039, [ATLASLOOT_IT_HORDE] = 65356 },
+                { 2, [ATLASLOOT_IT_ALLIANCE] = 64998, [ATLASLOOT_IT_HORDE] = 64999 },
+            }
+        },
+        {
+            name = AL["Darkmoon Faire"],
+            [NORMAL_DIFF] = {
+                { 1, 73766 }, -- Darkmoon Dancing Bear
+                { 2, 72140 }, -- Swift Forest Strider
+            }
+        },
+        {
+            name = ALIL["Achievements"],
+            TableType = AC_ITTYPE,
+            [NORMAL_DIFF] = {
+                { 1, 62900, 4845 }, -- Reins of the Volcanic Stone Drake
+                { 2, 62901, 4853 }, -- Reins of the Drake of the East Wind
+                { 3, 69230, 5828 }, -- Corrupted Egg of Millagazor
+                { 4, 77068, 6169 }, -- Reins of the Twilight Harbinger
+            }
         }
-    }, {                                                                                      -- Drops
-        name = AL["Drops"],
-        [NORMAL_DIFF] = { { 1, 63043 },                                                       -- Reins of the Vitreous Stone Drake
-            { 2,  63042 },                                                                    -- Reins of the Phosphorescent Stone Drake
-            { 4,  63040 },                                                                    -- Reins of the Drake of the North Wind
-            { 5,  63041 },                                                                    -- Reins of the Drake of the South Wind
-            { 7,  69224 },                                                                    -- Smoldering Egg of Millagazor
-            { 8,  71665 },                                                                    -- Flametalon of Alysrazor
-            { 10, 77067 },                                                                    -- Reins of the Blazing Drake
-            { 11, 77069 },                                                                    -- Life-Binder's Handmaiden
-            { 12, 78919 },                                                                    -- Experiment 12-B
-            { 14, 68823 },                                                                    -- Armored Razzashi Raptor
-            { 15, 68824 },                                                                    -- Swift Zulian Panther
-            { 16, 69747 },                                                                    -- Amani Battle Bear
-            { 18, 67151 },                                                                    -- Reins of Poseidus
-        }
-    }, {
-        name = AL["Crafting"],
-        [NORMAL_DIFF] = { { 1, 65891 }, -- Vial of the Sands
-            { 3, 60954 },        -- Fossilized Raptor
-            { 5, 64883 },        -- Scepter of Azj'Aqir
-        }
-    }, {
-        name = AL["Factions"],
-        [NORMAL_DIFF] = {
-            { 1, [ATLASLOOT_IT_ALLIANCE] = 63039, [ATLASLOOT_IT_HORDE] = 65356 },
-            { 2, [ATLASLOOT_IT_ALLIANCE] = 64998, [ATLASLOOT_IT_HORDE] = 64999 },
-        }
-    }, {
-        name = AL["Darkmoon Faire"],
-        [NORMAL_DIFF] = { { 1, 73766 }, -- Darkmoon Dancing Bear
-            { 2, 72140 },        -- Swift Forest Strider
-        }
-    }, {
-        name = ALIL["Achievements"],
-        TableType = AC_ITTYPE,
-        [NORMAL_DIFF] = { { 1, 62900, 4845 }, -- Reins of the Volcanic Stone Drake
-            { 2, 62901, 4853 },        -- Reins of the Drake of the East Wind
-            { 3, 69230, 5828 },        -- Corrupted Egg of Millagazor
-            { 4, 77068, 6169 },        -- Reins of the Twilight Harbinger
-        }
-    } }
+    }
 }
 
 data["CompanionsCata"] = {

@@ -587,7 +587,19 @@ data["WorldEpicsMoP"] = {
         {
             name = AL["World Epics"],
             [NORMAL_ITTYPE] = {
-                { 1,  90573 }, -- Wang's Unshakable Smile
+                { 1,  90583 }, -- Don Guerrero's Glorious Choker
+                { 2,  90590 }, -- Dorian's Necklace of Burgeoning Dreams
+                { 3,  90591 }, -- Ring of the Shipwrecked Prince
+                { 4,  90589 }, -- Dirl's Drafty Drape
+                { 5,  90571 }, -- Scroll of Whispered Secrets
+                { 6,  90575 }, -- Sutiru's Brazen Bulwark
+                { 8,  90573 }, -- Wang's Unshakable Smile
+                { 9,  90588 }, -- Rittsyn's Ruinblasters
+                { 10,  90574 }, -- Etoshia's Elegant Gloves
+                { 12,  90585 }, -- Vulajin's Vicious Breastplate
+                { 14,  90572 }, -- Kilt of Pandaren Promises
+                { 16,  90579 }, -- Legplates of Durable Dreams
+                { 17,  90577 }, -- Boblet's Bouncing Hauberk
             }
         }
     }
@@ -602,9 +614,46 @@ data["MountsMoP"] = {
     CorrespondingFields = private.MOUNTS,
      items = {
         {
-        name = AL["Crafting"],
-        [NORMAL_DIFF] = {
-            { 1, 95416 }, -- Sky Golem
+            name = AL["Drops"], -- Drops
+            [NORMAL_DIFF] = {
+                { 1,  95059 }, -- Clutch of Ji-Kun
+                { 2,  104253 }, -- Kor'kron Juggernaut
+                { 3,  87777 }, -- Reins of the Astral Cloud Serpent
+                { 4,  94228 }, -- Reins of the Cobalt Primordial Direhorn
+                { 5,  87771 }, -- Reins of the Heavenly Onyx Cloud Serpent
+                { 6,  95057 }, -- Reins of the Thundering Cobalt Cloud Serpent
+                { 7, 89783 }, -- Son of Galleon's Saddle
+                { 8, 93666 }, -- Spawn of Horridon
+            }
+        },
+        {
+            name = AL["Crafting"],
+            [NORMAL_DIFF] = {
+                { 1, 95416 }, -- Sky Golem
+                { 2, 82453 }, -- Jeweled Onyx Panther
+                { 3, 87251 }, -- Geosynchronous World Spinner
+                { 4, 87250 }, -- Depleted-Kyparium Rocket
+                { 5, 83087 }, -- Ruby Panther
+                { 6, 83088 }, -- Jade Panther
+                { 7, 83089 }, -- Sunstone Panther
+                { 8, 83090 }, -- Sapphire Panther
+            }
+        },
+        {
+            name = ALIL["Achievements"],
+            TableType = AC_ITTYPE,
+            [NORMAL_DIFF] = {
+                { 1, [ATLASLOOT_IT_ALLIANCE] = 93385, 7928, [ATLASLOOT_IT_HORDE] = 93386, 7929 },
+                { 2, [ATLASLOOT_IT_ALLIANCE] = 98259, 8304, [ATLASLOOT_IT_HORDE] = 98104, 8302 },
+                { 3, [ATLASLOOT_IT_ALLIANCE] = 89785, 6828, [ATLASLOOT_IT_HORDE] = 81559, 6827 },
+                { 4, [ATLASLOOT_IT_ALLIANCE] = 91802, 7860, [ATLASLOOT_IT_HORDE] = 91802, 7862 },
+                { 5,  104246, 8398 }, -- Reins of the Kor'kron War Wolf
+                { 6,  85666, 6682 }, -- Reins of the Thundering Jade Cloud Serpent
+                { 7,  87773, 6932 }, -- Reins of the Heavenly Crimson Cloud Serpent
+                { 8,  87769, 6927 }, -- Reins of the Crimson Cloud Serpent
+                { 9,  93662, 8124 }, -- Reins of the Armored Skyscreamer
+                { 10, 104208, 8454 }, -- Reins of Galakras
+                { 11, 98618, 8345 }, -- Reins of Galakras
             }
         },
     }
