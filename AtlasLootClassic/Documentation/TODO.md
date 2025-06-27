@@ -27,6 +27,11 @@
     - [ ] Tier sets (from Collections module)
 - [ ] Clean up rest of Factions module
 - [ ] Add item sets data (Data/ItemSet.lua)
+    - [x] T14
+    - [ ] T15
+    - [ ] T16
+    - [ ] PvP
+    - [ ] Misc
 - [ ] Add tokens data (Data/Token.lua)
 - [ ] Add vendor price data (Data/VendorPrice.lua)
 - [ ] Add recipe data (Data/Recipe.lua)
