@@ -20,6 +20,7 @@ local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
+local CELESTIAL_DIFF = data:AddDifficulty(AL["Celestial"], nil, nil, nil, true)
 local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
@@ -45,6 +46,44 @@ local WHITE = "|cffffffff%s|r"
 
 -- format
 local BONUS_LOOT_SPLIT = "%s - %s"
+
+local T14_SET = {
+    name = format(AL["Tier %s Sets"], "14"),
+    ExtraList = true,
+    TableType = SET_ITTYPE,
+    IgnoreAsSource = true,
+    [CELESTIAL_DIFF] = {
+        {1, 50001123 }, -- Death Knight DPS
+        {2, 50001124 }, -- Death Knight Tank
+        {4, 50001125 }, -- Druid Resto
+        {5, 50001126 }, -- Druid Balance
+        {6, 50001127 }, -- Druid Feral
+        {7, 50001128 }, -- Druid Guardian
+        {9, 50001129 }, -- Hunter
+        {11, 50001130 }, -- Mage
+        {13, 50001131 }, -- Monk Mistweaver
+        {14, 50001132 }, -- Monk Windwalker
+        {15, 50001133 }, -- Monk Brewmaster
+        {16, 50001134 }, -- Paladin Holy
+        {17, 50001135 }, -- Paladin DPS
+        {18, 50001136 }, -- Paladin Prot
+        {20, 50001137 }, -- Priest Holy
+        {21, 50001138 }, -- Priest Shadow
+        {23, 50001139 }, -- Rogue
+        {25, 50001140 }, -- Shaman Elemental
+        {26, 50001141 }, -- Shaman Resto
+        {27, 50001142 }, -- Shaman Enhance
+        {29, 50001143 }, -- Warlock
+        {31, 50001144 }, -- Warrior Dps
+        {32, 50001145 }, -- Warrior Tank
+        },
+    [NORMAL_DIFF] = {
+
+        },
+    [HEROIC_DIFF] = {
+
+    },
+}
 
 local MOP_DUNGEON_HERO_AC_TABLE = {	--[Pandaria Dungeon Hero]
     name = select(2, GetAchievementInfo(6925)),
@@ -1603,6 +1642,7 @@ data["WorldBossesMoP"] = {
                 { 926, "ac8535" },
             },
         },
+        T14_SET,
     }
 }
 
@@ -2083,15 +2123,7 @@ data["HeartofFear"] = {
             },
         },
         PATTERNS_ILVL_496,
-        {	--Tier 14 Sets
-            name = format(AL["Tier %d Sets"], 14),
-            ExtraList = true,
-            [NORMAL_DIFF] = {
-                { 1, 86192 },
-            }
-            --[NORMAL_DIFF] = "AtlasLoot_Collections:TIERSETS:14:n",
-            --[HEROIC_DIFF] = "AtlasLoot_Collections:TIERSETS:14:h",
-        },
+        T14_SET,
         MOP_RAID1_AC_TABLE,
     }
 }
@@ -2282,15 +2314,7 @@ data["TerraceofEndlessSpring"] = {
             },
         },
         PATTERNS_ILVL_496,
-        {	--Tier 14 Sets
-            name = format(AL["Tier %d Sets"], 14),
-            ExtraList = true,
-            [NORMAL_DIFF] = {
-                { 1, 86192 },
-            }
-            --[NORMAL_DIFF] = "AtlasLoot_Collections:TIERSETS:14:n",
-            --[HEROIC_DIFF] = "AtlasLoot_Collections:TIERSETS:14:h",
-        },
+        T14_SET,
         MOP_RAID1_AC_TABLE,
     }
 }
