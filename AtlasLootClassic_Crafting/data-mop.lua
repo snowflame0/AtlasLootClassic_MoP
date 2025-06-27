@@ -56,88 +56,72 @@ data["AlchemyMoP"] = {
         {
             name = AL["Flasks"],
             [NORMAL_DIFF] = {
-                { 1, 80721 },	-- Flask of the Winds
-                { 2, 80723 },	-- Flask of the Frost Wyrm
-                { 3, 80720 },	-- Flask of the Draconic Mind
-                { 4, 94162 },	-- Flask of Flowing Water
-                { 5, 80719 },	-- Flask of Steelskin
-                { 16, 80724 }, -- Flask of Enhancement
-                { 18, 92688 }, -- Big Cauldron of Battle
-                { 19, 92643 }, -- Cauldron of Battle
-
+                { 1, 114772 }, -- Flask of Falling Leaves
+                { 2, 114769 }, -- Flask of Spring Blossoms
+                { 3, 114770 }, -- Flask of the Earth
+                { 4, 114771 }, -- Flask of the Warm Sun
+                { 5, 114773 }, -- Flask of Winter's Bites
+                { 16, 114786 }, -- Alchemist's Flask
             },
         },
         {
             name = AL["Transmutes"],
             [NORMAL_DIFF] = {
-                { 1, 80245 }, -- Transmute: Inferno Ruby
-                { 2, 80247 }, -- Transmute: Amberjewel
-                { 3, 80246 }, -- Transmute: Ocean Sapphire
-                { 4, 80248 }, -- Transmute: Demonseye
-                { 5, 80250 }, -- Transmute: Ember Topaz
-                { 6, 80251 }, -- Transmute: Dream Emerald
-                { 8, 80237 }, -- Transmute: Shadowspirit Diamond
-                { 16, 80243 }, -- Transmute: Truegold
-                { 17, 80244 }, -- Transmute: Pyrium Bar
-                { 19, 78866 }, -- Transmute: Living Elements
+                { 1, 114784 }, -- Transmute: Primordial Ruby
+                { 2, 114778 }, -- Transmute: Sun's Radiance
+                { 3, 114766 }, -- Transmute: River's Heart
+                { 4, 114776 }, -- Transmute: Vermilion Onyx
+                { 5, 114777 }, -- Transmute: Imperial Amethyst
+                { 6, 114767 }, -- Transmute: Wild Jade
+                { 8, 114781 }, -- Transmute: Primal Diamond
+                { 16, 114780 }, -- Transmute: Living Steel
+                { 17, 130326 }, -- Riddle of Steel
+                { 18, 114783 }, -- Transmute: Trillium Bar
             },
         },
         {
             name = AL["Healing/Mana Potions"],
             [NORMAL_DIFF] = {
-                { 1, 80498 }, -- Mythical Healing Potion
-                { 2, 80494 }, -- Mythical Mana Potion
-                { 4, 80490 }, -- Mighty Rejuvenation Potion
-                { 16, 80487 }, -- Mysterious Potion
-                { 18, 80482 }, -- Potion of Concentration
-                { 20, 93935 }, -- Draught of War
+                { 1, 114752 }, -- Master Healing Potion
+                { 2, 114775 }, -- Master Mana Potion
+                { 3, 114782 }, -- Potion of Focus
+                { 16, 114751 }, -- Alchemist's Rejuvenation
             },
         },
         {
             name = AL["Util Potions"],
             [NORMAL_DIFF] = {
-                { 1, 80496 }, -- Golemblood Potion
-                { 2, 80495 }, -- Potion of the Tol'vir
-                { 3, 80481 }, -- Volcanic Potion
-                { 4, 80478 }, -- Earthen Potion
-                { 5, 80479 }, -- Deathblood Venom
+                { 1, 114760 }, -- Potion of Mogu Power
+                { 2, 114757 }, -- Potion of the Jade Serpent
+                { 3, 114753 }, -- Potion of the Mountains
+                { 4, 114765 }, -- Virmen's Bite
             },
         },
         {
             name = AL["Elixirs"],
             [NORMAL_DIFF] = {
-                { 1, 80497 }, -- Elixir of the Master
-                { 2, 80493 }, -- Elixir of Mighty Speed
-                { 3, 80491 }, -- Elixir of Impossible Accuracy
-                { 4, 80484 }, -- Elixir of the Cobra
-                { 5, 80480 }, -- Elixir of the Naga
-                { 6, 80477 }, -- Ghost Elixir
-                { 16, 80492 }, -- Prismatic Elixir
-                { 17, 80488 }, -- Elixir of Deep Earth
+                { 1, 114764 }, -- Elixir of Peace
+                { 2, 114762 }, -- Elixir of Perfection
+                { 3, 114759 }, -- Elixir of the Rapids
+                { 4, 114756 }, -- Elixir of Weaponry
+                { 5, 114754 }, -- Mad Hozen Elixir
+                { 6, 114758 }, -- Monk's Elixir
+                { 16, 114763 }, -- Elixir of Mirrors
+                { 17, 114755 }, -- Mantid Elixir
             },
         },
         {
             name = AL["Stones"],
             [NORMAL_DIFF] = {
-                { 1, 80508 }, -- Lifebound Alchemist Stone
-                { 2, 96253 }, -- Quicksilver Alchemist Stone
-                { 3, 96254 }, -- Vibrant Alchemist Stone
-                { 4, 96252 }, -- Volatile Alchemist Stone
-            },
-        },
-        {
-            name = AL["Mount"],
-            [NORMAL_DIFF] = {
-                { 1, 93328 }, -- Vial of the Sands
+                { 1, 136197 }, -- Zen Alchemist Stone
             },
         },
         {
             name = AL["Misc"],
             [NORMAL_DIFF] = {
-                { 1, 80725 }, -- Potion of Deepholm
-                { 2, 80726 }, -- Potion of Treasure Finding
-                { 3, 80269 }, -- Potion of Illusion
-                { 16, 80486 }, -- Deepstone Oil
+                { 1, 114774 }, -- Darkwater Potion
+                { 2, 114779 }, -- Potion of Luck
+                { 16, 114761 }, -- Desecrated Oil
             },
         }
     },

@@ -613,6 +613,13 @@ data["MountsMoP"] = {
     gameVersion = AtlasLoot.MOP_VERSION_NUM,
     CorrespondingFields = private.MOUNTS,
      items = {
+        -- TODO: Add missing mounts, more vendor ones, and rep ones
+        {
+            name = AL["Vendor"],
+            [NORMAL_DIFF] = {
+                {1, 84101} -- Reins of the Grand Expedition Yak
+            },
+        },
         {
             name = AL["Drops"], -- Drops
             [NORMAL_DIFF] = {
@@ -653,7 +660,7 @@ data["MountsMoP"] = {
                 { 8,  87769, 6927 }, -- Reins of the Crimson Cloud Serpent
                 { 9,  93662, 8124 }, -- Reins of the Armored Skyscreamer
                 { 10, 104208, 8454 }, -- Reins of Galakras
-                { 11, 98618, 8345 }, -- Reins of Galakras
+                { 11, 98618, 8345 }, -- Hearthsteed
             }
         },
     }

@@ -45,7 +45,7 @@ AL["Lord Jaraxxus"] = "Lord Jaraxxus"
 AL["Lord Marrowgar"] = "Lord Marrowgar"
 AL["Malygos"] = "Malygos"
 AL["Mimiron"] = "Mimiron"
-AL["Nexus"]
+AL["Nexus"] = "Nexus"
 AL["One Drake Left"] = "One Drake Left"
 AL["Professor Putricide"] = "Professor Putricide"
 AL["Protection"] = "Protection"
