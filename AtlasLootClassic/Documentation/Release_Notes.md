@@ -1,4 +1,4 @@
-# v5.0.0-beta (July 1, 2025)
+# v5.0.0-beta1 (July 1, 2025)
 - Initial MoP Pre-patch Support
 - Lots of things still broken or not populated
 - Dungeons and Raids mostly there
