@@ -977,21 +977,23 @@ data["WorldEpicsWrath"] = {
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     CorrespondingFields = private.WORLD_EPICS,
-    items = {{
-        name = AL["World Epics"],
-        [NORMAL_DIFF] = {
-        {1, 44309}, -- Sash of Jordan
-        {2, 44312}, -- Wapach's Spaulders of Solidarity
-        {4, 44308}, -- Signet of Edward the Odd
-        {5, 37835}, -- Je'Tze's Bell
-        {16, 44310}, -- Namlak's Supernumerary Sticker
-        {17, 44311}, -- Avool's Sword of Jin
-        {18, 44313}, -- Zom's Crackling Bulwark
-        {20, 43575, nil, nil, C_Spell.GetSpellInfo(921)}, -- Reinforced Junkbox
-        {21, 43613}, -- The Dusk Blade
-        {22, 43611} -- Krol Cleaver
+    items = {
+        {
+            name = AL["World Epics"],
+            [NORMAL_DIFF] = {
+                {1, 44309}, -- Sash of Jordan
+                {2, 44312}, -- Wapach's Spaulders of Solidarity
+                {4, 44308}, -- Signet of Edward the Odd
+                {5, 37835}, -- Je'Tze's Bell
+                {16, 44310}, -- Namlak's Supernumerary Sticker
+                {17, 44311}, -- Avool's Sword of Jin
+                {18, 44313}, -- Zom's Crackling Bulwark
+                {20, 43575}, -- Reinforced Junkbox
+                {22, 43613}, -- The Dusk Blade
+                {23, 43611} -- Krol Cleaver
+            }
         }
-    }}
+    }
 }
 
 data["MountsWrath"] = {
@@ -999,6 +1001,7 @@ data["MountsWrath"] = {
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     CorrespondingFields = private.MOUNTS,
     items = {{
         name = AL["Vendors"],
@@ -1208,6 +1211,7 @@ data["TabardsWrath"] = {
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     CorrespondingFields = private.TABARDS,
     items = {{
         name = AL["Factions"],
@@ -1261,8 +1265,8 @@ data["LegendarysWrath"] = {
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
-    CorrespondingFields = private.LEGENDARYS,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
+    CorrespondingFields = private.LEGENDARYS,
     items = {{
         name = AL["Legendaries"],
         [NORMAL_DIFF] = {
@@ -1273,11 +1277,12 @@ data["LegendarysWrath"] = {
 }
 
 data["HeirloomWrath"] = {
-    name = format(BOA_QUALITY, AL["Heirloom"]),
+    name = format(BOA_QUALITY, ALIL["Heirloom"]),
     ContentType = COLLECTIONS_CONTENT,
     LoadDifficulty = LOAD_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
+    CorrespondingFields = private.HEIRLOOM,
     items = {{
         name = ALIL["Armor"],
         [NORMAL_DIFF] = {
@@ -1303,7 +1308,7 @@ data["HeirloomWrath"] = {
         }
     }, {
         name = ALIL["Weapon"],
-        [NORMAL_ITTYPE] = {{1, 44096}, -- Battleworn Thrash Blade
+        [NORMAL_DIFF] = {{1, 44096}, -- Battleworn Thrash Blade
         {2, 48716}, -- Venerable Mass of McGowan
         {3, 42944}, -- Balanced Heartseeker
         {4, 44091}, -- Sharpened Scarlet Kris
@@ -1321,16 +1326,16 @@ data["HeirloomWrath"] = {
         }
     }, {
         name = ALIL["Trinket"],
-        [NORMAL_ITTYPE] = {{1, 42992}, -- Discerning Eye of the Beast
+        [NORMAL_DIFF] = {{1, 42992}, -- Discerning Eye of the Beast
         {2, 42991} -- Swift Hand of Justice
         }
     }, {
         name = ALIL["Finger"],
-        [NORMAL_ITTYPE] = {{1, 50255} -- Dread Pirate Ring
+        [NORMAL_DIFF] = {{1, 50255} -- Dread Pirate Ring
         }
     }, {
         name = AL["Misc"],
-        [NORMAL_ITTYPE] = {{1, 49177} -- Tome of Cold Weather Flight
+        [NORMAL_DIFF] = {{1, 49177} -- Tome of Cold Weather Flight
         }
     }}
 }
@@ -1450,56 +1455,63 @@ data["BrewfestWrath"] = {
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     CorrespondingFields = private.BREWFEST,
-    items = {{ -- Brewfest
+    items = {
+        {
         name = AL["Brewfest"],
-        [NORMAL_DIFF] = {{1, 33968}, -- Blue Brewfest Hat
-        {2, 33864}, -- Brown Brewfest Hat
-        {3, 33967}, -- Green Brewfest Hat
-        {4, 33969}, -- Purple Brewfest Hat
-        {5, 33863}, -- Brewfest Dress
-        {6, 33862}, -- Brewfest Regalia
-        {7, 33966}, -- Brewfest Slippers
-        {8, 33868}, -- Brewfest Boots
-        {10, 33047}, -- Belbi's Eyesight Enhancing Romance Goggles (Alliance)
-        {11, 34008}, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
-        {13, 33927}, -- Brewfest Pony Keg
-        {15, 37829}, -- Brewfest Prize Token
-        {16, 32233}, -- Wolpertinger's Tankard
-        {18, 37599}, -- "Brew of the Month" Club Membership Form
-        {20, 37750}, -- Fresh Brewfest Hops
-        {21, 39477}, -- Fresh Dwarven Brewfest Hops
-        {22, 39476}, -- Fresh Goblin Brewfest Hops
-        {23, 37816} -- Preserved Brewfest Hops
+          [NORMAL_DIFF] = {
+                {1, 37829}, -- Brewfest Prize Token
+                {3, 33968}, -- Blue Brewfest Hat
+                {4, 33864}, -- Brown Brewfest Hat
+                {5, 33967}, -- Green Brewfest Hat
+                {6, 33969}, -- Purple Brewfest Hat
+                {7, 33863}, -- Brewfest Dress
+                {8, 33862}, -- Brewfest Regalia
+                {9, 33966}, -- Brewfest Slippers
+                {10, 33868}, -- Brewfest Boots
+                {12, 33047}, -- Belbi's Eyesight Enhancing Romance Goggles (Alliance)
+                {13, 34008}, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
+                {15, 33927}, -- Brewfest Pony Keg
+                {17, 32233}, -- Wolpertinger's Tankard
+                {19, 37599}, -- "Brew of the Month" Club Membership Form
+                {21, 37750}, -- Fresh Brewfest Hops
+                {22, 39477}, -- Fresh Dwarven Brewfest Hops
+                {23, 39476}, -- Fresh Goblin Brewfest Hops
+                {24, 37816} -- Preserved Brewfest Hops
+            }
+        },
+        {
+            name = AL["Food"],
+            [NORMAL_DIFF] = {
+                {1, 33043}, -- The Essential Brewfest Pretzel
+                {3, 34017}, -- Small Step Brew
+                {4, 34018}, -- long Stride Brew
+                {5, 34019}, -- Path of Brew
+                {6, 34020}, -- Jungle River Water
+                {7, 34021}, -- Brewdoo Magic
+                {8, 34022}, -- Stout Shrunken Head
+                {9, 33034}, -- Gordok Grog
+                {10, 33035}, -- Ogre Mead
+                {11, 33036} -- Mudder's Milk
+            }
+        },
+        {
+            name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
+            [NORMAL_DIFF] = {
+                {1, 49116}, -- Bitter Balebrew Charm
+                {2, 49118}, -- Bubbling Brightbrew Charm
+                {3, 49074}, -- Coren's Chromium Coaster
+                {4, 49076}, -- Mithril Pocketwatch
+                {5, 49078}, -- Ancient Pickled Egg
+                {6, 49080}, -- Brawler's Souvenir
+                {8, 49120}, -- Direbrew's Bloody Shanker
+                {9, 48663}, -- Tankard O' Terror
+                {16, 33977}, -- Swift Brewfest Ram
+                {17, 37828}, -- Great Brewfest Kodo
+                {19, 37863}, -- Direbrew's Remote
+                {21, 38280} -- Direbrew's Dire Brew
+            }
         }
-    }, {
-        name = AL["Food"],
-        [NORMAL_DIFF] = {{1, 33043}, -- The Essential Brewfest Pretzel
-        {3, 34017}, -- Small Step Brew
-        {4, 34018}, -- long Stride Brew
-        {5, 34019}, -- Path of Brew
-        {6, 34020}, -- Jungle River Water
-        {7, 34021}, -- Brewdoo Magic
-        {8, 34022}, -- Stout Shrunken Head
-        {9, 33034}, -- Gordok Grog
-        {10, 33035}, -- Ogre Mead
-        {11, 33036} -- Mudder's Milk
-        }
-    }, {
-        name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
-        [NORMAL_DIFF] = {{1, 49116}, -- Bitter Balebrew Charm
-        {2, 49118}, -- Bubbling Brightbrew Charm
-        {3, 49074}, -- Coren's Chromium Coaster
-        {4, 49076}, -- Mithril Pocketwatch
-        {5, 49078}, -- Ancient Pickled Egg
-        {6, 49080}, -- Brawler's Souvenir
-        {8, 49120}, -- Direbrew's Bloody Shanker
-        {9, 48663}, -- Tankard O' Terror
-        {16, 33977}, -- Swift Brewfest Ram
-        {17, 37828}, -- Great Brewfest Kodo
-        {19, 37863}, -- Direbrew's Remote
-        {21, 38280} -- Direbrew's Dire Brew
-        }
-    }}
+    }
 }
 
 data["HalloweenWrath"] = {
@@ -1570,24 +1582,27 @@ data["HalloweenWrath"] = {
     }}
 }
 
-data["DayoftheDead"] = {
+data["DayoftheDeadWrath"] = {
     name = AL["Day of the Dead"],
     ContentType = WORLD_EVENT_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
     CorrespondingFields = private.DAY_OF_THE_DEAD,
-    items = {{ -- DayoftheDead
+    items = {
+        { -- DayoftheDead
         name = AL["Day of the Dead"],
-        [NORMAL_DIFF] = {{1, 46690}, -- Candy Skull
-        {2, 46710}, -- Recipe: Bread of the Dead
-        {3, 46711}, -- Spirit Candle
-        {4, 46718}, -- Orange Marigold
-        {5, 46831}, -- Macabre Marionette
-        {6, 46860}, -- Whimsical Skull Mask
-        {7, 46861} -- Bouquet of Orange Marigolds
+            [NORMAL_DIFF] = {
+                {1, 46690}, -- Candy Skull
+                {2, 46710}, -- Recipe: Bread of the Dead
+                {3, 46711}, -- Spirit Candle
+                {4, 46718}, -- Orange Marigold
+                {5, 46831}, -- Macabre Marionette
+                {6, 46860}, -- Whimsical Skull Mask
+                {7, 46861} -- Bouquet of Orange Marigolds
+            }
         }
-    }}
+    }
 }
 
 data["PilgrimsBounty"] = {

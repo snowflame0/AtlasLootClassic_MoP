@@ -2,7 +2,7 @@
 
 [![Package](https://github.com/snowflame0/AtlasLootClassic_Cata/actions/workflows/build.yml/badge.svg)](https://github.com/snowflame0/AtlasLootClassic_Cata/actions/workflows/build.yml)
 
-### AtlasLootClassic MoP is a continuation of AtlasLootClassic Cata that was a forked and revised version of the AtlasLootClassic. It allows for various loot tables to be browsed in-game.
+### AtlasLootClassic MoP is a continuation of AtlasLootClassic Cata that was a forked and revised version of AtlasLootClassic. It allows for various loot tables to be browsed in-game.
 
 #### If you appreciate the work and want to help support my broke ass while I keep working on this, please feel free to buy me a coffee @ https://buymeacoffee.com/snowflame0
 
@@ -11,10 +11,10 @@
 - Crafting module showing all craftable items
 - Factions module showing all Faction item rewards
 - Collections module showing item sets, world drops, mounts, and etc.
-- PvP module showing all PvP items (only S9 for Cata Right now)
+- PvP module showing all PvP items
 - Tooltip integration showing where items come from or currency cost
 - Favorites list (Credits to @Lag, mostly instact as it was :smiley:)
-- Localizations should be mostly intact, new bosses might need translations. Contribute on Curseforge if you'd like
+- Localizations should be mostly intact, new bosses might need translations. Contribute on Curseforge please!
 
 ## Usage
 - /al options or Shift + Left Click minimap button for options

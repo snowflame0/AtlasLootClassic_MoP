@@ -1,10 +1,10 @@
-﻿## Interface: 40402
+﻿## Interface: 50500
 ## Author: Snowflame0
 ## Version: @project-version@
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
 
-## Title: AtlasLootClassic |cFFFF5733Cata|r |cFF0099FF[Dungeons and Raids]|r
+## Title: AtlasLootClassic |cFF33FFBDMoP|r |cFF0099FF[Dungeons and Raids]|r
 ## Notes: AtlasLoot Dungeons and Raids loot tables
 
 ## Title-deDE: @localization(locale="deDE", key="Title-DaR", namespace="ToC")@
@@ -39,4 +39,5 @@ data.lua
 data-tbc.lua
 data-wrath.lua
 data-cata.lua
+data-mop.lua
 droprate.lua

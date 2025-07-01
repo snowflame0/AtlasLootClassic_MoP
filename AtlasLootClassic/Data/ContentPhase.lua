@@ -10,7 +10,8 @@ local ACTIVE_PHASE_LIST = {
     --[AtlasLoot.CLASSIC_VERSION_NUM] = 6, -- classic
     --[AtlasLoot.BC_VERSION_NUM]      = 5, -- bc
     --[AtlasLoot.WRATH_VERSION_NUM]   = 5, -- wrath
-    [AtlasLoot.CATA_VERSION_NUM]    = 4, -- cata
+    --[AtlasLoot.CATA_VERSION_NUM]    = 4, -- cata
+    [AtlasLoot.MOP_VERSION_NUM]     = 1 -- MoP
 }
 local ACTIVE_PHASE = ACTIVE_PHASE_LIST[AtlasLoot:GetGameVersion()] or ACTIVE_PHASE_LIST[0]
 
@@ -560,6 +561,11 @@ if AtlasLoot:GameVersion_EQ(AtlasLoot.CATA_VERSION_NUM) then
         [71924] = 4,
         [71892] = 4,
         --]]
+    }
+end
+
+if AtlasLoot:GameVersion_EQ(AtlasLoot.MOP_VERSION_NUM) then
+    PHASE_ITEMS = {
     }
 end
 
