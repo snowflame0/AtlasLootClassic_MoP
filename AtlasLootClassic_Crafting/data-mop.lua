@@ -1822,7 +1822,6 @@ data["HerbalismMoP"] = {
                 { 3,  72235 }, -- Silkweed
                 { 4,  79010 }, -- Snow Lily
                 { 5,  79011 }, -- Fool's Cap
-                { 6,  52983 }, -- Cinderbloom
                 { 7,  72238 }, -- Golden Lotus
             }
         },

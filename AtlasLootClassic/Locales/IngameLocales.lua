@@ -278,7 +278,7 @@ local IngameLocales = {
 	["WARLOCK"] 	= AtlasLootGLOBALetClassName("WARLOCK"),
 	["WARRIOR"] 	= AtlasLootGLOBALetClassName("WARRIOR"),
 	["DEATHKNIGHT"] = AtlasLootGLOBALetClassName("DEATHKNIGHT"),
-
+	["MONK"] 		= AtlasLootGLOBALetClassName("MONK"),
 
 	-- ######################################################################
 	-- Item Quality
