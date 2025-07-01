@@ -103,3 +103,4 @@ Addons\Addons.lua
 Addons\Sources.lua
 Addons\Favourites.lua
 Addons\Favourites_GUI.lua
+Addons\News.lua
