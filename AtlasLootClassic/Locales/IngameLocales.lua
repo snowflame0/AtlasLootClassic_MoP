@@ -9,7 +9,7 @@ local rawget = _G.rawget
 
 -- WoW
 -- TODO: Fix name of new function bindings
-local GetSpellInfo = C_Spell.GetSpellName
+local GetSpellName = C_Spell.GetSpellName
 local GetItemClassInfo, GetItemSubClassInfo = C_Item.GetItemClassInfo, C_Item.GetItemSubClassInfo
 
 -- ----------------------------------------------------------------------------
@@ -73,30 +73,38 @@ local IngameLocales = {
 	-- Professions
 	-- ######################################################################
 	["Professions"] = GLOBAL["TRADE_SKILLS"],
-	["First Aid"] = GetSpellInfo(3273),
-	["Blacksmithing"] = GetSpellInfo(2018),
-	["Leatherworking"] = GetSpellInfo(2108),
-	["Alchemy"] = GetSpellInfo(2259),
-	["Herbalism"] = GetSpellInfo(2366),
-	["Cooking"] = GetSpellInfo(2550),
-	["Mining"] = GetSpellInfo(2575),
-	["Tailoring"] = GetSpellInfo(3908),
-	["Engineering"] = GetSpellInfo(4036),
-	["Enchanting"] = GetSpellInfo(7411),
-	["Fishing"] = GetSpellInfo(7732),
-	["Skinning"] = GetSpellInfo(8618),
-	["Poisons"] = GetSpellInfo(2842),
-	["Jewelcrafting"] = GetSpellInfo(353970) or UNKNOWN,
-	["Inscription"] = GetSpellInfo(45357) or UNKNOWN,
-	["Archaeology"] = GetSpellInfo(78670) or UNKNOWN,
+	["First Aid"] = GetSpellName(3273),
+	["Blacksmithing"] = GetSpellName(2018),
+	["Leatherworking"] = GetSpellName(2108),
+	["Alchemy"] = GetSpellName(2259),
+	["Herbalism"] = GetSpellName(2366),
+	["Cooking"] = GetSpellName(2550),
+	["Mining"] = GetSpellName(2575),
+	["Tailoring"] = GetSpellName(3908),
+	["Engineering"] = GetSpellName(4036),
+	["Enchanting"] = GetSpellName(7411),
+	["Fishing"] = GetSpellName(7732),
+	["Skinning"] = GetSpellName(8618),
+	["Poisons"] = GetSpellName(2842),
+	["Jewelcrafting"] = GetSpellName(353970) or UNKNOWN,
+	["Inscription"] = GetSpellName(45357) or UNKNOWN,
+	["Archaeology"] = GetSpellName(78670) or UNKNOWN,
 
-	-- sub Professions
-	["Armorsmith"] = GetSpellInfo(9788),
-	["Weaponsmith"] = GetSpellInfo(9787),
-	["Hammersmith"] = GetSpellInfo(17041),
-	["Axesmith"] = GetSpellInfo(17041),
-	["Swordsmith"] = GetSpellInfo(17039),
-	["Gnomish Engineer"] = GetSpellInfo(20220),
+	-- Sub Professions
+	["Armorsmith"] = GetSpellName(9788),
+	["Weaponsmith"] = GetSpellName(9787),
+	["Hammersmith"] = GetSpellName(17041),
+	["Axesmith"] = GetSpellName(17041),
+	["Swordsmith"] = GetSpellName(17039),
+	["Gnomish Engineer"] = GetSpellName(20220),
+
+	-- MoP Cooking
+	["Way of the Brew"] = GetSpellName(125589),
+	["Way of the Grill"] = GetSpellName(124694),
+	["Way of the Oven"] = GetSpellName(125588),
+	["Way of the Pot"] = GetSpellName(125586),
+	["Way of the Steamer"] = GetSpellName(125587),
+	["Way of the Wok"] = GetSpellName(125584),
 
 	-- glyphs
 	["Minor Glyph"] = GLOBAL["MINOR_GLYPH"],
