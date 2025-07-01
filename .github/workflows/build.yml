@@ -3,7 +3,7 @@ name: Package and release
 on:
   push:
     tags:
-      - v4.*
+      - v5.*
       
 jobs:
   build:
