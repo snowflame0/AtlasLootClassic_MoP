@@ -1,8 +1,8 @@
-# AtlasLootClassic Cata
+# AtlasLootClassic MoP
 
 [![Package](https://github.com/snowflame0/AtlasLootClassic_Cata/actions/workflows/build.yml/badge.svg)](https://github.com/snowflame0/AtlasLootClassic_Cata/actions/workflows/build.yml)
 
-### AtlasLootClassic Cata is a forked and revised version of the AtlasLootClassic updated for Cataclysm Classic. It allows for various loot tables to be browsed in-game.
+### AtlasLootClassic MoP is a continuation of AtlasLootClassic Cata that was a forked and revised version of the AtlasLootClassic. It allows for various loot tables to be browsed in-game.
 
 #### If you appreciate the work and want to help support my broke ass while I keep working on this, please feel free to buy me a coffee @ https://buymeacoffee.com/snowflame0
 
