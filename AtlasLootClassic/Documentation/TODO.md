@@ -44,5 +44,5 @@
 - [ ] Add update changes screen?
 
 # External Stuff
-- [ ] Rename addon for MoP
+- [x] Rename addon for MoP
 - [ ] Update CurseForge descriptions/icon

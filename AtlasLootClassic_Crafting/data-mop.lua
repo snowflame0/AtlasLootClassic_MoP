@@ -1793,12 +1793,15 @@ data["MiningMoP"] = {
     CorrespondingFields = private.MINING_LINK,
     items = {
         {
-            name = AL["Smelting"],
+            name = AL["Zen Master"],
             [NORMAL_DIFF] = {
-                { 1, 74529 }, -- Smelt Pyrite
-                { 2, 74537 }, -- Smelt Hardened Elementium
-                { 3, 74530 }, -- Smelt Elementium
-                { 4, 84038 }, -- Smelt Obsidium
+                { 1, 102165 }, -- Smelt Ghost Iron
+                { 2, 102167 }, -- Smelt Trillium
+                { 16, "i72092" }, -- Ghost Iron Ore
+                { 17, "i72093" }, -- Kyparite
+                { 19, "i72094" }, -- Black Trillium Ore
+                { 18, "i72103" }, -- White Trillium Ore
+
             }
         },
     }
@@ -1812,16 +1815,15 @@ data["HerbalismMoP"] = {
     CorrespondingFields = private.HERBALISM_LINK,
     items = {
         {
-            name = AL["Illustrious Grand Master"],
+            name = AL["Zen Master"],
             [NORMAL_DIFF] = {
-                { 1,  52987 }, -- Twilight Jasmine
-                { 2,  52988 }, -- Whiptail
-                { 3,  52986 }, -- Heartblossom
-                { 4,  52984 }, -- Stormvine
-                { 5,  52985 }, -- Azshara's Veil
+                { 1,  72234 }, -- Green Tea Leaf
+                { 2,  72237 }, -- Rain Poppy
+                { 3,  72235 }, -- Silkweed
+                { 4,  79010 }, -- Snow Lily
+                { 5,  79011 }, -- Fool's Cap
                 { 6,  52983 }, -- Cinderbloom
-                { 16,  52989 }, -- Deathspore Pod
-                { 18,  52329 }, -- Volatile Life
+                { 7,  72238 }, -- Golden Lotus
             }
         },
     }
@@ -1835,13 +1837,12 @@ data["SkinningMoP"] = {
     CorrespondingFields = private.SKINNING_LINK,
     items = {
         {
-            name = AL["Illustrious Grand Master"],
+            name = AL["Zen Master"],
             [NORMAL_DIFF] = {
-                { 1, 52976 }, -- Savage Leather
-                { 2, 52977 }, -- Savage Leather Scraps
-                { 16, 52982 }, -- Deepsea Scale
-                { 17, 52979 }, -- Blackened Dragonscale
-                { 19, 52980 }, -- Pristine Hide
+                { 1, 72162 }, -- Sha-Touched Leather
+                { 2, 72120 }, -- Mist-Touched Leather
+                { 4, 79101 }, -- Prismatic Scale
+                { 16, 72163 }, -- Magnificent Hide
             }
         },
     }
@@ -2080,10 +2081,9 @@ data["FirstAidMoP"] = {
         {
             name = ALIL["First Aid"],
             [NORMAL_DIFF] = {
-                { 1, 74558 },	-- Field Bandage: Dense Embersilk
-                { 2, 88893 },	-- Dense Embersilk Bandage
-                { 3, 74557 },	-- Heavy Embersilk Bandage
-                { 4, 74556 },	-- Embersilk Bandage
+                { 1, 102697 }, -- Windwool Bandage
+                { 2, 102698 }, -- Heavy Windwool Bandage
+                { 3, 102699 }, -- Heavy Windwool Bandage
             }
         },
     }
@@ -2099,15 +2099,15 @@ data["FishingMoP"] = {
         {
             name = AL["Fish"],
             [NORMAL_DIFF] = {
-                { 1, 53071 }, -- Algaefin Rockfish
-                { 2, 53066 }, -- Blackbelly Mudfish
-                { 3, 53072 }, -- Deepsea Sagefish
-                { 4, 53070 }, -- Fathom Eel
-                { 5, 53064 }, -- Highland Guppy
-                { 6, 53068 }, -- Lavascale Catfish
-                { 7, 53063 }, -- Mountain Trout
-                { 8, 53067 }, -- Striped Lurker
-                { 9, 53065 }, -- Albino Cavefish
+                { 1, 74866 }, -- Golden Carp
+                { 2, 74856 }, -- Jade Lungfish
+                { 3, 74857 }, -- Giant Mantis Shrimp
+                { 4, 74859 }, -- Emperor Salmon
+                { 5, 74860 }, -- Redbelly Mandarin
+                { 6, 74861 }, -- Tiger Gourami
+                { 7, 74863 }, -- Jewel Danio
+                { 8, 74864 }, -- Reef Octopus
+                { 9, 74865 }, -- Krasarang Paddlefish
             }
         },
     }
