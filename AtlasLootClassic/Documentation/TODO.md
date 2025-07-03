@@ -17,12 +17,13 @@
     - [ ] New heirlooms
     - [ ] New tabards
     - [ ] World event changes
+    - [ ] Glyphs
     - ???
 - [ ] Finish Crafting module
 - [ ] Finish Dungeons and Raids module
     - [ ] Add Celestial Dungeon stuff to Dungeons and Raids
     - [ ] Make world bosses data more compact/usable
-    - [ ] Add valor/justice/fragments drops
+    - [ ] Add valor/justice/fragments currency drops
     - [ ] Add source data to Data module (last step, with script)
     - [ ] Tier sets (from Collections module)
 - [ ] Clean up rest of Factions module
@@ -31,10 +32,12 @@
     - [ ] T15
     - [ ] T16
     - [ ] PvP
+    - [ ] Item to set data (script)
     - [ ] Misc
 - [ ] Add tokens data (Data/Token.lua)
 - [ ] Add vendor price data (Data/VendorPrice.lua)
-- [ ] Add recipe data (Data/Recipe.lua)
+- [x] Add recipe data (Data/Recipe.lua)
+    - [ ] Check recipes that don't exist to players, but in game files?
 - [ ] Add Content phase data (Data/ContentPhase.lua)
 - [ ] Add any missing locale strings
 
