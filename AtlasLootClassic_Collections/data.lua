@@ -27,6 +27,7 @@ local GetForVersion = AtlasLoot.ReturnForGameVersion
 --local RAIDFINDER_DIFF = data:AddDifficulty("Raid Finder", nil, nil, nil, true)
 
 local TWILIGHT_DIFF = data:AddDifficulty("Elemental Rune Twilight", nil, nil, nil, true)
+local CELESTIAL_DIFF = data:AddDifficulty(AL["Celestial"], nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 local RAID10_DIFF = data:AddDifficulty("10RAID")
@@ -663,6 +664,85 @@ data["TierSets"] = {
                 {27, 40021065 }, -- Paladin Prot
                 {28, 40021064 }, -- Paladin DPS
             },
+        }),
+        AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM, {
+            name = format(AL["Tier %s Sets"], "14"),
+            CoinTexture = "MOP",
+            [CELESTIAL_DIFF] = {
+                    {1, 50001143 }, -- Warlock
+                    {3, 50001137 }, -- Priest Holy
+                    {4, 50001138 }, -- Priest Shadow
+                    {6, 50001139 }, -- Rogue
+                    {8, 50001129 }, -- Hunter
+                    {10, 50001145 }, -- Warrior Tank
+                    {11, 50001144 }, -- Warrior Dps
+                    {13, 50001124 }, -- Death Knight Tank
+                    {14, 50001123 }, -- Death Knight DPS
+                    {16, 50001130 }, -- Mage
+                    {18, 50001125 }, -- Druid Resto
+                    {19, 50001126 }, -- Druid Balance
+                    {20, 50001127 }, -- Druid Feral
+                    {21, 50001128 }, -- Druid Guardian
+                    {23, 50001141 }, -- Shaman Resto
+                    {24, 50001140 }, -- Shaman Elemental
+                    {25, 50001142 }, -- Shaman Enhance
+                    {27, 50001134 }, -- Paladin Holy
+                    {28, 50001136 }, -- Paladin Prot
+                    {29, 50001135 }, -- Paladin DPS
+                    {101, 50001131 }, -- Monk Mistweaver
+                    {102, 50001133 }, -- Monk Brewmaster
+                    {103, 50001132 }, -- Monk Windwalker
+                },
+                [NORMAL_DIFF] = {
+                    {1, 50011143 }, -- Warlock
+                    {3, 50011137 }, -- Priest Holy
+                    {4, 50011138 }, -- Priest Shadow
+                    {6, 50011139 }, -- Rogue
+                    {8, 50011129 }, -- Hunter
+                    {10, 50011145 }, -- Warrior Tank
+                    {11, 50011144 }, -- Warrior Dps
+                    {13, 50011124 }, -- Death Knight Tan
+                    {14, 50011123 }, -- Death Knight DPS
+                    {16, 50011130 }, -- Mage
+                    {18, 50011125 }, -- Druid Resto
+                    {19, 50011126 }, -- Druid Balance
+                    {20, 50011127 }, -- Druid Feral
+                    {21, 50011128 }, -- Druid Guardian
+                    {23, 50011141 }, -- Shaman Resto
+                    {24, 50011140 }, -- Shaman Elemental
+                    {25, 50011142 }, -- Shaman Enhance
+                    {27, 50011134 }, -- Paladin Holy
+                    {28, 50011136 }, -- Paladin Prot
+                    {29, 50011135 }, -- Paladin DPS
+                    {101, 50011131 }, -- Monk Mistweaver
+                    {102, 50011133 }, -- Monk Brewmaster
+                    {103, 50011132 }, -- Monk Windwalker
+                },
+                [HEROIC_DIFF] = {
+                    {1, 50021143 }, -- Warlock
+                    {3, 50021137 }, -- Priest Holy
+                    {4, 50021138 }, -- Priest Shadow
+                    {6, 50021139 }, -- Rogue
+                    {8, 50021129 }, -- Hunter
+                    {10, 50021145 }, -- Warrior Tank
+                    {11, 50021144 }, -- Warrior Dps
+                    {13, 50021124 }, -- Death Knight Tan
+                    {14, 50021123 }, -- Death Knight DPS
+                    {16, 50021130 }, -- Mage
+                    {18, 50021125 }, -- Druid Resto
+                    {19, 50021126 }, -- Druid Balance
+                    {20, 50021127 }, -- Druid Feral
+                    {21, 50021128 }, -- Druid Guardian
+                    {23, 50021141 }, -- Shaman Resto
+                    {24, 50021140 }, -- Shaman Elemental
+                    {25, 50021142 }, -- Shaman Enhance
+                    {27, 50021134 }, -- Paladin Holy
+                    {28, 50021136 }, -- Paladin Prot
+                    {29, 50021135 }, -- Paladin DPS
+                    {101, 50021131 }, -- Monk Mistweaver
+                    {102, 50021133 }, -- Monk Brewmaster
+                    {103, 50021132 }, -- Monk Windwalker
+                },
         }),
     },
 }
