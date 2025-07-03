@@ -91,17 +91,17 @@ ALPrivate.BOX_BORDER_BACKDROP = {
 
 ALPrivate.CLASS_ICON_PATH = {
     -- class icons
-    WARRIOR 	= 	ICONS_PATH.."classicon_warrior",
-    PALADIN 	= 	ICONS_PATH.."classicon_paladin",
-    HUNTER 		= 	ICONS_PATH.."classicon_hunter",
-    ROGUE 		= 	ICONS_PATH.."classicon_rogue",
-    PRIEST 		= 	ICONS_PATH.."classicon_priest",
-    SHAMAN 		= 	ICONS_PATH.."classicon_shaman",
-    MAGE 		= 	ICONS_PATH.."classicon_mage",
-    WARLOCK 	= 	ICONS_PATH.."classicon_warlock",
-    DRUID 		= 	ICONS_PATH.."classicon_druid",
-    DEATHKNIGHT	= 	ICONS_PATH.."classicon_deathknight",
-    MONK        =   ICONS_PATH.."classicon_monk",
+    WARRIOR 	= 	"Interface\\Icons\\classicon_warrior",
+    PALADIN 	= 	"Interface\\Icons\\classicon_paladin",
+    HUNTER 		= 	"Interface\\Icons\\classicon_hunter",
+    ROGUE 		= 	"Interface\\Icons\\classicon_rogue",
+    PRIEST 		= 	"Interface\\Icons\\classicon_priest",
+    SHAMAN 		= 	"Interface\\Icons\\classicon_shaman",
+    MAGE 		= 	"Interface\\Icons\\classicon_mage",
+    WARLOCK 	= 	"Interface\\Icons\\classicon_warlock",
+    DRUID 		= 	"Interface\\Icons\\classicon_druid",
+    DEATHKNIGHT	= 	"Interface\\Icons\\classicon_deathknight",
+    MONK        =   "Interface\\Icons\\classicon_monk",
 }
 -- CLASS_WARRIOR
 ALPrivate.CLASS_ICON_PATH_ITEM_DB = {}
