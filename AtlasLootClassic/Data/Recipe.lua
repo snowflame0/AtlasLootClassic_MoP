@@ -13,7 +13,7 @@ local LOC_STRING2 = AL["|cff00ff00Left-Click:|r Show reagents."]
 local RECIPE_PROF_DEFAULT = 0
 local RECIPE_PROF_TEXT = Profession.PROFESSION_TEXT
 
-RECIPE = {
+local RECIPE = {
     [728] = {6,50,2543}, -- Recipe: Westfall Stew
     [2404] = {3,30,2156}, -- Deprecated Pattern: Light Winter Cloak
     [2405] = {3,35,2157}, -- Deprecated Pattern: Light Winter Boots
