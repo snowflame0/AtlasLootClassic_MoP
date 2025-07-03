@@ -18,8 +18,8 @@ local data = AtlasLoot.ItemDB:Add(addonname, 4, AtlasLoot.CATA_VERSION_NUM)
 
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
-local INFERNO_DIFF = data:AddDifficulty(AL["Elemental Rune Inferno"], "ERI", nil, nil, true)
-local TWILIGHT_DIFF = data:AddDifficulty(AL["Elemental Rune Twilight"], "ERT", nil, nil, true)
+local INFERNO_DIFF = data:AddDifficulty(AL["Elemental Rune Inferno"], AL["ERI"], nil, nil, true)
+local TWILIGHT_DIFF = data:AddDifficulty(AL["Elemental Rune Twilight"], AL["ERT"], nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)

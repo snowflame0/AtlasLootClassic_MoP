@@ -1,4 +1,6 @@
 AL["Akma'hat"] = "Akma'hat"
+AL["Elemental Rune Inferno"] = "Elemental Rune Inferno"
+AL["Elemental Rune Twilight"] = "Elemental Rune Twilight"
 AL["Firestone Vendor"] = "Firestone Vendor"
 AL["Geode"] = "Geode"
 AL["Julak-Doom"] = "Julak-Doom"

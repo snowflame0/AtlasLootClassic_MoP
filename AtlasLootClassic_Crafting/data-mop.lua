@@ -41,10 +41,8 @@ local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
 local PROF_CONTENT = data:AddContentType(ALIL["Professions"], ATLASLOOT_PRIMPROFESSION_COLOR)
 local PROF_GATH_CONTENT = data:AddContentType(ALIL["Gathering Professions"], ATLASLOOT_PRIMPROFESSION_COLOR)
 local PROF_SEC_CONTENT = data:AddContentType(AL["Secondary Professions"], ATLASLOOT_SECPROFESSION_COLOR)
-local PROF_CLASS_CONTENT = data:AddContentType(AL["Class Professions"], ATLASLOOT_CLASSPROFESSION_COLOR)
 
 local GEM_FORMAT1 = ALIL["Gems"].." - %s"
-local GEM_FORMAT2 = ALIL["Gems"].." - %s & %s"
 
 data["AlchemyMoP"] = {
     name = ALIL["Alchemy"],

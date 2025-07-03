@@ -18,6 +18,7 @@ local data = AtlasLoot.ItemDB:Add(addonname, 1, AtlasLoot.MOP_VERSION_NUM)
 
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
+local FLEXIBLE_DIFF = data:AddDifficulty(AL["Flexible"], nil, nil, nil, true)
 local CELESTIAL_DIFF = data:AddDifficulty(AL["Celestial"], nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
@@ -126,6 +127,195 @@ local T14_SET = {
         {101, 50021131 }, -- Monk Mistweaver
         {102, 50021133 }, -- Monk Brewmaster
         {103, 50021132 }, -- Monk Windwalker
+    },
+}
+
+local T15_SET = {
+    name = format(AL["Tier %s Sets"], "15"),
+    ExtraList = true,
+    TableType = SET_ITTYPE,
+    IgnoreAsSource = true,
+    [CELESTIAL_DIFF] = {
+        { 1, 50001171 }, -- Warlock
+        { 3, 50001165 }, -- Priest Holy
+        { 4, 50001166 }, -- Priest Shadow
+        { 6, 50001167 }, -- Rogue
+        { 8, 50001157 }, -- Hunter
+        { 10, 50001173 }, -- Warrior Tank
+        { 11, 50001172 }, -- Warrior Dps
+        { 13, 50001151 }, -- Death Knight Tank
+        { 14, 50001152 }, -- Death Knight DPS
+        { 16, 50001158 }, -- Mage
+        { 18, 50001154 }, -- Druid Resto
+        { 19, 50001156 }, -- Druid Guardian
+        { 20, 50001155 }, -- Druid Balance
+        { 21, 50001153 }, -- Druid Feral
+        { 23, 50001168 }, -- Shaman Resto
+        { 24, 50001170 }, -- Shaman Elemental
+        { 25, 50001169 }, -- Shaman Enhance
+        { 27, 50001163 }, -- Paladin Holy
+        { 28, 50001164 }, -- Paladin Prot
+        { 29, 50001162 }, -- Paladin DPS
+        { 101, 50001160 }, -- Monk Mistweaver
+        { 102, 50001161 }, -- Monk Brewmaster
+        { 103, 50001159 }, -- Monk Windwalker
+    },
+    [NORMAL_DIFF] = {
+        { 1, 50011171 }, -- Warlock
+        { 3, 50011165 }, -- Priest Holy
+        { 4, 50011166 }, -- Priest Shadow
+        { 6, 50011167 }, -- Rogue
+        { 8, 50011157 }, -- Hunter
+        { 10, 50011173 }, -- Warrior Tank
+        { 11, 50011172 }, -- Warrior Dps
+        { 13, 50011151 }, -- Death Knight Tank
+        { 14, 50011152 }, -- Death Knight DPS
+        { 16, 50011158 }, -- Mage
+        { 18, 50011154 }, -- Druid Resto
+        { 19, 50011156 }, -- Druid Guardian
+        { 20, 50011155 }, -- Druid Balance
+        { 21, 50011153 }, -- Druid Feral
+        { 23, 50011168 }, -- Shaman Resto
+        { 24, 50011170 }, -- Shaman Elemental
+        { 25, 50011169 }, -- Shaman Enhance
+        { 27, 50011163 }, -- Paladin Holy
+        { 28, 50011164 }, -- Paladin Prot
+        { 29, 50011162 }, -- Paladin DPS
+        { 101, 50011160 }, -- Monk Mistweaver
+        { 102, 50011161 }, -- Monk Brewmaster
+        { 103, 50011159 }, -- Monk Windwalker
+    },
+    [HEROIC_DIFF] = {
+        { 1, 50021171 }, -- Warlock
+        { 3, 50021165 }, -- Priest Holy
+        { 4, 50021166 }, -- Priest Shadow
+        { 6, 50021167 }, -- Rogue
+        { 8, 50021157 }, -- Hunter
+        { 10, 50021173 }, -- Warrior Tank
+        { 11, 50021172 }, -- Warrior Dps
+        { 13, 50021151 }, -- Death Knight Tank
+        { 14, 50021152 }, -- Death Knight DPS
+        { 16, 50021158 }, -- Mage
+        { 18, 50021154 }, -- Druid Resto
+        { 19, 50021156 }, -- Druid Guardian
+        { 20, 50021155 }, -- Druid Balance
+        { 21, 50021153 }, -- Druid Feral
+        { 23, 50021168 }, -- Shaman Resto
+        { 24, 50021170 }, -- Shaman Elemental
+        { 25, 50021169 }, -- Shaman Enhance
+        { 27, 50021163 }, -- Paladin Holy
+        { 28, 50021164 }, -- Paladin Prot
+        { 29, 50021162 }, -- Paladin DPS
+        { 101, 50021160 }, -- Monk Mistweaver
+        { 102, 50021161 }, -- Monk Brewmaster
+        { 103, 50021159 }, -- Monk Windwalker
+    },
+}
+
+local T16_SET = {
+    name = format(AL["Tier %s Sets"], "16"),
+    ExtraList = true,
+    TableType = SET_ITTYPE,
+    IgnoreAsSource = true,
+    [CELESTIAL_DIFF] = {
+        { 1, 50001181 }, -- Warlock
+        { 3, 50001187 }, -- Priest Holy
+        { 4, 50001186 }, -- Priest Shadow
+        { 6, 50001185 }, -- Rogue
+        { 8, 50001195 }, -- Hunter
+        { 10, 50001179 }, -- Warrior Tank
+        { 11, 50001180 }, -- Warrior Dps
+        { 13, 50001201 }, -- Death Knight Tank
+        { 14, 50001200 }, -- Death Knight DPS
+        { 16, 50001194 }, -- Mage
+        { 18, 50001198 }, -- Druid Resto
+        { 19, 50001196 }, -- Druid Guardian
+        { 20, 50001197 }, -- Druid Balance
+        { 21, 50001199 }, -- Druid Feral
+        { 23, 50001184 }, -- Shaman Resto
+        { 24, 50001182 }, -- Shaman Elemental
+        { 25, 50001183 }, -- Shaman Enhance
+        { 27, 50001189 }, -- Paladin Holy
+        { 28, 50001188 }, -- Paladin Prot
+        { 29, 50001190 }, -- Paladin DPS
+        { 101, 50001192 }, -- Monk Mistweaver
+        { 102, 50001191 }, -- Monk Brewmaster
+        { 103, 50001193 }, -- Monk Windwalker
+    },
+    [FLEXIBLE_DIFF] = {
+        { 1, 50011181 }, -- Warlock
+        { 3, 50011187 }, -- Priest Holy
+        { 4, 50011186 }, -- Priest Shadow
+        { 6, 50011185 }, -- Rogue
+        { 8, 50011195 }, -- Hunter
+        { 10, 50011179 }, -- Warrior Tank
+        { 11, 50011180 }, -- Warrior Dps
+        { 13, 50011201 }, -- Death Knight Tank
+        { 14, 50011200 }, -- Death Knight DPS
+        { 16, 50011194 }, -- Mage
+        { 18, 50011198 }, -- Druid Resto
+        { 19, 50011196 }, -- Druid Guardian
+        { 20, 50011197 }, -- Druid Balance
+        { 21, 50011199 }, -- Druid Feral
+        { 23, 50011184 }, -- Shaman Resto
+        { 24, 50011182 }, -- Shaman Elemental
+        { 25, 50011183 }, -- Shaman Enhance
+        { 27, 50011189 }, -- Paladin Holy
+        { 28, 50011188 }, -- Paladin Prot
+        { 29, 50011190 }, -- Paladin DPS
+        { 101, 50011192 }, -- Monk Mistweaver
+        { 102, 50011191 }, -- Monk Brewmaster
+        { 103, 50011193 }, -- Monk Windwalker
+    },
+    [NORMAL_DIFF] = {
+        { 1, 50021181 }, -- Warlock
+        { 3, 50021187 }, -- Priest Holy
+        { 4, 50021186 }, -- Priest Shadow
+        { 6, 50021185 }, -- Rogue
+        { 8, 50021195 }, -- Hunter
+        { 10, 50021179 }, -- Warrior Tank
+        { 11, 50021180 }, -- Warrior Dps
+        { 13, 50021201 }, -- Death Knight Tank
+        { 14, 50021200 }, -- Death Knight DPS
+        { 16, 50021194 }, -- Mage
+        { 18, 50021198 }, -- Druid Resto
+        { 19, 50021196 }, -- Druid Guardian
+        { 20, 50021197 }, -- Druid Balance
+        { 21, 50021199 }, -- Druid Feral
+        { 23, 50021184 }, -- Shaman Resto
+        { 24, 50021182 }, -- Shaman Elemental
+        { 25, 50021183 }, -- Shaman Enhance
+        { 27, 50021189 }, -- Paladin Holy
+        { 28, 50021188 }, -- Paladin Prot
+        { 29, 50021190 }, -- Paladin DPS
+        { 101, 50021192 }, -- Monk Mistweaver
+        { 102, 50021191 }, -- Monk Brewmaster
+        { 103, 50021193 }, -- Monk Windwalker
+    },
+    [HEROIC_DIFF] = {
+        { 1, 50031181 }, -- Warlock
+        { 3, 50031187 }, -- Priest Holy
+        { 4, 50031186 }, -- Priest Shadow
+        { 6, 50031185 }, -- Rogue
+        { 8, 50031195 }, -- Hunter
+        { 10, 50031179 }, -- Warrior Tank
+        { 11, 50031180 }, -- Warrior Dps
+        { 13, 50031201 }, -- Death Knight Tank
+        { 14, 50031200 }, -- Death Knight DPS
+        { 16, 50031194 }, -- Mage
+        { 18, 50031198 }, -- Druid Resto
+        { 19, 50031196 }, -- Druid Guardian
+        { 20, 50031197 }, -- Druid Balance
+        { 21, 50031199 }, -- Druid Feral
+        { 23, 50031184 }, -- Shaman Resto
+        { 24, 50031182 }, -- Shaman Elemental
+        { 25, 50031183 }, -- Shaman Enhance
+        { 27, 50031189 }, -- Paladin Holy
+        { 28, 50031188 }, -- Paladin Prot
+        { 29, 50031190 }, -- Paladin DPS
+        { 101, 50031192 }, -- Monk Mistweaver
+        { 102, 50031191 }, -- Monk Brewmaster
+        { 103, 50031193 }, -- Monk Windwalker
     },
 }
 
@@ -3060,15 +3250,7 @@ data["ThroneofThunder"] = {
                 { 26, 94125 },	-- Living Sandling
             },
         },
-        {	--Tier 15 Sets
-            name = format(AL["Tier %d Sets"], 15),
-            ExtraList = true,
-            [NORMAL_DIFF] = {
-                { 1, 94125 },
-            },
-            --[NORMAL_DIFF] = "AtlasLoot_Collections:TIERSETS:15:n",
-            --[HEROIC_DIFF] = "AtlasLoot_Collections:TIERSETS:15:h",
-        },
+        T15_SET,
         MOP_RAID2_AC_TABLE,
     }
 }
@@ -3082,7 +3264,7 @@ data["SiegeofOrgrimmar"] = {
         {	--SoOImmerseus
             EncounterJournalID = 852,
             npcId = 71543,
-            [NORMAL_DIFF] = {
+            [FLEX] = {
                 { 1, 112425 },	-- Cloak of Misguided Power
                 { 2, 112424 },	-- Hood of Swirling Senses
                 { 3, 112423 },	-- Ichor-Dripping Shoulderpads
@@ -3758,21 +3940,14 @@ data["SiegeofOrgrimmar"] = {
             [HEROIC_SOO_DIFF] = NORMAL_DIFF,
             [MYTHIC_SOO_DIFF] = NORMAL_DIFF,
         },
-        {	--Tier 16 Sets
-            name = format(AL["Tier %d Sets"], 16),
-            ExtraList = true,
-            [RF_SOO_DIFF] = "AtlasLoot_Collections:TIERSETS:16:rf",
-            [NORMAL_DIFF] = "AtlasLoot_Collections:TIERSETS:16:n",
-            [HEROIC_SOO_DIFF] = "AtlasLoot_Collections:TIERSETS:16:h",
-            [MYTHIC_SOO_DIFF] = "AtlasLoot_Collections:TIERSETS:16:m",
-        },
+        T16_SET,
         {	--ACPage
             name = AL["Achievements"],
             TableType = AC_ITTYPE,
             ExtraList = true,
             CoinTexture = "Achievement",
             [NORMAL_DIFF] = {
-                { 1, 8454, "mount148392" },
+                { 1, 8454 },
                 { 2, 8536 },
                 { 3, 8532 },
                 { 4, 8530 },
@@ -3792,7 +3967,7 @@ data["SiegeofOrgrimmar"] = {
                 { 11, 8461 },
                 { 26, 8462 },
             },
-            [MYTHIC_SOO_DIFF] = {
+            [HEROIC_DIFF] = {
                 { 1, 8463 },
                 { 2, 8465 },
                 { 3, 8466 },
@@ -3811,5 +3986,4 @@ data["SiegeofOrgrimmar"] = {
         },
     },
 }
-
 --]]
