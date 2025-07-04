@@ -1711,10 +1711,11 @@ data["TailoringCata"] = {
             [NORMAL_DIFF] = {
                 { 1, 99448 },	-- Grips of Altered Reality
                 { 2, 99449 },	-- Don Tayo's Inferno Mittens
-                { 3, 75296 },	-- Fireweave Gloves
-                { 4, 75295 },	-- Embersilk Gloves
-                { 5, 75253 },	-- Deathsilk Gloves
-                { 6, 75262 },	-- Spiritmend Gloves
+                { 3, 134585 }, -- Bipsi's Gloves
+                { 4, 75296 },	-- Fireweave Gloves
+                { 5, 75295 },	-- Embersilk Gloves
+                { 6, 75253 },	-- Deathsilk Gloves
+                { 7, 75262 },	-- Spiritmend Gloves
             },
         },
         { -- Waist

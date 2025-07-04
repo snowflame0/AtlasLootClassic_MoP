@@ -1,7 +1,10 @@
 # TODO for MoP Release
 - [ ] PvP Module needs to be populated
     - [ ] Mounts
-    - [ ] S12 gear
+    - [ ] Sets
+    - [ ] S13 gear
+    - [ ] S14 gear
+    - [ ] S15 gear
     - [ ] World PvP objectives/rewards (5.1 stuff?)
 - [ ] Collections module needs to be populated
     - [ ] New tier sets
@@ -20,6 +23,9 @@
     - [ ] Glyphs
     - ???
 - [ ] Finish Crafting module
+    - [ ] Leatherworking
+    - [ ] Blacksmithing
+    - [ ] Sets
 - [ ] Finish Dungeons and Raids module
     - [ ] Add Celestial Dungeon stuff to Dungeons and Raids
     - [ ] Make world bosses data more compact/usable
@@ -29,22 +35,23 @@
 - [ ] Clean up rest of Factions module
 - [ ] Add item sets data (Data/ItemSet.lua)
     - [x] T14
-    - [ ] T15
-    - [ ] T16
+    - [x] T15
+    - [x] T16
     - [ ] PvP
     - [ ] Item to set data (script)
     - [ ] Misc
 - [ ] Add tokens data (Data/Token.lua)
 - [ ] Add vendor price data (Data/VendorPrice.lua)
 - [x] Add recipe data (Data/Recipe.lua)
-    - [ ] Check recipes that don't exist to players, but in game files?
 - [ ] Add Content phase data (Data/ContentPhase.lua)
-- [ ] Add any missing locale strings
 
 # Bugs and Other Problems
-- [ ] Need to fix profession data having wrong skill levels for orange/yellow/green/gray
-- [ ] Remove Model button and replace with link to Dungeon Journal
 - [ ] Add update changes screen?
+- [ ] Add any missing locale strings
+- [ ] Remove Model button and replace with link to Dungeon Journal
+- [ ] Need to fix profession data having wrong skill levels for orange/yellow/green/gray
+- [ ] Check recipes that don't exist to players, but in game files?
+- [ ] Update requirements (Data/Requirements.lua) needs rework
 
 # External Stuff
 - [x] Rename addon for MoP

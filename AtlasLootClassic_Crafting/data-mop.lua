@@ -1520,131 +1520,188 @@ data["TailoringMoP"] = {
         { -- Cloak
             name = AL["Armor"].." - "..ALIL["Cloak"],
             [NORMAL_DIFF] = {
-                { 1, 99537 },	-- Vicious Embersilk Cape
+                { 1, 137907 }, -- Crafted Dreadful Gladiator's Cape of Cruelty
+                { 2, 137908 }, -- Crafted Dreadful Gladiator's Cape of Prowess
+                { 3, 137936 }, -- Crafted Dreadful Gladiator's Cloak of Alacrity
+                { 4, 137937 }, -- Crafted Dreadful Gladiator's Cloak of Prowess
+                { 5, 137918 }, -- Crafted Dreadful Gladiator's Drape of Cruelty
+                { 6, 137920 }, -- Crafted Dreadful Gladiator's Drape of Meditation
+                { 7, 137919 }, -- Crafted Dreadful Gladiator's Drape of Prowess
+                { 16, 143053 }, -- Crafted Malevolent Gladiator's Cape of Cruelty
+                { 17, 143054 }, -- Crafted Malevolent Gladiator's Cape of Prowess
+                { 18, 143082 }, -- Crafted Malevolent Gladiator's Cloak of Alacrity
+                { 19, 143083 }, -- Crafted Malevolent Gladiator's Cloak of Prowess
+                { 20, 143064 }, -- Crafted Malevolent Gladiator's Drape of Cruelty
+                { 21, 143066 }, -- Crafted Malevolent Gladiator's Drape of Meditation
+                { 22, 143065 }, -- Crafted Malevolent Gladiator's Drape of Prowess
             }
         },
         { -- Head
             name = AL["Armor"].." - "..ALIL["Head"],
             [NORMAL_DIFF] = {
-                { 1, 75304 },	-- Fireweave Cowl
-                { 2, 75306 },	-- Embersilk Cowl
-                { 3, 75266 },	-- Spiritmend Cowl
-                { 4, 75256 },	-- Deathsilk Cowl
-                { 16, 75289 },	-- High Society Top Hat
+                { 1, 138598 }, -- Falling Blossom Cowl
+                { 2, 138600 }, -- Falling Blossom Hood
+                { 3, 125539 }, -- Contender's Satin Cowl
+                { 4, 125531 }, -- Contender's Silk Cowl
+                { 5, 125523 }, -- Windwool Hood
+                { 16, 137939 }, -- Crafted Dreadful Gladiator's Felweave Cowl
+                { 17, 137927 }, -- Crafted Dreadful Gladiator's Mooncloth Helm
+                { 18, 137932 }, -- Crafted Dreadful Gladiator's Satin Hood
+                { 19, 137922 }, -- Crafted Dreadful Gladiator's Silk Cowl
+                { 21, 143085 }, -- Crafted Malevolent Gladiator's Felweave Cowl
+                { 22, 143073 }, -- Crafted Malevolent Gladiator's Mooncloth Helm
+                { 23, 143078 }, -- Crafted Malevolent Gladiator's Satin Hood
+                { 24, 143068 }, -- Crafted Malevolent Gladiator's Silk Cowl
             }
         },
         { -- Shoulder
             name = AL["Armor"].." - "..ALIL["Shoulder"],
             [NORMAL_DIFF] = {
-                { 1, 75292 },	-- Fireweave Shoulders
-                { 2, 75291 },	-- Embersilk Shoulders
-                { 3, 75260 },	-- Spiritmend Shoulders
-                { 4, 75251 },	-- Deathsilk Shoulders
+                { 1, 125540 }, -- Contender's Satin Amice
+                { 2, 125532 }, -- Contender's Silk Amice
+                { 3, 125524 }, -- Windwool Shoulders
+                { 16, 137942 }, -- Crafted Dreadful Gladiator's Felweave Amice
+                { 17, 137930 }, -- Crafted Dreadful Gladiator's Mooncloth Mantle
+                { 18, 137935 }, -- Crafted Dreadful Gladiator's Satin Mantle
+                { 19, 137925 }, -- Crafted Dreadful Gladiator's Silk Amice
+                { 21, 143088 }, -- Crafted Malevolent Gladiator's Felweave Amice
+                { 22, 143076 }, -- Crafted Malevolent Gladiator's Mooncloth Mantle
+                { 23, 143081 }, -- Crafted Malevolent Gladiator's Satin Mantle
+                { 24, 143071 }, -- Crafted Malevolent Gladiator's Silk Amice
             }
         },
         { -- Chest
             name = AL["Armor"].." - "..ALIL["Chest"],
             [NORMAL_DIFF] = {
-                { 1, 75305 },	-- Embersilk Robe
-                { 2, 75303 },	-- Fireweave Robe
-                { 3, 75257 },	-- Deathsilk Robe
-                { 4, 75267 },	-- Spiritmend Robe
-                { 16, 75288 },	-- Black Embersilk Gown
-                { 18, 102171 },	-- Black Silk Vest
+                { 1, 125558 }, -- Robe of Eternal Rule
+                { 2, 125560 }, -- Legacy of the Emperor
+                { 3, 125549 }, -- Robes of Creation
+                { 4, 125547 }, -- Spelltwister's Grand Robe
+                { 5, 125541 }, -- Contender's Satin Raiment
+                { 6, 125533 }, -- Contender's Silk Raiment
+                { 7, 125525 }, -- Windwool Tunic
+                { 16, 137941 }, -- Crafted Dreadful Gladiator's Felweave Raiment
+                { 17, 137929 }, -- Crafted Dreadful Gladiator's Mooncloth Robe
+                { 18, 137934 }, -- Crafted Dreadful Gladiator's Satin Robe
+                { 19, 137924 }, -- Crafted Dreadful Gladiator's Silk Robe
+                { 21, 143087 }, -- Crafted Malevolent Gladiator's Felweave Raiment
+                { 22, 143075 }, -- Crafted Malevolent Gladiator's Mooncloth Robe
+                { 23, 143080 }, -- Crafted Malevolent Gladiator's Satin Robe
+                { 24, 143070 }, -- Crafted Malevolent Gladiator's Silk Robe
             }
         },
         { -- Wrist
             name = AL["Armor"].." - "..ALIL["Wrist"],
             [NORMAL_DIFF] = {
-                { 1, 101922 },	-- Dreamwraps of the Light
-                { 2, 101923 },	-- Bracers of Unconquered Power
-                { 3, 75270 },	-- Embersilk Bracers
-                { 4, 75290 },	-- Fireweave Bracers
-                { 5, 75259 },	-- Spiritmend Bracers
-                { 6, 75249 },	-- Deathsilk Bracers
+                { 1, 125544 }, -- Contender's Satin Cuffs
+                { 2, 125536 }, -- Contender's Silk Cuffs
+                { 3, 125528 }, -- Windwool Bracers
+                { 16, 137916 }, -- Crafted Dreadful Gladiator's Cuffs of Prowess
+                { 17, 137917 }, -- Crafted Dreadful Gladiator's Cuffs of Meditation
+                { 18, 137915 }, -- Crafted Dreadful Gladiator's Cuffs of Accuracy
+                { 20, 143062 }, -- Crafted Malevolent Gladiator's Cuffs of Prowess
+                { 21, 143063 }, -- Crafted Malevolent Gladiator's Cuffs of Meditation
+                { 22, 143061 }, -- Crafted Malevolent Gladiator's Cuffs of Accuracy
             }
         },
         { -- Hand
             name = AL["Armor"].." - "..ALIL["Hand"],
             [NORMAL_DIFF] = {
-                { 1, 99448 },	-- Grips of Altered Reality
-                { 2, 99449 },	-- Don Tayo's Inferno Mittens
-                { 3, 75296 },	-- Fireweave Gloves
-                { 4, 75295 },	-- Embersilk Gloves
-                { 5, 75253 },	-- Deathsilk Gloves
-                { 6, 75262 },	-- Spiritmend Gloves
+                { 1, 125559 }, -- Imperial Silk Gloves
+                { 2, 125561 }, -- Touch of the Light
+                { 3, 125550 }, -- Gloves of Creation
+                { 4, 125548 }, -- Spelltwister's Gloves
+                { 5, 125542 }, -- Contender's Satin Handwraps
+                { 6, 125534 }, -- Contender's Silk Handwraps
+                { 7, 125526 }, -- Windwool Gloves
+                { 16, 137938 }, -- Crafted Dreadful Gladiator's Felweave Handguards
+                { 17, 137926 }, -- Crafted Dreadful Gladiator's Mooncloth Gloves
+                { 18, 137931 }, -- Crafted Dreadful Gladiator's Satin Gloves
+                { 19, 137921 }, -- Crafted Dreadful Gladiator's Silk Handguards
+                { 21, 143084 }, -- Crafted Malevolent Gladiator's Felweave Handguards
+                { 22, 143072 }, -- Crafted Malevolent Gladiator's Mooncloth Gloves
+                { 23, 143077 }, -- Crafted Malevolent Gladiator's Satin Gloves
+                { 24, 143067 }, -- Crafted Malevolent Gladiator's Silk Handguards
             },
         },
         { -- Waist
             name = AL["Armor"].." - "..ALIL["Waist"],
             [NORMAL_DIFF] = {
-                { 1, 75298 },	-- Belt of the Depths
-                { 2, 75299 },	-- Dreamless Belt
-                { 3, 75269 },	-- Fireweave Belt
-                { 4, 75293 },	-- Embersilk Belt
-                { 5, 75258 },	-- Spiritmend Belt
-                { 6, 75248 },	-- Deathsilk Belt
+                { 1, 142964 }, -- Belt of the Night Sky
+                { 2, 142960 }, -- White Cloud Belt
+                { 3, 125546 }, -- Contender's Satin Belt
+                { 4, 125538 }, -- Contender's Silk Belt
+                { 5, 125530 }, -- Windwool Belt
+                { 16, 137911 }, -- Crafted Dreadful Gladiator's Cord of Meditation
+                { 17, 137909 }, -- Crafted Dreadful Gladiator's Cord of Cruelty
+                { 18, 137910 }, -- Crafted Dreadful Gladiator's Cord of Accuracy
+                { 20, 143057 }, -- Crafted Malevolent Gladiator's Cord of Meditation
+                { 21, 143055 }, -- Crafted Malevolent Gladiator's Cord of Cruelty
+                { 22, 143056 }, -- Crafted Malevolent Gladiator's Cord of Accuracy
             },
         },
         { -- Legs
             name = AL["Armor"].." - "..ALIL["Legs"],
             [NORMAL_DIFF] = {
-                { 1, 101920 },	-- World Mender's Pants
-                { 2, 101921 },	-- Lavaquake Legwraps
-                { 3, 75301 },	-- Flame-Ascended Pantaloons
-                { 4, 75300 },	-- Breeches of Mended Nightmares
-                { 5, 75302 },	-- Fireweave Pants
-                { 6, 75307 },	-- Embersilk Pants
-                { 7, 75263 },	-- Spiritmend Leggings
-                { 8, 75254 },	-- Deathsilk Leggings
+                { 1, 142955 }, -- Leggings of the Night Sky
+                { 2, 142951 }, -- White Cloud Leggings
+                { 3, 125543 }, -- Contender's Satin Pants
+                { 4, 125535 }, -- Contender's Silk Pants
+                { 5, 125527 }, -- Windwool Pants
+                { 16, 137940 }, -- Crafted Dreadful Gladiator's Felweave Trousers
+                { 17, 137928 }, -- Crafted Dreadful Gladiator's Mooncloth Leggings
+                { 18, 137933 }, -- Crafted Dreadful Gladiator's Satin Leggings
+                { 19, 137923 }, -- Crafted Dreadful Gladiator's Silk Trousers
+                { 21, 143086 }, -- Crafted Malevolent Gladiator's Felweave Trousers
+                { 22, 143074 }, -- Crafted Malevolent Gladiator's Mooncloth Leggings
+                { 23, 143079 }, -- Crafted Malevolent Gladiator's Satin Leggings
+                { 24, 143069 }, -- Crafted Malevolent Gladiator's Silk Trousers
             },
         },
         { -- Feet
             name = AL["Armor"].." - "..ALIL["Feet"],
             [NORMAL_DIFF] = {
-                { 1, 99459 },	-- Endless Dream Walkers
-                { 2, 99460 },	-- Boots of the Black Flame
-                { 3, 75297 },	-- Embersilk Boots
-                { 4, 75294 },	-- Fireweave Boots
-                { 5, 75261 },	-- Spiritmend Boots
-                { 6, 75252 },	-- Deathsilk Boots
+                { 1, 138599 }, -- Falling Blossom Sandals
+                { 2, 138597 }, -- Falling Blossom Treads
+                { 3, 125545 }, -- Contender's Satin Footwraps
+                { 4, 125537 }, -- Contender's Silk Footwraps
+                { 5, 125529 }, -- Windwool Boots
+                { 16, 137914 }, -- Crafted Dreadful Gladiator's Treads of Meditation
+                { 17, 137912 }, -- Crafted Dreadful Gladiator's Treads of Cruelty
+                { 18, 137913 }, -- Crafted Dreadful Gladiator's Treads of Alacrity
+                { 20, 143060 }, -- Crafted Malevolent Gladiator's Treads of Meditation
+                { 21, 143058 }, -- Crafted Malevolent Gladiator's Treads of Cruelty
+                { 22, 143059 }, -- Crafted Malevolent Gladiator's Treads of Alacrity
             },
         },
         {
             name = AL["Enhancements"],
             [NORMAL_DIFF] = {
-                { 1, 75154 },	-- Master's Spellthread
-                { 2, 75309 },	-- Powerful Enchanted Spellthread
-                { 3, 75250 },	-- Enchanted Spellthread
-                { 5, 75178 },	-- Swordguard Embroidery
-                { 6, 75172 },	-- Lightweave Embroidery
-                { 7, 75175 },	-- Darkglow Embroidery
-                { 16, 75155 },	-- Sanctified Spellthread
-                { 17, 75310 },	-- Powerful Ghostly Spellthread
-                { 18, 75255 },	-- Ghostly Spellthread
+                { 1, 125496 }, -- Master's Spellthread
+                { 2, 125555 }, -- Greater Cerulean Spellthread
+                { 3, 125553 }, -- Cerulean Spellthread
+                { 5, 125482 }, -- Darkglow Embroidery
+                { 6, 125481 }, -- Lightweave Embroidery
+                { 7, 125483 }, -- Swordguard Embroidery
+                { 16, 125497 }, -- Sanctified Spellthread
+                { 17, 125554 }, -- Greater Pearlescent Spellthread
+                { 18, 125552 }, -- Pearlescent Spellthread
             },
         },
         {
             name = ALIL["Bag"],
             [NORMAL_DIFF] = {
-                { 1, 75308 },	-- Illusionary Bag
-                { 2, 75264 },	-- Embersilk Bag
-                { 16, 100585 },	-- Luxurious Silk Gem Bag
-                { 18, 75268 },	-- Hyjal Expedition Bag
-                { 20, 75265 },	-- Otherworldly Bag
+                { 1, 125556 }, -- Royal Satchel
             },
         },
         {
             name = AL["Misc"],
             [NORMAL_DIFF] = {
-                { 1, 75247 },	-- Embersilk Net
-                { 3, 74964 },	-- Bolt of Embersilk Cloth
-                { 16, 94743 },	-- Dream of Destruction
-                { 17, 75141 },	-- Dream of Skywall
-                { 18, 75145 },	-- Dream of Ragnaros
-                { 19, 75142 },	-- Dream of Deepholm
-                { 20, 75144 },	-- Dream of Hyjal
-                { 21, 75146 },	-- Dream of Azshara
+                { 1, 125557 }, -- Imperial Silk
+                { 2, 130325 }, -- Song of Harmony
+                { 4, 125551 }, -- Bolt of Windwool Cloth
+                { 16, 143011 }, -- Celestial Cloth
+                { 17, 146925 }, -- Accelerated Celestial Cloth
             },
         },
         { -- Sets
@@ -1652,8 +1709,15 @@ data["TailoringMoP"] = {
             ExtraList = true,
             TableType = SET_ITTYPE,
             [NORMAL_DIFF] = {
-                { 1, 944 }, -- Spiritmender
-                { 2, 945 }, -- Deathspeaker
+                { 1, 1121 },
+                { 16, 50001117 },
+                { 17, 50001112 },
+                { 18, 50001146 },
+                { 19, 50001109 },
+                { 21, 50011117 },
+                { 22, 50011112 },
+                { 23, 50011146 },
+                { 24, 50011109 },
             },
         }
     }
