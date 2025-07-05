@@ -231,7 +231,7 @@ data["Blacksmithing"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Axes"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_sword_04", nil, ALIL["One-Handed Axes"] },
+				{ 1, "INV_axe_04", nil, ALIL["One-Handed Axes"] },
 				{ 2, 20897 }, --Dark Iron Destroyer / 65
 				{ 3, 16991 }, --Annihilator / 63
 				{ 4, 16970 }, --Dawn / 55
@@ -242,7 +242,7 @@ data["Blacksmithing"] = {
 				{ 9, 2741 }, --Bronze Axe / 23
 				{ 10, 3294 }, --Thick War Axe / 17
 				{ 11, 2738 }, --Copper Axe / 9
-				{ 16, "INV_sword_04", nil, ALIL["Two-Handed Axes"] },
+				{ 16, "INV_axe_09", nil, ALIL["Two-Handed Axes"] },
 				{ 17, 23653 }, --Nightfall / 70
 				{ 18, 16994 }, --Arcanite Reaper / 63
 				{ 19, 15294 }, --Dark Iron Sunderer / 57
@@ -256,7 +256,7 @@ data["Blacksmithing"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Maces"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_sword_04", nil, ALIL["One-Handed Maces"] },
+				{ 1, "INV_mace_04", nil, ALIL["One-Handed Maces"] },
 				{ 2, 23650 }, --Ebon Hand / 70
 				{ 3, 16993 }, --Masterwork Stormhammer / 63
 				{ 4, 27830 }, --Persuader / 63
@@ -270,7 +270,7 @@ data["Blacksmithing"] = {
 				{ 12, 3296 }, --Heavy Bronze Mace / 25
 				{ 13, 2740 }, --Bronze Mace / 22
 				{ 14, 2737 }, --Copper Mace / 9
-				{ 16, "INV_sword_04", nil, ALIL["Two-Handed Maces"] },
+				{ 16, "INV_mace_07", nil, ALIL["Two-Handed Maces"] },
 				{ 17, 21161 }, --Sulfuron Hammer / 67
 				{ 18, 16988 }, --Hammer of the Titans / 63
 				{ 19, 16973 }, --Enchanted Battlehammer / 56
@@ -297,7 +297,7 @@ data["Blacksmithing"] = {
 				{ 11, 3492 }, --Hardened Iron Shortsword / 32
 				{ 12, 2742 }, --Bronze Shortsword / 24
 				{ 13, 2739 }, --Copper Shortsword / 9
-				{ 16, "INV_sword_06", nil, ALIL["Two-Handed Swords"] },
+				{ 16, "INV_sword_19", nil, ALIL["Two-Handed Swords"] },
 				{ 17, 16990 }, --Arcanite Champion / 63
 				{ 18, 16985 }, --Corruption / 58
 				{ 19, 10015 }, --Truesilver Champion / 52
