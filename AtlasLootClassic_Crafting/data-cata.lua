@@ -163,7 +163,7 @@ data["BlacksmithingCata"] = {
         { -- Axes
             name = AL["Weapons"].." - "..AL["Axes"],
             [NORMAL_DIFF] = {
-                { 1, "INV_sword_04", nil, ALIL["One-Handed Axes"] },
+                { 1, "INV_axe_04", nil, ALIL["One-Handed Axes"] },
                 { 2, 99655 },   -- Elementium-Edged Scalper
                 { 3, 76452 },	-- Elementium Bonesplitter
                 { 4, 94718 },	-- Elementium Gutslicer
@@ -173,11 +173,11 @@ data["BlacksmithingCata"] = {
         { -- Maces
             name = AL["Weapons"].." - "..AL["Maces"],
             [NORMAL_DIFF] = {
-                { 1, "INV_sword_04", nil, ALIL["One-Handed Maces"] },
+                { 1, "INV_mace_04", nil, ALIL["One-Handed Maces"] },
                 { 2, 99654 }, -- Lightforged Elementium Hammer
                 { 3, 76450 }, -- Elementium Hammer
                 { 4, 76436 }, -- Lifeforce Hammer
-                { 16, "INV_sword_04", nil, ALIL["Two-Handed Maces"] },
+                { 16, "INV_mace_07", nil, ALIL["Two-Handed Maces"] },
                 { 17, 94732 }, -- Forged Elementium Mindcrusher
             }
         },
@@ -187,7 +187,7 @@ data["BlacksmithingCata"] = {
                 { 1, "INV_sword_04", nil, ALIL["One-Handed Swords"] },
                 { 2, 99657 }, -- Unbreakable Guardian
                 { 3, 99656 }, -- Pyrium Spellward
-                { 16, "INV_sword_06", nil, ALIL["Two-Handed Swords"] },
+                { 16, "INV_sword_19", nil, ALIL["Two-Handed Swords"] },
                 { 17, 99658 }, -- Masterwork Elementium Deathblade
                 { 18, 76437 }, -- Obsidian Executioner
             }

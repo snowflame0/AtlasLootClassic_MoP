@@ -181,22 +181,22 @@ data["BlacksmithingWrath"] = {
         { -- Axes
             name = AL["Weapons"].." - "..AL["Axes"],
             [NORMAL_DIFF] = {
-                { 1, "INV_sword_04", nil, ALIL["One-Handed Axes"] },
+                { 1, "INV_axe_04", nil, ALIL["One-Handed Axes"] },
                 { 2, 55204 },	-- Notched Cobalt War Axe
-                { 16, "INV_sword_04", nil, ALIL["Two-Handed Axes"] },
+                { 16, "INV_axe_09", nil, ALIL["Two-Handed Axes"] },
                 { 17, 55174 },	-- Honed Cobalt Cleaver
             }
         },
         { -- Maces
             name = AL["Weapons"].." - "..AL["Maces"],
             [NORMAL_DIFF] = {
-                { 1, "INV_sword_04", nil, ALIL["One-Handed Maces"] },
+                { 1, "INV_mace_04", nil, ALIL["One-Handed Maces"] },
                 { 2, 55370 },	-- Titansteel Bonecrusher
                 { 3, 55371 },	-- Titansteel Guardian
                 { 4, 56280 },	-- Cudgel of Saronite Justice
                 { 5, 55182 },	-- Furious Saronite Beatstick
                 { 6, 55201 },	-- Cobalt Tenderizer
-                { 16, "INV_sword_04", nil, ALIL["Two-Handed Maces"] },
+                { 16, "INV_mace_07", nil, ALIL["Two-Handed Maces"] },
                 { 17, 55369 },	-- Titansteel Destroyer
                 { 18, 55185 },	-- Saronite Mindcrusher
             }
@@ -210,7 +210,7 @@ data["BlacksmithingWrath"] = {
                 { 4, 59442 },	-- Saronite Spellblade
                 { 5, 55177 },	-- Savage Cobalt Slicer
                 { 6, 55200 },	-- Sturdy Cobalt Quickblade
-                { 16, "INV_sword_06", nil, ALIL["Two-Handed Swords"] },
+                { 16, "INV_sword_19", nil, ALIL["Two-Handed Swords"] },
                 { 17, 55203 },	-- Forged Cobalt Claymore
             }
         },

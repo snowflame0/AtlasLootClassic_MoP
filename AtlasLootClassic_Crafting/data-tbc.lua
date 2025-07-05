@@ -184,7 +184,7 @@ data["BlacksmithingBC"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Axes"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_sword_04", nil, ALIL["One-Handed Axes"] },
+				{ 1, "INV_axe_04", nil, ALIL["One-Handed Axes"] },
 				{ 2, 36260 }, -- Wicked Edge of the Planes (385)
 				{ 3, 34542 }, -- Black Planar Edge (385)
 				{ 4, 34541 }, -- The Planar Edge (360)
@@ -192,7 +192,7 @@ data["BlacksmithingBC"] = {
 				{ 7, 36134 }, -- Stormforged Axe (340)
 				{ 8, 29557 }, -- Fel Iron Hatchet (320)
 				{ 10, 36126 }, -- Light Skyforged Axe (280)
-				{ 16, "INV_sword_04", nil, ALIL["Two-Handed Axes"] },
+				{ 16, "INV_axe_09", nil, ALIL["Two-Handed Axes"] },
 				{ 17, 36261 }, -- Bloodmoon (385)
 				{ 18, 34544 }, -- Mooncleaver (385)
 				{ 19, 34543 }, -- Lunar Crescent (360)
@@ -204,7 +204,7 @@ data["BlacksmithingBC"] = {
 		{
 			name = AL["Weapons"].." - "..AL["Maces"],
 			[NORMAL_DIFF] = {
-				{ 1, "INV_sword_04", nil, ALIL["One-Handed Maces"] },
+				{ 1, "INV_mace_04", nil, ALIL["One-Handed Maces"] },
 				{ 2, 36262 }, -- Dragonstrike (385)
 				{ 3, 34546 }, -- Dragonmaw (385)
 				{ 4, 34545 }, -- Drakefist Hammer (360)
@@ -213,7 +213,7 @@ data["BlacksmithingBC"] = {
 				{ 8, 36136 }, -- Lavaforged Warhammer (340)
 				{ 9, 29558 }, -- Fel Iron Hammer (325)
 				{ 11, 36128 }, -- Light Emberforged Hammer (280)
-				{ 16, "INV_sword_04", nil, ALIL["Two-Handed Maces"] },
+				{ 16, "INV_mace_07", nil, ALIL["Two-Handed Maces"] },
 				{ 17, 36263 }, -- Stormherald (385)
 				{ 18, 34548 }, -- Deep Thunder (385)
 				{ 19, 34547 }, -- Thunder (360)
@@ -234,7 +234,7 @@ data["BlacksmithingBC"] = {
 				{ 7, 29571 }, -- Adamantite Rapier (335)
 				{ 8, 36131 }, -- Windforged Rapier (340)
 				{ 10, 36125 }, -- Light Earthforged Blade (280)
-				{ 16, "INV_sword_06", nil, ALIL["Two-Handed Swords"] },
+				{ 16, "INV_sword_19", nil, ALIL["Two-Handed Swords"] },
 				{ 17, 36259 }, -- Lionheart Executioner (385)
 				{ 18, 34540 }, -- Lionheart Champion (385)
 				{ 19, 34538 }, -- Lionheart Blade (360)
