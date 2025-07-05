@@ -135,176 +135,212 @@ data["BlacksmithingMoP"] = {
         { -- Daggers
             name = AL["Weapons"].." - "..ALIL["Daggers"],
             [NORMAL_DIFF] = {
-                { 1, 99652 }, -- Brainsplinter
-                { 2, 99653 }, -- Masterwork Elementium Spellblade
-                { 3, 76449 }, -- Elementium Spellblade
-                { 4, 76453 }, -- Elementium Shank
-                { 5, 76434 }, -- Cold Forged Shank
+                { 1, 122648 }, -- Masterwork Ghost Shard
+                { 2, 122641 }, -- Ghost Shard
             }
         },
         { -- Axes
             name = AL["Weapons"].." - "..AL["Axes"],
             [NORMAL_DIFF] = {
-                { 1, "INV_sword_04", nil, ALIL["One-Handed Axes"] },
-                { 2, 99655 },   -- Elementium-Edged Scalper
-                { 3, 76452 },	-- Elementium Bonesplitter
-                { 4, 94718 },	-- Elementium Gutslicer
-                { 5, 76433 },	-- Decapitator's Razor
+                { 1, "INV_axe_04", nil, ALIL["One-Handed Axes"] },
+                { 2, 138878 }, -- "Black Planar Edge, Reborn"
+                { 3, 138880 }, -- "Wicked Edge of the Planes, Reborn"
+                { 4, 138876 }, -- "The Planar Edge, Reborn"
+                { 5, 122644 }, -- Masterwork Forgewire Axe
+                { 6, 122637 }, -- Forgewire Axe
+                { 16, "INV_axe_09", nil, ALIL["Two-Handed Axes"] },
+                { 17, 138881 }, -- "Bloodmoon, Reborn"
+                { 18, 138879 }, -- "Mooncleaver, Reborn"
+                { 19, 138877 }, -- "Lunar Crescent, Reborn"
+                { 20, 122647 }, -- Masterwork Spiritblade Decimator
+                { 21, 122640 }, -- Spiritblade Decimator
             }
         },
         { -- Maces
             name = AL["Weapons"].." - "..AL["Maces"],
             [NORMAL_DIFF] = {
-                { 1, "INV_sword_04", nil, ALIL["One-Handed Maces"] },
-                { 2, 99654 }, -- Lightforged Elementium Hammer
-                { 3, 76450 }, -- Elementium Hammer
-                { 4, 76436 }, -- Lifeforce Hammer
-                { 16, "INV_sword_04", nil, ALIL["Two-Handed Maces"] },
-                { 17, 94732 }, -- Forged Elementium Mindcrusher
+                { 1, "INV_mace_04", nil, ALIL["One-Handed Maces"] },
+                { 2, 138885 }, -- "Dragonmaw, Reborn"
+                { 3, 138886 }, -- "Dragonstrike, Reborn"
+                { 4, 138882 }, -- "Drakefist Hammer, Reborn"
+                { 5, 122646 }, -- Masterwork Phantasmal Hammer
+                { 6, 122639 }, -- Phantasmal Hammer
+                { 16, "INV_mace_07", nil, ALIL["Two-Handed Maces"] },
+                { 17, 138884 }, -- "Deep Thunder, Reborn"
+                { 18, 138887 }, -- "Stormherald, Reborn"
+                { 19, 138883 }, -- "Thunder, Reborn"
             }
         },
         { -- Swords
             name = AL["Weapons"].." - "..AL["Swords"],
             [NORMAL_DIFF] = {
                 { 1, "INV_sword_04", nil, ALIL["One-Handed Swords"] },
-                { 2, 99657 }, -- Unbreakable Guardian
-                { 3, 99656 }, -- Pyrium Spellward
-                { 16, "INV_sword_06", nil, ALIL["Two-Handed Swords"] },
-                { 17, 99658 }, -- Masterwork Elementium Deathblade
-                { 18, 76437 }, -- Obsidian Executioner
-            }
-        },
-        { -- Polearms
-            name = AL["Weapons"].." - "..ALIL["Polearms"],
-            [NORMAL_DIFF] = {
-                { 1, 99660 }, -- Witch Hunter's Harvester
-                { 2, 76451 }, -- Elementium Poleaxe
-                { 3, 76474 }, -- Obsidium Bladespear
+                { 2, 138892 }, -- "Blazefury, Reborn"
+                { 3, 138890 }, -- "Blazeguard, Reborn"
+                { 4, 138888 }, -- "Fireguard, Reborn"
+                { 5, 122645 }, -- Masterwork Ghost-Forged Blade
+                { 6, 122638 }, -- Ghost-Forged Blade
+                { 16, "INV_sword_19", nil, ALIL["Two-Handed Swords"] },
+                { 17, 138893 }, -- "Lionheart Executioner, Reborn"
+                { 18, 138891 }, -- "Lionheart Champion, Reborn"
+                { 19, 138889 }, -- "Lionheart Blade, Reborn"
             }
         },
         { -- Shield
             name = AL["Weapons"].." - "..ALIL["Shield"],
             [NORMAL_DIFF] = {
-                { 1, 76454 }, -- Elementium Earthguard
-                { 2, 76455 }, -- Elementium Stormshield
-                { 3, 76293 }, -- Stormforged Shield
-                { 4, 76291 }, -- Hardened Obsidium Shield
+                { 1, 122642 }, -- Masterwork Lightsteel Shield
+                { 2, 122643 }, -- Masterwork Spiritguard Shield
+                { 3, 122635 }, -- Lightsteel Shield
+                { 4, 122636 }, -- Spiritguard Shield
             }
         },
         { -- Head
             name = AL["Armor"].." - "..ALIL["Head"],
             [PLATE_DIFF] = {
-                { 1, 76463 },	-- Bloodied Pyrium Helm
-                { 2, 76471 },	-- Ornate Pyrium Helm
-                { 3, 76288 },	-- Stormforged Helm
-                { 4, 76260 },	-- Hardened Obsidium Helm
-                { 5, 76269 },	-- Redsteel Helm
+                { 1, 137767 }, -- Haunted Steel Headcover
+                { 2, 137771 }, -- Haunted Steel Headguard
+                { 3, 137769 }, -- Haunted Steel Greathelm
+                { 4, 122616 }, -- Contender's Revenant Helm
+                { 5, 122624 }, -- Contender's Spirit Helm
+                { 6, 122600 }, -- Masterwork Ghost-Forged Helm
+                { 7, 122608 }, -- Masterwork Lightsteel Helm
+                { 8, 122592 }, -- Masterwork Spiritguard Helm
+                { 9, 122576 }, -- Ghost-Forged Helm
+                { 10, 122584 }, -- Lightsteel Helm
+                { 11, 122568 }, -- Spiritguard Helm
             },
         },
         { -- Shoulder
             name = AL["Armor"].." - "..ALIL["Shoulder"],
             [PLATE_DIFF] = {
-                { 1, 76461 },	-- Bloodied Pyrium Shoulders
-                { 2, 76469 },	-- Ornate Pyrium Shoulders
-                { 3, 76286 },	-- Stormforged Shoulders
-                { 4, 76258 },	-- Hardened Obsidium Shoulders
-                { 5, 76266 },	-- Redsteel Shoulders
+                { 1, 122617 }, -- Contender's Revenant Shoulders
+                { 2, 122625 }, -- Contender's Spirit Shoulders
+                { 3, 122601 }, -- Masterwork Ghost-Forged Shoulders
+                { 4, 122609 }, -- Masterwork Lightsteel Shoulders
+                { 5, 122593 }, -- Masterwork Spiritguard Shoulders
+                { 6, 122577 }, -- Ghost-Forged Shoulders
+                { 7, 122585 }, -- Lightsteel Shoulders
+                { 8, 122569 }, -- Spiritguard Shoulders
             },
         },
         { -- Chest
             name = AL["Armor"].." - "..ALIL["Chest"],
             [PLATE_DIFF] = {
-                { 1, 76443 },	-- Hardened Elementium Hauberk
-                { 2, 76445 },	-- Elementium Deathplate
-                { 3, 76447 },	-- Light Elementium Chestguard
-                { 4, 76472 },	-- Ornate Pyrium Breastplate
-                { 5, 76464 },	-- Bloodied Pyrium Breastplate
-                { 6, 76270 },	-- Redsteel Breastplate
-                { 7, 76289 },	-- Stormforged Breastplate
-                { 8, 76261 },	-- Hardened Obsidium Breastplate
-            },
-        },
-        { -- Feet
-            name = AL["Armor"].." - "..ALIL["Feet"],
-            [PLATE_DIFF] = {
-                { 1, 99452 }, -- Warboots of Mighty Lords
-                { 2, 99453 }, -- Mirrored Boots
-                { 3, 99454 }, -- Emberforged Elementium Boots
-                { 4, 76459 }, -- Bloodied Pyrium Boots
-                { 5, 76468 }, -- Ornate Pyrium Boots
-                { 6, 76265 }, -- Redsteel Boots
-                { 7, 76285 }, -- Stormforged Boots
-                { 8, 76182 }, -- Hardened Obsidium Boots
-            },
-        },
-        { -- Hand
-            name = AL["Armor"].." - "..ALIL["Hand"],
-            [PLATE_DIFF] = {
-                { 1, 99439 }, -- Fists of Fury
-                { 2, 99440 }, -- Eternal Elementium Handguards
-                { 3, 99441 }, -- Holy Flame Gauntlets
-                { 4, 76466 }, -- Ornate Pyrium Gauntlets
-                { 5, 76457 }, -- Bloodied Pyrium Gauntlets
-                { 6, 76281 }, -- Stormforged Gauntlets
-                { 7, 76180 }, -- Hardened Obsidium Gauntlets
-                { 8, 76263 }, -- Redsteel Gauntlets
-            },
-        },
-        { -- Legs
-            name = AL["Armor"].." - "..ALIL["Legs"],
-            [PLATE_DIFF] = {
-                { 1, 101924 }, -- Pyrium Legplates of Purified Evil
-                { 2, 101925 }, -- Unstoppable Destroyer's Legplates
-                { 3, 101928 }, -- Foundations of Courage
-                { 4, 76470 },  -- Ornate Pyrium Legguards
-                { 5,76462 },   -- Bloodied Pyrium Legguards
-                { 6, 76287 },  -- Stormforged Legguards
-                { 7, 76267 },  -- Redsteel Legguards
-                { 8, 76259 },  -- Hardened Obsidium Legguards
-            },
-        },
-        { -- Waist
-            name = AL["Armor"].." - "..ALIL["Waist"],
-            [PLATE_DIFF] = {
-                { 1, 76444 }, -- Hardened Elementium Girdle
-                { 2, 76446 }, -- Elementium Girdle of Pain
-                { 3, 76448 }, -- Light Elementium Belt
-                { 4, 76467 }, -- Ornate Pyrium Belt
-                { 5, 76458 }, -- Bloodied Pyrium Belt
-                { 6, 76264 }, -- Redsteel Belt
-                { 7, 76283 }, -- Stormforged Belt
-                { 8, 76181 }, -- Hardened Obsidium Belt
+                { 1, 126854 }, -- Chestplate of Limitless Faith
+                { 2, 126852 }, -- Ornate Battleplate of the Master
+                { 3, 126850 }, -- Unyielding Bloodplate
+                { 4, 122653 }, -- Breastplate of Ancient Steel
+                { 5, 122649 }, -- Ghost Reaver's Breastplate
+                { 6, 122651 }, -- Living Steel Breastplate
+                { 7, 122618 }, -- Contender's Revenant Breastplate
+                { 8, 122626 }, -- Contender's Spirit Breastplate
+                { 9, 122602 }, -- Masterwork Ghost-Forged Breastplate
+                { 10, 122610 }, -- Masterwork Lightsteel Breastplate
+                { 11, 122594 }, -- Masterwork Spiritguard Breastplate
+                { 12, 122578 }, -- Ghost-Forged Breastplate
+                { 13, 122586 }, -- Lightsteel Breastplate
+                { 14, 122570 }, -- Spiritguard Breastplate
             },
         },
         { -- Wrist
             name = AL["Armor"].." - "..ALIL["Wrist"],
             [PLATE_DIFF] = {
-                { 1, 101929 }, -- Soul Redeemer Bracers
-                { 2, 101931 }, -- Bracers off DEstructive Strength
-                { 3, 101932 }, -- Titanguard Wristplates
-                { 4, 76456 }, -- Bloodied Pyrium Bracers
-                { 5, 76465 }, -- Ornate Pyrium Bracers
-                { 6, 76179 }, -- Hardened Obsidium Bracers
-                { 7, 76262 }, -- Redsteel Bracers
-                { 8, 76280 }, -- Stormforged Bracers
+                { 1, 122621 }, -- Contender's Revenant Bracers
+                { 2, 122629 }, -- Contender's Spirit Bracers
+                { 3, 122605 }, -- Masterwork Ghost-Forged Bracers
+                { 4, 122613 }, -- Masterwork Lightsteel Bracers
+                { 5, 122597 }, -- Masterwork Spiritguard Bracers
+                { 6, 122581 }, -- Ghost-Forged Bracers
+                { 7, 122589 }, -- Lightsteel Bracers
+                { 8, 122573 }, -- Spiritguard Bracers
+            },
+        },
+        { -- Hand
+            name = AL["Armor"].." - "..ALIL["Hand"],
+            [PLATE_DIFF] = {
+                { 1, 126853 }, -- Bloodforged Warfists
+                { 2, 126851 }, -- Gauntlets of Battle Command
+                { 3, 126855 }, -- Gauntlets of Unbound Devotion
+                { 4, 122654 }, -- Gauntlets of Ancient Steel
+                { 5, 122650 }, -- Ghost Reaver's Gauntlets
+                { 6, 122652 }, -- Living Steel Gauntlets
+                { 7, 122619 }, -- Contender's Revenant Gauntlets
+                { 8, 122627 }, -- Contender's Spirit Gauntlets
+                { 9, 122603 }, -- Masterwork Ghost-Forged Gauntlets
+                { 10, 122611 }, -- Masterwork Lightsteel Gauntlets
+                { 11, 122595 }, -- Masterwork Spiritguard Gauntlets
+                { 12, 122579 }, -- Ghost-Forged Gauntlets
+                { 13, 122571 }, -- Spiritguard Gauntlets
+                { 14, 122587 }, -- Lightsteel Gauntlets
+            },
+        },
+        { -- Waist
+            name = AL["Armor"].." - "..ALIL["Waist"],
+            [PLATE_DIFF] = {
+                { 1, 142968 }, -- Avenger's Trillium Waistplate
+                { 2, 142963 }, -- Blessed Trillium Belt
+                { 3, 142967 }, -- Protector's Trillium Waistguard
+                { 4, 122623 }, -- Contender's Revenant Belt
+                { 5, 122631 }, -- Contender's Spirit Belt
+                { 6, 122607 }, -- Masterwork Ghost-Forged Belt
+                { 7, 122615 }, -- Masterwork Lightsteel Belt
+                { 8, 122599 }, -- Masterwork Spiritguard Belt
+                { 9, 122583 }, -- Ghost-Forged Belt
+                { 10, 122575 }, -- Spiritguard Belt
+                { 11, 122591 }, -- Lightsteel Belt
+            },
+        },
+        { -- Legs
+            name = AL["Armor"].." - "..ALIL["Legs"],
+            [PLATE_DIFF] = {
+                { 1, 142958 }, -- Protector's Trillium Legguards
+                { 2, 142959 }, -- Avenger's Trillium Legplates
+                { 3, 142954 }, -- Blessed Trillium Greaves
+                { 4, 122620 }, -- Contender's Revenant Legplates
+                { 5, 122628 }, -- Contender's Spirit Legplates
+                { 6, 122604 }, -- Masterwork Ghost-Forged Legplates
+                { 7, 122596 }, -- Masterwork Spiritguard Legplates
+                { 8, 122612 }, -- Masterwork Lightsteel Legplates
+                { 9, 122580 }, -- Ghost-Forged Legplates
+                { 10, 122588 }, -- Lightsteel Legplates
+                { 11, 122572 }, -- Spiritguard Legplates
+            },
+        },
+        { -- Feet
+            name = AL["Armor"].." - "..ALIL["Feet"],
+            [PLATE_DIFF] = {
+                { 1, 137766 }, -- Haunted Steel Greaves
+                { 2, 137768 }, -- Haunted Steel Treads
+                { 3, 137770 }, -- Haunted Steel Warboots
+                { 4, 122622 }, -- Contender's Revenant Boots
+                { 5, 122630 }, -- Contender's Spirit Boots
+                { 6, 122606 }, -- Masterwork Ghost-Forged Boots
+                { 7, 122614 }, -- Masterwork Lightsteel Boots
+                { 8, 122598 }, -- Masterwork Spiritguard Boots
+                { 9, 122582 }, -- Ghost-Forged Boots
+                { 10, 122590 }, -- Lightsteel Boots
+                { 11, 122574 }, -- Spiritguard Boots
             },
         },
         { -- Enhancements
             name = AL["Enhancements"],
             [NORMAL_DIFF] = {
-                { 1, 76439 }, -- Ebonsteel Belt Buckle
-                { 5, 55641 }, -- Socket Gloves
-                { 16, 76440 }, -- Pyrium Shield Spike
-                { 18, 76442 }, -- Pyrium Weapon Chain
-                { 20, 55628 }, -- Socket Bracer
+                { 1, 122632 }, -- Living Steel Belt Buckle
+                { 5, 114112 }, -- Socket Gloves
+                { 16, 131928 }, -- Ghost Iron Shield Spike
+                { 18, 131929 }, -- Living Steel Weapon Chain
+                { 20, 113263 }, -- Socket Bracer
             }
         },
         { -- Misc
             name = AL["Misc"],
             [NORMAL_DIFF] = {
-                { 1, 76438 }, -- Obsidium Skeleton Key
-                { 3, 92375 }, -- Elementium Rod
-                { 16, 76178 }, -- Folded Obsidium
+                { 1, 122633 }, -- Ghostly Skeleton Key
+                { 16, 126869 }, -- Folded Ghost Iron
+                { 17, 138646 }, -- Lightning Steel Ingot
+                { 18, 143255 }, -- Balanced Trillium Ingot
+                { 19, 146921 }, -- Accelerated Balanced Trillium Ingot
             }
         },
     }
@@ -1793,98 +1829,25 @@ data["ArchaeologyMoP"] = {
     CorrespondingFields = private.ARCHAEOLOGY_LINK,
     items = {
         {
-            name = AL["Endgame Gear"],
+            name = AL["Mantid"],
             [NORMAL_DIFF] = {
-                { 1, "TRADE_ARCHAEOLOGY_TROLL_TABLET", nil, ALIL["Troll"] },
-                { 2, 90608 }, -- Zin'rokh, Destroyer of Worlds
-                { 4, "TRADE_ARCHAEOLOGY_HIGHBORNE_SCROLL", nil, ALIL["Night Elf"] },
-                { 5, 91757 }, -- Tyrande's Favorite Doll
-                { 7, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, ALIL["Tol'vir"] },
-                { 8, 92163 }, -- Scimitar of the Sirocco
-                { 9, 92139 }, -- Staff of Ammunae
-                { 10, 92168 }, -- Ring of the Boy Emperor
-                { 16, "TRADE_ARCHAEOLOGY_DWARF_RUNESTONE", nil, ALIL["Dwarf"] },
-                { 17, 91227 }, -- Staff of Sorcerer-Thane Thaurissan
-                { 19, "TRADE_ARCHAEOLOGY_FOSSIL_SNAILSHELL", nil, ALIL["Fossil"] },
-                { 20, 98533 }, -- Extinct Turtle Shell
+                { 1, 139786 }, -- Mantid Sky Reaver
+                { 2, 139787 }, -- Sonic Pulse Generator
             },
         },
         {
-            name = AL["Leveling Gear"],
+            name = AL["Mogu"],
             [NORMAL_DIFF] = {
-                { 1, "TRADE_ARCHAEOLOGY_VRYKUL_RUNESTICK", nil, ALIL["Vrykul"] },
-                { 2, 90997 }, -- Nifflevar Bearded Axe
-                { 4, "TRADE_ARCHAEOLOGY_ORC_BLOODTEXT", nil, ALIL["Orc"] },
-                { 5, 90843 }, -- Headdress of the First Shaman
-                { 16, "TRADE_ARCHAEOLOGY_HIGHBORNE_SCROLL", nil, ALIL["Night Elf"] },
-                { 17, 90616 }, -- Queen Azshara's Dressing Gown
+                { 1, 113993 }, -- Anatomical Dummy
+                { 2, 113992 }, -- Quilen Statuette
             },
         },
         {
-            name = AL["Toys"],
+            name = AL["Pandaren"],
             [NORMAL_DIFF] = {
-                { 1, "TRADE_ARCHAEOLOGY_HIGHBORNE_SCROLL", nil, ALIL["Night Elf"] },
-                { 2, 91761 }, -- Bones of Transformation
-                { 3, 91773 }, -- Wisp Amulet
-                { 4, 90464 }, -- Highborne Soul Mirror
-                { 5, 90614 }, -- Kaldorei Wind Chimes
-                { 6, 90493 }, -- Druid and Priest Statue Set
-                { 8, "TRADE_ARCHAEOLOGY_TROLL_TABLET", nil, ALIL["Troll"] },
-                { 9, 98556 }, -- Haunted War Drum
-                { 11, "TRADE_ARCHAEOLOGY_VRYKUL_RUNESTICK", nil, ALIL["Vrykul"] },
-                { 12, 98569 }, -- Vrykul Drinking Horn
-                { 14, "TRADE_ARCHAEOLOGY_FOSSIL_SNAILSHELL", nil, ALIL["Fossil"] },
-                { 15, 98560 }, -- Ancient Amber
-                { 16, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, ALIL["Tol'vir"] },
-                { 17, 92145 }, -- Pendant of the Scarab Storm
-                { 19, "TRADE_ARCHAEOLOGY_NERUBIAN_OBELISK", nil, ALIL["Nerubian"] },
-                { 20, 91214 }, -- Blessing of the Old God
-                { 21, 91215 }, -- Puzzle Box of Yogg-Saron
-                { 23, "TRADE_ARCHAEOLOGY_DRAENEI_TOME", nil, ALIL["Draenei"] },
-                { 24, 90984 }, -- The Last Relic of Argus
-                { 25, 90983 }, -- Arrival of the Naaru
-                { 27, "TRADE_ARCHAEOLOGY_DWARF_RUNESTONE", nil, ALIL["Dwarf"] },
-                { 28, 91226 }, -- The Innkeeper's Daughter
-                { 29, 90553 }, -- Chalice of the Mountain Kings
+                { 1, 113980 }, -- Umbrella of Chi-Ji
+                { 2, 113981 }, -- Spear of Xuen
             },
-        },
-        {
-            name = AL["Mounts"],
-            [NORMAL_DIFF] = {
-                { 1, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, ALIL["Tol'vir"] },
-                { 2, 92148 }, -- Scepter of Azj'Aqir
-                { 16, "TRADE_ARCHAEOLOGY_FOSSIL_SNAILSHELL", nil, ALIL["Fossil"] },
-                { 17, 90619 }, -- Fossilized Raptor
-            },
-        },
-        {
-            name = AL["Pets"],
-            [NORMAL_DIFF] = {
-                { 1, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, ALIL["Tol'vir"] },
-                { 2, 92137 }, -- Crawling Claw
-                { 4, "TRADE_ARCHAEOLOGY_TROLL_TABLET", nil, ALIL["Troll"] },
-                { 5, 98588 }, -- Voodoo Figurine
-                { 16, "TRADE_ARCHAEOLOGY_DWARF_RUNESTONE", nil, ALIL["Dwarf"] },
-                { 17, 90521 }, -- Clockwork Gnome
-                { 19, "TRADE_ARCHAEOLOGY_FOSSIL_SNAILSHELL", nil, ALIL["Fossil"] },
-                { 20, 98582 }, -- Pterrordax Hatchling
-                { 21, 89693 }, -- Fossilized Hatchling
-            },
-        },
-        {
-            name = AL["Misc"],
-            [NORMAL_DIFF] = {
-                { 1, "TRADE_ARCHAEOLOGY_AQIR_ARTIFACTFRAGMENT", nil, ALIL["Tol'vir"] },
-                { 2, 91790 }, -- Canopic Jar
-                { 16, "i52843" }, -- Dwarf Rune Stone
-                { 17, "i63127" }, -- Highborne Scroll
-                { 18, "i63128" }, -- Troll Tablet
-                { 19, "i64392" }, -- Orc Blood Text
-                { 20, "i64394" }, -- Draenei Tome
-                { 21, "i64395" }, -- Vrykul Rune Stick
-                { 22, "i64396" }, -- Nerubian Obelisk
-                { 23, "i64397" }, -- Tol'vir Hieroglyphic
-            }
         },
     }
 }
@@ -1899,111 +1862,129 @@ data["CookingMoP"] = {
         {
             name = ALIL["Feast"],
             [NORMAL_DIFF] = {
-                { 1, 88036 }, -- Seafood Magnifique Feast
-                { 2, 88011 }, -- Broiled Dragon Feast
+                { 1, 105190 }, -- Pandaren Banquet
+                { 2, 105194 }, -- Great Pandaren Banquet
+                { 4, 125602 }, -- Banquet of the Brew
+                { 5, 125603 }, -- Great Banquet of the Brew
+                { 6, 125141 }, -- Banquet of the Grill
+                { 7, 125142 }, -- Great Banquet of the Grill
+                { 8, 125600 }, -- Banquet of the Oven
+                { 9, 125601 }, -- Great Banquet of the Oven
+                { 10, 125596 }, -- Banquet of the Pot
+                { 11, 125597 }, -- Great Banquet of the Pot
+                { 12, 125598 }, -- Banquet of the Steamer
+                { 13, 125599 }, -- Great Banquet of the Steamer
+                { 14, 125594 }, -- Banquet of the Wok
+                { 15, 125595 }, -- Great Banquet of the Wok
+                { 16, 145038 }, -- Noodle Cart Kit
+                { 17, 145167 }, -- Grand Noodle Cart Kit
+                { 18, 145061 }, -- Deluxe Noodle Cart Kit
+                { 19, 145170 }, -- Grand Deluxe Noodle Cart Kit
+                { 20, 145062 }, -- Pandaren Treasure Noodle Cart Kit
+                { 21, 145197 }, -- Grand Pandaren Treasure Noodle Cart Kit
             },
         },
         {
-            name = AL["Useful Stat"],
+            name = ALIL["Way of the Brew"],
             [NORMAL_DIFF] = {
-                { 1, 88019 }, -- Fortune Cookie
+                { 1, 124052 }, -- Ginseng Tea
+                { 2, 124053 }, -- Jade Witch Brew
+                { 3, 124054 }, -- Mad Brewer's Breakfast
+                { 4, 126655 }, -- Banana Infused Rum
+                { 5, 126654 }, -- Four Senses Brew
+                { 16, 125602 }, -- Banquet of the Brew
+                { 17, 125603 }, -- Great Banquet of the Brew
             },
         },
         {
-            name = ALIL["Strength"],
+            name = ALIL["Way of the Grill"],
             [NORMAL_DIFF] = {
-                { 1, 88005 }, -- Beer-Basted Crocolisk
-                { 2, 88021 }, -- Hearty Seafood Soup
+                { 1, 104298 }, -- Charbroiled Tiger Steak
+                { 2, 104299 }, -- Eternal Blossom Fish
+                { 3, 104300 }, -- Black Pepper Ribs and Shrimp
+                { 4, 145311 }, -- Fluffy Silkfeather Omelet
+                { 16, 125141 }, -- Banquet of the Grill
+                { 17, 125142 }, -- Great Banquet of the Grill
             },
         },
         {
-            name = ALIL["Agility"],
+            name = ALIL["Way of the Oven"],
             [NORMAL_DIFF] = {
-                { 1, 88042 }, -- Skewered Eel
-                { 2, 88046 }, -- Tender Baked Turtle
+                { 1, 104310 }, -- Wildfowl Roast
+                { 2, 104311 }, -- Twin Fish Platter
+                { 3, 104312 }, -- Chun Tian Spring Rolls
+                { 4, 145310 }, -- Stuffed Lushrooms
+                { 16, 125600 }, -- Banquet of the Oven
+                { 17, 125601 }, -- Great Banquet of the Oven
             },
         },
         {
-            name = ALIL["Intellect"],
+            name = ALIL["Way of the Pot"],
             [NORMAL_DIFF] = {
-                { 1, 88039 }, -- Severed Sagefish Head
-                { 2, 88033 }, -- Pickled Guppy
+                { 1, 104304 }, -- Swirling Mist Soup
+                { 2, 104305 }, -- Braised Turtle
+                { 3, 104306 }, -- Mogu Fish Stew
+                { 4, 145307 }, -- Spiced Blossom Soup
+                { 16, 125596 }, -- Banquet of the Pot
+                { 17, 125597 }, -- Great Banquet of the Pot
             },
         },
         {
-            name = ALIL["Spirit"],
+            name = ALIL["Way of the Steamer"],
             [NORMAL_DIFF] = {
-                { 1, 88016 }, -- Delicious Sagefish Tail
-                { 2, 88047 }, -- Whitecrest Gumbo
+                { 1, 104307 }, -- Shrimp Dumplings
+                { 2, 104308 }, -- Fire Spirit Salmon
+                { 3, 104309 }, -- Steamed Crab Surprise
+                { 4, 145309 }, -- Farmer's Delight
+                { 16, 125598 }, -- Banquet of the Steamer
+                { 17, 125599 }, -- Great Banquet of the Steamer
             },
         },
         {
-            name = ALIL["Mastery"],
+            name = ALIL["Way of the Wok"],
             [NORMAL_DIFF] = {
-                { 1, 88025 }, -- Lavascale Minestrone
-                { 2, 88035 }, -- Salted Eye
+                { 1, 104301 }, -- Sauteed Carrots
+                { 2, 104302 }, -- Valley Stir Fry
+                { 3, 104303 }, -- Sea Mist Rice Noodles
+                { 4, 145305 }, -- Seasoned Pomfruit Slices
+                { 16, 125594 }, -- Banquet of the Wok
+                { 17, 125595 }, -- Great Banquet of the Wok
             },
         },
         {
-            name = ALIL["Critical Strike"],
+            name = AL["Low Level Recipes"],
             [NORMAL_DIFF] = {
-                { 1, 88003 }, -- Baked Rockfish
-                { 2, 88028 }, -- Lightly Fried Lurker
-            },
-        },
-        {
-            name = ALIL["Haste"],
-            [NORMAL_DIFF] = {
-                { 1, 88004 }, -- Basilisk Liverdog
-                { 2, 88012 }, -- Broiled Mountain Trout
-            },
-        },
-        {
-            name = ALIL["Hit"],
-            [NORMAL_DIFF] = {
-                { 1, 88020 }, -- Grilled Dragon
-                { 2, 88037 }, -- Seasoned Crab
-            },
-        },
-        {
-            name = ALIL["Expertise"],
-            [NORMAL_DIFF] = {
-                { 1, 88014 }, -- Crocolisk Au Gratin
-                { 2, 88024 }, -- Lavascale Fillet
-            },
-        },
-        {
-            name = ALIL["Dodge"],
-            [NORMAL_DIFF] = {
-                { 1, 88031 }, -- Mushroom Sauce Mudfish
-                { 2, 88030 }, -- Lurker Lunch
-            },
-        },
-        {
-            name = ALIL["Parry"],
-            [NORMAL_DIFF] = {
-                { 1, 88034 }, -- Blackbelly Sushi
+                { 1, 125117 }, -- Sliced Peaches
+                { 2, 125067 }, -- Perfectly Cooked Instant Noodles
+                { 3, 124225 }, -- Toasted Fish Jerky
+                { 4, 124227 }, -- Dried Needle Mushrooms
+                { 5, 124223 }, -- Pounded Rice Cake
+                { 6, 124224 }, -- Yak Cheese Curds
+                { 7, 124226 }, -- Dried Peaches
+                { 8, 124228 }, -- Boiled Silkworm Pupa
+                { 9, 125078 }, -- Roasted Barley Tea
+                { 16, 104237 }, -- Golden Carp Consomme
+                { 17, 104297 }, -- Fish Cake
+                { 18, 124233 }, -- Blanched Needle Mushrooms
+                { 19, 124229 }, -- Red Bean Bun
+                { 20, 124234 }, -- Skewered Peanut Chicken
+                { 21, 124231 }, -- Green Curry Fish
+                { 22, 124232 }, -- Peach Pie
+                { 23, 124230 }, -- Tangy Yogurt
             },
         },
         {
             name = ALIL["Food"],
             [NORMAL_DIFF] = {
-                { 1, 96133 }, -- Scalding Murglesnout
-                { 2, 88018 }, -- Fish Fry
-                { 3, 88006 }, -- Blackened Surprise
-                { 5, 93741 }, -- Venison Jerky
-                { 16, 88044 }, -- South Island Iced Tea
-                { 17, 88045 }, -- Starfire Espresso
-            },
-        },
-        {
-            name = AL["Special"],
-            [NORMAL_DIFF] = {
-                { 1, 88013 }, -- Chocolate Cookie
-                { 3, 88017 }, -- Feathered Lure
-                { 16, 88022 }, -- Highland Spirits
-                { 17, 88015 }, -- Darkbrew Lager
-            },
+                { 1, 125120 }, -- Spicy Salmon
+                { 2, 125123 }, -- Spicy Vegetable Chips
+                { 3, 125080 }, -- Pearl Milk Tea
+                { 4, 125121 }, -- Wildfowl Ginseng Soup
+                { 5, 124029 }, -- Viseclaw Soup
+                { 6, 124032 }, -- Krasarang Fritters
+                { 7, 125122 }, -- Rice Pudding
+                { 8, 145308 }, -- Mango Ice
+            }
         },
     }
 }
