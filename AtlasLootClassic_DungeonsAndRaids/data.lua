@@ -876,7 +876,7 @@ data["ScarletHalls"] = {
                 { 4,  88272 }, -- The Gleaming Ravager
                 { 5,  88273 }, -- Armsmaster's Sealed Locket
                 { 7, 23192, [ATLASLOOT_IT_FILTERIGNORE] = true }, -- Tabard of the Scarlet Crusade
-                { 8,  71638 }, -- Ornate Weapon 
+                { 8,  71638 }, -- Ornate Weapon
             },
         },
         { -- SHKoegler
