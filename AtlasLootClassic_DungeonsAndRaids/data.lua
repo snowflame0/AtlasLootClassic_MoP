@@ -894,6 +894,7 @@ data["ScarletHalls"] = {
                 { 9,  88282 }, -- Vellum-Ripper Gloves
                 { 10,  88283 }, -- Bradbury's Entropic Legguards
                 { 12,  87267 }, -- Codex of the Crusade
+                { 14,  82470 }, -- Ancient Tome of Portal: Dalaran
             },
         },
     },
