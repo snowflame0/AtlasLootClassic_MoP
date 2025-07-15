@@ -747,6 +747,7 @@ data["TierSets"] = {
         AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM, {
             name = format(AL["Tier %s Sets"], "15"),
             CoinTexture = "MOP",
+            ContentPhaseMoP = 3,
             [CELESTIAL_DIFF] = {
                     { 1, 50001171 }, -- Warlock
                     { 3, 50001165 }, -- Priest Holy
@@ -826,6 +827,7 @@ data["TierSets"] = {
                 AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM, {
             name = format(AL["Tier %s Sets"], "16"),
             CoinTexture = "MOP",
+            ContentPhaseMoP = 5,
             [CELESTIAL_DIFF] = {
                     { 1, 50001181 }, -- Warlock
                     { 3, 50001187 }, -- Priest Holy
@@ -1594,7 +1596,6 @@ data["Darkmoon"] = {
     FactionID = 909,
     ContentType = WORLD_EVENT_CONTENT,
     LoadDifficulty = LOAD_DIFF,
-    ContentPhase = 3,
     items = {
         { -- Exalted
             name = AL["Decks"],

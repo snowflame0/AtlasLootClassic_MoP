@@ -68,7 +68,9 @@ ItemDB.mt = {
 }
 
 local function GetContentPhaseFromTable(tab)
-    if ALPrivate.IS_CATA then
+    if ALPrivate.IS_MOP then
+        return tab.ContentPhaseMoP
+    elseif ALPrivate.IS_CATA then
         return tab.ContentPhaseCata
     elseif ALPrivate.IS_WOTLK then
         return tab.ContentPhaseWrath

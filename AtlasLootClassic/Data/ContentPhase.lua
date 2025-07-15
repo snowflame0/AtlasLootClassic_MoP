@@ -566,6 +566,8 @@ end
 
 if AtlasLoot:GameVersion_EQ(AtlasLoot.MOP_VERSION_NUM) then
     PHASE_ITEMS = {
+        [94735] = 3,
+        [96011] = 3,
     }
 end
 

@@ -135,6 +135,7 @@ local T15_SET = {
     ExtraList = true,
     TableType = SET_ITTYPE,
     IgnoreAsSource = true,
+    ContentPhaseMoP = 3,
     [CELESTIAL_DIFF] = {
         { 1, 50001171 }, -- Warlock
         { 3, 50001165 }, -- Priest Holy
@@ -217,6 +218,7 @@ local T16_SET = {
     ExtraList = true,
     TableType = SET_ITTYPE,
     IgnoreAsSource = true,
+    ContentPhaseMoP = 5,
     [CELESTIAL_DIFF] = {
         { 1, 50001181 }, -- Warlock
         { 3, 50001187 }, -- Priest Holy
@@ -391,6 +393,7 @@ local MOP_RAID2_AC_TABLE = {	-- Glory of the Thundering Raider
     name = select(2, GetAchievementInfo(8124)),
     TableType = AC_ITTYPE,
     ExtraList = true,
+    ContentPhaseMoP = 3,
     CoinTexture = "Achievement",
     [NORMAL_DIFF] = {
         { 1, 8124 },
@@ -1372,6 +1375,7 @@ data["WorldBossesMoP"] = {
         },
         {	--Nalak
             EncounterJournalID = 814,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, "ICON_spell_nature_starfall", nil, ALIL["DRUID"], ALIL["Balance"] },
                 { 2, 95245 },	-- Gloves of the Haunted Forest
@@ -1569,6 +1573,7 @@ data["WorldBossesMoP"] = {
         },
         {	--Oondasta
             EncounterJournalID = 826,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 95182 },	-- Robes of Zalmoxes
                 { 2, 95183 },	-- Waistband of Elder Falcarius
@@ -1616,6 +1621,7 @@ data["WorldBossesMoP"] = {
         },
         {	--Ordos
             EncounterJournalID = 861,
+            ContentPhaseMoP = 5,
             [NORMAL_DIFF] = {
                 { 1, 105810 },	-- Buc-Zakai Burning Hood
                 { 2, 105808 },	-- Damien's Ice-Vein Mask
@@ -1681,6 +1687,7 @@ data["WorldBossesMoP"] = {
         },
         {	--TheAugustCelestials
             EncounterJournalID = 857,
+            ContentPhaseMoP = 5,
             name = ALIL["The August Celestials"],
             [NORMAL_DIFF] = {
                 { 1, "ICON_spell_nature_starfall", nil, ALIL["DRUID"], ALIL["Balance"] },
@@ -2557,9 +2564,11 @@ data["ThroneofThunder"] = {
     EncounterJournalID = 362,
     MapID = 6738,
     ContentType = RAID_CONTENT,
+    ContentPhaseMoP = 3,
     items = {
         {	--ToTJinrokh
             EncounterJournalID = 827,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 94735, 96011 },	-- Drape of Booming Nights
                 { 2, 94733, 96008 },	-- Fissure-Split Shoulderwraps
@@ -2610,6 +2619,7 @@ data["ThroneofThunder"] = {
         },
         {	--ToTHorridon
             EncounterJournalID = 819,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 94745, 96025 },	-- Horn-Rimmed Doomcloak
                 { 2, 94748, 96017 },	-- Wastewalker's Sandblasted Drape
@@ -2664,6 +2674,7 @@ data["ThroneofThunder"] = {
         },
         {	--ToTCouncil
             EncounterJournalID = 816,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 94761, 96040 },	-- Zandalari Robes of the Final Rite
                 { 2, 94762, 96039 },	-- Mar'li's Bloodstained Sandals
@@ -2706,6 +2717,7 @@ data["ThroneofThunder"] = {
         },
         {	--ToTTortos
             EncounterJournalID = 825,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 94774, 96059 },	-- Beakbreaker Greatcloak
                 { 2, 94785, 96063 },	-- Shimmershell Cape
@@ -2756,6 +2768,7 @@ data["ThroneofThunder"] = {
         },
         {	--ToTMegaera
             EncounterJournalID = 821,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 94801, 96079 },	-- Gleaming-Eye Shoulderpads
                 { 2, 94804, 96080 },	-- Frostborn Wristwraps
@@ -2804,6 +2817,7 @@ data["ThroneofThunder"] = {
         },
         {	--ToTJiKun
             EncounterJournalID = 828,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 94812, 96089 },	-- Pinionfeather Greatcloak
                 { 2, 94806, 96091 },	-- Robe of Midnight Down
@@ -2846,6 +2860,7 @@ data["ThroneofThunder"] = {
         },
         {	--ToTDurumu
             EncounterJournalID = 818,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 94929, 96113 },	-- Deadly Glare Cape
                 { 2, 94822, 96108 },	-- Reinforced Mirror-Sheen Cloak
@@ -2896,6 +2911,7 @@ data["ThroneofThunder"] = {
         },
         {	--ToTPrimordius
             EncounterJournalID = 820,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 94942, 96127 },	-- Hydra-Scale Bloodcloak
                 { 2, 94951, 96131 },	-- Robes of Mutagenic Blood
@@ -2950,6 +2966,7 @@ data["ThroneofThunder"] = {
         },
         {	--ToTDarkAnimus
             EncounterJournalID = 824,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 94960, 96145 },	-- Constantly Accelerating Cloak
                 { 2, 94959, 96143 },	-- Hood of the Crimson Wake
@@ -2990,6 +3007,7 @@ data["ThroneofThunder"] = {
         },
         {	--ToTIronQon
             EncounterJournalID = 817,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 94970, 96154 },	-- Quet'zal's Crackling Cord
                 { 2, 94966, 96155 },	-- Saddle-Scarred Leggings
@@ -3028,6 +3046,7 @@ data["ThroneofThunder"] = {
         },
         {	--ToTTwinConsorts
             EncounterJournalID = 829,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 94977, 96164 },	-- Robes of the Moon Lotus
                 { 2, 94979, 96168 },	-- Bracers of the Midnight Comet
@@ -3066,6 +3085,7 @@ data["ThroneofThunder"] = {
         },
         {	--ToTLeiShen
             EncounterJournalID = 832,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 94993, 96185 },	-- Gloves of the Maimed Vizier
                 { 2, 94990, 96184 },	-- Legwraps of Cardinality
@@ -3118,6 +3138,7 @@ data["ThroneofThunder"] = {
         },
         {	--ToTRaden
             EncounterJournalID = 831,
+            ContentPhaseMoP = 3,
             [HEROIC_DIFF] = {
                 { 1, 95013 },	-- Black Night Thundercloak
                 { 2, 95015 },	-- Grey Wind Mistcloak
@@ -3171,6 +3192,7 @@ data["ThroneofThunder"] = {
         {	--ToTShared
             name = AL["Shared Boss Loot"],
             ExtraList = true,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 95061, 96235 },	-- Lost Shoulders of Fire
                 { 2, 95067, 96237 },	-- Lost Shoulders of Fluidity
@@ -3223,6 +3245,7 @@ data["ThroneofThunder"] = {
         {	--ToTTrash
             name = AL["Trash Mobs"],
             ExtraList = true,
+            ContentPhaseMoP = 3,
             [NORMAL_DIFF] = {
                 { 1, 95207, 96333 },	-- Abandoned Zandalari Firecord
                 { 2, 95208, 96334 },	-- Abandoned Zandalari Shadowgirdle
