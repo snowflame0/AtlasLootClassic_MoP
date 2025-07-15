@@ -7,31 +7,31 @@
     - [ ] S15 gear
     - [ ] World PvP objectives/rewards (5.1 stuff?)
 - [ ] Collections module needs to be populated
-    - [ ] New tier sets
+    - [x] New tier sets
     - [ ] Legendaries clean up, add gems and other stuff
-    - [ ] World Drops
+    - [x] World Drops
     - [ ] JP and VP vendors
     - [ ] Celestial dungeon vendor
     - [ ] Cooking vendors?
     - [ ] Spirit of Harmony vendor
-    - [ ] Proving grounds rewards?
-    - [ ] New mounts
-    - [ ] New pets
-    - [ ] New heirlooms
-    - [ ] New tabards
+    - [ ] Proving grounds/brawler's rewards?
+    - [x] New mounts
+    - [x] New pets
+    - [x] New heirlooms
+    - [x] New tabards
     - [ ] World event changes
     - [ ] Glyphs
     - ???
 - [ ] Finish Crafting module
     - [ ] Leatherworking
-    - [ ] Blacksmithing
+    - [x] Blacksmithing
     - [ ] Sets
 - [ ] Finish Dungeons and Raids module
     - [ ] Add Celestial Dungeon stuff to Dungeons and Raids
     - [ ] Make world bosses data more compact/usable
     - [ ] Add valor/justice/fragments currency drops
     - [ ] Add source data to Data module (last step, with script)
-    - [ ] Tier sets (from Collections module)
+    - [x] Tier sets (from Collections module)
 - [ ] Clean up rest of Factions module
 - [ ] Add item sets data (Data/ItemSet.lua)
     - [x] T14

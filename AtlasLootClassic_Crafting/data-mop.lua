@@ -193,6 +193,9 @@ data["BlacksmithingMoP"] = {
                 { 2, 122643 }, -- Masterwork Spiritguard Shield
                 { 3, 122635 }, -- Lightsteel Shield
                 { 4, 122636 }, -- Spiritguard Shield
+                { 16, 143195 }, -- Crafted Malevolent Gladiator's Barrier
+                { 17, 143196 }, -- Crafted Malevolent Gladiator's Redoubt
+                { 18, 143197 }, -- Crafted Malevolent Gladiator's Shield Wall
             }
         },
         { -- Head
@@ -209,6 +212,14 @@ data["BlacksmithingMoP"] = {
                 { 9, 122576 }, -- Ghost-Forged Helm
                 { 10, 122584 }, -- Lightsteel Helm
                 { 11, 122568 }, -- Spiritguard Helm
+                { 16, 140844 }, -- Crafted Dreadful Gladiator's Dreadplate Helm
+                { 17, 137784 }, -- Crafted Dreadful Gladiator's Ornamented Headcover
+                { 18, 137795 }, -- Crafted Dreadful Gladiator's Plate Helm
+                { 19, 137773 }, -- Crafted Dreadful Gladiator's Scaled Helm
+                { 21, 143165 }, -- Crafted Malevolent Gladiator's Dreadplate Helm
+                { 22, 143181 }, -- Crafted Malevolent Gladiator's Ornamented Headcover
+                { 23, 143192 }, -- Crafted Malevolent Gladiator's Plate Helm
+                { 24, 143170 }, -- Crafted Malevolent Gladiator's Scaled Helm
             },
         },
         { -- Shoulder
@@ -222,6 +233,14 @@ data["BlacksmithingMoP"] = {
                 { 6, 122577 }, -- Ghost-Forged Shoulders
                 { 7, 122585 }, -- Lightsteel Shoulders
                 { 8, 122569 }, -- Spiritguard Shoulders
+                { 16, 140842 }, -- Crafted Dreadful Gladiator's Dreadplate Shoulders
+                { 17, 137786 }, -- Crafted Dreadful Gladiator's Ornamented Spaulders
+                { 18, 137797 }, -- Crafted Dreadful Gladiator's Plate Shoulders
+                { 19, 137775 }, -- Crafted Dreadful Gladiator's Scaled Shoulders
+                { 21, 143167 }, -- Crafted Malevolent Gladiator's Dreadplate Shoulders
+                { 22, 143183 }, -- Crafted Malevolent Gladiator's Ornamented Spaulders
+                { 23, 143194 }, -- Crafted Malevolent Gladiator's Plate Shoulders
+                { 24, 143172 }, -- Crafted Malevolent Gladiator's Scaled Shoulders
             },
         },
         { -- Chest
@@ -241,6 +260,14 @@ data["BlacksmithingMoP"] = {
                 { 12, 122578 }, -- Ghost-Forged Breastplate
                 { 13, 122586 }, -- Lightsteel Breastplate
                 { 14, 122570 }, -- Spiritguard Breastplate
+                { 16, 140846 }, -- Crafted Dreadful Gladiator's Dreadplate Chestpiece
+                { 17, 137782 }, -- Crafted Dreadful Gladiator's Ornamented Chestguard
+                { 18, 137793 }, -- Crafted Dreadful Gladiator's Plate Chestpiece
+                { 19, 140841 }, -- Crafted Dreadful Gladiator's Scaled Chestpiece
+                { 21, 143163 }, -- Crafted Malevolent Gladiator's Dreadplate Chestpiece
+                { 22, 143179 }, -- Crafted Malevolent Gladiator's Ornamented Chestguard
+                { 23, 143190 }, -- Crafted Malevolent Gladiator's Plate Chestpiece
+                { 24, 143168 }, -- Crafted Malevolent Gladiator's Scaled Chestpiece
             },
         },
         { -- Wrist
@@ -254,6 +281,14 @@ data["BlacksmithingMoP"] = {
                 { 6, 122581 }, -- Ghost-Forged Bracers
                 { 7, 122589 }, -- Lightsteel Bracers
                 { 8, 122573 }, -- Spiritguard Bracers
+                { 16, 137792 }, -- Crafted Dreadful Gladiator's Armplates of Alacrity
+                { 17, 137791 }, -- Crafted Dreadful Gladiator's Armplates of Proficiency
+                { 18, 137781 }, -- Crafted Dreadful Gladiator's Bracers of Meditation
+                { 19, 137780 }, -- Crafted Dreadful Gladiator's Bracers of Prowess
+                { 21, 143178 }, -- Crafted Malevolent Gladiator's Bracers of Meditation
+                { 22, 143177 }, -- Crafted Malevolent Gladiator's Bracers of Prowess
+                { 23, 143189 }, -- Crafted Malevolent Gladiator's Armplates of Alacrity
+                { 24, 143188 }, -- Crafted Malevolent Gladiator's Armplates of Proficiency
             },
         },
         { -- Hand
@@ -273,6 +308,14 @@ data["BlacksmithingMoP"] = {
                 { 12, 122579 }, -- Ghost-Forged Gauntlets
                 { 13, 122571 }, -- Spiritguard Gauntlets
                 { 14, 122587 }, -- Lightsteel Gauntlets
+                { 16, 140845 }, -- Crafted Dreadful Gladiator's Dreadplate Gauntlets
+                { 17, 137783 }, -- Crafted Dreadful Gladiator's Ornamented Gloves
+                { 18, 137794 }, -- Crafted Dreadful Gladiator's Plate Gauntlets
+                { 19, 137772 }, -- Crafted Dreadful Gladiator's Scaled Gauntlets
+                { 21, 143164 }, -- Crafted Malevolent Gladiator's Dreadplate Gauntlets
+                { 22, 143180 }, -- Crafted Malevolent Gladiator's Ornamented Gloves
+                { 23, 143191 }, -- Crafted Malevolent Gladiator's Plate Gauntlets
+                { 24, 143169 }, -- Crafted Malevolent Gladiator's Scaled Gauntlets
             },
         },
         { -- Waist
@@ -289,6 +332,14 @@ data["BlacksmithingMoP"] = {
                 { 9, 122583 }, -- Ghost-Forged Belt
                 { 10, 122575 }, -- Spiritguard Belt
                 { 11, 122591 }, -- Lightsteel Belt
+                { 16, 137776 }, -- Crafted Dreadful Gladiator's Clasp of Cruelty
+                { 17, 137777 }, -- Crafted Dreadful Gladiator's Clasp of Meditation
+                { 18, 137787 }, -- Crafted Dreadful Gladiator's Girdle of Accuracy
+                { 19, 137788 }, -- Crafted Dreadful Gladiator's Girdle of Prowess
+                { 21, 143173 }, -- Crafted Malevolent Gladiator's Clasp of Cruelty
+                { 22, 143174 }, -- Crafted Malevolent Gladiator's Clasp of Meditation
+                { 23, 143184 }, -- Crafted Malevolent Gladiator's Girdle of Accuracy
+                { 24, 143185 }, -- Crafted Malevolent Gladiator's Girdle of Prowess
             },
         },
         { -- Legs
@@ -305,6 +356,15 @@ data["BlacksmithingMoP"] = {
                 { 9, 122580 }, -- Ghost-Forged Legplates
                 { 10, 122588 }, -- Lightsteel Legplates
                 { 11, 122572 }, -- Spiritguard Legplates
+                { 16, 140843 }, -- Crafted Dreadful Gladiator's Dreadplate Legguards
+                { 17, 137785 }, -- Crafted Dreadful Gladiator's Ornamented Legplates
+                { 18, 137796 }, -- Crafted Dreadful Gladiator's Plate Legguards
+                { 19, 137774 }, -- Crafted Dreadful Gladiator's Scaled Legguards
+                { 21, 143166 }, -- Crafted Malevolent Gladiator's Dreadplate Legguards
+                { 22, 143182 }, -- Crafted Malevolent Gladiator's Ornamented Legplates
+                { 23, 143193 }, -- Crafted Malevolent Gladiator's Plate Legguards
+                { 24, 143171 }, -- Crafted Malevolent Gladiator's Scaled Legguards
+
             },
         },
         { -- Feet
@@ -321,6 +381,14 @@ data["BlacksmithingMoP"] = {
                 { 9, 122582 }, -- Ghost-Forged Boots
                 { 10, 122590 }, -- Lightsteel Boots
                 { 11, 122574 }, -- Spiritguard Boots
+                { 16, 137778 }, -- Crafted Dreadful Gladiator's Greaves of Alacrity
+                { 17, 137779 }, -- Crafted Dreadful Gladiator's Greaves of Meditation
+                { 18, 137790 }, -- Crafted Dreadful Gladiator's Warboots of Alacrity
+                { 19, 137789 }, -- Crafted Dreadful Gladiator's Warboots of Cruelty
+                { 21, 143175 }, -- Crafted Malevolent Gladiator's Greaves of Alacrity
+                { 22, 143176 }, -- Crafted Malevolent Gladiator's Greaves of Meditation
+                { 23, 143187 }, -- Crafted Malevolent Gladiator's Warboots of Alacrity
+                { 24, 143186 }, -- Crafted Malevolent Gladiator's Warboots of Cruelty
             },
         },
         { -- Enhancements
@@ -1363,175 +1431,184 @@ data["LeatherworkingMoP"] = {
         { -- Cloak
             name = AL["Armor"].." - "..ALIL["Cloak"],
             [NORMAL_DIFF] = {
-                { 1, 78475 },	-- Razor-Edged Cloak
-                { 2, 78476 },	-- Twilight Dragonscale Cloak
-                { 3, 99536 },   -- Vicious Fur Cloak
-                { 4, 99535 },	-- Vicious Hide Cloak
-                { 5, 78439 },	-- Cloak of War
-                { 6, 78438 },	-- Cloak of Beasts
-                { 7, 78405 },	-- Hardened Scale Cloak
-                { 8, 78380 },	-- Savage Cloak
+                { 1, 124637 }, -- Quick Strike Cloak
+                { 2, 124636 }, -- Stormscale Drape
+                { 3, 124635 }, -- Misthide Drape
             }
         },
         { -- Head
             name = AL["Armor"].." - "..ALIL["Head"],
             [LEATHER_DIFF] = {
-                { 1, 78480 },	-- Bloodied Wyrmhide Helm
-                { 2, 78469 },	-- Bloodied Leather Helm
-                { 3, 78424 },	-- Darkbrand Helm
+                { 1, 138590 }, -- Quilen Hide Helm
+                { 2, 138594 }, -- Spirit Keeper Helm
+                { 3, 124603 }, -- Contender's Leather Helm
+                { 4, 124587 }, -- Contender's Wyrmhide Helm
+                { 5, 124571 }, -- Misthide Helm
             },
             [MAIL_DIFF] = {
-                { 1, 78484 },	-- Bloodied Scale Helm
-                { 2, 78474 },	-- Bloodied Dragonscale Helm
-                { 3, 78432 },	-- Tsunami Helm
+                { 1, 138596 }, -- Cloud Serpent Helm
+                { 2, 138592 }, -- Dreadrunner Helm
+                { 3, 124611 }, -- Contender's Dragonscale Helm
+                { 4, 124595 }, -- Contender's Scale Helm
+                { 5, 124579 }, -- Stormscale Helm
             },
         },
         { -- Shoulder
             name = AL["Armor"].." - "..ALIL["Shoulder"],
             [LEATHER_DIFF] = {
-                { 1, 78464 },	-- Bloodied Wyrmhide Shoulders
-                { 2, 78455 },	-- Bloodied Leather Shoulders
-                { 3, 78411 },	-- Darkbrand Shoulders
+                { 1, 124604 }, -- Contender's Leather Shoulders
+                { 2, 124588 }, -- Contender's Wyrmhide Shoulders
+                { 3, 124572 }, -- Misthide Shoulders
             },
             [MAIL_DIFF] = {
-                { 1, 78470 },	-- Bloodied Scale Shoulders
-                { 2, 78451 },	-- Bloodied Dragonscale Shoulders
-                { 3, 78415 },	-- Tsunami Shoulders
+                { 1, 124612 }, -- Contender's Dragonscale Shoulders
+                { 2, 124596 }, -- Contender's Scale Shoulders
+                { 3, 124580 }, -- Stormscale Shoulders
             },
         },
         { -- Chest
             name = AL["Armor"].." - "..ALIL["Chest"],
             [LEATHER_DIFF] = {
-                { 1, 78487 },	-- Chestguard of Nature's Fury
-                { 2, 78488 },	-- Assassin's Chestplate
-                { 3, 78481 },	-- Bloodied Leather Chest
-                { 4, 78467 },	-- Bloodied Wyrmhide Chest
-                { 5, 78428 },	-- Darkbrand Chestguard
+                { 1, 124638 }, -- Chestguard of Nemeses
+                { 2, 124640 }, -- Nightfire Robe
+                { 3, 124619 }, -- Greyshadow Chestguard
+                { 4, 124621 }, -- Wildblood Vest
+                { 5, 124605 }, -- Contender's Leather Chestguard
+                { 6, 124589 }, -- Contender's Wyrmhide Chestguard
+                { 7, 124573 }, -- Misthide Chestguard
             },
             [MAIL_DIFF] = {
-                { 1, 78489 },	-- Twilight Scale Chestguard
-                { 2, 78490 },	-- Dragonkiller Tunic
-                { 3, 78486 },	-- Bloodied Dragonscale Chest
-                { 4, 78483 },	-- Bloodied Scale Chest
-                { 5, 78423 },	-- Tsunami Chestguard
+                { 1, 124644 }, -- Raiment of Blood and Bone
+                { 2, 124642 }, -- Stormbreaker Chestguard
+                { 3, 124625 }, -- Chestguard of Earthen Harmony
+                { 4, 124623 }, -- Lifekeeper's Robe
+                { 5, 124613 }, -- Contender's Dragonscale Chestguard
+                { 6, 124597 }, -- Contender's Scale Chestguard
+                { 7, 124581 }, -- Stormscale Chestguard
             },
         },
         { -- Wrist
             name = AL["Armor"].." - "..ALIL["Wrist"],
             [LEATHER_DIFF] = {
-                { 1, 101940 },	-- Bladeshadow Wristguards
-                { 2, 101937 },	-- Bracers of Flowing Serenity
-                { 3, 78444 },	-- Bloodied Wyrmhide Bracers
-                { 4, 78446 },	-- Bloodied Leather Bracers
-                { 5, 78398 },	-- Darkbrand Bracers
+                { 1, 124608 }, -- Contender's Leather Bracers
+                { 2, 124592 }, -- Contender's Wyrmhide Bracers
+                { 3, 124576 }, -- Misthide Bracers
             },
             [MAIL_DIFF] = {
-                { 1, 101939 },	-- Thundering Deathscale Wristguards
-                { 2, 101941 },	-- Bracers of the Hunter-Killer
-                { 3, 78448 },	-- Bloodied Scale Bracers
-                { 4, 78450 },	-- Bloodied Dragonscale Bracers
-                { 5, 78388 },	-- Tsunami Bracers
+                { 1, 124616 }, -- Contender's Dragonscale Bracers
+                { 2, 124600 }, -- Contender's Scale Bracers
+                { 3, 124584 }, -- Stormscale Bracers
             },
         },
         { -- Hand
             name = AL["Armor"].." - "..ALIL["Hand"],
             [LEATHER_DIFF] = {
-                { 1, 99446 },	-- Clutches of Evil
-                { 2, 99447 },	-- Heavenly Gloves of the Moon
-                { 3, 78452 },	-- Bloodied Wyrmhide Gloves
-                { 4, 78447 },	-- Bloodied Leather Gloves
-                { 5, 78399 },	-- Darkbrand Gloves
+                { 1, 124641 }, -- Liferuned Leather Gloves
+                { 2, 124639 }, -- Murderer's Gloves
+                { 3, 124620 }, -- Greyshadow Gloves
+                { 4, 124622 }, -- Wildblood Gloves
+                { 5, 124606 }, -- Contender's Leather Gloves
+                { 6, 124590 }, -- Contender's Wyrmhide Gloves
+                { 7, 124574 }, -- Misthide Gloves
             },
             [MAIL_DIFF] = {
-                { 1, 99445 },	-- Gloves of Unforgiving Flame
-                { 2, 99443 },	-- Dragonfire Gloves
-                { 3, 78459 },	-- Bloodied Dragonscale Gloves
-                { 4, 78449 },	-- Bloodied Scale Gloves
-                { 5, 78406 },	-- Tsunami Gloves
+                { 1, 124643 }, -- Fists of Lightning
+                { 2, 124645 }, -- Raven Lord's Gloves
+                { 3, 124626 }, -- Gloves of Earthen Harmony
+                { 4, 124624 }, -- Lifekeeper's Gloves
+                { 5, 124614 }, -- Contender's Dragonscale Gloves
+                { 6, 124598 }, -- Contender's Scale Gloves
+                { 7, 124582 }, -- Stormscale Gloves
             },
         },
         { -- Waist
             name = AL["Armor"].." - "..ALIL["Waist"],
             [LEATHER_DIFF] = {
-                { 1, 78460 },	-- Lightning Lash
-                { 2, 78461 },	-- Belt of Nefarious Whispers
-                { 3, 78468 },	-- Bloodied Leather Belt
-                { 4, 78445 },	-- Bloodied Wyrmhide Belt
-                { 5, 78416 },	-- Darkbrand Belt
+                { 1, 142961 }, -- Pennyroyal Belt
+                { 2, 142965 }, -- Snow Lily Belt
+                { 3, 124610 }, -- Contender's Leather Belt
+                { 4, 124594 }, -- Contender's Wyrmhide Belt
+                { 5, 124578 }, -- Misthide Belt
             },
             [MAIL_DIFF] = {
-                { 1, 78462 },	-- Stormleather Sash
-                { 2, 78463 },	-- Corded Viper Belt
-                { 3, 78473 },	-- Bloodied Dragonscale Belt
-                { 4, 78457 },	-- Bloodied Scale Belt
-                { 5, 78396 },	-- Tsunami Belt
+                { 1, 142966 }, -- Gorge Stalker Belt
+                { 2, 142962 }, -- Krasari Prowler Belt
+                { 3, 124618 }, -- Contender's Dragonscale Belt
+                { 4, 124602 }, -- Contender's Scale Belt
+                { 5, 124586 }, -- Stormscale Belt
             },
         },
         { -- Legs
             name = AL["Armor"].." - "..ALIL["Legs"],
             [LEATHER_DIFF] = {
-                { 1, 101933 },	-- Leggings of Nature's Champion
-                { 2, 101935 },	-- Bladeshadow Leggings
-                { 3, 78482 },	-- Bloodied Leather Legs
-                { 4, 78479 },	-- Bloodied Wyrmhide Legs
-                { 5, 78433 },	-- Darkbrand Leggings
+                { 1, 142952 }, -- Pennyroyal Leggings
+                { 2, 142956 }, -- Snow Lily Britches
+                { 3, 124607 }, -- Contender's Leather Leggings
+                { 4, 124591 }, -- Contender's Wyrmhide Leggings
+                { 5, 124575 }, -- Misthide Leggings
             },
             [MAIL_DIFF] = {
-                { 1, 101936 },	-- Rended Earth Leggings
-                { 2, 101934 },	-- Deathscale Leggings
-                { 3, 78485 },	-- Bloodied Dragonscale Legs
-                { 4, 78471 },	-- Bloodied Scale Legs
-                { 5, 78427 },	-- Tsunami Leggings
+                { 1, 142957 }, -- Gorge Stalker Legplates
+                { 2, 142953 }, -- Krasari Prowler Britches
+                { 3, 124615 }, -- Contender's Dragonscale Leggings
+                { 4, 124599 }, -- Contender's Scale Leggings
+                { 5, 124583 }, -- Stormscale Leggings
             },
         },
         { -- Feet
             name = AL["Armor"].." - "..ALIL["Feet"],
             [LEATHER_DIFF] = {
-                { 1, 99457 },	-- Treads of the Craft
-                { 2, 99458 },	-- Ethereal Footfalls
-                { 3, 78454 },	-- Bloodied Leather Boots
-                { 4, 78453 },	-- Bloodied Wyrmhide Boots
-                { 5, 78407 },	-- Darkbrand Boots
+                { 1, 138589 }, -- Quilen Hide Boots
+                { 2, 138593 }, -- Spirit Keeper Footguards
+                { 3, 124609 }, -- Contender's Leather Boots
+                { 4, 124593 }, -- Contender's Wyrmhide Boots
+                { 5, 124577 }, -- Misthide Boots
             },
             [MAIL_DIFF] = {
-                { 1, 99455 },	-- Earthen Scale Sabatons
-                { 2, 99456 },	-- Footwraps of Quenched Fire
-                { 3, 78456 },	-- Bloodied Scale Boots
-                { 4, 78458 },	-- Bloodied Dragonscale Boots
-                { 5, 78410 },	-- Tsunami Boots
+                { 1, 138595 }, -- Cloud Serpent Sabatons
+                { 2, 138591 }, -- Dreadrunner Sabatons
+                { 3, 124617 }, -- Contender's Dragonscale Boots
+                { 4, 124601 }, -- Contender's Scale Boots
+                { 5, 124585 }, -- Stormscale Boots
             },
         },
         {
             name = AL["Enhancements"],
             [NORMAL_DIFF] = {
-                { 1, 85068 },	-- Charscale Leg Reinforcements
-                { 2, 78478 },	-- Charscale Leg Armor
-                { 3, 78420 },	-- Twilight Leg Armor
-                { 5, 85067 },	-- Dragonbone Leg Reinforcements
-                { 6, 78477 },	-- Dragonscale Leg Armor
-                { 7, 78419 },	-- Scorched Leg Armor
-                { 9, 101600 },	-- Drakehide Leg Reinforcements
-                { 10, 101599 },	-- Drakehide Leg Armor
-                { 16, 85007 },	-- Draconic Embossment - Stamina
-                { 17, 85008 },	-- Draconic Embossment - Agility
-                { 18, 85009 },	-- Draconic Embossment - Strength
-                { 19, 85010 },	-- Draconic Embossment - Intellect
-                { 21, 78437 },	-- Heavy Savage Armor Kit
-                { 22, 78379 },	-- Savage Armor Kit
+                { 1, 124561 }, -- Draconic Leg Reinforcements
+                { 2, 124127 }, -- Angerhide Leg Armor
+                { 3, 124126 }, -- Brutal Leg Armor
+                { 5, 124563 }, -- Heavy Leg Reinforcements
+                { 6, 124128 }, -- Ironscale Leg Armor
+                { 7, 124125 }, -- Toughened Leg Armor
+                { 9, 124559 }, -- Primal Leg Reinforcements
+                { 10, 124129 }, -- Shadowleather Leg Armor
+                { 11, 124124 }, -- Sha-Touched Leg Armor
+                { 16, 124551 }, -- Fur Lining - Agility
+                { 17, 124552 }, -- Fur Lining - Intellect
+                { 18, 124553 }, -- Fur Lining - Stamina
+                { 19, 124554 }, -- Fur Lining - Strength
+                { 20, 124549 }, -- Fur Lining - Strength
+                { 22, 124628 }, -- Sha Armor Kit
             },
         },
         {
             name = ALIL["Bag"],
             [NORMAL_DIFF] = {
-                { 1, 100583 },	-- Royal Scribe's Satchel
-                { 3, 100586 },	-- Triple-Reinforced Mining Bag
+                { 1, 140185 }, -- Magnificent Hide Pack
             },
         },
         {
             name = AL["Misc"],
             [NORMAL_DIFF] = {
-                { 1, 78436 },	-- Heavy Savage Leather
-                { 2, 84950 },	-- Savage Leather
+                { 1, 124627 }, -- Mist-Touched Leather
+                { 2, 102366 }, -- Mist-Touched Leather
+                { 4, 131865 }, -- Magnificent Hide
+                { 5, 140040 }, -- Magnificence of Leather
+                { 6, 140041 }, -- Magnificence of Scales
+                { 8, 142976 }, -- Hardened Magnificent Hide
+                { 9, 146923 }, -- Accelerated Hardened Magnificent Hide
+                { 16, 146613 }, -- Drums of Rage
             },
         },
         { -- Sets
@@ -1539,8 +1616,7 @@ data["LeatherworkingMoP"] = {
             ExtraList = true,
             TableType = SET_ITTYPE,
             [NORMAL_DIFF] = {
-                { 1, 949 }, -- The Dark Brand
-                { 2, 950 }, -- The Big Wave
+                { 1, 949 },
             },
         }
     }
