@@ -63,6 +63,7 @@ local SET_CONTENT = data:AddContentType(AL["Sets"], ATLASLOOT_PVP_COLOR)
 local COLLECTIONS_CONTENT = data:AddContentType(AL["Collections"], ATLASLOOT_COLLECTIONS_COLOR)
 local WORLD_EVENT_CONTENT = data:AddContentType(AL["World Events"], ATLASLOOT_SEASONALEVENTS_COLOR)
 
+local REPLICA_SET_FORMAT = format(AL["%s Replica Set"], "%s")
 -- colors
 local SUPERIOR_QUALITY = "|cff0070dd%s|r"
 local EPIC_QUALITY = "|cffa335ee%s|r"
@@ -1197,7 +1198,7 @@ data["WorldEpics"] = {
             },
         },
         {
-            name = AL["Ranged Weapons"] .. " & " .. ALIL["Shield"],
+            name = AL["Ranged Weapons"] .. " / " .. ALIL["Shield"],
             [NORMAL_DIFF] = {
                 -- Bow
                 { 1, 2824 }, -- Hurricane
@@ -1213,7 +1214,7 @@ data["WorldEpics"] = {
             },
         },
         {
-            name = ALIL["Trinket"] .. " & " .. ALIL["Finger"] .. " & " .. ALIL["Neck"],
+            name = ALIL["Trinket"] .. " / " .. ALIL["Finger"] .. " / " .. ALIL["Neck"],
             [NORMAL_DIFF] = {
                 -- Trinket
                 { 1, 14557 }, -- The Lion Horn of Stormwind
@@ -1622,7 +1623,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = AL["Replica Mage Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["MAGE"]),
             [NORMAL_DIFF] = {
                 {1, 78190}, -- Replica Magister's Set
                 {2, 78186},
@@ -1643,7 +1644,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = AL["Replica Warlock Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["WARLOCK"]),
             [NORMAL_DIFF] = {
                 {1, 78225}, -- Replica Dreadmist Set
                 {2, 78224},
@@ -1664,7 +1665,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = AL["Replica Priest Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["PRIEST"]),
             [NORMAL_DIFF] = {
                 {1, 78209}, -- Replica Devout Set
                 {2, 78210},
@@ -1685,7 +1686,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = AL["Replica Druid Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["DRUID"]),
             [NORMAL_DIFF] = {
                 {1, 78242}, -- Replica Wildheart Set
                 {2, 78243},
@@ -1706,7 +1707,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = AL["Replica Rogue Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["ROGUE"]),
             [NORMAL_DIFF] = {
                 {1, 78254}, -- Replica Shadowcraft Set
                 {2, 78256},
@@ -1727,7 +1728,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = AL["Replica Hunter Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["HUNTER"]),
             [NORMAL_DIFF] = {
                 {1, 78270}, -- Replica Beaststalker's Set
                 {2, 78272},
@@ -1748,7 +1749,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = AL["Replica Shaman Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["SHAMAN"]),
             [NORMAL_DIFF] = {
                 {1, 78290}, -- Replica Elements Set
                 {2, 78292},
@@ -1769,7 +1770,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = AL["Replica Paladin Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["PALADIN"]),
             [NORMAL_DIFF] = {
                 {1, 78306}, -- Replica Lightforge Set
                 {2, 78309},
@@ -1790,7 +1791,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = AL["Replica Warrior Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["WARRIOR"]),
             [NORMAL_DIFF] = {
                 {1, 78323}, -- Replica Valor Set
                 {2, 78318},
@@ -1811,7 +1812,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = AL["Pets / Mounts / Misc"],
+            name = ALIL["Mounts"] .. " / " .. ALIL["Pets"] .. " / " .. AL["Toys"],
             [NORMAL_DIFF] = {
                 {1, 73766}, -- Darkmoon Dancing Bear
                 {2, 72140}, -- Swift Forest Strider
@@ -1832,15 +1833,19 @@ data["Darkmoon"] = {
                 {19, 97994}, -- Darkmoon Seesaw
                 {20, 105898}, -- Moonfang's Paw
                 {21, 101571}, -- Moonfang Shroud
-                {23, 77158}, -- Darkmoon "Tiger"
-                {24, 19291}, -- Darkmoon Storage Box
-                {25, 19295}, -- Darkmoon Flower
-                {26, 77256}, -- Darkmoon "Sword"
-                {27, 78341}, -- Darkmoon Hammer
-                {28, 78340}, -- Cloak of the Darkmoon Faire
-                {30, 74034}, -- Pit Fighter
-                {101, "SPECIAL_ACHIEVEMENT", nil, AL["Achievements"], nil, "AC_DarkmoonFaire"},
           },
+      },
+      {
+        name = AL["Misc"],
+        [NORMAL_DIFF] = {
+            {1, 77158}, -- Darkmoon "Tiger"
+            {2, 19291}, -- Darkmoon Storage Box
+            {3, 19295}, -- Darkmoon Flower
+            {4, 77256}, -- Darkmoon "Sword"
+            {16, 78341}, -- Darkmoon Hammer
+            {17, 78340}, -- Cloak of the Darkmoon Faire
+            {19, 74034}, -- Pit Fighter
+        }
       },
         AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM,{
         name = format(BOA_QUALITY, AL["Heirlooms"]),
@@ -1895,6 +1900,13 @@ data["Darkmoon"] = {
                 { 123, 93896 }, -- Forceful Hand of Justice
             },
         }),
+        {
+            name = AL["Achievements"],
+            ExtraList = true,
+            [NORMAL_DIFF] = {
+                {1, "SPECIAL_ACHIEVEMENT", nil, AL["Achievements"], nil, "AC_DarkmoonFaire"},
+            }
+        },
     },
 }
 
