@@ -9,7 +9,7 @@ local format = string.format
 -- WoW
 local function C_Map_GetAreaInfo(id)
     local d = C_Map.GetAreaInfo(id)
-    return d or ("GetAreaInfo"..id)
+    return d or ("GetAreaInfo" .. id)
 end
 
 -- ----------------------------------------------------------------------------
@@ -63,6 +63,7 @@ local SET_CONTENT = data:AddContentType(AL["Sets"], ATLASLOOT_PVP_COLOR)
 local COLLECTIONS_CONTENT = data:AddContentType(AL["Collections"], ATLASLOOT_COLLECTIONS_COLOR)
 local WORLD_EVENT_CONTENT = data:AddContentType(AL["World Events"], ATLASLOOT_SEASONALEVENTS_COLOR)
 
+local REPLICA_SET_FORMAT = format(AL["%s Replica Set"], "%s")
 -- colors
 local SUPERIOR_QUALITY = "|cff0070dd%s|r"
 local EPIC_QUALITY = "|cffa335ee%s|r"
@@ -1038,7 +1039,7 @@ data["AQSets"] = {
     ContentPhase = 5,
     items = {
         { -- AQ20
-            name = format(AL["%s Sets"], C_Map_GetAreaInfo(3428).." 20"),
+            name = format(AL["%s Sets"], C_Map_GetAreaInfo(3428) .. " 20"),
             [ALLIANCE_DIFF] = {
                 { 1,  500 }, -- Warlock
                 { 3,  508 }, -- Priest
@@ -1056,7 +1057,7 @@ data["AQSets"] = {
             },
         },
         { -- AQ40
-            name = format(AL["%s Sets"], C_Map_GetAreaInfo(3428).." 40"),
+            name = format(AL["%s Sets"], C_Map_GetAreaInfo(3428) .. " 40"),
             [ALLIANCE_DIFF] = {
                 { 1,  499 }, -- Warlock
                 { 3,  507 }, -- Priest
@@ -1199,7 +1200,7 @@ data["WorldEpics"] = {
             },
         },
         {
-            name = AL["Ranged Weapons"].." & "..ALIL["Shield"],
+            name = AL["Ranged Weapons"] .. " / " .. ALIL["Shield"],
             [NORMAL_DIFF] = {
                 -- Bow
                 { 1, 2824 }, -- Hurricane
@@ -1215,7 +1216,7 @@ data["WorldEpics"] = {
             },
         },
         {
-            name = ALIL["Trinket"].." & "..ALIL["Finger"].." & "..ALIL["Neck"],
+            name = ALIL["Trinket"] .. " / " .. ALIL["Finger"] .. " / " .. ALIL["Neck"],
             [NORMAL_DIFF] = {
                 -- Trinket
                 { 1, 14557 }, -- The Lion Horn of Stormwind
@@ -1623,7 +1624,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = ALIL["Replica Mage Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["MAGE"]),
             [NORMAL_DIFF] = {
                 {1, 78190}, -- Replica Magister's Set
                 {2, 78186},
@@ -1644,7 +1645,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = ALIL["Replica Warlock Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["WARLOCK"]),
             [NORMAL_DIFF] = {
                 {1, 78225}, -- Replica Dreadmist Set
                 {2, 78224},
@@ -1665,7 +1666,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = ALIL["Replica Priest Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["PRIEST"]),
             [NORMAL_DIFF] = {
                 {1, 78209}, -- Replica Devout Set
                 {2, 78210},
@@ -1686,7 +1687,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = ALIL["Replica Druid Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["DRUID"]),
             [NORMAL_DIFF] = {
                 {1, 78242}, -- Replica Wildheart Set
                 {2, 78243},
@@ -1707,7 +1708,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = ALIL["Replica Rogue Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["ROGUE"]),
             [NORMAL_DIFF] = {
                 {1, 78254}, -- Replica Shadowcraft Set
                 {2, 78256},
@@ -1728,7 +1729,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = ALIL["Replica Hunter Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["HUNTER"]),
             [NORMAL_DIFF] = {
                 {1, 78270}, -- Replica Beaststalker's Set
                 {2, 78272},
@@ -1749,7 +1750,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = ALIL["Replica Shaman Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["SHAMAN"]),
             [NORMAL_DIFF] = {
                 {1, 78290}, -- Replica Elements Set
                 {2, 78292},
@@ -1770,7 +1771,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = ALIL["Replica Paladin Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["PALADIN"]),
             [NORMAL_DIFF] = {
                 {1, 78306}, -- Replica Lightforge Set
                 {2, 78309},
@@ -1791,7 +1792,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = ALIL["Replica Warrior Sets"],
+            name = format(REPLICA_SET_FORMAT, ALIL["WARRIOR"]),
             [NORMAL_DIFF] = {
                 {1, 78323}, -- Replica Valor Set
                 {2, 78318},
@@ -1812,7 +1813,7 @@ data["Darkmoon"] = {
             },
         },
         {
-            name = ALIL["Pets / Mounts / Misc"],
+            name = ALIL["Mounts"] .. " / " .. ALIL["Pets"] .. " / " .. AL["Toys"],
             [NORMAL_DIFF] = {
                 {1, 73766}, -- Darkmoon Dancing Bear
                 {2, 72140}, -- Swift Forest Strider
@@ -1833,17 +1834,21 @@ data["Darkmoon"] = {
                 {19, 97994}, -- Darkmoon Seesaw
                 {20, 105898}, -- Moonfang's Paw
                 {21, 101571}, -- Moonfang Shroud
-                {23, 77158}, -- Darkmoon "Tiger"
-                {24, 19291}, -- Darkmoon Storage Box
-                {25, 19295}, -- Darkmoon Flower
-                {26, 77256}, -- Darkmoon "Sword"
-                {27, 78341}, -- Darkmoon Hammer
-                {28, 78340}, -- Cloak of the Darkmoon Faire
-                {30, 74034}, -- Pit Fighter
-                {101, "SPECIAL_ACHIEVEMENT", nil, AL["Achievements"], nil, "AC_DarkmoonFaire"},
           },
       },
-        AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM,{
+      {
+        name = AL["Misc"],
+        [NORMAL_DIFF] = {
+            {1, 77158}, -- Darkmoon "Tiger"
+            {2, 19291}, -- Darkmoon Storage Box
+            {3, 19295}, -- Darkmoon Flower
+            {4, 77256}, -- Darkmoon "Sword"
+            {16, 78341}, -- Darkmoon Hammer
+            {17, 78340}, -- Cloak of the Darkmoon Faire
+            {19, 74034}, -- Pit Fighter
+        }
+      },
+        AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM,{
         name = format(BOA_QUALITY, AL["Heirlooms"]),
         [NORMAL_DIFF] = {
                 { 1,  42985 }, -- Tattered Dreadmist Mantle
@@ -1894,11 +1899,15 @@ data["Darkmoon"] = {
                 { 121, 93897 }, -- Piercing Eye of the Beast
                 { 122, 42991 }, -- Swift Hand of Justice
                 { 123, 93896 }, -- Forceful Hand of Justice
-                { 125, 93902 }, -- Flamescarred Draconian Deflector
-                { 126, 93903 }, -- Weathered Observer's Shield
-                { 127, 93904 }, -- Musty Tome of the Lost
             },
         }),
+        {
+            name = AL["Achievements"],
+            ExtraList = true,
+            [NORMAL_DIFF] = {
+                {1, "SPECIAL_ACHIEVEMENT", nil, AL["Achievements"], nil, "AC_DarkmoonFaire"},
+            }
+        },
     },
 }
 
@@ -2153,7 +2162,7 @@ data["Halloween"] = {
     CorrespondingFields = private.HALLOWEEN,
     items = {
         { -- Halloween1
-            name = AL["Hallow's End"].." - "..AL["Misc"],
+            name = AL["Hallow's End"] .. " - " .. AL["Misc"],
             [NORMAL_DIFF] = {
                 { 1,  20400 }, -- Pumpkin Bag
                 { 3,  18633 }, -- Styleen's Sour Suckerpop
@@ -2166,7 +2175,7 @@ data["Halloween"] = {
             },
         },
         { -- Halloween1
-            name = AL["Hallow's End"].." - "..AL["Wands"],
+            name = AL["Hallow's End"] .. " - " .. AL["Wands"],
             [NORMAL_DIFF] = {
                 { 1, 20410 }, -- Hallowed Wand - Bat
                 { 2, 20409 }, -- Hallowed Wand - Ghost
@@ -2179,7 +2188,7 @@ data["Halloween"] = {
             },
         },
         { -- Halloween3
-            name = AL["Hallow's End"].." - "..AL["Masks"],
+            name = AL["Hallow's End"] .. " - " .. AL["Masks"],
             [NORMAL_DIFF] = {
                 { 1,  20561 }, -- Flimsy Male Dwarf Mask
                 { 2,  20391 }, -- Flimsy Male Gnome Mask
@@ -2466,7 +2475,7 @@ data["ScourgeInvasion"] = {
             },
         },
         {
-            name = C_Map_GetAreaInfo(2017).." - "..AL["Balzaphon"],
+            name = C_Map_GetAreaInfo(2017) .. " - " .. AL["Balzaphon"],
             [NORMAL_DIFF] = {
                 { 1,  23126 }, -- Waistband of Balzaphon
                 { 2,  23125 }, -- Chains of the Lich
@@ -2474,7 +2483,7 @@ data["ScourgeInvasion"] = {
             }
         },
         {
-            name = C_Map_GetAreaInfo(2057).." - "..AL["Lord Blackwood"],
+            name = C_Map_GetAreaInfo(2057) .. " - " .. AL["Lord Blackwood"],
             [NORMAL_DIFF] = {
                 { 1,  23132 }, -- Lord Blackwood's Blade
                 { 2,  23156 }, -- Blackwood's Thigh
@@ -2482,7 +2491,7 @@ data["ScourgeInvasion"] = {
             }
         },
         {
-            name = C_Map_GetAreaInfo(2557).." - "..AL["Revanchion"],
+            name = C_Map_GetAreaInfo(2557) .. " - " .. AL["Revanchion"],
             [NORMAL_DIFF] = {
                 { 1, 23127 }, -- Cloak of Revanchion
                 { 2, 23129 }, -- Bracers of Mending
@@ -2490,7 +2499,7 @@ data["ScourgeInvasion"] = {
             }
         },
         {
-            name = AL["Scarlet Monastery - Graveyard"].." - "..AL["Scorn"],
+            name = AL["Scarlet Monastery - Graveyard"] .. " - " .. AL["Scorn"],
             [NORMAL_DIFF] = {
                 { 1, 23169 }, -- Scorn's Icy Choker
                 { 2, 23170 }, -- The Frozen Clutch
@@ -2498,14 +2507,14 @@ data["ScourgeInvasion"] = {
             }
         },
         {
-            name = C_Map_GetAreaInfo(209).." - "..AL["Sever"],
+            name = C_Map_GetAreaInfo(209) .. " - " .. AL["Sever"],
             [NORMAL_DIFF] = {
                 { 1, 23173 }, -- Abomination Skin Leggings
                 { 2, 23171 }, -- The Axe of Severing
             }
         },
         {
-            name = C_Map_GetAreaInfo(722).." - "..AL["Lady Falther'ess"],
+            name = C_Map_GetAreaInfo(722) .. " - " .. AL["Lady Falther'ess"],
             [NORMAL_DIFF] = {
                 { 1, 23178 }, -- Mantle of Lady Falther'ess
                 { 2, 23177 }, -- Lady Falther'ess' Finger
