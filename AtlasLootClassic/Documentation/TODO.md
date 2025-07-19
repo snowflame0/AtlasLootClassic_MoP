@@ -34,13 +34,12 @@
     - [ ] Add source data to Data module (last step, with script)
     - [x] Tier sets (from Collections module)
 - [ ] Clean up rest of Factions module
-- [ ] Add item sets data (Data/ItemSet.lua)
+- [x] Add item sets data (Data/ItemSet.lua)
     - [x] T14
     - [x] T15
     - [x] T16
     - [x] PvP
-    - [ ] Item to set data (script)
-    - [ ] Misc
+    - [x] Item to set data (script)
 - [ ] Add tokens data (Data/Token.lua)
 - [ ] Add vendor price data (Data/VendorPrice.lua)
 - [x] Add recipe data (Data/Recipe.lua)
