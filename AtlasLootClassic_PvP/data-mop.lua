@@ -34,15 +34,14 @@ else
     HORDE_DIFF = data:AddDifficulty(FACTION_HORDE, "horde", nil, 1)
     LOAD_DIFF = ALLIANCE_DIFF
 end
-local SET1_DIFF = data:AddDifficulty(format(AL["Bloodthirsty %s"], AL["Gladiator"]), "set1", nil, 1)
-local SET2_DIFF = data:AddDifficulty(format(AL["Vicious %s"], AL["Gladiator"]), "set2", nil, 1)
-local SET2_ELITE_DIFF = data:AddDifficulty(format(AL["Vicious (Elite) %s"], AL["Gladiator"]), "set3", nil, 1)
-local SET2_UPGRADE_DIFF = data:AddDifficulty(format(AL["Vicious %s"], AL["Gladiator"]), "set6", nil, 1) -- Upgraded honor set
-local SET3_DIFF = data:AddDifficulty(format(AL["Ruthless %s"], AL["Gladiator"]), "set4", nil, 1)
-local SET3_ELITE_DIFF = data:AddDifficulty(format(AL["Ruthless (Elite) %s"], AL["Gladiator"]), "set5", nil, 1)
-local SET3_UPGRADE_DIFF = data:AddDifficulty(format(AL["Ruthless %s"], AL["Gladiator"]), "set9", nil, 1) -- Upgraded honor set 390
-local SET4_DIFF = data:AddDifficulty(format(AL["Cataclysmic %s"], AL["Gladiator"]), "set7", nil, 1)
-local SET4_ELITE_DIFF = data:AddDifficulty(format(AL["Cataclysmic (Elite) %s"], AL["Gladiator"]), "set8", nil, 1)
+
+local SET1_DIFF = data:AddDifficulty(format(AL["Dreadful %s"], AL["Gladiator"]), "set1", nil, 1)
+local SET2_DIFF = data:AddDifficulty(format(AL["Malevolent %s"], AL["Gladiator"]), "set2", nil, 1)
+local SET2_ELITE_DIFF = data:AddDifficulty(format(AL["Malevolent (Elite) %s"], AL["Gladiator"]), "set2", nil, 1)
+local SET3_DIFF = data:AddDifficulty(format(AL["Tyrannical %s"], AL["Gladiator"]), "set3", nil, 1)
+local SET3_ELITE_DIFF = data:AddDifficulty(format(AL["Tyrannical (Elite) %s"], AL["Gladiator"]), "set3", nil, 1)
+local SET4_DIFF = data:AddDifficulty(format(AL["Grievous %s"], AL["Gladiator"]), "set4", nil, 1)
+local SET5_DIFF = data:AddDifficulty(format(AL["Prideful %s"], AL["Gladiator"]), "set5", nil, 1)
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
@@ -87,344 +86,238 @@ data["ArenaS12PvP"] = {
         name = AL["Sets"],
         TableType = SET_ITTYPE,
         [SET1_DIFF] = {
-            {1, 4000910}, -- Warlock
-            {3, 4000916}, -- Priest Healing
-            {4, 4000915}, -- Priest Shadow
-            {6, 4000914}, -- Rogue
-            {8, 4000920}, -- Hunter
-            {10, 4000909}, -- Warrior Melee
-            {13, 4000924}, -- Death Knight Melee
-            {16, 4000919}, -- Mage
-            {18, 4000923}, -- Druid Resto
-            {19, 4000921}, -- Druid Balance
-            {20, 4000922}, -- Druid Feral
-            {22, 4000913}, -- Shaman Resto
-            {23, 4000911}, -- Shaman Elemental
-            {24, 4000912}, -- Shaman Enhancement
-            {26, 4000918}, -- Paladin Holy
-            {27, 4000917} -- Paladin Melee
+            {1, 50011117}, -- Warlock
+            {3, 50011112}, -- Priest Healing
+            {4, 50011146}, -- Priest Shadow
+            {6, 50011113}, -- Rogue
+            {8, 50011108}, -- Hunter
+            {10, 50011118}, -- Warrior Melee
+            {13, 50011104}, -- Death Knight Melee
+            {16, 50011109}, -- Mage
+            {18, 50011105}, -- Druid Resto
+            {19, 50011107}, -- Druid Balance
+            {20, 50011106}, -- Druid Feral
+            {22, 50011114}, -- Shaman Resto
+            {23, 50011116}, -- Shaman Elemental
+            {24, 50011115}, -- Shaman Enhancement
+            {26, 50011110}, -- Paladin Holy
+            {27, 50011111}, -- Paladin Melee
+            {29, 50011119}, -- Monk (Copperskin)
+            {30, 50011120}, -- Monk (Ironskin)
         },
         [SET2_DIFF] = {
-            {1, 4001910}, -- Warlock
-            {3, 4001916}, -- Priest Healing
-            {4, 4001915}, -- Priest Shadow
-            {6, 4001914}, -- Rogue
-            {8, 4001920}, -- Hunter
-            {10, 4001909}, -- Warrior Melee
-            {13, 4001924}, -- Death Knight Melee
-            {16, 4001919}, -- Mage
-            {18, 4001923}, -- Druid Resto
-            {19, 4001921}, -- Druid Balance
-            {20, 4001922}, -- Druid Feral
-            {22, 4001913}, -- Shaman Resto
-            {23, 4001911}, -- Shaman Elemental
-            {24, 4001912}, -- Shaman Enhancement
-            {26, 4001918}, -- Paladin Holy
-            {27, 4001917} -- Paladin Melee
+            {1, 50031117}, -- Warlock
+            {3, 50031112}, -- Priest Healing
+            {4, 50031146}, -- Priest Shadow
+            {6, 50031113}, -- Rogue
+            {8, 50031108}, -- Hunter
+            {10, 50031118}, -- Warrior Melee
+            {13, 50031104}, -- Death Knight Melee
+            {16, 50031109}, -- Mage
+            {18, 50031105}, -- Druid Resto
+            {19, 50031107}, -- Druid Balance
+            {20, 50031106}, -- Druid Feral
+            {22, 50031114}, -- Shaman Resto
+            {23, 50031116}, -- Shaman Elemental
+            {24, 50031115}, -- Shaman Enhancement
+            {26, 50031110}, -- Paladin Holy
+            {27, 50031111}, -- Paladin Melee
+            {29, 50031119}, -- Monk (Copperskin)
+            {30, 50031120}, -- Monk (Ironskin)
         },
         [SET2_ELITE_DIFF] = {
-            {1, 4002910}, -- Warlock
-            {3, 4002916}, -- Priest Healing
-            {4, 4002915}, -- Priest Shadow
-            {6, 4002914}, -- Rogue
-            {8, 4002920}, -- Hunter
-            {10, 4002909}, -- Warrior Melee
-            {13, 4002924}, -- Death Knight Melee
-            {16, 4002919}, -- Mage
-            {18, 4002923}, -- Druid Resto
-            {19, 4002921}, -- Druid Balance
-            {20, 4002922}, -- Druid Feral
-            {22, 4002913}, -- Shaman Resto
-            {23, 4002911}, -- Shaman Elemental
-            {24, 4002912}, -- Shaman Enhancement
-            {26, 4002918}, -- Paladin Holy
-            {27, 4002917} -- Paladin Melee
-        },
-    }, {
-        name = AL["Weapons"] .. " - " .. AL["One-Handed"],
-        [SET2_ELITE_DIFF] = {
-            { 1, 67474 }, -- Vicious Gladiator's Cleaver
-            { 2, 67473 }, -- Vicious Gladiator's Hacker
-            { 4, 67470 }, -- Vicious Gladiator's Bonecracker
-            { 5, 67471 }, -- Vicious Gladiator's Pummeler
-            { 7, 67468 }, -- Vicious Gladiator's Quickblade
-            { 8, 67469 }, -- Vicious Gladiator's Slicer
-            { 16, 67457 }, -- Vicious Gladiator's Spellblade
-            { 17, 67454 }, -- Vicious Gladiator's Gavel
-            { 19, 67472 }, -- Vicious Gladiator's Shanker
-            { 20, 67460 }, -- Vicious Gladiator's Shiv
-            { 22, 67455 }, -- Vicious Gladiator's Right Render
-            { 23, 67456 }, -- Vicious Gladiator's Right Ripper
-            { 25, 67458 }, -- Vicious Gladiator's Left Render
-            { 26, 67459 }, -- Vicious Gladiator's Left Ripper
-        },
-    }, {
-        name = AL["Weapons"] .. " - " .. AL["Two-Handed"],
-        [SET2_ELITE_DIFF] = {
-            { 1, 67451 }, -- Vicious Gladiator's Pike
-            { 2, 67448 }, -- Vicious Gladiator's Staff
-            { 4, 67453 }, -- Vicious Gladiator's Decapitator
-            { 5, 67452 }, -- Vicious Gladiator's Bonegrinder
-            { 6, 67447 }, -- Vicious Gladiator's Greatsword
-            { 16, 67449 }, -- Vicious Gladiator's Energy Staff
-            { 17, 67450 }, -- Vicious Gladiator's Battle Staff
-        },
-    }, {
-        name = AL["Weapons"] .. " - " .. AL["Ranged"],
-        [SET2_ELITE_DIFF] = {
-            { 1, 67461 }, -- Vicious Gladiator's Longbow
-            { 2, 67462 }, -- Vicious Gladiator's Heavy Crossbow
-            { 3, 67463 }, -- Vicious Gladiator's Rifle
-            { 5, 67466 }, -- Vicious Gladiator's Hatchet
-            { 6, 67467 }, -- Vicious Gladiator's War Edge
-            { 16, 67464 }, -- Vicious Gladiator's Baton of Light
-            { 17, 67465 }, -- Vicious Gladiator's Touch of Defeat
-        },
-    }, {
-        name = AL["Weapons"] .. " - " .. ALIL["Off Hand"],
-        [SET2_ELITE_DIFF] = {
-            { 1, 67478 }, -- Vicious Gladiator's Reprieve
-            { 2, 67479 }, -- Vicious Gladiator's Endgame
-        }
-    }, {
-        name = AL["Weapons"] .. " - " .. ALIL["Shields"],
-        [SET2_ELITE_DIFF] = {
-            { 1, 67476 }, -- Vicious Gladiator's Barrier
-            { 2, 67475 }, -- Vicious Gladiator's Redoubt
-            { 3, 67477 }, -- Vicious Gladiator's Shield Wall
-        },
-    }, {
-        name = ALIL["Cloak"],
-        [SET2_DIFF] = {
-            { 1, 60783 }, -- Vicious Gladiator's Cape of Cruelty
-            { 2, 60779 }, -- Vicious Gladiator's Cape of Prowess
-            { 4, 60776 }, -- Vicious Gladiator's Cloak of Alacrity
-            { 5, 60778 }, -- Vicious Gladiator's Cloak of Prowess
-            { 16, 60786 }, -- Vicious Gladiator's Drape of Diffusion
-            { 17, 60788 }, -- Vicious Gladiator's Drape of Meditation
-            { 18, 60787 }, -- Vicious Gladiator's Drape of Prowess
-        },
-    }, {
-        name = ALIL["Relic"],
-        [SET2_DIFF] = {
-            { 1, 61391 }, -- Vicious Gladiator's Relic of Conquest
-            { 2, 61388 }, -- Vicious Gladiator's Relic of Dominance
-            { 3, 61389 }, -- Vicious Gladiator's Relic of Salvation
-            { 4, 61390 }, -- Vicious Gladiator's Relic of Triumph
-        },
-    }, {
-        name = ALIL["Neck"],
-        [SET1_DIFF] = {
-            { 1, 64713 }, -- Bloodthirsty Gladiator's Choker of Accuracy
-            { 2, 64714 }, -- Bloodthirsty Gladiator's Choker of Proficiency
-            { 5, 64800 }, -- Bloodthirsty Gladiator's Necklace of Proficiency
-            { 6, 64801 }, -- Bloodthirsty Gladiator's Necklace of Prowess
-            { 16, 64807 }, -- Bloodthirsty Gladiator's Pendant of Alacrity
-            { 17, 64808 }, -- Bloodthirsty Gladiator's Pendant of Diffusion
-            { 18, 64809 }, -- Bloodthirsty Gladiator's Pendant of Meditation
-        },
-        [SET2_DIFF] = {
-            { 1, 60673 }, -- Vicious Gladiator's Choker of Accuracy
-            { 2, 60670 }, -- Vicious Gladiator's Choker of Proficiency
-            { 5, 60669 }, -- Vicious Gladiator's Necklace of Proficiency
-            { 6, 60668 }, -- Vicious Gladiator's Necklace of Prowess
-            { 16, 60662 }, -- Vicious Gladiator's Pendant of Alacrity
-            { 17, 60661 }, -- Vicious Gladiator's Pendant of Diffusion
-            { 18, 60664 }, -- Vicious Gladiator's Pendant of Meditation
-        },
-    }, {
-        name = ALIL["Finger"],
-        [SET1_DIFF] = {
-            { 1, 64851 }, -- Bloodthirsty Gladiator's Signet of Accuracy
-            { 2, 64852 }, -- Bloodthirsty Gladiator's Signet of Cruelty
-            { 4, 64832 }, -- Bloodthirsty Gladiator's Ring of Accuracy
-            { 5, 64833 }, -- Bloodthirsty Gladiator's Ring of Cruelty
-            { 16, 64690 }, -- Bloodthirsty Gladiator's Band of Accuracy
-            { 17, 64691 }, -- Bloodthirsty Gladiator's Band of Cruelty
-            { 18, 64692 }, -- Bloodthirsty Gladiator's Band of Meditation
-        },
-        [SET2_DIFF] = {
-            { 1, 60651 }, -- Vicious Gladiator's Signet of Accuracy
-            { 2, 60650 }, -- Vicious Gladiator's Signet of Cruelty
-            { 4, 60658 }, -- Vicious Gladiator's Ring of Accuracy
-            { 5, 60659 }, -- Vicious Gladiator's Ring of Cruelty
-            { 16, 60647 }, -- Vicious Gladiator's Band of Accuracy
-            { 17, 60645 }, -- Vicious Gladiator's Band of Cruelty
-            { 18, 60649 }, -- Vicious Gladiator's Band of Meditation
-        },
-    }, {
-        name = format(AL["Non Set '%s'"], ALIL["Cloth"]),
-        [SET1_DIFF] = {
-            { 1, 64862 }, -- Bloodthirsty Gladiator's Treads of Alacrity
-            { 2, 64863 }, -- Bloodthirsty Gladiator's Treads of Cruelty
-            { 3, 64864 }, -- Bloodthirsty Gladiator's Treads of Meditation
-            { 5, 64720 }, -- Bloodthirsty Gladiator's Cord of Accuracy
-            { 6, 64721 }, -- Bloodthirsty Gladiator's Cord of Cruelty
-            { 7, 64722 }, -- Bloodthirsty Gladiator's Cord of Meditation
-            { 16, 64723 }, -- Bloodthirsty Gladiator's Cuffs of Accuracy
-            { 17, 64724 }, -- Bloodthirsty Gladiator's Cuffs of Meditation
-            { 18, 64725 }, -- Bloodthirsty Gladiator's Cuffs of Prowess
-        },
-        [SET2_DIFF] = {
-            { 1, 60630 }, -- Vicious Gladiator's Treads of Alacrity
-            { 2, 60613 }, -- Vicious Gladiator's Treads of Cruelty
-            { 3, 60636 }, -- Vicious Gladiator's Treads of Meditation
-            { 5, 60626 }, -- Vicious Gladiator's Cord of Accuracy
-            { 6, 60612 }, -- Vicious Gladiator's Cord of Cruelty
-            { 7, 60637 }, -- Vicious Gladiator's Cord of Meditation
-            { 16, 60628 }, -- Vicious Gladiator's Cuffs of Accuracy
-            { 17, 60635 }, -- Vicious Gladiator's Cuffs of Meditation
-            { 18, 60634 }, -- Vicious Gladiator's Cuffs of Prowess
-        },
-        [SET2_ELITE_DIFF] = {
-            { 1, 65599 }, -- Vicious Gladiator's Treads of Alacrity
-            { 2, 65598 }, -- Vicious Gladiator's Treads of Cruelty
-            { 3, 65600 }, -- Vicious Gladiator's Treads of Meditation
-        },
-    }, {
-        name = format(AL["Non Set '%s'"], ALIL["Leather"]),
-        [SET1_DIFF] = {
-            { 1, 64702 }, -- Bloodthirsty Gladiator's Boots of Alacrity
-            { 2, 64703 }, -- Bloodthirsty Gladiator's Boots of Cruelty
-            { 3, 64750 }, -- Bloodthirsty Gladiator's Footguards of Alacrity
-            { 4, 64751 }, -- Bloodthirsty Gladiator's Footguards of Meditation
-            { 6, 64696 }, -- Bloodthirsty Gladiator's Belt of Cruelty
-            { 7, 64697 }, -- Bloodthirsty Gladiator's Belt of Meditation
-            { 8, 64865 }, -- Bloodthirsty Gladiator's Waistband of Accuracy
-            { 9, 64866 }, -- Bloodthirsty Gladiator's Waistband of Cruelty
-            { 16, 64685 }, -- Bloodthirsty Gladiator's Armwraps of Accuracy
-            { 17, 64686 }, -- Bloodthirsty Gladiator's Armwraps of Alacrity
-            { 18, 64698 }, -- Bloodthirsty Gladiator's Bindings of Meditation
-            { 19, 64699 }, -- Bloodthirsty Gladiator's Bindings of Prowess
-        },
-        [SET2_DIFF] = {
-            { 1, 60593 }, -- Vicious Gladiator's Boots of Alacrity
-            { 2, 60587 }, -- Vicious Gladiator's Boots of Cruelty
-            { 3, 60607 }, -- Vicious Gladiator's Footguards of Alacrity
-            { 4, 60581 }, -- Vicious Gladiator's Footguards of Meditation
-            { 6, 60583 }, -- Vicious Gladiator's Belt of Cruelty
-            { 7, 60580 }, -- Vicious Gladiator's Belt of Meditation
-            { 8, 60589 }, -- Vicious Gladiator's Waistband of Accuracy
-            { 9, 60586 }, -- Vicious Gladiator's Waistband of Cruelty
-            { 16, 60591 }, -- Vicious Gladiator's Armwraps of Accuracy
-            { 17, 60594 }, -- Vicious Gladiator's Armwraps of Alacrity
-            { 18, 60582 }, -- Vicious Gladiator's Bindings of Meditation
-            { 19, 60611 }, -- Vicious Gladiator's Bindings of Prowess
-        },
-        [SET2_ELITE_DIFF] = {
-            { 1, 65610 }, -- Vicious Gladiator's Boots of Alacrity
-            { 2, 65609 }, -- Vicious Gladiator's Boots of Cruelty
-            { 3, 65602 }, -- Vicious Gladiator's Footguards of Alacrity
-            { 4, 65601 }, -- Vicious Gladiator's Footguards of Meditation
-        },
-    }, {
-        name = format(AL["Non Set '%s'"], ALIL["Mail"]),
-        [SET1_DIFF] = {
-            { 1, 64835 }, -- Bloodthirsty Gladiator's Sabatons of Alacrity
-            { 2, 64834 }, -- Bloodthirsty Gladiator's Sabatons of Alacrity
-            { 3, 64836 }, -- Bloodthirsty Gladiator's Sabatons of Cruelty
-            { 4, 64837 }, -- Bloodthirsty Gladiator's Sabatons of Meditation
-            { 6, 64781 }, -- Bloodthirsty Gladiator's Links of Accuracy
-            { 7, 64782 }, -- Bloodthirsty Gladiator's Links of Cruelty
-            { 8, 64867 }, -- Bloodthirsty Gladiator's Waistguard of Cruelty
-            { 9, 64868 }, -- Bloodthirsty Gladiator's Waistguard of Meditation
-            { 16, 64681 }, -- Bloodthirsty Gladiator's Armbands of Meditation
-            { 17, 64682 }, -- Bloodthirsty Gladiator's Armbands of Prowess
-            { 18, 64872 }, -- Bloodthirsty Gladiator's Wristguards of Accuracy
-            { 19, 64873 }, -- Bloodthirsty Gladiator's Wristguards of Alacrity
-        },
-        [SET2_DIFF] = {
-            { 1, 60557 }, -- Vicious Gladiator's Sabatons of Alacrity
-            { 2, 60567 }, -- Vicious Gladiator's Sabatons of Alacrity
-            { 3, 60554 }, -- Vicious Gladiator's Sabatons of Cruelty
-            { 4, 60534 }, -- Vicious Gladiator's Sabatons of Meditation
-            { 6, 60564 }, -- Vicious Gladiator's Links of Accuracy
-            { 7, 60555 }, -- Vicious Gladiator's Links of Cruelty
-            { 8, 60536 }, -- Vicious Gladiator's Waistguard of Cruelty
-            { 9, 60533 }, -- Vicious Gladiator's Waistguard of Meditation
-            { 16, 60535 }, -- Vicious Gladiator's Armbands of Meditation
-            { 17, 60569 }, -- Vicious Gladiator's Armbands of Prowess
-            { 18, 60565 }, -- Vicious Gladiator's Wristguards of Accuracy
-            { 19, 60559 }, -- Vicious Gladiator's Wristguards of Alacrity
-        },
-        [SET2_ELITE_DIFF] = {
-            { 1, 65604 }, -- Vicious Gladiator's Sabatons of Alacrity
-            { 2, 65611 }, -- Vicious Gladiator's Sabatons of Alacrity
-            { 3, 65603 }, -- Vicious Gladiator's Sabatons of Cruelty
-            { 4, 65612 }, -- Vicious Gladiator's Sabatons of Meditation
-        },
-    }, {
-        name = format(AL["Non Set '%s'"], ALIL["Plate"]),
-        [SET1_DIFF] = {
-            { 1, 64756 }, -- Bloodthirsty Gladiator's Greaves of Alacrity
-            { 2, 64757 }, -- Bloodthirsty Gladiator's Greaves of Meditation
-            { 3, 64869 }, -- Bloodthirsty Gladiator's Warboots of Alacrity
-            { 4, 64870 }, -- Bloodthirsty Gladiator's Warboots of Cruelty
-            { 6, 64715 }, -- Bloodthirsty Gladiator's Clasp of Cruelty
-            { 7, 64716 }, -- Bloodthirsty Gladiator's Clasp of Meditation
-            { 8, 64753 }, -- Bloodthirsty Gladiator's Girdle of Cruelty
-            { 9, 64754 }, -- Bloodthirsty Gladiator's Girdle of Prowess
-            { 16, 64683 }, -- Bloodthirsty Gladiator's Armplates of Alacrity
-            { 17, 64684 }, -- Bloodthirsty Gladiator's Armplates of Proficiency
-            { 18, 64704 }, -- Bloodthirsty Gladiator's Bracers of Meditation
-            { 19, 64705 }, -- Bloodthirsty Gladiator's Bracers of Prowess
-        },
-        [SET2_DIFF] = {
-            { 1, 60516 }, -- Vicious Gladiator's Greaves of Alacrity
-            { 2, 60540 }, -- Vicious Gladiator's Greaves of Meditation
-            { 3, 60513 }, -- Vicious Gladiator's Warboots of Alacrity
-            { 4, 60509 }, -- Vicious Gladiator's Warboots of Cruelty
-            { 6, 60505 }, -- Vicious Gladiator's Clasp of Cruelty
-            { 7, 60539 }, -- Vicious Gladiator's Clasp of Meditation
-            { 8, 60508 }, -- Vicious Gladiator's Girdle of Cruelty
-            { 9, 60521 }, -- Vicious Gladiator's Girdle of Prowess
-            { 16, 60512 }, -- Vicious Gladiator's Armplates of Alacrity
-            { 17, 60523 }, -- Vicious Gladiator's Armplates of Proficiency
-            { 18, 60541 }, -- Vicious Gladiator's Bracers of Meditation
-            { 19, 60520 }, -- Vicious Gladiator's Bracers of Prowess
-        },
-        [SET2_ELITE_DIFF] = {
-            { 1, 65605 }, -- Vicious Gladiator's Greaves of Alacrity
-            { 2, 65606 }, -- Vicious Gladiator's Greaves of Meditation
-            { 3, 65608 }, -- Vicious Gladiator's Warboots of Alacrity
-            { 4, 65607 }, -- Vicious Gladiator's Warboots of Cruelty
-        }
-    }, {
-        name = ALIL["Trinket"],
-        [SET1_DIFF] = {
-            { 1, 64687 }, -- Bloodthirsty Gladiator's Badge of Conquest
-            { 2, 64688 }, -- Bloodthirsty Gladiator's Badge of Dominance
-            { 3, 64689 }, -- Bloodthirsty Gladiator's Badge of Victory
-            { 5, 64740 }, -- Bloodthirsty Gladiator's Emblem of Cruelty
-            { 6, 64741 }, -- Bloodthirsty Gladiator's Emblem of Meditation
-            { 7, 64742 }, -- Bloodthirsty Gladiator's Emblem of Tenacity
-            { 16, 64761 }, -- Bloodthirsty Gladiator's Insignia of Conquest
-            { 17, 64762 }, -- Bloodthirsty Gladiator's Insignia of Dominance
-            { 18, 64763 }, -- Bloodthirsty Gladiator's Insignia of Victory
-            { 20, AtlasLoot:GetRetByFaction(64789, 64790) }, -- Bloodthirsty Gladiator's Medallion of Cruelty
-            { 21, AtlasLoot:GetRetByFaction(64792, 64791) }, -- Bloodthirsty Gladiator's Medallion of Meditation
-            { 22, AtlasLoot:GetRetByFaction(64794, 64793) }, -- Bloodthirsty Gladiator's Medallion of Tenacity
-        },
-        [SET2_DIFF] = {
-            { 1, 61033 }, -- Vicious Gladiator's Badge of Conquest
-            { 2, 61035 }, -- Vicious Gladiator's Badge of Dominance
-            { 3, 61034 }, -- Vicious Gladiator's Badge of Victory
-            { 5, 61026 }, -- Vicious Gladiator's Emblem of Cruelty
-            { 6, 61031 }, -- Vicious Gladiator's Emblem of Meditation
-            { 7, 61032 }, -- Vicious Gladiator's Emblem of Tenacity
-            { 16, 61047 }, -- Vicious Gladiator's Insignia of Conquest
-            { 17, 61045 }, -- Vicious Gladiator's Insignia of Dominance
-            { 18, 61046 }, -- Vicious Gladiator's Insignia of Victory
-            { 20, AtlasLoot:GetRetByFaction(60801, 60794) }, -- Vicious Gladiator's Medallion of Cruelty
-            { 21, AtlasLoot:GetRetByFaction(60806, 60799) }, -- Vicious Gladiator's Medallion of Meditation
-            { 22, AtlasLoot:GetRetByFaction(60807, 60800) }, -- Vicious Gladiator's Medallion of Tenacity
-        },
-    }, {
-        name = AL["Gladiator Mount"],
-        ExtraList = true,
-        [NORMAL_DIFF] = {
-            { 1, "ac6003" },
-            { 2, 71339 },
+            {1, 50041117}, -- Warlock
+            {3, 50041112}, -- Priest Healing
+            {4, 50041146}, -- Priest Shadow
+            {6, 50041113}, -- Rogue
+            {8, 50041108}, -- Hunter
+            {10, 50041118}, -- Warrior Melee
+            {13, 50041104}, -- Death Knight Melee
+            {16, 50041109}, -- Mage
+            {18, 50041105}, -- Druid Resto
+            {19, 50041107}, -- Druid Balance
+            {20, 50041106}, -- Druid Feral
+            {22, 50041114}, -- Shaman Resto
+            {23, 50041116}, -- Shaman Elemental
+            {24, 50041115}, -- Shaman Enhancement
+            {26, 50041110}, -- Paladin Holy
+            {27, 50041111}, -- Paladin Melee
+            {29, 50041119}, -- Monk (Copperskin)
+            {30, 50041120}, -- Monk (Ironskin)
         },
     }}
 }
+
+data["ArenaS13PvP"] = {
+    name = format(AL["Season %s"], "13"),
+    ContentType = ARENA_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = NORMAL_ITTYPE,
+    items = {{
+        name = AL["Sets"],
+        TableType = SET_ITTYPE,
+        [SET2_DIFF] = {
+            {1, 50021117}, -- Warlock
+            {3, 50021112}, -- Priest Healing
+            {4, 50021146}, -- Priest Shadow
+            {6, 50021113}, -- Rogue
+            {8, 50021108}, -- Hunter
+            {10, 50021118}, -- Warrior Melee
+            {13, 50021104}, -- Death Knight Melee
+            {16, 50021109}, -- Mage
+            {18, 50021105}, -- Druid Resto
+            {19, 50021107}, -- Druid Balance
+            {20, 50021106}, -- Druid Feral
+            {22, 50021114}, -- Shaman Resto
+            {23, 50021116}, -- Shaman Elemental
+            {24, 50021115}, -- Shaman Enhancement
+            {26, 50021110}, -- Paladin Holy
+            {27, 50021111}, -- Paladin Melee
+            {29, 50021119}, -- Monk (Copperskin)
+            {30, 50021120}, -- Monk (Ironskin)
+        },
+        [SET3_DIFF] = {
+            {1, AtlasLoot:GetRetByFaction(50061117, 50051117)}, -- Warlock
+            {3, AtlasLoot:GetRetByFaction(50061112, 50051112)}, -- Priest Healing
+            {4, AtlasLoot:GetRetByFaction(50061146, 50051146)}, -- Priest Shadow
+            {6, AtlasLoot:GetRetByFaction(50061113, 50051113)}, -- Rogue
+            {8, AtlasLoot:GetRetByFaction(50061108, 50051108)}, -- Hunter
+            {10, AtlasLoot:GetRetByFaction(50061118, 50051118)}, -- Warrior Melee
+            {13, AtlasLoot:GetRetByFaction(50061104, 50051104)}, -- Death Knight Melee
+            {16, AtlasLoot:GetRetByFaction(50061109, 50051109)}, -- Mage
+            {18, AtlasLoot:GetRetByFaction(50061105, 50051105)}, -- Druid Resto
+            {19, AtlasLoot:GetRetByFaction(50061107, 50051107)}, -- Druid Balance
+            {20, AtlasLoot:GetRetByFaction(50061106, 50051106)}, -- Druid Feral
+            {22, AtlasLoot:GetRetByFaction(50061114, 50051114)}, -- Shaman Resto
+            {23, AtlasLoot:GetRetByFaction(50061116, 50051116)}, -- Shaman Elemental
+            {24, AtlasLoot:GetRetByFaction(50061115, 50051115)}, -- Shaman Enhancement
+            {26, AtlasLoot:GetRetByFaction(50061110, 50051110)}, -- Paladin Holy
+            {27, AtlasLoot:GetRetByFaction(50061111, 50051111)}, -- Paladin Melee
+            {29, AtlasLoot:GetRetByFaction(50061119, 50051119)}, -- Monk (Copperskin)
+            {30, AtlasLoot:GetRetByFaction(50061120, 50051120)}, -- Monk (Ironskin)
+        },
+        [SET3_ELITE_DIFF] = {
+            {1, 50071117}, -- Warlock
+            {3, 50071112}, -- Priest Healing
+            {4, 50071146}, -- Priest Shadow
+            {6, 50071113}, -- Rogue
+            {8, 50071108}, -- Hunter
+            {10, 50071118}, -- Warrior Melee
+            {13, 50071104}, -- Death Knight Melee
+            {16, 50071109}, -- Mage
+            {18, 50071105}, -- Druid Resto
+            {19, 50071107}, -- Druid Balance
+            {20, 50071106}, -- Druid Feral
+            {22, 50071114}, -- Shaman Resto
+            {23, 50071116}, -- Shaman Elemental
+            {24, 50071115}, -- Shaman Enhancement
+            {26, 50071110}, -- Paladin Holy
+            {27, 50071111}, -- Paladin Melee
+            {29, 50071119}, -- Monk (Copperskin)
+            {30, 50071120}, -- Monk (Ironskin)
+        },
+    }}
+}
+
+data["ArenaS14PvP"] = {
+    name = format(AL["Season %s"], "14"),
+    ContentType = ARENA_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = NORMAL_ITTYPE,
+    items = {{
+        name = AL["Sets"],
+        TableType = SET_ITTYPE,
+        [SET3_DIFF] = {
+            {1, AtlasLoot:GetRetByFaction(50091117, 50081117)}, -- Warlock
+            {3, AtlasLoot:GetRetByFaction(50091112, 50081112)}, -- Priest Healing
+            {4, AtlasLoot:GetRetByFaction(50091146, 50081146)}, -- Priest Shadow
+            {6, AtlasLoot:GetRetByFaction(50091113, 50081113)}, -- Rogue
+            {8, AtlasLoot:GetRetByFaction(50091108, 50081108)}, -- Hunter
+            {10, AtlasLoot:GetRetByFaction(50091118, 50081118)}, -- Warrior Melee
+            {13, AtlasLoot:GetRetByFaction(50091104, 50081104)}, -- Death Knight Melee
+            {16, AtlasLoot:GetRetByFaction(50091109, 50081109)}, -- Mage
+            {18, AtlasLoot:GetRetByFaction(50091105, 50081105)}, -- Druid Resto
+            {19, AtlasLoot:GetRetByFaction(50091107, 50081107)}, -- Druid Balance
+            {20, AtlasLoot:GetRetByFaction(50091106, 50081106)}, -- Druid Feral
+            {22, AtlasLoot:GetRetByFaction(50091114, 50081114)}, -- Shaman Resto
+            {23, AtlasLoot:GetRetByFaction(50091116, 50081116)}, -- Shaman Elemental
+            {24, AtlasLoot:GetRetByFaction(50091115, 50081115)}, -- Shaman Enhancement
+            {26, AtlasLoot:GetRetByFaction(50091110, 50081110)}, -- Paladin Holy
+            {27, AtlasLoot:GetRetByFaction(50091111, 50081111)}, -- Paladin Melee
+            {29, AtlasLoot:GetRetByFaction(50091119, 50081119)}, -- Monk (Copperskin)
+            {30, AtlasLoot:GetRetByFaction(50091120, 50081120)}, -- Monk (Ironskin)
+        },
+        [SET4_DIFF] = {
+            {1, AtlasLoot:GetRetByFaction(50111117, 50101117)}, -- Warlock
+            {3, AtlasLoot:GetRetByFaction(50111112, 50101112)}, -- Priest Healing
+            {4, AtlasLoot:GetRetByFaction(50111146, 50101146)}, -- Priest Shadow
+            {6, AtlasLoot:GetRetByFaction(50111113, 50101113)}, -- Rogue
+            {8, AtlasLoot:GetRetByFaction(50111108, 50101108)}, -- Hunter
+            {10, AtlasLoot:GetRetByFaction(50111118, 50101118)}, -- Warrior Melee
+            {13, AtlasLoot:GetRetByFaction(50111104, 50101104)}, -- Death Knight Melee
+            {16, AtlasLoot:GetRetByFaction(50111109, 50101109)}, -- Mage
+            {18, AtlasLoot:GetRetByFaction(50111105, 50101105)}, -- Druid Resto
+            {19, AtlasLoot:GetRetByFaction(50111107, 50101107)}, -- Druid Balance
+            {20, AtlasLoot:GetRetByFaction(50111106, 50101106)}, -- Druid Feral
+            {22, AtlasLoot:GetRetByFaction(50111114, 50101114)}, -- Shaman Resto
+            {23, AtlasLoot:GetRetByFaction(50111116, 50101116)}, -- Shaman Elemental
+            {24, AtlasLoot:GetRetByFaction(50111115, 50101115)}, -- Shaman Enhancement
+            {26, AtlasLoot:GetRetByFaction(50111110, 50101110)}, -- Paladin Holy
+            {27, AtlasLoot:GetRetByFaction(50111111, 50101111)}, -- Paladin Melee
+            {29, AtlasLoot:GetRetByFaction(50111119, 50101119)}, -- Monk (Copperskin)
+            {30, AtlasLoot:GetRetByFaction(50111120, 50101120)}, -- Monk (Ironskin)
+        },
+    }}
+}
+
+data["ArenaS15PvP"] = {
+    name = format(AL["Season %s"], "15"),
+    ContentType = ARENA_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = NORMAL_ITTYPE,
+    items = {{
+        name = AL["Sets"],
+        TableType = SET_ITTYPE,
+        [SET4_DIFF] = {
+            {1, AtlasLoot:GetRetByFaction(50121117, 50131117)}, -- Warlock
+            {3, AtlasLoot:GetRetByFaction(50121112, 50131112)}, -- Priest Healing
+            {4, AtlasLoot:GetRetByFaction(50121146, 50131146)}, -- Priest Shadow
+            {6, AtlasLoot:GetRetByFaction(50121113, 50131113)}, -- Rogue
+            {8, AtlasLoot:GetRetByFaction(50121108, 50131108)}, -- Hunter
+            {10, AtlasLoot:GetRetByFaction(50121118, 50131118)}, -- Warrior Melee
+            {13, AtlasLoot:GetRetByFaction(50121104, 50131104)}, -- Death Knight Melee
+            {16, AtlasLoot:GetRetByFaction(50121109, 50131109)}, -- Mage
+            {18, AtlasLoot:GetRetByFaction(50121105, 50131105)}, -- Druid Resto
+            {19, AtlasLoot:GetRetByFaction(50121107, 50131107)}, -- Druid Balance
+            {20, AtlasLoot:GetRetByFaction(50121106, 50131106)}, -- Druid Feral
+            {22, AtlasLoot:GetRetByFaction(50121114, 50131114)}, -- Shaman Resto
+            {23, AtlasLoot:GetRetByFaction(50121116, 50131116)}, -- Shaman Elemental
+            {24, AtlasLoot:GetRetByFaction(50121115, 50131115)}, -- Shaman Enhancement
+            {26, AtlasLoot:GetRetByFaction(50121110, 50131110)}, -- Paladin Holy
+            {27, AtlasLoot:GetRetByFaction(50121111, 50131111)}, -- Paladin Melee
+            {29, AtlasLoot:GetRetByFaction(50121119, 50131119)}, -- Monk (Copperskin)
+            {30, AtlasLoot:GetRetByFaction(50121120, 50131120)}, -- Monk (Ironskin)
+        },
+        [SET5_DIFF] = {
+            {1, AtlasLoot:GetRetByFaction(50151117, 50141117)}, -- Warlock
+            {3, AtlasLoot:GetRetByFaction(50151112, 50141112)}, -- Priest Healing
+            {4, AtlasLoot:GetRetByFaction(50151146, 50141146)}, -- Priest Shadow
+            {6, AtlasLoot:GetRetByFaction(50151113, 50141113)}, -- Rogue
+            {8, AtlasLoot:GetRetByFaction(50151108, 50141108)}, -- Hunter
+            {10, AtlasLoot:GetRetByFaction(50151118, 50141118)}, -- Warrior Melee
+            {13, AtlasLoot:GetRetByFaction(50151104, 50141104)}, -- Death Knight Melee
+            {16, AtlasLoot:GetRetByFaction(50151109, 50141109)}, -- Mage
+            {18, AtlasLoot:GetRetByFaction(50151105, 50141105)}, -- Druid Resto
+            {19, AtlasLoot:GetRetByFaction(50151107, 50141107)}, -- Druid Balance
+            {20, AtlasLoot:GetRetByFaction(50151106, 50141106)}, -- Druid Feral
+            {22, AtlasLoot:GetRetByFaction(50151114, 50141114)}, -- Shaman Resto
+            {23, AtlasLoot:GetRetByFaction(50151116, 50141116)}, -- Shaman Elemental
+            {24, AtlasLoot:GetRetByFaction(50151115, 50141115)}, -- Shaman Enhancement
+            {26, AtlasLoot:GetRetByFaction(50151110, 50141110)}, -- Paladin Holy
+            {27, AtlasLoot:GetRetByFaction(50151111, 50141111)}, -- Paladin Melee
+            {29, AtlasLoot:GetRetByFaction(50151119, 50141119)}, -- Monk (Copperskin)
+            {30, AtlasLoot:GetRetByFaction(50151120, 50141120)}, -- Monk (Ironskin)
+        },
+    }}
+}
+
