@@ -34,15 +34,14 @@ else
     HORDE_DIFF = data:AddDifficulty(FACTION_HORDE, "horde", nil, 1)
     LOAD_DIFF = ALLIANCE_DIFF
 end
-local SET1_DIFF = data:AddDifficulty(format(AL["Bloodthirsty %s"], AL["Gladiator"]), "set1", nil, 1)
-local SET2_DIFF = data:AddDifficulty(format(AL["Vicious %s"], AL["Gladiator"]), "set2", nil, 1)
-local SET2_ELITE_DIFF = data:AddDifficulty(format(AL["Vicious (Elite) %s"], AL["Gladiator"]), "set3", nil, 1)
-local SET2_UPGRADE_DIFF = data:AddDifficulty(format(AL["Vicious %s"], AL["Gladiator"]), "set6", nil, 1) -- Upgraded honor set
-local SET3_DIFF = data:AddDifficulty(format(AL["Ruthless %s"], AL["Gladiator"]), "set4", nil, 1)
-local SET3_ELITE_DIFF = data:AddDifficulty(format(AL["Ruthless (Elite) %s"], AL["Gladiator"]), "set5", nil, 1)
-local SET3_UPGRADE_DIFF = data:AddDifficulty(format(AL["Ruthless %s"], AL["Gladiator"]), "set9", nil, 1) -- Upgraded honor set 390
-local SET4_DIFF = data:AddDifficulty(format(AL["Cataclysmic %s"], AL["Gladiator"]), "set7", nil, 1)
-local SET4_ELITE_DIFF = data:AddDifficulty(format(AL["Cataclysmic (Elite) %s"], AL["Gladiator"]), "set8", nil, 1)
+
+local SET1_DIFF = data:AddDifficulty(format(AL["Dreadful %s"], AL["Gladiator"]), "set1", nil, 1)
+local SET2_DIFF = data:AddDifficulty(format(AL["Malevolent %s"], AL["Gladiator"]), "set2", nil, 1)
+local SET2_ELITE_DIFF = data:AddDifficulty(format(AL["Malevolent (Elite) %s"], AL["Gladiator"]), "set3", nil, 1)
+local SET3_DIFF = data:AddDifficulty(format(AL["Tyrannical %s"], AL["Gladiator"]), "set2", nil, 1)
+local SET3_ELITE_DIFF = data:AddDifficulty(format(AL["Tyrannical (Elite) %s"], AL["Gladiator"]), "set3", nil, 1)
+local SET4_DIFF = data:AddDifficulty(format(AL["Grievous %s"], AL["Gladiator"]), "set2", nil, 1)
+local SET5_DIFF = data:AddDifficulty(format(AL["Prideful %s"], AL["Gladiator"]), "set2", nil, 1)
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
@@ -151,7 +150,7 @@ data["ArenaS13PvP"] = {
     items = {{
         name = AL["Sets"],
         TableType = SET_ITTYPE,
-        [SET1_DIFF] = {
+        [SET2_DIFF] = {
             {1, 50021117}, -- Warlock
             {3, 50021112}, -- Priest Healing
             {4, 50021146}, -- Priest Shadow
@@ -169,7 +168,7 @@ data["ArenaS13PvP"] = {
             {26, 50021110}, -- Paladin Holy
             {27, 50021111} -- Paladin Melee
         },
-        [SET2_DIFF] = {
+        [SET3_DIFF] = {
             {1, AtlasLoot:GetRetByFaction(50061117, 50051117)}, -- Warlock
             {3, AtlasLoot:GetRetByFaction(50061112, 50051112)}, -- Priest Healing
             {4, AtlasLoot:GetRetByFaction(50061146, 50051146)}, -- Priest Shadow
@@ -187,7 +186,7 @@ data["ArenaS13PvP"] = {
             {26, AtlasLoot:GetRetByFaction(50061110, 50051110)}, -- Paladin Holy
             {27, AtlasLoot:GetRetByFaction(50061111, 50051111)} -- Paladin Melee
         },
-        [SET2_ELITE_DIFF] = {
+        [SET3_ELITE_DIFF] = {
             {1, 50071117}, -- Warlock
             {3, 50071112}, -- Priest Healing
             {4, 50071146}, -- Priest Shadow
@@ -216,7 +215,7 @@ data["ArenaS14PvP"] = {
     items = {{
         name = AL["Sets"],
         TableType = SET_ITTYPE,
-        [SET1_DIFF] = {
+        [SET3_DIFF] = {
             {1, AtlasLoot:GetRetByFaction(50091117, 50081117)}, -- Warlock
             {3, AtlasLoot:GetRetByFaction(50091112, 50081112)}, -- Priest Healing
             {4, AtlasLoot:GetRetByFaction(50091146, 50081146)}, -- Priest Shadow
@@ -234,7 +233,7 @@ data["ArenaS14PvP"] = {
             {26, AtlasLoot:GetRetByFaction(50091110, 50081110)}, -- Paladin Holy
             {27, AtlasLoot:GetRetByFaction(50091111, 50081111)} -- Paladin Melee
         },
-        [SET2_DIFF] = {
+        [SET4_DIFF] = {
             {1, AtlasLoot:GetRetByFaction(50111117, 50101117)}, -- Warlock
             {3, AtlasLoot:GetRetByFaction(50111112, 50101112)}, -- Priest Healing
             {4, AtlasLoot:GetRetByFaction(50111146, 50101146)}, -- Priest Shadow
@@ -263,7 +262,7 @@ data["ArenaS15PvP"] = {
     items = {{
         name = AL["Sets"],
         TableType = SET_ITTYPE,
-        [SET1_DIFF] = {
+        [SET4_DIFF] = {
             {1, AtlasLoot:GetRetByFaction(50121117, 50131117)}, -- Warlock
             {3, AtlasLoot:GetRetByFaction(50121112, 50131112)}, -- Priest Healing
             {4, AtlasLoot:GetRetByFaction(50121146, 50131146)}, -- Priest Shadow
@@ -281,7 +280,7 @@ data["ArenaS15PvP"] = {
             {26, AtlasLoot:GetRetByFaction(50121110, 50131110)}, -- Paladin Holy
             {27, AtlasLoot:GetRetByFaction(50121111, 50131111)} -- Paladin Melee
         },
-        [SET2_DIFF] = {
+        [SET5_DIFF] = {
             {1, AtlasLoot:GetRetByFaction(50151117, 50141117)}, -- Warlock
             {3, AtlasLoot:GetRetByFaction(50151112, 50141112)}, -- Priest Healing
             {4, AtlasLoot:GetRetByFaction(50151146, 50141146)}, -- Priest Shadow
