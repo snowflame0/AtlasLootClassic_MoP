@@ -1,11 +1,10 @@
 # TODO for MoP Release
 - [ ] PvP Module needs to be populated
-    - [ ] Mounts
-    - [ ] Sets
+    - [x] Mounts
+    - [x] Sets
     - [ ] S13 gear
     - [ ] S14 gear
     - [ ] S15 gear
-    - [ ] World PvP objectives/rewards (5.1 stuff?)
 - [ ] Collections module needs to be populated
     - [x] New tier sets
     - [ ] Legendaries clean up, add gems and other stuff
@@ -46,7 +45,7 @@
 - [ ] Add Content phase data (Data/ContentPhase.lua)
 
 # Bugs and Other Problems
-- [ ] Linking items to chat seems broken
+- [x] Linking items to chat seems broken, NVM BLIZZARD PROBLEM
 - [ ] Finish update notifier
 - [x] Add any missing locale strings
 - [ ] Remove Model button and replace with link to Dungeon Journal
