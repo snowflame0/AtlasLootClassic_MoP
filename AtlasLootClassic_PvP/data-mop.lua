@@ -101,7 +101,9 @@ data["ArenaS12PvP"] = {
             {23, 50011116}, -- Shaman Elemental
             {24, 50011115}, -- Shaman Enhancement
             {26, 50011110}, -- Paladin Holy
-            {27, 50011111} -- Paladin Melee
+            {27, 50011111}, -- Paladin Melee
+            {29, 50011119}, -- Monk (Copperskin)
+            {30, 50011120}, -- Monk (Ironskin)
         },
         [SET2_DIFF] = {
             {1, 50031117}, -- Warlock
@@ -119,7 +121,9 @@ data["ArenaS12PvP"] = {
             {23, 50031116}, -- Shaman Elemental
             {24, 50031115}, -- Shaman Enhancement
             {26, 50031110}, -- Paladin Holy
-            {27, 50031111} -- Paladin Melee
+            {27, 50031111}, -- Paladin Melee
+            {29, 50031119}, -- Monk (Copperskin)
+            {30, 50031120}, -- Monk (Ironskin)
         },
         [SET2_ELITE_DIFF] = {
             {1, 50041117}, -- Warlock
@@ -137,7 +141,9 @@ data["ArenaS12PvP"] = {
             {23, 50041116}, -- Shaman Elemental
             {24, 50041115}, -- Shaman Enhancement
             {26, 50041110}, -- Paladin Holy
-            {27, 50041111} -- Paladin Melee
+            {27, 50041111}, -- Paladin Melee
+            {29, 50041119}, -- Monk (Copperskin)
+            {30, 50041120}, -- Monk (Ironskin)
         },
     }}
 }
@@ -166,7 +172,9 @@ data["ArenaS13PvP"] = {
             {23, 50021116}, -- Shaman Elemental
             {24, 50021115}, -- Shaman Enhancement
             {26, 50021110}, -- Paladin Holy
-            {27, 50021111} -- Paladin Melee
+            {27, 50021111}, -- Paladin Melee
+            {29, 50021119}, -- Monk (Copperskin)
+            {30, 50021120}, -- Monk (Ironskin)
         },
         [SET3_DIFF] = {
             {1, AtlasLoot:GetRetByFaction(50061117, 50051117)}, -- Warlock
@@ -184,7 +192,9 @@ data["ArenaS13PvP"] = {
             {23, AtlasLoot:GetRetByFaction(50061116, 50051116)}, -- Shaman Elemental
             {24, AtlasLoot:GetRetByFaction(50061115, 50051115)}, -- Shaman Enhancement
             {26, AtlasLoot:GetRetByFaction(50061110, 50051110)}, -- Paladin Holy
-            {27, AtlasLoot:GetRetByFaction(50061111, 50051111)} -- Paladin Melee
+            {27, AtlasLoot:GetRetByFaction(50061111, 50051111)}, -- Paladin Melee
+            {29, AtlasLoot:GetRetByFaction(50061119, 50051119)}, -- Monk (Copperskin)
+            {30, AtlasLoot:GetRetByFaction(50061120, 50051120)}, -- Monk (Ironskin)
         },
         [SET3_ELITE_DIFF] = {
             {1, 50071117}, -- Warlock
@@ -202,7 +212,9 @@ data["ArenaS13PvP"] = {
             {23, 50071116}, -- Shaman Elemental
             {24, 50071115}, -- Shaman Enhancement
             {26, 50071110}, -- Paladin Holy
-            {27, 50071111} -- Paladin Melee
+            {27, 50071111}, -- Paladin Melee
+            {29, 50071119}, -- Monk (Copperskin)
+            {30, 50071120}, -- Monk (Ironskin)
         },
     }}
 }
@@ -231,7 +243,9 @@ data["ArenaS14PvP"] = {
             {23, AtlasLoot:GetRetByFaction(50091116, 50081116)}, -- Shaman Elemental
             {24, AtlasLoot:GetRetByFaction(50091115, 50081115)}, -- Shaman Enhancement
             {26, AtlasLoot:GetRetByFaction(50091110, 50081110)}, -- Paladin Holy
-            {27, AtlasLoot:GetRetByFaction(50091111, 50081111)} -- Paladin Melee
+            {27, AtlasLoot:GetRetByFaction(50091111, 50081111)}, -- Paladin Melee
+            {29, AtlasLoot:GetRetByFaction(50091119, 50081119)}, -- Monk (Copperskin)
+            {30, AtlasLoot:GetRetByFaction(50091120, 50081120)}, -- Monk (Ironskin)
         },
         [SET4_DIFF] = {
             {1, AtlasLoot:GetRetByFaction(50111117, 50101117)}, -- Warlock
@@ -249,7 +263,9 @@ data["ArenaS14PvP"] = {
             {23, AtlasLoot:GetRetByFaction(50111116, 50101116)}, -- Shaman Elemental
             {24, AtlasLoot:GetRetByFaction(50111115, 50101115)}, -- Shaman Enhancement
             {26, AtlasLoot:GetRetByFaction(50111110, 50101110)}, -- Paladin Holy
-            {27, AtlasLoot:GetRetByFaction(50111111, 50101111)} -- Paladin Melee
+            {27, AtlasLoot:GetRetByFaction(50111111, 50101111)}, -- Paladin Melee
+            {29, AtlasLoot:GetRetByFaction(50111119, 50101119)}, -- Monk (Copperskin)
+            {30, AtlasLoot:GetRetByFaction(50111120, 50101120)}, -- Monk (Ironskin)
         },
     }}
 }
@@ -278,7 +294,9 @@ data["ArenaS15PvP"] = {
             {23, AtlasLoot:GetRetByFaction(50121116, 50131116)}, -- Shaman Elemental
             {24, AtlasLoot:GetRetByFaction(50121115, 50131115)}, -- Shaman Enhancement
             {26, AtlasLoot:GetRetByFaction(50121110, 50131110)}, -- Paladin Holy
-            {27, AtlasLoot:GetRetByFaction(50121111, 50131111)} -- Paladin Melee
+            {27, AtlasLoot:GetRetByFaction(50121111, 50131111)}, -- Paladin Melee
+            {29, AtlasLoot:GetRetByFaction(50121119, 50131119)}, -- Monk (Copperskin)
+            {30, AtlasLoot:GetRetByFaction(50121120, 50131120)}, -- Monk (Ironskin)
         },
         [SET5_DIFF] = {
             {1, AtlasLoot:GetRetByFaction(50151117, 50141117)}, -- Warlock
@@ -296,7 +314,9 @@ data["ArenaS15PvP"] = {
             {23, AtlasLoot:GetRetByFaction(50151116, 50141116)}, -- Shaman Elemental
             {24, AtlasLoot:GetRetByFaction(50151115, 50141115)}, -- Shaman Enhancement
             {26, AtlasLoot:GetRetByFaction(50151110, 50141110)}, -- Paladin Holy
-            {27, AtlasLoot:GetRetByFaction(50151111, 50141111)} -- Paladin Melee
+            {27, AtlasLoot:GetRetByFaction(50151111, 50141111)}, -- Paladin Melee
+            {29, AtlasLoot:GetRetByFaction(50151119, 50141119)}, -- Monk (Copperskin)
+            {30, AtlasLoot:GetRetByFaction(50151120, 50141120)}, -- Monk (Ironskin)
         },
     }}
 }
