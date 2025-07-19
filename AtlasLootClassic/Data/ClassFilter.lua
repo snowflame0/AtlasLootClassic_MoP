@@ -55,7 +55,7 @@ local FILTER_DATA = {
         ["INVTYPE_THROWN"] = true,			-- Thrown
         ["INVTYPE_RANGEDRIGHT"] = true,		-- Ranged
         ["INVTYPE_QUIVER"] = C.HUNTER,			-- Quiver
-        ["INVTYPE_RELIC"] = C.SHAMAN + C.PALADIN + C.DRUID + C.DEATHKNIGHT,			-- Relic
+        --["INVTYPE_RELIC"] = C.SHAMAN + C.PALADIN + C.DRUID + C.DEATHKNIGHT,			-- Relic
     },
     itemClass = {
         -- TODO: FIX THIS
@@ -106,20 +106,20 @@ local FILTER_DATA = {
             [10] = true, -- Cooking Bag
         },
         [2] = {
-            [0] 		    = C.HUNTER + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT + AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, C.ROGUE, 0), -- One-Handed Axes
+            [0] 		    = C.HUNTER + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT + C.ROGUE + C.MONK, -- One-Handed Axes
             [1] 		    = C.HUNTER + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT, -- Two-Handed Axes
             [2] 		    = C.HUNTER + C.ROGUE + C.WARRIOR, -- Bows
             [3] 		    = C.HUNTER + C.ROGUE + C.WARRIOR, -- Guns
-            [4] 		= C.DRUID + C.PALADIN + C.PRIEST + C.ROGUE + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT, -- One-Handed Maces
+            [4] 		= C.DRUID + C.PALADIN + C.PRIEST + C.ROGUE + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT + C.MONK, -- One-Handed Maces
             [5] 		= C.DRUID + C.PALADIN + C.SHAMAN + C.WARRIOR + C.DEATHKNIGHT, -- Two-Handed Maces
-            [6] 		= C.DRUID + C.HUNTER + C.PALADIN + C.WARRIOR + C.DEATHKNIGHT, -- Polearms
-            [7] 		= C.HUNTER + C.MAGE + C.PALADIN + C.ROGUE + C.WARLOCK + C.WARRIOR + C.DEATHKNIGHT, -- One-Handed Swords
+            [6] 		= C.DRUID + C.HUNTER + C.PALADIN + C.WARRIOR + C.DEATHKNIGHT + C.MONK, -- Polearms
+            [7] 		= C.HUNTER + C.MAGE + C.PALADIN + C.ROGUE + C.WARLOCK + C.WARRIOR + C.DEATHKNIGHT + C.MONK, -- One-Handed Swords
             [8] 		= C.HUNTER + C.PALADIN + C.WARRIOR + C.DEATHKNIGHT, -- Two-Handed Swords
             [9] 	    = true, -- Warglaives
-            [10] 		    = C.DRUID + C.HUNTER + C.MAGE + C.PRIEST + C.SHAMAN + C.WARLOCK, -- Staves
+            [10] 		    = C.DRUID + C.HUNTER + C.MAGE + C.PRIEST + C.SHAMAN + C.WARLOCK + C.MONK, -- Staves
             --[11] 	= true, -- Bear Claws
             --[12] 		= true, -- CatClaws 
-            [13]		= C.DRUID + C.ROGUE + C.SHAMAN + C.WARRIOR + C.HUNTER, -- Fist Weapons
+            [13]		= C.DRUID + C.ROGUE + C.SHAMAN + C.WARRIOR + C.HUNTER + C.MONK, -- Fist Weapons
             [14] 		= true, -- Miscellaneous
             [15] 		= C.DRUID + C.HUNTER + C.MAGE + C.PRIEST + C.ROGUE + C.SHAMAN + C.WARLOCK + C.WARRIOR, -- Daggers
             [16] 		= C.ROGUE + C.WARRIOR, -- Thrown
@@ -141,7 +141,7 @@ local FILTER_DATA = {
         [4] = {
             [0] 	= true, -- Miscellaneous
             [1] 	    = C.PRIEST + C.MAGE + C.WARLOCK, -- Cloth
-            [2] 	= C.DRUID + C.ROGUE, -- Leather
+            [2] 	= C.DRUID + C.ROGUE + C.MONK, -- Leather
             [3] 	    = C.HUNTER + C.SHAMAN, -- Mail
             [4] 	    = C.WARRIOR + C.PALADIN + C.DEATHKNIGHT, -- Plate
             [5]    = true, -- Cosmetic
@@ -372,7 +372,7 @@ AtlasLoot.AtlasLootDBDefaults.profile.ClassFilter = {
         ["ITEM_MOD_INTELLECT_SHORT"] = false,
         ["ITEM_MOD_SPIRIT_SHORT"] = false,
         ["ITEM_MOD_EXPERTISE_RATING_SHORT"] = false,
-        ["ITEM_MOD_MANA_SHORT"] = false,
+        --["ITEM_MOD_MANA_SHORT"] = false,
         ["ITEM_MOD_DEFENSE_SKILL_RATING_SHORT"] = false,
         ["ITEM_MOD_PARRY_RATING_SHORT"] = false,
         ["ITEM_MOD_DODGE_RATING_SHORT"] = false,
@@ -455,6 +455,10 @@ AtlasLoot.AtlasLootDBDefaults.profile.ClassFilter = {
         ["ITEM_MOD_INTELLECT_SHORT"] = false,
         ["ITEM_MOD_SPIRIT_SHORT"] = false,
         ["ITEM_MOD_MANA_SHORT"] = false,
+    },
+    ["MONK"] = {
+        ["*"] = true,
+        ["ITEM_MOD_STRENGTH_SHORT"] = false,
     },
 }
 
