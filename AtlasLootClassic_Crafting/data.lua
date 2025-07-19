@@ -21,7 +21,7 @@ local GetColorSkill = AtlasLoot.Data.Profession.GetColorSkillRankNoSpell
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
 
-local NORMAL_DIFF = data:AddDifficulty(AL["Normal"], "n", 1, nil, true)
+local NORMAL_DIFF = data:AddDifficulty("NORMAL", AL["N"], 1, nil, true)
 local LEATHER_DIFF = data:AddDifficulty(ALIL["Leather"], "leather", 0)
 local MAIL_DIFF = data:AddDifficulty(ALIL["Mail"], "mail", 0)
 local PLATE_DIFF = data:AddDifficulty(ALIL["Plate"], "plate", 0)
@@ -36,8 +36,6 @@ local PROF_CONTENT = data:AddContentType(ALIL["Professions"], ATLASLOOT_PRIMPROF
 local PROF_GATH_CONTENT = data:AddContentType(ALIL["Gathering Professions"], ATLASLOOT_PRIMPROFESSION_COLOR)
 local PROF_SEC_CONTENT = data:AddContentType(AL["Secondary Professions"], ATLASLOOT_SECPROFESSION_COLOR)
 local PROF_CLASS_CONTENT = data:AddContentType(AL["Class Professions"], ATLASLOOT_CLASSPROFESSION_COLOR)
---local RAID20_CONTENT = data:AddContentType(AL["20 Raids"], ATLASLOOT_RAID20_COLOR)
---local RAID40_CONTENT = data:AddContentType(AL["40 Raids"], ATLASLOOT_RAID40_COLOR)
 
 data["Alchemy"] = {
 	name = ALIL["Alchemy"],

@@ -17,6 +17,7 @@ local UnitPosition = UnitPosition
 -- ----------------------------------------------------------------------------
 local AtlasLoot = _G.AtlasLoot
 local AL = AtlasLoot.Locales
+local ALIL = AtlasLoot.IngameLocales
 
 local LibStub = _G.LibStub
 
@@ -218,20 +219,23 @@ end
 -- Difficultys
 -- ##############################
 AtlasLoot.DIFFICULTY = {
-	[175] 	= {	id = 175,	short = "rf", 	loc = AL["Raid Finder"],			sourceLoc = AL["RF"], 		key = "RAIDFINDER"		},
-	[1] 	= {	id = 1,		short = "n", 	loc = AL["Normal"],				sourceLoc = AL["N"], 		key = "NORMAL"			},
-	[2] 	= {	id = 2,		short = "h", 	loc = AL["Heroic"],				sourceLoc = AL["H"], 		key = "HEROIC"			},
-	[3] 	= {	id = 3,		short = "r10", 	loc = AL["10 Raid"],			sourceLoc = "10", 			key = "10RAID"			},
-	[4] 	= {	id = 4,		short = "r25", 	loc = AL["25 Raid"],			sourceLoc = "25", 			key = "25RAID"			},
-	[5] 	= {	id = 5,		short = "r10h", loc = AL["10 Raid Heroic"],		sourceLoc = AL["10H"], 		key = "10RAIDH"			},
-	[6] 	= {	id = 6,		short = "r25h",	loc = AL["25 Raid Heroic"],		sourceLoc = AL["25H"], 		key = "25RAIDH"			},
-	[9] 	= {	id = 7,		short = "r40", 	loc = AL["40 Raid"],			sourceLoc = nil, 			key = "40RAID"			},
-	[148] 	= {	id = 148,	short = "r20", 	loc = AL["20 Raid"],			sourceLoc = nil, 			key = "20RAID"			},
-	[173] 	= {	id = 173,	short = "n", 	loc = AL["Normal"],				sourceLoc = AL["N"], 		key = "NORMAL2"			},
-	[174] 	= {	id = 174,	short = "h", 	loc = AL["Heroic"],				sourceLoc = AL["H"], 		key = "HEROIC2"			},
-	[176] 	= {	id = 176,	short = "r25", 	loc = AL["25 Raid"],			sourceLoc = "25", 			key = "25RAID2"			},
-	[193] 	= {	id = 193,	short = "r10h", loc = AL["10 Raid Heroic"],		sourceLoc = AL["10H"], 		key = "10RAIDH2"		},
-	[194] 	= {	id = 194,	short = "r25h",	loc = AL["25 Raid Heroic"],		sourceLoc = AL["25H"], 		key = "25RAIDH2"		},
+	[1] 	= {	id = 1,		short = "n", 	loc = ALIL["Normal"],			sourceLoc = AL["N"], 		key = "NORMAL"			},
+	[2] 	= {	id = 2,		short = "h", 	loc = ALIL["Heroic"],			sourceLoc = AL["H"], 		key = "HEROIC"			},
+	[3] 	= {	id = 3,		short = "r10", 	loc = ALIL["10 Raid"],			sourceLoc = "10", 			key = "10RAID"			},
+	[4] 	= {	id = 4,		short = "r25", 	loc = ALIL["25 Raid"],			sourceLoc = "25", 			key = "25RAID"			},
+	[5] 	= {	id = 5,		short = "r10h", loc = ALIL["10 Raid Heroic"],	sourceLoc = AL["10H"], 		key = "10RAIDH"			},
+	[6] 	= {	id = 6,		short = "r25h",	loc = ALIL["25 Raid Heroic"],	sourceLoc = AL["25H"], 		key = "25RAIDH"			},
+	[8]		= { id = 8,		short = "ch",	loc = ALIL["Challenge Mode"],	sourceLoc = AL["CM"],		key = "CHALLENGE"		},
+	[9] 	= {	id = 9,		short = "r40", 	loc = ALIL["40 Raid"],			sourceLoc = nil, 			key = "40RAID"			},
+	[11]	= { id = 12,	short = "scn",	loc = ALIL["Normal Scenario"],	sourceLoc = AL["SC"],		key = "SCENARIO"		},
+	[14]	= { id = 14,	short = "flex",	loc = ALIL["Flexible"],			sourceLoc = AL["F"],		key = "FLEXIBLE"		},
+	[148] 	= {	id = 148,	short = "r20", 	loc = ALIL["20 Raid"],			sourceLoc = nil, 			key = "20RAID"			},
+	[173] 	= {	id = 173,	short = "n", 	loc = ALIL["Normal"],			sourceLoc = AL["N"], 		key = "NORMAL2"			},
+	[174] 	= {	id = 174,	short = "h", 	loc = ALIL["Heroic"],			sourceLoc = AL["H"], 		key = "HEROIC2"			},
+	[176] 	= {	id = 176,	short = "r25", 	loc = ALIL["25 Raid"],			sourceLoc = "25", 			key = "25RAID2"			},
+	[193] 	= {	id = 193,	short = "r10h", loc = ALIL["10 Raid Heroic"],	sourceLoc = AL["10H"], 		key = "10RAIDH2"		},
+	[194] 	= {	id = 194,	short = "r25h",	loc = ALIL["25 Raid Heroic"],	sourceLoc = AL["25H"], 		key = "25RAIDH2"		},
+	[237]	= { id = 237,	short = "c",	loc = ALIL["Celestial"],		sourceLoc = AL["C"],		key = "CELESTIAL"		},
 }
 
 for k,v in pairs(AtlasLoot.DIFFICULTY) do

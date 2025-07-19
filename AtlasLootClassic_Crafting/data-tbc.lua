@@ -22,7 +22,7 @@ local GetColorSkill = AtlasLoot.Data.Profession.GetColorSkillRankNoSpell
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
 
-local NORMAL_DIFF = data:AddDifficulty(AL["Normal"], "n", 1, nil, true)
+local NORMAL_DIFF = data:AddDifficulty("NORMAL", "n", 1, nil, true)
 local LEATHER_DIFF = data:AddDifficulty(ALIL["Leather"], "leather", 0)
 local MAIL_DIFF = data:AddDifficulty(ALIL["Mail"], "mail", 0)
 local PLATE_DIFF = data:AddDifficulty(ALIL["Plate"], "plate", 0)

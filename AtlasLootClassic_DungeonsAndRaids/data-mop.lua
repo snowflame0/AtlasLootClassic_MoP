@@ -18,11 +18,13 @@ local data = AtlasLoot.ItemDB:Add(addonname, 1, AtlasLoot.MOP_VERSION_NUM)
 
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
-local FLEXIBLE_DIFF = data:AddDifficulty(AL["Flexible"], nil, nil, nil, true)
-local CELESTIAL_DIFF = data:AddDifficulty(AL["Celestial"], nil, nil, nil, true)
+local CELESTIAL_DIFF = data:AddDifficulty("CELESTIAL", nil, nil, nil, true)
+local FLEX_DIFF = data:AddDifficulty("FLEXIBLE", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
+--- For SoO and WoD classic (lol) pre-patch
+--local MYTHIC_DIFF = data:AddDifficulty(AL["Mythic"], nil, nil, nil, true)
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
@@ -244,7 +246,7 @@ local T16_SET = {
         { 102, 50001191 }, -- Monk Brewmaster
         { 103, 50001193 }, -- Monk Windwalker
     },
-    [FLEXIBLE_DIFF] = {
+    [FLEX_DIFF] = {
         { 1, 50011181 }, -- Warlock
         { 3, 50011187 }, -- Priest Holy
         { 4, 50011186 }, -- Priest Shadow

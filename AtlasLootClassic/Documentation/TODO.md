@@ -6,25 +6,26 @@
     - [ ] S14 gear
     - [ ] S15 gear
 - [ ] Collections module needs to be populated
-    - [x] New tier sets
     - [ ] Legendaries clean up, add gems and other stuff
-    - [x] World Drops
     - [ ] JP and VP vendors
     - [ ] Celestial dungeon vendor
-    - [ ] Cooking vendors?
     - [ ] Spirit of Harmony vendor
-    - [ ] Proving grounds/brawler's rewards?
+    - [ ] Glyphs
+    - [ ] Brawler's Guild
+    - [x] New tier sets
+    - [x] World Drops
+    - [ ] Cooking vendors?
+    - [ ] World event changes
     - [x] New mounts
     - [x] New pets
     - [x] New heirlooms
     - [x] New tabards
-    - [ ] World event changes
-    - [ ] Glyphs
     - ???
 - [ ] Finish Crafting module
     - [ ] Leatherworking
     - [x] Blacksmithing
     - [ ] Inscription
+        - [ ] Redo all old glyphs under wrath/cata
     - [ ] Sets
 - [ ] Finish Dungeons and Raids module
     - [ ] Add Celestial Dungeon stuff to Dungeons and Raids

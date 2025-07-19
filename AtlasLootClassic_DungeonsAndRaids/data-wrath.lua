@@ -33,7 +33,7 @@ local RAID25H_DIFF = data:AddDifficulty("25RAIDH")
 
 local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
 local T10_1_DIFF = data:AddDifficulty(AL["10H / 25 / 25H"], "T10_1", 0)
-local T10_2_DIFF = data:AddDifficulty(AL["25 Raid Heroic"], "T10_2", 0)
+local T10_2_DIFF = data:AddDifficulty(ALIL["25 Raid Heroic"], "T10_2", 0)
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")

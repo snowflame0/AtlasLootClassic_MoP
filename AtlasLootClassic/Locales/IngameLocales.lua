@@ -301,6 +301,23 @@ local IngameLocales = {
 	["Heirloom"] 	= GLOBAL["ITEM_QUALITY7_DESC"],
 
 	-- ######################################################################
+	-- Difficulties
+	-- ######################################################################
+	["Normal"]			= GetDifficultyInfo(1),
+	["Heroic"]			= GetDifficultyInfo(2),
+	["10 Raid"]			= GetDifficultyInfo(3),
+	["25 Raid"]     	= GetDifficultyInfo(4),
+	["10 Raid Heroic"]  = GetDifficultyInfo(5),
+	["25 Raid Heroic"]  = GetDifficultyInfo(6),
+	["Challenge Mode"]  = GetDifficultyInfo(8),
+	["40 Raid"]     	= GetDifficultyInfo(7),
+	["Normal Scenario"] = GetDifficultyInfo(12),
+	["Flexible"]		= GetDifficultyInfo(14),
+	["20 Raid"]     	= GetDifficultyInfo(148),
+	["Celestial"]     	= GetDifficultyInfo(237),
+
+
+	-- ######################################################################
 	-- Misc
 	-- ######################################################################
 	["Food"] = GLOBAL["POWER_TYPE_FOOD"],

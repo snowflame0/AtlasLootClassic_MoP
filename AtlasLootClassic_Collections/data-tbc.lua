@@ -29,14 +29,6 @@ local GetForVersion = AtlasLoot.ReturnForGameVersion
 
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
-local RAID10_DIFF = data:AddDifficulty("10RAID")
-local RAID10H_DIFF = data:AddDifficulty("10RAIDH")
-local RAID25_DIFF = data:AddDifficulty("25RAID")
-local RAID25H_DIFF = data:AddDifficulty("25RAIDH")
-
-local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
-local T10_1_DIFF = data:AddDifficulty(AL["10H / 25 / 25H"], "T10_1", 0)
-local T10_2_DIFF = data:AddDifficulty(AL["25 Raid Heroic"], "T10_2", 0)
 
 local ALLIANCE_DIFF, HORDE_DIFF, LOAD_DIFF
 if UnitFactionGroup("player") == "Horde" then

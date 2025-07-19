@@ -25,9 +25,9 @@ local data = AtlasLoot.ItemDB:Add(addonname, 1, AtlasLoot.MOP_VERSION_NUM)
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
 
--- local RAIDFINDER_DIFF = data:AddDifficulty("Raid Finder", nil, nil, nil, true)
+local CELESTIAL_DIFF = data:AddDifficulty("CELESTIAL", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
--- local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
+local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 
 local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
 local VENDOR_DIFF_P1 = data:AddDifficulty(AL["Vendor"] .. " - " .. AL["P1"], "vendor", 0)
