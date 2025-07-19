@@ -25,6 +25,7 @@
 - [ ] Finish Crafting module
     - [ ] Leatherworking
     - [x] Blacksmithing
+    - [ ] Inscription
     - [ ] Sets
 - [ ] Finish Dungeons and Raids module
     - [ ] Add Celestial Dungeon stuff to Dungeons and Raids
@@ -37,7 +38,7 @@
     - [x] T14
     - [x] T15
     - [x] T16
-    - [ ] PvP
+    - [x] PvP
     - [ ] Item to set data (script)
     - [ ] Misc
 - [ ] Add tokens data (Data/Token.lua)
