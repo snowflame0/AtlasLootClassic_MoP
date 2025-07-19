@@ -37,11 +37,11 @@ end
 
 local SET1_DIFF = data:AddDifficulty(format(AL["Dreadful %s"], AL["Gladiator"]), "set1", nil, 1)
 local SET2_DIFF = data:AddDifficulty(format(AL["Malevolent %s"], AL["Gladiator"]), "set2", nil, 1)
-local SET2_ELITE_DIFF = data:AddDifficulty(format(AL["Malevolent (Elite) %s"], AL["Gladiator"]), "set3", nil, 1)
-local SET3_DIFF = data:AddDifficulty(format(AL["Tyrannical %s"], AL["Gladiator"]), "set2", nil, 1)
+local SET2_ELITE_DIFF = data:AddDifficulty(format(AL["Malevolent (Elite) %s"], AL["Gladiator"]), "set2", nil, 1)
+local SET3_DIFF = data:AddDifficulty(format(AL["Tyrannical %s"], AL["Gladiator"]), "set3", nil, 1)
 local SET3_ELITE_DIFF = data:AddDifficulty(format(AL["Tyrannical (Elite) %s"], AL["Gladiator"]), "set3", nil, 1)
-local SET4_DIFF = data:AddDifficulty(format(AL["Grievous %s"], AL["Gladiator"]), "set2", nil, 1)
-local SET5_DIFF = data:AddDifficulty(format(AL["Prideful %s"], AL["Gladiator"]), "set2", nil, 1)
+local SET4_DIFF = data:AddDifficulty(format(AL["Grievous %s"], AL["Gladiator"]), "set4", nil, 1)
+local SET5_DIFF = data:AddDifficulty(format(AL["Prideful %s"], AL["Gladiator"]), "set5", nil, 1)
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
