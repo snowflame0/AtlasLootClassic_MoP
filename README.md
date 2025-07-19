@@ -1,6 +1,6 @@
 # AtlasLootClassic MoP
 
-[![Package](https://github.com/snowflame0/AtlasLootClassic_Cata/actions/workflows/build.yml/badge.svg)](https://github.com/snowflame0/AtlasLootClassic_Cata/actions/workflows/build.yml)
+[![Package](https://github.com/snowflame0/AtlasLootClassic_MoP/actions/workflows/build.yml/badge.svg)](https://github.com/snowflame0/AtlasLootClassic_MoP/actions/workflows/build.yml)
 
 ### AtlasLootClassic MoP is a continuation of AtlasLootClassic Cata that was a forked and revised version of AtlasLootClassic. It allows for various loot tables to be browsed in-game.
 
