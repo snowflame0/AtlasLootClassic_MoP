@@ -1,10 +1,10 @@
 # TODO for MoP Release
 - [ ] PvP Module needs to be populated
-    - [x] Mounts
-    - [x] Sets
     - [ ] S13 gear
     - [ ] S14 gear
     - [ ] S15 gear
+    - [x] Mounts
+    - [x] Sets
 - [ ] Collections module needs to be populated
     - [ ] Legendaries clean up, add gems and other stuff
     - [ ] JP and VP vendors
@@ -14,19 +14,18 @@
     - [ ] Brawler's Guild
     - [x] New tier sets
     - [x] World Drops
-    - [ ] Cooking vendors?
-    - [ ] World event changes
+    - [x] World event changes
     - [x] New mounts
     - [x] New pets
     - [x] New heirlooms
     - [x] New tabards
     - ???
 - [ ] Finish Crafting module
-    - [ ] Leatherworking
-    - [x] Blacksmithing
     - [ ] Inscription
         - [ ] Redo all old glyphs under wrath/cata
     - [ ] Sets
+    - [ ] Leatherworking
+    - [x] Blacksmithing
 - [ ] Finish Dungeons and Raids module
     - [ ] Add Celestial Dungeon stuff to Dungeons and Raids
     - [ ] Make world bosses data more compact/usable
@@ -34,26 +33,26 @@
     - [ ] Add source data to Data module (last step, with script)
     - [x] Tier sets (from Collections module)
 - [ ] Clean up rest of Factions module
+- [ ] Add tokens data (Data/Token.lua)
+- [ ] Add vendor price data (Data/VendorPrice.lua)
+- [ ] Add Content phase data (Data/ContentPhase.lua)
+- [x] Add recipe data (Data/Recipe.lua)
 - [x] Add item sets data (Data/ItemSet.lua)
     - [x] T14
     - [x] T15
     - [x] T16
     - [x] PvP
     - [x] Item to set data (script)
-- [ ] Add tokens data (Data/Token.lua)
-- [ ] Add vendor price data (Data/VendorPrice.lua)
-- [x] Add recipe data (Data/Recipe.lua)
-- [ ] Add Content phase data (Data/ContentPhase.lua)
 
 # Bugs and Other Problems
-- [x] Linking items to chat seems broken, NVM BLIZZARD PROBLEM
 - [ ] Finish update notifier
-- [x] Add any missing locale strings
 - [ ] Remove Model button and replace with link to Dungeon Journal
-- [ ] Need to fix profession data having wrong skill levels for orange/yellow/green/gray
-- [ ] Check recipes that don't exist to players, but in game files?
 - [ ] Update requirements (Data/Requirements.lua) needs rework
+- [ ] Investigate recipes that don't exist to players, but in game files?
+- [ ] Need to fix profession data having wrong skill levels for orange/yellow/green/gray
+- [x] Linking items to chat seems broken, NVM BLIZZARD PROBLEM
+- [x] Add any missing locale strings
 
 # External Stuff
-- [x] Rename addon for MoP
 - [ ] Update CurseForge icon
+- [x] Rename addon for MoP
