@@ -47,8 +47,9 @@
 - [ ] Add Content phase data (Data/ContentPhase.lua)
 
 # Bugs and Other Problems
-- [ ] Add update changes screen?
-- [ ] Add any missing locale strings
+- [ ] Linking items to chat seems broken
+- [ ] Finish update notifier
+- [x] Add any missing locale strings
 - [ ] Remove Model button and replace with link to Dungeon Journal
 - [ ] Need to fix profession data having wrong skill levels for orange/yellow/green/gray
 - [ ] Check recipes that don't exist to players, but in game files?
@@ -56,4 +57,4 @@
 
 # External Stuff
 - [x] Rename addon for MoP
-- [ ] Update CurseForge descriptions/icon
+- [ ] Update CurseForge icon

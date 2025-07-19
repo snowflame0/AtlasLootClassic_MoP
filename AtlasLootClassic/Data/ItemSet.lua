@@ -1437,7 +1437,7 @@ end
 -- Expansion: 1=classic, 2=bc, 3=wrath, 4=cata, 5=mop
 -- Faction: None=00,Horde=01,Alliance=02
 -- Difficulty/Season: 0 = Celestial, 1 = Normal/Flex(t16), 2 = Heroic/Normal(t16), 3 = Heroic(t16)
--- Difficulty/Season: 0-8 for PvP Sets, so many
+-- Difficulty/Season: 0-17 for PvP Sets, so many
 if AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM) then
     ITEM_SET_DATA_RAW.MOP = {
         -- T14
@@ -2885,6 +2885,12 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
         [78784]=40001074,[78829]=40001074,[78753]=40001074,[78764]=40001074,[78800]=40001074,
         [76990]=40011074,[76992]=40011074,[76988]=40011074,[76989]=40011074,[76991]=40011074,
         [78689]=40021074,[78734]=40021074,[78658]=40021074,[78669]=40021074,[78705]=40021074,
+    }
+end
+
+if AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM) then
+    ITEM_TO_SET_DATA.MOP = {
+
     }
 end
 
