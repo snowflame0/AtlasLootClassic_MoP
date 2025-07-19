@@ -428,3 +428,19 @@ data["ArenaS12PvP"] = {
         },
     }}
 }
+
+data["ArenaS13PvP"] = {
+    name = format(AL["Season %s"], "13"),
+    ContentType = ARENA_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = NORMAL_ITTYPE,
+    items = {{}}
+}
+
+data["ArenaS14PvP"] = {
+    name = format(AL["Season %s"], "14"),
+    ContentType = ARENA_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = NORMAL_ITTYPE,
+    items = {{}}
+}
