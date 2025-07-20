@@ -43,8 +43,8 @@
     - [x] Item to set data (script)
 
 # Bugs and Other Problems
-- [ ] Finish update notifier
 - [ ] Remove Model button and replace with link to Dungeon Journal
+- [x] Finish update notifier
 - [x] Linking items to chat seems broken, NVM BLIZZARD PROBLEM
 - [x] Add any missing locale strings
 

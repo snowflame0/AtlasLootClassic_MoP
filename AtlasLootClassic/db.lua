@@ -80,6 +80,7 @@ AtlasLoot.AtlasLootDBDefaults = {
 	},
 	global = {
 		Addons = {},
-		VendorPrice = {}
+		VendorPrice = {},
+		HideUntilUpdate = true,
 	}
 }
