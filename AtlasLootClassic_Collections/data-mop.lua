@@ -323,158 +323,290 @@ data["AugustStoneFragmentsMoP"] = {
     items = {{
         name = ALIL["Armor"] .. " - " .. ALIL["Cloth"],
         [VENDOR_DIFF] = {
-            { 1, 60237 }, -- Crown of the Twilight Queen
-            { 3, 65043 }, -- Mantle of Nefarius
-            { 5, 65019 }, -- Shadowblaze Robes
-            { 7, 60238 }, -- Bracers of the Dark Mother
-            { 8, 65056 }, -- Bracers of the Burningeye
-            { 9, 65138 }, -- Bracers of the Bronze Dragonflight
-            { 16, 232965 }, -- Satchel of the Soul Breath Belt
-            { 18, 232966 }, -- Satchel of the Soul Breath Leggings
+            { 1, 86788 }, -- Hood of Blind Eyes
+            { 2, 86828 }, -- Twisting Wind Bracers
+            { 3, 89982 }, -- Shoulderpads of Twisted Fate
+            { 4, 86888 }, -- Sandals of the Blackest Night
+            { 5, 86884 }, -- Belt of Embodied Terror
+            { 6, 86758 }, -- Imperial Ghostbinder's Robes
+            { 7, 86839 }, -- Xaril's Hood of Intoxicating Vapors
+            { 8, 86809 }, -- Hood of Focused Energy
+            { 9, 86787 }, -- Undying Shadow Grips
+            { 10, 86770 }, -- Shadowsummoner Spaulders
+            { 11, 89966 }, -- Claws of Amethyst
+            { 12, 86747 }, -- Jade Dust Leggings
+            { 13, 86908 }, -- Dreadwoven Leggings of Failure
+            { 14, 86765 }, -- Sandals of the Severed Soul
+            { 15, 89984 }, -- Robes of Pinioned Eyes
+            { 16, 89959 }, -- Shoulders of Foaming Fluids
+            { 17, 89953 }, -- Scent-Soaked Sandals
+            { 18, 89973 }, -- Galaxyfire Girdle
+            { 19, 86815 }, -- Attenuating Bracers
+            { 20, 86798 }, -- Orbital Belt
+            { 21, 86895 }, -- Healer's Belt of Final Winter
+            { 22, 86892 }, -- Robes of the Unknown Fear
+            { 23, 86819 }, -- Gloves of Grasping Claws
+            { 24, 86897 }, -- Sorcerer's Belt of Final Winter
+            { 25, 86896 }, -- Invoker's Belt of Final Winter
+            { 26, 86867 }, -- Leggings of Shadow Infestation
+            { 27, 86825 }, -- Boots of the Blowing Wind
+            { 28, 86911 }, -- Robes of Torn Nightmares
+            { 29, 86836 }, -- Sandals of the Unbidden
+            { 30, 86875 }, -- Cuffs of the Corrupted Waters
+            { 101, 86857 }, -- Belt of Malleable Amber
+            { 102, 89965 }, -- Ruby-Linked Girdle
+            { 103, 86844 }, -- Gleaming Moth Cuffs
+            { 104, 86841 }, -- Shining Cicada Bracers
+            { 105, 86850 }, -- Darting Damselfly Cuffs
         }
     },
     {
         name = ALIL["Armor"] .. " - " .. ALIL["Leather"],
         [VENDOR_DIFF] = {
-            { 1, 60231 }, -- Belt of the Fallen Brood
-            { 2, 65057 }, -- Belt of the Nightmare
-            { 4, 65021 }, -- Manacles of the Sleeping Beast
-            { 5, 65050 }, -- Parasitic Bands
-            { 7, 60236 }, -- Nightmare Rider's Boots
-            { 16, 232950 }, -- Satchel of the Gale Rouser Belt
-            { 17, 232973 }, -- Satchel of the Wind Stalker Belt
-            { 19, 232951 }, -- Satchel of the Gale Rouser Leggings
-            { 20, 232974 }, -- Satchel of the Wind Stalker Leggings
+            { 1, 86898 }, -- Weaver's Cord of Eternal Autumn
+            { 2, 86743 }, -- Stoneflesh Leggings
+            { 3, 86786 }, -- Bracers of Dark Thoughts
+            { 4, 86763 }, -- Netherrealm Shoulderpads
+            { 5, 86878 }, -- Asani's Uncleansed Sandals
+            { 6, 86821 }, -- Bracers of Unseen Strikes
+            { 7, 86834 }, -- Bonebreaker Gauntlets
+            { 8, 86811 }, -- Boots of the Still Breath
+            { 9, 86808 }, -- Magnetized Leggings
+            { 10, 86797 }, -- Phasewalker Striders
+            { 11, 86899 }, -- Stalker's Cord of Eternal Autumn
+            { 12, 86768 }, -- Spaulders of the Divided Mind
+            { 13, 86750 }, -- Tomb Raider's Girdle
+            { 14, 86746 }, -- Stonebound Cinch
+            { 15, 86838 }, -- Robes of Eighty Lights
+            { 16, 86804 }, -- Crown of Opportunistic Strikes
+            { 17, 89985 }, -- Wrap of Instant Petrification
+            { 18, 89961 }, -- Shadow Heart Spaulders
+            { 19, 89957 }, -- Hood of Stilled Winds
+            { 20, 86859 }, -- Treads of Deadly Secretions
+            { 21, 86912 }, -- Clutches of Dying Hope
+            { 22, 86757 }, -- Hood of Cursed Dreams
+            { 23, 86795 }, -- Chestguard of Total Annihilation
+            { 24, 89970 }, -- Bracers of Violent Meditation
+            { 25, 89980 }, -- Gauntlets of the Shadow's Caress
+            { 26, 89978 }, -- Legguards of Failing Purification
+            { 27, 86817 }, -- Gauntlets of Undesired Gifts
+            { 28, 89983 }, -- Fear-Blackened Leggings
+            { 29, 86843 }, -- Smooth Beetle Wristbands
+            { 30, 86845 }, -- Pearlescent Butterfly Wristbands
         }
     },
     {
         name = ALIL["Armor"] .. " - " .. ALIL["Mail"],
         [VENDOR_DIFF] = {
-            { 1, 65074 }, -- Spaulders of the Scarred Lady
-            { 3, 60230 }, -- Twilight Scale Leggings
-            { 5, 65028 }, -- Chimaeron Armguards
-            { 6, 65068 }, -- Chaos Beast Bracers
-            { 8, 60235 }, -- Boots of Az'galada
-            { 16, 232952 }, -- Satchel of the Lightning Well Belt
-            { 17, 232967 }, -- Satchel of the Star Chaser Belt
-            { 19, 232953 }, -- Satchel of the Lightning Well Legguards
-            { 20, 232968 }, -- Satchel of the Star Chaser Legguards
+            { 1, 86745 }, -- Sixteen-Fanged Crown
+            { 2, 86900 }, -- Binder's Chain of Unending Summer
+            { 3, 86877 }, -- Lightning Prisoner's Boots
+            { 4, 86866 }, -- Crown of the Doomed Empress
+            { 5, 86818 }, -- Mail of Screaming Secrets
+            { 6, 86882 }, -- Sunwrought Mail Hauberk
+            { 7, 86826 }, -- Bracers of Tempestuous Fury
+            { 8, 86740 }, -- Stonemaw Armguards
+            { 9, 86861 }, -- Monstrous Stompers
+            { 10, 86901 }, -- Ranger's Chain of Unending Summer
+            { 11, 86855 }, -- Wingslasher Pauldrons
+            { 12, 89986 }, -- Shadowgrip Girdle
+            { 13, 86784 }, -- Meng's Treads of Insanity
+            { 14, 86769 }, -- Leggings of Imprisoned Will
+            { 15, 86800 }, -- Shoulders of Empyreal Focus
+            { 16, 86842 }, -- Luminescent Firefly Wristguards
+            { 17, 86781 }, -- Subetai's Pillaging Leggings
+            { 18, 86749 }, -- Wildfire Worldwalkers
+            { 19, 87826 }, -- Grips of Terra Cotta
+            { 20, 89979 }, -- Waterborne Shoulderguards
+            { 21, 89955 }, -- Sword Dancer's Leggings
+            { 22, 87823 }, -- Zor'lok's Fizzing Chestguard
+            { 23, 86833 }, -- Grips of the Leviathan
+            { 24, 89977 }, -- Enameled Grips of Solemnity
+            { 25, 89964 }, -- Stonefang Chestguard
+            { 26, 86847 }, -- Jagged Hornet Bracers
+            { 27, 86761 }, -- Fetters of Death
+            { 28, 89975 }, -- Dreadeye Gaze
+            { 29, 89962 }, -- Hood of Dark Dreams
+            { 30, 90739 }, -- Kaz'tik's Stormseizer Gauntlets
+            { 101, 89960 }, -- Vestments of Steaming Ichor
+            { 102, 86755 }, -- Chain of Shadow
         }
     },
     {
         name = ALIL["Armor"] .. " - " .. ALIL["Plate"],
         [VENDOR_DIFF] = {
-            { 1, 65027 }, -- Pauldrons of the Apocalypse
-            { 3, 60228 }, -- Bracers of the Mat'redor
-            { 4, 60234 }, -- Bindings of Bleak Betrayal
-            { 5, 65085 }, -- Electron Inductor Coils
-            { 6, 65143 }, -- Bracers of Impossible Strength
-            { 7, 65127}, -- Shackles of the End of Days
-            { 9, 65022 }, -- Belt of the Blackhand
-            { 11, 60229 }, -- War-Torn Crushers
-            { 16, 232963 }, -- Satchel of the Sky Strider Belt
-            { 17, 232969 }, -- Satchel of the Tempest Keeper Belt
-            { 18, 232971 }, -- Satchel of the Thunder Wall Belt
-            { 20, 232964 }, -- Satchel of the Sky Strider Greaves
-            { 21, 232970 }, -- Satchel of the Tempest Keeper Leggings
-            { 22, 232972 }, -- Satchel of the Thunder Wall Greaves
+            { 1, 86852 }, -- Impaling Treads
+            { 2, 86904 }, -- Patroller's Girdle of Endless Spring
+            { 3, 86902 }, -- Mender's Girdle of Endless Spring
+            { 4, 86742 }, -- Jasper Clawfeet
+            { 5, 86751 }, -- Bracers of Six Oxen
+            { 6, 86868 }, -- Bracers of Defiled Earth
+            { 7, 86756 }, -- Legplates of Sagacious Shadows
+            { 8, 89974 }, -- Crown of Keening Stars
+            { 9, 89969 }, -- Bonded Soul Bracers
+            { 10, 89954 }, -- Warbelt of Sealed Pods
+            { 11, 86822 }, -- Waistplate of Overwhelming Assault
+            { 12, 86860 }, -- Shoulderpads of Misshapen Life
+            { 13, 86854 }, -- Articulated Legplates
+            { 14, 86903 }, -- Protector's Girdle of Endless Spring
+            { 15, 86803 }, -- Jang-xi's Devastating Legplates
+            { 16, 86876 }, -- Casque of Expelled Corruption
+            { 17, 86870 }, -- Deepwater Greatboots
+            { 18, 86832 }, -- Garalon's Hollow Skull
+            { 19, 86807 }, -- Spaulders of the Emperor's Rage
+            { 20, 86779 }, -- Breastplate of the Kings' Guard
+            { 21, 86752 }, -- Nullification Greathelm
+            { 22, 86744 }, -- Heavenly Jade Greatboots
+            { 23, 86766 }, -- Bindings of Ancient Spirits
+            { 24, 89981 }, -- Grasps of Serpentine Might
+            { 25, 89976 }, -- Chestguard of Eternal Vigilance
+            { 26, 86785 }, -- Girdle of Delirious Visions
+            { 27, 86780 }, -- Shoulderguards of the Unflanked
+            { 28, 86760 }, -- Sollerets of Spirit Splitting
+            { 29, 89958 }, -- Garalon's Graven Carapace
+            { 30, 86837 }, -- Grasps of Panic
+            { 101, 86794 }, -- Starcrusher Gauntlets
+            { 102, 86793 }, -- Star-Stealer Waistguard
+            { 103, 89963 }, -- Legplates of Regal Reinforcement
+            { 104, 89956 }, -- Pauldrons of the Broken Blade
+            { 105, 86887 }, -- Sollerets of Instability
+            { 106, 86823 }, -- Windblade Talons
+            { 107, 86816 }, -- Chestplate of the Forbidden Tower
+            { 108, 86846 }, -- Inlaid Cricket Bracers
+            { 109, 86891 }, -- Cuirass of the Animated Protector
+            { 110, 86849 }, -- Plated Locust Bracers
+            { 111, 86848 }, -- Serrated Wasp Bracers
         }
     },
     {
         name = AL["Cloak"],
         [VENDOR_DIFF] = {
-            { 1, 60232 }, -- Shroud of Endless Grief
-            { 2, 65018 }, -- Shadow of Dread
-            { 16, 232947 }, -- Satchel of the Cloudburst Cloak
-            { 17, 232955 }, -- Satchel of the Mistral Drape
-            { 18, 232957 }, -- Satchel of the Permafrost Cape
-            { 19, 232962 }, -- Satchel of the Planetary Drape
+            { 1, 86753 }, -- Cloak of Peacock Feathers
+            { 2, 89971 }, -- Mindshard Drape
+            { 3, 86812 }, -- Hisek's Chrysanthemum Cape
+            { 4, 86827 }, -- Drape of Gathering Clouds
+            { 5, 86874 }, -- Cloak of Overwhelming Corruption
+            { 6, 86748 }, -- Cape of Three Lanterns
+            { 7, 86883 }, -- Daybreak Drape
+            { 8, 86840 }, -- Stormwake Mistcloak
+            { 9, 86831 }, -- Legbreaker Greatcloak
+            { 10, 86782 }, -- Arrow Breaking Windcloak
+            { 11, 86853 }, -- Cloak of Raining Blades
         }
     },
     {
         name = ALIL["Weapon"],
         [VENDOR_DIFF] = {
-            { 1, 63679 }, -- Reclaimed Ashkandi, Greatsword of the Brotherhood
-            { 2, 59330 }, -- Shalug'doom, the Axe of Unmaking
-            { 3, 59492 }, -- Akirus the Worm Breaker
-            { 5, 59474 }, -- Malevolence
-            { 7, 59333 }, -- Lava Spine
-            { 9, 63533 }, -- Fang of Twilight
-            { 11, 59347 }, -- Mace of Acrid Death
-            { 13, 59443 }, -- Crul'korak, the Lighting's Arc
-            { 16, 59122 }, -- Organic Lifeform Inverter
-            { 17, 59494 }, -- Uhn'agh Fash, the Darkest Betrayal
-            { 19, 59341 }, -- Incineratus
-            { 20, 63536 }, -- Blade of the Witching Hour
-            { 22, 63680 }, -- Twilight's Hammer
-            { 23, 59459 }, -- Andoros, Fist of the Dragon King
-            { 25, 59320 }, -- Themios the Darkbringer
-            { 26, 63532 }, -- Dragonheart Piercer
-            { 28, 59314 }, -- Pip's Solution Agitator
+            { 1, 86909 }, -- Regail's Crackling Dagger
+            { 2, 86910 }, -- Spiritsever
+            { 3, 86862 }, -- Un'sok's Amber Scalpel
+            { 4, 86741 }, -- Dagger of the Seven Stars
+            { 5, 86864 }, -- Claws of Shek'zeer
+            { 6, 86762 }, -- "Gara'kal, Fist of the Spiritbinder"
+            { 7, 86789 }, -- "Elegion, the Fanged Crescent"
+            { 8, 86865 }, -- "Kri'tak, Imperial Scepter of the Swarm"
+            { 9, 86806 }, -- "Tihan, Scepter of the Sleeping Emperor"
+            { 10, 86886 }, -- "Loshan, Terror Incarnate"
+            { 11, 86863 }, -- Scimitar of Seven Stars
+            { 12, 86906 }, -- "Kilrak, Jaws of Terror"
+            { 13, 86777 }, -- "Screaming Tiger, Qiang's Unbreakable Polearm"
+            { 14, 86893 }, -- "Jin'ya, Orb of the Waterspeaker"
+            { 15, 86879 }, -- "Gao-Rei, Staff of the Legendary Protector"
+            { 16, 86889 }, -- "Taoren, the Soul Burner"
+            { 17, 86801 }, -- "Fang Kung, Spark of Titans"
+            { 18, 86796 }, -- Torch of the Celestial Spark
+            { 19, 86905 }, -- "Shin'ka, Execution of Dominion"
+            { 20, 86799 }, -- Starshatter
         }
     },
     {
         name = ALIL["Off Hand"] .. "/" .. ALIL["Shield"],
         [VENDOR_DIFF] = {
-            { 1, 59484 }, -- Book of Binding Will
-            { 2, 59513 }, -- Scepter of Ice
-            { 16, 59444 }, -- Akmin-Kurai, Dominion's Shield
-            { 17, 59327 }, -- Kingdom's Heart
+            { 1, 89426 }, -- Fan of Fiery Winds
+            { 2, 86829 }, -- Tornado-Summoning Censer
         }
     },
     {
         name = ALIL["Neck"],
         [VENDOR_DIFF] = {
-            { 1, 60227 }, -- Caelestrasz's Will
-            { 2, 65025 }, -- Rage of Ages
-            { 16, 232948 }, -- Satchel of the Cloudburst Necklace
-            { 17, 232956 }, -- Satchel of the Mistral Pendant
-            { 18, 232958 }, -- Satchel of the Permafrost Choker
-            { 19, 232960 }, -- Satchel of the Planetary Amulet
+            { 1, 86754 }, -- Amulet of Seven Curses
+            { 2, 86824 }, -- Choker of the Unleashed Storm
+            { 3, 86810 }, -- Worldwaker Cabochon
+            { 4, 86856 }, -- Korven's Amber-Sealed Beetle
+            { 5, 86776 }, -- Amulet of the Hidden Kings
+            { 6, 89952 }, -- Pheromone-Coated Choker
+            { 16, 86739 }, -- Beads of the Mogu'shi
+            { 17, 86759 }, -- Soulgrasp Choker
+            { 18, 86872 }, -- Kaolan's Withering Necklace
+            { 19, 86783 }, -- Zian's Choker of Coalesced Shadow
+            { 20, 86835 }, -- Necklace of Congealed Weaknesses
+            { 21, 86871 }, -- Shackle of Eversparks
         }
     },
     {
         name = ALIL["Finger"],
         [VENDOR_DIFF] = {
-            { 1, 60226 }, -- Dargonax's Signet
-            { 16, 232949 }, -- Satchel of the Cloudburst Ring
-            { 17, 232954 }, -- Satchel of the Mistral Circle
-            { 18, 232959 }, -- Satchel of the Permafrost Signet
-            { 19, 232961 }, -- Satchel of the Planetary Band
+            { 1, 86814 }, -- Fragment of Fear Made Flesh
+            { 2, 89967 }, -- Feng's Seal of Binding
+            { 3, 86869 }, -- Regail's Band of the Endless
+            { 4, 86851 }, -- Painful Thorned Ring
+            { 5, 86873 }, -- Watersoul Signet
+            { 6, 86858 }, -- Seal of the Profane
+            { 7, 89968 }, -- Feng's Ring of Dreams
+            { 8, 86820 }, -- Ring of the Bladed Tempest
+            { 9, 86830 }, -- Ring of the Shattered Shell
+            { 10, 86880 }, -- Dread Shadow Ring
+            { 11, 86767 }, -- Circuit of the Frail Soul
+            { 12, 86813 }, -- Vizier's Ruby Signet
+            { 13, 89972 }, -- Band of Bursting Novas
         }
     },
     {
         name = ALIL["Trinket"],
         [VENDOR_DIFF] = {
-            { 1, 65048 }, -- Symbiotic Worm
-            { 2, 65109 }, -- Vial of Stolen Memories
-            { 4, 65072 }, -- Heart of Rage
-            { 5, 65118 }, -- Crushing Weight
-            { 7, 65026 }, -- Prestor's Talisman of Machination
-            { 8, 65140 }, -- Essence of the Cyclone
-            { 16, 65053 }, -- Bell of Enraging Resonance
-            { 17, 65105 }, -- Theralion's Mirror
-            { 18, 65110 }, -- Heart of Ignacious
-            { 20, 60233 }, -- Shard of Woe
-            { 21, 65124 }, -- Fall of Mortality
-            { 22, 65029 }, -- Vial of Ancient Remedies
+            { 1, 86792 }, -- Light of the Cosmos
+            { 2, 86907 }, -- Essence of Terror
+            { 3, 86890 }, -- Terror in the Mists
+            { 4, 86791 }, -- Bottle of Infinite Stars
+            { 5, 86885 }, -- Spirits of the Sun
+            { 6, 86802 }, -- Lei Shen's Final Orders
+            { 7, 86881 }, -- Stuff of Nightmares
+            { 8, 86894 }, -- Darkmist Vortex
+            { 9, 86790 }, -- Vial of Dragon's Blood
+            { 10, 86805 }, -- Qin-xi's Polarizing Seal
+            { 11, 86772 }, -- Jade Bandit Figurine
+            { 12, 86775 }, -- Jade Warlord Figurine
+            { 13, 86774 }, -- Jade Courtesan Figurine
+            { 14, 86771 }, -- Jade Charioteer Figurine
+            { 15, 86773 }, -- Jade Magistrate Figurine
         }
     },
     {
         name = AL["Token"],
         [VENDOR_DIFF] = {
-            { 1, 64315 }, -- Mantle of the Forlorn Conqueror
-            { 2, 64316 }, -- Mantle of the Forlorn Protector
-            { 3, 64314 }, -- Mantle of the Forlorn Vanquisher
-            { 16, 63683 }, -- Helm of the Forlorn Conqueror
-            { 17, 63684 }, -- Helm of the Forlorn Protector
-            { 18, 63682 }, -- Helm of the Forlorn Vanquisher
+            { 1, 89274 }, -- Helm of the Shadowy Conqueror
+            { 2, 89275 }, -- Helm of the Shadowy Protector
+            { 3, 89273 }, -- Helm of the Shadowy Vanquisher
+            { 5, 89277 }, -- Shoulders of the Shadowy Conqueror
+            { 6, 89278 }, -- Shoulders of the Shadowy Protector
+            { 7, 89276 }, -- Shoulders of the Shadowy Vanquisher
+            { 9, 89265 }, -- Chest of the Shadowy Conqueror
+            { 10, 89266 }, -- Chest of the Shadowy Protector
+            { 11, 89264 }, -- Chest of the Shadowy Vanquisher
+            { 16, 89271 }, -- Gauntlets of the Shadowy Conqueror
+            { 17, 89272 }, -- Gauntlets of the Shadowy Protector
+            { 18, 89270 }, -- Gauntlets of the Shadowy Vanquisher
+            { 20, 89268 }, -- Leggings of the Shadowy Conqueror
+            { 21, 89269 }, -- Leggings of the Shadowy Protector
+            { 22, 89267 }, -- Leggings of the Shadowy Vanquisher
         }
     },
     {
         name = AL["Misc"],
         [VENDOR_DIFF] = {
-            { 1, 234446 }, -- Commendation of Service
+            { 1, 248329 }, --  Satchel of Stone Fragments
+            { 2, 248666 }, --  Satchel of Celestial Chance
+            { 16, 247796 },--  Commendation of Service
         }
     },
     }
