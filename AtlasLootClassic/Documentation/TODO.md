@@ -7,7 +7,8 @@
     - [x] Sets
 - [ ] Collections module needs to be populated
     - [ ] Legendaries clean up, add gems and other stuff
-    - [ ] Celestial dungeon vendor
+    - [x] Celestial dungeon vendor
+        - [ ] clean up!
     - [ ] Brawler's Guild
     - [x] JP and VP vendors
     - [x] Spirit of Harmony vendor
@@ -19,10 +20,12 @@
     - [x] New heirlooms
     - [x] New tabards
 - [ ] Finish Crafting module
-    - [ ] Inscription
+    - [x] Inscription
+        - [ ] MoP glyphs
         - [ ] Redo all old glyphs under wrath/cata
-    - [ ] Sets
-    - [ ] Leatherworking
+    - [x] Leatherworking
+        - [ ] Crafted PvP gear
+        - [ ] Sets
     - [x] Blacksmithing
 - [ ] Finish Dungeons and Raids module
     - [ ] Add Celestial Dungeon stuff to Dungeons and Raids
@@ -32,8 +35,8 @@
     - [x] Tier sets (from Collections module)
 - [ ] Organize Factions module
 - [ ] Add tokens data (Data/Token.lua)
-- [ ] Add vendor price data (Data/VendorPrice.lua)
 - [ ] Add Content phase data (Data/ContentPhase.lua)
+- [x] Add vendor price data (Data/VendorPrice.lua)
 - [x] Add recipe data (Data/Recipe.lua)
 - [x] Add item sets data (Data/ItemSet.lua)
     - [x] T14

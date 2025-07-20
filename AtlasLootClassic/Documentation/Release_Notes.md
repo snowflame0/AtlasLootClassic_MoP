@@ -1,3 +1,10 @@
+# v5.0.0 (July 19, 2025)
+- Initial release of AtlasLootClassic MoP! Lots of things are still underworks.
+- Factions, Collections, Crafting modules are mostly complete
+- Dungeons and Raids module missing SoO and Celestial dungeons
+- PvP module only displays sets right now
+- New update screen
+
 # v5.0.0-beta1 (July 1, 2025)
 - Initial MoP Pre-patch Support
 - Lots of things still broken or not populated
