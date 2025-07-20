@@ -30,8 +30,8 @@ local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 -- local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
 
 local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
-local VENDOR_DIFF_P1 = data:AddDifficulty(AL["Vendor"] .. " - " .. AL["P1"], "vendor", 0)
-local VENDOR_DIFF_P2 = data:AddDifficulty(AL["Vendor"] .. " - " .. AL["P2"], "vendor", 0)
+local VENDOR_DIFF_P1 = data:AddDifficulty(AL["Vendor"] .. " - " .. AL["P1"], "vendorp1", 0)
+local VENDOR_DIFF_P2 = data:AddDifficulty(AL["Vendor"] .. " - " .. AL["P2"], "vendorp2", 0)
 
 local ALLIANCE_DIFF, HORDE_DIFF, LOAD_DIFF
 if UnitFactionGroup("player") == "Horde" then
@@ -49,7 +49,7 @@ local SET_ITTYPE = data:AddItemTableType("Set", "Item")
 local AC_ITTYPE = data:AddItemTableType("Item", "Achievement")
 
 -- local QUEST_EXTRA_ITTYPE = data:AddExtraItemTableType("Quest")
--- local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
+local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
 -- local SET_EXTRA_ITTYPE = data:AddExtraItemTableType("Set")
 
 local VENDOR_CONTENT = data:AddContentType(AL["Vendor"], ATLASLOOT_DUNGEON_COLOR)
@@ -128,7 +128,7 @@ data["CookingVendorCata"] = {
 }
 
 data["ValorPointsCata"] = {
-    name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, AL["Valor Points"])),
+    name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, ALIL["Valor Points"])),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
@@ -235,7 +235,7 @@ data["ValorPointsCata"] = {
 }
 
 data["JusticePointsCata"] = {
-    name = format(AL["'%s' Vendor"], format(SUPERIOR_QUALITY, AL["Justice Points"])),
+    name = format(AL["'%s' Vendor"], format(SUPERIOR_QUALITY, ALIL["Justice Points"])),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
@@ -601,7 +601,7 @@ data["JusticePointsCata"] = {
 }
 
 data["ObsidianFragments"] = {
-    name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, AL["Obsidian Fragment"])),
+    name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, ALIL["Obsidian Fragment"])),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
@@ -800,16 +800,16 @@ data["ObsidianFragments"] = {
         name = AL["Misc"],
         [VENDOR_DIFF] = {
             { 1, 71617 }, -- Crystallized Firestone
-            { 16, "c396", [ATLASLOOT_IT_AMOUNT1] = 10 }, -- Valor Points
+            { 16, "c396", [ATLASLOOT_IT_AMOUNT1] = 10, [PRICE_EXTRA_ITTYPE] = "ObsidianFragment:1" }, -- Valor Points
             { 17, 234446 }, -- Commendation of Service
-            { 18, "c3148", [ATLASLOOT_IT_AMOUNT1] = 1}, -- Fissure Stone Fragment
+            { 18, "c3148", [ATLASLOOT_IT_AMOUNT1] = 1, [PRICE_EXTRA_ITTYPE] = "ObsidianFragment:1"}, -- Fissure Stone Fragment
         }
     },
     }
 }
 
 data["FissureStoneFragments"] = {
-    name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, AL["Fissure Stone Fragment"])),
+    name = format(AL["'%s' Vendor"], format(EPIC_QUALITY, ALIL["Fissure Stone Fragment"])),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,

@@ -9,8 +9,9 @@ local rawget = _G.rawget
 
 -- WoW
 -- TODO: Fix name of new function bindings
-local GetSpellName = C_Spell.GetSpellName
+local GetSpellName, GetItemInfo = C_Spell.GetSpellName, C_Item.GetItemInfo
 local GetItemClassInfo, GetItemSubClassInfo = C_Item.GetItemClassInfo, C_Item.GetItemSubClassInfo
+local GetDifficultyInfo, GetCurrencyInfo = GetDifficultyInfo, C_CurrencyInfo.GetCurrencyInfo
 
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
@@ -54,6 +55,10 @@ local function GetLocRepStanding(id)
 	else
 		return UnitSex("player")==3 and GLOBAL["FACTION_STANDING_LABEL"..(id or 4).."_FEMALE"] or GLOBAL["FACTION_STANDING_LABEL"..(id or 4)]
 	end
+end
+
+local function GetCurrencyName(currencyID)
+	return GetCurrencyInfo(currencyID)['name']
 end
 
 local IngameLocales = {
@@ -316,6 +321,18 @@ local IngameLocales = {
 	["20 Raid"]     	= GetDifficultyInfo(148),
 	["Celestial"]     	= GetDifficultyInfo(237),
 
+	-- ######################################################################
+	-- Currencies
+	-- ######################################################################
+	["Justice Points"]			= GetCurrencyName(395),
+	["Valor Points"]			= GetCurrencyName(396),
+	["Ironpaw Token"]			= GetCurrencyName(402),
+	["Sidereal Essence"] 		= GetCurrencyName(2589),
+	["Defiler's Scourgestone"] 	= GetCurrencyName(2711),
+	["Fissure Stone Fragment"] 	= GetCurrencyName(3148),
+	["Obsidian Fragment"] 		= GetCurrencyName(3281),
+	["August Stone Fragment"] 	= GetCurrencyName(3350),
+	["Spirit of Harmony"] 		= GetItemInfo(76061),
 
 	-- ######################################################################
 	-- Misc

@@ -579,7 +579,7 @@ data["EmblemofFrost"] = {
 }
 
 data["SiderealEssence"] = {
-    name = format(AL["'%s' Vendor"], AL["Sidereal Essence"]),
+    name = format(AL["'%s' Vendor"], ALIL["Sidereal Essence"]),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
@@ -681,7 +681,7 @@ data["SiderealEssence"] = {
 }
 
 data["DefilersScourgestone"] = {
-    name = format(AL["'%s' Vendor"], AL["Defiler's Scourgestone"]),
+    name = format(AL["'%s' Vendor"], ALIL["Defiler's Scourgestone"]),
     ContentType = VENDOR_CONTENT,
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.WRATH_VERSION_NUM,
@@ -963,8 +963,10 @@ data["DefilersScourgestone"] = {
         })
     }, {
         name = AL["Misc"],
-        [NORMAL_DIFF] = {{1, "INV_Box_01", nil, AL["Sidereal Essence: 1 for 1"], nil}, {2, 49908}, -- Primordial Saronite
-                         {3, 47242} -- Trophy of the Crusade
+        [NORMAL_DIFF] = {
+            { 1, "c2589", [PRICE_EXTRA_ITTYPE] = "DefilersScourgestone:1" },
+            { 2, 49908 }, -- Primordial Saronite
+            { 3, 47242 }, -- Trophy of the Crusade
         }
     }}
 }

@@ -34,6 +34,8 @@ local RAID10_DIFF = data:AddDifficulty("10RAID")
 local RAID10H_DIFF = data:AddDifficulty("10RAIDH")
 local RAID25_DIFF = data:AddDifficulty("25RAID")
 local RAID25H_DIFF = data:AddDifficulty("25RAIDH")
+local MAJOR_GLYPHS_DIFF = data:AddDifficulty(ALIL["Major Glyphs"], "majorglyphs", 0)
+local MINOR_GLYPHS_DIFF = data:AddDifficulty(ALIL["Minor Glyphs"], "minorglyphs", 0)
 
 local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
 local T10_1_DIFF = data:AddDifficulty(AL["10H / 25 / 25H"], "T10_1", 0)
@@ -52,6 +54,7 @@ end
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
+local PROF_ITTYPE = data:AddItemTableType("Profession", "Item")
 
 local QUEST_EXTRA_ITTYPE = data:AddExtraItemTableType("Quest")
 local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
@@ -932,6 +935,23 @@ data["TierSets"] = {
         }),
     },
 }
+
+--[[ -- Future potential addition
+data["Glyphs"] = {
+    name = AL["Glyphs"],
+    ContentType = SET_CONTENT,
+    TableType = PROF_ITTYPE,
+    items = {
+        {
+            name = ALIL["DRUID"],
+            CoinTexture = "DRUID",
+            [MAJOR_GLYPHS_DIFF] = {
+                { 1, 54810 },
+            },
+        },
+    }
+}
+--]]
 
 data["DungeonSets"] = {
     name = AL["Dungeon Sets"],

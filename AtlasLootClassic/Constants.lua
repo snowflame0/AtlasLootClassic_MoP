@@ -75,6 +75,18 @@ ALPrivate.COIN_TEXTURE = {
     WRATH	 	= {	texture = AtlasLoot.GAME_VERSION_TEXTURES[AtlasLoot.WRATH_VERSION_NUM], width = 2.0 },
     CATA	 	= {	texture = AtlasLoot.GAME_VERSION_TEXTURES[AtlasLoot.CATA_VERSION_NUM], width = 2.0 },
     MOP	 		= {	texture = AtlasLoot.GAME_VERSION_TEXTURES[AtlasLoot.MOP_VERSION_NUM], width = 2.0 },
+
+    WARRIOR 	= {	texture = "Interface\\Icons\\classicon_warrior" },
+    PALADIN 	= {	texture = "Interface\\Icons\\classicon_paladin" },
+    HUNTER 		= {	texture = "Interface\\Icons\\classicon_hunter" },
+    ROGUE 		= {	texture = "Interface\\Icons\\classicon_rogue" },
+    PRIEST 		= {	texture = "Interface\\Icons\\classicon_priest" },
+    SHAMAN 		= {	texture = "Interface\\Icons\\classicon_shaman" },
+    MAGE 		= {	texture = "Interface\\Icons\\classicon_mage" },
+    WARLOCK 	= {	texture = "Interface\\Icons\\classicon_warlock" },
+    DRUID 		= {	texture = "Interface\\Icons\\classicon_druid" },
+    DEATHKNIGHT	= {	texture = "Interface\\Icons\\classicon_deathknight" },
+    MONK        = { texture = "Interface\\Icons\\classicon_monk" },
 }
 
 -- Simple backdrop for SetBackdrop

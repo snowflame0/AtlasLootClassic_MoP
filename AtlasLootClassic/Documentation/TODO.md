@@ -7,11 +7,10 @@
     - [x] Sets
 - [ ] Collections module needs to be populated
     - [ ] Legendaries clean up, add gems and other stuff
-    - [ ] JP and VP vendors
     - [ ] Celestial dungeon vendor
-    - [ ] Spirit of Harmony vendor
-    - [ ] Glyphs
     - [ ] Brawler's Guild
+    - [x] JP and VP vendors
+    - [x] Spirit of Harmony vendor
     - [x] New tier sets
     - [x] World Drops
     - [x] World event changes
@@ -19,7 +18,6 @@
     - [x] New pets
     - [x] New heirlooms
     - [x] New tabards
-    - ???
 - [ ] Finish Crafting module
     - [ ] Inscription
         - [ ] Redo all old glyphs under wrath/cata
@@ -32,7 +30,7 @@
     - [ ] Add valor/justice/fragments currency drops
     - [ ] Add source data to Data module (last step, with script)
     - [x] Tier sets (from Collections module)
-- [ ] Clean up rest of Factions module
+- [ ] Organize Factions module
 - [ ] Add tokens data (Data/Token.lua)
 - [ ] Add vendor price data (Data/VendorPrice.lua)
 - [ ] Add Content phase data (Data/ContentPhase.lua)
@@ -47,11 +45,14 @@
 # Bugs and Other Problems
 - [ ] Finish update notifier
 - [ ] Remove Model button and replace with link to Dungeon Journal
-- [ ] Update requirements (Data/Requirements.lua) needs rework
-- [ ] Investigate recipes that don't exist to players, but in game files?
-- [ ] Need to fix profession data having wrong skill levels for orange/yellow/green/gray
 - [x] Linking items to chat seems broken, NVM BLIZZARD PROBLEM
 - [x] Add any missing locale strings
+
+# Maybe Someday
+- [ ] Update requirements (Data/Requirements.lua) needs rework
+- [ ] Investigate recipes that don't exist to players, but in game files?
+- [ ] Fix profession data having wrong skill levels for yellow/green/gray
+- [ ] All glyphs in collections
 
 # External Stuff
 - [ ] Update CurseForge icon

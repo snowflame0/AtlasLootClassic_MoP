@@ -25,6 +25,7 @@ local TOKEN_TYPE_TEXT = {
     [9]  = format(TOKEN_FORMAT_STRING, AL["Show loot."]),
     [10] = format(TOKEN_FORMAT_STRING, AL["Show Achievements."]),
     [11] = format(TOKEN_FORMAT_STRING, AL["Contains."]),
+    [12] = format(TOKEN_FORMAT_STRING, AL["Created with..."]),
     -- classes get set with the init
     -- "DRUID", "HUNTER", "MAGE", "PALADIN", "PRIEST", "ROGUE", "SHAMAN", "WARLOCK", "WARRIOR", "DEATHKNIGHT"
 }
@@ -1373,6 +1374,13 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.CATA_VERSION_NUM) then
             78872, 78873, 78871, 0,
             type = 9
         },
+    }
+end
+
+if AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM) then
+    TOKEN_DATA.MOP = {
+        [89610] = { {72234, "5-20"}, {72237, "5-20"}, {72235, "5-20"}, {79010, "5-20"}, {79011, "5-20"}, type = 2 }, -- Pandaria Herbs
+        [76061] = { {89112, 10}, type = 12 }, -- Spirit of Harmony
     }
 end
 
