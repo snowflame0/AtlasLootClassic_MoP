@@ -1,3 +1,9 @@
+# 5.0.1 (July 21, 2025)
+- Celestial loot organized by raid, since it's being gated
+- Challenge mode armor sets added
+- Darkmoon decks/cards and corresponding trinkets organized
+- More small fixes + locale fixes
+
 # v5.0.0 (July 19, 2025)
 - Initial release of AtlasLootClassic MoP! Lots of things are still underworks.
 - Factions, Collections, Crafting modules are mostly complete

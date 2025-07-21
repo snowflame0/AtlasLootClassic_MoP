@@ -10,16 +10,18 @@ local LibSharedMedia = LibStub("LibSharedMedia-3.0")
 
 ---
 --- NOTE:
---- Update Text for version 5.0.0
+--- Update Text for version 5.0.1
 ---
-local update_version = 5.00
+local update_version = 5.01
 local update_text = {
-    "Welcome to the Initial release of AtlasLootClassic |cFF33FFBDMoP|r! Lots of things are still underworks. Thanks for your patience and support :)",
-    "|cFF33FFBDFactions|r, |cFF33FFBDCollections|r, and |cFF33FFBDCrafting|r modules are mostly complete",
-    "|cFF33FFBDDungeons and Raids|r module missing SoO and Celestial dungeons",
-    "|cFF33FFBDPvP|r module only displays sets right now",
-    "Missing information will be added when I have time and I'm not busy leveling",
-    "If you encounter any serious bugs, please open an issue on the GitHub (|cFF3366CCgithub.com/snowflame0/AtlasLootClassic_MoP|r) page for best chances of me seeing it",
+    "Welcome to the first week of AtlasLootClassic |cFF33FFBDMoP|r! Thanks for your patience and support!\nNew Changes:",
+    "|cFF33FFBDCelestial|r loot now organized by raid, to make immediate upgrades easier to find (since it's being time gated)",
+    "|cFFA335EEChallenge Mode|r armor sets added to |cFF33FFBDCollections|r module",
+    "|cFFA335EEDarkmoon|r decks/cards and corresponding trinkets organized",
+    "More small fixes + locale fixes",
+    "|cFF33FFBDCollections|r, and |cFF33FFBDCrafting|r module improvements",
+    "|cFFFF8000HELP|r: If you think some things could be better organized... I agree! Let me know or better yet, contribute on GitHub at the link below",
+    "Again, if you have an issue, let me know on GitHub (|cFF3366CCgithub.com/snowflame0/AtlasLootClassic_MoP/issues|r)",
     "Finally, if you appreciate all of the hard work, feel free to donate at the link below (click, CTRL+A, and CTRL+C to copy)"
 }
 local donation_link = "buymeacoffee.com/snowflame0"
