@@ -175,7 +175,7 @@ local PLAYER_GUID_REGISTER = {
 	["Player-4453-045E4E4D"] = format("|T135349:0|t "..COLOR, "AtlasLoot Friend"), -- Max
 	["Player-4440-0376FFAC"] = format("|T135349:0|t "..COLOR, "AtlasLoot Friend"), -- Balendil / Nekarra
 	["Player-4408-05CAD56C"] = format("|T523897:0|t "..COLOR, "AtlasLoot Maintainer"), -- Snowflame
-	--["Player-4408-05CAD56C"] = format("|T523897:0|t "..COLOR, "AtlasLoot Maintainer"), -- Snowflame Druid
+	["Player-4408-05CAD577"] = format("|T523897:0|t "..COLOR, "AtlasLoot Maintainer"), -- Snowflame Druid
 }
 
 local function AddText(self)
