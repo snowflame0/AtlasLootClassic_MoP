@@ -7,9 +7,10 @@
     - [x] Sets
 - [ ] Collections module needs to be populated
     - [ ] Legendaries clean up, add gems and other stuff
-    - [x] Celestial dungeon vendor
-        - [ ] clean up!
+    - [ ] Challenge mode sets
     - [ ] Brawler's Guild
+    - [x] Celestial dungeon vendor
+        - [x] clean up!
     - [x] JP and VP vendors
     - [x] Spirit of Harmony vendor
     - [x] New tier sets
@@ -52,6 +53,7 @@
 - [x] Add any missing locale strings
 
 # Maybe Someday
+- [ ] Forward port transmog, world map, encounter, pet, and mount journal integration
 - [ ] Update requirements (Data/Requirements.lua) needs rework
 - [ ] Investigate recipes that don't exist to players, but in game files?
 - [ ] Fix profession data having wrong skill levels for yellow/green/gray

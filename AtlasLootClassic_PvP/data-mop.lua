@@ -68,10 +68,12 @@ data["PvPMountsMoP"] = {
 		{ -- PvPMountsCata
 			name = ALIL["Mounts"],
 			[NORMAL_DIFF] = {
-				{ 1, 95041, "ac8216" }, -- Malevolent Gladiator's Cloud Serpent
-				{ 2, 104325, "ac8678" }, -- Tyrannical Gladiator's Cloud Serpent
-				{ 3, 104326, "ac8705" }, -- Grievous Gladiator's Cloud Serpent
-				{ 4, 104327, "ac8707" }, -- Prideful Gladiator's Cloud Serpent
+				{ 1,[ATLASLOOT_IT_ALLIANCE] = 102514, [PRICE_EXTRA_ITTYPE] = "103533:1", [ATLASLOOT_IT_HORDE] = 102533, [PRICE_EXTRA_ITTYPE] = "103533:1" },
+				{ 2, [ATLASLOOT_IT_ALLIANCE] = 70909, [PRICE_EXTRA_ITTYPE] = "103533:1", [ATLASLOOT_IT_HORDE] = 70910, [PRICE_EXTRA_ITTYPE] = "103533:1" },
+				{ 16, 95041, "ac8216" }, -- Malevolent Gladiator's Cloud Serpent
+				{ 17, 104325, "ac8678" }, -- Tyrannical Gladiator's Cloud Serpent
+				{ 18, 104326, "ac8705" }, -- Grievous Gladiator's Cloud Serpent
+				{ 19, 104327, "ac8707" }, -- Prideful Gladiator's Cloud Serpent
 			},
 		},
 	},

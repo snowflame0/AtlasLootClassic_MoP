@@ -566,20 +566,6 @@ data["InscriptionCata"] = {
             }
         },
         {
-            name = ALIL["Armor"].." - "..ALIL["Relic"],
-            [NORMAL_DIFF] = {
-                { 1, 86647 }, -- Etched Horn
-                { 2, 86648 }, -- Manual of the Planes
-                { 3, 86649 }, -- Runed Dragonscale
-                { 5, 99547 }, -- Vicious Charm of Triumph
-                { 6, 99548 }, -- Vicious Eyeball of Dominance
-                { 7, 99549 }, -- Vicious Jawbone of Conquest
-                { 16, 86650 }, -- Notched Jawbone
-                { 17, 86653 }, -- Silver Inlaid Leaf
-                { 18, 86652 }, -- Tattooed Eyeball
-            }
-        },
-        {
             name = AL["Glyphs"].." - "..ALIL["DEATHKNIGHT"],
             [PRIME_GLYPHS_DIFF] = {
                 { 1, 57214 }, -- Glyph of Death and Decay
