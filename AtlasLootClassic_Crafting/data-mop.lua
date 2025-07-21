@@ -932,6 +932,10 @@ data["InscriptionMoP"] = {
             [NORMAL_DIFF] = {
                 { 1, 111830 }, -- Darkmoon Card of Mists
                 { 2, 130407 }, -- Mystery of the Mists
+                { 16, "i79325" }, -- Crane Deck
+                { 17, "i79324" }, -- Ox Deck
+                { 18, "i79326" }, -- Serpent Deck
+                { 19, "i79323" }, -- Tiger Deck
             }
         },
         {

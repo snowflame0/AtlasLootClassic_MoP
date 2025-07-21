@@ -1637,10 +1637,10 @@ data["Darkmoon"] = {
                 { 17, 62044 },	-- Tsunami Deck
                 { 18, 62045 },	-- Hurricane Deck
                 { 19, 62046 },	-- Earthquake Deck
-                { 21, 79323 },	-- Tiger Deck
+                { 21, 79325 },	-- Crane Deck
                 { 22, 79324 },	-- Ox Deck
-                { 23, 79325 },	-- Crane Deck
-                { 24, 79326 },	-- Serpent Deck
+                { 23, 79326 },	-- Serpent Deck
+                { 24, 79323 },	-- Tiger Deck
             },
         },
         {
