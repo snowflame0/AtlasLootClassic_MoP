@@ -687,6 +687,158 @@ data["SpiritOfHarmonyVendor"] = {
     }
 }
 
+data["ChallengeModeMoP"] = {
+    name = AL["Challenge Mode Armor Sets"],
+    ContentType = SET_CONTENT,
+    TableType = NORMAL_DIFF,
+    gameVersion = AtlasLoot.MOP_VERSION_NUM,
+    items = {
+        {
+            name = ALIL["DEATHKNIGHT"],
+            [NORMAL_DIFF] = {
+                { 1, 90053 }, -- Crown of the Lich Lord
+                { 2, 90055 }, -- Shoulderguards of the Lich Lord
+                { 3, 90051 }, -- Chestguard of the Lich Lord
+                { 4, 90056 }, -- Bracers of the Lich Lord
+                { 5, 90052 }, -- Grasps of the Lich Lord
+                { 6, 90049 }, -- Girdle of the Lich Lord
+                { 7, 90054 }, -- Legplates of the Lich Lord
+                { 8, 90050 }, -- Treads of the Lich Lord
+            },
+        },
+        {
+            name = ALIL["DRUID"],
+            [NORMAL_DIFF] = {
+                { 1, 90062 }, -- Hood of the Cycle
+                { 2, 90065 }, -- Branches of the Cycle
+                { 3, 90064 }, -- Robes of the Cycle
+                { 4, 90066 }, -- Bracers of the Cycle
+                { 5, 90061 }, -- Gloves of the Cycle
+                { 6, 90059 }, -- Waistguard of the Cycle
+                { 7, 90063 }, -- Leggings of the Cycle
+                { 8, 90060 }, -- Sandals of the Cycle
+            },
+        },
+                {
+            name = ALIL["HUNTER"],
+            [NORMAL_DIFF] = {
+                { 1, 90072 }, -- Helm of the Howling Beast
+                { 2, 90074 }, -- Shoulderguards of the Howling Beast
+                { 3, 90070 }, -- Chestguard of the Howling Beast
+                { 4, 90075 }, -- Wristwraps of the Howling Beast
+                { 5, 90071 }, -- Grips of the Howling Beast
+                { 6, 90068 }, -- Cinch of the Howling Beast
+                { 7, 90073 }, -- Legguards of the Howling Beast
+                { 8, 90069 }, -- Boots of the Howling Beast
+            },
+        },
+                {
+            name = ALIL["MAGE"],
+            [NORMAL_DIFF] = {
+                { 1, 90082 }, -- Hood of the Elemental Triad
+                { 2, 90085 }, -- Spaulders of the Elemental Triad
+                { 3, 90084 }, -- Robes of the Elemental Triad
+                { 4, 90086 }, -- Bracers of the Elemental Triad
+                { 5, 90081 }, -- Gloves of the Elemental Triad
+                { 6, 90079 }, -- Girdle of the Elemental Triad
+                { 7, 90083 }, -- Leggings of the Elemental Triad
+                { 8, 90080 }, -- Boots of the Elemental Triad
+            },
+        },
+                {
+            name = ALIL["MONK"],
+            [NORMAL_DIFF] = {
+                { 1, 90092 }, -- Crown of the Regal Lord
+                { 2, 90094 }, -- Shoulderguards of the Regal Lord
+                { 3, 90090 }, -- Chestwrap of the Regal Lord
+                { 4, 90095 }, -- Bracers of the Regal Lord
+                { 5, 90091 }, -- Handwraps of the Regal Lord
+                { 6, 90088 }, -- Greatbelt of the Regal Lord
+                { 7, 90093 }, -- Legwraps of the Regal Lord
+                { 8, 90089 }, -- Treads of the Regal Lord
+            },
+        },
+                {
+            name = ALIL["PALADIN"],
+            [NORMAL_DIFF] = {
+                { 1, 90100 }, -- Greathelm of the Holy Warrior
+                { 2, 90102 }, -- Shoulderplate of the Holy Warrior
+                { 3, 90098 }, -- Chestplate of the Holy Warrior
+                { 4, 90103 }, -- Wristguards of the Holy Warrior
+                { 5, 90099 }, -- Gauntlets of the Holy Warrior
+                { 6, 90096 }, -- Girdle of the Holy Warrior
+                { 7, 90101 }, -- Legplates of the Holy Warrior
+                { 8, 90097 }, -- Greatboots of the Holy Warrior
+            },
+        },
+                {
+            name = ALIL["PRIEST"],
+            [NORMAL_DIFF] = {
+                { 1, 90116 }, -- Cowl of the Light
+                { 2, 90113 }, -- Pauldrons of the Light
+                { 3, 90114 }, -- Robes of the Light
+                { 4, 90112 }, -- Bracers of the Light
+                { 5, 90115 }, -- Hands of the Light
+                { 6, 90110 }, -- Cord of the Light
+                { 7, 90117 }, -- Leggings of the Light
+                { 8, 90111 }, -- Steps of the Light
+            },
+        },
+                {
+            name = ALIL["ROGUE"],
+            [NORMAL_DIFF] = {
+                { 1, 90120 }, -- Hood of the Silent Assassin
+                { 2, 90125 }, -- Spaulders of the Silent Assassin
+                { 3, 90122 }, -- Shadowwrap of the Silent Assassin
+                { 4, 90126 }, -- Bracers of the Silent Assassin
+                { 5, 90123 }, -- Gloves of the Silent Assassin
+                { 6, 90119 }, -- Girdle of the Silent Assassin
+                { 7, 90124 }, -- Leggings of the Silent Assassin
+                { 8, 90121 }, -- Tabi of the Silent Assassin
+            },
+        },
+        {
+            name = ALIL["SHAMAN"],
+            [NORMAL_DIFF] = {
+                { 1, 90132 }, -- Windfury Mask
+                { 2, 90134 }, -- Windfury Spirit Guides
+                { 3, 90130 }, -- Windfury Harness
+                { 4, 90127 }, -- Windfury Bracers
+                { 5, 90131 }, -- Windfury Crushers
+                { 6, 90128 }, -- Windfury Belt
+                { 7, 90133 }, -- Windfury Legguards
+                { 8, 90129 }, -- Windfury Sandals
+            },
+        },
+        {
+            name = ALIL["WARLOCK"],
+            [NORMAL_DIFF] = {
+                { 1, 90142 }, -- Horns of the Betrayer
+                { 2, 90138 }, -- Amice of the Betrayer
+                { 3, 90140 }, -- Robes of the Betrayer
+                { 4, 90139 }, -- Bracers of the Betrayer
+                { 5, 90141 }, -- Handguards of the Betrayer
+                { 6, 90136 }, -- Belt of the Betrayer
+                { 7, 90143 }, -- Leggings of the Betrayer
+                { 8, 90137 }, -- Boots of the Betrayer
+            },
+        },
+        {
+            name = ALIL["WARRIOR"],
+            [NORMAL_DIFF] = {
+                { 1, 90151 }, -- Crown of the Golden King
+                { 2, 90153 }, -- Mantle of the Golden King
+                { 3, 90149 }, -- Chestplate of the Golden King
+                { 4, 90154 }, -- Bracers of the Golden King
+                { 5, 90150 }, -- Reach of the Golden King
+                { 6, 90147 }, -- Girdle of the Golden King
+                { 7, 90152 }, -- Greaves of the Golden King
+                { 8, 90148 }, -- Greatboots of the Golden King
+            },
+        },
+    },
+}
+
 -- shared!
 data["WorldEpicsMoP"] = {
     name = AL["World Epics"],

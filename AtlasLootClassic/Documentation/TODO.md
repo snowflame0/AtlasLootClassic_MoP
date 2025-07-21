@@ -6,8 +6,8 @@
     - [x] Mounts
     - [x] Sets
 - [ ] Collections module needs to be populated
-    - [ ] Challenge mode sets
     - [ ] Brawler's Guild
+    - [x] Challenge mode sets
     - [x] Legendaries clean up, add gems and other stuff
     - [x] Celestial dungeon vendor
         - [x] clean up!
