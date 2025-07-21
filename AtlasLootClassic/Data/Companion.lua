@@ -606,7 +606,7 @@ function Companion.IsCollectedItem(itemID)
         local spellID = COMPANION_DATA[itemID][1]
         local creatureID = COMPANION_DATA[itemID][2]
         local typeID = COMPANION_DATA[itemID][3]
-        
+
         if typeID == 1 then
             return COLLECTED_PETS_CREATUREIDS[creatureID]
         else
