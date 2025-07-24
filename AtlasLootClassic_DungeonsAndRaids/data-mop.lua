@@ -444,6 +444,7 @@ local PATTERNS_ILVL_496 = {		-- Patterns with iLvl 496 (Mogu, HoF, ToEs)
 
 data["StormstoutBrewery"] = {
     EncounterJournalID = 302,
+    InstanceID = 961,
     MapID = 5963,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 90},
@@ -500,8 +501,8 @@ data["StormstoutBrewery"] = {
                 { 7, 81139 },	-- Lime-Rimmed Signet
                 { 8, 81138 },	-- Carbonic Carbuncle
                 { 9, 81062 },	-- Gao's Keg Tapper
-                { 10, 811400 },	-- Wort Sitrring Rod
-                { 11, 810660 },	-- Yan-Zhu's Pressure Valve
+                { 10, 81140 },	-- Wort Sitrring Rod
+                { 11, 81066 },	-- Yan-Zhu's Pressure Valve
                 { 16, "ac6456" },
             },
         },
@@ -512,6 +513,7 @@ data["StormstoutBrewery"] = {
 
 data["TempleOfTheJadeSerpent"] = {
     EncounterJournalID = 313,
+    InstanceID = 960,
     MapID = 5956,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 90},
@@ -598,6 +600,7 @@ data["TempleOfTheJadeSerpent"] = {
 
 data["ShadoPanMonastery"] = {
     EncounterJournalID = 312,
+    InstanceID = 959,
     MapID = 5918,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {87, 87, 90},
@@ -684,6 +687,7 @@ data["ShadoPanMonastery"] = {
 
 data["MoguShanPalace"] = {
     EncounterJournalID = 321,
+    InstanceID = 994,
     MapID = 6182,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {87, 87, 90},
@@ -761,6 +765,7 @@ data["MoguShanPalace"] = {
 
 data["GateoftheSettingSun"] = {
     EncounterJournalID = 303,
+    InstanceID = 962,
     MapID = 5976,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {88, 88, 90},
@@ -844,6 +849,7 @@ data["GateoftheSettingSun"] = {
 
 data["SiegeofNiuzaoTemple"] = {
     EncounterJournalID = 324,
+    InstanceID = 1011,
     MapID = 6214,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {88, 88, 90},
@@ -938,6 +944,7 @@ data["SiegeofNiuzaoTemple"] = {
 
 data["ScarletHallsMoP"] = {
     EncounterJournalID = 311,
+    InstanceID = 1001,
     MapID = 6052,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = HEROIC_DIFF,
@@ -995,6 +1002,7 @@ data["ScarletHallsMoP"] = {
 
 data["ScarletMonasteryMoP"] = {
     EncounterJournalID = 316,
+    InstanceID = 1004,
     MapID = 6109,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = HEROIC_DIFF,
@@ -1055,6 +1063,7 @@ data["ScarletMonasteryMoP"] = {
 
 data["ScholomanceMoP"] = {
     EncounterJournalID = 246,
+    InstanceID = 1007,
     MapID = 6066,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = HEROIC_DIFF,
@@ -1129,8 +1138,8 @@ data["ScholomanceMoP"] = {
 }
 
 data["WorldBossesMoP"] = {
-    EncounterJournalID = 322,
-    Name = AL["World Bosses"],
+    --EncounterJournalID = 322,
+    name = AL["World Bosses"],
     ContentType = RAID_CONTENT,
     items = {
         {	--ShaofAnger
@@ -1892,6 +1901,7 @@ data["WorldBossesMoP"] = {
 
 data["MoguShanVaults"] = {
     EncounterJournalID = 317,
+    InstanceID = 1008,
     MapID = 6125,
     ContentType = RAID_CONTENT,
     items = {
@@ -2143,6 +2153,7 @@ data["MoguShanVaults"] = {
 
 data["HeartofFear"] = {
     EncounterJournalID = 330,
+    InstanceID = 1009,
     MapID = 6297,
     ContentType = RAID_CONTENT,
     items = {
@@ -2374,6 +2385,7 @@ data["HeartofFear"] = {
 
 data["TerraceofEndlessSpring"] = {
     EncounterJournalID = 320,
+    InstanceID = 996,
     MapID = 6067,
     ContentType = RAID_CONTENT,
     items = {
@@ -2565,6 +2577,7 @@ data["TerraceofEndlessSpring"] = {
 
 data["ThroneofThunder"] = {
     EncounterJournalID = 362,
+    InstanceID = 1098,
     MapID = 6738,
     ContentType = RAID_CONTENT,
     ContentPhaseMoP = 3,
@@ -3281,694 +3294,1474 @@ data["ThroneofThunder"] = {
     }
 }
 
---[[
 data["SiegeofOrgrimmar"] = {
     EncounterJournalID = 369,
+    InstanceID = 1136,
+    ContentPhaseMoP = 5,
     MapID = 6622,
     ContentType = RAID_CONTENT,
     items = {
         {	--SoOImmerseus
             EncounterJournalID = 852,
+            ContentPhaseMoP = 5,
             npcId = 71543,
-            [FLEX] = {
-                { 1, 112425 },	-- Cloak of Misguided Power
-                { 2, 112424 },	-- Hood of Swirling Senses
-                { 3, 112423 },	-- Ichor-Dripping Shoulderpads
-                { 4, 112422 },	-- Bolt-Burster Grips
-                { 5, 112382 },	-- Hood of Blackened Tears
-                { 6, 112429 },	-- Bracers of Purified Spirit
-                { 7, 112428 },	-- Salt Water Sandals
-                { 8, 112445 },	-- Soul-Soaked Gloves
-                { 9, 112383 },	-- Puddle Punishers
-                { 10, 112421 },	-- Pauldrons of Violent Eruption
-                { 11, 112417 },	-- Chestplate of Congealed Corrosion
-                { 12, 112420 },	-- Bracers of Sordid Sleep
-                { 13, 112416 },	-- Bubble-Burst Bracers
-                { 14, 112418 },	-- Corruption-Rotted Gauntlets
-                { 15, 112447 },	-- Greatbelt of Living Waters
-                { 16, 112419 },	-- Treads of Unchained Hate
-                { 17, 112448 },	-- Waterwalker Greatboots
-                { 19, 110761 },	-- Immerseus' Crystalline Eye
-                { 20, 112427 },	-- Seal of Eternal Sorrow
-                { 21, 112426 },	-- Purified Bindings of Immerseus
-                { 23, 110785 },	-- Encapsulated Essence of Immerseus
-                { 24, 110784 },	-- Trident of Corrupted Waters
+            [CELESTIAL_DIFF] = {
+                { 1, 104923 }, -- Cloak of Misguided Power
+                { 2, 104922 }, -- Hood of Swirling Senses
+                { 3, 104921 }, -- Ichor-Dripping Shoulderpads
+                { 4, 104920 }, -- Bolt-Burster Grips
+                { 5, 104911 }, -- Hood of Blackened Tears
+                { 6, 104927 }, -- Bracers of Purified Spirit
+                { 7, 104926 }, -- Salt Water Sandals
+                { 8, 104928 }, -- Soul-Soaked Gloves
+                { 9, 104912 }, -- Puddle Punishers
+                { 10, 104918 }, -- Pauldrons of Violent Eruption
+                { 11, 104914 }, -- Chestplate of Congealed Corrosion
+                { 12, 104917 }, -- Bracers of Sordid Sleep
+                { 13, 104913 }, -- Bubble-Burst Bracers
+                { 14, 104915 }, -- Corruption-Rotted Gauntlets
+                { 15, 104929 }, -- Greatbelt of Living Waters
+                { 16, 104916 }, -- Treads of Unchained Hate
+                { 17, 104930 }, -- Waterwalker Greatboots
+                { 19, 104909 }, -- Immerseus' Crystalline Eye
+                { 20, 104925 }, -- Seal of Eternal Sorrow
+                { 21, 104924 }, -- Purified Bindings of Immerseus
+                { 23, 104919 }, -- Encapsulated Essence of Immerseus
+                { 24, 104910 }, -- Trident of Corrupted Waters
+            },
+            [FLEX_DIFF] = {
+                { 1, 104674 }, -- Cloak of Misguided Power
+                { 2, 104673 }, -- Hood of Swirling Senses
+                { 3, 104672 }, -- Ichor-Dripping Shoulderpads
+                { 4, 104671 }, -- Bolt-Burster Grips
+                { 5, 104662 }, -- Hood of Blackened Tears
+                { 6, 104678 }, -- Bracers of Purified Spirit
+                { 7, 104677 }, -- Salt Water Sandals
+                { 8, 104679 }, -- Soul-Soaked Gloves
+                { 9, 104663 }, -- Puddle Punishers
+                { 10, 104669 }, -- Pauldrons of Violent Eruption
+                { 11, 104665 }, -- Chestplate of Congealed Corrosion
+                { 12, 104668 }, -- Bracers of Sordid Sleep
+                { 13, 104664 }, -- Bubble-Burst Bracers
+                { 14, 104666 }, -- Corruption-Rotted Gauntlets
+                { 15, 104680 }, -- Greatbelt of Living Waters
+                { 16, 104667 }, -- Treads of Unchained Hate
+                { 17, 104681 }, -- Waterwalker Greatboots
+                { 19, 104660 }, -- Immerseus' Crystalline Eye
+                { 20, 104676 }, -- Seal of Eternal Sorrow
+                { 21, 104675 }, -- Purified Bindings of Immerseus
+                { 23, 104670 }, -- Encapsulated Essence of Immerseus
+                { 24, 104661 }, -- Trident of Corrupted Waters
+            },
+            [NORMAL_DIFF] = {
+                { 1, 103769 }, -- Cloak of Misguided Power
+                { 2, 103751 }, -- Hood of Swirling Senses
+                { 3, 103755 }, -- Ichor-Dripping Shoulderpads
+                { 4, 103752 }, -- Bolt-Burster Grips
+                { 5, 103728 }, -- Hood of Blackened Tears
+                { 6, 103757 }, -- Bracers of Purified Spirit
+                { 7, 103760 }, -- Salt Water Sandals
+                { 8, 103763 }, -- Soul-Soaked Gloves
+                { 9, 103730 }, -- Puddle Punishers
+                { 10, 103747 }, -- Pauldrons of Violent Eruption
+                { 11, 103736 }, -- Chestplate of Congealed Corrosion
+                { 12, 103741 }, -- Bracers of Sordid Sleep
+                { 13, 103738 }, -- Bubble-Burst Bracers
+                { 14, 103733 }, -- Corruption-Rotted Gauntlets
+                { 15, 103966 }, -- Greatbelt of Living Waters
+                { 16, 103744 }, -- Treads of Unchained Hate
+                { 17, 103766 }, -- Waterwalker Greatboots
+                { 19, 103749 }, -- Immerseus' Crystalline Eye
+                { 20, 103771 }, -- Seal of Eternal Sorrow
+                { 21, 102293 }, -- Purified Bindings of Immerseus
+                { 23, 103727 }, -- Encapsulated Essence of Immerseus
+                { 24, 103726 }, -- Trident of Corrupted Waters
                 { 26, "ac8536" },
             },
-            [HEROIC_SOO_DIFF] = NORMAL_DIFF,
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
+            [HEROIC_DIFF] = {
+                { 1, 104425 }, -- Cloak of Misguided Power
+                { 2, 104424 }, -- Hood of Swirling Senses
+                { 3, 104423 }, -- Ichor-Dripping Shoulderpads
+                { 4, 104422 }, -- Bolt-Burster Grips
+                { 5, 104413 }, -- Hood of Blackened Tears
+                { 6, 104429 }, -- Bracers of Purified Spirit
+                { 7, 104428 }, -- Salt Water Sandals
+                { 8, 104430 }, -- Soul-Soaked Gloves
+                { 9, 104414 }, -- Puddle Punishers
+                { 10, 104420 }, -- Pauldrons of Violent Eruption
+                { 11, 104416 }, -- Chestplate of Congealed Corrosion
+                { 12, 104419 }, -- Bracers of Sordid Sleep
+                { 13, 104415 }, -- Bubble-Burst Bracers
+                { 14, 104417 }, -- Corruption-Rotted Gauntlets
+                { 15, 104431 }, -- Greatbelt of Living Waters
+                { 16, 104418 }, -- Treads of Unchained Hate
+                { 17, 104432 }, -- Waterwalker Greatboots
+                { 19, 104411 }, -- Immerseus' Crystalline Eye
+                { 20, 104427 }, -- Seal of Eternal Sorrow
+                { 21, 104426 }, -- Purified Bindings of Immerseus
+                { 23, 104421 }, -- Encapsulated Essence of Immerseus
+                { 24, 104412 }, -- Trident of Corrupted Waters
+                { 26, "ac8536" },
                 { 27, "ac8463" },
             },
         },
         {	--SoOFallenProtectors
             EncounterJournalID = 849,
+            ContentPhaseMoP = 5,
             npcId = 71475,
-            [RF_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 24, nil },
+            [CELESTIAL_DIFF] = {
+                { 1, 104939 }, -- Gloomwrap Greatcloak
+                { 2, 104943 }, -- Shoulderpads of Dou Dou Chong
+                { 3, 104942 }, -- Robes of the Tendered Heart
+                { 4, 104944 }, -- Lifebane Bracers
+                { 5, 104941 }, -- Sha-Seared Sandals
+                { 6, 104947 }, -- Shoulders of the Roiling Inferno
+                { 7, 104933 }, -- Stonetoe's Tormented Treads
+                { 8, 104949 }, -- Shoulderguards of Dark Meditations
+                { 9, 104934 }, -- Grips of Unending Anguish
+                { 10, 104948 }, -- Sabatons of Defilement
+                { 11, 104951 }, -- Gaze of Echoing Despair
+                { 12, 104936 }, -- Darkfallen Shoulderplates
+                { 13, 104950 }, -- Grips of the Fallen Council
+                { 14, 104937 }, -- Shockstriker Gauntlets
+                { 15, 104935 }, -- Poisonbinder Girth
+                { 16, 104945 }, -- Petrified Pennyroyal Ring
+                { 17, 104938 }, -- Sorrowpath Signet
+                { 18, 104940 }, -- Rook's Unlucky Talisman
+                { 20, 104931 }, -- Death Lotus Crossbow
+                { 21, 104932 }, -- Softfoot's Last Resort
+                { 22, 104946 }, -- Purehearted Cricket Cage
+            },
+            [FLEX_DIFF] = {
+                { 1, 104690 }, -- Gloomwrap Greatcloak
+                { 2, 104694 }, -- Shoulderpads of Dou Dou Chong
+                { 3, 104693 }, -- Robes of the Tendered Heart
+                { 4, 104695 }, -- Lifebane Bracers
+                { 5, 104692 }, -- Sha-Seared Sandals
+                { 6, 104698 }, -- Shoulders of the Roiling Inferno
+                { 7, 104684 }, -- Stonetoe's Tormented Treads
+                { 8, 104700 }, -- Shoulderguards of Dark Meditations
+                { 9, 104685 }, -- Grips of Unending Anguish
+                { 10, 104699 }, -- Sabatons of Defilement
+                { 11, 104702 }, -- Gaze of Echoing Despair
+                { 12, 104687 }, -- Darkfallen Shoulderplates
+                { 13, 104701 }, -- Grips of the Fallen Council
+                { 14, 104688 }, -- Shockstriker Gauntlets
+                { 15, 104686 }, -- Poisonbinder Girth
+                { 16, 104696 }, -- Petrified Pennyroyal Ring
+                { 17, 104689 }, -- Sorrowpath Signet
+                { 18, 104691 }, -- Rook's Unlucky Talisman
+                { 20, 104682 }, -- Death Lotus Crossbow
+                { 21, 104683 }, -- Softfoot's Last Resort
+                { 22, 104697 }, -- Purehearted Cricket Cage
             },
             [NORMAL_DIFF] = {
-                { 1, 112485 },	-- Gloomwrap Greatcloak
-                { 2, 112488 },	-- Shoulderpads of Dou Dou Chong
-                { 3, 112487 },	-- Robes of the Tendered Heart
-                { 4, 112489 },	-- Lifebane Bracers
-                { 5, 112486 },	-- Sha-Seared Sandals
-                { 6, 112492 },	-- Shoulders of the Roiling Inferno
-                { 7, 112479 },	-- Stonetoe's Tormented Treads
-                { 8, 112494 },	-- Shoulderguards of Dark Meditations
-                { 9, 112480 },	-- Grips of Unending Anguish
-                { 10, 112493 },	-- Sabatons of Defilement
-                { 11, 112496 },	-- Gaze of Echoing Despair
-                { 12, 112481 },	-- Darkfallen Shoulderplates
-                { 13, 112495 },	-- Grips of the Fallen Council
-                { 14, 112483 },	-- Shockstriker Gauntlets
-                { 15, 112482 },	-- Poisonbinder Girth
-                { 16, 112490 },	-- Petrified Pennyroyal Ring
-                { 17, 112484 },	-- Sorrowpath Signet
-                { 18, 112476 },	-- Rook's Unlucky Talisman
-                { 20, 112478 },	-- Death Lotus Crossbow
-                { 21, 112477 },	-- Softfoot's Last Resort
-                { 22, 112491 },	-- Purehearted Cricket Cage
+                { 1, 103799 }, -- Gloomwrap Greatcloak
+                { 2, 103807 }, -- Shoulderpads of Dou Dou Chong
+                { 3, 103802 }, -- Robes of the Tendered Heart
+                { 4, 103809 }, -- Lifebane Bracers
+                { 5, 103804 }, -- Sha-Seared Sandals
+                { 6, 103924 }, -- Shoulders of the Roiling Inferno
+                { 7, 103777 }, -- Stonetoe's Tormented Treads
+                { 8, 103815 }, -- Shoulderguards of Dark Meditations
+                { 9, 103780 }, -- Grips of Unending Anguish
+                { 10, 103812 }, -- Sabatons of Defilement
+                { 11, 103820 }, -- Gaze of Echoing Despair
+                { 12, 103783 }, -- Darkfallen Shoulderplates
+                { 13, 103817 }, -- Grips of the Fallen Council
+                { 14, 103790 }, -- Shockstriker Gauntlets
+                { 15, 103787 }, -- Poisonbinder Girth
+                { 16, 103822 }, -- Petrified Pennyroyal Ring
+                { 17, 103793 }, -- Sorrowpath Signet
+                { 18, 102296 }, -- Rook's Unlucky Talisman
+                { 20, 103776 }, -- Death Lotus Crossbow
+                { 21, 103775 }, -- Softfoot's Last Resort
+                { 22, 103801 }, -- Purehearted Cricket Cage
                 { 24, "ac8528" },
             },
-            [HEROIC_SOO_DIFF] = NORMAL_DIFF,
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
+            [HEROIC_DIFF] = {
+                { 1, 104441 }, -- Gloomwrap Greatcloak
+                { 2, 104445 }, -- Shoulderpads of Dou Dou Chong
+                { 3, 104444 }, -- Robes of the Tendered Heart
+                { 4, 104446 }, -- Lifebane Bracers
+                { 5, 104443 }, -- Sha-Seared Sandals
+                { 6, 104449 }, -- Shoulders of the Roiling Inferno
+                { 7, 104435 }, -- Stonetoe's Tormented Treads
+                { 8, 104451 }, -- Shoulderguards of Dark Meditations
+                { 9, 104436 }, -- Grips of Unending Anguish
+                { 10, 104450 }, -- Sabatons of Defilement
+                { 11, 104453 }, -- Gaze of Echoing Despair
+                { 12, 104438 }, -- Darkfallen Shoulderplates
+                { 13, 104452 }, -- Grips of the Fallen Council
+                { 14, 104439 }, -- Shockstriker Gauntlets
+                { 15, 104437 }, -- Poisonbinder Girth
+                { 16, 104447 }, -- Petrified Pennyroyal Ring
+                { 17, 104440 }, -- Sorrowpath Signet
+                { 18, 104442 }, -- Rook's Unlucky Talisman
+                { 20, 104433 }, -- Death Lotus Crossbow
+                { 21, 104434 }, -- Softfoot's Last Resort
+                { 22, 104448 }, -- Purehearted Cricket Cage
+                { 24, "ac8528" },
                 { 25, "ac8465" },
             },
         },
         {	--SoONorushen
             EncounterJournalID = 866,
+            ContentPhaseMoP = 5,
             npcId = 72276,
-            [RF_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 26, nil },
+            [CELESTIAL_DIFF] = {
+                { 1, 104960 }, -- Drape of the Despairing Pit
+                { 2, 104966 }, -- Rime-Rift Shoulders
+                { 3, 104963 }, -- Bracers of Broken Causation
+                { 4, 104964 }, -- Blight Hurlers
+                { 5, 104965 }, -- Sash of the Last Guardian
+                { 6, 104954 }, -- Robes of the Blackened Watcher
+                { 7, 104970 }, -- Confident Grips
+                { 8, 104955 }, -- Gloves of the Golden Protector
+                { 9, 104969 }, -- Boots of Broken Reliance
+                { 10, 104957 }, -- Quarantine Shoulderguards
+                { 11, 104971 }, -- Bracers of Final Serenity
+                { 12, 104956 }, -- Leggings of Unabashed Anger
+                { 13, 104972 }, -- Shadow-Binder's Kilt
+                { 14, 104959 }, -- Rage-Blind Greathelm
+                { 15, 104958 }, -- Bracers of Blind Hatred
+                { 16, 104973 }, -- Wristplates of Broken Doubt
+                { 18, 104967 }, -- Untainted Guardian's Chain
+                { 19, 104953 }, -- Reality Ripper Ring
+                { 20, 104961 }, -- Fusion-Fire Core
+                { 22, 104952 }, -- Norushen's Shortblade
+                { 23, 104962 }, -- Xifeng, Longblade of the Titanic Guardian
+                { 24, 104968 }, -- Norushen's Enigmatic Barrier
+            },
+            [FLEX_DIFF] = {
+                { 1, 104711 }, -- Drape of the Despairing Pit
+                { 2, 104717 }, -- Rime-Rift Shoulders
+                { 3, 104714 }, -- Bracers of Broken Causation
+                { 4, 104715 }, -- Blight Hurlers
+                { 5, 104716 }, -- Sash of the Last Guardian
+                { 6, 104705 }, -- Robes of the Blackened Watcher
+                { 7, 104721 }, -- Confident Grips
+                { 8, 104706 }, -- Gloves of the Golden Protector
+                { 9, 104720 }, -- Boots of Broken Reliance
+                { 10, 104708 }, -- Quarantine Shoulderguards
+                { 11, 104722 }, -- Bracers of Final Serenity
+                { 12, 104707 }, -- Leggings of Unabashed Anger
+                { 13, 104723 }, -- Shadow-Binder's Kilt
+                { 14, 104710 }, -- Rage-Blind Greathelm
+                { 15, 104709 }, -- Bracers of Blind Hatred
+                { 16, 104724 }, -- Wristplates of Broken Doubt
+                { 18, 104718 }, -- Untainted Guardian's Chain
+                { 19, 104704 }, -- Reality Ripper Ring
+                { 20, 104712 }, -- Fusion-Fire Core
+                { 22, 104703 }, -- Norushen's Shortblade
+                { 23, 104713 }, -- Xifeng, Longblade of the Titanic Guardian
+                { 24, 104719 }, -- Norushen's Enigmatic Barrier
             },
             [NORMAL_DIFF] = {
-                { 1, 112554 },	-- Drape of the Despairing Pit
-                { 2, 112558 },	-- Rime-Rift Shoulders
-                { 3, 112555 },	-- Bracers of Broken Causation
-                { 4, 112556 },	-- Blight Hurlers
-                { 5, 112557 },	-- Sash of the Last Guardian
-                { 6, 112549 },	-- Robes of the Blackened Watcher
-                { 7, 112562 },	-- Confident Grips
-                { 8, 112548 },	-- Gloves of the Golden Protector
-                { 9, 112561 },	-- Boots of Broken Reliance
-                { 10, 112550 },	-- Quarantine Shoulderguards
-                { 11, 112563 },	-- Bracers of Final Serenity
-                { 12, 112551 },	-- Leggings of Unabashed Anger
-                { 13, 112564 },	-- Shadow-Binder's Kilt
-                { 14, 112552 },	-- Rage-Blind Greathelm
-                { 15, 112545 },	-- Bracers of Blind Hatred
-                { 16, 112565 },	-- Wristplates of Broken Doubt
-                { 18, 112559 },	-- Untainted Guardian's Chain
-                { 19, 112553 },	-- Reality Ripper Ring
-                { 20, 112503 },	-- Fusion-Fire Core
-                { 22, 112547 },	-- Norushen's Shortblade
-                { 23, 112546 },	-- Xifeng, Longblade of the Titanic Guardian
-                { 24, 112560 },	-- Norushen's Enigmatic Barrier
+                { 1, 103845 }, -- Drape of the Despairing Pit
+                { 2, 103857 }, -- Rime-Rift Shoulders
+                { 3, 103849 }, -- Bracers of Broken Causation
+                { 4, 103852 }, -- Blight Hurlers
+                { 5, 103855 }, -- Sash of the Last Guardian
+                { 6, 103834 }, -- Robes of the Blackened Watcher
+                { 7, 103858 }, -- Confident Grips
+                { 8, 103830 }, -- Gloves of the Golden Protector
+                { 9, 103762 }, -- Boots of Broken Reliance
+                { 10, 103836 }, -- Quarantine Shoulderguards
+                { 11, 103861 }, -- Bracers of Final Serenity
+                { 12, 103838 }, -- Leggings of Unabashed Anger
+                { 13, 103942 }, -- Shadow-Binder's Kilt
+                { 14, 103839 }, -- Rage-Blind Greathelm
+                { 15, 103740 }, -- Bracers of Blind Hatred
+                { 16, 103864 }, -- Wristplates of Broken Doubt
+                { 18, 103867 }, -- Untainted Guardian's Chain
+                { 19, 103841 }, -- Reality Ripper Ring
+                { 20, 102295 }, -- Fusion-Fire Core
+                { 22, 103827 }, -- Norushen's Shortblade
+                { 23, 103826 }, -- Xifeng, Longblade of the Titanic Guardian
+                { 24, 103847 }, -- Norushen's Enigmatic Barrier
                 { 26, "ac8532" },
             },
-            [HEROIC_SOO_DIFF] = NORMAL_DIFF,
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
+            [HEROIC_DIFF] = {
+                { 1, 104462 }, -- Drape of the Despairing Pit
+                { 2, 104468 }, -- Rime-Rift Shoulders
+                { 3, 104465 }, -- Bracers of Broken Causation
+                { 4, 104466 }, -- Blight Hurlers
+                { 5, 104467 }, -- Sash of the Last Guardian
+                { 6, 104456 }, -- Robes of the Blackened Watcher
+                { 7, 104472 }, -- Confident Grips
+                { 8, 104457 }, -- Gloves of the Golden Protector
+                { 9, 104471 }, -- Boots of Broken Reliance
+                { 10, 104459 }, -- Quarantine Shoulderguards
+                { 11, 104473 }, -- Bracers of Final Serenity
+                { 12, 104458 }, -- Leggings of Unabashed Anger
+                { 13, 104474 }, -- Shadow-Binder's Kilt
+                { 14, 104461 }, -- Rage-Blind Greathelm
+                { 15, 104460 }, -- Bracers of Blind Hatred
+                { 16, 104475 }, -- Wristplates of Broken Doubt
+                { 18, 104469 }, -- Untainted Guardian's Chain
+                { 19, 104455 }, -- Reality Ripper Ring
+                { 20, 104463 }, -- Fusion-Fire Core
+                { 22, 104454 }, -- Norushen's Shortblade
+                { 23, 104464 }, -- Xifeng, Longblade of the Titanic Guardian
+                { 24, 104470 }, -- Norushen's Enigmatic Barrier
+                { 26, "ac8532" },
                 { 27, "ac8466" },
+
             },
         },
         {	--SoOShaofPride
             EncounterJournalID = 867,
+            ContentPhaseMoP = 5,
             npcId = 71734,
-            [RF_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99678:0" },	-- Chest of the Cursed Conqueror
-                { 17, "99679:0" },	-- Chest of the Cursed Protector
-                { 18, "99677:0" },	-- Chest of the Cursed Vanquisher
-                { 24, "104163:0", "pet1332" },	-- Gooey Sha-ling
-                { 25, nil },
-                { 27, nil },
+            [CELESTIAL_DIFF] = {
+                { 1, 104978 }, -- Self-Reflecting Mask
+                { 2, 104979 }, -- Crown of Boastful Words
+                { 3, 104980 }, -- Greaves of Sublime Superiority
+                { 5, 104982 }, -- Choker of the Final Word
+                { 6, 104975 }, -- Necklace of Fading Light
+                { 7, 104974 }, -- Assurance of Consequence
+                { 8, 104976 }, -- Prismatic Prison of Pride
+                { 16, 99678 }, -- Chest of the Cursed Conqueror
+                { 17, 99679 }, -- Chest of the Cursed Protector
+                { 18, 99677 }, -- Chest of the Cursed Vanquisher
+                { 20, 104977 }, -- Gaze of Arrogance
+                { 21, 104981 }, -- Greatsword of Pride's Fall
+                { 22, 104983 }, -- Shield of Mockery
+                { 24, 104163 }, -- Gooey Sha-ling
+            },
+            [FLEX_DIFF] = {
+                { 1, 104729 }, -- Self-Reflecting Mask
+                { 2, 104730 }, -- Crown of Boastful Words
+                { 3, 104731 }, -- Greaves of Sublime Superiority
+                { 5, 104733 }, -- Choker of the Final Word
+                { 6, 104726 }, -- Necklace of Fading Light
+                { 7, 104725 }, -- Assurance of Consequence
+                { 8, 104727 }, -- Prismatic Prison of Pride
+                { 16, 99743 }, -- Chest of the Cursed Conqueror
+                { 17, 99744 }, -- Chest of the Cursed Protector
+                { 18, 99742 }, -- Chest of the Cursed Vanquisher
+                { 20, 104728 }, -- Gaze of Arrogance
+                { 21, 104732 }, -- Greatsword of Pride's Fall
+                { 22, 104734 }, -- Shield of Mockery
+                { 24, 104162 }, -- Droplet of Y'Shaarj
+                { 25, 104163 }, -- Gooey Sha-ling
             },
             [NORMAL_DIFF] = {
-                { 1, 112952 },	-- Self-Reflecting Mask
-                { 2, 112702 },	-- Crown of Boastful Words
-                { 3, 112953 },	-- Greaves of Sublime Superiority
-                { 5, 112955 },	-- Choker of the Final Word
-                { 6, 112954 },	-- Necklace of Fading Light
-                { 7, 112947 },	-- Assurance of Consequence
-                { 8, 112948 },	-- Prismatic Prison of Pride
-                { 16, 99743 },	-- Chest of the Cursed Conqueror
-                { 17, 99744 },	-- Chest of the Cursed Protector
-                { 18, 99742 },	-- Chest of the Cursed Vanquisher
-                { 20, 112951 },	-- Gaze of Arrogance
-                { 21, 112949 },	-- Greatsword of Pride's Fall
-                { 22, 112950 },	-- Shield of Mockery
-                { 24, "104162:0", "pet1331" },	-- Droplet of Y'Shaarj
-                { 25, "104163:0", "pet1332" },	-- Gooey Sha-ling
+                { 1, 103876 }, -- Self-Reflecting Mask
+                { 2, 103821 }, -- Crown of Boastful Words
+                { 3, 103878 }, -- Greaves of Sublime Superiority
+                { 5, 103883 }, -- Choker of the Final Word
+                { 6, 103881 }, -- Necklace of Fading Light
+                { 7, 102292 }, -- Assurance of Consequence
+                { 8, 102299 }, -- Prismatic Prison of Pride
+                { 16, 99686 }, -- Chest of the Cursed Conqueror
+                { 17, 99691 }, -- Chest of the Cursed Protector
+                { 18, 99696 }, -- Chest of the Cursed Vanquisher
+                { 20, 103873 }, -- Gaze of Arrogance
+                { 21, 103869 }, -- Greatsword of Pride's Fall
+                { 22, 103870 }, -- Shield of Mockery
+                { 24, 104162 }, -- Droplet of Y'Shaarj
                 { 27, "ac8521" },
             },
-            [HEROIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99686:0", false },	-- Chest of the Cursed Conqueror
-                { 17, "99691:0", false },	-- Chest of the Cursed Protector
-                { 18, "99696:0", false },	-- Chest of the Cursed Vanquisher
-                { 25, nil },
-                { 26, "ac8521" },
-                { 27, nil },
+            [HEROIC_DIFF] = {
+                { 1, 104480 }, -- Self-Reflecting Mask
+                { 2, 104481 }, -- Crown of Boastful Words
+                { 3, 104482 }, -- Greaves of Sublime Superiority
+                { 5, 104484 }, -- Choker of the Final Word
+                { 6, 104477 }, -- Necklace of Fading Light
+                { 7, 104476 }, -- Assurance of Consequence
+                { 8, 104478 }, -- Prismatic Prison of Pride
+                { 16, 99715 }, -- Chest of the Cursed Conqueror
+                { 17, 99716 }, -- Chest of the Cursed Protector
+                { 18, 99714 }, -- Chest of the Cursed Vanquisher
+                { 20, 104479 }, -- Gaze of Arrogance
+                { 21, 104483 }, -- Greatsword of Pride's Fall
+                { 22, 104485 }, -- Shield of Mockery
+                { 24, 104162 }, -- Droplet of Y'Shaarj
+                { 27, "ac8521" },
+                { 28, "ac8467" },
+
+
             },
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = HEROIC_SOO_DIFF,
-                { 16, "99715:0", false },	-- Chest of the Cursed Conqueror
-                { 17, "99716:0", false },	-- Chest of the Cursed Protector
-                { 18, "99714:0", false },	-- Chest of the Cursed Vanquisher
-                { 27, "ac8467" },
+            [FLEX_DIFF] = {
+                GetItemsFromDiff = NORMAL_DIFF,
+                { 16, 99678 },	-- Chest of the Cursed Conqueror
+                { 17, 99679 },	-- Chest of the Cursed Protector
+                { 18, 99677 },	-- Chest of the Cursed Vanquisher
+                { 24, 104163 },	-- Gooey Sha-ling
+                { 25, nil },
+                { 27, nil },
             },
         },
         {	--SoOGalakras
             EncounterJournalID = 868,
+            ContentPhaseMoP = 5,
             npcId = 72249,
-            [RF_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 26, nil },
+            [CELESTIAL_DIFF] = {
+                { 1, 104997 }, -- Flameslinger's Fiery Cowl
+                { 2, 104999 }, -- Shoulderpads of Pulsing Protection
+                { 3, 104996 }, -- Scalebane Bracers
+                { 4, 104995 }, -- Bone-Inlaid Sandals
+                { 5, 104998 }, -- Skydancer Boots
+                { 6, 104987 }, -- Korgra's Venom-Soaked Gauntlets
+                { 7, 105002 }, -- Dragonmaw Emergency Strap
+                { 8, 104986 }, -- Unrepentant Heels
+                { 9, 104989 }, -- Dagryn's Fuselight Bracers
+                { 10, 105003 }, -- Grips of Tidal Force
+                { 11, 104988 }, -- Cannoneer's Multipocket Gunbelt
+                { 12, 104990 }, -- Thranok's Shattering Helm
+                { 13, 104992 }, -- Krugruk's Rigid Shoulderplates
+                { 14, 104991 }, -- Arcsmasher Bracers
+                { 15, 105004 }, -- Smoldering Drakescale Bracers
+                { 16, 105005 }, -- Windfire Legplates
+                { 18, 105000 }, -- Extinguished Ember of Galakras
+                { 19, 104994 }, -- Galakrond Control Band
+                { 20, 104985 }, -- Swift Serpent Signet
+                { 21, 104993 }, -- Evil Eye of Galakras
+                { 23, 104984 }, -- Dagryn's Discarded Longbow
+                { 24, 105001 }, -- Drakebinder Greatstaff
+            },
+            [FLEX_DIFF] = {
+                { 1, 104748 }, -- Flameslinger's Fiery Cowl
+                { 2, 104750 }, -- Shoulderpads of Pulsing Protection
+                { 3, 104747 }, -- Scalebane Bracers
+                { 4, 104746 }, -- Bone-Inlaid Sandals
+                { 5, 104749 }, -- Skydancer Boots
+                { 6, 104738 }, -- Korgra's Venom-Soaked Gauntlets
+                { 7, 104753 }, -- Dragonmaw Emergency Strap
+                { 8, 104737 }, -- Unrepentant Heels
+                { 9, 104740 }, -- Dagryn's Fuselight Bracers
+                { 10, 104754 }, -- Grips of Tidal Force
+                { 11, 104739 }, -- Cannoneer's Multipocket Gunbelt
+                { 12, 104741 }, -- Thranok's Shattering Helm
+                { 13, 104743 }, -- Krugruk's Rigid Shoulderplates
+                { 14, 104742 }, -- Arcsmasher Bracers
+                { 15, 104755 }, -- Smoldering Drakescale Bracers
+                { 16, 104756 }, -- Windfire Legplates
+                { 18, 104751 }, -- Extinguished Ember of Galakras
+                { 19, 104745 }, -- Galakrond Control Band
+                { 20, 104736 }, -- Swift Serpent Signet
+                { 21, 104744 }, -- Evil Eye of Galakras
+                { 23, 104735 }, -- Dagryn's Discarded Longbow
+                { 24, 104752 }, -- Drakebinder Greatstaff
             },
             [NORMAL_DIFF] = {
-                { 1, 112717 },	-- Flameslinger's Fiery Cowl
-                { 2, 112719 },	-- Shoulderpads of Pulsing Protection
-                { 3, 112716 },	-- Scalebane Bracers
-                { 4, 112715 },	-- Bone-Inlaid Sandals
-                { 5, 112718 },	-- Skydancer Boots
-                { 6, 112707 },	-- Korgra's Venom-Soaked Gauntlets
-                { 7, 112725 },	-- Dragonmaw Emergency Strap
-                { 8, 112706 },	-- Unrepentant Heels
-                { 9, 112712 },	-- Dagryn's Fuselight Bracers
-                { 10, 112726 },	-- Grips of Tidal Force
-                { 11, 112711 },	-- Cannoneer's Multipocket Gunbelt
-                { 12, 112713 },	-- Thranok's Shattering Helm
-                { 13, 112705 },	-- Krugruk's Rigid Shoulderplates
-                { 14, 112704 },	-- Arcsmasher Bracers
-                { 15, 112727 },	-- Smoldering Drakescale Bracers
-                { 16, 112728 },	-- Windfire Legplates
-                { 18, 112721 },	-- Extinguished Ember of Galakras
-                { 19, 112714 },	-- Galakrond Control Band
-                { 20, 112709 },	-- Swift Serpent Signet
-                { 21, 112703 },	-- Evil Eye of Galakras
-                { 23, 112710 },	-- Dagryn's Discarded Longbow
-                { 24, 112723 },	-- Drakebinder Greatstaff
+                { 1, 103900 }, -- Flameslinger's Fiery Cowl
+                { 2, 103756 }, -- Shoulderpads of Pulsing Protection
+                { 3, 103850 }, -- Scalebane Bracers
+                { 4, 103805 }, -- Bone-Inlaid Sandals
+                { 5, 103902 }, -- Skydancer Boots
+                { 6, 103831 }, -- Korgra's Venom-Soaked Gauntlets
+                { 7, 103905 }, -- Dragonmaw Emergency Strap
+                { 8, 103778 }, -- Unrepentant Heels
+                { 9, 103889 }, -- Dagryn's Fuselight Bracers
+                { 10, 103765 }, -- Grips of Tidal Force
+                { 11, 103887 }, -- Cannoneer's Multipocket Gunbelt
+                { 12, 103892 }, -- Thranok's Shattering Helm
+                { 13, 103748 }, -- Krugruk's Rigid Shoulderplates
+                { 14, 103743 }, -- Arcsmasher Bracers
+                { 15, 103865 }, -- Smoldering Drakescale Bracers
+                { 16, 103907 }, -- Windfire Legplates
+                { 18, 103823 }, -- Extinguished Ember of Galakras
+                { 19, 103894 }, -- Galakrond Control Band
+                { 20, 103842 }, -- Swift Serpent Signet
+                { 21, 102298 }, -- Evil Eye of Galakras
+                { 23, 103885 }, -- Dagryn's Discarded Longbow
+                { 24, 103875 }, -- Drakebinder Greatstaff
                 { 26, "ac8530" },
             },
-            [HEROIC_SOO_DIFF] = NORMAL_DIFF,
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
+            [HEROIC_DIFF] = {
+                { 1, 104499 }, -- Flameslinger's Fiery Cowl
+                { 2, 104501 }, -- Shoulderpads of Pulsing Protection
+                { 3, 104498 }, -- Scalebane Bracers
+                { 4, 104497 }, -- Bone-Inlaid Sandals
+                { 5, 104500 }, -- Skydancer Boots
+                { 6, 104489 }, -- Korgra's Venom-Soaked Gauntlets
+                { 7, 104504 }, -- Dragonmaw Emergency Strap
+                { 8, 104488 }, -- Unrepentant Heels
+                { 9, 104491 }, -- Dagryn's Fuselight Bracers
+                { 10, 104505 }, -- Grips of Tidal Force
+                { 11, 104490 }, -- Cannoneer's Multipocket Gunbelt
+                { 12, 104492 }, -- Thranok's Shattering Helm
+                { 13, 104494 }, -- Krugruk's Rigid Shoulderplates
+                { 14, 104493 }, -- Arcsmasher Bracers
+                { 15, 104506 }, -- Smoldering Drakescale Bracers
+                { 16, 104507 }, -- Windfire Legplates
+                { 18, 104502 }, -- Extinguished Ember of Galakras
+                { 19, 104496 }, -- Galakrond Control Band
+                { 20, 104487 }, -- Swift Serpent Signet
+                { 21, 104495 }, -- Evil Eye of Galakras
+                { 23, 104486 }, -- Dagryn's Discarded Longbow
+                { 24, 104503 }, -- Drakebinder Greatstaff
+                { 26, "ac8530" },
                 { 27, "ac8468" },
             },
         },
         {	--SoOIronJuggernaut
             EncounterJournalID = 864,
+            ContentPhaseMoP = 5,
             npcId = 71466,
-            [RF_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 26, nil },
+            [CELESTIAL_DIFF] = {
+                { 1, 105021 }, -- Shock Pulse Robes
+                { 2, 105019 }, -- Bracers of the Broken Fault
+                { 3, 105020 }, -- Earthripper Gloves
+                { 4, 105017 }, -- Belt of Ominous Trembles
+                { 5, 105018 }, -- Leggings of Furious Flame
+                { 6, 105008 }, -- Ricocheting Shoulderguards
+                { 7, 105024 }, -- Castlebreaker Bracers
+                { 8, 105007 }, -- Laser Burn Bracers
+                { 9, 105026 }, -- Cavemaker Wristguards
+                { 10, 105010 }, -- Precision Cutters
+                { 11, 105009 }, -- Minelayer's Padded Boots
+                { 12, 105025 }, -- Treads of Autonomic Motion
+                { 13, 105014 }, -- Earthbreaker's Steaming Chestplate
+                { 14, 105012 }, -- Wall-Borer Bracers
+                { 15, 105013 }, -- Tar-Coated Gauntlets
+                { 16, 105011 }, -- Demolisher's Reinforced Belt
+                { 17, 105027 }, -- Borer Drill Boots
+                { 19, 105015 }, -- Juggernaut's Ignition Keys
+                { 20, 105022 }, -- Laser-Slice Signet
+                { 21, 105016 }, -- Juggernaut's Focusing Crystal
+                { 23, 105006 }, -- Seismic Bore
+                { 24, 105023 }, -- Juggernaut's Power Core
+            },
+            [FLEX_DIFF] = {
+                { 1, 104772 }, -- Shock Pulse Robes
+                { 2, 104770 }, -- Bracers of the Broken Fault
+                { 3, 104771 }, -- Earthripper Gloves
+                { 4, 104768 }, -- Belt of Ominous Trembles
+                { 5, 104769 }, -- Leggings of Furious Flame
+                { 6, 104759 }, -- Ricocheting Shoulderguards
+                { 7, 104775 }, -- Castlebreaker Bracers
+                { 8, 104758 }, -- Laser Burn Bracers
+                { 9, 104777 }, -- Cavemaker Wristguards
+                { 10, 104761 }, -- Precision Cutters
+                { 11, 104760 }, -- Minelayer's Padded Boots
+                { 12, 104776 }, -- Treads of Autonomic Motion
+                { 13, 104765 }, -- Earthbreaker's Steaming Chestplate
+                { 14, 104763 }, -- Wall-Borer Bracers
+                { 15, 104764 }, -- Tar-Coated Gauntlets
+                { 16, 104762 }, -- Demolisher's Reinforced Belt
+                { 17, 104778 }, -- Borer Drill Boots
+                { 19, 104766 }, -- Juggernaut's Ignition Keys
+                { 20, 104773 }, -- Laser-Slice Signet
+                { 21, 104767 }, -- Juggernaut's Focusing Crystal
+                { 23, 104757 }, -- Seismic Bore
+                { 24, 104774 }, -- Juggernaut's Power Core
             },
             [NORMAL_DIFF] = {
-                { 1, 112746 },	-- Shock Pulse Robes
-                { 2, 112745 },	-- Bracers of the Broken Fault
-                { 3, 112946 },	-- Earthripper Gloves
-                { 4, 112743 },	-- Belt of Ominous Trembles
-                { 5, 112744 },	-- Leggings of Furious Flame
-                { 6, 112740 },	-- Ricocheting Shoulderguards
-                { 7, 112749 },	-- Castlebreaker Bracers
-                { 8, 112739 },	-- Laser Burn Bracers
-                { 9, 112751 },	-- Cavemaker Wristguards
-                { 10, 112734 },	-- Precision Cutters
-                { 11, 112731 },	-- Minelayer's Padded Boots
-                { 12, 112750 },	-- Treads of Autonomic Motion
-                { 13, 112741 },	-- Earthbreaker's Steaming Chestplate
-                { 14, 112733 },	-- Wall-Borer Bracers
-                { 15, 112732 },	-- Tar-Coated Gauntlets
-                { 16, 112735 },	-- Demolisher's Reinforced Belt
-                { 17, 112752 },	-- Borer Drill Boots
-                { 19, 112742 },	-- Juggernaut's Ignition Keys
-                { 20, 112747 },	-- Laser-Slice Signet
-                { 21, 112729 },	-- Juggernaut's Focusing Crystal
-                { 23, 112736 },	-- Seismic Bore
-                { 24, 112748 },	-- Juggernaut's Power Core
+                { 1, 103922 }, -- Shock Pulse Robes
+                { 2, 103811 }, -- Bracers of the Broken Fault
+                { 3, 103754 }, -- Earthripper Gloves
+                { 4, 103898 }, -- Belt of Ominous Trembles
+                { 5, 103921 }, -- Leggings of Furious Flame
+                { 6, 103912 }, -- Ricocheting Shoulderguards
+                { 7, 103759 }, -- Castlebreaker Bracers
+                { 8, 103909 }, -- Laser Burn Bracers
+                { 9, 103863 }, -- Cavemaker Wristguards
+                { 10, 103782 }, -- Precision Cutters
+                { 11, 103731 }, -- Minelayer's Padded Boots
+                { 12, 103813 }, -- Treads of Autonomic Motion
+                { 13, 103914 }, -- Earthbreaker's Steaming Chestplate
+                { 14, 103739 }, -- Wall-Borer Bracers
+                { 15, 103735 }, -- Tar-Coated Gauntlets
+                { 16, 103788 }, -- Demolisher's Reinforced Belt
+                { 17, 103767 }, -- Borer Drill Boots
+                { 19, 103916 }, -- Juggernaut's Ignition Keys
+                { 20, 103773 }, -- Laser-Slice Signet
+                { 21, 102297 }, -- Juggernaut's Focusing Crystal
+                { 23, 103908 }, -- Seismic Bore
+                { 24, 103918 }, -- Juggernaut's Power Core
                 { 26, "ac8520" },
             },
-            [HEROIC_SOO_DIFF] = NORMAL_DIFF,
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
+            [HEROIC_DIFF] = {
+                { 1, 104523 }, -- Shock Pulse Robes
+                { 2, 104521 }, -- Bracers of the Broken Fault
+                { 3, 104522 }, -- Earthripper Gloves
+                { 4, 104519 }, -- Belt of Ominous Trembles
+                { 5, 104520 }, -- Leggings of Furious Flame
+                { 6, 104510 }, -- Ricocheting Shoulderguards
+                { 7, 104526 }, -- Castlebreaker Bracers
+                { 8, 104509 }, -- Laser Burn Bracers
+                { 9, 104528 }, -- Cavemaker Wristguards
+                { 10, 104512 }, -- Precision Cutters
+                { 11, 104511 }, -- Minelayer's Padded Boots
+                { 12, 104527 }, -- Treads of Autonomic Motion
+                { 13, 104516 }, -- Earthbreaker's Steaming Chestplate
+                { 14, 104514 }, -- Wall-Borer Bracers
+                { 15, 104515 }, -- Tar-Coated Gauntlets
+                { 16, 104513 }, -- Demolisher's Reinforced Belt
+                { 17, 104529 }, -- Borer Drill Boots
+                { 19, 104517 }, -- Juggernaut's Ignition Keys
+                { 20, 104524 }, -- Laser-Slice Signet
+                { 21, 104518 }, -- Juggernaut's Focusing Crystal
+                { 23, 104508 }, -- Seismic Bore
+                { 24, 104525 }, -- Juggernaut's Power Core
+                { 26, "ac8520" },
                 { 27, "ac8469" },
             },
         },
         {	--SoODarkShaman
             EncounterJournalID = 856,
+            ContentPhaseMoP = 5,
             npcId = 71859,
-            [RF_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 25, nil },
+            [CELESTIAL_DIFF] = {
+                { 1, 105028 }, -- Poisonmist Nightcloak
+                { 2, 105040 }, -- Iron Wolf Hood
+                { 3, 105039 }, -- Toxic Tornado Treads
+                { 4, 105044 }, -- Darkfang Mask
+                { 5, 105030 }, -- Damron's Belt of Darkness
+                { 6, 105031 }, -- Riou's Vigilant Leggings
+                { 7, 105032 }, -- Haromm's Horrifying Helm
+                { 8, 105046 }, -- Shoulderguards of Foul Streams
+                { 9, 105045 }, -- Belt of the Iron Prison
+                { 10, 105048 }, -- Shoulderplates of Gushing Geysers
+                { 11, 105034 }, -- Breastplate of Shamanic Mirrors
+                { 12, 105047 }, -- Shackles of Stinking Slime
+                { 13, 105035 }, -- Ashen Wall Girdle
+                { 14, 105033 }, -- Wolf-Rider Spurs
+                { 16, 105041 }, -- Ashflare Pendant
+                { 17, 105036 }, -- Bloodclaw Band
+                { 18, 105038 }, -- Ring of the Iron Tomb
+                { 19, 105029 }, -- Haromm's Talisman
+                { 20, 105042 }, -- Kardris' Toxic Totem
+                { 22, 105037 }, -- Haromm's Frozen Crescent
+                { 23, 105043 }, -- Kardris' Scepter
+            },
+            [FLEX_DIFF] = {
+                { 1, 104779 }, -- Poisonmist Nightcloak
+                { 2, 104791 }, -- Iron Wolf Hood
+                { 3, 104790 }, -- Toxic Tornado Treads
+                { 4, 104795 }, -- Darkfang Mask
+                { 5, 104781 }, -- Damron's Belt of Darkness
+                { 6, 104782 }, -- Riou's Vigilant Leggings
+                { 7, 104783 }, -- Haromm's Horrifying Helm
+                { 8, 104797 }, -- Shoulderguards of Foul Streams
+                { 9, 104796 }, -- Belt of the Iron Prison
+                { 10, 104799 }, -- Shoulderplates of Gushing Geysers
+                { 11, 104785 }, -- Breastplate of Shamanic Mirrors
+                { 12, 104798 }, -- Shackles of Stinking Slime
+                { 13, 104786 }, -- Ashen Wall Girdle
+                { 14, 104784 }, -- Wolf-Rider Spurs
+                { 16, 104792 }, -- Ashflare Pendant
+                { 17, 104787 }, -- Bloodclaw Band
+                { 18, 104789 }, -- Ring of the Iron Tomb
+                { 19, 104780 }, -- Haromm's Talisman
+                { 20, 104793 }, -- Kardris' Toxic Totem
+                { 22, 104788 }, -- Haromm's Frozen Crescent
+                { 23, 104794 }, -- Kardris' Scepter
             },
             [NORMAL_DIFF] = {
-                { 1, 112764 },	-- Poisonmist Nightcloak
-                { 2, 112766 },	-- Iron Wolf Hood
-                { 3, 112765 },	-- Toxic Tornado Treads
-                { 4, 112770 },	-- Darkfang Mask
-                { 5, 112760 },	-- Damron's Belt of Darkness
-                { 6, 112761 },	-- Riou's Vigilant Leggings
-                { 7, 112762 },	-- Haromm's Horrifying Helm
-                { 8, 112772 },	-- Shoulderguards of Foul Streams
-                { 9, 112771 },	-- Belt of the Iron Prison
-                { 10, 112774 },	-- Shoulderplates of Gushing Geysers
-                { 11, 112755 },	-- Breastplate of Shamanic Mirrors
-                { 12, 112773 },	-- Shackles of Stinking Slime
-                { 13, 112763 },	-- Ashen Wall Girdle
-                { 14, 112757 },	-- Wolf-Rider Spurs
-                { 16, 112767 },	-- Ashflare Pendant
-                { 17, 112756 },	-- Bloodclaw Band
-                { 18, 112758 },	-- Ring of the Iron Tomb
-                { 19, 112754 },	-- Haromm's Talisman
-                { 20, 112768 },	-- Kardris' Toxic Totem
-                { 22, 112759 },	-- Haromm's Frozen Crescent
-                { 23, 112769 },	-- Kardris' Scepter
+                { 1, 103934 }, -- Poisonmist Nightcloak
+                { 2, 103938 }, -- Iron Wolf Hood
+                { 3, 103806 }, -- Toxic Tornado Treads
+                { 4, 103877 }, -- Darkfang Mask
+                { 5, 103927 }, -- Damron's Belt of Darkness
+                { 6, 103929 }, -- Riou's Vigilant Leggings
+                { 7, 103930 }, -- Haromm's Horrifying Helm
+                { 8, 103816 }, -- Shoulderguards of Foul Streams
+                { 9, 103940 }, -- Belt of the Iron Prison
+                { 10, 103943 }, -- Shoulderplates of Gushing Geysers
+                { 11, 103737 }, -- Breastplate of Shamanic Mirrors
+                { 12, 103866 }, -- Shackles of Stinking Slime
+                { 13, 103932 }, -- Ashen Wall Girdle
+                { 14, 103880 }, -- Wolf-Rider Spurs
+                { 16, 103868 }, -- Ashflare Pendant
+                { 17, 103798 }, -- Bloodclaw Band
+                { 18, 103895 }, -- Ring of the Iron Tomb
+                { 19, 102301 }, -- Haromm's Talisman
+                { 20, 102300 }, -- Kardris' Toxic Totem
+                { 22, 103926 }, -- Haromm's Frozen Crescent
+                { 23, 103936 }, -- Kardris' Scepter
                 { 25, "ac8453" },
+
             },
-            [HEROIC_SOO_DIFF] = NORMAL_DIFF,
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
+            [HEROIC_DIFF] = {
+                { 1, 104530 }, -- Poisonmist Nightcloak
+                { 2, 104542 }, -- Iron Wolf Hood
+                { 3, 104541 }, -- Toxic Tornado Treads
+                { 4, 104546 }, -- Darkfang Mask
+                { 5, 104532 }, -- Damron's Belt of Darkness
+                { 6, 104533 }, -- Riou's Vigilant Leggings
+                { 7, 104534 }, -- Haromm's Horrifying Helm
+                { 8, 104548 }, -- Shoulderguards of Foul Streams
+                { 9, 104547 }, -- Belt of the Iron Prison
+                { 10, 104550 }, -- Shoulderplates of Gushing Geysers
+                { 11, 104536 }, -- Breastplate of Shamanic Mirrors
+                { 12, 104549 }, -- Shackles of Stinking Slime
+                { 13, 104537 }, -- Ashen Wall Girdle
+                { 14, 104535 }, -- Wolf-Rider Spurs
+                { 16, 104543 }, -- Ashflare Pendant
+                { 17, 104538 }, -- Bloodclaw Band
+                { 18, 104540 }, -- Ring of the Iron Tomb
+                { 19, 104531 }, -- Haromm's Talisman
+                { 20, 104544 }, -- Kardris' Toxic Totem
+                { 22, 104539 }, -- Haromm's Frozen Crescent
+                { 23, 104545 }, -- Kardris' Scepter
+                { 25, "ac8453" },
                 { 26, "ac8470" },
             },
         },
         {	--SoONazgrim
             EncounterJournalID = 850,
+            ContentPhaseMoP = 5,
             npcId = 71515,
-            [RF_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99681:0" },	-- Gauntlets of the Cursed Conqueror
-                { 17, "99667:0" },	-- Gauntlets of the Cursed Protector
-                { 18, "99680:0" },	-- Gauntlets of the Cursed Vanquisher
-                { 25, nil },
+            [CELESTIAL_DIFF] = {
+                { 1, 105059 }, -- Spaulders of Kor'kron Fealty
+                { 2, 105050 }, -- Sandals of Two Little Bees
+                { 3, 105053 }, -- Shoulderguards of the Righteous Stand
+                { 4, 105054 }, -- Robes of the Warrior's Fall
+                { 5, 105056 }, -- Crown of Tragic Truth
+                { 6, 105055 }, -- Ravager's Pathwalkers
+                { 8, 105051 }, -- Nazgrim's Burnished Insignia
+                { 16, 99681 }, -- Gauntlets of the Cursed Conqueror
+                { 17, 99667 }, -- Gauntlets of the Cursed Protector
+                { 18, 99680 }, -- Gauntlets of the Cursed Vanquisher
+                { 20, 105052 }, -- Arcweaver Spell Sword
+                { 21, 105057 }, -- Gar'tok, Strength of the Faithful
+                { 22, 105049 }, -- Nazgrim's Gutripper
+                { 23, 105058 }, -- Bulwark of the Fallen General
+            },
+            [FLEX_DIFF] = {
+                { 1, 104810 }, -- Spaulders of Kor'kron Fealty
+                { 2, 104801 }, -- Sandals of Two Little Bees
+                { 3, 104804 }, -- Shoulderguards of the Righteous Stand
+                { 4, 104805 }, -- Robes of the Warrior's Fall
+                { 5, 104807 }, -- Crown of Tragic Truth
+                { 6, 104806 }, -- Ravager's Pathwalkers
+                { 8, 104802 }, -- Nazgrim's Burnished Insignia
+                { 16, 99746 }, -- Gauntlets of the Cursed Conqueror
+                { 17, 99747 }, -- Gauntlets of the Cursed Protector
+                { 18, 99745 }, -- Gauntlets of the Cursed Vanquisher
+                { 20, 104803 }, -- Arcweaver Spell Sword
+                { 21, 104808 }, -- Gar'tok, Strength of the Faithful
+                { 22, 104800 }, -- Nazgrim's Gutripper
+                { 23, 104809 }, -- Bulwark of the Fallen General
             },
             [NORMAL_DIFF] = {
-                { 1, 112790 },	-- Spaulders of Kor'kron Fealty
-                { 2, 112782 },	-- Sandals of Two Little Bees
-                { 3, 112783 },	-- Shoulderguards of the Righteous Stand
-                { 4, 112788 },	-- Robes of the Warrior's Fall
-                { 5, 112789 },	-- Crown of Tragic Truth
-                { 6, 112779 },	-- Ravager's Pathwalkers
-                { 8, 112778 },	-- Nazgrim's Burnished Insignia
-                { 16, 99746 },	-- Gauntlets of the Cursed Conqueror
-                { 17, 99747 },	-- Gauntlets of the Cursed Protector
-                { 18, 99745 },	-- Gauntlets of the Cursed Vanquisher
-                { 20, 112787 },	-- Arcweaver Spell Sword
-                { 21, 112785 },	-- Gar'tok, Strength of the Faithful
-                { 22, 112780 },	-- Nazgrim's Gutripper
-                { 23, 112781 },	-- Bulwark of the Fallen General
+                { 1, 103808 }, -- Spaulders of Kor'kron Fealty
+                { 2, 103904 }, -- Sandals of Two Little Bees
+                { 3, 103913 }, -- Shoulderguards of the Righteous Stand
+                { 4, 103947 }, -- Robes of the Warrior's Fall
+                { 5, 103949 }, -- Crown of Tragic Truth
+                { 6, 103732 }, -- Ravager's Pathwalkers
+                { 8, 102294 }, -- Nazgrim's Burnished Insignia
+                { 16, 99687 }, -- Gauntlets of the Cursed Conqueror
+                { 17, 99692 }, -- Gauntlets of the Cursed Protector
+                { 18, 99682 }, -- Gauntlets of the Cursed Vanquisher
+                { 20, 103946 }, -- Arcweaver Spell Sword
+                { 21, 103945 }, -- Gar'tok, Strength of the Faithful
+                { 22, 103829 }, -- Nazgrim's Gutripper
+                { 23, 103872 }, -- Bulwark of the Fallen General
                 { 25, "ac8448" },
             },
-            [HEROIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99687:0", false },	-- Gauntlets of the Cursed Conqueror
-                { 17, "99692:0", false },	-- Gauntlets of the Cursed Protector
-                { 18, "99682:0", false },	-- Gauntlets of the Cursed Vanquisher
-            },
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99721:0", false },	-- Gauntlets of the Cursed Conqueror
-                { 17, "99722:0", false },	-- Gauntlets of the Cursed Protector
-                { 18, "99720:0", false },	-- Gauntlets of the Cursed Vanquisher
+            [HEROIC_DIFF] = {
+                { 1, 104561 }, -- Spaulders of Kor'kron Fealty
+                { 2, 104552 }, -- Sandals of Two Little Bees
+                { 3, 104555 }, -- Shoulderguards of the Righteous Stand
+                { 4, 104556 }, -- Robes of the Warrior's Fall
+                { 5, 104558 }, -- Crown of Tragic Truth
+                { 6, 104557 }, -- Ravager's Pathwalkers
+                { 8, 104553 }, -- Nazgrim's Burnished Insignia
+                { 16, 99721 }, -- Gauntlets of the Cursed Conqueror
+                { 17, 99722 }, -- Gauntlets of the Cursed Protector
+                { 18, 99720 }, -- Gauntlets of the Cursed Vanquisher
+                { 20, 104554 }, -- Arcweaver Spell Sword
+                { 21, 104559 }, -- Gar'tok, Strength of the Faithful
+                { 22, 104551 }, -- Nazgrim's Gutripper
+                { 23, 104560 }, -- Bulwark of the Fallen General
+                { 25, "ac8448" },
                 { 26, "ac8471" },
             },
         },
         {	--SoOMalkorok
             EncounterJournalID = 846,
+            ContentPhaseMoP = 5,
             npcId = 71454,
-            [RF_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 27, nil },
+            [CELESTIAL_DIFF] = {
+                { 1, 105075 }, -- Black-Blooded Drape
+                { 2, 105072 }, -- Hood of Perpetual Implosion
+                { 3, 105073 }, -- Robes of Riven Dreams
+                { 4, 105071 }, -- Miasmic Skullbelt
+                { 5, 105063 }, -- Lazahk's Lost Shadowrap
+                { 6, 105079 }, -- Bracers of Averted Fatality
+                { 7, 105078 }, -- Boots of Perilous Infusion
+                { 8, 105080 }, -- Ebon Blood Chestguard
+                { 9, 105064 }, -- Wristguards of Ruination
+                { 10, 105081 }, -- Terrorguard Chestplate
+                { 11, 105066 }, -- Blood Rage Bracers
+                { 12, 105067 }, -- Legplates of Willful Doom
+                { 13, 105065 }, -- Malkorok's Giant Stompers
+                { 16, 105068 }, -- Malkorok's Tainted Dog Tags
+                { 17, 105060 }, -- Ring of Restless Energy
+                { 18, 105076 }, -- Seal of Sullen Fury
+                { 19, 105074 }, -- Frenzied Crystal of Rage
+                { 20, 105070 }, -- Vial of Living Corruption
+                { 22, 105062 }, -- Halberd of Inner Shadows
+                { 23, 105061 }, -- Kor'kron Hand Cannon
+                { 24, 105069 }, -- Malkorok's Skullcleaver
+                { 25, 105077 }, -- Visage of the Monstrous
+            },
+            [FLEX_DIFF] = {
+                { 1, 104826 }, -- Black-Blooded Drape
+                { 2, 104823 }, -- Hood of Perpetual Implosion
+                { 3, 104824 }, -- Robes of Riven Dreams
+                { 4, 104822 }, -- Miasmic Skullbelt
+                { 5, 104814 }, -- Lazahk's Lost Shadowrap
+                { 6, 104830 }, -- Bracers of Averted Fatality
+                { 7, 104829 }, -- Boots of Perilous Infusion
+                { 8, 104831 }, -- Ebon Blood Chestguard
+                { 9, 104815 }, -- Wristguards of Ruination
+                { 10, 104832 }, -- Terrorguard Chestplate
+                { 11, 104817 }, -- Blood Rage Bracers
+                { 12, 104818 }, -- Legplates of Willful Doom
+                { 13, 104816 }, -- Malkorok's Giant Stompers
+                { 16, 104819 }, -- Malkorok's Tainted Dog Tags
+                { 17, 104811 }, -- Ring of Restless Energy
+                { 18, 104827 }, -- Seal of Sullen Fury
+                { 19, 104825 }, -- Frenzied Crystal of Rage
+                { 20, 104821 }, -- Vial of Living Corruption
+                { 22, 104813 }, -- Halberd of Inner Shadows
+                { 23, 104812 }, -- Kor'kron Hand Cannon
+                { 24, 104820 }, -- Malkorok's Skullcleaver
+                { 25, 104828 }, -- Visage of the Monstrous
             },
             [NORMAL_DIFF] = {
-                { 1, 112816 },	-- Black-Blooded Drape
-                { 2, 112813 },	-- Hood of Perpetual Implosion
-                { 3, 112814 },	-- Robes of Riven Dreams
-                { 4, 112808 },	-- Miasmic Skullbelt
-                { 5, 112794 },	-- Lazahk's Lost Shadowrap
-                { 6, 112820 },	-- Bracers of Averted Fatality
-                { 7, 112819 },	-- Boots of Perilous Infusion
-                { 8, 112821 },	-- Ebon Blood Chestguard
-                { 9, 112797 },	-- Wristguards of Ruination
-                { 10, 112823 },	-- Terrorguard Chestplate
-                { 11, 112793 },	-- Blood Rage Bracers
-                { 12, 112807 },	-- Legplates of Willful Doom
-                { 13, 112796 },	-- Malkorok's Giant Stompers
-                { 16, 112803 },	-- Malkorok's Tainted Dog Tags
-                { 17, 112795 },	-- Ring of Restless Energy
-                { 18, 112817 },	-- Seal of Sullen Fury
-                { 19, 112815 },	-- Frenzied Crystal of Rage
-                { 20, 112792 },	-- Vial of Living Corruption
-                { 22, 112805 },	-- Halberd of Inner Shadows
-                { 23, 112806 },	-- Kor'kron Hand Cannon
-                { 24, 112804 },	-- Malkorok's Skullcleaver
-                { 25, 112818 },	-- Visage of the Monstrous
+                { 1, 103959 }, -- Black-Blooded Drape
+                { 2, 103939 }, -- Hood of Perpetual Implosion
+                { 3, 103923 }, -- Robes of Riven Dreams
+                { 4, 103899 }, -- Miasmic Skullbelt
+                { 5, 103835 }, -- Lazahk's Lost Shadowrap
+                { 6, 103758 }, -- Bracers of Averted Fatality
+                { 7, 103761 }, -- Boots of Perilous Infusion
+                { 8, 103955 }, -- Ebon Blood Chestguard
+                { 9, 103890 }, -- Wristguards of Ruination
+                { 10, 103957 }, -- Terrorguard Chestplate
+                { 11, 103742 }, -- Blood Rage Bracers
+                { 12, 103954 }, -- Legplates of Willful Doom
+                { 13, 103879 }, -- Malkorok's Giant Stompers
+                { 16, 103917 }, -- Malkorok's Tainted Dog Tags
+                { 17, 103843 }, -- Ring of Restless Energy
+                { 18, 103772 }, -- Seal of Sullen Fury
+                { 19, 102303 }, -- Frenzied Crystal of Rage
+                { 20, 102306 }, -- Vial of Living Corruption
+                { 22, 103952 }, -- Halberd of Inner Shadows
+                { 23, 103953 }, -- Kor'kron Hand Cannon
+                { 24, 103951 }, -- Malkorok's Skullcleaver
+                { 25, 103848 }, -- Visage of the Monstrous
                 { 27, "ac8538" },
             },
-            [HEROIC_SOO_DIFF] = NORMAL_DIFF,
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
+            [HEROIC_DIFF] = {
+                { 1, 104577 }, -- Black-Blooded Drape
+                { 2, 104574 }, -- Hood of Perpetual Implosion
+                { 3, 104575 }, -- Robes of Riven Dreams
+                { 4, 104573 }, -- Miasmic Skullbelt
+                { 5, 104565 }, -- Lazahk's Lost Shadowrap
+                { 6, 104581 }, -- Bracers of Averted Fatality
+                { 7, 104580 }, -- Boots of Perilous Infusion
+                { 8, 104582 }, -- Ebon Blood Chestguard
+                { 9, 104566 }, -- Wristguards of Ruination
+                { 10, 104583 }, -- Terrorguard Chestplate
+                { 11, 104568 }, -- Blood Rage Bracers
+                { 12, 104569 }, -- Legplates of Willful Doom
+                { 13, 104567 }, -- Malkorok's Giant Stompers
+                { 16, 104570 }, -- Malkorok's Tainted Dog Tags
+                { 17, 104562 }, -- Ring of Restless Energy
+                { 18, 104578 }, -- Seal of Sullen Fury
+                { 19, 104576 }, -- Frenzied Crystal of Rage
+                { 20, 104572 }, -- Vial of Living Corruption
+                { 22, 104564 }, -- Halberd of Inner Shadows
+                { 23, 104563 }, -- Kor'kron Hand Cannon
+                { 24, 104571 }, -- Malkorok's Skullcleaver
+                { 25, 104579 }, -- Visage of the Monstrous
+                { 27, "ac8538" },
                 { 28, "ac8472" },
             },
         },
         {	--SoOSpoils
             EncounterJournalID = 870,
+            ContentPhaseMoP = 5,
             npcId = 71889,
-            [RF_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 24, nil },
+                        -- "Spoils",
+            [CELESTIAL_DIFF] = {
+                { 1, 105094 }, -- Mantid Vizier's Robes
+                { 2, 105093 }, -- Avool's Ancestral Bracers
+                { 3, 105085 }, -- Mantid Carapace Augments
+                { 4, 105097 }, -- Klaxxi Grips of Rejuvenation
+                { 5, 105098 }, -- Shado-Pan Reliquary Kilt
+                { 6, 105084 }, -- Pandaren Roofsprinters
+                { 7, 105087 }, -- Ancient Archer's Chestguard
+                { 8, 105100 }, -- Bracers of the Pristine Purifier
+                { 9, 105086 }, -- Arrowflight Girdle
+                { 10, 105099 }, -- Chitin-Link Chain Belt
+                { 11, 105088 }, -- Helm of the Night Watchman
+                { 12, 105101 }, -- Plate Belt of the War-Healer
+                { 13, 105089 }, -- Untarnishable Greatbelt
+                { 14, 105102 }, -- Mogu Mindbender's Greaves
+                { 15, 105090 }, -- Ominous Mogu Greatboots
+                { 16, 105095 }, -- Lost Necklace of the Mogu Empress
+                { 17, 105091 }, -- Seal of the Forgotten Kings
+                { 18, 105082 }, -- Sigil of Rampage
+                { 20, 105083 }, -- Enchanted Shao-Tien Saber
+                { 21, 105096 }, -- Immaculately Preserved Wand
+                { 22, 105092 }, -- Ancient Mogu Tower Shield
+            },
+            [FLEX_DIFF] = {
+                { 1, 104845 }, -- Mantid Vizier's Robes
+                { 2, 104844 }, -- Avool's Ancestral Bracers
+                { 3, 104836 }, -- Mantid Carapace Augments
+                { 4, 104848 }, -- Klaxxi Grips of Rejuvenation
+                { 5, 104849 }, -- Shado-Pan Reliquary Kilt
+                { 6, 104835 }, -- Pandaren Roofsprinters
+                { 7, 104838 }, -- Ancient Archer's Chestguard
+                { 8, 104851 }, -- Bracers of the Pristine Purifier
+                { 9, 104837 }, -- Arrowflight Girdle
+                { 10, 104850 }, -- Chitin-Link Chain Belt
+                { 11, 104839 }, -- Helm of the Night Watchman
+                { 12, 104852 }, -- Plate Belt of the War-Healer
+                { 13, 104840 }, -- Untarnishable Greatbelt
+                { 14, 104853 }, -- Mogu Mindbender's Greaves
+                { 15, 104841 }, -- Ominous Mogu Greatboots
+                { 16, 104846 }, -- Lost Necklace of the Mogu Empress
+                { 17, 104842 }, -- Seal of the Forgotten Kings
+                { 18, 104833 }, -- Sigil of Rampage
+                { 20, 104834 }, -- Enchanted Shao-Tien Saber
+                { 21, 104847 }, -- Immaculately Preserved Wand
+                { 22, 104843 }, -- Ancient Mogu Tower Shield
             },
             [NORMAL_DIFF] = {
-                { 1, 112838 },	-- Mantid Vizier's Robes
-                { 2, 112837 },	-- Avool's Ancestral Bracers
-                { 3, 112833 },	-- Mantid Carapace Augments
-                { 4, 112842 },	-- Klaxxi Grips of Rejuvenation
-                { 5, 112843 },	-- Shado-Pan Reliquary Kilt
-                { 6, 112827 },	-- Pandaren Roofsprinters
-                { 7, 112836 },	-- Ancient Archer's Chestguard
-                { 8, 112845 },	-- Bracers of the Pristine Purifier
-                { 9, 112831 },	-- Arrowflight Girdle
-                { 10, 112844 },	-- Chitin-Link Chain Belt
-                { 11, 112832 },	-- Helm of the Night Watchman
-                { 12, 112846 },	-- Plate Belt of the War-Healer
-                { 13, 112834 },	-- Untarnishable Greatbelt
-                { 14, 112847 },	-- Mogu Mindbender's Greaves
-                { 15, 112826 },	-- Ominous Mogu Greatboots
-                { 16, 112839 },	-- Lost Necklace of the Mogu Empress
-                { 17, 112828 },	-- Seal of the Forgotten Kings
-                { 18, 112825 },	-- Sigil of Rampage
-                { 20, 112835 },	-- Enchanted Shao-Tien Saber
-                { 21, 112841 },	-- Immaculately Preserved Wand
-                { 22, 112829 },	-- Ancient Mogu Tower Shield
+                { 1, 103803 }, -- Mantid Vizier's Robes
+                { 2, 103851 }, -- Avool's Ancestral Bracers
+                { 3, 103911 }, -- Mantid Carapace Augments
+                { 4, 103860 }, -- Klaxxi Grips of Rejuvenation
+                { 5, 103967 }, -- Shado-Pan Reliquary Kilt
+                { 6, 103779 }, -- Pandaren Roofsprinters
+                { 7, 103962 }, -- Ancient Archer's Chestguard
+                { 8, 103862 }, -- Bracers of the Pristine Purifier
+                { 9, 103888 }, -- Arrowflight Girdle
+                { 10, 103941 }, -- Chitin-Link Chain Belt
+                { 11, 103893 }, -- Helm of the Night Watchman
+                { 12, 103965 }, -- Plate Belt of the War-Healer
+                { 13, 103933 }, -- Untarnishable Greatbelt
+                { 14, 103768 }, -- Mogu Mindbender's Greaves
+                { 15, 103745 }, -- Ominous Mogu Greatboots
+                { 16, 103882 }, -- Lost Necklace of the Mogu Empress
+                { 17, 103796 }, -- Seal of the Forgotten Kings
+                { 18, 102302 }, -- Sigil of Rampage
+                { 20, 103961 }, -- Enchanted Shao-Tien Saber
+                { 21, 103964 }, -- Immaculately Preserved Wand
+                { 22, 103871 }, -- Ancient Mogu Tower Shield
                 { 24, "ac8529" },
+
             },
-            [HEROIC_SOO_DIFF] = NORMAL_DIFF,
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
+            [HEROIC_DIFF] = {
+                { 1, 104596 }, -- Mantid Vizier's Robes
+                { 2, 104595 }, -- Avool's Ancestral Bracers
+                { 3, 104587 }, -- Mantid Carapace Augments
+                { 4, 104599 }, -- Klaxxi Grips of Rejuvenation
+                { 5, 104600 }, -- Shado-Pan Reliquary Kilt
+                { 6, 104586 }, -- Pandaren Roofsprinters
+                { 7, 104589 }, -- Ancient Archer's Chestguard
+                { 8, 104602 }, -- Bracers of the Pristine Purifier
+                { 9, 104588 }, -- Arrowflight Girdle
+                { 10, 104601 }, -- Chitin-Link Chain Belt
+                { 11, 104590 }, -- Helm of the Night Watchman
+                { 12, 104603 }, -- Plate Belt of the War-Healer
+                { 13, 104591 }, -- Untarnishable Greatbelt
+                { 14, 104604 }, -- Mogu Mindbender's Greaves
+                { 15, 104592 }, -- Ominous Mogu Greatboots
+                { 16, 104597 }, -- Lost Necklace of the Mogu Empress
+                { 17, 104593 }, -- Seal of the Forgotten Kings
+                { 18, 104584 }, -- Sigil of Rampage
+                { 20, 104585 }, -- Enchanted Shao-Tien Saber
+                { 21, 104598 }, -- Immaculately Preserved Wand
+                { 22, 104594 }, -- Ancient Mogu Tower Shield
+                { 24, "ac8529" },
                 { 25, "ac8478" },
+
             },
         },
         {	--SoOThok
             EncounterJournalID = 851,
+            ContentPhaseMoP = 5,
             npcId = 71529,
-            [RF_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99672:0" },	-- Helm of the Cursed Conqueror
-                { 17, "99673:0" },	-- Helm of the Cursed Protector
-                { 18, "99671:0" },	-- Helm of the Cursed Vanquisher
-                { 24, nil },
+            [CELESTIAL_DIFF] = {
+                { 1, 105106 }, -- Akolik's Acid-Soaked Robes
+                { 2, 105105 }, -- Montak's Grips of Scorching Breath
+                { 3, 105110 }, -- Icy Blood Chestplate
+                { 5, 105104 }, -- Gleaming Eye of the Devilsaur
+                { 6, 105113 }, -- Devilfang Band
+                { 7, 105108 }, -- Signet of the Dinomancers
+                { 8, 105109 }, -- Thok's Acid-Grooved Tooth
+                { 9, 105111 }, -- Thok's Tail Tip
+                { 16, 99672 }, -- Helm of the Cursed Conqueror
+                { 17, 99673 }, -- Helm of the Cursed Protector
+                { 18, 99671 }, -- Helm of the Cursed Vanquisher
+                { 20, 105112 }, -- Britomart's Jagged Pike
+                { 21, 105103 }, -- Hvitserk's Formidable Shanker
+                { 22, 105107 }, -- Festering Primordial Globule
+            },
+            [FLEX_DIFF] = {
+                { 1, 104857 }, -- Akolik's Acid-Soaked Robes
+                { 2, 104856 }, -- Montak's Grips of Scorching Breath
+                { 3, 104861 }, -- Icy Blood Chestplate
+                { 5, 104855 }, -- Gleaming Eye of the Devilsaur
+                { 6, 104864 }, -- Devilfang Band
+                { 7, 104859 }, -- Signet of the Dinomancers
+                { 8, 104860 }, -- Thok's Acid-Grooved Tooth
+                { 9, 104862 }, -- Thok's Tail Tip
+                { 16, 99749 }, -- Helm of the Cursed Conqueror
+                { 17, 99750 }, -- Helm of the Cursed Protector
+                { 18, 99748 }, -- Helm of the Cursed Vanquisher
+                { 20, 104863 }, -- Britomart's Jagged Pike
+                { 21, 104854 }, -- Hvitserk's Formidable Shanker
+                { 22, 104858 }, -- Festering Primordial Globule
             },
             [NORMAL_DIFF] = {
-                { 1, 112866 },	-- Akolik's Acid-Soaked Robes
-                { 2, 112854 },	-- Montak's Grips of Scorching Breath
-                { 3, 112856 },	-- Icy Blood Chestplate
-                { 5, 112851 },	-- Gleaming Eye of the Devilsaur
-                { 6, 112855 },	-- Devilfang Band
-                { 7, 112852 },	-- Signet of the Dinomancers
-                { 8, 112849 },	-- Thok's Acid-Grooved Tooth
-                { 9, 112850 },	-- Thok's Tail Tip
-                { 16, 99749 },	-- Helm of the Cursed Conqueror
-                { 17, 99750 },	-- Helm of the Cursed Protector
-                { 18, 99748 },	-- Helm of the Cursed Vanquisher
-                { 20, 112862 },	-- Britomart's Jagged Pike
-                { 21, 112853 },	-- Hvitserk's Formidable Shanker
-                { 22, 112861 },	-- Festering Primordial Globule
+                { 1, 104308 }, -- Akolik's Acid-Soaked Robes
+                { 2, 103853 }, -- Montak's Grips of Scorching Breath
+                { 3, 103915 }, -- Icy Blood Chestplate
+                { 5, 103750 }, -- Gleaming Eye of the Devilsaur
+                { 6, 103896 }, -- Devilfang Band
+                { 7, 103774 }, -- Signet of the Dinomancers
+                { 8, 102304 }, -- Thok's Acid-Grooved Tooth
+                { 9, 102305 }, -- Thok's Tail Tip
+                { 16, 99689 }, -- Helm of the Cursed Conqueror
+                { 17, 99694 }, -- Helm of the Cursed Protector
+                { 18, 99683 }, -- Helm of the Cursed Vanquisher
+                { 20, 103968 }, -- Britomart's Jagged Pike
+                { 21, 103828 }, -- Hvitserk's Formidable Shanker
+                { 22, 103919 }, -- Festering Primordial Globule
                 { 24, "ac8527" },
             },
-            [HEROIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99689:0", false },	-- Helm of the Cursed Conqueror
-                { 17, "99694:0", false },	-- Helm of the Cursed Protector
-                { 18, "99683:0", false },	-- Helm of the Cursed Vanquisher
-            },
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99724:0", false },	-- Helm of the Cursed Conqueror
-                { 17, "99725:0", false },	-- Helm of the Cursed Protector
-                { 18, "99723:0", false },	-- Helm of the Cursed Vanquisher
+            [HEROIC_DIFF] = {
+                { 1, 104608 }, -- Akolik's Acid-Soaked Robes
+                { 2, 104607 }, -- Montak's Grips of Scorching Breath
+                { 3, 104612 }, -- Icy Blood Chestplate
+                { 5, 104606 }, -- Gleaming Eye of the Devilsaur
+                { 6, 104615 }, -- Devilfang Band
+                { 7, 104610 }, -- Signet of the Dinomancers
+                { 8, 104611 }, -- Thok's Acid-Grooved Tooth
+                { 9, 104613 }, -- Thok's Tail Tip
+                { 16, 99724 }, -- Helm of the Cursed Conqueror
+                { 17, 99725 }, -- Helm of the Cursed Protector
+                { 18, 99723 }, -- Helm of the Cursed Vanquisher
+                { 20, 104614 }, -- Britomart's Jagged Pike
+                { 21, 104605 }, -- Hvitserk's Formidable Shanker
+                { 22, 104609 }, -- Festering Primordial Globule
+                { 24, "ac8527" },
                 { 25, "ac8479" },
+
             },
         },
         {	--SoOBlackfuse
             EncounterJournalID = 865,
+            ContentPhaseMoP = 5,
             npcId = 71504,
-            [RF_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99669:0" },	-- Shoulders of the Cursed Conqueror
-                { 17, "99670:0" },	-- Shoulders of the Cursed Protector
-                { 18, "99668:0" },	-- Shoulders of the Cursed Vanquisher
-                { 25, nil },
+            [CELESTIAL_DIFF] = {
+                { 1, 105115 }, -- Fusespark Gloves
+                { 2, 105118 }, -- Bomber's Blackened Wristwatch
+                { 3, 105119 }, -- Bracers of Infinite Pipes
+                { 4, 105120 }, -- Powder-Stained Totemic Treads
+                { 5, 105121 }, -- Calixian Bladebreakers
+                { 7, 105124 }, -- Blackfuse's Blasting Cord
+                { 8, 105122 }, -- Asgorathian Blood Seal
+                { 9, 105117 }, -- Dysmorphic Samophlange of Discontinuity
+                { 10, 105114 }, -- Ticking Ebon Detonator
+                { 16, 99669 }, -- Shoulders of the Cursed Conqueror
+                { 17, 99670 }, -- Shoulders of the Cursed Protector
+                { 18, 99668 }, -- Shoulders of the Cursed Vanquisher
+                { 20, 105116 }, -- Lever of the Megantholithic Apparatus
+                { 21, 105123 }, -- Siegecrafter's Forge Hammer
+                { 23, 104158 }, -- Blackfuse Bombling
+            },
+            [FLEX_DIFF] = {
+                { 1, 104866 }, -- Fusespark Gloves
+                { 2, 104869 }, -- Bomber's Blackened Wristwatch
+                { 3, 104870 }, -- Bracers of Infinite Pipes
+                { 4, 104871 }, -- Powder-Stained Totemic Treads
+                { 5, 104872 }, -- Calixian Bladebreakers
+                { 7, 104875 }, -- Blackfuse's Blasting Cord
+                { 8, 104873 }, -- Asgorathian Blood Seal
+                { 9, 104868 }, -- Dysmorphic Samophlange of Discontinuity
+                { 10, 104865 }, -- Ticking Ebon Detonator
+                { 16, 99755 }, -- Shoulders of the Cursed Conqueror
+                { 17, 99756 }, -- Shoulders of the Cursed Protector
+                { 18, 99754 }, -- Shoulders of the Cursed Vanquisher
+                { 20, 104867 }, -- Lever of the Megantholithic Apparatus
+                { 21, 104874 }, -- Siegecrafter's Forge Hammer
+                { 23, 104158 }, -- Blackfuse Bombling
             },
             [NORMAL_DIFF] = {
-                { 1, 112898 },	-- Fusespark Gloves
-                { 2, 112896 },	-- Bomber's Blackened Wristwatch
-                { 3, 112895 },	-- Bracers of Infinite Pipes
-                { 4, 112890 },	-- Powder-Stained Totemic Treads
-                { 5, 112882 },	-- Calixian Bladebreakers
-                { 7, 112894 },	-- Blackfuse's Blasting Cord
-                { 8, 112883 },	-- Asgorathian Blood Seal
-                { 9, 112877 },	-- Dysmorphic Samophlange of Discontinuity
-                { 10, 112879 },	-- Ticking Ebon Detonator
-                { 16, 99755 },	-- Shoulders of the Cursed Conqueror
-                { 17, 99756 },	-- Shoulders of the Cursed Protector
-                { 18, 99754 },	-- Shoulders of the Cursed Vanquisher
-                { 20, 112892 },	-- Lever of the Megantholithic Apparatus
-                { 21, 112897 },	-- Siegecrafter's Forge Hammer
-                { 23, "104158:0", "pet1322" },	-- Blackfuse Bombling
+                { 1, 103970 }, -- Fusespark Gloves
+                { 2, 103910 }, -- Bomber's Blackened Wristwatch
+                { 3, 103891 }, -- Bracers of Infinite Pipes
+                { 4, 103814 }, -- Powder-Stained Totemic Treads
+                { 5, 103792 }, -- Calixian Bladebreakers
+                { 7, 103884 }, -- Blackfuse's Blasting Cord
+                { 8, 103794 }, -- Asgorathian Blood Seal
+                { 9, 102309 }, -- Dysmorphic Samophlange of Discontinuity
+                { 10, 102311 }, -- Ticking Ebon Detonator
+                { 16, 99690 }, -- Shoulders of the Cursed Conqueror
+                { 17, 99695 }, -- Shoulders of the Cursed Protector
+                { 18, 99685 }, -- Shoulders of the Cursed Vanquisher
+                { 20, 103874 }, -- Lever of the Megantholithic Apparatus
+                { 21, 103969 }, -- Siegecrafter's Forge Hammer
+                { 23, 104158 }, -- Blackfuse Bombling
                 { 25, "ac8543" },
             },
-            [HEROIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99690:0", false },	-- Shoulders of the Cursed Conqueror
-                { 17, "99695:0", false },	-- Shoulders of the Cursed Protector
-                { 18, "99685:0", false },	-- Shoulders of the Cursed Vanquisher
-            },
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99718:0", false },	-- Shoulders of the Cursed Conqueror
-                { 17, "99719:0", false },	-- Shoulders of the Cursed Protector
-                { 18, "99717:0", false },	-- Shoulders of the Cursed Vanquisher
+            [HEROIC_DIFF] = {
+                { 1, 104617 }, -- Fusespark Gloves
+                { 2, 104620 }, -- Bomber's Blackened Wristwatch
+                { 3, 104621 }, -- Bracers of Infinite Pipes
+                { 4, 104622 }, -- Powder-Stained Totemic Treads
+                { 5, 104623 }, -- Calixian Bladebreakers
+                { 7, 104626 }, -- Blackfuse's Blasting Cord
+                { 8, 104624 }, -- Asgorathian Blood Seal
+                { 9, 104619 }, -- Dysmorphic Samophlange of Discontinuity
+                { 10, 104616 }, -- Ticking Ebon Detonator
+                { 16, 99718 }, -- Shoulders of the Cursed Conqueror
+                { 17, 99719 }, -- Shoulders of the Cursed Protector
+                { 18, 99717 }, -- Shoulders of the Cursed Vanquisher
+                { 20, 104618 }, -- Lever of the Megantholithic Apparatus
+                { 21, 104625 }, -- Siegecrafter's Forge Hammer
+                { 23, 104158 }, -- Blackfuse Bombling
+                { 25, "ac8543" },
                 { 26, "ac8480" },
             },
         },
         {	--SoOParagons
             EncounterJournalID = 853,
+            ContentPhaseMoP = 5,
             npcId = 71161,
-            [RF_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99675:0" },	-- Leggings of the Cursed Conqueror
-                { 17, "99676:0" },	-- Leggings of the Cursed Protector
-                { 18, "99674:0" },	-- Leggings of the Cursed Vanquisher
-                { 27, nil },
+            [CELESTIAL_DIFF] = {
+                { 1, 105128 }, -- Bracers of Sonic Projection
+                { 2, 105131 }, -- Amber Parasite Wraps
+                { 3, 105132 }, -- Chestguard of Toxic Injections
+                { 4, 105133 }, -- Gauntlets of Insane Calculations
+                { 6, 105130 }, -- Iyyokuk's Hereditary Seal
+                { 7, 105126 }, -- Kil'ruk's Band of Ascendancy
+                { 8, 105134 }, -- Skeer's Bloodsoaked Talisman
+                { 16, 99675 }, -- Leggings of the Cursed Conqueror
+                { 17, 99676 }, -- Leggings of the Cursed Protector
+                { 18, 99674 }, -- Leggings of the Cursed Vanquisher
+                { 20, 105125 }, -- Hisek's Reserve Longbow
+                { 21, 105135 }, -- Kil'ruk's Furious Blade
+                { 22, 105127 }, -- Korven's Crimson Crescent
+                { 23, 105129 }, -- Rik'kal's Bloody Scalpel
+                { 25, 104165 }, -- Kovok
+            },
+            [FLEX_DIFF] = {
+                { 1, 104879 }, -- Bracers of Sonic Projection
+                { 2, 104882 }, -- Amber Parasite Wraps
+                { 3, 104883 }, -- Chestguard of Toxic Injections
+                { 4, 104884 }, -- Gauntlets of Insane Calculations
+                { 6, 104881 }, -- Iyyokuk's Hereditary Seal
+                { 7, 104877 }, -- Kil'ruk's Band of Ascendancy
+                { 8, 104885 }, -- Skeer's Bloodsoaked Talisman
+                { 16, 99752 }, -- Leggings of the Cursed Conqueror
+                { 17, 99753 }, -- Leggings of the Cursed Protector
+                { 18, 99751 }, -- Leggings of the Cursed Vanquisher
+                { 20, 104876 }, -- Hisek's Reserve Longbow
+                { 21, 104886 }, -- Kil'ruk's Furious Blade
+                { 22, 104878 }, -- Korven's Crimson Crescent
+                { 23, 104880 }, -- Rik'kal's Bloody Scalpel
+                { 25, 104165 }, -- Kovok
             },
             [NORMAL_DIFF] = {
-                { 1, 112914 },	-- Bracers of Sonic Projection
-                { 2, 112923 },	-- Amber Parasite Wraps
-                { 3, 112919 },	-- Chestguard of Toxic Injections
-                { 4, 112915 },	-- Gauntlets of Insane Calculations
-                { 6, 112916 },	-- Iyyokuk's Hereditary Seal
-                { 7, 112917 },	-- Kil'ruk's Band of Ascendancy
-                { 8, 112913 },	-- Skeer's Bloodsoaked Talisman
-                { 16, 99752 },	-- Leggings of the Cursed Conqueror
-                { 17, 99753 },	-- Leggings of the Cursed Protector
-                { 18, 99751 },	-- Leggings of the Cursed Vanquisher
-                { 20, 112918 },	-- Hisek's Reserve Longbow
-                { 21, 112921 },	-- Kil'ruk's Furious Blade
-                { 22, 112920 },	-- Korven's Crimson Crescent
-                { 23, 112922 },	-- Rik'kal's Bloody Scalpel
-                { 25, "104165:0", "pet1334" },	-- Kovok
+                { 1, 103810 }, -- Bracers of Sonic Projection
+                { 2, 103948 }, -- Amber Parasite Wraps
+                { 3, 103956 }, -- Chestguard of Toxic Injections
+                { 4, 103819 }, -- Gauntlets of Insane Calculations
+                { 6, 103824 }, -- Iyyokuk's Hereditary Seal
+                { 7, 103844 }, -- Kil'ruk's Band of Ascendancy
+                { 8, 102308 }, -- Skeer's Bloodsoaked Talisman
+                { 16, 99688 }, -- Leggings of the Cursed Conqueror
+                { 17, 99693 }, -- Leggings of the Cursed Protector
+                { 18, 99684 }, -- Leggings of the Cursed Vanquisher
+                { 20, 103886 }, -- Hisek's Reserve Longbow
+                { 21, 103972 }, -- Kil'ruk's Furious Blade
+                { 22, 103971 }, -- Korven's Crimson Crescent
+                { 23, 103973 }, -- Rik'kal's Bloody Scalpel
+                { 25, 104165 }, -- Kovok
                 { 27, "ac8531" },
+
             },
-            [HEROIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99688:0", false },	-- Leggings of the Cursed Conqueror
-                { 17, "99693:0", false },	-- Leggings of the Cursed Protector
-                { 18, "99684:0", false },	-- Leggings of the Cursed Vanquisher
-            },
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, "99712:0", false },	-- Leggings of the Cursed Conqueror
-                { 17, "99713:0", false },	-- Leggings of the Cursed Protector
-                { 18, "99726:0", false },	-- Leggings of the Cursed Vanquisher
+            [HEROIC_DIFF] = {
+                { 1, 104630 }, -- Bracers of Sonic Projection
+                { 2, 104633 }, -- Amber Parasite Wraps
+                { 3, 104634 }, -- Chestguard of Toxic Injections
+                { 4, 104635 }, -- Gauntlets of Insane Calculations
+                { 6, 104632 }, -- Iyyokuk's Hereditary Seal
+                { 7, 104628 }, -- Kil'ruk's Band of Ascendancy
+                { 8, 104636 }, -- Skeer's Bloodsoaked Talisman
+                { 16, 99712 }, -- Leggings of the Cursed Conqueror
+                { 17, 99713 }, -- Leggings of the Cursed Protector
+                { 18, 99726 }, -- Leggings of the Cursed Vanquisher
+                { 20, 104627 }, -- Hisek's Reserve Longbow
+                { 21, 104637 }, -- Kil'ruk's Furious Blade
+                { 22, 104629 }, -- Korven's Crimson Crescent
+                { 23, 104631 }, -- Rik'kal's Bloody Scalpel
+                { 25, 104165 }, -- Kovok
+                { 27, "ac8531" },
                 { 28, "ac8481" },
             },
         },
         {	--SoOGarrosh
             EncounterJournalID = 869,
+            ContentPhaseMoP = 5,
             npcId = 71865,
-            [RF_SOO_DIFF] = {
-                { 1, 112937 },	-- Ebon Ritual Hood
-                { 2, 112936 },	-- Belt of the Broken Pact
-                { 3, 112926 },	-- Kor'kron Elite Skullmask
-                { 4, 112942 },	-- Hopeglow Spaulders
-                { 5, 112929 },	-- Cord of Black Dreams
-                { 6, 112941 },	-- Seal of Karmic Return
-                { 7, 112943 },	-- Cowl of Smoking Dreams
-                { 8, 112930 },	-- Penetrating Gaze of Y'Shaarj
-                { 9, 112927 },	-- Shoulderguards of Intended Power
-                { 10, 112931 },	-- Chestguard of Relentless Tyranny
-                { 11, 112928 },	-- Greathelm of the Warchief
-                { 12, 112945 },	-- Mantle of Looming Darkness
-                { 13, 112934 },	-- Spaulders of the Fallen Warchief
-                { 14, 112944 },	-- Chestplate of Fallen Passion
-                { 15, 112933 },	-- Legplates of Unthinking Strife
-                { 16, "105861:0" },	-- Essence of the Cursed Conqueror
-                { 17, "105860:0" },	-- Essence of the Cursed Protector
-                { 18, "105862:0" },	-- Essence of the Cursed Vanquisher
-                { 20, 112938 },	-- Black Blood of Y'Shaarj
-                { 21, 112924 },	-- Curse of Hubris
-                { 23, 112939 },	-- Horned Mace of the Old Ones
-                { 24, 112932 },	-- Kor'kron Spire of Supremacy
-                { 25, 112925 },	-- Xal'atoh, Desecrated Image of Gorehowl
-                { 26, 112940 },	-- Revelations of Y'Shaarj
+            [CELESTIAL_DIFF] = {
+                { 1, 105149 }, -- Ebon Ritual Hood
+                { 2, 105148 }, -- Belt of the Broken Pact
+                { 3, 105138 }, -- Kor'kron Elite Skullmask
+                { 4, 105154 }, -- Hopeglow Spaulders
+                { 5, 105137 }, -- Cord of Black Dreams
+                { 6, 105153 }, -- Seal of Karmic Return
+                { 7, 105155 }, -- Cowl of Smoking Dreams
+                { 8, 105140 }, -- Penetrating Gaze of Y'Shaarj
+                { 9, 105141 }, -- Shoulderguards of Intended Power
+                { 10, 105139 }, -- Chestguard of Relentless Tyranny
+                { 11, 105145 }, -- Greathelm of the Warchief
+                { 12, 105157 }, -- Mantle of Looming Darkness
+                { 13, 105143 }, -- Spaulders of the Fallen Warchief
+                { 14, 105156 }, -- Chestplate of Fallen Passion
+                { 15, 105142 }, -- Legplates of Unthinking Strife
+                { 16, 105861 }, -- Essence of the Cursed Conqueror
+                { 17, 105860 }, -- Essence of the Cursed Protector
+                { 18, 105862 }, -- Essence of the Cursed Vanquisher
+                { 20, 105150 }, -- Black Blood of Y'Shaarj
+                { 21, 105147 }, -- Curse of Hubris
+                { 23, 105151 }, -- Horned Mace of the Old Ones
+                { 24, 105136 }, -- Kor'kron Spire of Supremacy
+                { 25, 105146 }, -- Xal'atoh, Desecrated Image of Gorehowl
+                { 26, 105152 }, -- Revelations of Y'Shaarj
+            },
+            [FLEX_DIFF] = {
+                { 1, 104900 }, -- Ebon Ritual Hood
+                { 2, 104899 }, -- Belt of the Broken Pact
+                { 3, 104889 }, -- Kor'kron Elite Skullmask
+                { 4, 104905 }, -- Hopeglow Spaulders
+                { 5, 104888 }, -- Cord of Black Dreams
+                { 6, 104904 }, -- Seal of Karmic Return
+                { 7, 104906 }, -- Cowl of Smoking Dreams
+                { 8, 104891 }, -- Penetrating Gaze of Y'Shaarj
+                { 9, 104892 }, -- Shoulderguards of Intended Power
+                { 10, 104890 }, -- Chestguard of Relentless Tyranny
+                { 11, 104896 }, -- Greathelm of the Warchief
+                { 12, 104908 }, -- Mantle of Looming Darkness
+                { 13, 104894 }, -- Spaulders of the Fallen Warchief
+                { 14, 104907 }, -- Chestplate of Fallen Passion
+                { 15, 104893 }, -- Legplates of Unthinking Strife
+                { 16, 105864 }, -- Essence of the Cursed Conqueror
+                { 17, 105863 }, -- Essence of the Cursed Protector
+                { 18, 105865 }, -- Essence of the Cursed Vanquisher
+                { 20, 104901 }, -- Black Blood of Y'Shaarj
+                { 21, 104898 }, -- Curse of Hubris
+                { 23, 104902 }, -- Horned Mace of the Old Ones
+                { 24, 104887 }, -- Kor'kron Spire of Supremacy
+                { 25, 104897 }, -- Xal'atoh, Desecrated Image of Gorehowl
+                { 26, 104903 }, -- Revelations of Y'Shaarj
+                { 28, 105676, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Hellscream's Tome of Destruction
+                { 30, "ac8537" },
             },
             [NORMAL_DIFF] = {
-                { 1, 112937 },	-- Ebon Ritual Hood
-                { 2, 112936 },	-- Belt of the Broken Pact
-                { 3, 112926 },	-- Kor'kron Elite Skullmask
-                { 4, 112942 },	-- Hopeglow Spaulders
-                { 5, 112929 },	-- Cord of Black Dreams
-                { 6, 112941 },	-- Seal of Karmic Return
-                { 7, 112943 },	-- Cowl of Smoking Dreams
-                { 8, 112930 },	-- Penetrating Gaze of Y'Shaarj
-                { 9, 112927 },	-- Shoulderguards of Intended Power
-                { 10, 112931 },	-- Chestguard of Relentless Tyranny
-                { 11, 112928 },	-- Greathelm of the Warchief
-                { 12, 112945 },	-- Mantle of Looming Darkness
-                { 13, 112934 },	-- Spaulders of the Fallen Warchief
-                { 14, 112944 },	-- Chestplate of Fallen Passion
-                { 15, 112933 },	-- Legplates of Unthinking Strife
-                { 16, 105864 },	-- Essence of the Cursed Conqueror
-                { 17, 105863 },	-- Essence of the Cursed Protector
-                { 18, 105865 },	-- Essence of the Cursed Vanquisher
-                { 20, 112938 },	-- Black Blood of Y'Shaarj
-                { 21, 112924 },	-- Curse of Hubris
-                { 23, 112939 },	-- Horned Mace of the Old Ones
-                { 24, 112932 },	-- Kor'kron Spire of Supremacy
-                { 25, 112925 },	-- Xal'atoh, Desecrated Image of Gorehowl
-                { 26, 112940 },	-- Revelations of Y'Shaarj
-                { 101, 105672 },	-- Hellscream's Cleaver
-                { 102, 105679 },	-- Hellscream's Decapitator
-                { 103, 105678 },	-- Hellscream's Doomblade
-                { 104, 105673 },	-- Hellscream's Pig Sticker
-                { 105, 105671 },	-- Hellscream's Razor
-                { 106, 105677 },	-- Hellscream's War Staff
-                { 107, 105670 },	-- Hellscream's Warbow
-                { 108, 105675 },	-- Hellscream's Warmace
-                { 109, 105674 },	-- Hellscream's Barrier
-                { 110, 105680 },	-- Hellscream's Shield Wall
-                { 111, 105676, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Hellscream's Tome of Destruction
-                { 116, "ac8537" },
+                { 1, 103901 }, -- Ebon Ritual Hood
+                { 2, 103856 }, -- Belt of the Broken Pact
+                { 3, 103729 }, -- Kor'kron Elite Skullmask
+                { 4, 103925 }, -- Hopeglow Spaulders
+                { 5, 103928 }, -- Cord of Black Dreams
+                { 6, 103906 }, -- Seal of Karmic Return
+                { 7, 103950 }, -- Cowl of Smoking Dreams
+                { 8, 103931 }, -- Penetrating Gaze of Y'Shaarj
+                { 9, 103837 }, -- Shoulderguards of Intended Power
+                { 10, 103963 }, -- Chestguard of Relentless Tyranny
+                { 11, 103840 }, -- Greathelm of the Warchief
+                { 12, 103944 }, -- Mantle of Looming Darkness
+                { 13, 103784 }, -- Spaulders of the Fallen Warchief
+                { 14, 103785 }, -- Tusks of Mannoroth
+                { 15, 103958 }, -- Chestplate of Fallen Passion
+                { 16, 104311 }, -- Legplates of Unthinking Strife
+                { 18, 105858 }, -- Essence of the Cursed Conqueror
+                { 19, 105857 }, -- Essence of the Cursed Protector
+                { 20, 105859 }, -- Essence of the Cursed Vanquisher
+                { 22, 102310 }, -- Black Blood of Y'Shaarj
+                { 23, 102307 }, -- Curse of Hubris
+                { 25, 103937 }, -- Horned Mace of the Old Ones
+                { 26, 103974 }, -- Kor'kron Spire of Supremacy
+                { 27, 103649 }, -- Xal'atoh, Desecrated Image of Gorehowl
+                { 28, 103920 }, -- Revelations of Y'Shaarj
+                { 101, 104404 }, -- Hellscream's Cleaver
+                { 102, 104405 }, -- Hellscream's Decapitator
+                { 103, 104401 }, -- Hellscream's Doomblade
+                { 104, 104403 }, -- Hellscream's Pig Sticker
+                { 105, 104400 }, -- Hellscream's Razor
+                { 106, 104406 }, -- Hellscream's War Staff
+                { 107, 104399 }, -- Hellscream's Warbow
+                { 108, 104402 }, -- Hellscream's Warmace
+                { 109, 104409 }, -- Hellscream's Barrier
+                { 110, 104407 }, -- Hellscream's Shield Wall
+                { 111, 104408, [ATLASLOOT_IT_FILTERIGNORE] = true }, -- Hellscream's Tome of Destruction
+                { 116, [ATLASLOOT_IT_ALLIANCE] = "ac8679", [ATLASLOOT_IT_HORDE] = "ac8680" },
             },
-            [HEROIC_SOO_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 14, 112935 },	-- Tusks of Mannoroth
-                { 15, 112944 },	-- Chestplate of Fallen Passion
-                { 16, 112933 },	-- Legplates of Unthinking Strife
-                { 17, nil },
-                { 18, "105858:0", false },	-- Essence of the Cursed Conqueror
-                { 19, "105857:0", false },	-- Essence of the Cursed Protector
-                { 20, "105859:0", false },	-- Essence of the Cursed Vanquisher
-                { 21, nil },
-                { 22, 112938 },	-- Black Blood of Y'Shaarj
-                { 23, 112924 },	-- Curse of Hubris
-                { 24, nil },
-                { 25, 112939 },	-- Horned Mace of the Old Ones
-                { 26, 112932 },	-- Kor'kron Spire of Supremacy
-                { 27, 112925 },	-- Xal'atoh, Desecrated Image of Gorehowl
-                { 28, 112940 },	-- Revelations of Y'Shaarj
-                { 101, "104404:0", false },	-- Hellscream's Cleaver
-                { 102, "104405:0", false },	-- Hellscream's Decapitator
-                { 103, "104401:0", false },	-- Hellscream's Doomblade
-                { 104, "104403:0", false },	-- Hellscream's Pig Sticker
-                { 105, "104400:0", false },	-- Hellscream's Razor
-                { 106, "104406:0", false },	-- Hellscream's War Staff
-                { 107, "104399:0", false },	-- Hellscream's Warbow
-                { 108, "104402:0", false },	-- Hellscream's Warmace
-                { 109, "104409:0", false },	-- Hellscream's Barrier
-                { 110, "104407:0", false },	-- Hellscream's Shield Wall
-                { 111, "104408:0", false, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Hellscream's Tome of Destruction
-                { 117, [ATLASLOOT_IT_ALLIANCE] = "ac8679", [ATLASLOOT_IT_HORDE] = "ac8680" },
-            },
-            [MYTHIC_SOO_DIFF] = {
-                GetItemsFromDiff = HEROIC_SOO_DIFF,
-                { 18, "105867:0", false },	-- Essence of the Cursed Conqueror
-                { 19, "105866:0", false },	-- Essence of the Cursed Protector
-                { 20, "105868:0", false },	-- Essence of the Cursed Vanquisher
-                { 30, "104253:0", "mount" },	-- Kor'kron Juggernaut
-                { 101, "105685:0", false },	-- Hellscream's Cleaver
-                { 102, "105692:0", false },	-- Hellscream's Decapitator
-                { 103, "105691:0", false },	-- Hellscream's Doomblade
-                { 104, "105686:0", false },	-- Hellscream's Pig Sticker
-                { 105, "105684:0", false },	-- Hellscream's Razor
-                { 106, "105690:0", false },	-- Hellscream's War Staff
-                { 107, "105683:0", false },	-- Hellscream's Warbow
-                { 108, "105688:0", false },	-- Hellscream's Warmace
-                { 109, "105687:0", false },	-- Hellscream's Barrier
-                { 110, "105693:0", false },	-- Hellscream's Shield Wall
-                { 111, "105689:0", false, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Hellscream's Tome of Destruction
-                { 118, "ac8482" },
+            [HEROIC_DIFF] = {
+                { 1, 104651 }, -- Ebon Ritual Hood
+                { 2, 104650 }, -- Belt of the Broken Pact
+                { 3, 104640 }, -- Kor'kron Elite Skullmask
+                { 4, 104656 }, -- Hopeglow Spaulders
+                { 5, 104639 }, -- Cord of Black Dreams
+                { 6, 104655 }, -- Seal of Karmic Return
+                { 7, 104657 }, -- Cowl of Smoking Dreams
+                { 8, 104642 }, -- Penetrating Gaze of Y'Shaarj
+                { 9, 104643 }, -- Shoulderguards of Intended Power
+                { 10, 104641 }, -- Chestguard of Relentless Tyranny
+                { 11, 104647 }, -- Greathelm of the Warchief
+                { 12, 104659 }, -- Mantle of Looming Darkness
+                { 13, 104645 }, -- Spaulders of the Fallen Warchief
+                { 14, 104646 }, -- Tusks of Mannoroth
+                { 15, 104658 }, -- Chestplate of Fallen Passion
+                { 16, 104644 }, -- Legplates of Unthinking Strife
+                { 18, 105867 }, -- Essence of the Cursed Conqueror
+                { 19, 105866 }, -- Essence of the Cursed Protector
+                { 20, 105868 }, -- Essence of the Cursed Vanquisher
+                { 22, 104652 }, -- Black Blood of Y'Shaarj
+                { 23, 104649 }, -- Curse of Hubris
+                { 25, 104653 }, -- Horned Mace of the Old Ones
+                { 26, 104638 }, -- Kor'kron Spire of Supremacy
+                { 27, 104648 }, -- Xal'atoh, Desecrated Image of Gorehowl
+                { 28, 104654 }, -- Revelations of Y'Shaarj
+                { 30, 104253 }, -- Kor'kron Juggernaut
+                { 101, 105685 }, -- Hellscream's Cleaver
+                { 102, 105692 }, -- Hellscream's Decapitator
+                { 103, 105691 }, -- Hellscream's Doomblade
+                { 104, 105686 }, -- Hellscream's Pig Sticker
+                { 105, 105684 }, -- Hellscream's Razor
+                { 106, 105690 }, -- Hellscream's War Staff
+                { 107, 105683 }, -- Hellscream's Warbow
+                { 108, 105688 }, -- Hellscream's Warmace
+                { 109, 105687 }, -- Hellscream's Barrier
+                { 110, 105693 }, -- Hellscream's Shield Wall
+                { 111, 105689, [ATLASLOOT_IT_FILTERIGNORE] = true }, -- Hellscream's Tome of Destruction
+                { 116, [ATLASLOOT_IT_ALLIANCE] = "ac8679", [ATLASLOOT_IT_HORDE] = "ac8680" },
+                { 117, "ac8482" },
             },
         },
         {	--SoOShared
             name = AL["Shared Boss Loot"],
+            ContentPhaseMoP = 5,
             ExtraList = true,
-            [RF_SOO_DIFF] = {
-                { 1, "104271:0" },	-- Coalesced Turmoil
-                { 2, "104275:0" },	-- Twisted Treasures of the Vale
-                { 3, 113224 },	-- Aeth's Swiftcinder Cloak
-                { 4, 113231 },	-- Brave Niunai's Cloak
-                { 5, 113226 },	-- Cape of the Alpha
-                { 6, 113230 },	-- Drape of the Omega
-                { 7, 113223 },	-- Turtleshell Greatcloak
-                { 16, 113225 },	-- Kalaena's Arcane Handwraps
-                { 17, 113218 },	-- Seebo's Sainted Touch
-                { 18, 113220 },	-- Crimson Gauntlets of Death
-                { 19, 113221 },	-- Siid's Silent Stranglers
-                { 20, 113222 },	-- Keengrip Arrowpullers
-                { 21, 113227 },	-- Marco's Crackling Gloves
-                { 22, 113228 },	-- Gauntlets of Discarded Time
-                { 23, 113219 },	-- Romy's Reliable Grips
-                { 24, 113229 },	-- Zoid's Molten Gauntlets
+            [CELESTIAL_DIFF] = {
+                { 1, 104271 }, -- Coalesced Turmoil
+                { 2, 104275 }, -- Twisted Treasures of the Vale
+                { 3, 105824 }, -- Aeth's Swiftcinder Cloak
+                { 4, 105816 }, -- Brave Niunai's Cloak
+                { 5, 105812 }, -- Cape of the Alpha
+                { 6, 105815 }, -- Drape of the Omega
+                { 7, 105825 }, -- Turtleshell Greatcloak
+                { 16, 105813 }, -- Kalaena's Arcane Handwraps
+                { 17, 105814 }, -- Seebo's Sainted Touch
+                { 18, 105818 }, -- Crimson Gauntlets of Death
+                { 19, 105817 }, -- Siid's Silent Stranglers
+                { 20, 105819 }, -- Keengrip Arrowpullers
+                { 21, 105820 }, -- Marco's Crackling Gloves
+                { 22, 105823 }, -- Gauntlets of Discarded Time
+                { 23, 105821 }, -- Romy's Reliable Grips
+                { 24, 105822 }, -- Zoid's Molten Gauntlets
+            },
+            [FLEX_DIFF] = {
+                { 1, 105714 }, -- Coalesced Turmoil
+                { 2, 105713 }, -- Twisted Treasures of the Vale
+                { 3, 105838 }, -- Aeth's Swiftcinder Cloak
+                { 4, 105830 }, -- Brave Niunai's Cloak
+                { 5, 105826 }, -- Cape of the Alpha
+                { 6, 105829 }, -- Drape of the Omega
+                { 7, 105839 }, -- Turtleshell Greatcloak
+                { 16, 105827 }, -- Kalaena's Arcane Handwraps
+                { 17, 105828 }, -- Seebo's Sainted Touch
+                { 18, 105832 }, -- Crimson Gauntlets of Death
+                { 19, 105831 }, -- Siid's Silent Stranglers
+                { 20, 105833 }, -- Keengrip Arrowpullers
+                { 21, 105834 }, -- Marco's Crackling Gloves
+                { 22, 105837 }, -- Gauntlets of Discarded Time
+                { 23, 105835 }, -- Romy's Reliable Grips
+                { 24, 105836 }, -- Zoid's Molten Gauntlets
+            },
+            [HEROIC_DIFF] = {
+                { 1, 105856 }, -- Echoes of War
+                { 3, 105852 }, -- Aeth's Swiftcinder Cloak
+                { 4, 105844 }, -- Brave Niunai's Cloak
+                { 5, 105840 }, -- Cape of the Alpha
+                { 6, 105843 }, -- Drape of the Omega
+                { 7, 105853 }, -- Turtleshell Greatcloak
+                { 18, 105841 }, -- Kalaena's Arcane Handwraps
+                { 19, 105842 }, -- Seebo's Sainted Touch
+                { 20, 105846 }, -- Crimson Gauntlets of Death
+                { 21, 105845 }, -- Siid's Silent Stranglers
+                { 22, 105847 }, -- Keengrip Arrowpullers
+                { 23, 105848 }, -- Marco's Crackling Gloves
+                { 24, 105851 }, -- Gauntlets of Discarded Time
+                { 25, 105849 }, -- Romy's Reliable Grips
+                { 26, 105850 }, -- Zoid's Molten Gauntlets
             },
         },
         {	--SoOTrash
             name = AL["Trash Mobs"],
+            ContentPhaseMoP = 5,
             ExtraList = true,
-            [NORMAL_DIFF] = {
-                { 1, 113224, false },	-- Aeth's Swiftcinder Cloak
-                { 2, 113231, false },	-- Brave Niunai's Cloak
-                { 3, 113226, false },	-- Cape of the Alpha
-                { 4, 113230, false },	-- Drape of the Omega
-                { 5, 113223, false },	-- Turtleshell Greatcloak
-                { 7, 113225, false },	-- Kalaena's Arcane Handwraps
-                { 8, 113218, false },	-- Seebo's Sainted Touch
-                { 9, 113220, false },	-- Crimson Gauntlets of Death
-                { 10, 113221, false },	-- Siid's Silent Stranglers
-                { 11, 113222, false },	-- Keengrip Arrowpullers
-                { 12, 113227, false },	-- Marco's Crackling Gloves
-                { 13, 113228, false },	-- Gauntlets of Discarded Time
-                { 14, 113219, false },	-- Romy's Reliable Grips
-                { 15, 113229, false },	-- Zoid's Molten Gauntlets
-                { 16, "105745:0", false },	-- Kor'kron Dark Shaman Cowl
-                { 17, "105747:0", false },	-- Kor'kron Dark Shaman Shoulder
-                { 18, "105743:0", false },	-- Kor'kron Dark Shaman Vestment
-                { 19, "105748:0", false },	-- Kor'kron Dark Shaman Bracers
-                { 20, "105744:0", false },	-- Kor'kron Dark Shaman Gloves
-                { 21, "105741:0", false },	-- Kor'kron Dark Shaman Belt
-                { 22, "105746:0", false },	-- Kor'kron Dark Shaman Kilt
-                { 23, "105742:0", false },	-- Kor'kron Dark Shaman Treads
+            [FLEX_DIFF] = {
+                { 1, 105838 }, -- Aeth's Swiftcinder Cloak
+                { 2, 105830 }, -- Brave Niunai's Cloak
+                { 3, 105826 }, -- Cape of the Alpha
+                { 4, 105829 }, -- Drape of the Omega
+                { 5, 105839 }, -- Turtleshell Greatcloak
+                { 7, 105827 }, -- Kalaena's Arcane Handwraps
+                { 8, 105828 }, -- Seebo's Sainted Touch
+                { 9, 105832 }, -- Crimson Gauntlets of Death
+                { 10, 105831 }, -- Siid's Silent Stranglers
+                { 11, 105833 }, -- Keengrip Arrowpullers
+                { 12, 105834 }, -- Marco's Crackling Gloves
+                { 13, 105837 }, -- Gauntlets of Discarded Time
+                { 14, 105835 }, -- Romy's Reliable Grips
+                { 15, 105836 }, -- Zoid's Molten Gauntlets
+                { 16, 105745 }, -- Kor'kron Dark Shaman Cowl
+                { 17, 105747 }, -- Kor'kron Dark Shaman Shoulder
+                { 18, 105743 }, -- Kor'kron Dark Shaman Vestment
+                { 19, 105748 }, -- Kor'kron Dark Shaman Bracers
+                { 20, 105744 }, -- Kor'kron Dark Shaman Gloves
+                { 21, 105741 }, -- Kor'kron Dark Shaman Belt
+                { 22, 105746 }, -- Kor'kron Dark Shaman Kilt
+                { 23, 105742 }, -- Kor'kron Dark Shaman Treads
             },
-            [HEROIC_SOO_DIFF] = NORMAL_DIFF,
-            [MYTHIC_SOO_DIFF] = NORMAL_DIFF,
+            [NORMAL_DIFF] = {
+                { 1, 103846 }, -- Aeth's Swiftcinder Cloak
+                { 2, 103960 }, -- Brave Niunai's Cloak
+                { 3, 103935 }, -- Cape of the Alpha
+                { 4, 103770 }, -- Drape of the Omega
+                { 5, 103800 }, -- Turtleshell Greatcloak
+                { 7, 103854 }, -- Kalaena's Arcane Handwraps
+                { 8, 103753 }, -- Seebo's Sainted Touch
+                { 9, 103859 }, -- Crimson Gauntlets of Death
+                { 10, 103832 }, -- Siid's Silent Stranglers
+                { 11, 103781 }, -- Keengrip Arrowpullers
+                { 12, 103764 }, -- Marco's Crackling Gloves
+                { 13, 103791 }, -- Gauntlets of Discarded Time
+                { 14, 103818 }, -- Romy's Reliable Grips
+                { 15, 103734 }, -- Zoid's Molten Gauntlets
+                { 16, 105745 }, -- Kor'kron Dark Shaman Cowl
+                { 17, 105747 }, -- Kor'kron Dark Shaman Shoulder
+                { 18, 105743 }, -- Kor'kron Dark Shaman Vestment
+                { 19, 105748 }, -- Kor'kron Dark Shaman Bracers
+                { 20, 105744 }, -- Kor'kron Dark Shaman Gloves
+                { 21, 105741 }, -- Kor'kron Dark Shaman Belt
+                { 22, 105746 }, -- Kor'kron Dark Shaman Kilt
+                { 23, 105742 }, -- Kor'kron Dark Shaman Treads
+            },
         },
         T16_SET,
         {	--ACPage
             name = AL["Achievements"],
+            ContentPhaseMoP = 5,
             TableType = AC_ITTYPE,
             ExtraList = true,
             CoinTexture = "Achievement",
@@ -4012,4 +4805,3 @@ data["SiegeofOrgrimmar"] = {
         },
     },
 }
---]]
