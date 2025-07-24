@@ -370,6 +370,7 @@ ContentPhaseCata = 4,
 
 data["BlackrockCaverns"] = {
     EncounterJournalID = 66,
+    InstanceID = 645,
     MapID = 4926,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {77, 80, 83},
@@ -620,6 +621,7 @@ data["BlackrockCaverns"] = {
 
 data["ThroneOfTheTides"] = {
     EncounterJournalID = 65,
+    InstanceID = 643,
     MapID = 5004,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {77, 80, 83},
@@ -825,6 +827,7 @@ data["ThroneOfTheTides"] = {
 
 data["TheStonecore"] = {
     EncounterJournalID = 67,
+    InstanceID = 725,
     MapID = 5088,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {79, 81, 85},
@@ -1033,6 +1036,7 @@ data["TheStonecore"] = {
 
 data["TheVortexPinnacle"] = {
     EncounterJournalID = 68,
+    InstanceID = 657,
     MapID = 5035,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {79, 81, 85},
@@ -1210,6 +1214,7 @@ data["TheVortexPinnacle"] = {
 
 data["LostCityOfTolvir"] = {
     EncounterJournalID = 69,
+    InstanceID = 755,
     MapID = 5396,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {80, 83, 85},
@@ -1420,6 +1425,7 @@ data["LostCityOfTolvir"] = {
 
 data["HallsOfOrigination"] = {
     EncounterJournalID = 70,
+    InstanceID = 644,
     MapID = 4945,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {80, 83, 85},
@@ -1744,6 +1750,7 @@ data["HallsOfOrigination"] = {
 
 data["GrimBatol"] = {
     EncounterJournalID = 71,
+    InstanceID = 670,
     MapID = 4950,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {80, 84, 85},
@@ -1955,6 +1962,7 @@ data["GrimBatol"] = {
 
 data["Deadmines"] = {
     EncounterJournalID = 63,
+    InstanceID = 36,
     MapID = 1581,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},
@@ -2179,6 +2187,7 @@ data["Deadmines"] = {
 
 data["ShadowfangKeep"] = {
     EncounterJournalID = 64,
+    InstanceID = 33,
     MapID = 209,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},
@@ -2395,6 +2404,7 @@ data["ShadowfangKeep"] = {
 
 data["ZulAman"] = {
     EncounterJournalID = 77,
+    InstanceID = 568,
     MapID = 3805,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},
@@ -2541,6 +2551,7 @@ local ZUL_GURUB_MADNESS_LOOT = {
     }
 data["ZulGurub"] = {
     EncounterJournalID = 76,
+    InstanceID = 859,
     MapID = 1977,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},
@@ -2751,6 +2762,7 @@ data["WorldBossesCata"] = {
 
 data["TheBastionOfTwilight"] = {
     EncounterJournalID = 72,
+    InstanceID = 671,
     MapID = 5334,
     ContentType = RAID_CONTENT,
     items = {
@@ -2953,6 +2965,7 @@ data["TheBastionOfTwilight"] = {
 
 data["BlackwingDescent"] = {
     EncounterJournalID = 73,
+    InstanceID = 669,
     MapID = 5094,
     ContentType = RAID_CONTENT,
     items = {
@@ -3212,6 +3225,7 @@ data["BlackwingDescent"] = {
 
 data["ThroneOfTheFourWinds"] = {
     EncounterJournalID = 74,
+    InstanceID = 754,
     MapID = 5638,
     ContentType = RAID_CONTENT,
     items = {
@@ -3324,6 +3338,7 @@ data["ThroneOfTheFourWinds"] = {
 
 data["Firelands"] = {
     EncounterJournalID = 78,
+    InstanceID = 720,
     MapID = 5723,
     ContentType = RAID_CONTENT,
     ContentPhaseCata = 3,
@@ -3840,6 +3855,7 @@ local END_TIME_ECHO_LOOT_TWILIGHT = {
 data["EndTime"] = {
     nameFormat = NAME_CAVERNS_OF_TIME,
     EncounterJournalID = 184,
+    InstanceID = 938,
     MapID = 5789,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},
@@ -3929,6 +3945,7 @@ data["EndTime"] = {
 data["WellOfEternity"] = {
     nameFormat = NAME_CAVERNS_OF_TIME,
     EncounterJournalID = 185,
+    InstanceID = 939,
     MapID = 5788,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},
@@ -4041,6 +4058,7 @@ data["WellOfEternity"] = {
 data["HourOfTwilight"] = {
     nameFormat = NAME_CAVERNS_OF_TIME,
     EncounterJournalID = 186,
+    InstanceID = 940,
     MapID = 5844,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {85, 85, 85},
@@ -4154,6 +4172,7 @@ data["HourOfTwilight"] = {
 
 data["DragonSoul"] = {
     EncounterJournalID = 187,
+    InstanceID = 967,
     MapID = 5892,
     ContentType = RAID_CONTENT,
     ContentPhaseCata = 4,
@@ -4730,6 +4749,7 @@ data["DragonSoul"] = {
 local ROLE_DD = AL["Damage Dealer"]
 data["BaradinHold"] = {
     EncounterJournalID = 75,
+    InstanceID = 757,
     MapID = 5600,
     ContentType = RAID_CONTENT,
     items = {

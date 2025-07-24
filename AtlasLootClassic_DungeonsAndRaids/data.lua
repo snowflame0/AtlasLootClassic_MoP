@@ -258,6 +258,7 @@ local DM_BOOKS = { -- DMBooks
 
 data["RagefireChasm"] = {
     EncounterJournalID = 226,
+    InstanceID = 389,
     MapID = 2437,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -302,6 +303,7 @@ data["RagefireChasm"] = {
 
 data["DeadminesCata"] = {
     EncounterJournalID = 63,
+    --InstanceID = 36,
     MapID = 1581,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {15, 15, 21},
@@ -356,6 +358,7 @@ data["DeadminesCata"] = {
 
 data["ShadowfangKeepCata"] = {
     EncounterJournalID = 64,
+    --InstanceID = 33,
     MapID = 209,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {11, 16, 26},
@@ -409,6 +412,7 @@ data["ShadowfangKeepCata"] = {
 
 data["WailingCaverns"] = {
     EncounterJournalID = 240,
+    InstanceID = 43,
     MapID = 718,
     SubAreaIDs = { 15285, 15301, 15294, 15300, 15292, 17731 },
     ContentType = DUNGEON_CONTENT,
@@ -508,8 +512,8 @@ data["WailingCaverns"] = {
 
 data["BlackfathomDeeps"] = {
     EncounterJournalID = 227,
+    InstanceID = 48,
     MapID = 719,
- -- InstanceID = 48,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({15, 20, 27}),
@@ -597,6 +601,7 @@ data["BlackfathomDeeps"] = {
 
 data["TheStockade"] = {
     EncounterJournalID = 238,
+    InstanceID = 34,
     MapID = 717,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -642,6 +647,7 @@ data["TheStockade"] = {
 
 data["Gnomeregan"] = {
     EncounterJournalID = 231,
+    InstanceID = 90,
     MapID = 721,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -753,6 +759,7 @@ data["Gnomeregan"] = {
 
 data["RazorfenKraul"] = {
     EncounterJournalID = 234,
+    InstanceID = 47,
     MapID = 491,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -851,6 +858,7 @@ data["RazorfenKraul"] = {
 
 data["ScarletHalls"] = {
     EncounterJournalID = 311,
+    --InstanceID = 1001,
     MapID = 6052,
     ContentType = DUNGEON_CONTENT,
     LevelRange = GetForVersion({20, 29, 36},{20, 30, 32}),
@@ -902,6 +910,7 @@ data["ScarletHalls"] = {
 
 data["ScarletMonastery"] = {
     EncounterJournalID = 316,
+    --InstanceID = 1004
     MapID = 6109,
     ContentType = DUNGEON_CONTENT,
     LevelRange = GetForVersion({20, 29, 39},{20, 33, 35}),
@@ -971,6 +980,7 @@ data["ScarletMonastery"] = {
 
 data["Maraudon"] = {
     EncounterJournalID = 232,
+    InstanceID = 349,
     MapID = 2100,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -1072,7 +1082,8 @@ data["Maraudon"] = {
 
 data["Uldaman"] = {
     EncounterJournalID = 239,
-    MapID = 1337, -- just no...
+    InstanceID = 70,
+    MapID = 1337,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
     LevelRange = GetForVersion({30, 37, 45}),
@@ -1215,6 +1226,7 @@ data["Uldaman"] = {
 
 data["Scholomance"] = {
     EncounterJournalID = 246,
+    --InstanceID = 1007,
     MapID = 6066,
     ContentType = DUNGEON_CONTENT,
     LevelRange = {33, 38, 48},
@@ -1284,6 +1296,7 @@ data["Scholomance"] = {
 
 data["DireMaul"] = {
     EncounterJournalID = 230,
+    InstanceID = 429,
     MapID = 2557,
     SubAreaIDs = { 34776, 33730 },
     ContentType = DUNGEON_CONTENT,
@@ -1656,6 +1669,7 @@ data["DireMaul"] = {
 
 data["RazorfenDowns"] = {
     EncounterJournalID = 233,
+    InstanceID = 129,
     MapID = 722,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -1763,6 +1777,7 @@ data["RazorfenDowns"] = {
 
 data["Stratholme"] = {
     EncounterJournalID = 236,
+    InstanceID = 329,
     MapID = 2017,
     SubAreaIDs = {
      -- Living
@@ -2147,6 +2162,7 @@ data["Stratholme"] = {
 
 data["Zul'Farrak"] = {
     EncounterJournalID = 241,
+    InstanceID = 209,
     MapID = 1176,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -2285,6 +2301,7 @@ data["Zul'Farrak"] = {
 
 data["BlackrockDepths"] = {
     EncounterJournalID = 228,
+    InstanceID = 48,
     MapID = 1584,
     SubAreaIDs = { 26758, 26761, 26747, 26733, 26755, 26740, 26751, 26759, 26735, 26769, 26768, 26766, 26781, 26765, 26764, 26742, 26750, 26745, 26784, 26749 },
     ContentType = DUNGEON_CONTENT,
@@ -2734,6 +2751,7 @@ data["BlackrockDepths"] = {
 
 data["SunkenTemple"] = {
     EncounterJournalID = 237,
+    InstanceID = 109,
     MapID = 1417,
     ContentType = DUNGEON_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
@@ -2821,6 +2839,7 @@ data["SunkenTemple"] = {
 
 data["BlackrockSpire"] = {
     EncounterJournalID = 229,
+    InstanceID = 229,
     MapID = 1583,
     SubAreaIDs = { 15492, 26642, 26662, 26666, 26668, 26670, 26683, 26684, 26686, 26711, 26713, 26715, 26718, 32528 },
     ContentType = DUNGEON_CONTENT,
@@ -3732,7 +3751,7 @@ data["MoltenCore"] = {
 
 data["Onyxia"] = {
     MapID = 2159,
-    InstanceID = 249,
+    --InstanceID = 249,
     ContentType = RAID40_CONTENT,
     LoadDifficulty = RAID40_DIFF,
     items = {
@@ -3775,7 +3794,7 @@ data["Onyxia"] = {
 
 data["Zul'GurubClassic"] = {
     MapID = 1977,
-    InstanceID = 309,
+    --InstanceID = 309,
     ContentType = REMOVED_CONTENT,
     LoadDifficulty = RAID20_DIFF,
     items = {
@@ -4816,7 +4835,7 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 
 data["Naxxramas"] = {
     MapID = 3456,
-    InstanceID = AtlasLoot:GameVersion_LT(AtlasLoot.WRATH_VERSION_NUM,533,nil),
+    --InstanceID = AtlasLoot:GameVersion_LT(AtlasLoot.WRATH_VERSION_NUM,533,nil),
     ContentType = REMOVED_CONTENT,
     LoadDifficulty = RAID40_DIFF,
     items = {
