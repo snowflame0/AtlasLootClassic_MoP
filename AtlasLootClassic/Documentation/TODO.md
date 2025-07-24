@@ -32,11 +32,12 @@
     - [ ] Add Celestial Dungeon stuff to Dungeons and Raids
     - [ ] Make world bosses data more compact/usable
     - [ ] Add valor/justice/fragments currency drops
-    - [ ] Add source data to Data module (last step, with script)
+    - [x] Add Siege of Orgrimmar (zug zug)
+    - [x] Add source data to Data module (last step, with script)
     - [x] Tier sets (from Collections module)
-- [ ] Organize Factions module
-- [ ] Add tokens data (Data/Token.lua)
-- [ ] Add Content phase data (Data/ContentPhase.lua)
+- [x] Organize Factions module
+- [x] Add tokens data (Data/Token.lua)
+- [x] Add Content phase data (Data/ContentPhase.lua)
 - [x] Add vendor price data (Data/VendorPrice.lua)
 - [x] Add recipe data (Data/Recipe.lua)
 - [x] Add item sets data (Data/ItemSet.lua)
@@ -47,7 +48,6 @@
     - [x] Item to set data (script)
 
 # Bugs and Other Problems
-- [ ] Remove Model button and replace with link to Dungeon Journal
 - [x] Finish update notifier
 - [x] Linking items to chat seems broken, NVM BLIZZARD PROBLEM
 - [x] Add any missing locale strings

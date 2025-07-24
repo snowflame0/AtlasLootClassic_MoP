@@ -1,3 +1,13 @@
+# 5.0.2 (July 24, 2025)
+- Added Dungeons and Raids + Crafting item sources
+- Added MoP Tier token data
+- Added Siege of Orgrimmar loot
+- Added Phase tags for items released in later phases
+- Fix issue where AtlasLoot didn't autoselect dungeon player is in
+- MoP factions data organized
+- Cleanup Gathering profs
+- Small fixes as usual
+
 # 5.0.1 (July 21, 2025)
 - Celestial loot organized by raid, since it's being gated
 - Challenge mode armor sets added
