@@ -1631,7 +1631,7 @@ data["HerbalismBC"] = {
 				{ 16,  22794 }, -- Fel Lotus
 				{ 18,  22576 }, -- Mote of Mana
 				{ 19,  22575 }, -- Mote of Life
-				{ 23,  22795 }, -- Fel Blossom
+				{ 21,  22795 }, -- Fel Blossom
 			}
 		},
 	}
@@ -1818,45 +1818,6 @@ data["FishingBC"] = {
 				{ 7, 27437 }, -- Icefin Bluefish
 				{ 8, 27425 }, -- Spotted Feltail
 				{ 9, 27429 }, -- Zangarian Sporefish
-			}
-		},
-	}
-}
-
-data["RoguePoisonsBC"] = {
-	name = format("|c%s%s|r", RAID_CLASS_COLORS["ROGUE"].colorStr, ALIL["ROGUE"]),
-	ContentType = PROF_CLASS_CONTENT,
-	LoadDifficulty = NORMAL_DIFF,
-	TableType = PROF_ITTYPE,
-	CorrespondingFields = private.ROGUE_POISONS_LINK,
-	items = {
-		{
-			name = ALIL["Poisons"],
-			[NORMAL_DIFF] = {
-				{ 1, 26892 }, -- Instant Poison VII
-				{ 2, 11343 }, -- Instant Poison VI
-				{ 3, 11342 }, -- Instant Poison V
-				{ 4, 11341 }, -- Instant Poison IV
-				{ 5, 8691  }, -- Instant Poison III
-				{ 6, 8687  }, -- Instant Poison II
-				{ 7, 8681  }, -- Instant Poison
-				{ 9, 27283 },  -- Wound Poison V
-				{ 10, 13230 },  -- Wound Poison IV
-				{ 11, 13229 },  -- Wound Poison III
-				{ 12, 13228 }, -- Wound Poison II
-				{ 13, 13220 }, -- Wound Poison
-				{ 15, 3420  }, -- Crippling Poison
-				{ 16, 27282 }, -- Deadly Poison VII
-				{ 17, 26969 }, -- Deadly Poison VI
-				{ 18, 25347 }, -- Deadly Poison V
-				{ 19, 11358 }, -- Deadly Poison IV
-				{ 20, 11357 }, -- Deadly Poison III
-				{ 21, 2837  }, -- Deadly Poison II
-				{ 22, 2835  }, -- Deadly Poison
-				{ 26, 11400 }, -- Mind-numbing Poison III
-				{ 27, 8694  }, -- Mind-numbing Poison II
-				{ 28, 5763  }, -- Mind-numbing Poison
-				{ 30, 26786  }, -- Anesthetic Poison
 			}
 		},
 	}

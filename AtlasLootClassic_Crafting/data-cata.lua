@@ -1825,6 +1825,7 @@ data["HerbalismCata"] = {
                 { 6,  52983 }, -- Cinderbloom
                 { 16,  52989 }, -- Deathspore Pod
                 { 18,  52329 }, -- Volatile Life
+                { 20, 63122 }, -- Lifegiving Seed
             }
         },
     }

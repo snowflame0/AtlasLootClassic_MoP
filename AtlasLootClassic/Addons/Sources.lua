@@ -51,8 +51,6 @@ local ICON_TEXTURE = {
 	[13] = format(TEXTURE_ICON_F, GetSpellTexture(7411)),   -- Enchanting
 	[14] = format(TEXTURE_ICON_F, GetSpellTexture(7732)),   -- Fishing
     [15] = format(TEXTURE_ICON_F, GetSpellTexture(8618)),   -- Skinning
-    -- TODO: Add version check for cata and below
-    -- [16] = format(TEXTURE_ICON_F, GetSpellTexture(2842)),   -- Rogue: Poisons
     [17] = format(TEXTURE_ICON_F, 134071),                  -- Jewelcrafting
     [18] = format(TEXTURE_ICON_F, 237171),                  -- Inscription
     [19] = format(TEXTURE_ICON_F, 441139),                  -- Archaeology
@@ -74,8 +72,6 @@ local SOURCE_TYPES = {
 	[13] = ALIL["Enchanting"],          -- Enchanting
 	[14] = ALIL["Fishing"],             -- Fishing
     [15] = ALIL["Skinning"],            -- Skinning
-    -- TODO: Add version check for cata and below
-    -- [16] = ALIL["ROGUE"]..": "..ALIL["Poisons"],             -- Rogue: Poisons
     [17] = ALIL["Jewelcrafting"],       -- Jewelcrafting
     [18] = ALIL["Inscription"],         -- Inscription
     [19] = ALIL["Archaeology"],          -- Archaelogy

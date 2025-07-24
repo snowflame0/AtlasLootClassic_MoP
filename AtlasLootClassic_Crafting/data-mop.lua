@@ -1725,12 +1725,15 @@ data["HerbalismMoP"] = {
         {
             name = AL["Zen Master"],
             [NORMAL_DIFF] = {
-                { 1,  72234 }, -- Green Tea Leaf
-                { 2,  72237 }, -- Rain Poppy
-                { 3,  72235 }, -- Silkweed
-                { 4,  79010 }, -- Snow Lily
-                { 5,  79011 }, -- Fool's Cap
-                { 7,  72238 }, -- Golden Lotus
+                { 1, 79011 }, -- Fool's Cap
+                { 2, 79010 }, -- Snow Lily
+                { 3, 72235 }, -- Silkweed
+                { 4, 72237 }, -- Rain Poppy
+                { 5, 72234 }, -- Green Tea Leaf
+                { 16, 72238 }, -- Golden Lotus
+                { 17, 89639 }, -- Descrated Herb
+                { 19, 89640 }, -- Life Spirit
+                { 20, 89641 }, -- Water Spirit
             }
         },
     }

@@ -105,11 +105,6 @@ private.FISHING_LINK = {
     [AtlasLoot.MOP_VERSION_NUM]         = "FishingMoP",
 }
 
-private.ROGUE_POISONS_LINK = {
-    [AtlasLoot.CLASSIC_VERSION_NUM]     = "RoguePoisons",
-    [AtlasLoot.BC_VERSION_NUM]          = "RoguePoisonsBC",
-}
-
 private.INSCRIPTION_LINK = {
     [AtlasLoot.WRATH_VERSION_NUM]       = "InscriptionWrath",
     [AtlasLoot.CATA_VERSION_NUM]        = "InscriptionCata",
