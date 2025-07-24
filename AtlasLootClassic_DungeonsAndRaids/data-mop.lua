@@ -3684,15 +3684,6 @@ data["SiegeofOrgrimmar"] = {
 
 
             },
-            [FLEX_DIFF] = {
-                GetItemsFromDiff = NORMAL_DIFF,
-                { 16, 99678 },	-- Chest of the Cursed Conqueror
-                { 17, 99679 },	-- Chest of the Cursed Protector
-                { 18, 99677 },	-- Chest of the Cursed Vanquisher
-                { 24, 104163 },	-- Gooey Sha-ling
-                { 25, nil },
-                { 27, nil },
-            },
         },
         {	--SoOGalakras
             EncounterJournalID = 868,
