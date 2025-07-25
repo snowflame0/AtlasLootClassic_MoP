@@ -941,83 +941,83 @@ data["CompanionsMoP"] = {
         {
         name = AL["Drops"],
         [NORMAL_DIFF] = {
-            { 1,  93040 }, -- Anubisath Idol
-            { 2,  86563 }, -- Aqua Strider
-            { 3, 104156 }, -- Ashleaf Spriteling
-            { 4,  93035 }, -- Ashstone Core
-            { 5, 104157 }, -- Azure Crane Chick
-            { 6, 104158 }, -- Blackfuse Bombling
-            { 7, 104202 }, -- Bonkers
-            { 8,  93038 }, -- Chrominius
-            { 9,  97554 }, -- Coilfang Stalker
-            { 10, 93034 }, -- Corefire Imp
-            { 11, 104160 }, -- Dandelion Frolicker
-            { 12, 91040 }, -- Darkmoon Eye
-            { 13, 80008 }, -- Darkmoon Rabbit
-            { 14, 104161 }, -- Death Adder Hatchling
-            { 15, 93037 }, -- Death Talon Whelpguard
-            { 16, 94573 }, -- Direhorn Runt
-            { 17, 104162 }, -- Droplet of Y'Shaarj
-            { 18, 97551 }, -- Fiendish Imp
-            { 19, 97961 }, -- Filthling
-            { 20, 93032 }, -- Fungal Abomination
-            { 21, 93030 }, -- Giant Bone Spider
-            { 22, 104163 }, -- Gooey Sha-ling
-            { 23, 86564 }, -- Grinder
-            { 24, 104291 }, -- Gu'chi Swarmling
-            { 25, 104169 }, -- Gulp Froglet
-            { 26, 93033 }, -- Harbinger of Flame
-            { 27, 104307 }, -- Jadefire Spirit
-            { 28, 104164 }, -- Jademist Dancer
-            { 29, 94835 }, -- Ji-Kun Hatchling
-            { 30, 104165 }, -- Kovok
-            { 101, 97556 }, -- Lesser Voidcaller
-            { 102, 97548 }, -- Lil' Bad Wolf
-            { 103, 103670 }, -- Lil' Bling
+            { 1, 93041 }, -- Mini Mindslayer
+            { 2, 93030 }, -- Giant Bone Spider
+            { 3, 93029 }, -- Stitched Pup
+            { 4, 93034 }, -- Corefire Imp
+            { 5, 93036 }, -- Untamed Hatchling
+            { 6, 93037 }, -- Death Talon Whelpguard
+            { 7, 93040 }, -- Anubisath Idol
+            { 8, 93032 }, -- Fungal Abomination
+            { 9, 93033 }, -- Harbinger of Flame
+            { 10, 93035 }, -- Ashstone Core
+            { 11, 93038 }, -- Chrominius
+            { 12, 93039 }, -- Viscidus Globule
+            { 13, 97548 }, -- Lil' Bad Wolf
+            { 14, 97550 }, -- Netherspace Abyssal
+            { 15, 97552 }, -- Tideskipper
+            { 16, 97554 }, -- Coilfang Stalker
+            { 17, 97556 }, -- Lesser Voidcaller
+            { 18, 97549 }, -- Menagerie Custodian
+            { 19, 97551 }, -- Fiendish Imp
+            { 20, 97553 }, -- Tainted Waveling
+            { 21, 97555 }, -- Pocket Reaver
+            { 22, 97557 }, -- Phoenix Hawk Hatchling
+            { 23, 89587 }, -- Porcupette
+            { 24, 91040 }, -- Darkmoon Eye
+            { 25, 80008 }, -- Darkmoon Rabbit
+            { 27, 101570 }, -- Moon Moon
+            { 28, 85220 }, -- Terrible Turnip
+            { 29, 86563 }, -- Aqua Strider
+            { 30, 86564 }, -- Grinder
+            { 101, 94595 }, -- Spawn of G'nathus
+            { 102, 103670 }, -- Lil' Bling
             { 104, 97959 }, -- Living Fluid
             { 105, 94125 }, -- Living Sandling
-            { 106, 97549 }, -- Menagerie Custodian
-            { 107, 93041 }, -- Mini Mindslayer
-            { 108, 101570 }, -- Moon Moon
-            { 109, 97550 }, -- Netherspace Abyssal
-            { 110, 104166 }, -- Ominous Flame
-            { 111, 97557 }, -- Phoenix Hawk Hatchling
-            { 112, 97555 }, -- Pocket Reaver
-            { 113, 89587 }, -- Porcupette
-            { 114, 94574 }, -- Pygmy Direhorn
-            { 115, 104159 }, -- Ruby Droplet
-            { 116, 104167 }, -- Skunky Alemental
-            { 117, 94152 }, -- Son of Animus
-            { 118, 94595 }, -- Spawn of G'nathus
-            { 119, 104168 }, -- Spineclaw Crab
-            { 120, 93029 }, -- Stitched Pup
-            { 121, 94124 }, -- Sunreaver Micro-Sentry
-            { 122, 97553 }, -- Tainted Waveling
-            { 123, 85220 }, -- Terrible Turnip
-            { 124, 97552 }, -- Tideskipper
-            { 125, 93036 }, -- Untamed Hatchling
-            { 126, 93039 }, -- Viscidus Globule
-            { 127, 97960 }, -- Viscous Horror
-            { 128, 95422 }, -- Zandalari Anklerender
-            { 129, 95423 }, -- Zandalari Footslasher
-            { 130, 94126 }, -- Zandalari Kneebiter
-            { 201, 95424 }, -- Zandalari Toenibbler
+            { 106, 94574 }, -- Pygmy Direhorn
+            { 107, 94152 }, -- Son of Animus
+            { 108, 94124 }, -- Sunreaver Micro-Sentry
+            { 109, 97960 }, -- Viscous Horror
+            { 110, 94835 }, -- Ji-Kun Hatchling
+            { 111, 94573 }, -- Direhorn Runt
+            { 112, 95422 }, -- Zandalari Anklerender
+            { 113, 95423 }, -- Zandalari Footslasher
+            { 114, 94126 }, -- Zandalari Kneebiter
+            { 115, 95424 }, -- Zandalari Toenibbler
+            { 117, 104156 }, -- Ashleaf Spriteling
+            { 118, 104157 }, -- Azure Crane Chick
+            { 119, 104158 }, -- Blackfuse Bombling
+            { 120, 104202 }, -- Bonkers
+            { 121, 104160 }, -- Dandelion Frolicker
+            { 122, 104161 }, -- Death Adder Hatchling
+            { 123, 104162 }, -- Droplet of Y'Shaarj
+            { 124, 97961 }, -- Filthling
+            { 125, 104163 }, -- Gooey Sha-ling
+            { 126, 104291 }, -- Gu'chi Swarmling
+            { 127, 104169 }, -- Gulp Froglet
+            { 128, 104307 }, -- Jadefire Spirit
+            { 129, 104164 }, -- Jademist Dancer
+            { 130, 104165 }, -- Kovok
+            { 201, 104166 }, -- Ominous Flame
+            { 202, 104159 }, -- Ruby Droplet
+            { 203, 104167 }, -- Skunky Alemental
+            { 204, 104168 }, -- Spineclaw Crab
             }
         },
         {
         name = AL["Vendor"],
         [NORMAL_DIFF] = {
-            { 1,  102145 }, -- Chi-Chi, Hatchling of Chi-Ji
-            { 2,  93025 }, -- Clock'em
-            { 3,  91003 }, -- Darkmoon Hatchling
-            { 4,  97821 }, -- Gahz'rooki
-            { 5,  104295 }, -- Harmonious Porcupette
-            { 6,  88148 }, -- Jade Crane Chick
-            { 7,  85447 }, -- Tiny Goldfish
+            { 1,  93025 }, -- Clock'em
+            { 2,  91003 }, -- Darkmoon Hatchling
+            { 3,  88148 }, -- Jade Crane Chick
+            { 4,  85447 }, -- Tiny Goldfish
+            { 6,  97821 }, -- Gahz'rooki
             { 8,  103637 }, -- Vengeful Porcupette
-            { 9,  101771 }, -- Xu-Fu, Cub of Xuen
-            { 10, 102147 }, -- Yu'la, Broodling of Yu'lon
-            { 11, 102146 }, -- Zao, Calfling of Niuzao
+            { 9,  104295 }, -- Harmonious Porcupette
+            { 10,  102145 }, -- Chi-Chi, Hatchling of Chi-Ji
+            { 11,  101771 }, -- Xu-Fu, Cub of Xuen
+            { 12, 102147 }, -- Yu'la, Broodling of Yu'lon
+            { 13, 102146 }, -- Zao, Calfling of Niuzao
             }
         },
         {
