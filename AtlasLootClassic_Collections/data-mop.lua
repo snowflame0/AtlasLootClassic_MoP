@@ -975,7 +975,7 @@ data["CompanionsMoP"] = {
             { 103, 97959 }, -- Living Fluid
             { 104, 94125 }, -- Living Sandling
             { 105, 94574 }, -- Pygmy Direhorn
-            { 106, 94152 }, -- Son of Animus        
+            { 106, 94152 }, -- Son of Animus
             { 107, 94124 }, -- Sunreaver Micro-Sentry
             { 108, 97960 }, -- Viscous Horror
             { 109, 94835 }, -- Ji-Kun Hatchling
@@ -998,7 +998,7 @@ data["CompanionsMoP"] = {
             { 127, 104307 }, -- Jadefire Spirit
             { 128, 104164 }, -- Jademist Dancer
             { 129, 104165 }, -- Kovok
-            { 201, 104166 }, -- Ominous Flame  
+            { 201, 104166 }, -- Ominous Flame
             { 202, 104159 }, -- Ruby Droplet
             { 203, 104167 }, -- Skunky Alemental
             { 204, 104168 }, -- Spineclaw Crab
@@ -1011,7 +1011,7 @@ data["CompanionsMoP"] = {
             { 2,  91003 }, -- Darkmoon Hatchling
             { 3,  88148 }, -- Jade Crane Chick
             { 4,  85447 }, -- Tiny Goldfish
-            { 6,  97821 }, -- Gahz'rooki  
+            { 6,  97821 }, -- Gahz'rooki
             { 8,  103637 }, -- Vengeful Porcupette
             { 9,  104295 }, -- Harmonious Porcupette
             { 10,  102145 }, -- Chi-Chi, Hatchling of Chi-Ji
