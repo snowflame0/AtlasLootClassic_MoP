@@ -1007,17 +1007,17 @@ data["CompanionsMoP"] = {
         {
         name = AL["Vendor"],
         [NORMAL_DIFF] = {
-            { 1,  93025 }, -- Clock'em
-            { 2,  91003 }, -- Darkmoon Hatchling
+            { 1,  91003 }, -- Darkmoon Hatchling
             { 3,  88148 }, -- Jade Crane Chick
             { 4,  85447 }, -- Tiny Goldfish
-            { 6,  97821 }, -- Gahz'rooki
-            { 8,  103637 }, -- Vengeful Porcupette
-            { 9,  104295 }, -- Harmonious Porcupette
-            { 10,  102145 }, -- Chi-Chi, Hatchling of Chi-Ji
-            { 11,  101771 }, -- Xu-Fu, Cub of Xuen
-            { 12, 102147 }, -- Yu'la, Broodling of Yu'lon
-            { 13, 102146 }, -- Zao, Calfling of Niuzao
+            { 6,  93025 }, -- Clock'em
+            { 8,  97821 }, -- Gahz'rooki
+            { 10,  103637 }, -- Vengeful Porcupette
+            { 11,  104295 }, -- Harmonious Porcupette
+            { 12,  102145 }, -- Chi-Chi, Hatchling of Chi-Ji
+            { 13,  101771 }, -- Xu-Fu, Cub of Xuen
+            { 14, 102147 }, -- Yu'la, Broodling of Yu'lon
+            { 15, 102146 }, -- Zao, Calfling of Niuzao
             }
         },
         {
@@ -1044,24 +1044,24 @@ data["CompanionsMoP"] = {
         TableType = AC_ITTYPE,
         [NORMAL_DIFF] = {
             { 1,  84105 }, -- Fishy
-            { 2,  94210 }, -- Mountain Panda
+            { 2,  85222 }, -- Red Cricket
             { 3,  92799 }, -- Pandaren Air Spirit
             { 4,  92800 }, -- Pandaren Earth Spirit
             { 5,  92798 }, -- Pandaren Fire Spirit
             { 6,  90173 }, -- Pandaren Water Spirit
-            { 7,  85222 }, -- Red Cricket
-            { 8,  94025 }, -- Red Panda
+            { 7,  94025 }, -- Red Panda
+            { 8,  94210 }, -- Mountain Panda
             { 9,  94209 }, -- Snowy Panda
-            { 10, 94190 }, -- Spectral Porcupette
-            { 11, 94208 }, -- Sunfur Panda
+            { 10, 94208 }, -- Sunfur Panda
+            { 12, 94190 }, -- Spectral Porcupette
             }
         },
         {
         name = ALIL["Fishing"],
         [NORMAL_DIFF] = {
-            { 1, 94933 }, -- Tiny Blue Carp
-            { 2, 94934 }, -- Tiny Green Carp
-            { 3, 94932 }, -- Tiny Red Carp
+            { 1, 94932 }, -- Tiny Red Carp
+            { 2, 94933 }, -- Tiny Blue Carp
+            { 3, 94934 }, -- Tiny Green Carp
             { 4, 94935 }, -- Tiny White Carp
             }
         },
@@ -1069,14 +1069,14 @@ data["CompanionsMoP"] = {
         name = AL["Crafting"],
         [NORMAL_DIFF] = {
             { 1,  89368 }, -- Chi-Ji Kite
-            { 2,  90900 }, -- Imperial Moth
-            { 3,  90902 }, -- Imperial Silkworm
-            { 4,  82774 }, -- Jade Owl
-            { 5,  87526 }, -- Mechanical Pandaren Dragonling
-            { 6,  94903 }, -- Pierre
-            { 7, 100905 }, -- Rascal-Bot
-            { 8,  82775 }, -- Sapphire Cub
-            { 9,  89367 }, -- Yu'lon Kite
+            { 2,  89367 }, -- Yu'lon Kite
+            { 3,  90900 }, -- Imperial Moth
+            { 4,  90902 }, -- Imperial Silkworm
+            { 5,  82774 }, -- Jade Owl
+            { 6,  82775 }, -- Sapphire Cub
+            { 7,  87526 }, -- Mechanical Pandaren Dragonling
+            { 9,  94903 }, -- Pierre
+            { 10, 100905 }, -- Rascal-Bot
             }
         },
         {
