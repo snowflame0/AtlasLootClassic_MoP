@@ -941,6 +941,7 @@ data["CompanionsMoP"] = {
         {
         name = AL["Drops"],
         [NORMAL_DIFF] = {
+            -- Pre-patch
             { 1, 93041 }, -- Mini Mindslayer
             { 2, 93030 }, -- Giant Bone Spider
             { 3, 93029 }, -- Stitched Pup
@@ -966,12 +967,14 @@ data["CompanionsMoP"] = {
             { 23, 89587 }, -- Porcupette
             { 24, 91040 }, -- Darkmoon Eye
             { 25, 80008 }, -- Darkmoon Rabbit
+            -- Phase 1
             { 27, 101570 }, -- Moon Moon
             { 28, 85220 }, -- Terrible Turnip
             { 29, 86563 }, -- Aqua Strider
             { 30, 86564 }, -- Grinder
             { 101, 94595 }, -- Spawn of G'nathus
             { 102, 103670 }, -- Lil' Bling
+            -- Phase 3
             { 104, 97959 }, -- Living Fluid
             { 105, 94125 }, -- Living Sandling
             { 106, 94574 }, -- Pygmy Direhorn
@@ -984,6 +987,7 @@ data["CompanionsMoP"] = {
             { 113, 95423 }, -- Zandalari Footslasher
             { 114, 94126 }, -- Zandalari Kneebiter
             { 115, 95424 }, -- Zandalari Toenibbler
+            -- Phase 5
             { 117, 104156 }, -- Ashleaf Spriteling
             { 118, 104157 }, -- Azure Crane Chick
             { 119, 104158 }, -- Blackfuse Bombling
@@ -1007,17 +1011,22 @@ data["CompanionsMoP"] = {
         {
         name = AL["Vendor"],
         [NORMAL_DIFF] = {
+            -- Pre-patch
             { 1,  91003 }, -- Darkmoon Hatchling
+            -- Phase 1
             { 3,  88148 }, -- Jade Crane Chick
             { 4,  85447 }, -- Tiny Goldfish
+            -- Phase 2
             { 6,  93025 }, -- Clock'em
+            -- Phase 4
             { 8,  97821 }, -- Gahz'rooki
-            { 10,  103637 }, -- Vengeful Porcupette
-            { 11,  104295 }, -- Harmonious Porcupette
-            { 12,  102145 }, -- Chi-Chi, Hatchling of Chi-Ji
-            { 13,  101771 }, -- Xu-Fu, Cub of Xuen
-            { 14, 102147 }, -- Yu'la, Broodling of Yu'lon
-            { 15, 102146 }, -- Zao, Calfling of Niuzao
+            -- Phase 5
+            { 10, 101771 }, -- Xu-Fu, Cub of Xuen
+            { 11, 102145 }, -- Chi-Chi, Hatchling of Chi-Ji
+            { 12, 102146 }, -- Zao, Calfling of Niuzao
+            { 13, 102147 }, -- Yu'la, Broodling of Yu'lon
+            { 14, 103637 }, -- Vengeful Porcupette
+            { 15, 104295 }, -- Harmonious Porcupette
             }
         },
         {
@@ -1032,11 +1041,11 @@ data["CompanionsMoP"] = {
         TableType = AC_ITTYPE,
         [NORMAL_DIFF] = {
             { 1,  85578, "ac7500" }, -- Feral Vermling
-            { 2,  89686, "ac7521" }, -- Jade Tentacle
-            { 3,  93031, "ac7934" }, -- Mr. Bigglesworth
+            { 2,  89736, "ac7501" }, -- Venus
+            { 3,  89686, "ac7521" }, -- Jade Tentacle
             { 4,  94191, "ac8300" }, -- Stunted Direhorn
-            { 5,  97558, "ac8293" }, -- Tito
-            { 16, 89736, "ac7501" }, -- Venus
+            { 5,  93031, "ac7934" }, -- Mr. Bigglesworth
+            { 6,  97558, "ac8293" }, -- Tito
             }
         },
         {
@@ -1045,14 +1054,14 @@ data["CompanionsMoP"] = {
         [NORMAL_DIFF] = {
             { 1,  84105 }, -- Fishy
             { 2,  85222 }, -- Red Cricket
-            { 3,  92799 }, -- Pandaren Air Spirit
-            { 4,  92800 }, -- Pandaren Earth Spirit
-            { 5,  92798 }, -- Pandaren Fire Spirit
-            { 6,  90173 }, -- Pandaren Water Spirit
+            { 3,  90173 }, -- Pandaren Water Spirit
+            { 4,  92798 }, -- Pandaren Fire Spirit
+            { 5,  92799 }, -- Pandaren Air Spirit
+            { 6,  92800 }, -- Pandaren Earth Spirit
             { 7,  94025 }, -- Red Panda
-            { 8,  94210 }, -- Mountain Panda
+            { 8,  94208 }, -- Sunfur Panda
             { 9,  94209 }, -- Snowy Panda
-            { 10, 94208 }, -- Sunfur Panda
+            { 10, 94210 }, -- Mountain Panda
             { 12, 94190 }, -- Spectral Porcupette
             }
         },
@@ -1068,14 +1077,14 @@ data["CompanionsMoP"] = {
         {
         name = AL["Crafting"],
         [NORMAL_DIFF] = {
-            { 1,  89368 }, -- Chi-Ji Kite
-            { 2,  89367 }, -- Yu'lon Kite
+            { 1,  89367 }, -- Yu'lon Kite
+            { 2,  89368 }, -- Chi-Ji Kite
             { 3,  82774 }, -- Jade Owl
             { 4,  82775 }, -- Sapphire Cub
             { 5,  87526 }, -- Mechanical Pandaren Dragonling
             { 7,  90900 }, -- Imperial Moth
             { 8,  90902 }, -- Imperial Silkworm
-            { 10,  94903 }, -- Pierre
+            { 10, 94903 }, -- Pierre
             { 11, 100905 }, -- Rascal-Bot
             }
         },
