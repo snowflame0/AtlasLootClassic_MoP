@@ -1070,13 +1070,13 @@ data["CompanionsMoP"] = {
         [NORMAL_DIFF] = {
             { 1,  89368 }, -- Chi-Ji Kite
             { 2,  89367 }, -- Yu'lon Kite
-            { 3,  90900 }, -- Imperial Moth
-            { 4,  90902 }, -- Imperial Silkworm
-            { 5,  82774 }, -- Jade Owl
-            { 6,  82775 }, -- Sapphire Cub
-            { 7,  87526 }, -- Mechanical Pandaren Dragonling
-            { 9,  94903 }, -- Pierre
-            { 10, 100905 }, -- Rascal-Bot
+            { 3,  82774 }, -- Jade Owl
+            { 4,  82775 }, -- Sapphire Cub
+            { 5,  87526 }, -- Mechanical Pandaren Dragonling
+            { 7,  90900 }, -- Imperial Moth
+            { 8,  90902 }, -- Imperial Silkworm
+            { 10,  94903 }, -- Pierre
+            { 11, 100905 }, -- Rascal-Bot
             }
         },
         {

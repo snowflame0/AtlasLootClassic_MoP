@@ -3565,6 +3565,8 @@ if AtlasLoot:GameVersion_EQ(AtlasLoot.MOP_VERSION_NUM) then
         [101729] = 5,
         [101740] = 5,
         -- Battle Pets
+        [90900] = 2,
+        [90902] = 2,
         [93025] = 2,
         [94124] = 3,
         [94190] = 3,
