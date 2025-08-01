@@ -1052,6 +1052,7 @@ data["CompanionsMoP"] = {
         name = ALIL["Quests"],
         TableType = AC_ITTYPE,
         [NORMAL_DIFF] = {
+            -- Phase 1
             { 1,  84105 }, -- Fishy
             { 2,  85222 }, -- Red Cricket
             { 3,  90173 }, -- Pandaren Water Spirit
@@ -1059,15 +1060,18 @@ data["CompanionsMoP"] = {
             { 5,  92799 }, -- Pandaren Air Spirit
             { 6,  92800 }, -- Pandaren Earth Spirit
             { 7,  94025 }, -- Red Panda
-            { 8,  94208 }, -- Sunfur Panda
-            { 9,  94209 }, -- Snowy Panda
-            { 10, 94210 }, -- Mountain Panda
-            { 12, 94190 }, -- Spectral Porcupette
+            -- Phase 3
+            { 9, 94190 }, -- Spectral Porcupette
+            -- Phase 3?
+            { 11,  94208 }, -- Sunfur Panda
+            { 12,  94209 }, -- Snowy Panda
+            { 13, 94210 }, -- Mountain Panda
             }
         },
         {
         name = ALIL["Fishing"],
         [NORMAL_DIFF] = {
+            -- Phase 3?
             { 1, 94932 }, -- Tiny Red Carp
             { 2, 94933 }, -- Tiny Blue Carp
             { 3, 94934 }, -- Tiny Green Carp
@@ -1077,13 +1081,16 @@ data["CompanionsMoP"] = {
         {
         name = AL["Crafting"],
         [NORMAL_DIFF] = {
+            -- Phase 1
             { 1,  89367 }, -- Yu'lon Kite
             { 2,  89368 }, -- Chi-Ji Kite
             { 3,  82774 }, -- Jade Owl
             { 4,  82775 }, -- Sapphire Cub
             { 5,  87526 }, -- Mechanical Pandaren Dragonling
+            -- Phase 2
             { 7,  90900 }, -- Imperial Moth
             { 8,  90902 }, -- Imperial Silkworm
+            -- Phase 3?
             { 10, 94903 }, -- Pierre
             { 11, 100905 }, -- Rascal-Bot
             }
