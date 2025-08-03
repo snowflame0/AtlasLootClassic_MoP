@@ -1016,7 +1016,7 @@ data["CompanionsMoP"] = {
             -- Phase 1
             { 3,  88148 }, -- Jade Crane Chick
             { 4,  85447 }, -- Tiny Goldfish
-            -- Phase 2
+            -- Phase 2?
             { 6,  93025 }, -- Clock'em
             -- Phase 4
             { 8,  97821 }, -- Gahz'rooki
@@ -1087,7 +1087,7 @@ data["CompanionsMoP"] = {
             { 3,  82774 }, -- Jade Owl
             { 4,  82775 }, -- Sapphire Cub
             { 5,  87526 }, -- Mechanical Pandaren Dragonling
-            -- Phase 2
+            -- Phase 2?
             { 7,  90900 }, -- Imperial Moth
             { 8,  90902 }, -- Imperial Silkworm
             -- Phase 3?
