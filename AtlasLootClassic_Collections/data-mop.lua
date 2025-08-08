@@ -1016,17 +1016,18 @@ data["CompanionsMoP"] = {
             -- Phase 1
             { 3,  88148 }, -- Jade Crane Chick
             { 4,  85447 }, -- Tiny Goldfish
+            { 5,  95621 }, -- Warbot
             -- Phase 2?
-            { 6,  93025 }, -- Clock'em
+            { 7,  93025 }, -- Clock'em
             -- Phase 4
-            { 8,  97821 }, -- Gahz'rooki
+            { 9,  97821 }, -- Gahz'rooki
             -- Phase 5
-            { 10, 101771 }, -- Xu-Fu, Cub of Xuen
-            { 11, 102145 }, -- Chi-Chi, Hatchling of Chi-Ji
-            { 12, 102146 }, -- Zao, Calfling of Niuzao
-            { 13, 102147 }, -- Yu'la, Broodling of Yu'lon
-            { 14, 103637 }, -- Vengeful Porcupette
-            { 15, 104295 }, -- Harmonious Porcupette
+            { 11, 101771 }, -- Xu-Fu, Cub of Xuen
+            { 12, 102145 }, -- Chi-Chi, Hatchling of Chi-Ji
+            { 13, 102146 }, -- Zao, Calfling of Niuzao
+            { 14, 102147 }, -- Yu'la, Broodling of Yu'lon
+            { 15, 103637 }, -- Vengeful Porcupette
+            { 16, 104295 }, -- Harmonious Porcupette
             }
         },
         {
@@ -1090,7 +1091,7 @@ data["CompanionsMoP"] = {
             -- Phase 2?
             { 7,  90900 }, -- Imperial Moth
             { 8,  90902 }, -- Imperial Silkworm
-            -- Phase 3?
+            -- Phase 3? 5?
             { 10, 94903 }, -- Pierre
             { 11, 100905 }, -- Rascal-Bot
             }
