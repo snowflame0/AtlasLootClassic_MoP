@@ -1,3 +1,8 @@
+# 5.0.3 (August 27, 2025)
+- Added Celestial Dungeon drops
+- Added Rare mobs and items to Collections
+- Added rest of S12 PvP gear
+
 # 5.0.2 (July 24, 2025)
 - Added Dungeons and Raids + Crafting item sources
 - Added MoP Tier token data

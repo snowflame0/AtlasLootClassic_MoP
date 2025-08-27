@@ -1,5 +1,6 @@
 # TODO for MoP Release
 - [ ] PvP Module needs to be populated
+    - [x] S12 gear
     - [ ] S13 gear
     - [ ] S14 gear
     - [ ] S15 gear
@@ -7,6 +8,8 @@
     - [x] Sets
 - [ ] Collections module needs to be populated
     - [ ] Brawler's Guild
+    - [x] Add rare mobs
+    - [x] Add rare items
     - [x] Challenge mode sets
     - [x] Legendaries clean up, add gems and other stuff
     - [x] Celestial dungeon vendor
@@ -28,10 +31,9 @@
         - [ ] Crafted PvP gear
         - [ ] Sets
     - [x] Blacksmithing
-- [ ] Finish Dungeons and Raids module
-    - [ ] Add Celestial Dungeon stuff to Dungeons and Raids
-    - [ ] Make world bosses data more compact/usable
-    - [ ] Add valor/justice/fragments currency drops
+- [x] Finish Dungeons and Raids module
+    - [x] Add Celestial Dungeon stuff to Dungeons and Raids
+    - [x] Add valor/justice/fragments currency drops
     - [x] Add Siege of Orgrimmar (zug zug)
     - [x] Add source data to Data module (last step, with script)
     - [x] Tier sets (from Collections module)
@@ -49,8 +51,8 @@
 
 # Bugs and Other Problems
 - [x] Finish update notifier
-- [x] Linking items to chat seems broken, NVM BLIZZARD PROBLEM
 - [x] Add any missing locale strings
+- [ ] Remove all relics and thrown weapons
 
 # Maybe Someday
 - [ ] Forward port transmog, world map, encounter, pet, and mount journal integration
@@ -60,5 +62,5 @@
 - [ ] All glyphs in collections
 
 # External Stuff
-- [ ] Update CurseForge icon
+- [x] Update CurseForge icon
 - [x] Rename addon for MoP
