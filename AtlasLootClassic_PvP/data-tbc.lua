@@ -426,7 +426,6 @@ data["ArenaS1PvP"] = {
     }, {
         name = AL["Weapons"] .. " - " .. AL["Ranged"],
         [NORMAL_DIFF] = {{1, 28294}, -- Gladiator's Heavy Crossbow
-        {3, 28319}, -- Gladiator's War Edge
         {16, 28320} -- Gladiator's Touch of Defeat
         }
     }, {
@@ -434,18 +433,6 @@ data["ArenaS1PvP"] = {
         [NORMAL_DIFF] = {{1, 28358}, -- Gladiator's Shield Wall
         {16, 28346}, -- Gladiator's Endgame
         {17, 32452} -- Gladiator's Repriev
-        }
-    }, {
-        name = ALIL["Relic"],
-        [NORMAL_DIFF] = {{1, 33942}, -- Gladiator's Idol of Steadfastness
-        {2, 33945}, -- Gladiator's Idol of Resolve
-        {3, 28355}, -- Gladiator's Idol of Tenacity
-        {5, 28356}, -- Gladiator's Libram of Justice
-        {6, 33936}, -- Gladiator's Libram of Fortitude
-        {7, 33948}, -- Gladiator's Libram of Vengeance
-        {16, 28357}, -- Gladiator's Totem of the Third Wind
-        {17, 33951}, -- Gladiator's Totem of Survival
-        {18, 33939} -- Gladiator's Totem of Indomitability
         }
     }, {
         name = ALIL["Neck"],
@@ -625,7 +612,6 @@ data["ArenaS2PvP"] = {
     }, {
         name = AL["Weapons"] .. " - " .. AL["Ranged"],
         [NORMAL_DIFF] = {{1, 31986}, -- Gladiator's Heavy Crossbow
-        {3, 32054}, -- Gladiator's War Edge
         {16, 32962} -- Gladiator's Touch of Defeat
         }
     }, {
@@ -635,18 +621,6 @@ data["ArenaS2PvP"] = {
         {4, 33313}, -- Merciless Gladiator's Barrier
         {16, 31978}, -- Gladiator's Endgame
         {17, 32961} -- Gladiator's Repriev
-        }
-    }, {
-        name = ALIL["Relic"],
-        [NORMAL_DIFF] = {{1, 33943}, -- Gladiator's Idol of Steadfastness
-        {2, 33946}, -- Gladiator's Idol of Resolve
-        {3, 33076}, -- Gladiator's Idol of Tenacity
-        {5, 33077}, -- Gladiator's Libram of Justice
-        {6, 33937}, -- Gladiator's Libram of Fortitude
-        {7, 33949}, -- Gladiator's Libram of Vengeance
-        {16, 33078}, -- Gladiator's Totem of the Third Wind
-        {17, 33952}, -- Gladiator's Totem of Survival
-        {18, 33940} -- Gladiator's Totem of Indomitability
         }
     }, {
         name = ALIL["Neck"],
@@ -788,7 +762,6 @@ data["ArenaS3PvP"] = {
         [NORMAL_DIFF] = {{1, 34529}, -- Vengeful Gladiator's Longbow
         {3, 33006}, -- Gladiator's Heavy Crossbow
         {5, 34530}, -- Vengeful Gladiator's Rifle
-        {7, 33765}, -- Gladiator's War Edge
         {16, 33764}, -- Gladiator's Touch of Defeat
         {17, 34059}, -- Vengeful Gladiator's Baton of Light
         {18, 34066} -- Vengeful Gladiator's Piercing Touch
@@ -801,18 +774,6 @@ data["ArenaS3PvP"] = {
         {16, 33681}, -- Gladiator's Endgame
         {17, 33736}, -- Gladiator's Reprieve
         {18, 34033} -- Vengeful Gladiator's Grimoire
-        }
-    }, {
-        name = ALIL["Relic"],
-        [NORMAL_DIFF] = {{1, 33944}, -- Gladiator's Idol of Steadfastness
-        {2, 33947}, -- Gladiator's Idol of Resolve
-        {3, 33841}, -- Gladiator's Idol of Tenacity
-        {5, 33842}, -- Gladiator's Libram of Justice
-        {6, 33938}, -- Gladiator's Libram of Fortitude
-        {7, 33950}, -- Gladiator's Libram of Vengeance
-        {16, 33843}, -- Gladiator's Totem of the Third Wind
-        {17, 33953}, -- Gladiator's Totem of Survival
-        {18, 33941} -- Gladiator's Totem of Indomitability
         }
     }, {
         name = ALIL["Neck"],
@@ -969,7 +930,6 @@ data["ArenaS4PvP"] = {
         [NORMAL_DIFF] = {{1, 35047}, -- Vengeful Gladiator's Longbow
         {3, 35018}, -- Gladiator's Heavy Crossbow
         {5, 35075}, -- Vengeful Gladiator's Rifle
-        {7, 35108}, -- Gladiator's War Edge
         {16, 35107}, -- Gladiator's Touch of Defeat
         {17, 34985}, -- Vengeful Gladiator's Baton of Light
         {18, 35065} -- Vengeful Gladiator's Piercing Touch
@@ -991,18 +951,6 @@ data["ArenaS4PvP"] = {
         {4, 44429} --  Volanthius Shroud
         }
     }), {
-        name = ALIL["Relic"],
-        [NORMAL_DIFF] = {{1, 35020}, -- Gladiator's Idol of Steadfastness
-        {2, 35019}, -- Gladiator's Idol of Resolve
-        {3, 35021}, -- Gladiator's Idol of Tenacity
-        {5, 35040}, -- Gladiator's Libram of Justice
-        {6, 35039}, -- Gladiator's Libram of Fortitude
-        {7, 35041}, -- Gladiator's Libram of Vengeance
-        {16, 35106}, -- Gladiator's Totem of the Third Wind
-        {17, 35105}, -- Gladiator's Totem of Survival
-        {18, 35104} -- Gladiator's Totem of Indomitability
-        }
-    }, {
         name = ALIL["Neck"],
         [NORMAL_DIFF] = {{1, 35135}, -- Guardian's Pendant of Triumph
         {2, 37928}, -- Guardian's Pendant of Subjugation

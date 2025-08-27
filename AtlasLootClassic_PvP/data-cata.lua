@@ -179,8 +179,6 @@ data["ArenaS9PvP"] = {
 				{ 1, 67461 }, -- Vicious Gladiator's Longbow
 				{ 2, 67462 }, -- Vicious Gladiator's Heavy Crossbow
 				{ 3, 67463 }, -- Vicious Gladiator's Rifle
-				{ 5, 67466 }, -- Vicious Gladiator's Hatchet
-				{ 6, 67467 }, -- Vicious Gladiator's War Edge
 				{ 16, 67464 }, -- Vicious Gladiator's Baton of Light
 				{ 17, 67465 }, -- Vicious Gladiator's Touch of Defeat
 			},
@@ -210,15 +208,6 @@ data["ArenaS9PvP"] = {
 				{ 16, 60786 }, -- Vicious Gladiator's Drape of Diffusion
 				{ 17, 60788 }, -- Vicious Gladiator's Drape of Meditation
 				{ 18, 60787 }, -- Vicious Gladiator's Drape of Prowess
-			},
-		},
-		{
-			name = ALIL["Relic"],
-			[SET2_DIFF] = {
-				{ 1, 61391 }, -- Vicious Gladiator's Relic of Conquest
-				{ 2, 61388 }, -- Vicious Gladiator's Relic of Dominance
-				{ 3, 61389 }, -- Vicious Gladiator's Relic of Salvation
-				{ 4, 61390 }, -- Vicious Gladiator's Relic of Triumph
 			},
 		},
 		{
@@ -598,8 +587,6 @@ data["ArenaS10PvP"] = {
 				{ 1, 61353 }, -- Vicious Gladiator's Longbow
 				{ 2, 61355 }, -- Vicious Gladiator's Heavy Crossbow
 				{ 3, 61354 }, -- Vicious Gladiator's Rifle
-				{ 5, 61348 }, -- Vicious Gladiator's Hatchet
-				{ 6, 61347 }, -- Vicious Gladiator's War Edge
 				{ 16, 61351 }, -- Vicious Gladiator's Baton of Light
 				{ 17, 61350 }, -- Vicious Gladiator's Touch of Defeat
 			},
@@ -607,8 +594,6 @@ data["ArenaS10PvP"] = {
 				{ 1, 70236 }, -- Ruthless Gladiator's Longbow
 				{ 2, 70238 }, -- Ruthless Gladiator's Heavy Crossbow
 				{ 3, 70237 }, -- Ruthless Gladiator's Rifle
-				{ 5, 70233 }, -- Ruthless Gladiator's Hatchet
-				{ 6, 70232 }, -- Ruthless Gladiator's War Edge
 				{ 16, 70235 }, -- Ruthless Gladiator's Baton of Light
 				{ 17, 70234 }, -- Ruthless Gladiator's Touch of Defeat
 			},
@@ -616,8 +601,6 @@ data["ArenaS10PvP"] = {
 				{ 1, 70192 }, -- Ruthless Gladiator's Longbow
 				{ 2, 70193 }, -- Ruthless Gladiator's Heavy Crossbow
 				{ 3, 70194 }, -- Ruthless Gladiator's Rifle
-				{ 5, 70197 }, -- Ruthless Gladiator's Hatchet
-				{ 6, 70198 }, -- Ruthless Gladiator's War Edge
 				{ 16, 70195 }, -- Ruthless Gladiator's Baton of Light
 				{ 17, 70196 }, -- Ruthless Gladiator's Touch of Defeat
 			},
@@ -674,21 +657,6 @@ data["ArenaS10PvP"] = {
 				{ 16, 70387 }, -- Ruthless Gladiator's Drape of Diffusion
 				{ 17, 70389 }, -- Ruthless Gladiator's Drape of Meditation
 				{ 18, 70388 }, -- Ruthless Gladiator's Drape of Prowess
-			},
-		},
-		{
-			name = ALIL["Relic"],
-			[SET2_UPGRADE_DIFF] = {
-				{ 1, 70628 }, -- Vicious Gladiator's Relic of Conquest
-				{ 2, 70629 }, -- Vicious Gladiator's Relic of Dominance
-				{ 3, 70630 }, -- Vicious Gladiator's Relic of Salvation
-				{ 4, 70631 }, -- Vicious Gladiator's Relic of Triumph
-			},
-			[SET3_DIFF] = {
-				{ 1, 70408 }, -- Ruthless Gladiator's Relic of Conquest
-				{ 2, 70405 }, -- Ruthless Gladiator's Relic of Dominance
-				{ 3, 70406 }, -- Ruthless Gladiator's Relic of Salvation
-				{ 4, 70407 }, -- Ruthless Gladiator's Relic of Triumph
 			},
 		},
 		{
@@ -1068,8 +1036,6 @@ data["ArenaS11PvP"] = {
 				{ 1, 70236 }, -- Ruthless Gladiator's Longbow
 				{ 2, 70238 }, -- Ruthless Gladiator's Heavy Crossbow
 				{ 3, 70237 }, -- Ruthless Gladiator's Rifle
-				{ 5, 70233 }, -- Ruthless Gladiator's Hatchet
-				{ 6, 70232 }, -- Ruthless Gladiator's War Edge
 				{ 16, 70235 }, -- Ruthless Gladiator's Baton of Light
 				{ 17, 70234 }, -- Ruthless Gladiator's Touch of Defeat
 			},
@@ -1077,8 +1043,6 @@ data["ArenaS11PvP"] = {
 				{ 1, 73470 }, -- Cataclysmic Gladiator's Longbow
 				{ 2, 73463 }, -- Cataclysmic Gladiator's Heavy Crossbow
 				{ 3, 73460 }, -- Cataclysmic Gladiator's Rifle
-				{ 5, 73471 }, -- Cataclysmic Gladiator's Hatchet
-				{ 6, 73445 }, -- Cataclysmic Gladiator's War Edge
 				{ 16, 73450 }, -- Cataclysmic Gladiator's Baton of Light
 				{ 17, 73464 }, -- Cataclysmic Gladiator's Touch of Defeat
 			},
@@ -1086,8 +1050,6 @@ data["ArenaS11PvP"] = {
 				{ 1, 73437 }, -- Cataclysmic Gladiator's Longbow
 				{ 2, 73430 }, -- Cataclysmic Gladiator's Heavy Crossbow
 				{ 3, 73427 }, -- Cataclysmic Gladiator's Rifle
-				{ 5, 73438 }, -- Cataclysmic Gladiator's Hatchet
-				{ 6, 73412 }, -- Cataclysmic Gladiator's War Edge
 				{ 16, 73417 }, -- Cataclysmic Gladiator's Baton of Light
 				{ 17, 73431 }, -- Cataclysmic Gladiator's Touch of Defeat
 			},
@@ -1123,27 +1085,6 @@ data["ArenaS11PvP"] = {
 				{ 1, 73435 }, -- Cataclysmic Gladiator's Barrier
 				{ 2, 73425 }, -- Cataclysmic Gladiator's Redoubt
 				{ 3, 73413 }, -- Cataclysmic Gladiator's Shield Wall
-			},
-		},
-		{
-			name = ALIL["Relic"],
-			[SET3_UPGRADE_DIFF] = {
-				{ 1, 72456 }, -- Ruthless Gladiator's Relic of Conquest
-				{ 2, 72328 }, -- Ruthless Gladiator's Relic of Dominance
-				{ 3, 72358 }, -- Ruthless Gladiator's Relic of Salvation
-				{ 4, 72310 }, -- Ruthless Gladiator's Relic of Triumph
-			},
-			[SET4_DIFF] = {
-				{ 1, 73490 }, -- Cataclysmic Gladiator's Relic of Conquest
-				{ 2, 73624 }, -- Cataclysmic Gladiator's Relic of Dominance
-				{ 3, 73594 }, -- Cataclysmic Gladiator's Relic of Salvation
-				{ 4, 73642 }, -- Cataclysmic Gladiator's Relic of Triumph
-			},
-			[SET4_ELITE_DIFF] = {
-				{ 1, 74783 }, -- Cataclysmic Gladiator's Relic of Conquest
-				{ 2, 74785 }, -- Cataclysmic Gladiator's Relic of Dominance
-				{ 3, 74784 }, -- Cataclysmic Gladiator's Relic of Salvation
-				{ 4, 74786 }, -- Cataclysmic Gladiator's Relic of Triumph
 			},
 		},
 		{

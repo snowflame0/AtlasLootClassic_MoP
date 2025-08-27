@@ -312,7 +312,6 @@ data["ArenaS5PvP"] = {
 				{ 1, 42445 }, -- Savage Gladiator's Longbow
 				{ 3, 42446 }, -- Savage Gladiator's Heavy Crossbow
 				{ 5, 42447 }, -- Savage Gladiator's Rifle
-				{ 7, 42444 }, -- Savage Gladiator's War Edge
 				{ 16, 42448 }, -- Savage Gladiator's Touch of Defeat
 				{ 17, 42511 }, -- Savage Gladiator's Baton of Light
 				{ 18, 42517 }, -- Savage Gladiator's Piercing Touch
@@ -321,7 +320,6 @@ data["ArenaS5PvP"] = {
 				{ 1, 42489 }, -- Hateful Gladiator's Longbow
 				{ 3, 42494 }, -- Hateful Gladiator's Heavy Crossbow
 				{ 5, 42484 }, -- Hateful Gladiator's Rifle
-				{ 7, 42449 }, -- Hateful Gladiator's War Edge
 				{ 16, 42501 }, -- Hateful Gladiator's Touch of Defeat
 				{ 17, 42512 }, -- Hateful Gladiator's Baton of Light
 				{ 18, 42518 }, -- Hateful Gladiator's Piercing Touch
@@ -330,7 +328,6 @@ data["ArenaS5PvP"] = {
 				{ 1, 42490 }, -- Deadly Gladiator's Longbow
 				{ 3, 42495 }, -- Deadly Gladiator's Heavy Crossbow
 				{ 5, 42485 }, -- Deadly Gladiator's Rifle
-				{ 7, 42450 }, -- Deadly Gladiator's War Edge
 				{ 16, 42502 }, -- Deadly Gladiator's Touch of Defeat
 				{ 17, 42513 }, -- Deadly Gladiator's Baton of Light
 				{ 18, 42519 }, -- Deadly Gladiator's Piercing Touch
@@ -391,42 +388,6 @@ data["ArenaS5PvP"] = {
 				{ 18, 42062 }, -- Deadly Gladiator's Cloak of Dominance
 				{ 20, 42066 }, -- Deadly Gladiator's Cloak of Deliverance
 				{ 21, 42065 }, -- Deadly Gladiator's Cloak of Salvation
-			},
-		},
-		{
-			name = ALIL["Relic"],
-			[SET1_DIFF] = {
-				{ 1, 42575 }, -- Savage Gladiator's Idol of Steadfastness
-				{ 2, 42574 }, -- Savage Gladiator's Idol of Resolve
-				{ 3, 42576 }, -- Savage Gladiator's Idol of Tenacity
-				{ 5, 42612 }, -- Savage Gladiator's Libram of Justice
-				{ 6, 42611 }, -- Savage Gladiator's Libram of Fortitude
-				{ 16, 42595 }, -- Savage Gladiator's Totem of the Third Wind
-				{ 17, 42594 }, -- Savage Gladiator's Totem of Survival
-				{ 18, 42593 }, -- Savage Gladiator's Totem of Indomitability
-				{ 20, 42618 }, -- Savage Gladiator's Sigil of Strife
-			},
-			[SET2_DIFF] = {
-				{ 1, 42582 }, -- Hateful Gladiator's Idol of Steadfastness
-				{ 2, 42587 }, -- Hateful Gladiator's Idol of Resolve
-				{ 3, 42577 }, -- Hateful Gladiator's Idol of Tenacity
-				{ 5, 42613 }, -- Hateful Gladiator's Libram of Justice
-				{ 6, 42851 }, -- Hateful Gladiator's Libram of Fortitude
-				{ 16, 42596 }, -- Hateful Gladiator's Totem of the Third Wind
-				{ 17, 42601 }, -- Hateful Gladiator's Totem of Survival
-				{ 18, 42606 }, -- Hateful Gladiator's Totem of Indomitability
-				{ 20, 42619 }, -- Hateful Gladiator's Sigil of Strife
-			},
-			[SET3_DIFF] = {
-				{ 1, 42583 }, -- Deadly Gladiator's Idol of Steadfastness
-				{ 2, 42588 }, -- Deadly Gladiator's Idol of Resolve
-				{ 3, 42578 }, -- Deadly Gladiator's Idol of Tenacity
-				{ 5, 42614 }, -- Deadly Gladiator's Libram of Justice
-				{ 6, 42852 }, -- Deadly Gladiator's Libram of Fortitude
-				{ 16, 42597 }, -- Deadly Gladiator's Totem of the Third Wind
-				{ 17, 42602 }, -- Deadly Gladiator's Totem of Survival
-				{ 18, 42607 }, -- Deadly Gladiator's Totem of Indomitability
-				{ 20, 42620 }, -- Deadly Gladiator's Sigil of Strife
 			},
 		},
 		{
@@ -655,7 +616,6 @@ data["ArenaS6PvP"] = {
 				{ 1, 42491 }, -- Furious Gladiator's Longbow
 				{ 3, 42496 }, -- Furious Gladiator's Heavy Crossbow
 				{ 5, 42486 }, -- Furious Gladiator's Rifle
-				{ 7, 42451 }, -- Furious Gladiator's War Edge
 				{ 16, 42503 }, -- Furious Gladiator's Touch of Defeat
 				{ 17, 42514 }, -- Furious Gladiator's Baton of Light
 				{ 18, 42520 }, -- Furious Gladiator's Piercing Touch
@@ -695,20 +655,6 @@ data["ArenaS6PvP"] = {
 				{ 18, 42069 }, -- Furious Gladiator's Cloak of Dominance
 				{ 20, 42073 }, -- Furious Gladiator's Cloak of Deliverance
 				{ 21, 42072 }, -- Furious Gladiator's Cloak of Salvation
-			},
-		},
-		{
-			name = ALIL["Relic"],
-			[NORMAL_DIFF] = {
-				{ 1, 42584 }, -- Furious Gladiator's Idol of Steadfastness
-				{ 2, 42589 }, -- Furious Gladiator's Idol of Resolve
-				{ 3, 42579 }, -- Furious Gladiator's Idol of Tenacity
-				{ 5, 42615 }, -- Furious Gladiator's Libram of Justice
-				{ 6, 42853 }, -- Furious Gladiator's Libram of Fortitude
-				{ 16, 42598 }, -- Furious Gladiator's Totem of the Third Wind
-				{ 17, 42603 }, -- Furious Gladiator's Totem of Survival
-				{ 18, 42608 }, -- Furious Gladiator's Totem of Indomitability
-				{ 20, 42621 }, -- Furious Gladiator's Sigil of Strife
 			},
 		},
 		{
@@ -893,7 +839,6 @@ data["ArenaS7PvP"] = {
 				{ 1, 42492 }, -- Relentless Gladiator's Longbow
 				{ 3, 42498 }, -- Relentless Gladiator's Heavy Crossbow
 				{ 5, 42487 }, -- Relentless Gladiator's Rifle
-				{ 7, 42483 }, -- Relentless Gladiator's War Edge
 				{ 16, 42504 }, -- Relentless Gladiator's Touch of Defeat
 				{ 17, 42515 }, -- Relentless Gladiator's Baton of Light
 				{ 18, 42521 }, -- Relentless Gladiator's Piercing Touch
@@ -935,20 +880,6 @@ data["ArenaS7PvP"] = {
 				{ 18, 42076 }, -- Relentless Gladiator's Cloak of Dominance
 				{ 20, 42080 }, -- Relentless Gladiator's Cloak of Deliverance
 				{ 21, 42079 }, -- Relentless Gladiator's Cloak of Salvation
-			},
-		},
-		{
-			name = ALIL["Relic"],
-			[NORMAL_DIFF] = {
-				{ 1, 42585 }, -- Relentless Gladiator's Idol of Steadfastness
-				{ 2, 42591 }, -- Relentless Gladiator's Idol of Resolve
-				{ 3, 42580 }, -- Relentless Gladiator's Idol of Tenacity
-				{ 5, 42616 }, -- Relentless Gladiator's Libram of Justice
-				{ 6, 42854 }, -- Relentless Gladiator's Libram of Fortitude
-				{ 16, 42599 }, -- Relentless Gladiator's Totem of the Third Wind
-				{ 17, 42604 }, -- Relentless Gladiator's Totem of Survival
-				{ 18, 42609 }, -- Relentless Gladiator's Totem of Indomitability
-				{ 20, 42622 }, -- Relentless Gladiator's Sigil of Strife
 			},
 		},
 		{
@@ -1137,7 +1068,6 @@ data["ArenaS8PvP"] = {
 				{ 1, 51394 }, -- Wrathful Gladiator's Longbow
 				{ 3, 51411 }, -- Wrathful Gladiator's Heavy Crossbow
 				{ 5, 51449 }, -- Wrathful Gladiator's Rifle
-				{ 7, 51535 }, -- Wrathful Gladiator's War Edge
 				{ 16, 51410 }, -- Wrathful Gladiator's Touch of Defeat
 				{ 17, 51532 }, -- Wrathful Gladiator's Baton of Light
 				{ 18, 51531 }, -- Wrathful Gladiator's Piercing Touch
@@ -1179,20 +1109,6 @@ data["ArenaS8PvP"] = {
 				{ 18, 51330 }, -- Wrathful Gladiator's Cloak of Dominance
 				{ 20, 51348 }, -- Wrathful Gladiator's Cloak of Deliverance
 				{ 21, 51346 }, -- Wrathful Gladiator's Cloak of Salvation
-			},
-		},
-		{
-			name = ALIL["Relic"],
-			[NORMAL_DIFF] = {
-				{ 1, 51437 }, -- Wrathful Gladiator's Idol of Steadfastness
-				{ 2, 51429 }, -- Wrathful Gladiator's Idol of Resolve
-				{ 3, 51423 }, -- Wrathful Gladiator's Idol of Tenacity
-				{ 5, 51472 }, -- Wrathful Gladiator's Libram of Justice
-				{ 6, 51478 }, -- Wrathful Gladiator's Libram of Fortitude
-				{ 16, 51501 }, -- Wrathful Gladiator's Totem of the Third Wind
-				{ 17, 51513 }, -- Wrathful Gladiator's Totem of Survival
-				{ 18, 51507 }, -- Wrathful Gladiator's Totem of Indomitability
-				{ 20, 51417 }, -- Wrathful Gladiator's Sigil of Strife
 			},
 		},
 		{
