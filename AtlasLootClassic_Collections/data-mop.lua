@@ -557,7 +557,9 @@ data["CelestialVendorMoP"] = {
         name = ALIL["Off Hand"] .. "/" .. ALIL["Shield"],
         [MSV_DIFF] = {
             { 1, 89426 }, -- Fan of Fiery Winds
-            { 2, 86829 }, -- Tornado-Summoning Censer
+        },
+        [HOF_DIFF] = {
+            { 1, 86829 }, -- Tornado-Summoning Censer
         }
     },
     {
@@ -869,6 +871,478 @@ data["WorldEpicsMoP"] = {
     }
 }
 
+data["RaresMOPMobs"] = {
+    name = AL["Rare Mobs"],
+    ContentType = COLLECTIONS_CONTENT,
+    LoadDifficulty = LOAD_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.MOP_VERSION_NUM,
+    items = {
+        {
+            name = ALIL["The Jade Forest"],
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, ALIL["Aethis"] },
+                { 2, 87649 }, -- Pool-Stirrer
+                { 4, "INV_box_04", nil, ALIL["Ferdinand"] },
+                { 5, 87652 }, -- Ook-Breaker Mace
+                { 7, "INV_box_04", nil, ALIL["Kor'nas Nightsavage"] },
+                { 8, 87642 }, -- Darkstaff of Annihilation
+                { 10, "INV_box_04", nil, ALIL["Krax'ik"] },
+                { 11, 87646 }, -- Needlefang Throatripper
+                { 16, "INV_box_04", nil, ALIL["Mister Ferocious"] },
+                { 17, 87652 }, -- Ook-Breaker Mace
+                { 19, "INV_box_04", nil, ALIL["Morgrinn Crackfang"] },
+                { 20, 87643 }, -- Fangcracker Battlemace
+                { 22, "INV_box_04", nil, ALIL["Sarnak"] },
+                { 23, 87650 }, -- Fishsticker Crossbow
+                { 25, "INV_box_04", nil, ALIL["Urobi the Walker"] },
+                { 26, 87651 }, -- Pathwalker Greatstaff
+
+                -- Shared Zone Loot (second page, numbers prefixed with 1)
+                { 101, "INV_box_04", nil, AL["Shared Zone Loot"] },
+                { 102, 87586 }, -- Forest Trickster's Leggings
+                { 103, 87590 }, -- Jade Heart Leggings
+                { 104, 87587 }, -- Orchard Tender's Leggings
+                { 105, 87591 }, -- Tian Trainee Leggings
+                { 106, 87592 }, -- Grookin' Grookin' Trousers
+                { 107, 87588 }, -- Leggings of Spiritsong Melody
+                { 108, 87593 }, -- Gan Shi Warlord Legguards
+                { 109, 87594 }, -- Leggings of Forgotten War
+                { 110, 87589 }, -- Leggings of Fractured Reflection
+                { 111, 87217 }, -- Small Bag of Goods
+            }
+        },
+        {
+            name = ALIL["Valley of the Four Winds"],
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, ALIL["Blackhoof"] },
+                { 2, 86565 }, -- Battle Horn
+                { 4, "INV_box_04", nil, ALIL["Bonobos"] },
+                { 5, 86591 }, -- Magic Banana
+                { 7, "INV_box_04", nil, ALIL["Jonn-Dar"] },
+                { 8, 86572 }, -- Terracotta Fragment
+                { 10, "INV_box_04", nil, ALIL["Nal'lak the Ripper"] },
+                { 11, 86576 }, -- Dynasty of Steel
+                { 16, "INV_box_04", nil, ALIL["Nasra Spothide"] },
+                { 17, 86587 }, -- Seed of Tranquil Growth
+                { 19, "INV_box_04", nil, ALIL["Salyin Warscout"] },
+                { 20, 86583 }, -- Salyin Battle Banner
+                { 22, "INV_box_04", nil, ALIL["Sele'na"] },
+                { 23, 86580 }, -- Overgrown Lilypad
+                { 25, "INV_box_04", nil, ALIL["Sulik'shor"] },
+                { 26, 86569 }, -- Crystal of Insanity
+
+                -- Shared Zone Loot
+                { 101, "INV_box_04", nil, AL["Shared Zone Loot"] },
+                { 102, 87597 }, -- Gloves of Congealed Mist
+                { 103, 87598 }, -- Monstrous Silk Gloves
+                { 104, 87595 }, -- Gloves of Burrow Spelunking
+                { 105, 87599 }, -- Grower's Gloves
+                { 106, 87600 }, -- Marshsong Gloves
+                { 107, 87596 }, -- Mudmug's Mitts
+                { 108, 87602 }, -- Grain Warden's Gauntlets
+                { 109, 87603 }, -- Thunderfall Gauntlets
+                { 110, 87601 }, -- Plough Driving Grips
+                { 111, 87217 }, -- Small Bag of Goods
+            }
+        },
+        {
+            name = ALIL["Krasarang Wilds"],
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, ALIL["Arness the Scale"] },
+                { 2, 90723 }, -- Arness's Scaled Leggings
+                { 4, "INV_box_04", nil, ALIL["Cournith Waterstrider"] },
+                { 5, 90721 }, -- Courinth Waterstrider's Silken Finery
+                { 7, "INV_box_04", nil, ALIL["Gaarn the Toxic"] },
+                { 8, 90725 }, -- Gaarn's Leggings of Infestation
+                { 10, "INV_box_04", nil, ALIL["Go-Kan"] },
+                { 11, 90719 }, -- Go-Kan's Golden Trousers
+                { 16, "INV_box_04", nil, ALIL["Qu'nas"] },
+                { 17, 90717 }, -- Qu'nas' Apocryphal Legplates
+                { 19, "INV_box_04", nil, ALIL["Ruun Ghostpaw"] },
+                { 20, 90720 }, -- Silent Leggings of the Ghostpaw
+                { 22, "INV_box_04", nil, ALIL["Spriggin"] },
+                { 23, 90724 }, -- Spriggin's Sproggin' Leggin'
+                { 25, "INV_box_04", nil, ALIL["Torik-Ethis"] },
+                { 26, 90718 }, -- Torik-Ethis' Bloodied Legguards
+
+                -- Shared Zone Loot
+                { 101, "INV_box_04", nil, AL["Shared Zone Loot"] },
+                { 102, 87604 }, -- Beachcomber's Hat
+                { 103, 87608 }, -- Korjan Mystic's Hood
+                { 104, 87609 }, -- Brushstalker Helm
+                { 105, 87605 }, -- Crest of the Red Crane
+                { 106, 87610 }, -- Deepwild Hunting Helm
+                { 107, 87606 }, -- Tidehunter Helm
+                { 108, 87612 }, -- Ancient Krasari Helm
+                { 109, 87611 }, -- Shen-zin Shell Headguard
+                { 110, 87607 }, -- Unearthed Dojani Headcover
+                { 111, 87217 }, -- Small Bag of Goods
+            }
+        },
+        {
+            name = ALIL["Kun-Lai Summit"],
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, ALIL["Ahone the Wanderer"] },
+                { 2, 86588 }, -- Pandaren Firework Launcher
+                { 4, "INV_box_04", nil, ALIL["Borginn Darkfist"] },
+                { 5, 86570 }, -- Crate of Kidnapped Puppies
+                { 7, "INV_box_04", nil, ALIL["Havak"] },
+                { 8, 86573 }, -- Shard of Archstone
+                { 10, "INV_box_04", nil, ALIL["Korda Torros"] },
+                { 11, 86566 }, -- Forager's Gloves
+                { 16, "INV_box_04", nil, ALIL["Nessos the Oracle"] },
+                { 17, 86584 }, -- Hardened Shell
+                { 19, "INV_box_04", nil, ALIL["Scritch"] },
+                { 20, 86592 }, -- Hozen Peace Pipe
+                { 22, "INV_box_04", nil, ALIL["Ski'thik"] },
+                { 23, 86577 }, -- Rod of Ambershaping
+                { 25, "INV_box_04", nil, ALIL["Zai the Outcast"] },
+                { 26, 86581 }, -- Farwater Conch
+
+                -- Shared Zone Loot
+                { 101, "INV_box_04", nil, AL["Shared Zone Loot"] },
+                { 102, 87616 }, -- Mountain Trailblazer's Cuffs
+                { 103, 87615 }, -- Yakwasher's Bracers
+                { 104, 87617 }, -- Bracers of the Serene Mountaintop
+                { 105, 87613 }, -- Frozen Zandalari Bracer
+                { 106, 87618 }, -- Ice Encrusted Bracer
+                { 107, 87614 }, -- Kafa Picker's Bracers
+                { 108, 87620 }, -- Bracers of the Frozen Summit
+                { 109, 87619 }, -- Terracotta Guardian's Bracer
+                { 110, 87621 }, -- Wristguards of Great Fortune
+                { 111, 87217 }, -- Small Bag of Goods
+            }
+        },
+        {
+            name = ALIL["Townlong Steppes"],
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, ALIL["Eshelon"] },
+                { 2, 87222 }, -- Big Bag of Linens
+                { 4, "INV_box_04", nil, ALIL["Kah'tir"] },
+                { 5, 87218 }, -- Big Bag of Arms
+                { 7, "INV_box_04", nil, ALIL["Lith'ik the Stalker"] },
+                { 8, 87221 }, -- Big Bag of Jewels
+                { 10, "INV_box_04", nil, ALIL["Lon the Bull"] },
+                { 11, 87219 }, -- Big Bag of Herbs
+                { 16, "INV_box_04", nil, ALIL["Norlaxx"] },
+                { 17, 87220 }, -- Big Bag of Mysteries
+                { 19, "INV_box_04", nil, ALIL["Siltriss the Sharpener"] },
+                { 20, 87223 }, -- Big Bag of Skins
+                { 22, "INV_box_04", nil, ALIL["The Yowler"] },
+                { 23, 87225 }, -- Big Bag of Food
+                { 25, "INV_box_04", nil, ALIL["Yul Wildpaw"] },
+                { 26, 87224 }, -- Big Bag of Wonders
+
+                -- Shared Zone Loot
+                { 101, "INV_box_04", nil, AL["Shared Zone Loot"] },
+                { 102, 87625 }, -- Congealed Mist Amulet
+                { 103, 87623 }, -- Razor-Sharp Chitin Choker
+                { 104, 87626 }, -- Suna's Shattered Locket
+                { 105, 87624 }, -- Yaungol Mist-Shaman's Amulet
+                { 106, 87622 }, -- Yoke of Niuzao
+                { 107, 87217 }, -- Small Bag of Goods
+            }
+        },
+        {
+            name = ALIL["Dread Wastes"],
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, ALIL["Ai-Li Skymirror"] },
+                { 2, 86589 }, -- Ai-Li's Skymirror
+                { 4, "INV_box_04", nil, ALIL["Dak the Breaker"] },
+                { 5, 86567 }, -- Yaungol Wind Chime
+                { 7, "INV_box_04", nil, ALIL["Gar'lok"] },
+                { 8, 86578 }, -- Eternal Warrior's Sigil
+                { 10, "INV_box_04", nil, ALIL["Ik-Ik the Nimble"] },
+                { 11, 86593 }, -- Hozen Beach Ball
+                { 16, "INV_box_04", nil, ALIL["Karr the Darkener"] },
+                { 17, 86564 }, -- Imbued Jade Fragment
+                { 19, "INV_box_04", nil, ALIL["Krol the Blade"] },
+                { 20, 86574 }, -- Elixir of Ancient Knowledge
+                { 22, "INV_box_04", nil, ALIL["Nalash Verdantis"] },
+                { 23, 86563 }, -- Hollow Reed
+                { 25, "INV_box_04", nil, ALIL["Omnis Grinlok"] },
+                { 26, 86585 }, -- Golden Fleece
+
+                -- Shared Zone Loot
+                { 101, "INV_box_04", nil, AL["Shared Zone Loot"] },
+                { 102, 87635 }, -- Amber-Starched Robes
+                { 103, 87634 }, -- Mazu's Robe
+                { 104, 87631 }, -- Jiao-Skin Tunic
+                { 105, 87630 }, -- Chestpiece of Twinkling Stars
+                { 106, 87632 }, -- Fearsworn Chestpiece
+                { 107, 87629 }, -- Chestplate of Manifest Dread
+                { 108, 87627 }, -- Kunchong Carapace Chestguard
+                { 109, 87628 }, -- Spinebreaker Chestpiece
+                { 110, 87217 }, -- Small Bag of Goods
+            }
+        },
+        {
+            name = ALIL["Vale of Eternal Blossoms"],
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, ALIL["Ai-Ran the Shifting Cloud"] },
+                { 2, 86590 }, -- Essence of the Breeze
+                { 4, "INV_box_04", nil, ALIL["Kal'tik the Blight"] },
+                { 5, 86579 }, -- Bottled Tornado
+                { 7, "INV_box_04", nil, ALIL["Kang the Soul Thief"] },
+                { 8, 86571 }, -- Kang's Bindstone
+                { 10, "INV_box_04", nil, ALIL["Major Nanners"] },
+                { 11, 86594 }, -- Helpful Wikky's Whistle
+                { 16, "INV_box_04", nil, ALIL["Moldo One-Eye"] },
+                { 17, 86586 }, -- Panflute of Pandaria
+                { 19, "INV_box_04", nil, ALIL["Sahn Tidehunter"] },
+                { 20, 86582 }, -- Aqua Jewel
+                { 22, "INV_box_04", nil, ALIL["Urgolax"] },
+                { 23, 86575 }, -- Chalice of Secrets
+                { 25, "INV_box_04", nil, ALIL["Yorik Sharpeye"] },
+                { 26, 86568 }, -- Mr. Smite's Brass Compass
+
+                -- Shared Zone Loot
+                { 101, "INV_box_04", nil, AL["Shared Zone Loot"] },
+                { 102, 87638 }, -- Cloak of Tranquil Clouds
+                { 103, 87636 }, -- Cloak of the Forgotten Emperor
+                { 104, 87637 }, -- Jade Harbinger's Cloak
+                { 105, 87640 }, -- Softfoot's Drape
+                { 106, 87639 }, -- Tattered Guo-Lai Dynasty Cloak
+                { 107, 87217 }, -- Small Bag of Goods
+            }
+        },
+        {
+            name = ALIL["Isle of Thunder"],
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, ALIL["Ancient Mogu Guardian"] },
+                { 2, 94826 }, -- Mogu Sportsman's Bow
+                { 4, "INV_box_04", nil, ALIL["Cera"] },
+                { 5, 94706 }, -- Cera's Impalers
+                { 7, "INV_box_04", nil, ALIL["Echo of Kros"] },
+                { 8, 94708 }, -- Saurok Ritualist's Sacrificial Dagger
+                { 10, "INV_box_04", nil, ALIL["Electromancer Ju'le"] },
+                { 11, 94825 }, -- Lightning Snare
+                { 16, "INV_box_04", nil, ALIL["Haywire Sunreaver Construct"] },
+                { 17, 94124 }, -- Sunreaver Micro-Sentry
+                { 19, "INV_box_04", nil, ALIL["Incomplete Drakkari Colossus"] },
+                { 20, 94823 }, -- Drakkari Decapitator
+                { 22, "INV_box_04", nil, ALIL["Kor'dok and Tinzo the Emberkeeper"] },
+                { 23, 94720 }, -- Vengeance of Kor'dok
+                { 25, "INV_box_04", nil, ALIL["Qi'nor"] },
+                { 26, 94824 }, -- Gaze of Qi'nor
+
+                -- Second page
+                { 101, "INV_box_04", nil, AL["Ra'sha"] },
+                { 102, 95566 }, -- Ra'sha's Sacrificial Dagger
+                { 104, "INV_box_04", nil, ALIL["Spirit of Warlord Teng"] },
+                { 105, 94707 }, -- Teng's Reach
+                { 107, "INV_box_04", nil, ALIL["Windweaver Akil'amon"] },
+                { 108, 94709 }, -- Talonblade of Akil'amon
+                { 116, "INV_box_04", nil, AL["Shared Zone Loot"] },
+                { 117, 94222 }, -- Key to the Palace of Lei Shen
+                { 118, 92426 }, -- Sealed Tome of the Lost Legion
+                { 119, 94221 }, -- Shan'ze Ritual Stone
+            }
+        },
+        {
+            name = ALIL["Timeless Isle"],
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, ALIL["Archiereus of Flame"] },
+                { 2, 86574 }, -- Elixir of Ancient Knowledge
+                { 4, "INV_box_04", nil, ALIL["Bufo"] },
+                { 5, 104169 }, -- Gulp Froglet
+                { 7, "INV_box_04", nil, ALIL["Champion of the Black Flame"] },
+                { 8, 104302 }, -- Blackflame Daggers
+                { 10, "INV_box_04", nil, ALIL["Chelon"].." & "..ALIL["Great Turtle Furyshell"] },
+                { 11, 86584 }, -- Hardened Shell
+                { 13, "INV_box_04", nil, ALIL["Cinderfall"] },
+                { 14, 104299 }, -- Falling Flame
+                { 16, "INV_box_04", nil, ALIL["Cranegnasher"] },
+                { 17, 104268 }, -- Pristine Stalker Hide
+                { 19, "INV_box_04", nil, ALIL["Dread Ship Vazuvius"] },
+                { 20, 104294 }, -- Rime of the Time-Lost Mariner
+                { 22, "INV_box_04", nil, ALIL["Emerald Gander"] },
+                { 23, 104287 }, -- Windfeather Plume
+                { 25, "INV_box_04", nil, ALIL["Evermaw"] },
+                { 26, 104115 }, -- Mist-Filled Spirit Lantern
+                { 28, "INV_box_04", nil, ALIL["Flintlord Gairan"] },
+                { 29, 104298 }, -- Ordon Death Chime
+
+                -- Second page
+                { 101, "INV_box_04", nil, ALIL["Garnia"] },
+                { 102, 104159 }, -- Ruby Droplet
+                { 104, "INV_box_04", nil, ALIL["Golganarr"] },
+                { 105, 104262 }, -- Odd Polished Stone
+                { 107, "INV_box_04", nil, ALIL["Gu'chi the Swarmbringer"] },
+                { 108, 104291 }, -- Swarmling of Gu'chi
+                { 110, "INV_box_04", nil, ALIL["Huolon"] },
+                { 111, 104269 }, -- Reins of the Thundering Onyx Cloud Serpent
+                { 112, 104286 }, -- Quivering Firestorm Egg
+                { 116, "INV_box_04", nil, ALIL["Ironfur Steelhorn"] },
+                { 117, 89770 }, -- Tuft of Yak Fur
+                { 119, "INV_box_04", nil, ALIL["Imperial Python"] },
+                { 120, 104161 }, -- Death Adder Hatchling
+                { 122, "INV_box_04", nil, ALIL["Jakur of Ordon"] },
+                { 123, 104331 }, -- Warning Sign
+                { 125, "INV_box_04", nil, ALIL["Karkanos"] },
+                { 126, 104035 }, -- Giant Purse of Timeless Coins
+                { 128, "INV_box_04", nil, ALIL["Leafmender"] },
+                { 129, 104156 }, -- Ashleaf Spriteling
+
+                -- Third page
+                { 201, "INV_box_04", nil, ALIL["Molten Guardian"] },
+                { 202, 104328 }, -- Cauterizing Core
+                { 204, "INV_box_04", nil, ALIL["Monstrous Spineclaw"] },
+                { 205, 104168 }, -- Spineclaw Crab
+                { 207, "INV_box_04", nil, AL["Nice Sprite"] },
+                { 208, 104160 }, -- Dandelion Frolicker
+                { 210, "INV_box_04", nil, ALIL["Rattleskew"] },
+                { 211, 104321 }, -- Captain Zvezdan's Lost Leg
+                { 213, "INV_box_04", nil, ALIL["Rock Moss"] },
+                { 214, 104313 }, -- Golden Moss
+                { 216, "INV_box_04", nil, ALIL["Spelurk"] },
+                { 217, 104320 }, -- Cursed Talisman
+                { 219, "INV_box_04", nil, ALIL["Spirit of Jadefire"] },
+                { 220, 104258 }, -- Glowing Green Ash
+                { 221, 104307 }, -- Jadefire Spirit
+                { 223, "INV_box_04", nil, ALIL["Tsavo'ka"] },
+                { 224, 104268 }, -- Pristine Stalker Hide
+                { 226, "INV_box_04", nil, ALIL["Urdur the Cauterizer"] },
+                { 227, 104306 }, -- Sunset Stone
+
+                -- Fourth page
+                { 301, "INV_box_04", nil, ALIL["Watcher Osu"] },
+                { 302, 104305 }, -- Ashen Stone
+                { 304, "INV_box_04", nil, ALIL["Zesqua"] },
+                { 305, 104303 }, -- Rain Stone
+                { 307, "INV_box_04", nil, ALIL["Zhu-Gon the Sour"] },
+                { 308, 104167 }, -- Skunky Alemental
+            }
+        },
+        {
+            name = AL["Misc"],
+            ExtraList = true,
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, AL["Fixxul Lonelyheart"] },
+                { 2, 90078 }, -- Cracked Talisman
+                { 4, "INV_box_04", nil, AL["Lorbu Sadsummon"] },
+                { 5, 90078 }, -- Cracked Talisman
+                { 7, "INV_box_04", nil, AL["Martar the Not-So-Smart"] },
+                { 8, 87780 }, -- Martar's Magnifying Glass
+                { 10, "INV_box_04", nil, AL["Huggalon the Heart Watcher"] },
+                { 11, 90067 }, -- B. F. F. Necklace
+                { 13, "INV_box_04", nil, AL["Scotty"] },
+                { 14, 89373 }, -- Scotty's Lucky Coin
+                { 16, "INV_box_04", nil, AL["Alani"] },
+                { 17, 90655 }, -- Reins of the Thundering Ruby Cloud Serpent
+                { 19, "INV_box_04", nil, AL["Sungraze Behemoth"] },
+                { 20, 89682 }, -- Oddly-Shaped Horn
+                { 22, "INV_box_04", nil, AL["Zhing"] },
+                { 23, 89697 }, -- Bag of Kafa Beans
+                { 25, "INV_box_04", nil, AL["Pengsong"] },
+                { 26, 89770 }, -- Tuft of Yak Fur
+                { 28, "INV_box_04", nil, AL["Wild Onyx Serpent"] },
+                { 29, 93360 }, -- Serpent's Cache
+            }
+        },
+        {
+            name = AL["Zandalari Warbringer"],
+            ExtraList = true,
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, AL["Zandalari Warbringer"] },
+                { 2, 94230 }, -- Reins of the Amber Primordial Direhorn
+                { 3, 94231 }, -- Reins of the Jade Primordial Direhorn
+                { 4, 94229 }, -- Reins of the Slate Primordial Direhorn
+                { 5, 94225 }, -- Stolen Celestial Insignia
+                { 6, 94227 }, -- Stolen Golden Lotus Insignia
+                { 7, 94226 }, -- Stolen Klaxxi Insignia
+                { 8, 94223 }, -- Stolen Shado-Pan Insignia
+                { 9, 94158 }, -- Big Bag of Zandalari Supplies
+                { 10, 94159 }, -- Small Bag of Zandalari Supplies
+            }
+        },
+    }
+}
+
+data["RaresMOPItems"] = {
+    name = AL["Rare Items"],
+    ContentType = COLLECTIONS_CONTENT,
+    LoadDifficulty = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.MOP_VERSION_NUM,
+    items = {
+        {
+            name = ALIL["The Jade Forest"].." / "..ALIL["Valley of the Four Winds"],
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, ALIL["The Jade Forest"] },
+                { 2, 86196 },
+                { 3, 85777 },
+                { 4, 86198 },
+                { 5, 85776 },
+                { 7, "INV_box_04", nil, AL["Jade Warrior Statue"] },
+                { 8, 86199 },
+                { 16, "INV_box_04", nil, ALIL["Valley of the Four Winds"] },
+                { 17, 86218 },
+                { 19, "INV_box_04", nil, AL["Ghostly Pandaren Craftsman"] },
+                { 20, 86079 },
+                { 22, "INV_box_04", nil, AL["Ghostly Pandaren Fisherman"] },
+                { 23, 85973 },
+                { 25, "INV_box_04", nil, AL["Cache of Pilfered Goods"] },
+                { 26, 86113 },
+                { 27, 86112 },
+                { 28, 86111 },
+                { 29, 86114 },
+                { 30, 86110 },
+            }
+        },
+        {
+            name = ALIL["Krasarang Wilds"].." / "..ALIL["Kun-Lai Summit"],
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, ALIL["Krasarang Wilds"] },
+                { 2, 86124 },
+                { 4, "INV_box_04", nil, AL["Barrel of Banana Infused Rum"] },
+                { 5, 87266 },
+                { 7, "INV_box_04", nil, AL["Equipment Locker"] },
+                { 8, 86117 },
+                { 9, 86118 },
+                { 10, 86119 },
+                { 11, 86115 },
+                { 12, 86116 },
+                { 13, 86120 },
+                { 14, 86122 },
+                { 15, 86123 },
+                { 16, "INV_box_04", nil, ALIL["Kun-Lai Summit"] },
+                { 17, 86394 },
+                { 18, 88723 },
+                { 19, 86393 },
+                { 21, "INV_box_04", nil, AL["Frozen Trail Packer"] },
+                { 22, 86125 },
+                { 24, "INV_box_04", nil, AL["Sprite's Cloth Chest"] },
+                { 25, 86223 },
+                { 26, 86222 },
+                { 27, 86224 },
+                { 28, 86225 },
+                { 29, 86221 },
+            }
+        },
+        {
+            name = ALIL["Townlong Steppes"].." / "..ALIL["Dread Wastes"],
+            [NORMAL_DIFF] = {
+                { 1, "INV_box_04", nil, ALIL["Townlong Steppes"] },
+                { 2, 86518 },
+                { 16, "INV_box_04", nil, ALIL["Dread Wastes"] },
+                { 17, 86527 },
+                { 18, 86522 },
+                { 19, 86525 },
+                { 20, 86524 },
+                { 21, 86521 },
+                { 22, 86520 },
+                { 23, 86523 },
+                { 24, 86526 },
+                { 25, 86519 },
+                { 27, "INV_box_04", nil, AL["Glinting Rapana Whelk"] },
+                { 28, 86529 },
+            }
+        },
+    }
+}
+
 data["MountsMoP"] = {
     name = ALIL["Mounts"],
     ContentType = COLLECTIONS_CONTENT,
@@ -1101,7 +1575,54 @@ data["CompanionsMoP"] = {
             [NORMAL_DIFF] = {
             { 1,  85871 }, -- Lucky Quilen Cub
             },
-        }
+        },
+        {
+            name = AL["Accessories"],
+            ExtraList = true,
+            [NORMAL_DIFF] = {
+                { 1, 92738 }, -- Safari Hat
+                { 3, 47541 }, -- Argent Pony Bridle
+                { 4, 38291 }, -- Ethereal Mutagen
+                { 5, 35223 }, -- Papa Hummel's Old-Fashioned Pet Biscuit
+                { 6, 37431 }, -- Fetch Ball
+                { 7, 43626 }, -- Happy Pet Snack
+                { 8, 89906 }, -- Magical Mini-Treat
+                { 18, 71153 }, -- Magical Pet Biscuit
+                { 19, 43352 }, -- Pet Grooming Kit
+                { 20, 89139 }, -- Chain Pet Leash
+                { 21, 89222 }, -- Cloud Ring
+                { 22, 44820 }, -- Red Ribbon Pet Leash
+                { 23, 37460 }, -- Rope Pet Leash
+            }
+        },
+        {
+            name = AL["Battle-Stones"],
+            ExtraList = true,
+            [NORMAL_DIFF] = {
+                { 1, 92742 }, -- Polished Battle-Stone
+                { 2, 92689 }, -- Polished Aquatic Battle-Stone
+                { 3, 92685 }, -- Polished Beast Battle-Stone
+                { 4, 92686 }, -- Polished Critter Battle-Stone
+                { 5, 92693 }, -- Polished Dragonkin Battle-Stone
+                { 6, 92684 }, -- Polished Elemental Battle-Stone
+                { 7, 92687 }, -- Polished Flying Battle-Stone
+                { 8, 92692 }, -- Polished Humanoid Battle-Stone
+                { 9, 92688 }, -- Polished Magic Battle-Stone
+                { 10, 92690 }, -- Polished Mechanical Battle-Stone
+                { 11, 92691 }, -- Polished Undead Battle-Stone
+                { 16, 92741 }, -- Flawless Battle-Stone
+                { 17, 92679 }, -- Flawless Aquatic Battle-Stone
+                { 18, 92675 }, -- Flawless Beast Battle-Stone
+                { 19, 92676 }, -- Flawless Critter Battle-Stone
+                { 20, 92683 }, -- Flawless Dragonkin Battle-Stone
+                { 21, 92665 }, -- Flawless Elemental Battle-Stone
+                { 22, 92677 }, -- Flawless Flying Battle-Stone
+                { 23, 92682 }, -- Flawless Humanoid Battle-Stone
+                { 24, 92678 }, -- Flawless Magic Battle-Stone
+                { 25, 92680 }, -- Flawless Mechanical Battle-Stone
+                { 26, 92681 }, -- Flawless Undead Battle-Stone
+            }
+        },
     }
 }
 
