@@ -1442,40 +1442,40 @@ data["CompanionsMoP"] = {
             { 24, 91040 }, -- Darkmoon Eye
             { 25, 80008 }, -- Darkmoon Rabbit
             -- Phase 1
-            { 27, 101570 }, -- Moon Moon
-            { 28, 85220 }, -- Terrible Turnip
-            { 29, 86563 }, -- Aqua Strider
-            { 30, 86564 }, -- Grinder
-            { 101, 94595 }, -- Spawn of G'nathus
-            { 102, 103670 }, -- Lil' Bling
+            { 27, 85220 }, -- Terrible Turnip
+            { 28, 86563 }, -- Aqua Strider
+            { 29, 86564 }, -- Grinder
+            { 30, 94595 }, -- Spawn of G'nathus
+            { 101, 103670 }, -- Lil' Bling
+            { 102, 101570 }, -- Moon Moon
             -- Phase 3
             { 104, 97959 }, -- Living Fluid
             { 105, 94125 }, -- Living Sandling
             { 106, 94574 }, -- Pygmy Direhorn
             { 107, 94152 }, -- Son of Animus
-            { 108, 94124 }, -- Sunreaver Micro-Sentry
-            { 109, 97960 }, -- Viscous Horror
-            { 110, 94835 }, -- Ji-Kun Hatchling
-            { 111, 94573 }, -- Direhorn Runt
-            { 112, 95422 }, -- Zandalari Anklerender
-            { 113, 95423 }, -- Zandalari Footslasher
-            { 114, 94126 }, -- Zandalari Kneebiter
-            { 115, 95424 }, -- Zandalari Toenibbler
+            { 108, 97960 }, -- Viscous Horror
+            { 109, 94835 }, -- Ji-Kun Hatchling
+            { 110, 94124 }, -- Sunreaver Micro-Sentry
+            { 111, 97961 }, -- Filthling
+            { 112, 94573 }, -- Direhorn Runt
+            { 113, 95422 }, -- Zandalari Anklerender
+            { 114, 95423 }, -- Zandalari Footslasher
+            { 115, 94126 }, -- Zandalari Kneebiter
+            { 116, 95424 }, -- Zandalari Toenibbler
             -- Phase 5
-            { 117, 104156 }, -- Ashleaf Spriteling
-            { 118, 104157 }, -- Azure Crane Chick
-            { 119, 104158 }, -- Blackfuse Bombling
-            { 120, 104202 }, -- Bonkers
-            { 121, 104160 }, -- Dandelion Frolicker
-            { 122, 104161 }, -- Death Adder Hatchling
-            { 123, 104162 }, -- Droplet of Y'Shaarj
-            { 124, 97961 }, -- Filthling
-            { 125, 104163 }, -- Gooey Sha-ling
+            { 118, 104158 }, -- Blackfuse Bombling
+            { 119, 104162 }, -- Droplet of Y'Shaarj
+            { 120, 104163 }, -- Gooey Sha-ling
+            { 121, 104165 }, -- Kovok
+            { 122, 104156 }, -- Ashleaf Spriteling
+            { 123, 104157 }, -- Azure Crane Chick
+            { 124, 104202 }, -- Bonkers
+            { 124, 104160 }, -- Dandelion Frolicker
+            { 125, 104161 }, -- Death Adder Hatchling
             { 126, 104291 }, -- Gu'chi Swarmling
             { 127, 104169 }, -- Gulp Froglet
             { 128, 104307 }, -- Jadefire Spirit
             { 129, 104164 }, -- Jademist Dancer
-            { 130, 104165 }, -- Kovok
             { 201, 104166 }, -- Ominous Flame
             { 202, 104159 }, -- Ruby Droplet
             { 203, 104167 }, -- Skunky Alemental
