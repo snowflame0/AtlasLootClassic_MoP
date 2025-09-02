@@ -444,8 +444,8 @@ local function GameVersionSelect_OnClick(self, mouseButton)
             return button
         end
 
-		-- Create game version buttons from newest xpac to oldest
-		local gameVersions = {}
+        -- Create game version buttons from newest xpac to oldest
+        local gameVersions = {}
         if AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM) then
             table.insert(gameVersions, AtlasLoot.MOP_VERSION_NUM)
         end
@@ -460,12 +460,12 @@ local function GameVersionSelect_OnClick(self, mouseButton)
         end
         table.insert(gameVersions, AtlasLoot.CLASSIC_VERSION_NUM)
 
-		local GVButton = createGVButton(gameVersions[1], GAME_VERSION_TEXTURES[gameVersions[1]])
+        local GVButton = createGVButton(gameVersions[1], GAME_VERSION_TEXTURES[gameVersions[1]])
         GVButton:SetPoint("TOP", frame, "TOP", 0, -5)
-		for i = 2, #gameVersions do
-			GVButton = createGVButton(gameVersions[i], GAME_VERSION_TEXTURES[gameVersions[i]])
-			GVButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
-		end
+        for i = 2, #gameVersions do
+            GVButton = createGVButton(gameVersions[i], GAME_VERSION_TEXTURES[gameVersions[i]])
+            GVButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
+        end
 
         frame:SetSize(width, height + (#frame.buttons * 32) + ((#frame.buttons-1) * buttonGap))
         frame:Hide()
@@ -547,6 +547,36 @@ local function GUI_InfoOnEnter(self)
 end
 
 local function GUI_InfoOnLeave(self)
+    GetAlTooltip():Hide()
+end
+
+-- Transmog
+local function TransmogButton_Refresh(self)
+    self.texture:SetDesaturated(not AtlasLoot.db.GUI.transmogHighlighter)
+
+    if GUI.frame.contentFrame.shownFrame and GUI.frame.contentFrame.shownFrame.OnTransMogUpdate then
+        GUI.frame.contentFrame.shownFrame.OnTransMogUpdate()
+    end
+end
+
+local function TransmogButton_OnClick(self, button)
+    AtlasLoot.db.GUI.transmogHighlighter = not AtlasLoot.db.GUI.transmogHighlighter
+    TransmogButton_Refresh(self)
+end
+
+local function TransmogButton_OnEnter(self, owner)
+    local tooltip = GetAlTooltip()
+    tooltip:ClearLines()
+    if owner and type(owner) == "table" then
+        tooltip:SetOwner(owner[1], owner[2], owner[3], owner[4])
+    else
+        tooltip:SetOwner(self, "ANCHOR_RIGHT", -(self:GetWidth() * 0.5), 5)
+    end
+    tooltip:AddLine(TRANSMOGRIFY)
+    tooltip:Show()
+end
+
+local function TransmogButton_OnLeave(self)
     GetAlTooltip():Hide()
 end
 
@@ -1185,6 +1215,10 @@ function GUI:Create()
     frame.contentFrame.contentPhaseButton:SetScript("OnClick", ContentPhaseButton_OnClick)
     frame.contentFrame.contentPhaseButton.mainButton = true
 
+    frame.contentFrame.contentPhaseButton.texture = frame.contentFrame.contentPhaseButton:CreateTexture(frameName.."-contentPhaseButton-texture","ARTWORK")
+    frame.contentFrame.contentPhaseButton.texture:SetAllPoints(frame.contentFrame.contentPhaseButton)
+    frame.contentFrame.contentPhaseButton.texture:SetTexture(AtlasLoot.Data.ContentPhase:GetActivePhaseTexture())
+
     -- Sound
     frame.contentFrame.soundsButton = GUI.CreateButton()
     frame.contentFrame.soundsButton:SetPoint("RIGHT", frame.contentFrame.modelButton, "LEFT", -5, 0)
@@ -1243,9 +1277,20 @@ function GUI:Create()
     frame.contentFrame.clasFilterButton.texture:SetAllPoints(frame.contentFrame.clasFilterButton)
     --frame.contentFrame.clasFilterButton.texture:SetTexture(CLASS_ICON_PATH[PLAYER_CLASS_FN])
 
-    frame.contentFrame.contentPhaseButton.texture = frame.contentFrame.contentPhaseButton:CreateTexture(frameName.."-contentPhaseButton-texture","ARTWORK")
-    frame.contentFrame.contentPhaseButton.texture:SetAllPoints(frame.contentFrame.contentPhaseButton)
-    frame.contentFrame.contentPhaseButton.texture:SetTexture(AtlasLoot.Data.ContentPhase:GetActivePhaseTexture())
+    -- Transmog
+	frame.contentFrame.transmogButton = CreateFrame("Button", frameName.."-transmofButton")
+	frame.contentFrame.transmogButton:SetParent(frame.contentFrame)
+	frame.contentFrame.transmogButton:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+	frame.contentFrame.transmogButton:SetWidth(25)
+	frame.contentFrame.transmogButton:SetHeight(25)
+	frame.contentFrame.transmogButton:SetPoint("LEFT", frame.contentFrame.clasFilterButton, "RIGHT", 5, 0)
+	frame.contentFrame.transmogButton:SetScript("OnClick", TransmogButton_OnClick)
+	frame.contentFrame.transmogButton:SetScript("OnEnter", TransmogButton_OnEnter)
+	frame.contentFrame.transmogButton:SetScript("OnLeave", TransmogButton_OnLeave)
+	frame.contentFrame.transmogButton.texture = frame.contentFrame.transmogButton:CreateTexture(frameName.."-transmogButton-texture","ARTWORK")
+	frame.contentFrame.transmogButton.texture:SetAllPoints(frame.contentFrame.transmogButton)
+	frame.contentFrame.transmogButton.texture:SetTexture("Interface\\Icons\\INV_Arcane_Orb")
+    frame.contentFrame.transmogButton.texture:SetDesaturated(not AtlasLoot.db.GUI.transmogHighlighter)
 
     ContentPhaseButton_Refresh(frame.contentFrame.contentPhaseButton)
 

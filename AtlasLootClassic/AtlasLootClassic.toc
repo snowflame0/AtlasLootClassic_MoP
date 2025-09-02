@@ -58,6 +58,7 @@ Core\TooltipScan.lua
 Core\ItemQuery.lua
 Core\ItemString.lua
 Core\TargetScan.lua
+Core\Transmog.lua
 
 MiniMapButton.lua
 
