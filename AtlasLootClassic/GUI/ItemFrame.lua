@@ -275,7 +275,7 @@ function ItemFrame:Refresh(skipProtect)
     end
 
     ItemFrame.UpdateFilter()
-	ItemFrame.OnTransMogUpdate()
+    ItemFrame.OnTransMogUpdate()
 end
 
 function ItemFrame.Clear()
