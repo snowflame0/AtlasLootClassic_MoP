@@ -18,31 +18,30 @@ local TRANSMOG_UPDATE_EVENT = "TRANSMOG_SOURCE_COLLECTABILITY_UPDATE"	-- sourceI
     true	can collect, collected
 ]]
 function Proto:IsItemUnlocked(itemID, sourceID, callbackFunc, callbackArg)
-	if not itemID and not sourceID then return end
-	local isInfoReady, canCollect
-	if itemID then
-		_, sourceID = TransmogGetItemInfo(itemID)
-	end
-	if not sourceID then return end
+    if not itemID and not sourceID then return end
+    local isInfoReady, canCollect
+    if itemID then
+        _, sourceID = TransmogGetItemInfo(itemID)
+    end
+    if not sourceID then return end
     -- TODO: FIX when API works
     -- canCollect seems broken in MoP Classic? Just assume that it is collectable if info exists, for now.
-	local isInfoReady = GetSourceInfo(sourceID)
-    canCollect = isInfoReady.isValidSourceForPlayer
-
-	if isInfoReady then
-		if canCollect then
-			canCollect = PlayerHasTransmogItemModifiedAppearance(sourceID)
-		else
-			canCollect = nil
-		end
-		if callbackFunc then
-			callbackFunc(callbackArg, canCollect)
-		else
-			return canCollect
-		end
-	else
-		self:AddUnknownItem(sourceID, callbackFunc, callbackArg)
-	end
+    isInfoReady = GetSourceInfo(sourceID)
+    if isInfoReady then
+        canCollect = isInfoReady.isValidSourceForPlayer
+        if canCollect then
+            canCollect = PlayerHasTransmogItemModifiedAppearance(sourceID)
+        else
+            canCollect = nil
+        end
+        if callbackFunc then
+            callbackFunc(callbackArg, canCollect)
+        else
+            return canCollect
+        end
+    else
+        self:AddUnknownItem(sourceID, callbackFunc, callbackArg)
+    end
 end
 
 function Proto:AddUnknownItem(sourceID, callbackFunc, callbackArg)
@@ -76,7 +75,6 @@ function Transmog:New()
     end
 
     tab.itemList = {}
-
 
     tab.frame = CreateFrame("FRAME")
     tab.frame.obj = tab
