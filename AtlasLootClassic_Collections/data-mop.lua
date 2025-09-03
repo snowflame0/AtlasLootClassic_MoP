@@ -345,30 +345,30 @@ data["CelestialVendorMoP"] = {
         [HOF_DIFF] = {
             { 1, 86839 }, -- Xaril's Hood of Intoxicating Vapors
             { 3, 89959 }, -- Shoulders of Foaming Fluids
-            { 4, 89982 }, -- Shoulderpads of Twisted Fate
-            { 6, 86911 }, -- Robes of Torn Nightmares
-            { 8, 86815 }, -- Attenuating Bracers
-            { 9, 86828 }, -- Twisting Wind Bracers
+            { 5, 86911 }, -- Robes of Torn Nightmares
+            { 7, 86815 }, -- Attenuating Bracers
+            { 8, 86850 }, -- Darting Damselfly Cuffs
+            { 9, 86844 }, -- Gleaming Moth Cuffs
             { 10, 86841 }, -- Shining Cicada Bracers
-            { 11, 86844 }, -- Gleaming Moth Cuffs
-            { 12, 86875 }, -- Cuffs of the Corrupted Waters
-            { 13, 86850 }, -- Darting Damselfly Cuffs
+            { 11, 86828 }, -- Twisting Wind Bracers
             { 16, 86857 }, -- Belt of Malleable Amber
             { 18, 86867 }, -- Leggings of Shadow Infestation
-            { 19, 86825 }, -- Boots of the Blowing Wind
-            { 20, 86836 }, -- Sandals of the Unbidden
-            { 21, 89953 }, -- Scent-Soaked Sandals
+            { 20, 86825 }, -- Boots of the Blowing Wind
+            { 21, 86836 }, -- Sandals of the Unbidden
+            { 22, 89953 }, -- Scent-Soaked Sandals
         },
         [TERRACE_DIFF] = {
-            { 1, 89984 }, -- Robes of Pinioned Eyes
-            { 2, 86892 }, -- Robes of the Unknown Fear
-            { 4, 86819 }, -- Gloves of Grasping Claws
-            { 6, 86884 }, -- Belt of Embodied Terror
-            { 16, 86895 }, -- Healer's Belt of Final Winter
-            { 17, 86896 }, -- Invoker's Belt of Final Winter
-            { 18, 86897 }, -- Sorcerer's Belt of Final Winter
-            { 19, 86908 }, -- Dreadwoven Leggings of Failure
-            { 21, 86888 }, -- Sandals of the Blackest Night
+            { 1, 89982 }, -- Shoulderpads of Twisted Fate
+            { 3, 89984 }, -- Robes of Pinioned Eyes
+            { 4, 86892 }, -- Robes of the Unknown Fear
+            { 6, 86875 }, -- Cuffs of the Corrupted Waters
+            { 8, 86819 }, -- Gloves of Grasping Claws
+            { 16, 86884 }, -- Belt of Embodied Terror
+            { 17, 86895 }, -- Healer's Belt of Final Winter
+            { 18, 86896 }, -- Invoker's Belt of Final Winter
+            { 19, 86897 }, -- Sorcerer's Belt of Final Winter
+            { 21, 86908 }, -- Dreadwoven Leggings of Failure
+            { 23, 86888 }, -- Sandals of the Blackest Night
         },
     },
     {
@@ -397,18 +397,18 @@ data["CelestialVendorMoP"] = {
             { 9, 86843 }, -- Smooth Beetle Wristbands
             { 16, 86834 }, -- Bonebreaker Gauntlets
             { 17, 86912 }, -- Clutches of Dying Hope
-            { 18, 89980 }, -- Gauntlets of the Shadow's Caress
-            { 19, 86817 }, -- Gauntlets of Undesired Gifts
-            { 21, 86878 }, -- Asani's Uncleansed Sandals
-            { 22, 86811 }, -- Boots of the Still Breath
-            { 23, 86859 }, -- Treads of Deadly Secretions
+            { 18, 86817 }, -- Gauntlets of Undesired Gifts
+            { 20, 86811 }, -- Boots of the Still Breath
+            { 21, 86859 }, -- Treads of Deadly Secretions
         },
         [TERRACE_DIFF] = {
             { 1, 89985 }, -- Wrap of Instant Petrification
-            { 2, 86899 }, -- Stalker's Cord of Eternal Autumn
-            { 3, 86898 }, -- Weaver's Cord of Eternal Autumn
+            { 3, 89980 }, -- Gauntlets of the Shadow's Caress
+            { 5, 86899 }, -- Stalker's Cord of Eternal Autumn
+            { 6, 86898 }, -- Weaver's Cord of Eternal Autumn
             { 16, 89983 }, -- Fear-Blackened Leggings
             { 17, 89978 }, -- Legguards of Failing Purification
+            { 19, 86878 }, -- Asani's Uncleansed Sandals
         },
     },
     {
@@ -430,11 +430,10 @@ data["CelestialVendorMoP"] = {
         [HOF_DIFF] = {
             { 1, 86866 }, -- Crown of the Doomed Empress
             { 2, 89962 }, -- Hood of Dark Dreams
-            { 4, 89979 }, -- Waterborne Shoulderguards
-            { 5, 86855 }, -- Wingslasher Pauldrons
-            { 7, 86818 }, -- Mail of Screaming Secrets
-            { 8, 89960 }, -- Vestments of Steaming Ichor
-            { 9, 87823 }, -- Zor'lok's Fizzing Chestguard
+            { 4, 86855 }, -- Wingslasher Pauldrons
+            { 6, 86818 }, -- Mail of Screaming Secrets
+            { 7, 89960 }, -- Vestments of Steaming Ichor
+            { 8, 87823 }, -- Zor'lok's Fizzing Chestguard
             { 16, 86826 }, -- Bracers of Tempestuous Fury
             { 17, 86847 }, -- Jagged Hornet Bracers
             { 18, 86842 }, -- Luminescent Firefly Wristguards
@@ -445,13 +444,13 @@ data["CelestialVendorMoP"] = {
 
         },
         [TERRACE_DIFF] = {
-            { 1, 86882 }, -- Sunwrought Mail Hauberk
-            { 3, 86900 }, -- Binder's Chain of Unending Summer
-            { 4, 86901 }, -- Ranger's Chain of Unending Summer
-            { 5, 89986 }, -- Shadowgrip Girdle
+            { 1, 89979 }, -- Waterborne Shoulderguards
+            { 3, 86882 }, -- Sunwrought Mail Hauberk
+            { 5, 86900 }, -- Binder's Chain of Unending Summer
+            { 6, 86901 }, -- Ranger's Chain of Unending Summer
+            { 7, 89986 }, -- Shadowgrip Girdle
             { 16, 86769 }, -- Leggings of Imprisoned Will
             { 18, 86877 }, -- Lightning Prisoner's Boots
-
         },
     },
     {
@@ -463,46 +462,45 @@ data["CelestialVendorMoP"] = {
             { 5, 86780 }, -- Shoulderguards of the Unflanked
             { 7, 86779 }, -- Breastplate of the Kings' Guard
             { 8, 89976 }, -- Chestguard of Eternal Vigilance
-            { 9, 86816 }, -- Chestplate of the Forbidden Tower
-            { 11, 86766 }, -- Bindings of Ancient Spirits
-            { 12, 86751 }, -- Bracers of Six Oxen
-            { 13, 89969 }, -- Bonded Soul Bracers
+            { 10, 86766 }, -- Bindings of Ancient Spirits
+            { 11, 86751 }, -- Bracers of Six Oxen
+            { 12, 89969 }, -- Bonded Soul Bracers
             { 16, 86794 }, -- Starcrusher Gauntlets
-            { 17, 86823 }, -- Windblade Talons
-            { 19, 86785 }, -- Girdle of Delirious Visions
-            { 20, 86793 }, -- Star-Stealer Waistguard
-            { 22, 86803 }, -- Jang-xi's Devastating Legplates
-            { 23, 86756 }, -- Legplates of Sagacious Shadows
-            { 25, 86742 }, -- Jasper Clawfeet
-            { 26, 86744 }, -- Heavenly Jade Greatboots
-            { 27, 86760 }, -- Sollerets of Spirit Splitting
+            { 18, 86785 }, -- Girdle of Delirious Visions
+            { 19, 86793 }, -- Star-Stealer Waistguard
+            { 21, 86803 }, -- Jang-xi's Devastating Legplates
+            { 22, 86756 }, -- Legplates of Sagacious Shadows
+            { 24, 86742 }, -- Jasper Clawfeet
+            { 25, 86744 }, -- Heavenly Jade Greatboots
+            { 26, 86760 }, -- Sollerets of Spirit Splitting
         },
         [HOF_DIFF] = {
             { 1, 86832 }, -- Garalon's Hollow Skull
             { 3, 89956 }, -- Pauldrons of the Broken Blade
             { 4, 86860 }, -- Shoulderpads of Misshapen Life
-            { 6, 89958 }, -- Garalon's Graven Carapace
-            { 8, 86868 }, -- Bracers of Defiled Earth
-            { 9, 86846 }, -- Inlaid Cricket Bracers
-            { 10, 86849 }, -- Plated Locust Bracers
-            { 11, 86848 }, -- Serrated Wasp Bracers
+            { 6, 86816 }, -- Chestplate of the Forbidden Tower
+            { 7, 89958 }, -- Garalon's Graven Carapace
+            { 9, 86823 }, -- Windblade Talons
+            { 10, 86846 }, -- Inlaid Cricket Bracers
+            { 11, 86849 }, -- Plated Locust Bracers
+            { 12, 86848 }, -- Serrated Wasp Bracers
             { 16, 86837 }, -- Grasps of Panic
-            { 17, 89981 }, -- Grasps of Serpentine Might
-            { 19, 86822 }, -- Waistplate of Overwhelming Assault
-            { 20, 89954 }, -- Warbelt of Sealed Pods
-            { 22, 86854 }, -- Articulated Legplates
-            { 23, 89963 }, -- Legplates of Regal Reinforcement
-            { 25, 86852 }, -- Impaling Treads
-
+            { 18, 86822 }, -- Waistplate of Overwhelming Assault
+            { 19, 89954 }, -- Warbelt of Sealed Pods
+            { 21, 86854 }, -- Articulated Legplates
+            { 22, 89963 }, -- Legplates of Regal Reinforcement
+            { 24, 86852 }, -- Impaling Treads
         },
         [TERRACE_DIFF] = {
             { 1, 86876 }, -- Casque of Expelled Corruption
             { 2, 86891 }, -- Cuirass of the Animated Protector
-            { 4, 86902 }, -- Mender's Girdle of Endless Spring
-            { 5, 86904 }, -- Patroller's Girdle of Endless Spring
-            { 6, 86903 }, -- Protector's Girdle of Endless Spring
-            { 16, 86870 }, -- Deepwater Greatboots
-            { 17, 86887 }, -- Sollerets of Instability
+            { 4, 86868 }, -- Bracers of Defiled Earth
+            { 6, 89981 }, -- Grasps of Serpentine Might
+            { 16, 86902 }, -- Mender's Girdle of Endless Spring
+            { 17, 86904 }, -- Patroller's Girdle of Endless Spring
+            { 18, 86903 }, -- Protector's Girdle of Endless Spring
+            { 20, 86870 }, -- Deepwater Greatboots
+            { 21, 86887 }, -- Sollerets of Instability
         },
     },
     {
@@ -514,14 +512,16 @@ data["CelestialVendorMoP"] = {
             { 4, 89971 }, -- Mindshard Drape
         },
         [HOF_DIFF] = {
-            { 1, 86874 }, -- Cloak of Overwhelming Corruption
-            { 2, 86853 }, -- Cloak of Raining Blades
-            { 3, 86883 }, -- Daybreak Drape
-            { 4, 86827 }, -- Drape of Gathering Clouds
-            { 5, 86812 }, -- Hisek's Chrysanthemum Cape
-            { 6, 86831 }, -- Legbreaker Greatcloak
-            { 7, 86840 }, -- Stormwake Mistcloak
+            { 1, 86853 }, -- Cloak of Raining Blades
+            { 2, 86827 }, -- Drape of Gathering Clouds
+            { 3, 86812 }, -- Hisek's Chrysanthemum Cape
+            { 4, 86831 }, -- Legbreaker Greatcloak
+            { 5, 86840 }, -- Stormwake Mistcloak
         },
+        [TERRACE_DIFF] = {
+            { 1, 86874 }, -- Cloak of Overwhelming Corruption
+            { 2, 86883 }, -- Daybreak Drape
+        }
     },
     {
         name = ALIL["Weapon"],
@@ -538,25 +538,25 @@ data["CelestialVendorMoP"] = {
         [HOF_DIFF] = {
             { 1, 86864 }, -- Claws of Shek'zeer
             { 2, 86865 }, -- "Kri'tak, Imperial Scepter of the Swarm"
-            { 3, 86906 }, -- "Kilrak, Jaws of Terror"
-            { 4, 86886 }, -- "Loshan, Terror Incarnate"
-            { 5, 86909 }, -- Regail's Crackling Dagger
-            { 6, 86863 }, -- Scimitar of Seven Stars
-            { 7, 86910 }, -- Spiritsever
-            { 8, 86862 }, -- Un'sok's Amber Scalpel
-
+            { 3, 86863 }, -- Scimitar of Seven Stars
+            { 4, 86862 }, -- Un'sok's Amber Scalpel
         },
         [TERRACE_DIFF] = {
             { 1, 86879 }, -- "Gao-Rei, Staff of the Legendary Protector"
             { 2, 86893 }, -- "Jin'ya, Orb of the Waterspeaker"
-            { 3, 86905 }, -- "Shin'ka, Execution of Dominion"
-            { 16, 86889 }, -- "Taoren, the Soul Burner"
+            { 3, 86906 }, -- "Kilrak, Jaws of Terror"
+            { 4, 86886 }, -- "Loshan, Terror Incarnate"
+            { 16, 86909 }, -- Regail's Crackling Dagger
+            { 17, 86905 }, -- "Shin'ka, Execution of Dominion"
+            { 18, 86910 }, -- Spiritsever
+            { 19, 86889 }, -- "Taoren, the Soul Burner"
         },
     },
     {
         name = ALIL["Off Hand"] .. "/" .. ALIL["Shield"],
         [MSV_DIFF] = {
             { 1, 89426 }, -- Fan of Fiery Winds
+            { 16, 86764 }, -- Eye of the Ancient Spirit
         },
         [HOF_DIFF] = {
             { 1, 86829 }, -- Tornado-Summoning Censer
@@ -574,13 +574,14 @@ data["CelestialVendorMoP"] = {
         },
         [HOF_DIFF] = {
             { 1, 86824 }, -- Choker of the Unleashed Storm
-            { 2, 86872 }, -- Kaolan's Withering Necklace
-            { 3, 86856 }, -- Korven's Amber-Sealed Beetle
-            { 4, 89952 }, -- Pheromone-Coated Choker
-            { 5, 86835 }, -- Necklace of Congealed Weaknesses
-            { 6, 86871 }, -- Shackle of Eversparks
-
+            { 2, 86856 }, -- Korven's Amber-Sealed Beetle
+            { 3, 89952 }, -- Pheromone-Coated Choker
+            { 4, 86835 }, -- Necklace of Congealed Weaknesses
         },
+        [TERRACE_DIFF] = {
+            { 1, 86872 }, -- Kaolan's Withering Necklace
+            { 2, 86871 }, -- Shackle of Eversparks
+        }
     },
     {
         name = ALIL["Finger"],
@@ -592,16 +593,18 @@ data["CelestialVendorMoP"] = {
 
         },
         [HOF_DIFF] = {
-            { 1, 86880 }, -- Dread Shadow Ring
-            { 2, 86814 }, -- Fragment of Fear Made Flesh
-            { 3, 86851 }, -- Painful Thorned Ring
-            { 4, 86869 }, -- Regail's Band of the Endless
-            { 5, 86820 }, -- Ring of the Bladed Tempest
-            { 6, 86830 }, -- Ring of the Shattered Shell
-            { 7, 86858 }, -- Seal of the Profane
-            { 8, 86813 }, -- Vizier's Ruby Signet
-            { 9, 86873 }, -- Watersoul Signet
+            { 1, 86814 }, -- Fragment of Fear Made Flesh
+            { 2, 86851 }, -- Painful Thorned Ring
+            { 3, 86820 }, -- Ring of the Bladed Tempest
+            { 4, 86830 }, -- Ring of the Shattered Shell
+            { 5, 86858 }, -- Seal of the Profane
+            { 6, 86813 }, -- Vizier's Ruby Signet
         },
+        [TERRACE_DIFF] = {
+            { 1, 86880 }, -- Dread Shadow Ring
+            { 2, 86869 }, -- Regail's Band of the Endless
+            { 3, 86873 }, -- Watersoul Signet
+        }
     },
     {
         name = ALIL["Trinket"],
