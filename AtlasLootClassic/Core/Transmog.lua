@@ -1,3 +1,4 @@
+local _G = getfenv(0)
 local AtlasLoot = _G.AtlasLoot
 local Transmog = {}
 AtlasLoot.Transmog = Transmog
