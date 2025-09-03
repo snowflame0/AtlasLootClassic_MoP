@@ -1,4 +1,3 @@
-local _G = _G
 local AtlasLoot = _G.AtlasLoot
 local Transmog = {}
 AtlasLoot.Transmog = Transmog
