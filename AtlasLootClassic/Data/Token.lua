@@ -1556,6 +1556,17 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM) then
         -- Tiger Deck
         [79323] = { 79323, 79327, 79328, 0, 79283, 79284, 79285, 79286, 79287, 79288, 79289, 79290 },
         [79283] = 79323, [79284] = 79323, [79285] = 79323, [79286] = 79323, [79287] = 79323, [79288] = 79323, [79289] = 79323, [79290] = 79323,
+
+        -- Celestial Dungeons
+        ["Tier14CelestialTierTokens"] = {
+            -- Helm and Shoulders after ToES release
+            -- 89273, 89274, 89275, 0, -- Helm
+            -- 89276, 89277, 89278, 0, -- Shoulders
+            89264, 89265, 89266, 0, -- Chest
+            89270, 89271, 89272, 0, -- Gloves
+            89267, 89268, 89269, 0, -- Legs
+            type = 9
+        },
     }
 end
 
