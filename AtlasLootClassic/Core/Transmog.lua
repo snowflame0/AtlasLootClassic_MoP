@@ -1,4 +1,3 @@
-local _G = _G
 local AtlasLoot = _G.AtlasLoot
 local Transmog = {}
 AtlasLoot.Transmog = Transmog
@@ -21,7 +20,7 @@ function Proto:IsItemUnlocked(itemID, sourceID, callbackFunc, callbackArg)
     if not itemID and not sourceID then return end
     local isInfoReady, canCollect
     if itemID then
-        _, sourceID = TransmogGetItemInfo(itemID)
+        sourceID = select(2, TransmogGetItemInfo(itemID))
     end
     if not sourceID then return end
     -- TODO: FIX when API works
