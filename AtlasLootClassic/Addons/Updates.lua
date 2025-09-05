@@ -13,13 +13,14 @@ local IMAGE_PATH = ALPrivate.IMAGE_PATH
 --- NOTE:
 --- Update Text
 ---
-local update_version = 5.03
+local update_version = 5.04
 local update_text = {
-    "Welcome to AtlasLootClassic |cFF33FFBDMoP|r v5.0.3! Sorry for the delayed update, have been busy with life changes. I appreciate your patience and support!",
-    "Added |cFF33FFBDCelestial|r drops in |cFF00CCFFDungeons and Raids|r (Don't forget they're also in |cFF00CCFFCollections|r).",
-    "Added rest of |cFFA335EESeason 12 PvP Gear|r in |cFF00CCFFPvP|r. (sorry PvP lovers, but there are so many items to sort through, S13+ will come in time).",
-    "Added |cFFE6CC80Pandaria|r |cFFA335EERare Mobs|r and |cFFA335EERare Items|r to |cFF00CCFFCollections|r module.",
-    "|cFFFF8000HELP|r: If you find something wrong with |cFF33FFBDCelestial|r drops (no good source for data) or something else, let me know on GitHub ( |cFF3366CCgithub.com/snowflame0/AtlasLootClassic_MoP/issues|r )",
+    "Welcome to AtlasLootClassic |cFF33FFBDMoP|r v5.0.4!",
+    "Added New |cFFA335EEHeart of Fear|r |cFF33FFBDCelestial|r drops in |cFF00CCFFDungeons and Raids|r.",
+    "Added |cFFA335EETransmog Tracking|r feature from AtlasLoot retail (SL?), may be buggy since some of the APIs don't currently work as expected in MoP.\n\n"
+    .."      Click |TInterface\\Icons\\INV_Arcane_Orb:24:24:0:12|t next to the Class icon to toggle on/off.",
+    "|cFFA335EETier 14|r items tooltip should have a source now.",
+    "|cFFFF8000HELP|r: If you find something missing in |cFF33FFBDCelestial|r drops (struggled to find data! Had to farm a bunch myself to find the drops), let me know on GitHub ( |cFF3366CCgithub.com/snowflame0/AtlasLootClassic_MoP/issues|r )",
     "Again, if you appreciate all the work, feel free to support me in my goal to upgrade my GTX 1000 series card to something... of this era (don't even ask about CPU :/)\n... at the link below (click, CTRL+A, and CTRL+C to copy)"
 }
 local donation_link = "buymeacoffee.com/snowflame0"

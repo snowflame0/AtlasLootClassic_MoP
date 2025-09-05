@@ -1,3 +1,8 @@
+# 5.0.4 (September 4, 2025)
+- Added Transmog tracker feature from AtlasLoot v8+ (Shadowlands version?)
+- Added new Celestial dungeon drops (HoF)
+- Added source tooltip for T14 items
+
 # 5.0.3 (August 27, 2025)
 - Added Celestial Dungeon drops
 - Added Rare mobs and items to Collections
