@@ -3074,7 +3074,7 @@ data["TerraceofEndlessSpring"] = {
 data["ThroneofThunder"] = {
     EncounterJournalID = 362,
     InstanceID = 1098,
-    MapID = 6738,
+    MapID = 6622,
     ContentType = RAID_CONTENT,
     ContentPhaseMoP = 3,
     items = {
@@ -3794,7 +3794,7 @@ data["SiegeofOrgrimmar"] = {
     EncounterJournalID = 369,
     InstanceID = 1136,
     ContentPhaseMoP = 5,
-    MapID = 6622,
+    MapID = 6738,
     ContentType = RAID_CONTENT,
     items = {
         {	--SoOImmerseus
