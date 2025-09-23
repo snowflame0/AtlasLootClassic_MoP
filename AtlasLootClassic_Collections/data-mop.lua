@@ -1473,12 +1473,12 @@ data["CompanionsMoP"] = {
             { 122, 104156 }, -- Ashleaf Spriteling
             { 123, 104157 }, -- Azure Crane Chick
             { 124, 104202 }, -- Bonkers
-            { 124, 104160 }, -- Dandelion Frolicker
-            { 125, 104161 }, -- Death Adder Hatchling
-            { 126, 104291 }, -- Gu'chi Swarmling
-            { 127, 104169 }, -- Gulp Froglet
-            { 128, 104307 }, -- Jadefire Spirit
-            { 129, 104164 }, -- Jademist Dancer
+            { 125, 104160 }, -- Dandelion Frolicker
+            { 126, 104161 }, -- Death Adder Hatchling
+            { 127, 104291 }, -- Gu'chi Swarmling
+            { 128, 104169 }, -- Gulp Froglet
+            { 129, 104307 }, -- Jadefire Spirit
+            { 130, 104164 }, -- Jademist Dancer
             { 201, 104166 }, -- Ominous Flame
             { 202, 104159 }, -- Ruby Droplet
             { 203, 104167 }, -- Skunky Alemental
@@ -1494,7 +1494,7 @@ data["CompanionsMoP"] = {
             { 3,  88148 }, -- Jade Crane Chick
             { 4,  85447 }, -- Tiny Goldfish
             { 5,  95621 }, -- Warbot
-            -- Phase 2?
+            -- Phase 2
             { 7,  93025 }, -- Clock'em
             -- Phase 4
             { 9,  97821 }, -- Gahz'rooki
@@ -1565,7 +1565,7 @@ data["CompanionsMoP"] = {
             { 3,  82774 }, -- Jade Owl
             { 4,  82775 }, -- Sapphire Cub
             { 5,  87526 }, -- Mechanical Pandaren Dragonling
-            -- Phase 2?
+            -- Phase 2
             { 7,  90900 }, -- Imperial Moth
             { 8,  90902 }, -- Imperial Silkworm
             -- Phase 3? 5?
@@ -2014,14 +2014,14 @@ data["BrewfestMoP"] = {
         {
             name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
             [NORMAL_DIFF] = {
-                { 1,  87576 }, -- Bitterest Balebrew Charm
-                { 2,  87575 }, -- Bubbliest Brightbrew Charm
-                { 3,  87574 }, -- Coren's Cold Chromium Coaster
-                { 4,  87572 }, -- Mithril Wristwatch
-                { 5,  87573 }, -- Thousand-Year Pickled Egg
-                { 6,  87571 }, -- Brawler's Statue
-                { 8,  107217 }, -- Direbrew's Bloodied Shanker
-                { 9,  107218 }, -- Tremendous Tankard O' Terror
+                { 1,  257873 }, -- Bitterest Balebrew Charm
+                { 2,  257877 }, -- Bubbliest Brightbrew Charm
+                { 3,  257880 }, -- Coren's Cold Chromium Coaster
+                { 4,  257884 }, -- Mithril Wristwatch
+                { 5,  257881 }, -- Thousand-Year Pickled Egg
+                { 6,  257885 }, -- Brawler's Statue
+                { 8,  257863 }, -- Direbrew's Bloodied Shanker
+                { 9,  257865 }, -- Tremendous Tankard O' Terror
                 {16, 33977}, -- Swift Brewfest Ram
                 {17, 37828}, -- Great Brewfest Kodo
                 {19, 37863}, -- Direbrew's Remote

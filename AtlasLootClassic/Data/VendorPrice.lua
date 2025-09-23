@@ -166,7 +166,7 @@ local PRICE_INFO_LIST = {
     ["DarkmoonPrizeTicket"] = {
         currencyID = 515
     }, -- Darkmoon Prize Ticket
-    ["Tricky Treat"] = {
+    ["TrickyTreat"] = {
         itemID = 33226
     }, -- Tricky Treat
     ["MarkWorldTree"] = {
@@ -882,6 +882,9 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
         [38628] = "money:400000",
         [39476] = "Brewfest:5",
         [39477] = "Brewfest:5",
+        [70722] = "TrickyTreat:150",
+        [70908] = "TrickyTreat:150",
+        [90427] = "Brewfest:100",
         [185690] = "money:80000",
         [185923] = "money:144000",
         [185924] = "money:144000",
