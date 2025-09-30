@@ -2014,14 +2014,14 @@ data["BrewfestMoP"] = {
         {
             name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
             [NORMAL_DIFF] = {
-                { 1,  87576 }, -- Bitterest Balebrew Charm
-                { 2,  87575 }, -- Bubbliest Brightbrew Charm
-                { 3,  87574 }, -- Coren's Cold Chromium Coaster
-                { 4,  87572 }, -- Mithril Wristwatch
-                { 5,  87573 }, -- Thousand-Year Pickled Egg
-                { 6,  87571 }, -- Brawler's Statue
-                { 8,  107217 }, -- Direbrew's Bloodied Shanker
-                { 9,  107218 }, -- Tremendous Tankard O' Terror
+                { 1,  257873 }, -- Bitterest Balebrew Charm
+                { 2,  257877 }, -- Bubbliest Brightbrew Charm
+                { 3,  257880 }, -- Coren's Cold Chromium Coaster
+                { 4,  257884 }, -- Mithril Wristwatch
+                { 5,  257881 }, -- Thousand-Year Pickled Egg
+                { 6,  257885 }, -- Brawler's Statue
+                { 8,  257863 }, -- Direbrew's Bloodied Shanker
+                { 9,  257865 }, -- Tremendous Tankard O' Terror
                 {16, 33977}, -- Swift Brewfest Ram
                 {17, 37828}, -- Great Brewfest Kodo
                 {19, 37863}, -- Direbrew's Remote
