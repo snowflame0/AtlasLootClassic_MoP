@@ -2095,12 +2095,12 @@ data["HalloweenMoP"] = {
         { -- SMHeadlessHorseman
         name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
         [NORMAL_DIFF] = {
-                { 1, 88168 }, -- Seal of Ghoulish Glee
-                { 2, 88169 }, -- The Horseman's Ring
-                { 3, 88166 }, -- Wicked Witch's Signet
-                { 4, 88167 }, -- Band of the Petrified Pumpkin
-                { 5, 87569 }, -- The Horseman's Horrific Hood
-                { 6, 87570 }, -- The Horseman's Sinister Slicer
+                { 1, 263010 }, -- Seal of Ghoulish Glee
+                { 2, 263011 }, -- The Horseman's Ring
+                { 3, 263012 }, -- Wicked Witch's Signet
+                { 4, 263013 }, -- Band of the Petrified Pumpkin
+                { 5, 263014 }, -- The Horseman's Horrific Hood
+                { 6, 263018 }, -- The Horseman's Sinister Slicer
                 { 8, 33292 }, -- Hallowed Helm
                 { 10, 34068 }, -- Weighted Jack-o'-Lantern
                 { 12, 33277 }, -- Tome of Thomas Thomson
