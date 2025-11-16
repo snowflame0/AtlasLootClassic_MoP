@@ -1450,22 +1450,22 @@ data["CompanionsMoP"] = {
             { 29, 86564 }, -- Grinder
             { 30, 94595 }, -- Spawn of G'nathus
             { 101, 103670 }, -- Lil' Bling
-            { 102, 101570 }, -- Moon Moon
             -- Phase 3
-            { 104, 97959 }, -- Living Fluid
-            { 105, 94125 }, -- Living Sandling
-            { 106, 94574 }, -- Pygmy Direhorn
-            { 107, 94152 }, -- Son of Animus
-            { 108, 97960 }, -- Viscous Horror
-            { 109, 94835 }, -- Ji-Kun Hatchling
-            { 110, 94124 }, -- Sunreaver Micro-Sentry
-            { 111, 97961 }, -- Filthling
-            { 112, 94573 }, -- Direhorn Runt
-            { 113, 95422 }, -- Zandalari Anklerender
-            { 114, 95423 }, -- Zandalari Footslasher
-            { 115, 94126 }, -- Zandalari Kneebiter
-            { 116, 95424 }, -- Zandalari Toenibbler
+            { 103, 97959 }, -- Living Fluid
+            { 104, 94125 }, -- Living Sandling
+            { 105, 94574 }, -- Pygmy Direhorn
+            { 106, 94152 }, -- Son of Animus
+            { 107, 97960 }, -- Viscous Horror
+            { 108, 94835 }, -- Ji-Kun Hatchling
+            { 109, 94124 }, -- Sunreaver Micro-Sentry
+            { 110, 97961 }, -- Filthling
+            { 111, 94573 }, -- Direhorn Runt
+            { 112, 95422 }, -- Zandalari Anklerender
+            { 113, 95423 }, -- Zandalari Footslasher
+            { 114, 94126 }, -- Zandalari Kneebiter
+            { 115, 95424 }, -- Zandalari Toenibbler
             -- Phase 5
+            { 117, 101570 }, -- Moon Moon
             { 118, 104158 }, -- Blackfuse Bombling
             { 119, 104162 }, -- Droplet of Y'Shaarj
             { 120, 104163 }, -- Gooey Sha-ling
@@ -1540,16 +1540,15 @@ data["CompanionsMoP"] = {
             { 7,  94025 }, -- Red Panda
             -- Phase 3
             { 9, 94190 }, -- Spectral Porcupette
-            -- Phase 3?
-            { 11,  94208 }, -- Sunfur Panda
-            { 12,  94209 }, -- Snowy Panda
-            { 13, 94210 }, -- Mountain Panda
+            { 10,  94208 }, -- Sunfur Panda
+            { 11,  94209 }, -- Snowy Panda
+            { 12, 94210 }, -- Mountain Panda
             }
         },
         {
         name = ALIL["Fishing"],
         [NORMAL_DIFF] = {
-            -- Phase 3?
+            -- Phase 3
             { 1, 94932 }, -- Tiny Red Carp
             { 2, 94933 }, -- Tiny Blue Carp
             { 3, 94934 }, -- Tiny Green Carp
