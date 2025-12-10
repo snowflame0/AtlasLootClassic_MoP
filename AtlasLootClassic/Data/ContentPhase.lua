@@ -11,7 +11,7 @@ local ACTIVE_PHASE_LIST = {
     --[AtlasLoot.BC_VERSION_NUM]      = 5, -- bc
     --[AtlasLoot.WRATH_VERSION_NUM]   = 5, -- wrath
     --[AtlasLoot.CATA_VERSION_NUM]    = 4, -- cata
-    [AtlasLoot.MOP_VERSION_NUM]     = 1 -- MoP
+    [AtlasLoot.MOP_VERSION_NUM]     = 3 -- MoP
 }
 local ACTIVE_PHASE = ACTIVE_PHASE_LIST[AtlasLoot:GetGameVersion()] or ACTIVE_PHASE_LIST[0]
 
