@@ -2216,7 +2216,7 @@ data["WinterVeilMoP"] = {
         {
             name = AL["Stolen Present"],
             [NORMAL_DIFF] = {
-                { 1,  93625 }, -- Miniature Winter Veil Tree
+                { 1,  268556 }, -- Miniature Winter Veil Tree
                 { 3,  104317 }, -- Rotten Helper Box
                 { 4,  34425 }, -- Clockwork Rocket Bot
                 { 5,  54436 }, -- Blue Clockwork Rocket Bot
