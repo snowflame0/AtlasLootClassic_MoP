@@ -15,7 +15,7 @@ local cache = {}
 setmetatable(cache, {__mode = "kv"})
 
 local AtlasLootScanTooltip = CreateFrame("GAMETOOLTIP", "AtlasLootScanTooltip", nil, "GameTooltipTemplate")
-AtlasLootScanTooltip:SetOwner(UIParent, "ANCHOR_NONE")
+AtlasLootScanTooltip:SetOwner(WorldFrame, "ANCHOR_NONE")
 
 function TooltipScan.GetTradeskillLink(tradeskillID)
 	if not tradeskillID then return end
@@ -24,7 +24,7 @@ function TooltipScan.GetTradeskillLink(tradeskillID)
 	end
 	local TradeskillLink = nil
 	local TradeskillName = nil
-	AtlasLootScanTooltip:SetOwner(UIParent, "ANCHOR_NONE")
+	AtlasLootScanTooltip:SetOwner(WorldFrame, "ANCHOR_NONE")
 	AtlasLootScanTooltip:ClearLines()
 	AtlasLootScanTooltip:SetHyperlink("enchant:"..tradeskillID)
 	AtlasLootScanTooltip:Show()
@@ -43,7 +43,7 @@ end
 -------------------------------
 
 local AtlasLootQueryTooltip = CreateFrame("GAMETOOLTIP", "AtlasLootQueryTooltip", nil, "GameTooltipTemplate")
-AtlasLootQueryTooltip:SetOwner(UIParent, "ANCHOR_TOP")
+AtlasLootQueryTooltip:SetOwner(WorldFrame, "ANCHOR_NONE")
 
 local queryList = {}
 local queryListByID = {}
@@ -95,7 +95,7 @@ function TooltipScan.GetQuestName(questID, onGetFunc, arg1, preSetQuery)
 		queryList[preSetQuery] = true
 		return preSetQuery
 	end
-	AtlasLootQueryTooltip:SetOwner(UIParent, "ANCHOR_NONE")
+	AtlasLootQueryTooltip:SetOwner(WorldFrame, "ANCHOR_NONE")
 	AtlasLootQueryTooltip:ClearLines()
 	AtlasLootQueryTooltip.onGetFunc = onGetFunc
 	AtlasLootQueryTooltip.questID = questID

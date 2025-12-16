@@ -558,11 +558,12 @@ data["StormstoutBrewery"] = {
                 { 17, 86776}, -- Amulet of the Hidden Kings
                 { 18, 86767 }, -- Circuit of the Frail Soul
                 { 19, 86865 }, -- Kri'tak, Imperial Scepter of the Swarm
-                { 20, "INV_Box_01", nil, AL["Tier Token iLvl483"], nil, "Tier14CelestialTierTokens" },
-                { 21, 87209 }, -- Sigil of Wisdom
-                { 23, "c3350", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- August Stone Fragment
-                { 24, "c395", [ATLASLOOT_IT_AMOUNT1] = 120 }, -- Justice Points
-                { 26, "ac60893" },
+                { 20, 86894 }, -- Darkmist Vortex
+                { 21, "INV_Box_01", nil, AL["Tier Token iLvl483"], nil, "Tier14CelestialTierTokens" },
+                { 22, 87209 }, -- Sigil of Wisdom
+                { 24, "c3350", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- August Stone Fragment
+                { 25, "c395", [ATLASLOOT_IT_AMOUNT1] = 120 }, -- Justice Points
+                { 27, "ac60893" },
             },
         },
         MOP_DUNGEON_HERO_AC_TABLE,
@@ -700,14 +701,15 @@ data["TempleOfTheJadeSerpent"] = {
                 { 17, 86791 }, -- Bottle of Infinite Stars
                 { 18, 86759 }, -- Soulgrasp Choker
                 { 19, 86814 }, -- Fragment of Fear Made Flesh
-                { 20, "INV_Box_01", nil, AL["Tier Token iLvl483"], nil, "Tier14CelestialTierTokens" },
-                { 21, 87209 }, -- Sigil of Wisdom
-                { 23, "c3350", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- August Stone Fragment
-                { 24, "c395", [ATLASLOOT_IT_AMOUNT1] = 120 }, -- Justice Points
-                { 26, "ac60892" },
-                { 27, "ac6926" },
-                { 28, "ac6475" },
-                { 29, "ac6671" },
+                { 20, 86871 }, -- Shackle of Eversparks
+                { 21, "INV_Box_01", nil, AL["Tier Token iLvl483"], nil, "Tier14CelestialTierTokens" },
+                { 22, 87209 }, -- Sigil of Wisdom
+                { 24, "c3350", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- August Stone Fragment
+                { 25, "c395", [ATLASLOOT_IT_AMOUNT1] = 120 }, -- Justice Points
+                { 27, "ac60892" },
+                { 28, "ac6926" },
+                { 29, "ac6475" },
+                { 30, "ac6671" },
             },
         },
         MOP_DUNGEON_HERO_AC_TABLE,
@@ -971,12 +973,13 @@ data["MoguShanPalace"] = {
                 { 17, 86790 },	-- Vial of Dragon's Blood
                 { 18, 86748 },	-- Cape of Three Lanterns
                 { 19, 89952 }, -- Pheromone-Coated Choker
-                { 20, "INV_Box_01", nil, AL["Tier Token iLvl483"], nil, "Tier14CelestialTierTokens" },
-                { 21, 87208 }, -- Sigil of Power
-                { 23, "c3350", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- August Stone Fragment
-                { 24, "c395", [ATLASLOOT_IT_AMOUNT1] = 120 }, -- Justice Points
-                { 26, "ac60894" },
-                { 27, "ac6736" },
+                { 20, 86880 }, -- Dread Shadow Ring
+                { 21, "INV_Box_01", nil, AL["Tier Token iLvl483"], nil, "Tier14CelestialTierTokens" },
+                { 22, 87208 }, -- Sigil of Power
+                { 24, "c3350", [ATLASLOOT_IT_AMOUNT1] = 2 }, -- August Stone Fragment
+                { 25, "c395", [ATLASLOOT_IT_AMOUNT1] = 120 }, -- Justice Points
+                { 27, "ac60894" },
+                { 28, "ac6736" },
             },
         },
         MOP_DUNGEON_HERO_AC_TABLE,
@@ -1472,12 +1475,13 @@ data["ScarletMonasteryMoP"] = {
                 { 17, 86792 },	-- Light of the Cosmos
                 { 18, 86754 }, -- Amulet of Seven Curses
                 { 19, 86820 }, -- Ring of the Bladed Tempest
-                { 20, "INV_Box_01", nil, AL["Tier Token iLvl483"], nil, "Tier14CelestialTierTokens" },
-                { 21, 87208 }, -- Sigil of Power
-                { 23, "c3350", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- August Stone Fragment
-                { 24, "c395", [ATLASLOOT_IT_AMOUNT1] = 120 }, -- Justice Points
-                { 26, "ac60898" },
-                { 27, "ac6929" },
+                { 20, 86879 }, -- Gao-Rei, Staff of the Legendary Protector
+                { 21, "INV_Box_01", nil, AL["Tier Token iLvl483"], nil, "Tier14CelestialTierTokens" },
+                { 22, 87208 }, -- Sigil of Power
+                { 24, "c3350", [ATLASLOOT_IT_AMOUNT1] = "2/5" }, -- August Stone Fragment
+                { 25, "c395", [ATLASLOOT_IT_AMOUNT1] = 120 }, -- Justice Points
+                { 27, "ac60898" },
+                { 28, "ac6929" },
             },
         },
         -- {	--HallowsEndHeadlessHorseman
@@ -3074,7 +3078,7 @@ data["TerraceofEndlessSpring"] = {
 data["ThroneofThunder"] = {
     EncounterJournalID = 362,
     InstanceID = 1098,
-    MapID = 6738,
+    MapID = 6622,
     ContentType = RAID_CONTENT,
     ContentPhaseMoP = 3,
     items = {
@@ -3794,7 +3798,7 @@ data["SiegeofOrgrimmar"] = {
     EncounterJournalID = 369,
     InstanceID = 1136,
     ContentPhaseMoP = 5,
-    MapID = 6622,
+    MapID = 6738,
     ContentType = RAID_CONTENT,
     items = {
         {	--SoOImmerseus

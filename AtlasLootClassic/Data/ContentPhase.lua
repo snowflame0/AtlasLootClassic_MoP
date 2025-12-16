@@ -11,7 +11,7 @@ local ACTIVE_PHASE_LIST = {
     --[AtlasLoot.BC_VERSION_NUM]      = 5, -- bc
     --[AtlasLoot.WRATH_VERSION_NUM]   = 5, -- wrath
     --[AtlasLoot.CATA_VERSION_NUM]    = 4, -- cata
-    [AtlasLoot.MOP_VERSION_NUM]     = 1 -- MoP
+    [AtlasLoot.MOP_VERSION_NUM]     = 3 -- MoP
 }
 local ACTIVE_PHASE = ACTIVE_PHASE_LIST[AtlasLoot:GetGameVersion()] or ACTIVE_PHASE_LIST[0]
 
@@ -3569,34 +3569,42 @@ if AtlasLoot:GameVersion_EQ(AtlasLoot.MOP_VERSION_NUM) then
         [90902] = 2,
         [93025] = 2,
         [94124] = 3,
+        [94126] = 3,
         [94190] = 3,
+        [94208] = 3,
+        [94209] = 3,
+        [94210] = 3,
         [94573] = 3,
         [94574] = 3,
-        [94126] = 3,
+        [94932] = 3,
+        [94933] = 3,
+        [94934] = 3,
+        [94935] = 3,
         [95422] = 3,
         [95423] = 3,
         [95424] = 3,
         [97959] = 3,
         [97961] = 3,
         [97821] = 4,
-        [102145] = 5,
-        [103637] = 5,
+        [101570] = 5,
         [101771] = 5,
-        [102147] = 5,
+        [102145] = 5,
         [102146] = 5,
+        [102147] = 5,
+        [103637] = 5,
         [104156] = 5,
         [104157] = 5,
-        [104202] = 5,
+        [104159] = 5,
         [104160] = 5,
         [104161] = 5,
-        [104291] = 5,
-        [104169] = 5,
-        [104307] = 5,
         [104164] = 5,
         [104166] = 5,
-        [104159] = 5,
         [104167] = 5,
         [104168] = 5,
+        [104169] = 5,
+        [104202] = 5,
+        [104291] = 5,
+        [104307] = 5,
     }
 end
 
@@ -3604,12 +3612,12 @@ end
 PHASE_ITEMS[0] = 0
 
 local PHASE_TEXTURE_PATH = {
-    [2] = IMAGE_PATH.."P2",
-    [2.5] = IMAGE_PATH.."P2-5",
-    [3] = IMAGE_PATH.."P3",
-    [4] = IMAGE_PATH.."P4",
-    [5] = IMAGE_PATH.."P5",
-    [6] = IMAGE_PATH.."P6",
+    [2] = IMAGE_PATH .. "P2",
+    [2.5] = IMAGE_PATH .. "P2-5",
+    [3] = IMAGE_PATH .. "P3",
+    [4] = IMAGE_PATH .. "P4",
+    [5] = IMAGE_PATH .. "P5",
+    [6] = IMAGE_PATH .. "P6",
 }
 
 function ContentPhase:GetForItemID(itemID)
