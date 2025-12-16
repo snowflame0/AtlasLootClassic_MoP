@@ -1,3 +1,11 @@
+# 5.2.0 (Dec 15, 2025)
+- Game interface version update
+- Update content phase
+- Updates to holiday bosses
+- Celestial Dungeon fixes
+- Added missing T14 pattern data
+- Small fixes
+
 # 5.0.4 (September 4, 2025)
 - Added Transmog tracker feature from AtlasLoot v8+ (Shadowlands version?)
 - Added new Celestial dungeon drops (HoF)
