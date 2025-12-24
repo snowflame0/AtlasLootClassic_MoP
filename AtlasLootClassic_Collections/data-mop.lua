@@ -2214,6 +2214,12 @@ data["WinterVeilMoP"] = {
             },
         },
         {
+            name = AL["Winter Veil Gift"],
+            [NORMAL_DIFF] = {
+                { 1, 104318 }, -- Crashin' Thrashin' Flyer Controller
+            },
+        },
+        {
             name = AL["Stolen Present"],
             [NORMAL_DIFF] = {
                 { 1,  268556 }, -- Miniature Winter Veil Tree
@@ -2221,15 +2227,15 @@ data["WinterVeilMoP"] = {
                 { 4,  34425 }, -- Clockwork Rocket Bot
                 { 5,  54436 }, -- Blue Clockwork Rocket Bot
                 { 6,  73797 }, -- Lump of Coal
-                { 8,  104318 }, -- Crashin' Thrashin' Flyer Controller
-                { 9,  46709 }, -- MiniZep Controller
-                { 10,  44606 }, -- Toy Train Set
-                { 11,  90883 }, -- The Pigskin
-                { 12,  90888 }, -- Foot Ball
-                { 13,  37710 }, -- Crashin' Thrashin' Racer Controller
-                { 14, 54437 }, -- Tiny Green Ragdoll
-                { 15, 54438 }, -- Tiny Blue Ragdoll
-                { 17,  46725 }, -- Red Rider Air Rifle
+                { 8,  46709 }, -- MiniZep Controller
+                { 9,  44606 }, -- Toy Train Set
+                { 10,  90883 }, -- The Pigskin
+                { 11,  90888 }, -- Foot Ball
+                { 12,  37710 }, -- Crashin' Thrashin' Racer Controller
+                { 13, 54437 }, -- Tiny Green Ragdoll
+                { 14, 54438 }, -- Tiny Blue Ragdoll
+                { 16,  46725 }, -- Red Rider Air Rifle
+                { 17, 70923 }, -- Gaudy Winter Veil Sweater
                 { 18, 34498 }, -- Paper Zeppelin Kit
                 { 19, 44599 }, -- Zippy Copper Racer
                 { 20, 44601 }, -- Heavy Copper Racer

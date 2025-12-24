@@ -1800,6 +1800,12 @@ data["WinterVeilCata"] = {
             },
         },
         {
+            name = AL["Winter Veil Gift"],
+            [NORMAL_DIFF] = {
+                { 1, 70923 }, -- Gaudy Winter Veil Sweater
+            },
+        },
+        {
             name = AL["Stolen Present"],
             [NORMAL_DIFF] = {
                 { 1,  66540 }, -- Miniature Winter Veil Tree
