@@ -867,6 +867,12 @@ data["WinterVeilBC"] = {
             },
         },
         {
+            name = AL["Carefully Wrapped Present"],
+            [NORMAL_DIFF] = {
+                { 1, 21254 }, -- Winter Veil Cookie
+            },
+        },
+        {
             name = AL["Gaily Wrapped Present"],
             [NORMAL_DIFF] = {
                 { 1, 21301 }, -- Green Helper Box
@@ -882,7 +888,14 @@ data["WinterVeilBC"] = {
             },
         },
         {
-            name = AL["Smokywood Pastures Special Gift"],
+            name = AL["Gently Shaken Gift"],
+            [NORMAL_DIFF] = {
+                { 1, 21235 }, -- Winter Veil Roast
+                { 2, 21241 }, -- Winter Veil Eggnog
+            },
+        },
+        {
+            name = AL["Ticking Present"],
             [NORMAL_DIFF] = {
                 { 1, 17706 }, -- Plans: Edge of Winter
                 { 2, 17725 }, -- Formula: Enchant Weapon - Winter's Might
@@ -895,10 +908,9 @@ data["WinterVeilBC"] = {
             },
         },
         {
-            name = AL["Gently Shaken Gift"],
+            name = AL["Winter Veil Gift"],
             [NORMAL_DIFF] = {
-                { 1, 21235 }, -- Winter Veil Roast
-                { 2, 21241 }, -- Winter Veil Eggnog
+                { 1, 34425 }, -- Clockwork Rocket Bot
             },
         },
         {
@@ -922,9 +934,14 @@ data["WinterVeilBC"] = {
             },
         },
         {
-            name = AL["Winter Veil Gift"],
+            name = AL["Smokywood Pastures Special Gift"],
             [NORMAL_DIFF] = {
-                { 1, 34425 }, -- Clockwork Rocket Bot
+                { 1, 17706 }, -- Plans: Edge of Winter
+                { 2, 17725 }, -- Formula: Enchant Weapon - Winter's Might
+                { 3, 17720 }, -- Schematic: Snowmaster 9000
+                { 4, 17722 }, -- Pattern: Gloves of the Greatfather
+                { 5, 17709 }, -- Recipe: Elixir of Frost Power
+                { 6, 17724 }, -- Pattern: Green Holiday Shirt
             },
         },
     },
