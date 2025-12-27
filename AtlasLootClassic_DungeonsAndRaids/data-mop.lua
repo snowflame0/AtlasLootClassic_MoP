@@ -3257,7 +3257,8 @@ data["ThroneofThunder"] = {
                 { 20, 94768, 96058 },	-- Shellsplitter Greataxe
                 { 21, 94769, 96050 },	-- Shattered Tortoiseshell Longbow
                 { 22, 94778, 96064 },	-- Tortos' Discarded Shell
-                { 24, "ac8077" },
+                { 24, 98132 },	-- Shado-Pan Geyser Gun   
+                { 26, "ac8077" },
             },
             [HEROIC_DIFF] = {
                 { 1, 96431, 96803 },	-- Beakbreaker Greatcloak
@@ -3280,8 +3281,9 @@ data["ThroneofThunder"] = {
                 { 20, 96430, 96802 },	-- Shellsplitter Greataxe
                 { 21, 96422, 96794 },	-- Shattered Tortoiseshell Longbow
                 { 22, 96436, 96808 },	-- Tortos' Discarded Shell
-                { 24, "ac8059" },
-                { 25, "ac8077" },
+                { 24, 98132 },	-- Shado-Pan Geyser Gun   
+                { 26, "ac8059" },
+                { 27, "ac8077" },
             },
         },
         {	--ToTMegaera
@@ -3791,6 +3793,7 @@ data["ThroneofThunder"] = {
                 { 23, 95206, 96352 },	-- Necklace of the Terra-Cotta Protector
                 { 24, 95205, 96349 },	-- Necklace of the Terra-Cotta Vanquisher
                 { 26, 94125, "pet1177" },	-- Living Sandling
+                { 28, 98136 },	-- Gastropod Shell
             },
         },
         T15_SET,
