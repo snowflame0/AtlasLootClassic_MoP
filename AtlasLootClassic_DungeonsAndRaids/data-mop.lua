@@ -3257,7 +3257,7 @@ data["ThroneofThunder"] = {
                 { 20, 94768, 96058 },	-- Shellsplitter Greataxe
                 { 21, 94769, 96050 },	-- Shattered Tortoiseshell Longbow
                 { 22, 94778, 96064 },	-- Tortos' Discarded Shell
-                { 24, 98132 },	-- Shado-Pan Geyser Gun   
+                { 24, 98132 },	-- Shado-Pan Geyser Gun
                 { 26, "ac8077" },
             },
             [HEROIC_DIFF] = {
@@ -3281,7 +3281,7 @@ data["ThroneofThunder"] = {
                 { 20, 96430, 96802 },	-- Shellsplitter Greataxe
                 { 21, 96422, 96794 },	-- Shattered Tortoiseshell Longbow
                 { 22, 96436, 96808 },	-- Tortos' Discarded Shell
-                { 24, 98132 },	-- Shado-Pan Geyser Gun   
+                { 24, 98132 },	-- Shado-Pan Geyser Gun
                 { 26, "ac8059" },
                 { 27, "ac8077" },
             },
