@@ -1384,7 +1384,7 @@ data["ChallengeModeMoP"] = {
                 { 20, 265297 }, -- Twilight Handguards of the Betrayer
                 { 21, 265294 }, -- Twilight Belt of the Betrayer
                 { 22, 265299 }, -- Twilight Leggings of the Betrayer
-                { 23, 265296 }, -- Twilight Boots of the Betrayer 
+                { 23, 265296 }, -- Twilight Boots of the Betrayer
             },
         },
         {
