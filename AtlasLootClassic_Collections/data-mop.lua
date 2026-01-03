@@ -540,42 +540,56 @@ data["AugustStoneShardVendorMoP"] = {
     {
         name = ALIL["Weapon"],
         [CELESTIAL_DIFF] = {
-            { 1, 95728 }, -- Durumu's Baleful Gaze
-            { 2, 95678 }, -- Shattered Tortoiseshell Longbow
-            { 3, 95859 }, -- Miracoran, the Vehement Chord
-            { 4, 95632 }, -- Worldbreaker's Stormscythe
-            { 5, 95666 }, -- Kura-Kura, Kazra'jin's Skullcleaver
-            { 6, 95686 }, -- Shellsplitter Greataxe
-            { 7, 95758 }, -- Acid-Spine Bonemace
-            { 8, 95770 }, -- Hand of the Dark Animus
-            { 9, 95815 }, -- Torall, Rod of the Shattered Throne
-            { 10, 95861 }, -- Zeeg's Ancient Kegsmasher
-            { 11, 95867 }, -- Jerthud, Graceful Hand of the Savior
-            { 12, 95640 }, -- Soulblade of the Breaking Storm
-            { 13, 95790 }, -- Qon's Flaming Scimitar
-            { 14, 95876 }, -- Do-tharak, the Swordbreaker
-            { 15, 95803 }, -- Shan-Dun, Breaker of Hope
-            { 16, 95877 }, -- Bo-Ris, Horror in the Night
-            { 17, 95809 }, -- Uroe, Harbinger of Terror
+            -- 1H Axe
+            { 1, 95666 }, -- Kura-Kura, Kazra'jin's Skullcleaver
+            { 2, 95686 }, -- Shellsplitter Greataxe
+            { 3, 95632 }, -- Worldbreaker's Stormscythe
+            -- 1H Mace
+            { 5, 95758 }, -- Acid-Spine Bonemace
+            { 6, 95770 }, -- Hand of the Dark Animus
+            { 7, 95867 }, -- Jerthud, Graceful Hand of the Savior
+            { 8, 95815 }, -- Torall, Rod of the Shattered Throne
+            { 9, 95861 }, -- Zeeg's Ancient Kegsmasher
+            -- 1H Sword
+            { 11, 95640 }, -- Soulblade of the Breaking Storm
+            { 12, 95790 }, -- Qon's Flaming Scimitar
+            { 13, 95876 }, -- Do-tharak, the Swordbreaker
+            -- 2H Axe
+            { 16, 95809 }, -- Uroe, Harbinger of Terror
+            -- 2H Mace
             { 18, 95858 }, -- Invocation of the Dawn
-            { 19, 95675 }, -- Zerat, Malakk's Soulburning Greatsword
+            -- 2H Sword
             { 20, 95875 }, -- Greatsword of Frozen Hells
-            { 21, 95647 }, -- Jalak's Maelstrom Staff
-            { 22, 95657 }, -- Dinomancer's Spiritbinding Spire
-            { 23, 95720 }, -- Giorgio's Caduceus of Pure Moods
-            { 24, 95795 }, -- Suen-Wo, Spire of the Falling Sun
-            { 25, 95862 }, -- Darkwood Spiritstaff
-            { 26, 95698 }, -- Megaera's Poisoned Fang
-            { 27, 95743 }, -- Ritual Dagger of the Mind's Eye
-            { 28, 95774 }, -- Athame of the Sanguine Ritual
-            { 29, 95780 }, -- Iron Qon's Boot Knife
-            { 30, 95860 }, -- Fyn's Flickering Dagger
-            { 101, 95866 }, -- Nadagast's Exsanguinator
-            { 102, 95670 }, -- Amun-Thoth, Sul's Spiritrending Talons
-            { 103, 95791 }, -- Wu-Lai, Bladed Fan of the Empyreans
-            { 104, 97129 }, -- Tia-Tia, the Scything Star
-            { 105, 95781 }, -- Voice of the Quilen
-            { 106, 95660 }, -- Venomlord's Totemic Wand
+            { 21, 95675 }, -- Zerat, Malakk's Soulburning Greatsword
+            -- Fist Weapon
+            { 23, 95670 }, -- Amun-Thoth, Sul's Spiritrending Talons
+            { 24, 97129 }, -- Tia-Tia, the Scything Star
+            { 25, 95791 }, -- Wu-Lai, Bladed Fan of the Empyreans
+            -- Polearm
+            { 27, 95877 }, -- Bo-Ris, Horror in the Night
+            { 28, 95803 }, -- Shan-Dun, Breaker of Hope
+            -- Dagger
+            { 101, 95774 }, -- Athame of the Sanguine Ritual
+            { 102, 95860 }, -- Fyn's Flickering Dagger
+            { 103, 95780 }, -- Iron Qon's Boot Knife
+            { 104, 95698 }, -- Megaera's Poisoned Fang
+            { 105, 95866 }, -- Nadagast's Exsanguinator
+            { 106, 95743 }, -- Ritual Dagger of the Mind's Eye
+            -- Crossbow
+            { 108, 95728 }, -- Durumu's Baleful Gaze
+            -- Bow
+            { 109, 95859 }, -- Miracoran, the Vehement Chord
+            { 110, 95678 }, -- Shattered Tortoiseshell Longbow
+            -- Gun
+            { 111, 95781 }, -- Voice of the Quilen
+            -- Wand
+            { 113, 95660 }, -- Venomlord's Totemic Wand
+            -- Staff
+            { 116, 95862 }, -- Darkwood Spiritstaff
+            { 117, 95657 }, -- Dinomancer's Spiritbinding Spire
+            { 118, 95720 }, -- Giorgio's Caduceus of Pure Moods
+            { 119, 95647 }, -- Jalak's Maelstrom Staff
+            { 120, 95795 }, -- Suen-Wo, Spire of the Falling Sun
         }
     },
     {
@@ -629,26 +643,26 @@ data["AugustStoneShardVendorMoP"] = {
     {
         name = ALIL["Trinket"],
         [CELESTIAL_DIFF] = {
-            { 1, 95625 }, -- Renataki's Soul Charm
-            { 2, 95641 }, -- Horridon's Last Gasp
-            { 3, 95654 }, -- Spark of Zandalar
-            { 4, 95665 }, -- Bad Juju
-            { 5, 95669 }, -- Wushoolay's Final Choice
+            { 1, 95665 }, -- Bad Juju
+            { 2, 95711 }, -- Breath of the Hydra
+            { 3, 95772 }, -- Cha-Ye's Essence of Brilliance
+            { 4, 95779 }, -- Delicate Vial of the Sanguinaire
+            { 5, 95726 }, -- Fabled Feather of Ji-Kun
             { 6, 95677 }, -- Fortitude of the Zandalari
-            { 7, 95711 }, -- Breath of the Hydra
-            { 8, 95712 }, -- Inscribed Bag of Hydra-Spawn
-            { 9, 95726 }, -- Fabled Feather of Ji-Kun
+            { 7, 95799 }, -- Gaze of the Twins
+            { 8, 95641 }, -- Horridon's Last Gasp
+            { 9, 95712 }, -- Inscribed Bag of Hydra-Spawn
             { 10, 95727 }, -- Ji-Kun's Rising Winds
-            { 11, 95748 }, -- Talisman of Bloodlust
-            { 12, 95757 }, -- Primordius' Talisman of Rage
-            { 13, 95763 }, -- Stolen Relic of Zuldazar
-            { 14, 95772 }, -- Cha-Ye's Essence of Brilliance
-            { 15, 95779 }, -- Delicate Vial of the Sanguinaire
-            { 16, 95799 }, -- Gaze of the Twins
-            { 17, 95802 }, -- Rune of Re-Origination
-            { 18, 95811 }, -- Soul Barrier
-            { 19, 95814 }, -- Unerring Vision of Lei Shen
-            { 20, 95817 }, -- Lightning-Imbued Chalice
+            { 16, 95817 }, -- Lightning-Imbued Chalice
+            { 17, 95757 }, -- Primordius' Talisman of Rage
+            { 18, 95625 }, -- Renataki's Soul Charm
+            { 19, 95802 }, -- Rune of Re-Origination
+            { 20, 95811 }, -- Soul Barrier
+            { 21, 95654 }, -- Spark of Zandalar
+            { 22, 95763 }, -- Stolen Relic of Zuldazar
+            { 23, 95748 }, -- Talisman of Bloodlust
+            { 24, 95814 }, -- Unerring Vision of Lei Shen
+            { 25, 95669 }, -- Wushoolay's Final Choice
         },
     },
     {
