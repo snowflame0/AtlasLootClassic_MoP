@@ -28,6 +28,8 @@ local ALIL = AtlasLoot.IngameLocales
 local CELESTIAL_DIFF = data:AddDifficulty("CELESTIAL", nil, nil, nil, true)
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
+local GOLD_DIFF = data:AddDifficulty("Gold", nil, nil, nil, true)
+local PLAT_DIFF = data:AddDifficulty("Platinum", nil, nil, nil, true)
 
 local VENDOR_DIFF = data:AddDifficulty(AL["Vendor"], "vendor", 0)
 
@@ -1070,14 +1072,14 @@ data["SpiritOfHarmonyVendor"] = {
 }
 
 data["ChallengeModeMoP"] = {
-    name = AL["Challenge Mode Armor Sets"],
+    name = AL["Challenge Mode"],
     ContentType = SET_CONTENT,
     TableType = NORMAL_DIFF,
     gameVersion = AtlasLoot.MOP_VERSION_NUM,
     items = {
         {
             name = ALIL["DEATHKNIGHT"],
-            [NORMAL_DIFF] = {
+            [GOLD_DIFF] = {
                 { 1, 90053 }, -- Crown of the Lich Lord
                 { 2, 90055 }, -- Shoulderguards of the Lich Lord
                 { 3, 90051 }, -- Chestguard of the Lich Lord
@@ -1086,11 +1088,29 @@ data["ChallengeModeMoP"] = {
                 { 6, 90049 }, -- Girdle of the Lich Lord
                 { 7, 90054 }, -- Legplates of the Lich Lord
                 { 8, 90050 }, -- Treads of the Lich Lord
+        },
+            [PLAT_DIFF] = {
+                { 1, 265146 }, -- Crimson Crown of the Lich Lord
+                { 2, 265148 }, -- Crimson Shoulderguards of the Lich Lord
+                { 3, 265144 }, -- Crimson Chestguard of the Lich Lord
+                { 4, 265149 }, -- Crimson Bracers of the Lich Lord
+                { 5, 265145 }, -- Crimson Grasps of the Lich Lord
+                { 6, 265142 }, -- Crimson Girdle of the Lich Lord
+                { 7, 265147 }, -- Crimson Legplates of the Lich Lord
+                { 8, 265143 }, -- Crimson Treads of the Lich Lord
+                { 16, 265236 }, -- Emerald Crown of the Lich Lord
+                { 17, 265238 }, -- Emerald Shoulderguards of the Lich Lord
+                { 18, 265234 }, -- Emerald Chestguard of the Lich Lord
+                { 19, 265239 }, -- Emerald Bracers of the Lich Lord
+                { 20, 265235 }, -- Emerald Grasps of the Lich Lord
+                { 21, 265231 }, -- Emerald Girdle of the Lich Lord
+                { 22, 265237 }, -- Emerald Legplates of the Lich Lord
+                { 23, 265232 }, -- Emerald Treads of the Lich Lord
             },
         },
         {
             name = ALIL["DRUID"],
-            [NORMAL_DIFF] = {
+            [GOLD_DIFF] = {
                 { 1, 90062 }, -- Hood of the Cycle
                 { 2, 90065 }, -- Branches of the Cycle
                 { 3, 90064 }, -- Robes of the Cycle
@@ -1099,11 +1119,29 @@ data["ChallengeModeMoP"] = {
                 { 6, 90059 }, -- Waistguard of the Cycle
                 { 7, 90063 }, -- Leggings of the Cycle
                 { 8, 90060 }, -- Sandals of the Cycle
+        },
+            [PLAT_DIFF] = {
+                { 1, 265153 }, -- Crimson Hood of the Cycle
+                { 2, 265156 }, -- Crimson Branches of the Cycle
+                { 3, 265155 }, -- Crimson Robes of the Cycle
+                { 4, 265157 }, -- Crimson Bracers of the Cycle
+                { 5, 265152 }, -- Crimson Gloves of the Cycle
+                { 6, 265150 }, -- Crimson Waistguard of the Cycle
+                { 7, 265154 }, -- Crimson Leggings of the Cycle
+                { 8, 265151 }, -- Crimson Sandals of the Cycle
+                { 16, 265244 }, -- Azure Hood of the Cycle
+                { 17, 265247 }, -- Azure Branches of the Cycle
+                { 18, 265246 }, -- Azure Robes of the Cycle
+                { 19, 265248 }, -- Azure Bracers of the Cycle
+                { 20, 265243 }, -- Azure Gloves of the Cycle
+                { 21, 265240 }, -- Azure Waistguard of the Cycle
+                { 22, 265244 }, -- Azure Leggings of the Cycle
+                { 23, 265242 }, -- Azure Sandals of the Cycle
             },
         },
                 {
             name = ALIL["HUNTER"],
-            [NORMAL_DIFF] = {
+            [GOLD_DIFF] = {
                 { 1, 90072 }, -- Helm of the Howling Beast
                 { 2, 90074 }, -- Shoulderguards of the Howling Beast
                 { 3, 90070 }, -- Chestguard of the Howling Beast
@@ -1113,10 +1151,28 @@ data["ChallengeModeMoP"] = {
                 { 7, 90073 }, -- Legguards of the Howling Beast
                 { 8, 90069 }, -- Boots of the Howling Beast
             },
+            [PLAT_DIFF] = {
+                { 1, 265162 }, -- Obsidian Helm of the Howling Beast
+                { 2, 265164 }, -- Obsidian Shoulderguards of the Howling Beast
+                { 3, 265160 }, -- Obsidian Chestguard of the Howling Beast
+                { 4, 265165 }, -- Obsidian Wristwraps of the Howling Beast
+                { 5, 265161 }, -- Obsidian Grips of the Howling Beast
+                { 6, 265158 }, -- Obsidian Cinch of the Howling Beast
+                { 7, 265163 }, -- Obsidian Legguards of the Howling Beast
+                { 8, 265159 }, -- Obsidian Boots of the Howling Beast
+                { 16, 265253 }, -- Ivory Helm of the Howling Beast
+                { 17, 265256 }, -- Ivory Shoulderguards of the Howling Beast
+                { 18, 265251 }, -- Ivory Chestguard of the Howling Beast
+                { 19, 265254 }, -- Ivory Wristwraps of the Howling Beast
+                { 20, 265252 }, -- Ivory Grips of the Howling Beast
+                { 21, 265249 }, -- Ivory Cinch of the Howling Beast
+                { 22, 265255 }, -- Ivory Legguards of the Howling Beast
+                { 23, 265250 }, -- Ivory Boots of the Howling Beast
+            },
         },
                 {
             name = ALIL["MAGE"],
-            [NORMAL_DIFF] = {
+            [GOLD_DIFF] = {
                 { 1, 90082 }, -- Hood of the Elemental Triad
                 { 2, 90085 }, -- Spaulders of the Elemental Triad
                 { 3, 90084 }, -- Robes of the Elemental Triad
@@ -1126,10 +1182,28 @@ data["ChallengeModeMoP"] = {
                 { 7, 90083 }, -- Leggings of the Elemental Triad
                 { 8, 90080 }, -- Boots of the Elemental Triad
             },
+            [PLAT_DIFF] = {
+                { 1, 265178 }, -- Obsidian Hood of the Elemental Triad
+                { 2, 265180 }, -- Obsidian Spaulders of the Elemental Triad
+                { 3, 265174 }, -- Obsidian Robes of the Elemental Triad
+                { 4, 265181 }, -- Obsidian Bracers of the Elemental Triad
+                { 5, 265177 }, -- Obsidian Gloves of the Elemental Triad
+                { 6, 265175 }, -- Obsidian Girdle of the Elemental Triad
+                { 7, 265179 }, -- Obsidian Leggings of the Elemental Triad
+                { 8, 265176 }, -- Obsidian Boots of the Elemental Triad
+                { 16, 265307 }, -- Ivory Hood of the Elemental Triad
+                { 17, 265311 }, -- Ivory Spaulders of the Elemental Triad
+                { 18, 265310 }, -- Ivory Robes of the Elemental Triad
+                { 19, 265308 }, -- Ivory Bracers of the Elemental Triad
+                { 20, 265306 }, -- Ivory Gloves of the Elemental Triad
+                { 21, 265303 }, -- Ivory Girdle of the Elemental Triad
+                { 22, 265309 }, -- Ivory Leggings of the Elemental Triad
+                { 23, 265304 }, -- Ivory Boots of the Elemental Triad
+            },
         },
                 {
             name = ALIL["MONK"],
-            [NORMAL_DIFF] = {
+            [GOLD_DIFF] = {
                 { 1, 90092 }, -- Crown of the Regal Lord
                 { 2, 90094 }, -- Shoulderguards of the Regal Lord
                 { 3, 90090 }, -- Chestwrap of the Regal Lord
@@ -1139,10 +1213,28 @@ data["ChallengeModeMoP"] = {
                 { 7, 90093 }, -- Legwraps of the Regal Lord
                 { 8, 90089 }, -- Treads of the Regal Lord
             },
+            [PLAT_DIFF] = {
+                { 1, 265186 }, -- Azure Crown of the Regal Lord
+                { 2, 265188 }, -- Azure Shoulderguards of the Regal Lord
+                { 3, 265182 }, -- Azure Chestwrap of the Regal Lord
+                { 4, 265189 }, -- Azure Bracers of the Regal Lord
+                { 5, 265185 }, -- Azure Handwraps of the Regal Lord
+                { 6, 265183 }, -- Azure Greatbelt of the Regal Lord
+                { 7, 265187 }, -- Azure Legwraps of the Regal Lord
+                { 8, 265184 }, -- Azure Treads of the Regal Lord
+                { 16, 265263 }, -- Emerald Crown of the Regal Lord
+                { 17, 265265 }, -- Emerald Shoulderguards of the Regal Lord
+                { 18, 265261 }, -- Emerald Chestwrap of the Regal Lord
+                { 19, 265266 }, -- Emerald Bracers of the Regal Lord
+                { 20, 265262 }, -- Emerald Handwraps of the Regal Lord
+                { 21, 265258 }, -- Emerald Greatbelt of the Regal Lord
+                { 22, 265264 }, -- Emerald Legwraps of the Regal Lord
+                { 23, 265260 }, -- Emerald Treads of the Regal Lord
+            },
         },
                 {
             name = ALIL["PALADIN"],
-            [NORMAL_DIFF] = {
+            [GOLD_DIFF] = {
                 { 1, 90100 }, -- Greathelm of the Holy Warrior
                 { 2, 90102 }, -- Shoulderplate of the Holy Warrior
                 { 3, 90098 }, -- Chestplate of the Holy Warrior
@@ -1152,10 +1244,28 @@ data["ChallengeModeMoP"] = {
                 { 7, 90101 }, -- Legplates of the Holy Warrior
                 { 8, 90097 }, -- Greatboots of the Holy Warrior
             },
+            [PLAT_DIFF] = {
+                { 1, 265193 }, -- Crimson Greathelm of the Holy Warrior
+                { 2, 265196 }, -- Crimson Shoulderplate of the Holy Warrior
+                { 3, 265190 }, -- Crimson Chestplate of the Holy Warrior
+                { 4, 265197 }, -- Crimson Wristguards of the Holy Warrior
+                { 5, 265192 }, -- Crimson Gauntlets of the Holy Warrior
+                { 6, 265195 }, -- Crimson Girdle of the Holy Warrior
+                { 7, 265194 }, -- Crimson Legplates of the Holy Warrior
+                { 8, 265191 }, -- Crimson Greatboots of the Holy Warrior
+                { 16, 265315 }, -- Golden Greathelm of the Holy Warrior
+                { 17, 265320 }, -- Golden Shoulderplate of the Holy Warrior
+                { 18, 265313 }, -- Golden Chestplate of the Holy Warrior
+                { 19, 265319 }, -- Golden Wristguards of the Holy Warrior
+                { 20, 265314 }, -- Golden Gauntlets of the Holy Warrior
+                { 21, 265318 }, -- Golden Girdle of the Holy Warrior
+                { 22, 265317 }, -- Golden Legplates of the Holy Warrior
+                { 23, 265312 }, -- Golden Greatboots of the Holy Warrior
+            },
         },
                 {
             name = ALIL["PRIEST"],
-            [NORMAL_DIFF] = {
+            [GOLD_DIFF] = {
                 { 1, 90116 }, -- Cowl of the Light
                 { 2, 90113 }, -- Pauldrons of the Light
                 { 3, 90114 }, -- Robes of the Light
@@ -1165,10 +1275,28 @@ data["ChallengeModeMoP"] = {
                 { 7, 90117 }, -- Leggings of the Light
                 { 8, 90111 }, -- Steps of the Light
             },
+            [PLAT_DIFF] = {
+                { 1, 265168 }, -- Obsidian Cowl of the Light
+                { 2, 265172 }, -- Obsidian Pauldrons of the Light
+                { 3, 265166 }, -- Obsidian Robes of the Light
+                { 4, 265173 }, -- Obsidian Bracers of the Light
+                { 5, 265169 }, -- Obsidian Hands of the Light
+                { 6, 265171 }, -- Obsidian Cord of the Light
+                { 7, 265167 }, -- Obsidian Leggings of the Light
+                { 8, 265170 }, -- Obsidian Steps of the Light
+                { 16, 265270 }, -- Golden Cowl of the Light
+                { 17, 265273 }, -- Golden Pauldrons of the Light
+                { 18, 265272 }, -- Golden Robes of the Light
+                { 19, 265274 }, -- Golden Bracers of the Light
+                { 20, 265269 }, -- Golden Hands of the Light
+                { 21, 265267 }, -- Golden Cord of the Light
+                { 22, 265271 }, -- Golden Leggings of the Light
+                { 23, 265268 }, -- Golden Steps of the Light
+            },
         },
                 {
             name = ALIL["ROGUE"],
-            [NORMAL_DIFF] = {
+            [GOLD_DIFF] = {
                 { 1, 90120 }, -- Hood of the Silent Assassin
                 { 2, 90125 }, -- Spaulders of the Silent Assassin
                 { 3, 90122 }, -- Shadowwrap of the Silent Assassin
@@ -1178,10 +1306,28 @@ data["ChallengeModeMoP"] = {
                 { 7, 90124 }, -- Leggings of the Silent Assassin
                 { 8, 90121 }, -- Tabi of the Silent Assassin
             },
+            [PLAT_DIFF] = {
+                { 1, 265202 }, -- Obsidian Hood of the Silent Assassin
+                { 2, 265204 }, -- Obsidian Spaulders of the Silent Assassin
+                { 3, 265198 }, -- Obsidian Shadowwrap of the Silent Assassin
+                { 4, 265205 }, -- Obsidian Bracers of the Silent Assassin
+                { 5, 265201 }, -- Obsidian Gloves of the Silent Assassin
+                { 6, 265199 }, -- Obsidian Girdle of the Silent Assassin
+                { 7, 265203 }, -- Obsidian Leggings of the Silent Assassin
+                { 8, 265200 }, -- Obsidian Tabi of the Silent Assassin
+                { 16, 265281 }, -- Platinum Hood of the Silent Assassin
+                { 17, 265283 }, -- Platinum Spaulders of the Silent Assassin
+                { 18, 265280 }, -- Platinum Shadowwrap of the Silent Assassin
+                { 19, 265284 }, -- Platinum Bracers of the Silent Assassin
+                { 20, 265279 }, -- Platinum Gloves of the Silent Assassin
+                { 21, 265276 }, -- Platinum Girdle of the Silent Assassin
+                { 22, 265282 }, -- Platinum Leggings of the Silent Assassin
+                { 23, 265278 }, -- Platinum Tabi of the Silent Assassin
+            },
         },
         {
             name = ALIL["SHAMAN"],
-            [NORMAL_DIFF] = {
+            [GOLD_DIFF] = {
                 { 1, 90132 }, -- Windfury Mask
                 { 2, 90134 }, -- Windfury Spirit Guides
                 { 3, 90130 }, -- Windfury Harness
@@ -1191,10 +1337,28 @@ data["ChallengeModeMoP"] = {
                 { 7, 90133 }, -- Windfury Legguards
                 { 8, 90129 }, -- Windfury Sandals
             },
+            [PLAT_DIFF] = {
+                { 1, 265210 }, -- Azure Windfury Mask
+                { 2, 265212 }, -- Azure Windfury Spirit Guides
+                { 3, 265206 }, -- Azure Windfury Harness
+                { 4, 265213 }, -- Azure Windfury Bracers
+                { 5, 265209 }, -- Azure Windfury Crushers
+                { 6, 265207 }, -- Azure Windfury Belt
+                { 7, 265211 }, -- Azure Windfury Legguards
+                { 8, 265208 }, -- Azure Windfury Sandals
+                { 16, 265290 }, -- Emerald Windfury Mask
+                { 17, 265292 }, -- Emerald Windfury Spirit Guides
+                { 18, 265288 }, -- Emerald Windfury Harness
+                { 19, 265293 }, -- Emerald Windfury Bracers
+                { 20, 265289 }, -- Emerald Windfury Crushers
+                { 21, 265285 }, -- Emerald Windfury Belt
+                { 22, 265291 }, -- Emerald Windfury Legguards
+                { 23, 265287 }, -- Emerald Windfury Sandals
+            },
         },
         {
             name = ALIL["WARLOCK"],
-            [NORMAL_DIFF] = {
+            [GOLD_DIFF] = {
                 { 1, 90142 }, -- Horns of the Betrayer
                 { 2, 90138 }, -- Amice of the Betrayer
                 { 3, 90140 }, -- Robes of the Betrayer
@@ -1204,10 +1368,28 @@ data["ChallengeModeMoP"] = {
                 { 7, 90143 }, -- Leggings of the Betrayer
                 { 8, 90137 }, -- Boots of the Betrayer
             },
+            [PLAT_DIFF] = {
+                { 1, 265218 }, -- Crimson Horns of the Betrayer
+                { 2, 265220 }, -- Crimson Amice of the Betrayer
+                { 3, 265214 }, -- Crimson Robes of the Betrayer
+                { 4, 265221 }, -- Crimson Bracers of the Betrayer
+                { 5, 265217 }, -- Crimson Handguards of the Betrayer
+                { 6, 265215 }, -- Crimson Belt of the Betrayer
+                { 7, 265219 }, -- Crimson Leggings of the Betrayer
+                { 8, 265216 }, -- Crimson Boots of the Betrayer
+                { 16, 265298 }, -- Twilight Horns of the Betrayer
+                { 17, 265301 }, -- Twilight Amice of the Betrayer
+                { 18, 265300 }, -- Twilight Robes of the Betrayer
+                { 19, 265302 }, -- Twilight Bracers of the Betrayer
+                { 20, 265297 }, -- Twilight Handguards of the Betrayer
+                { 21, 265294 }, -- Twilight Belt of the Betrayer
+                { 22, 265299 }, -- Twilight Leggings of the Betrayer
+                { 23, 265296 }, -- Twilight Boots of the Betrayer 
+            },
         },
         {
             name = ALIL["WARRIOR"],
-            [NORMAL_DIFF] = {
+            [GOLD_DIFF] = {
                 { 1, 90151 }, -- Crown of the Golden King
                 { 2, 90153 }, -- Mantle of the Golden King
                 { 3, 90149 }, -- Chestplate of the Golden King
@@ -1216,6 +1398,24 @@ data["ChallengeModeMoP"] = {
                 { 6, 90147 }, -- Girdle of the Golden King
                 { 7, 90152 }, -- Greaves of the Golden King
                 { 8, 90148 }, -- Greatboots of the Golden King
+            },
+            [PLAT_DIFF] = {
+                { 1, 265326 }, -- Azure Crown of the Golden King
+                { 2, 265328 }, -- Azure Mantle of the Golden King
+                { 3, 265321 }, -- Azure Chestplate of the Golden King
+                { 4, 265329 }, -- Azure Bracers of the Golden King
+                { 5, 265325 }, -- Azure Reach of the Golden King
+                { 6, 265323 }, -- Azure Girdle of the Golden King
+                { 7, 265327 }, -- Azure Greaves of the Golden King
+                { 8, 265324 }, -- Azure Greatboots of the Golden King
+                { 16, 265226 }, -- Crimson Crown of the Golden King
+                { 17, 265228 }, -- Crimson Mantle of the Golden King
+                { 18, 265224 }, -- Crimson Chestplate of the Golden King
+                { 19, 265229 }, -- Crimson Bracers of the Golden King
+                { 20, 265225 }, -- Crimson Reach of the Golden King
+                { 21, 265222 }, -- Crimson Girdle of the Golden King
+                { 22, 265227 }, -- Crimson Greaves of the Golden King
+                { 23, 265223 }, -- Crimson Greatboots of the Golden King
             },
         },
     },
