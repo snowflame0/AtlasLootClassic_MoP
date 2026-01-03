@@ -366,6 +366,7 @@ data["BlacksmithingWrath"] = {
             name = AL["Misc"],
             [NORMAL_DIFF] = {
                 { 1, 59406 },	-- Titanium Skeleton Key
+                { 2, 59405 },	-- Cobalt Skeleton Key
                 { 3, 55732 },	-- Titanium Rod
             }
         },
