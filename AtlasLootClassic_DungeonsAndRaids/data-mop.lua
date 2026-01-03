@@ -3159,7 +3159,8 @@ data["ThroneofThunder"] = {
                 { 23, 94740, 96019 },	-- Jalak's Maelstrom Staff
                 { 24, 94755, 96032 },	-- Venomlord's Totemic Wand
                 { 26, 93666, "mount" },	-- Spawn of Horridon
-                { 28, "ac8038" },
+                { 27, 94574, "pet1200" }, -- Pygmy Direhorn
+                { 29, "ac8038" },
             },
             [HEROIC_DIFF] = {
                 { 1, 96397, 96769 },	-- Horn-Rimmed Doomcloak
@@ -3184,8 +3185,9 @@ data["ThroneofThunder"] = {
                 { 23, 96391, 96763 },	-- Jalak's Maelstrom Staff
                 { 24, 96404, 96776 },	-- Venomlord's Totemic Wand
                 { 26, 93666, "mount" },	-- Spawn of Horridon
-                { 28, "ac8057" },
-                { 29, "ac8038" },
+                { 27, 94574, "pet1200" }, -- Pygmy Direhorn
+                { 29, "ac8057" },
+                { 30, "ac8038" },
             },
         },
         {	--ToTCouncil
@@ -3255,7 +3257,8 @@ data["ThroneofThunder"] = {
                 { 20, 94768, 96058 },	-- Shellsplitter Greataxe
                 { 21, 94769, 96050 },	-- Shattered Tortoiseshell Longbow
                 { 22, 94778, 96064 },	-- Tortos' Discarded Shell
-                { 24, "ac8077" },
+                { 24, 98132 },	-- Shado-Pan Geyser Gun
+                { 26, "ac8077" },
             },
             [HEROIC_DIFF] = {
                 { 1, 96431, 96803 },	-- Beakbreaker Greatcloak
@@ -3278,8 +3281,9 @@ data["ThroneofThunder"] = {
                 { 20, 96430, 96802 },	-- Shellsplitter Greataxe
                 { 21, 96422, 96794 },	-- Shattered Tortoiseshell Longbow
                 { 22, 96436, 96808 },	-- Tortos' Discarded Shell
-                { 24, "ac8059" },
-                { 25, "ac8077" },
+                { 24, 98132 },	-- Shado-Pan Geyser Gun
+                { 26, "ac8059" },
+                { 27, "ac8077" },
             },
         },
         {	--ToTMegaera
@@ -3450,8 +3454,9 @@ data["ThroneofThunder"] = {
                 { 19, 94522, 96120 },	-- Talisman of Bloodlust
                 { 21, 94937, 96130 },	-- Acid-Spine Bonemace
                 { 22, 94945, 96140 },	-- Greatshield of the Gloaming
-                { 24, 97960, "pet1244" },	-- Dark Quivering Blob
-                { 26, "ac8037" },
+                { 24, 97959, "pet1243" }, -- Living Fluid
+                { 25, 97960, "pet1244" },	-- Dark Quivering Blob
+                { 27, "ac8037" },
             },
             [HEROIC_DIFF] = {
                 { 1, 96499, 96871 },	-- Hydra-Scale Bloodcloak
@@ -3475,9 +3480,10 @@ data["ThroneofThunder"] = {
                 { 19, 96492, 96864 },	-- Talisman of Bloodlust
                 { 21, 96502, 96874 },	-- Acid-Spine Bonemace
                 { 22, 96512, 96884 },	-- Greatshield of the Gloaming
-                { 24, 97960, "pet1244" },	-- Dark Quivering Blob
-                { 26, "ac8063" },
-                { 27, "ac8037" },
+                { 24, 97959, "pet1243" }, -- Living Fluid
+                { 25, 97960, "pet1244" },	-- Dark Quivering Blob
+                { 27, "ac8063" },
+                { 28, "ac8037" },
             },
         },
         {	--ToTDarkAnimus
@@ -3786,7 +3792,8 @@ data["ThroneofThunder"] = {
                 { 22, 95204, 96341 },	-- Necklace of the Terra-Cotta Mender
                 { 23, 95206, 96352 },	-- Necklace of the Terra-Cotta Protector
                 { 24, 95205, 96349 },	-- Necklace of the Terra-Cotta Vanquisher
-                { 26, 94125 },	-- Living Sandling
+                { 26, 94125, "pet1177" },	-- Living Sandling
+                { 28, 98136 },	-- Gastropod Shell
             },
         },
         T15_SET,
@@ -3852,6 +3859,7 @@ data["SiegeofOrgrimmar"] = {
                 { 21, 104675 }, -- Purified Bindings of Immerseus
                 { 23, 104670 }, -- Encapsulated Essence of Immerseus
                 { 24, 104661 }, -- Trident of Corrupted Waters
+                { 26, "ac8536" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103769 }, -- Cloak of Misguided Power
@@ -3954,6 +3962,7 @@ data["SiegeofOrgrimmar"] = {
                 { 20, 104682 }, -- Death Lotus Crossbow
                 { 21, 104683 }, -- Softfoot's Last Resort
                 { 22, 104697 }, -- Purehearted Cricket Cage
+                { 24, "ac8528" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103799 }, -- Gloomwrap Greatcloak
@@ -4056,6 +4065,7 @@ data["SiegeofOrgrimmar"] = {
                 { 22, 104703 }, -- Norushen's Shortblade
                 { 23, 104713 }, -- Xifeng, Longblade of the Titanic Guardian
                 { 24, 104719 }, -- Norushen's Enigmatic Barrier
+                { 26, "ac8532" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103845 }, -- Drape of the Despairing Pit
@@ -4107,7 +4117,6 @@ data["SiegeofOrgrimmar"] = {
                 { 24, 104470 }, -- Norushen's Enigmatic Barrier
                 { 26, "ac8532" },
                 { 27, "ac8466" },
-
             },
         },
         {	--SoOShaofPride
@@ -4128,7 +4137,6 @@ data["SiegeofOrgrimmar"] = {
                 { 20, 104977 }, -- Gaze of Arrogance
                 { 21, 104981 }, -- Greatsword of Pride's Fall
                 { 22, 104983 }, -- Shield of Mockery
-                { 24, 104163 }, -- Gooey Sha-ling
             },
             [FLEX_DIFF] = {
                 { 1, 104729 }, -- Self-Reflecting Mask
@@ -4144,8 +4152,9 @@ data["SiegeofOrgrimmar"] = {
                 { 20, 104728 }, -- Gaze of Arrogance
                 { 21, 104732 }, -- Greatsword of Pride's Fall
                 { 22, 104734 }, -- Shield of Mockery
-                { 24, 104162 }, -- Droplet of Y'Shaarj
-                { 25, 104163 }, -- Gooey Sha-ling
+                { 24, 104162, "pet1331" }, -- Droplet of Y'Shaarj
+                { 25, 104163, "pet1332" }, -- Gooey Sha-ling
+                { 27, "ac8521" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103876 }, -- Self-Reflecting Mask
@@ -4161,7 +4170,8 @@ data["SiegeofOrgrimmar"] = {
                 { 20, 103873 }, -- Gaze of Arrogance
                 { 21, 103869 }, -- Greatsword of Pride's Fall
                 { 22, 103870 }, -- Shield of Mockery
-                { 24, 104162 }, -- Droplet of Y'Shaarj
+                { 24, 104162, "pet1331" }, -- Droplet of Y'Shaarj
+                { 25, 104163, "pet1332" }, -- Gooey Sha-ling
                 { 27, "ac8521" },
             },
             [HEROIC_DIFF] = {
@@ -4178,11 +4188,10 @@ data["SiegeofOrgrimmar"] = {
                 { 20, 104479 }, -- Gaze of Arrogance
                 { 21, 104483 }, -- Greatsword of Pride's Fall
                 { 22, 104485 }, -- Shield of Mockery
-                { 24, 104162 }, -- Droplet of Y'Shaarj
+                { 24, 104162, "pet1331" }, -- Droplet of Y'Shaarj
+                { 25, 104163, "pet1332" }, -- Gooey Sha-ling
                 { 27, "ac8521" },
                 { 28, "ac8467" },
-
-
             },
         },
         {	--SoOGalakras
@@ -4236,6 +4245,7 @@ data["SiegeofOrgrimmar"] = {
                 { 21, 104744 }, -- Evil Eye of Galakras
                 { 23, 104735 }, -- Dagryn's Discarded Longbow
                 { 24, 104752 }, -- Drakebinder Greatstaff
+                { 26, "ac8530" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103900 }, -- Flameslinger's Fiery Cowl
@@ -4340,6 +4350,7 @@ data["SiegeofOrgrimmar"] = {
                 { 21, 104767 }, -- Juggernaut's Focusing Crystal
                 { 23, 104757 }, -- Seismic Bore
                 { 24, 104774 }, -- Juggernaut's Power Core
+                { 26, "ac8520" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103922 }, -- Shock Pulse Robes
@@ -4442,6 +4453,7 @@ data["SiegeofOrgrimmar"] = {
                 { 20, 104793 }, -- Kardris' Toxic Totem
                 { 22, 104788 }, -- Haromm's Frozen Crescent
                 { 23, 104794 }, -- Kardris' Scepter
+                { 25, "ac8453" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103934 }, -- Poisonmist Nightcloak
@@ -4466,7 +4478,6 @@ data["SiegeofOrgrimmar"] = {
                 { 22, 103926 }, -- Haromm's Frozen Crescent
                 { 23, 103936 }, -- Kardris' Scepter
                 { 25, "ac8453" },
-
             },
             [HEROIC_DIFF] = {
                 { 1, 104530 }, -- Poisonmist Nightcloak
@@ -4529,6 +4540,7 @@ data["SiegeofOrgrimmar"] = {
                 { 21, 104808 }, -- Gar'tok, Strength of the Faithful
                 { 22, 104800 }, -- Nazgrim's Gutripper
                 { 23, 104809 }, -- Bulwark of the Fallen General
+                { 25, "ac8448" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103808 }, -- Spaulders of Kor'kron Fealty
@@ -4617,6 +4629,7 @@ data["SiegeofOrgrimmar"] = {
                 { 23, 104812 }, -- Kor'kron Hand Cannon
                 { 24, 104820 }, -- Malkorok's Skullcleaver
                 { 25, 104828 }, -- Visage of the Monstrous
+                { 27, "ac8538" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103959 }, -- Black-Blooded Drape
@@ -4720,6 +4733,7 @@ data["SiegeofOrgrimmar"] = {
                 { 20, 104834 }, -- Enchanted Shao-Tien Saber
                 { 21, 104847 }, -- Immaculately Preserved Wand
                 { 22, 104843 }, -- Ancient Mogu Tower Shield
+                { 24, "ac8529" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103803 }, -- Mantid Vizier's Robes
@@ -4744,7 +4758,6 @@ data["SiegeofOrgrimmar"] = {
                 { 21, 103964 }, -- Immaculately Preserved Wand
                 { 22, 103871 }, -- Ancient Mogu Tower Shield
                 { 24, "ac8529" },
-
             },
             [HEROIC_DIFF] = {
                 { 1, 104596 }, -- Mantid Vizier's Robes
@@ -4770,7 +4783,6 @@ data["SiegeofOrgrimmar"] = {
                 { 22, 104594 }, -- Ancient Mogu Tower Shield
                 { 24, "ac8529" },
                 { 25, "ac8478" },
-
             },
         },
         {	--SoOThok
@@ -4808,6 +4820,7 @@ data["SiegeofOrgrimmar"] = {
                 { 20, 104863 }, -- Britomart's Jagged Pike
                 { 21, 104854 }, -- Hvitserk's Formidable Shanker
                 { 22, 104858 }, -- Festering Primordial Globule
+                { 24, "ac8527" },
             },
             [NORMAL_DIFF] = {
                 { 1, 104308 }, -- Akolik's Acid-Soaked Robes
@@ -4843,7 +4856,6 @@ data["SiegeofOrgrimmar"] = {
                 { 22, 104609 }, -- Festering Primordial Globule
                 { 24, "ac8527" },
                 { 25, "ac8479" },
-
             },
         },
         {	--SoOBlackfuse
@@ -4865,7 +4877,6 @@ data["SiegeofOrgrimmar"] = {
                 { 18, 99668 }, -- Shoulders of the Cursed Vanquisher
                 { 20, 105116 }, -- Lever of the Megantholithic Apparatus
                 { 21, 105123 }, -- Siegecrafter's Forge Hammer
-                { 23, 104158 }, -- Blackfuse Bombling
             },
             [FLEX_DIFF] = {
                 { 1, 104866 }, -- Fusespark Gloves
@@ -4882,7 +4893,8 @@ data["SiegeofOrgrimmar"] = {
                 { 18, 99754 }, -- Shoulders of the Cursed Vanquisher
                 { 20, 104867 }, -- Lever of the Megantholithic Apparatus
                 { 21, 104874 }, -- Siegecrafter's Forge Hammer
-                { 23, 104158 }, -- Blackfuse Bombling
+                { 23, 104158, "pet1322" }, -- Blackfuse Bombling
+                { 25, "ac8543" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103970 }, -- Fusespark Gloves
@@ -4899,7 +4911,7 @@ data["SiegeofOrgrimmar"] = {
                 { 18, 99685 }, -- Shoulders of the Cursed Vanquisher
                 { 20, 103874 }, -- Lever of the Megantholithic Apparatus
                 { 21, 103969 }, -- Siegecrafter's Forge Hammer
-                { 23, 104158 }, -- Blackfuse Bombling
+                { 23, 104158, "pet1322" }, -- Blackfuse Bombling
                 { 25, "ac8543" },
             },
             [HEROIC_DIFF] = {
@@ -4917,7 +4929,7 @@ data["SiegeofOrgrimmar"] = {
                 { 18, 99717 }, -- Shoulders of the Cursed Vanquisher
                 { 20, 104618 }, -- Lever of the Megantholithic Apparatus
                 { 21, 104625 }, -- Siegecrafter's Forge Hammer
-                { 23, 104158 }, -- Blackfuse Bombling
+                { 23, 104158, "pet1322" }, -- Blackfuse Bombling
                 { 25, "ac8543" },
                 { 26, "ac8480" },
             },
@@ -4941,7 +4953,6 @@ data["SiegeofOrgrimmar"] = {
                 { 21, 105135 }, -- Kil'ruk's Furious Blade
                 { 22, 105127 }, -- Korven's Crimson Crescent
                 { 23, 105129 }, -- Rik'kal's Bloody Scalpel
-                { 25, 104165 }, -- Kovok
             },
             [FLEX_DIFF] = {
                 { 1, 104879 }, -- Bracers of Sonic Projection
@@ -4958,7 +4969,8 @@ data["SiegeofOrgrimmar"] = {
                 { 21, 104886 }, -- Kil'ruk's Furious Blade
                 { 22, 104878 }, -- Korven's Crimson Crescent
                 { 23, 104880 }, -- Rik'kal's Bloody Scalpel
-                { 25, 104165 }, -- Kovok
+                { 25, 104165, "pet1334"  }, -- Kovok
+                { 27, "ac8531" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103810 }, -- Bracers of Sonic Projection
@@ -4975,9 +4987,8 @@ data["SiegeofOrgrimmar"] = {
                 { 21, 103972 }, -- Kil'ruk's Furious Blade
                 { 22, 103971 }, -- Korven's Crimson Crescent
                 { 23, 103973 }, -- Rik'kal's Bloody Scalpel
-                { 25, 104165 }, -- Kovok
+                { 25, 104165, "pet1334"  }, -- Kovok
                 { 27, "ac8531" },
-
             },
             [HEROIC_DIFF] = {
                 { 1, 104630 }, -- Bracers of Sonic Projection
@@ -4994,7 +5005,7 @@ data["SiegeofOrgrimmar"] = {
                 { 21, 104637 }, -- Kil'ruk's Furious Blade
                 { 22, 104629 }, -- Korven's Crimson Crescent
                 { 23, 104631 }, -- Rik'kal's Bloody Scalpel
-                { 25, 104165 }, -- Kovok
+                { 25, 104165, "pet1334"  }, -- Kovok
                 { 27, "ac8531" },
                 { 28, "ac8481" },
             },
@@ -5054,8 +5065,18 @@ data["SiegeofOrgrimmar"] = {
                 { 24, 104887 }, -- Kor'kron Spire of Supremacy
                 { 25, 104897 }, -- Xal'atoh, Desecrated Image of Gorehowl
                 { 26, 104903 }, -- Revelations of Y'Shaarj
-                { 28, 105676, [ATLASLOOT_IT_FILTERIGNORE] = true },	-- Hellscream's Tome of Destruction
-                { 30, "ac8537" },
+                { 101, 105672 }, -- Hellscream's Cleaver
+                { 102, 105679 }, -- Hellscream's Decapitator
+                { 103, 105678 }, -- Hellscream's Doomblade
+                { 104, 105673 }, -- Hellscream's Pig Sticker
+                { 105, 105671 }, -- Hellscream's Razor
+                { 106, 105677 }, -- Hellscream's War Staff
+                { 107, 105670 }, -- Hellscream's Warbow
+                { 108, 105675 }, -- Hellscream's Warmace
+                { 109, 105674 }, -- Hellscream's Barrier
+                { 110, 105680 }, -- Hellscream's Shield Wall
+                { 111, 105676, [ATLASLOOT_IT_FILTERIGNORE] = true }, -- Hellscream's Tome of Destruction
+                { 116, "ac8537" },
             },
             [NORMAL_DIFF] = {
                 { 1, 103901 }, -- Ebon Ritual Hood
@@ -5094,7 +5115,8 @@ data["SiegeofOrgrimmar"] = {
                 { 109, 104409 }, -- Hellscream's Barrier
                 { 110, 104407 }, -- Hellscream's Shield Wall
                 { 111, 104408, [ATLASLOOT_IT_FILTERIGNORE] = true }, -- Hellscream's Tome of Destruction
-                { 116, [ATLASLOOT_IT_ALLIANCE] = "ac8679", [ATLASLOOT_IT_HORDE] = "ac8680" },
+                { 116, "ac8537" },
+                { 117, [ATLASLOOT_IT_ALLIANCE] = "ac8679", [ATLASLOOT_IT_HORDE] = "ac8680" },
             },
             [HEROIC_DIFF] = {
                 { 1, 104651 }, -- Ebon Ritual Hood
@@ -5134,8 +5156,9 @@ data["SiegeofOrgrimmar"] = {
                 { 109, 105687 }, -- Hellscream's Barrier
                 { 110, 105693 }, -- Hellscream's Shield Wall
                 { 111, 105689, [ATLASLOOT_IT_FILTERIGNORE] = true }, -- Hellscream's Tome of Destruction
-                { 116, [ATLASLOOT_IT_ALLIANCE] = "ac8679", [ATLASLOOT_IT_HORDE] = "ac8680" },
-                { 117, "ac8482" },
+                { 116, "ac8537" },
+                { 117, [ATLASLOOT_IT_ALLIANCE] = "ac8679", [ATLASLOOT_IT_HORDE] = "ac8680" },
+                { 118, "ac8482" },
             },
         },
         {	--SoOShared

@@ -846,3 +846,103 @@ data["HalloweenBC"] = {
         }
     }}
 }
+
+data["WinterVeilBC"] = {
+    name = AL["Feast of Winter Veil"],
+    ContentType = WORLD_EVENT_CONTENT,
+    LoadDifficulty = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.BC_VERSION_NUM,
+    CorrespondingFields = private.WINTER_VEIL,
+    items = {
+        { -- Winterviel1
+            name = AL["Misc"],
+            [NORMAL_DIFF] = {
+                { 1,  21525 }, -- Green Winter Hat
+                { 2,  21524 }, -- Red Winter Hat
+                { 16,  17712 }, -- Winter Veil Disguise Kit
+                { 17,  17202 }, -- Snowball
+                { 18,  21212 }, -- Fresh Holly
+                { 19,  21519 }, -- Mistletoe
+            },
+        },
+        {
+            name = AL["Carefully Wrapped Present"],
+            [NORMAL_DIFF] = {
+                { 1, 21254 }, -- Winter Veil Cookie
+            },
+        },
+        {
+            name = AL["Gaily Wrapped Present"],
+            [NORMAL_DIFF] = {
+                { 1, 21301 }, -- Green Helper Box
+                { 2, 21308 }, -- Jingling Bell
+                { 3, 21305 }, -- Red Helper Box
+                { 4, 21309 }, -- Snowman Kit
+            },
+        },
+        {
+            name = AL["Festive Gift"],
+            [NORMAL_DIFF] = {
+                { 1, 21328 }, -- Wand of Holiday Cheer
+            },
+        },
+        {
+            name = AL["Gently Shaken Gift"],
+            [NORMAL_DIFF] = {
+                { 1, 21235 }, -- Winter Veil Roast
+                { 2, 21241 }, -- Winter Veil Eggnog
+            },
+        },
+        {
+            name = AL["Ticking Present"],
+            [NORMAL_DIFF] = {
+                { 1, 17706 }, -- Plans: Edge of Winter
+                { 2, 17725 }, -- Formula: Enchant Weapon - Winter's Might
+                { 3, 17720 }, -- Schematic: Snowmaster 9000
+                { 4, 17722 }, -- Pattern: Gloves of the Greatfather
+                { 5, 17709 }, -- Recipe: Elixir of Frost Power
+                { 6, 17724 }, -- Pattern: Green Holiday Shirt
+                { 16, 21325 }, -- Mechanical Greench
+                { 17, 21213 }, -- Preserved Holly
+            },
+        },
+        {
+            name = AL["Winter Veil Gift"],
+            [NORMAL_DIFF] = {
+                { 1, 34425 }, -- Clockwork Rocket Bot
+            },
+        },
+        {
+            name = AL["Smokywood Pastures"],
+            [NORMAL_DIFF] = {
+                { 1,  17201 }, -- Recipe: Egg Nog
+                { 2,  17200 }, -- Recipe: Gingerbread Cookie
+                { 3,  17344 }, -- Candy Cane
+                { 4,  17406 }, -- Holiday Cheesewheel
+                { 5,  17407 }, -- Graccu's Homemade Meat Pie
+                { 6,  17408 }, -- Spicy Beefstick
+                { 7,  17404 }, -- Blended Bean Brew
+                { 8,  17405 }, -- Green Garden Tea
+                { 9, 17196 }, -- Holiday Spirits
+                { 10, 17403 }, -- Steamwheedle Fizzy Spirits
+                { 11, 17402 }, -- Greatfather's Winter Ale
+                { 12, 17194 }, -- Holiday Spices
+                { 16, 17303 }, -- Blue Ribboned Wrapping Paper
+                { 17, 17304 }, -- Green Ribboned Wrapping Paper
+                { 18, 17307 }, -- Purple Ribboned Wrapping Paper
+            },
+        },
+        {
+            name = AL["Smokywood Pastures Special Gift"],
+            [NORMAL_DIFF] = {
+                { 1, 17706 }, -- Plans: Edge of Winter
+                { 2, 17725 }, -- Formula: Enchant Weapon - Winter's Might
+                { 3, 17720 }, -- Schematic: Snowmaster 9000
+                { 4, 17722 }, -- Pattern: Gloves of the Greatfather
+                { 5, 17709 }, -- Recipe: Elixir of Frost Power
+                { 6, 17724 }, -- Pattern: Green Holiday Shirt
+            },
+        },
+    },
+}

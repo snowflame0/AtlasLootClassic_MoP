@@ -2517,6 +2517,12 @@ data["WinterVeilMoP"] = {
             },
         },
         {
+            name = AL["Carefully Wrapped Present"],
+            [NORMAL_DIFF] = {
+                { 1, 21254 }, -- Winter Veil Cookie
+            },
+        },
+        {
             name = AL["Gaily Wrapped Present"],
             [NORMAL_DIFF] = {
                 { 1, 21301 }, -- Green Helper Box
@@ -2532,23 +2538,29 @@ data["WinterVeilMoP"] = {
             },
         },
         {
-            name = AL["Smokywood Pastures Special Gift"],
+            name = AL["Gently Shaken Gift"],
             [NORMAL_DIFF] = {
-                { 1,  17706 }, -- Plans: Edge of Winter
-                { 2,  17725 }, -- Formula: Enchant Weapon - Winter's Might
-                { 3,  17720 }, -- Schematic: Snowmaster 9000
-                { 4,  17722 }, -- Pattern: Gloves of the Greatfather
-                { 5,  17709 }, -- Recipe: Elixir of Frost Power
-                { 6,  17724 }, -- Pattern: Green Holiday Shirt
+                { 1, 21235 }, -- Winter Veil Roast
+                { 2, 21241 }, -- Winter Veil Eggnog
+            },
+        },
+        {
+            name = AL["Ticking Present"],
+            [NORMAL_DIFF] = {
+                { 1, 17706 }, -- Plans: Edge of Winter
+                { 2, 17725 }, -- Formula: Enchant Weapon - Winter's Might
+                { 3, 17720 }, -- Schematic: Snowmaster 9000
+                { 4, 17722 }, -- Pattern: Gloves of the Greatfather
+                { 5, 17709 }, -- Recipe: Elixir of Frost Power
+                { 6, 17724 }, -- Pattern: Green Holiday Shirt
                 { 16, 21325 }, -- Mechanical Greench
                 { 17, 21213 }, -- Preserved Holly
             },
         },
         {
-            name = AL["Gently Shaken Gift"],
+            name = AL["Winter Veil Gift"],
             [NORMAL_DIFF] = {
-                { 1, 21235 }, -- Winter Veil Roast
-                { 2, 21241 }, -- Winter Veil Eggnog
+                { 1, 104318 }, -- Crashin' Thrashin' Flyer Controller
             },
         },
         {
@@ -2563,36 +2575,49 @@ data["WinterVeilMoP"] = {
                 { 7,  17406 }, -- Holiday Cheesewheel
                 { 8,  17407 }, -- Graccu's Homemade Meat Pie
                 { 9,  17408 }, -- Spicy Beefstick
-                { 10, 34410 }, -- Honeyed Holiday Ham
-                { 11, 17404 }, -- Blended Bean Brew
-                { 12, 17405 }, -- Green Garden Tea
-                { 13, 34412 }, -- Sparkling Apple Cider
-                { 14, 17196 }, -- Holiday Spirits
-                { 15, 17403 }, -- Steamwheedle Fizzy Spirits
-                { 16, 17402 }, -- Greatfather's Winter Ale
-                { 17, 17194 }, -- Holiday Spices
-                { 18, 17303 }, -- Blue Ribboned Wrapping Paper
-                { 19, 17304 }, -- Green Ribboned Wrapping Paper
-                { 20, 17307 }, -- Purple Ribboned Wrapping Paper
+                { 10, 21215 }, -- Graccu's Mince Meat Fruitcake
+                { 11, 34410 }, -- Honeyed Holiday Ham
+                { 12, 17404 }, -- Blended Bean Brew
+                { 13, 17405 }, -- Green Garden Tea
+                { 14, 34412 }, -- Sparkling Apple Cider
+                { 15, 17196 }, -- Holiday Spirits
+                { 16, 17403 }, -- Steamwheedle Fizzy Spirits
+                { 17, 17402 }, -- Greatfather's Winter Ale
+                { 18, 17194 }, -- Holiday Spices
+                { 19, 17303 }, -- Blue Ribboned Wrapping Paper
+                { 20, 17304 }, -- Green Ribboned Wrapping Paper
+                { 21, 17307 }, -- Purple Ribboned Wrapping Paper
+                { 22, 70923 }, -- Gaudy Winter Veil Sweater
+            },
+        },
+        {
+            name = AL["Smokywood Pastures Special Gift"],
+            [NORMAL_DIFF] = {
+                { 1, 17706 }, -- Plans: Edge of Winter
+                { 2, 17725 }, -- Formula: Enchant Weapon - Winter's Might
+                { 3, 17720 }, -- Schematic: Snowmaster 9000
+                { 4, 17722 }, -- Pattern: Gloves of the Greatfather
+                { 5, 17709 }, -- Recipe: Elixir of Frost Power
+                { 6, 17724 }, -- Pattern: Green Holiday Shirt
             },
         },
         {
             name = AL["Stolen Present"],
             [NORMAL_DIFF] = {
-                { 1,  93625 }, -- Miniature Winter Veil Tree
+                { 1,  268556 }, -- Miniature Winter Veil Tree
                 { 3,  104317 }, -- Rotten Helper Box
                 { 4,  34425 }, -- Clockwork Rocket Bot
                 { 5,  54436 }, -- Blue Clockwork Rocket Bot
                 { 6,  73797 }, -- Lump of Coal
-                { 8,  104318 }, -- Crashin' Thrashin' Flyer Controller
-                { 9,  46709 }, -- MiniZep Controller
-                { 10,  44606 }, -- Toy Train Set
-                { 11,  90883 }, -- The Pigskin
-                { 12,  90888 }, -- Foot Ball
-                { 13,  37710 }, -- Crashin' Thrashin' Racer Controller
-                { 14, 54437 }, -- Tiny Green Ragdoll
-                { 15, 54438 }, -- Tiny Blue Ragdoll
-                { 17,  46725 }, -- Red Rider Air Rifle
+                { 8,  46709 }, -- MiniZep Controller
+                { 9,  44606 }, -- Toy Train Set
+                { 10,  90883 }, -- The Pigskin
+                { 11,  90888 }, -- Foot Ball
+                { 12,  37710 }, -- Crashin' Thrashin' Racer Controller
+                { 13, 54437 }, -- Tiny Green Ragdoll
+                { 14, 54438 }, -- Tiny Blue Ragdoll
+                { 16,  46725 }, -- Red Rider Air Rifle
+                { 17, 70923 }, -- Gaudy Winter Veil Sweater
                 { 18, 34498 }, -- Paper Zeppelin Kit
                 { 19, 44599 }, -- Zippy Copper Racer
                 { 20, 44601 }, -- Heavy Copper Racer

@@ -121,6 +121,8 @@ private.DAY_OF_THE_DEAD = {
 
 private.WINTER_VEIL = {
     [AtlasLoot.CLASSIC_VERSION_NUM]     = "WinterVeil",
+    [AtlasLoot.BC_VERSION_NUM]          = "WinterVeilBC",
+    [AtlasLoot.WRATH_VERSION_NUM]       = "WinterVeilWrath",
     [AtlasLoot.CATA_VERSION_NUM]        = "WinterVeilCata",
     [AtlasLoot.MOP_VERSION_NUM]         = "WinterVeilMoP",
 }
