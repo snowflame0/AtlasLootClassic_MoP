@@ -1428,15 +1428,15 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM) then
         [89254] = { ICONS.HUNTER, 87005, 0, ICONS.MONK, 87091, 87087, 87097, 0, ICONS.SHAMAN, 87132, 87142, 87137, 0, ICONS.WARRIOR, 87195, 87200, type = 6 }, -- Legs of Shadowy Protector (Heroic)
         [89252] = { ICONS.DEATHKNIGHT, 86916, 86921, 0, ICONS.DRUID, 86930, 86935, 86926, 86941, 0, ICONS.MAGE, 87009, 0, ICONS.ROGUE, 87127, type = 6 }, -- Legs of Shadowy Vanquisher (Heroic)
         -- T15
-        [95880] = { ICONS.PALADIN, 95912, 95917, 95922, 0, ICONS.PRIEST, 95928, 95933, 0, ICONS.WARLOCK, 95984, type = 6 }, -- Helm of Crackling Conqueror (Celestial)
-        [95881] = { ICONS.HUNTER, 95884, 0, ICONS.MONK, 95897, 95901, 95907, 0, ICONS.SHAMAN, 95940, 95947, 95950, 0, ICONS.WARRIOR, 95986, 95993, type = 6 }, -- Helm of Crackling Protector (Celestial)
-        [95879] = { ICONS.DEATHKNIGHT, 95830, 95825, 0, ICONS.DRUID, 95835, 95843, 95848, 95850, 0, ICONS.MAGE, 95893, 0, ICONS.ROGUE, 95937, type = 6 }, -- Helm of Crackling Vanquisher (Celestial)
-        [95956] = { ICONS.PALADIN, 95914, 95919, 95924, 0, ICONS.PRIEST, 95926, 95931, 0, ICONS.WARLOCK, 95982, type = 6 }, -- Shoulder of Crackling Conqueror (Celestial)
-        [95957] = { ICONS.HUNTER, 95886, 0, ICONS.MONK, 95899, 95904, 95909, 0, ICONS.SHAMAN, 95942, 95949, 95952, 0, ICONS.WARRIOR, 95990, 95995, type = 6 }, -- Shoulder of Crackling Protector (Celestial)
-        [95955] = { ICONS.DEATHKNIGHT, 95832, 95827, 0, ICONS.DRUID, 95837, 95841, 95846, 95852, 0, ICONS.MAGE, 95891, 0, ICONS.ROGUE, 95939, type = 6 }, -- Shoulder of Crackling Vanquisher (Celestial)
-        [95823] = { ICONS.PALADIN, 95910, 95915, 95920, 0, ICONS.PRIEST, 95929, 95934, 0, ICONS.WARLOCK, 95985, type = 6 }, -- Chest of Crackling Conqueror (Celestial)
-        [95824] = { ICONS.HUNTER, 95882, 0, ICONS.MONK, 95895, 95903, 95905, 0, ICONS.SHAMAN, 95944, 95945, 95954, 0, ICONS.WARRIOR, 95987, 95991, type = 6 }, -- Chest of Crackling Protector (Celestial)
-        [95822] = { ICONS.DEATHKNIGHT, 95834, 95829, 0, ICONS.DRUID, 95839, 95844, 95849, 95854, 0, ICONS.MAGE, 95894, 0, ICONS.ROGUE, 95935, type = 6 }, -- Chest of Crackling Vanquisher (Celestial)
+        [95880] = { ICONS.PALADIN, 95912, 95917, 95922, 0, ICONS.PRIEST, 95926, 95931, 0, ICONS.WARLOCK, 95982, type = 6 }, -- Helm of Crackling Conqueror (Celestial)
+        [95881] = { ICONS.HUNTER, 95884, 0, ICONS.MONK, 95897, 95901, 95907, 0, ICONS.SHAMAN, 95942, 95947, 95952, 0, ICONS.WARRIOR, 95986, 95993, type = 6 }, -- Helm of Crackling Protector (Celestial)
+        [95879] = { ICONS.DEATHKNIGHT, 95832, 95827, 0, ICONS.DRUID, 95837, 95841, 95846, 95852, 0, ICONS.MAGE, 95891, 0, ICONS.ROGUE, 95937, type = 6 }, -- Helm of Crackling Vanquisher (Celestial)
+        [95956] = { ICONS.PALADIN, 95914, 95919, 95924, 0, ICONS.PRIEST, 95929, 95934, 0, ICONS.WARLOCK, 95985, type = 6 }, -- Shoulder of Crackling Conqueror (Celestial)
+        [95957] = { ICONS.HUNTER, 95886, 0, ICONS.MONK, 95899, 95904, 95909, 0, ICONS.SHAMAN, 95944, 95949, 95954, 0, ICONS.WARRIOR, 95990, 95995, type = 6 }, -- Shoulder of Crackling Protector (Celestial)
+        [95955] = { ICONS.DEATHKNIGHT, 95834, 95829, 0, ICONS.DRUID, 95839, 95844, 95849, 95854, 0, ICONS.MAGE, 95894, 0, ICONS.ROGUE, 95939, type = 6 }, -- Shoulder of Crackling Vanquisher (Celestial)
+        [95823] = { ICONS.PALADIN, 95910, 95915, 95920, 0, ICONS.PRIEST, 95928, 95933, 0, ICONS.WARLOCK, 95984, type = 6 }, -- Chest of Crackling Conqueror (Celestial)
+        [95824] = { ICONS.HUNTER, 95882, 0, ICONS.MONK, 95895, 95903, 95905, 0, ICONS.SHAMAN, 95940, 95945, 95950, 0, ICONS.WARRIOR, 95987, 95991, type = 6 }, -- Chest of Crackling Protector (Celestial)
+        [95822] = { ICONS.DEATHKNIGHT, 95830, 95825, 0, ICONS.DRUID, 95835, 95843, 95848, 95850, 0, ICONS.MAGE, 95893, 0, ICONS.ROGUE, 95935, type = 6 }, -- Chest of Crackling Vanquisher (Celestial)
         [95856] = { ICONS.PALADIN, 95911, 95916, 95921, 0, ICONS.PRIEST, 95925, 95930, 0, ICONS.WARLOCK, 95981, type = 6 }, -- Gloves of Crackling Conqueror (Celestial)
         [95857] = { ICONS.HUNTER, 95883, 0, ICONS.MONK, 95896, 95900, 95906, 0, ICONS.SHAMAN, 95941, 95946, 95951, 0, ICONS.WARRIOR, 95988, 95992, type = 6 }, -- Gloves of Crackling Protector (Celestial)
         [95855] = { ICONS.DEATHKNIGHT, 95831, 95826, 0, ICONS.DRUID, 95836, 95840, 95845, 95851, 0, ICONS.MAGE, 95890, 0, ICONS.ROGUE, 95936, type = 6 }, -- Gloves of Crackling Vanquisher (Celestial)
@@ -1444,15 +1444,15 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM) then
         [95889] = { ICONS.HUNTER, 95885, 0, ICONS.MONK, 95898, 95902, 95908, 0, ICONS.SHAMAN, 95943, 95948, 95953, 0, ICONS.WARRIOR, 95989, 95994, type = 6 }, -- Legs of Crackling Protector (Celestial)
         [95887] = { ICONS.DEATHKNIGHT, 95833, 95828, 0, ICONS.DRUID, 95838, 95842, 95847, 95853, 0, ICONS.MAGE, 95892, 0, ICONS.ROGUE, 95938, type = 6 }, -- Legs of Crackling Vanquisher (Celestial)
 
-        [95577] = { ICONS.PALADIN, 95282, 95287, 95292, 0, ICONS.PRIEST, 95298, 95303, 0, ICONS.WARLOCK, 95328, type = 6 }, -- Helm of Crackling Conqueror (Normal)
-        [95582] = { ICONS.HUNTER, 95257, 0, ICONS.MONK, 95267, 95271, 95277, 0, ICONS.SHAMAN, 95310, 95317, 95320, 0, ICONS.WARRIOR, 95330, 95337, type = 6 }, -- Helm of Crackling Protector (Normal)
-        [95571] = { ICONS.DEATHKNIGHT, 95230, 95225, 0, ICONS.DRUID, 95235, 95243, 95248, 95250, 0, ICONS.MAGE, 95263, 0, ICONS.ROGUE, 95307, type = 6 }, -- Helm of Crackling Vanquisher (Normal)
-        [95578] = { ICONS.PALADIN, 95284, 95289, 95294, 0, ICONS.PRIEST, 95296, 95301, 0, ICONS.WARLOCK, 95326, type = 6 }, -- Shoulder of Crackling Conqueror (Normal)
-        [95583] = { ICONS.HUNTER, 95259, 0, ICONS.MONK, 95269, 95274, 95279, 0, ICONS.SHAMAN, 95312, 95319, 95322, 0, ICONS.WARRIOR, 95334, 95339, type = 6 }, -- Shoulder of Crackling Protector (Normal)
-        [95573] = { ICONS.DEATHKNIGHT, 95232, 95227, 0, ICONS.DRUID, 95237, 95241, 95246, 95252, 0, ICONS.MAGE, 95261, 0, ICONS.ROGUE, 95309, type = 6 }, -- Shoulder of Crackling Vanquisher (Normal)
-        [95574] = { ICONS.PALADIN, 95280, 95285, 95290, 0, ICONS.PRIEST, 95299, 95304, 0, ICONS.WARLOCK, 95329, type = 6 }, -- Chest of Crackling Conqueror (Normal)
-        [95579] = { ICONS.DEATHKNIGHT, 95234, 95229, 0, ICONS.DRUID, 95239, 95244, 95249, 95254, 0, ICONS.MAGE, 95264, 0, ICONS.ROGUE, 95305, type = 6 }, -- Chest of Crackling Vanquisher (Normal)
-        [95569] = { ICONS.HUNTER, 95255, 0, ICONS.MONK, 95265, 95273, 95275, 0, ICONS.SHAMAN, 95314, 95315, 95324, 0, ICONS.WARRIOR, 95331, 95335, type = 6 }, -- Chest of Crackling Protector (Normal)
+        [95577] = { ICONS.PALADIN, 95282, 95287, 95292, 0, ICONS.PRIEST, 95296, 95301, 0, ICONS.WARLOCK,95326, type = 6 }, -- Helm of Crackling Conqueror (Normal)
+        [95582] = { ICONS.HUNTER, 95257, 0, ICONS.MONK, 95267, 95271, 95277, 0, ICONS.SHAMAN, 95312, 95317, 95322, 0, ICONS.WARRIOR, 95330, 95337, type = 6 }, -- Helm of Crackling Protector (Normal)
+        [95571] = { ICONS.DEATHKNIGHT, 95232, 95227, 0, ICONS.DRUID, 95237, 95241, 95246, 95252, 0, ICONS.MAGE, 95261, 0, ICONS.ROGUE, 95307, type = 6 }, -- Helm of Crackling Vanquisher (Normal)
+        [95578] = { ICONS.PALADIN, 95284, 95289, 95294, 0, ICONS.PRIEST, 95299, 95304, 0, ICONS.WARLOCK, 95329, type = 6 }, -- Shoulder of Crackling Conqueror (Normal)
+        [95583] = { ICONS.HUNTER, 95259, 0, ICONS.MONK, 95269, 95274, 95279, 0, ICONS.SHAMAN, 95314, 95319, 95324, 0, ICONS.WARRIOR, 95334, 95339, type = 6 }, -- Shoulder of Crackling Protector (Normal)
+        [95573] = { ICONS.DEATHKNIGHT, 95234, 95229, 0, ICONS.DRUID, 95239, 95244, 95249, 95254, 0, ICONS.MAGE, 95264, 0, ICONS.ROGUE, 95309, type = 6 }, -- Shoulder of Crackling Vanquisher (Normal)
+        [95574] = { ICONS.PALADIN, 95280, 95285, 95290, 0, ICONS.PRIEST, 95298, 95303, 0, ICONS.WARLOCK, 95328, type = 6 }, -- Chest of Crackling Conqueror (Normal)
+        [95579] = { ICONS.HUNTER, 95255, 0, ICONS.MONK, 95265, 95273, 95275, 0, ICONS.SHAMAN, 95310, 95315, 95320, 0, ICONS.WARRIOR, 95331, 95335, type = 6 }, -- Chest of Crackling Vanquisher (Normal)
+        [95569] = { ICONS.DEATHKNIGHT, 95230, 95225, 0, ICONS.DRUID, 95235, 95243, 95248, 95250, 0, ICONS.MAGE, 95263, 0, ICONS.ROGUE, 95305, type = 6 }, -- Chest of Crackling Protector (Normal)
         [95575] = { ICONS.PALADIN, 95281, 95286, 95291, 0, ICONS.PRIEST, 95295, 95300, 0, ICONS.WARLOCK, 95325, type = 6 }, -- Gloves of Crackling Conqueror (Normal)
         [95580] = { ICONS.HUNTER, 95256, 0, ICONS.MONK, 95266, 95270, 95276, 0, ICONS.SHAMAN, 95311, 95316, 95321, 0, ICONS.WARRIOR, 95332, 95336, type = 6 }, -- Gloves of Crackling Protector (Normal)
         [95570] = { ICONS.DEATHKNIGHT, 95231, 95226, 0, ICONS.DRUID, 95236, 95240, 95245, 95251, 0, ICONS.MAGE, 95260, 0, ICONS.ROGUE, 95306, type = 6 }, -- Gloves of Crackling Vanquisher (Normal)
@@ -1460,15 +1460,15 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM) then
         [95581] = { ICONS.HUNTER, 95258, 0, ICONS.MONK, 95268, 95272, 95278, 0, ICONS.SHAMAN, 95313, 95318, 95323, 0, ICONS.WARRIOR, 95333, 95338, type = 6 }, -- Legs of Crackling Protector (Normal)
         [95572] = { ICONS.DEATHKNIGHT, 95233, 95228, 0, ICONS.DRUID, 95238, 95242, 95247, 95253, 0, ICONS.MAGE, 95262, 0, ICONS.ROGUE, 95308, type = 6 }, -- Legs of Crackling Vanquisher (Normal)
 
-        [96624] = { ICONS.PALADIN, 96656, 96661, 96666, 0, ICONS.PRIEST, 96677, 96672, 0, ICONS.WARLOCK, 96728, type = 6 }, -- Helm of Crackling Conqueror (Heroic)
-        [96625] = { ICONS.HUNTER, 96628, 0, ICONS.MONK, 96641, 96645, 96651, 0, ICONS.SHAMAN, 96684, 96691, 96694, 0, ICONS.WARRIOR, 96730, 96737, type = 6 }, -- Helm of Crackling Protector (Heroic)
-        [96623] = { ICONS.DEATHKNIGHT, 96574, 96569, 0, ICONS.DRUID, 96579, 96587, 96592, 96594, 0, ICONS.MAGE, 96637, 0, ICONS.ROGUE, 96681, type = 6 }, -- Helm of Crackling Vanquisher (Heroic)
-        [96700] = { ICONS.PALADIN, 96658, 96663, 96668, 0, ICONS.PRIEST, 96675, 96670, 0, ICONS.WARLOCK, 96726, type = 6 }, -- Shoulder of Crackling Conqueror (Heroic)
-        [96701] = { ICONS.HUNTER, 96630, 0, ICONS.MONK, 96643, 96648, 96653, 0, ICONS.SHAMAN, 96686, 96693, 96696, 0, ICONS.WARRIOR, 96734, 96739, type = 6 }, -- Shoulder of Crackling Protector (Heroic)
-        [96699] = { ICONS.DEATHKNIGHT, 96576, 96571, 0, ICONS.DRUID, 96581, 96585, 96590, 96596, 0, ICONS.MAGE, 96635, 0, ICONS.ROGUE, 96683, type = 6 }, -- Shoulder of Crackling Vanquisher (Heroic)
-        [96567] = { ICONS.PALADIN, 96654, 96659, 96664, 0, ICONS.PRIEST, 96678, 96673, 0, ICONS.WARLOCK, 96729, type = 6 }, -- Chest of Crackling Conqueror (Heroic)
-        [96568] = { ICONS.HUNTER, 96626, 0, ICONS.MONK, 96639, 96647, 96649, 0, ICONS.SHAMAN, 96688, 96689, 96698, 0, ICONS.WARRIOR, 96731, 96735, type = 6 }, -- Chest of Crackling Protector (Heroic)
-        [96566] = { ICONS.DEATHKNIGHT, 96578, 96573, 0, ICONS.DRUID, 96583, 96588, 96593, 96598, 0, ICONS.MAGE, 96638, 0, ICONS.ROGUE, 96679, type = 6 }, -- Chest of Crackling Vanquisher (Heroic)
+        [96624] = { ICONS.PALADIN, 96656, 96661, 96666, 0, ICONS.PRIEST, 96675, 96670, 0, ICONS.WARLOCK, 96726, type = 6 }, -- Helm of Crackling Conqueror (Heroic)
+        [96625] = { ICONS.HUNTER, 96628, 0, ICONS.MONK, 96641, 96645, 96651, 0, ICONS.SHAMAN, 96686, 96691, 96696, 0, ICONS.WARRIOR, 96730, 96737, type = 6 }, -- Helm of Crackling Protector (Heroic)
+        [96623] = { ICONS.DEATHKNIGHT, 96576, 96571, 0, ICONS.DRUID, 96581, 96585, 96590, 96596, 0, ICONS.MAGE, 96635, 0, ICONS.ROGUE, 96681, type = 6 }, -- Helm of Crackling Vanquisher (Heroic)
+        [96700] = { ICONS.PALADIN, 96658, 96663, 96668, 0, ICONS.PRIEST, 96678, 96673, 0, ICONS.WARLOCK, 96729, type = 6 }, -- Shoulder of Crackling Conqueror (Heroic)
+        [96701] = { ICONS.HUNTER, 96630, 0, ICONS.MONK, 96643, 96648, 96653, 0, ICONS.SHAMAN, 96688, 96693, 96698, 0, ICONS.WARRIOR, 96734, 96739, type = 6 }, -- Shoulder of Crackling Protector (Heroic)
+        [96699] = { ICONS.DEATHKNIGHT, 96578, 96573, 0, ICONS.DRUID, 96583, 96588, 96593, 96598, 0, ICONS.MAGE, 96638, 0, ICONS.ROGUE, 96683, type = 6 }, -- Shoulder of Crackling Vanquisher (Heroic)
+        [96567] = { ICONS.PALADIN, 96654, 96659, 96664, 0, ICONS.PRIEST, 96677, 96672, 0, ICONS.WARLOCK, 96728, type = 6 }, -- Chest of Crackling Conqueror (Heroic)
+        [96568] = { ICONS.HUNTER, 96626, 0, ICONS.MONK, 96639, 96647, 96649, 0, ICONS.SHAMAN, 96684, 96689, 96694, 0, ICONS.WARRIOR, 96731, 96735, type = 6 }, -- Chest of Crackling Protector (Heroic)
+        [96566] = { ICONS.DEATHKNIGHT, 96574, 96569, 0, ICONS.DRUID, 96579, 96587, 96592, 96594, 0, ICONS.MAGE, 96637, 0, ICONS.ROGUE, 96679, type = 6 }, -- Chest of Crackling Vanquisher (Heroic)
         [96600] = { ICONS.PALADIN, 96655, 96660, 96665, 0, ICONS.PRIEST, 96674, 96669, 0, ICONS.WARLOCK, 96725, type = 6 }, -- Gloves of Crackling Conqueror (Heroic)
         [96601] = { ICONS.HUNTER, 96627, 0, ICONS.MONK, 96640, 96644, 96650, 0, ICONS.SHAMAN, 96685, 96690, 96695, 0, ICONS.WARRIOR, 96732, 96736, type = 6 }, -- Gloves of Crackling Protector (Heroic)
         [96599] = { ICONS.DEATHKNIGHT, 96575, 96570, 0, ICONS.DRUID, 96580, 96584, 96589, 96595, 0, ICONS.MAGE, 96634, 0, ICONS.ROGUE, 96680, type = 6 }, -- Gloves of Crackling Vanquisher (Heroic)
@@ -1564,6 +1564,15 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM) then
             89264, 89265, 89266, 0, -- Chest
             89270, 89271, 89272, 0, -- Gloves
             89267, 89268, 89269, 0, -- Legs
+            type = 9
+        },
+
+        ["Tier15CelestialTierTokens"] = {
+            95880, 95881, 95879, 0, -- Helm
+            95956, 95957, 95955, 0, -- Shoulders
+            95823, 95824, 95822, 0, -- Chest
+            95856, 95857, 95855, 0, -- Gloves
+            95888, 95889, 95887, 0, -- Legs
             type = 9
         },
     }
