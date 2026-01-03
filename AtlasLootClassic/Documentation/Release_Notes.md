@@ -1,3 +1,9 @@
+# 5.2.1 (Jan 2, 2025)
+- Added August Stone Shard vendor items
+- Added Updated Celestial Dungeon drops
+- Fix T15 tokens
+- Holiday updates/fixes
+
 # 5.2.0 (Dec 15, 2025)
 - Game interface version update
 - Update content phase

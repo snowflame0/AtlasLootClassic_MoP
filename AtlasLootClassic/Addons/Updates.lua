@@ -13,13 +13,13 @@ local IMAGE_PATH = ALPrivate.IMAGE_PATH
 --- NOTE:
 --- Update Text
 ---
-local update_version = 5.20
+local update_version = 5.21
 local update_text = {
-    "Welcome to AtlasLootClassic |cFF33FFBDMoP|r v5.2.0!",
-    "This is a minor update in preparation of the upcoming Celestial dungeon changes, just making the necessary changes to move into phase 3 and remove any addon out of date errors.",
-    "Once the new Celestial dungeon drops are in, please help submit any new drops at |cFF3366CCtinyurl.com/mop-p3-celestial|r so I can add them in ASAP.",
-    "|cFFA335EETier 14|r Patterns tooltip should have a source now.",
-    "Other small fixes and improvements, thanks to all the contributors on GitHub!",
+    "Welcome to AtlasLootClassic |cFF33FFBDMoP|r v5.2.1!",
+    "|cFFA335EEAugust Stone Shard|r vendor items have been added.",
+    "|cFF33FFBDCelestial Dungeon|r drops have been added. Thanks to all the contributors and special thanks to |cFFe6CC80Inncio/Tonylikewhoa|r for their awesome spreadsheet.",
+    "|cFF3366CCTier 15|r Tokens should have correct items now.",
+    "Fixes to holidays, thanks to all the contributors on GitHub!",
     "|cFFFF8000HELP|r: If you find any issues or something missing, let me know on GitHub ( |cFF3366CCgithub.com/snowflame0/AtlasLootClassic_MoP/issues|r )",
     "Again, if you appreciate all the work, feel free to support me at the link below (click, CTRL+A, and CTRL+C to copy)"
 }
