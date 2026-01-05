@@ -1418,6 +1418,33 @@ data["ChallengeModeMoP"] = {
                 { 23, 265223 }, -- Crimson Greatboots of the Golden King
             },
         },
+        {
+            name = AL["Misc Rewards"],
+            [PLAT_DIFF] = {
+                { 1, 265774,"ac61967" }, -- Platinum Boots of Expeditious Retreat
+                { 2, 265780,"ac61968" }, -- Platinum "Little Ale"
+                { 3, 265418,"ac61971" }, -- Platinum Rod of Ambershaping
+                { 4, 265419,"ac61970" }, -- Platinum Potion of Invisibility
+                { 5, 265414,"ac61975" }, -- Platinum Amber
+                { 6, 265417,"ac61969" }, -- Platinum Battle Horn
+                { 7, 265415,"ac61974" }, -- Platinum Vial of Polyformic Acid
+                { 8, 265416,"ac61972" }, -- Platinum Battle Banner
+                { 9, 265573,"ac61973" }, -- Platinum Sacrificial Dagger
+                { 11, 90710 }, -- Reins of the Ashen Pandaren Phoenix
+                { 12, 89154 }, -- Reins of the Crimson Pandaren Phoenix
+                { 13, 90712 }, -- Reins of the Violet Pandaren Phoenix
+                { 14, 90711 }, -- Reins of the Emerald Pandaren Phoenix
+                { 16, 265787 }, -- Magic Rooster Egg
+                { 17, 265788 }, -- Wooly White Rhino
+                { 18, 265789 }, -- Eye of the Legion
+                { 20, 265784 }, -- Tabard of Brilliance
+                { 21, 265785 }, -- Tabard of the Void
+                { 22, 265783 }, -- Tabard of Fury
+                { 24, 54212 }, -- Instant Statue Pedestal
+                { 25, 265786 }, -- Demon Hunter's Aspect
+                { 26, 266999 }, -- Swift Yak Pelt
+            },
+        },
     },
 }
 
