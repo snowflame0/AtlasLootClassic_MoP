@@ -2277,17 +2277,22 @@ data["ValentinesdayMoP"] = {
         { -- SFKApothecaryH
         name = C_Map_GetAreaInfo(209) .. " - " .. AL["Apothecary Hummel"],
         [NORMAL_DIFF] = {
-            { 1,  93391 }, -- Heartbreak Charm
-            { 2,  93392 }, -- Winking Eye of Love
-            { 3,  93393 }, -- Sweet Perfume Broach
-            { 4,  93394 }, -- Choker of the Pure Heart
-            { 5,  93395 }, -- Shard of Pirouetting Happiness
-            { 7,  49641 }, -- Faded Lovely Greeting Card
-            { 8,  49715 }, -- Forever-Lovely Rose
-            { 9,  50250 }, -- X-45 Heartbreaker
-            { 10, 50446 }, -- Toxic Wasteling
-            { 11, 50471 }, -- The Heartbreaker
-            { 12, 50741 }  -- Vile Fumigator's Mask
+            { 1,  270884 }, -- Winking Eye of Love 502
+            { 2,  270885 }, -- Winking Eye of Love 489
+            { 3,  270886 }, -- Choker of the Pure Heart 502
+            { 4,  270889 }, -- Choker of the Pure Heart 489
+            { 5,  270890 }, -- Heartbreak Charm 502
+            { 6,  270891 }, -- Heartbreak Charm 489
+            { 7,  270892 }, -- Sweet Perfume Broach 502
+            { 8,  270893 }, -- Sweet Perfume Broach 489
+            { 9,  270894 }, -- Shard of Pirouetting Happiness 502
+            { 10,  270895 }, -- Shard of Pirouetting Happiness 489
+            { 12,  49641 }, -- Faded Lovely Greeting Card
+            { 13,  49715 }, -- Forever-Lovely Rose
+            { 14,  50250 }, -- X-45 Heartbreaker
+            { 15, 50446 }, -- Toxic Wasteling
+            { 16, 50471 }, -- The Heartbreaker
+            { 17, 50741 }  -- Vile Fumigator's Mask
             }
         }
     }
