@@ -2180,14 +2180,12 @@ data["LunarFestivalMoP"] = {
                 { 1,  21100 }, -- Coin of Ancestry
                 { 2,  74610 }, -- Lunar Lantern
                 { 3,  74611 }, -- Festival Lantern
-                { 5,  89999 }, -- Everlasting Alliance Firework
-                { 6,  90000 }, -- Everlasting Horde Firework
-                { 8,  21157 }, -- Festive Green Dress
-                { 9,  21538 }, -- Festive Pink Dress
-                { 10,  21539 }, -- Festive Purple Dress
-                { 11,  21541 }, -- Festive Black Pant Suit
-                { 12, 21544 }, -- Festive Blue Pant Suit
-                { 13, 21543 }, -- Festive Teal Pant Suit
+                { 5,  21157 }, -- Festive Green Dress
+                { 6,  21538 }, -- Festive Pink Dress
+                { 7,  21539 }, -- Festive Purple Dress
+                { 8,  21541 }, -- Festive Black Pant Suit
+                { 9, 21544 }, -- Festive Blue Pant Suit
+                { 10, 21543 }, -- Festive Teal Pant Suit
             },
         },
         {
