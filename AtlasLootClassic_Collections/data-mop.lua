@@ -1944,7 +1944,7 @@ data["CompanionsMoP"] = {
             -- Phase 2
             { 7,  90900 }, -- Imperial Moth
             { 8,  90902 }, -- Imperial Silkworm
-            -- Phase 3? 5?
+            -- Phase 5
             { 10, 94903 }, -- Pierre
             { 11, 100905 }, -- Rascal-Bot
             }
