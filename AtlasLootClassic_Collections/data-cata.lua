@@ -1534,6 +1534,30 @@ data["NoblegardenCata"] = {
     },
 }
 
+data["ChildrensWeekCata"] = {
+    name = AL["Childrens Week"],
+    ContentType = WORLD_EVENT_CONTENT,
+    LoadDifficulty = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.CHILDRENS_WEEK,
+    items = {{ -- ChildrensWeek
+        name = AL["Childrens Week"],
+        [NORMAL_DIFF] = {{1, 23007}, -- Piglet's Collar
+        {2, 23015}, -- Rat Cage
+        {3, 23002}, -- Turtle Box
+        {4, 66073}, -- Snail Shell
+        {5, 23022}, -- Curmudgeon's Payoff
+        {7, 32616}, -- Egbert's Egg
+        {8, 32617}, -- Sleepy Willy
+        {9, 32622}, -- Elekk Training Collar
+        {10, 69648}, -- Legs
+        {12, 46544}, -- Curious Wolvar Pup
+        {13, 46545} -- Curious Oracle Hatchling
+        }
+    }}
+}
+
 data["MidsummerFestivalCata"] = {
     name = AL["Midsummer Festival"],
     ContentType = WORLD_EVENT_CONTENT,
