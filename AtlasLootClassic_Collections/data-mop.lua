@@ -2368,11 +2368,12 @@ data["BrewfestMoP"] = {
                 {15, 33927}, -- Brewfest Pony Keg
                 {16, 90427}, -- Pandaren Brewpack
                 {18, 32233}, -- Wolpertinger's Tankard
-                {20, 37599}, -- "Brew of the Month" Club Membership Form
-                {22, 37750}, -- Fresh Brewfest Hops
+                {19, 46707}, -- Pint-Sized Pink Pachyderm
+                {21, 37599}, -- "Brew of the Month" Club Membership Form
+                {23, 37750}, -- Fresh Brewfest Hops
                 {24, 39477}, -- Fresh Dwarven Brewfest Hops
-                {24, 39476}, -- Fresh Goblin Brewfest Hops
-                {25, 37816} -- Preserved Brewfest Hops
+                {25, 39476}, -- Fresh Goblin Brewfest Hops
+                {26, 37816} -- Preserved Brewfest Hops
             }
         },
         {
