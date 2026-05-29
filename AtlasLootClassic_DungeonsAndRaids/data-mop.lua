@@ -4005,30 +4005,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 852,
             ContentPhaseMoP = 5,
             npcId = 71543,
-            [CELESTIAL_DIFF] = {
-                { 1, 104923 }, -- Cloak of Misguided Power
-                { 2, 104922 }, -- Hood of Swirling Senses
-                { 3, 104921 }, -- Ichor-Dripping Shoulderpads
-                { 4, 104920 }, -- Bolt-Burster Grips
-                { 5, 104911 }, -- Hood of Blackened Tears
-                { 6, 104927 }, -- Bracers of Purified Spirit
-                { 7, 104926 }, -- Salt Water Sandals
-                { 8, 104928 }, -- Soul-Soaked Gloves
-                { 9, 104912 }, -- Puddle Punishers
-                { 10, 104918 }, -- Pauldrons of Violent Eruption
-                { 11, 104914 }, -- Chestplate of Congealed Corrosion
-                { 12, 104917 }, -- Bracers of Sordid Sleep
-                { 13, 104913 }, -- Bubble-Burst Bracers
-                { 14, 104915 }, -- Corruption-Rotted Gauntlets
-                { 15, 104929 }, -- Greatbelt of Living Waters
-                { 16, 104916 }, -- Treads of Unchained Hate
-                { 17, 104930 }, -- Waterwalker Greatboots
-                { 19, 104909 }, -- Immerseus' Crystalline Eye
-                { 20, 104925 }, -- Seal of Eternal Sorrow
-                { 21, 104924 }, -- Purified Bindings of Immerseus
-                { 23, 104919 }, -- Encapsulated Essence of Immerseus
-                { 24, 104910 }, -- Trident of Corrupted Waters
-            },
             [FLEX_DIFF] = {
                 { 1, 104674 }, -- Cloak of Misguided Power
                 { 2, 104673 }, -- Hood of Swirling Senses
@@ -4110,29 +4086,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 849,
             ContentPhaseMoP = 5,
             npcId = 71475,
-            [CELESTIAL_DIFF] = {
-                { 1, 104939 }, -- Gloomwrap Greatcloak
-                { 2, 104943 }, -- Shoulderpads of Dou Dou Chong
-                { 3, 104942 }, -- Robes of the Tendered Heart
-                { 4, 104944 }, -- Lifebane Bracers
-                { 5, 104941 }, -- Sha-Seared Sandals
-                { 6, 104947 }, -- Shoulders of the Roiling Inferno
-                { 7, 104933 }, -- Stonetoe's Tormented Treads
-                { 8, 104949 }, -- Shoulderguards of Dark Meditations
-                { 9, 104934 }, -- Grips of Unending Anguish
-                { 10, 104948 }, -- Sabatons of Defilement
-                { 11, 104951 }, -- Gaze of Echoing Despair
-                { 12, 104936 }, -- Darkfallen Shoulderplates
-                { 13, 104950 }, -- Grips of the Fallen Council
-                { 14, 104937 }, -- Shockstriker Gauntlets
-                { 15, 104935 }, -- Poisonbinder Girth
-                { 16, 104945 }, -- Petrified Pennyroyal Ring
-                { 17, 104938 }, -- Sorrowpath Signet
-                { 18, 104940 }, -- Rook's Unlucky Talisman
-                { 20, 104931 }, -- Death Lotus Crossbow
-                { 21, 104932 }, -- Softfoot's Last Resort
-                { 22, 104946 }, -- Purehearted Cricket Cage
-            },
             [FLEX_DIFF] = {
                 { 1, 104690 }, -- Gloomwrap Greatcloak
                 { 2, 104694 }, -- Shoulderpads of Dou Dou Chong
@@ -4211,30 +4164,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 866,
             ContentPhaseMoP = 5,
             npcId = 72276,
-            [CELESTIAL_DIFF] = {
-                { 1, 104960 }, -- Drape of the Despairing Pit
-                { 2, 104966 }, -- Rime-Rift Shoulders
-                { 3, 104963 }, -- Bracers of Broken Causation
-                { 4, 104964 }, -- Blight Hurlers
-                { 5, 104965 }, -- Sash of the Last Guardian
-                { 6, 104954 }, -- Robes of the Blackened Watcher
-                { 7, 104970 }, -- Confident Grips
-                { 8, 104955 }, -- Gloves of the Golden Protector
-                { 9, 104969 }, -- Boots of Broken Reliance
-                { 10, 104957 }, -- Quarantine Shoulderguards
-                { 11, 104971 }, -- Bracers of Final Serenity
-                { 12, 104956 }, -- Leggings of Unabashed Anger
-                { 13, 104972 }, -- Shadow-Binder's Kilt
-                { 14, 104959 }, -- Rage-Blind Greathelm
-                { 15, 104958 }, -- Bracers of Blind Hatred
-                { 16, 104973 }, -- Wristplates of Broken Doubt
-                { 18, 104967 }, -- Untainted Guardian's Chain
-                { 19, 104953 }, -- Reality Ripper Ring
-                { 20, 104961 }, -- Fusion-Fire Core
-                { 22, 104952 }, -- Norushen's Shortblade
-                { 23, 104962 }, -- Xifeng, Longblade of the Titanic Guardian
-                { 24, 104968 }, -- Norushen's Enigmatic Barrier
-            },
             [FLEX_DIFF] = {
                 { 1, 104711 }, -- Drape of the Despairing Pit
                 { 2, 104717 }, -- Rime-Rift Shoulders
@@ -4316,21 +4245,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 867,
             ContentPhaseMoP = 5,
             npcId = 71734,
-            [CELESTIAL_DIFF] = {
-                { 1, 104978 }, -- Self-Reflecting Mask
-                { 2, 104979 }, -- Crown of Boastful Words
-                { 3, 104980 }, -- Greaves of Sublime Superiority
-                { 5, 104982 }, -- Choker of the Final Word
-                { 6, 104975 }, -- Necklace of Fading Light
-                { 7, 104974 }, -- Assurance of Consequence
-                { 8, 104976 }, -- Prismatic Prison of Pride
-                { 16, 99678 }, -- Chest of the Cursed Conqueror
-                { 17, 99679 }, -- Chest of the Cursed Protector
-                { 18, 99677 }, -- Chest of the Cursed Vanquisher
-                { 20, 104977 }, -- Gaze of Arrogance
-                { 21, 104981 }, -- Greatsword of Pride's Fall
-                { 22, 104983 }, -- Shield of Mockery
-            },
             [FLEX_DIFF] = {
                 { 1, 104729 }, -- Self-Reflecting Mask
                 { 2, 104730 }, -- Crown of Boastful Words
@@ -4391,30 +4305,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 868,
             ContentPhaseMoP = 5,
             npcId = 72249,
-            [CELESTIAL_DIFF] = {
-                { 1, 104997 }, -- Flameslinger's Fiery Cowl
-                { 2, 104999 }, -- Shoulderpads of Pulsing Protection
-                { 3, 104996 }, -- Scalebane Bracers
-                { 4, 104995 }, -- Bone-Inlaid Sandals
-                { 5, 104998 }, -- Skydancer Boots
-                { 6, 104987 }, -- Korgra's Venom-Soaked Gauntlets
-                { 7, 105002 }, -- Dragonmaw Emergency Strap
-                { 8, 104986 }, -- Unrepentant Heels
-                { 9, 104989 }, -- Dagryn's Fuselight Bracers
-                { 10, 105003 }, -- Grips of Tidal Force
-                { 11, 104988 }, -- Cannoneer's Multipocket Gunbelt
-                { 12, 104990 }, -- Thranok's Shattering Helm
-                { 13, 104992 }, -- Krugruk's Rigid Shoulderplates
-                { 14, 104991 }, -- Arcsmasher Bracers
-                { 15, 105004 }, -- Smoldering Drakescale Bracers
-                { 16, 105005 }, -- Windfire Legplates
-                { 18, 105000 }, -- Extinguished Ember of Galakras
-                { 19, 104994 }, -- Galakrond Control Band
-                { 20, 104985 }, -- Swift Serpent Signet
-                { 21, 104993 }, -- Evil Eye of Galakras
-                { 23, 104984 }, -- Dagryn's Discarded Longbow
-                { 24, 105001 }, -- Drakebinder Greatstaff
-            },
             [FLEX_DIFF] = {
                 { 1, 104748 }, -- Flameslinger's Fiery Cowl
                 { 2, 104750 }, -- Shoulderpads of Pulsing Protection
@@ -4496,30 +4386,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 864,
             ContentPhaseMoP = 5,
             npcId = 71466,
-            [CELESTIAL_DIFF] = {
-                { 1, 105021 }, -- Shock Pulse Robes
-                { 2, 105019 }, -- Bracers of the Broken Fault
-                { 3, 105020 }, -- Earthripper Gloves
-                { 4, 105017 }, -- Belt of Ominous Trembles
-                { 5, 105018 }, -- Leggings of Furious Flame
-                { 6, 105008 }, -- Ricocheting Shoulderguards
-                { 7, 105024 }, -- Castlebreaker Bracers
-                { 8, 105007 }, -- Laser Burn Bracers
-                { 9, 105026 }, -- Cavemaker Wristguards
-                { 10, 105010 }, -- Precision Cutters
-                { 11, 105009 }, -- Minelayer's Padded Boots
-                { 12, 105025 }, -- Treads of Autonomic Motion
-                { 13, 105014 }, -- Earthbreaker's Steaming Chestplate
-                { 14, 105012 }, -- Wall-Borer Bracers
-                { 15, 105013 }, -- Tar-Coated Gauntlets
-                { 16, 105011 }, -- Demolisher's Reinforced Belt
-                { 17, 105027 }, -- Borer Drill Boots
-                { 19, 105015 }, -- Juggernaut's Ignition Keys
-                { 20, 105022 }, -- Laser-Slice Signet
-                { 21, 105016 }, -- Juggernaut's Focusing Crystal
-                { 23, 105006 }, -- Seismic Bore
-                { 24, 105023 }, -- Juggernaut's Power Core
-            },
             [FLEX_DIFF] = {
                 { 1, 104772 }, -- Shock Pulse Robes
                 { 2, 104770 }, -- Bracers of the Broken Fault
@@ -4601,29 +4467,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 856,
             ContentPhaseMoP = 5,
             npcId = 71859,
-            [CELESTIAL_DIFF] = {
-                { 1, 105028 }, -- Poisonmist Nightcloak
-                { 2, 105040 }, -- Iron Wolf Hood
-                { 3, 105039 }, -- Toxic Tornado Treads
-                { 4, 105044 }, -- Darkfang Mask
-                { 5, 105030 }, -- Damron's Belt of Darkness
-                { 6, 105031 }, -- Riou's Vigilant Leggings
-                { 7, 105032 }, -- Haromm's Horrifying Helm
-                { 8, 105046 }, -- Shoulderguards of Foul Streams
-                { 9, 105045 }, -- Belt of the Iron Prison
-                { 10, 105048 }, -- Shoulderplates of Gushing Geysers
-                { 11, 105034 }, -- Breastplate of Shamanic Mirrors
-                { 12, 105047 }, -- Shackles of Stinking Slime
-                { 13, 105035 }, -- Ashen Wall Girdle
-                { 14, 105033 }, -- Wolf-Rider Spurs
-                { 16, 105041 }, -- Ashflare Pendant
-                { 17, 105036 }, -- Bloodclaw Band
-                { 18, 105038 }, -- Ring of the Iron Tomb
-                { 19, 105029 }, -- Haromm's Talisman
-                { 20, 105042 }, -- Kardris' Toxic Totem
-                { 22, 105037 }, -- Haromm's Frozen Crescent
-                { 23, 105043 }, -- Kardris' Scepter
-            },
             [FLEX_DIFF] = {
                 { 1, 104779 }, -- Poisonmist Nightcloak
                 { 2, 104791 }, -- Iron Wolf Hood
@@ -4702,22 +4545,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 850,
             ContentPhaseMoP = 5,
             npcId = 71515,
-            [CELESTIAL_DIFF] = {
-                { 1, 105059 }, -- Spaulders of Kor'kron Fealty
-                { 2, 105050 }, -- Sandals of Two Little Bees
-                { 3, 105053 }, -- Shoulderguards of the Righteous Stand
-                { 4, 105054 }, -- Robes of the Warrior's Fall
-                { 5, 105056 }, -- Crown of Tragic Truth
-                { 6, 105055 }, -- Ravager's Pathwalkers
-                { 8, 105051 }, -- Nazgrim's Burnished Insignia
-                { 16, 99681 }, -- Gauntlets of the Cursed Conqueror
-                { 17, 99667 }, -- Gauntlets of the Cursed Protector
-                { 18, 99680 }, -- Gauntlets of the Cursed Vanquisher
-                { 20, 105052 }, -- Arcweaver Spell Sword
-                { 21, 105057 }, -- Gar'tok, Strength of the Faithful
-                { 22, 105049 }, -- Nazgrim's Gutripper
-                { 23, 105058 }, -- Bulwark of the Fallen General
-            },
             [FLEX_DIFF] = {
                 { 1, 104810 }, -- Spaulders of Kor'kron Fealty
                 { 2, 104801 }, -- Sandals of Two Little Bees
@@ -4775,30 +4602,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 846,
             ContentPhaseMoP = 5,
             npcId = 71454,
-            [CELESTIAL_DIFF] = {
-                { 1, 105075 }, -- Black-Blooded Drape
-                { 2, 105072 }, -- Hood of Perpetual Implosion
-                { 3, 105073 }, -- Robes of Riven Dreams
-                { 4, 105071 }, -- Miasmic Skullbelt
-                { 5, 105063 }, -- Lazahk's Lost Shadowrap
-                { 6, 105079 }, -- Bracers of Averted Fatality
-                { 7, 105078 }, -- Boots of Perilous Infusion
-                { 8, 105080 }, -- Ebon Blood Chestguard
-                { 9, 105064 }, -- Wristguards of Ruination
-                { 10, 105081 }, -- Terrorguard Chestplate
-                { 11, 105066 }, -- Blood Rage Bracers
-                { 12, 105067 }, -- Legplates of Willful Doom
-                { 13, 105065 }, -- Malkorok's Giant Stompers
-                { 16, 105068 }, -- Malkorok's Tainted Dog Tags
-                { 17, 105060 }, -- Ring of Restless Energy
-                { 18, 105076 }, -- Seal of Sullen Fury
-                { 19, 105074 }, -- Frenzied Crystal of Rage
-                { 20, 105070 }, -- Vial of Living Corruption
-                { 22, 105062 }, -- Halberd of Inner Shadows
-                { 23, 105061 }, -- Kor'kron Hand Cannon
-                { 24, 105069 }, -- Malkorok's Skullcleaver
-                { 25, 105077 }, -- Visage of the Monstrous
-            },
             [FLEX_DIFF] = {
                 { 1, 104826 }, -- Black-Blooded Drape
                 { 2, 104823 }, -- Hood of Perpetual Implosion
@@ -4880,30 +4683,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 870,
             ContentPhaseMoP = 5,
             npcId = 71889,
-                        -- "Spoils",
-            [CELESTIAL_DIFF] = {
-                { 1, 105094 }, -- Mantid Vizier's Robes
-                { 2, 105093 }, -- Avool's Ancestral Bracers
-                { 3, 105085 }, -- Mantid Carapace Augments
-                { 4, 105097 }, -- Klaxxi Grips of Rejuvenation
-                { 5, 105098 }, -- Shado-Pan Reliquary Kilt
-                { 6, 105084 }, -- Pandaren Roofsprinters
-                { 7, 105087 }, -- Ancient Archer's Chestguard
-                { 8, 105100 }, -- Bracers of the Pristine Purifier
-                { 9, 105086 }, -- Arrowflight Girdle
-                { 10, 105099 }, -- Chitin-Link Chain Belt
-                { 11, 105088 }, -- Helm of the Night Watchman
-                { 12, 105101 }, -- Plate Belt of the War-Healer
-                { 13, 105089 }, -- Untarnishable Greatbelt
-                { 14, 105102 }, -- Mogu Mindbender's Greaves
-                { 15, 105090 }, -- Ominous Mogu Greatboots
-                { 16, 105095 }, -- Lost Necklace of the Mogu Empress
-                { 17, 105091 }, -- Seal of the Forgotten Kings
-                { 18, 105082 }, -- Sigil of Rampage
-                { 20, 105083 }, -- Enchanted Shao-Tien Saber
-                { 21, 105096 }, -- Immaculately Preserved Wand
-                { 22, 105092 }, -- Ancient Mogu Tower Shield
-            },
             [FLEX_DIFF] = {
                 { 1, 104845 }, -- Mantid Vizier's Robes
                 { 2, 104844 }, -- Avool's Ancestral Bracers
@@ -4982,22 +4761,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 851,
             ContentPhaseMoP = 5,
             npcId = 71529,
-            [CELESTIAL_DIFF] = {
-                { 1, 105106 }, -- Akolik's Acid-Soaked Robes
-                { 2, 105105 }, -- Montak's Grips of Scorching Breath
-                { 3, 105110 }, -- Icy Blood Chestplate
-                { 5, 105104 }, -- Gleaming Eye of the Devilsaur
-                { 6, 105113 }, -- Devilfang Band
-                { 7, 105108 }, -- Signet of the Dinomancers
-                { 8, 105109 }, -- Thok's Acid-Grooved Tooth
-                { 9, 105111 }, -- Thok's Tail Tip
-                { 16, 99672 }, -- Helm of the Cursed Conqueror
-                { 17, 99673 }, -- Helm of the Cursed Protector
-                { 18, 99671 }, -- Helm of the Cursed Vanquisher
-                { 20, 105112 }, -- Britomart's Jagged Pike
-                { 21, 105103 }, -- Hvitserk's Formidable Shanker
-                { 22, 105107 }, -- Festering Primordial Globule
-            },
             [FLEX_DIFF] = {
                 { 1, 104857 }, -- Akolik's Acid-Soaked Robes
                 { 2, 104856 }, -- Montak's Grips of Scorching Breath
@@ -5055,22 +4818,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 865,
             ContentPhaseMoP = 5,
             npcId = 71504,
-            [CELESTIAL_DIFF] = {
-                { 1, 105115 }, -- Fusespark Gloves
-                { 2, 105118 }, -- Bomber's Blackened Wristwatch
-                { 3, 105119 }, -- Bracers of Infinite Pipes
-                { 4, 105120 }, -- Powder-Stained Totemic Treads
-                { 5, 105121 }, -- Calixian Bladebreakers
-                { 7, 105124 }, -- Blackfuse's Blasting Cord
-                { 8, 105122 }, -- Asgorathian Blood Seal
-                { 9, 105117 }, -- Dysmorphic Samophlange of Discontinuity
-                { 10, 105114 }, -- Ticking Ebon Detonator
-                { 16, 99669 }, -- Shoulders of the Cursed Conqueror
-                { 17, 99670 }, -- Shoulders of the Cursed Protector
-                { 18, 99668 }, -- Shoulders of the Cursed Vanquisher
-                { 20, 105116 }, -- Lever of the Megantholithic Apparatus
-                { 21, 105123 }, -- Siegecrafter's Forge Hammer
-            },
             [FLEX_DIFF] = {
                 { 1, 104866 }, -- Fusespark Gloves
                 { 2, 104869 }, -- Bomber's Blackened Wristwatch
@@ -5131,22 +4878,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 853,
             ContentPhaseMoP = 5,
             npcId = 71161,
-            [CELESTIAL_DIFF] = {
-                { 1, 105128 }, -- Bracers of Sonic Projection
-                { 2, 105131 }, -- Amber Parasite Wraps
-                { 3, 105132 }, -- Chestguard of Toxic Injections
-                { 4, 105133 }, -- Gauntlets of Insane Calculations
-                { 6, 105130 }, -- Iyyokuk's Hereditary Seal
-                { 7, 105126 }, -- Kil'ruk's Band of Ascendancy
-                { 8, 105134 }, -- Skeer's Bloodsoaked Talisman
-                { 16, 99675 }, -- Leggings of the Cursed Conqueror
-                { 17, 99676 }, -- Leggings of the Cursed Protector
-                { 18, 99674 }, -- Leggings of the Cursed Vanquisher
-                { 20, 105125 }, -- Hisek's Reserve Longbow
-                { 21, 105135 }, -- Kil'ruk's Furious Blade
-                { 22, 105127 }, -- Korven's Crimson Crescent
-                { 23, 105129 }, -- Rik'kal's Bloody Scalpel
-            },
             [FLEX_DIFF] = {
                 { 1, 104879 }, -- Bracers of Sonic Projection
                 { 2, 104882 }, -- Amber Parasite Wraps
@@ -5207,32 +4938,6 @@ data["SiegeofOrgrimmar"] = {
             EncounterJournalID = 869,
             ContentPhaseMoP = 5,
             npcId = 71865,
-            [CELESTIAL_DIFF] = {
-                { 1, 105149 }, -- Ebon Ritual Hood
-                { 2, 105148 }, -- Belt of the Broken Pact
-                { 3, 105138 }, -- Kor'kron Elite Skullmask
-                { 4, 105154 }, -- Hopeglow Spaulders
-                { 5, 105137 }, -- Cord of Black Dreams
-                { 6, 105153 }, -- Seal of Karmic Return
-                { 7, 105155 }, -- Cowl of Smoking Dreams
-                { 8, 105140 }, -- Penetrating Gaze of Y'Shaarj
-                { 9, 105141 }, -- Shoulderguards of Intended Power
-                { 10, 105139 }, -- Chestguard of Relentless Tyranny
-                { 11, 105145 }, -- Greathelm of the Warchief
-                { 12, 105157 }, -- Mantle of Looming Darkness
-                { 13, 105143 }, -- Spaulders of the Fallen Warchief
-                { 14, 105156 }, -- Chestplate of Fallen Passion
-                { 15, 105142 }, -- Legplates of Unthinking Strife
-                { 16, 105861 }, -- Essence of the Cursed Conqueror
-                { 17, 105860 }, -- Essence of the Cursed Protector
-                { 18, 105862 }, -- Essence of the Cursed Vanquisher
-                { 20, 105150 }, -- Black Blood of Y'Shaarj
-                { 21, 105147 }, -- Curse of Hubris
-                { 23, 105151 }, -- Horned Mace of the Old Ones
-                { 24, 105136 }, -- Kor'kron Spire of Supremacy
-                { 25, 105146 }, -- Xal'atoh, Desecrated Image of Gorehowl
-                { 26, 105152 }, -- Revelations of Y'Shaarj
-            },
             [FLEX_DIFF] = {
                 { 1, 104900 }, -- Ebon Ritual Hood
                 { 2, 104899 }, -- Belt of the Broken Pact
@@ -5358,24 +5063,6 @@ data["SiegeofOrgrimmar"] = {
             name = AL["Shared Boss Loot"],
             ContentPhaseMoP = 5,
             ExtraList = true,
-            [CELESTIAL_DIFF] = {
-                { 1, 104271 }, -- Coalesced Turmoil
-                { 2, 104275 }, -- Twisted Treasures of the Vale
-                { 3, 105824 }, -- Aeth's Swiftcinder Cloak
-                { 4, 105816 }, -- Brave Niunai's Cloak
-                { 5, 105812 }, -- Cape of the Alpha
-                { 6, 105815 }, -- Drape of the Omega
-                { 7, 105825 }, -- Turtleshell Greatcloak
-                { 16, 105813 }, -- Kalaena's Arcane Handwraps
-                { 17, 105814 }, -- Seebo's Sainted Touch
-                { 18, 105818 }, -- Crimson Gauntlets of Death
-                { 19, 105817 }, -- Siid's Silent Stranglers
-                { 20, 105819 }, -- Keengrip Arrowpullers
-                { 21, 105820 }, -- Marco's Crackling Gloves
-                { 22, 105823 }, -- Gauntlets of Discarded Time
-                { 23, 105821 }, -- Romy's Reliable Grips
-                { 24, 105822 }, -- Zoid's Molten Gauntlets
-            },
             [FLEX_DIFF] = {
                 { 1, 105714 }, -- Coalesced Turmoil
                 { 2, 105713 }, -- Twisted Treasures of the Vale
