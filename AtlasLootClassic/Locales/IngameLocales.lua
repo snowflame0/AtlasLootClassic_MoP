@@ -333,7 +333,9 @@ local IngameLocales = {
 	["Obsidian Fragment"] 		= GetCurrencyName(3281),
 	["August Stone Fragment"] 	= GetCurrencyName(3350),
 	["August Stone Shard"]		= GetCurrencyName(3414),
+	["August Stone Cluster"]	= GetCurrencyName(3416),
 	["Spirit of Harmony"] 		= GetItemInfo(76061),
+	["Echoes of War"] 			= GetItemInfo(105856),
 
 	-- ######################################################################
 	-- Misc
