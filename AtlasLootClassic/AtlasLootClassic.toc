@@ -30,6 +30,18 @@
 ## Notes-zhCN: @localization(locale="zhCN", key="Notes-AtlasLoot", namespace="ToC")@
 ## Notes-zhTW: @localization(locale="zhTW", key="Notes-AtlasLoot", namespace="ToC")@
 
+## Category: Map
+## Category-deDE: Karte
+## Category-esES: Mapa
+## Category-esMX: Mapa
+## Category-frFR: Carte
+## Category-itIT: Mappa
+## Category-koKR: 지도
+## Category-ptBR: Mapa
+## Category-ruRU: Карта
+## Category-zhCN: 地图
+## Category-zhTW: 地圖
+
 ## X-Credits: Daviesh, Lag, Arith, Cellelach, Asurn, Pernicus, Dynaletik, Snowflame0 and many others
 ## X-Category: Map
 ## X-License: GPL v2
