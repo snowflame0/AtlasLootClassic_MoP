@@ -26,7 +26,6 @@ local GetForVersion = AtlasLoot.ReturnForGameVersion
 
 local TWILIGHT_DIFF = data:AddDifficulty(AL["Elemental Rune Twilight"], nil, nil, nil, true)
 local CELESTIAL_DIFF = data:AddDifficulty("CELESTIAL", nil, nil, nil, true)
-local FLEXIBLE_DIFF = data:AddDifficulty("FLEXIBLE", nil, nil, nil, true)
 
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
@@ -856,31 +855,6 @@ data["TierSets"] = {
                     { 101, 50001192 }, -- Monk Mistweaver
                     { 102, 50001191 }, -- Monk Brewmaster
                     { 103, 50001193 }, -- Monk Windwalker
-            },
-            [FLEXIBLE_DIFF] = {
-                    { 1, 50011181 }, -- Warlock
-                    { 3, 50011187 }, -- Priest Holy
-                    { 4, 50011186 }, -- Priest Shadow
-                    { 6, 50011185 }, -- Rogue
-                    { 8, 50011195 }, -- Hunter
-                    { 10, 50011179 }, -- Warrior Tank
-                    { 11, 50011180 }, -- Warrior Dps
-                    { 13, 50011201 }, -- Death Knight Tank
-                    { 14, 50011200 }, -- Death Knight DPS
-                    { 16, 50011194 }, -- Mage
-                    { 18, 50011198 }, -- Druid Resto
-                    { 19, 50011196 }, -- Druid Guardian
-                    { 20, 50011197 }, -- Druid Balance
-                    { 21, 50011199 }, -- Druid Feral
-                    { 23, 50011184 }, -- Shaman Resto
-                    { 24, 50011182 }, -- Shaman Elemental
-                    { 25, 50011183 }, -- Shaman Enhance
-                    { 27, 50011189 }, -- Paladin Holy
-                    { 28, 50011188 }, -- Paladin Prot
-                    { 29, 50011190 }, -- Paladin DPS
-                    { 101, 50011192 }, -- Monk Mistweaver
-                    { 102, 50011191 }, -- Monk Brewmaster
-                    { 103, 50011193 }, -- Monk Windwalker
             },
             [NORMAL_DIFF] = {
                     { 1, 50021181 }, -- Warlock
