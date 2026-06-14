@@ -3586,6 +3586,8 @@ if AtlasLoot:GameVersion_EQ(AtlasLoot.MOP_VERSION_NUM) then
         [97959] = 3,
         [97961] = 3,
         [97821] = 4,
+        [94903] = 5,
+        [100905] = 5,
         [101570] = 5,
         [101771] = 5,
         [102145] = 5,

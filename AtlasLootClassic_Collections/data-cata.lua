@@ -1534,6 +1534,30 @@ data["NoblegardenCata"] = {
     },
 }
 
+data["ChildrensWeekCata"] = {
+    name = AL["Childrens Week"],
+    ContentType = WORLD_EVENT_CONTENT,
+    LoadDifficulty = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
+    gameVersion = AtlasLoot.CATA_VERSION_NUM,
+    CorrespondingFields = private.CHILDRENS_WEEK,
+    items = {{ -- ChildrensWeek
+        name = AL["Childrens Week"],
+        [NORMAL_DIFF] = {{1, 23007}, -- Piglet's Collar
+        {2, 23015}, -- Rat Cage
+        {3, 23002}, -- Turtle Box
+        {4, 66073}, -- Snail Shell
+        {5, 23022}, -- Curmudgeon's Payoff
+        {7, 32616}, -- Egbert's Egg
+        {8, 32617}, -- Sleepy Willy
+        {9, 32622}, -- Elekk Training Collar
+        {10, 69648}, -- Legs
+        {12, 46544}, -- Curious Wolvar Pup
+        {13, 46545} -- Curious Oracle Hatchling
+        }
+    }}
+}
+
 data["MidsummerFestivalCata"] = {
     name = AL["Midsummer Festival"],
     ContentType = WORLD_EVENT_CONTENT,
@@ -1602,11 +1626,12 @@ data["BrewfestCata"] = {
                 {13, 34008}, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
                 {15, 33927}, -- Brewfest Pony Keg
                 {17, 32233}, -- Wolpertinger's Tankard
-                {19, 37599}, -- "Brew of the Month" Club Membership Form
-                {21, 37750}, -- Fresh Brewfest Hops
-                {22, 39477}, -- Fresh Dwarven Brewfest Hops
-                {23, 39476}, -- Fresh Goblin Brewfest Hops
-                {24, 37816} -- Preserved Brewfest Hops
+                {18, 46707}, -- Pint-Sized Pink Pachyderm
+                {20, 37599}, -- "Brew of the Month" Club Membership Form
+                {22, 37750}, -- Fresh Brewfest Hops
+                {23, 39477}, -- Fresh Dwarven Brewfest Hops
+                {24, 39476}, -- Fresh Goblin Brewfest Hops
+                {25, 37816} -- Preserved Brewfest Hops
             }
         },
         {

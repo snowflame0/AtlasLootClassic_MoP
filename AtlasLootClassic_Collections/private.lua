@@ -90,6 +90,7 @@ private.CHILDRENS_WEEK = {
     [AtlasLoot.CLASSIC_VERSION_NUM]     = "ChildrensWeek",
     [AtlasLoot.BC_VERSION_NUM]          = "ChildrensWeekBC",
     [AtlasLoot.WRATH_VERSION_NUM]       = "ChildrensWeekWrath",
+    [AtlasLoot.CATA_VERSION_NUM]        = "ChildrensWeekCata",
 }
 
 private.MIDSUMMER_FESTIVAL = {
