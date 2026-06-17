@@ -2577,7 +2577,7 @@ data["CompanionsMoP"] = {
             -- Phase 2
             { 7,  90900 }, -- Imperial Moth
             { 8,  90902 }, -- Imperial Silkworm
-            -- Phase 3? 5?
+            -- Phase 5
             { 10, 94903 }, -- Pierre
             { 11, 100905 }, -- Rascal-Bot
             }
@@ -2813,14 +2813,12 @@ data["LunarFestivalMoP"] = {
                 { 1,  21100 }, -- Coin of Ancestry
                 { 2,  74610 }, -- Lunar Lantern
                 { 3,  74611 }, -- Festival Lantern
-                { 5,  89999 }, -- Everlasting Alliance Firework
-                { 6,  90000 }, -- Everlasting Horde Firework
-                { 8,  21157 }, -- Festive Green Dress
-                { 9,  21538 }, -- Festive Pink Dress
-                { 10,  21539 }, -- Festive Purple Dress
-                { 11,  21541 }, -- Festive Black Pant Suit
-                { 12, 21544 }, -- Festive Blue Pant Suit
-                { 13, 21543 }, -- Festive Teal Pant Suit
+                { 5,  21157 }, -- Festive Green Dress
+                { 6,  21538 }, -- Festive Pink Dress
+                { 7,  21539 }, -- Festive Purple Dress
+                { 8,  21541 }, -- Festive Black Pant Suit
+                { 9, 21544 }, -- Festive Blue Pant Suit
+                { 10, 21543 }, -- Festive Teal Pant Suit
             },
         },
         {
@@ -2910,17 +2908,22 @@ data["ValentinesdayMoP"] = {
         { -- SFKApothecaryH
         name = C_Map_GetAreaInfo(209) .. " - " .. AL["Apothecary Hummel"],
         [NORMAL_DIFF] = {
-            { 1,  93391 }, -- Heartbreak Charm
-            { 2,  93392 }, -- Winking Eye of Love
-            { 3,  93393 }, -- Sweet Perfume Broach
-            { 4,  93394 }, -- Choker of the Pure Heart
-            { 5,  93395 }, -- Shard of Pirouetting Happiness
-            { 7,  49641 }, -- Faded Lovely Greeting Card
-            { 8,  49715 }, -- Forever-Lovely Rose
-            { 9,  50250 }, -- X-45 Heartbreaker
-            { 10, 50446 }, -- Toxic Wasteling
-            { 11, 50471 }, -- The Heartbreaker
-            { 12, 50741 }  -- Vile Fumigator's Mask
+            { 1,  270884 }, -- Winking Eye of Love 502
+            { 2,  270885 }, -- Winking Eye of Love 489
+            { 3,  270886 }, -- Choker of the Pure Heart 502
+            { 4,  270889 }, -- Choker of the Pure Heart 489
+            { 5,  270890 }, -- Heartbreak Charm 502
+            { 6,  270891 }, -- Heartbreak Charm 489
+            { 7,  270892 }, -- Sweet Perfume Broach 502
+            { 8,  270893 }, -- Sweet Perfume Broach 489
+            { 9,  270894 }, -- Shard of Pirouetting Happiness 502
+            { 10,  270895 }, -- Shard of Pirouetting Happiness 489
+            { 12,  49641 }, -- Faded Lovely Greeting Card
+            { 13,  49715 }, -- Forever-Lovely Rose
+            { 14,  50250 }, -- X-45 Heartbreaker
+            { 15, 50446 }, -- Toxic Wasteling
+            { 16, 50471 }, -- The Heartbreaker
+            { 17, 50741 }  -- Vile Fumigator's Mask
             }
         }
     }
@@ -2998,11 +3001,12 @@ data["BrewfestMoP"] = {
                 {15, 33927}, -- Brewfest Pony Keg
                 {16, 90427}, -- Pandaren Brewpack
                 {18, 32233}, -- Wolpertinger's Tankard
-                {20, 37599}, -- "Brew of the Month" Club Membership Form
-                {22, 37750}, -- Fresh Brewfest Hops
+                {19, 46707}, -- Pint-Sized Pink Pachyderm
+                {21, 37599}, -- "Brew of the Month" Club Membership Form
+                {23, 37750}, -- Fresh Brewfest Hops
                 {24, 39477}, -- Fresh Dwarven Brewfest Hops
-                {24, 39476}, -- Fresh Goblin Brewfest Hops
-                {25, 37816} -- Preserved Brewfest Hops
+                {25, 39476}, -- Fresh Goblin Brewfest Hops
+                {26, 37816} -- Preserved Brewfest Hops
             }
         },
         {

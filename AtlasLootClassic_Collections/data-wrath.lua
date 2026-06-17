@@ -1474,11 +1474,12 @@ data["BrewfestWrath"] = {
                 {13, 34008}, -- Blix's Eyesight Enhancing Romance Goggles (Horde)
                 {15, 33927}, -- Brewfest Pony Keg
                 {17, 32233}, -- Wolpertinger's Tankard
-                {19, 37599}, -- "Brew of the Month" Club Membership Form
-                {21, 37750}, -- Fresh Brewfest Hops
-                {22, 39477}, -- Fresh Dwarven Brewfest Hops
-                {23, 39476}, -- Fresh Goblin Brewfest Hops
-                {24, 37816} -- Preserved Brewfest Hops
+                {18, 46707}, -- Pint-Sized Pink Pachyderm
+                {20, 37599}, -- "Brew of the Month" Club Membership Form
+                {22, 37750}, -- Fresh Brewfest Hops
+                {23, 39477}, -- Fresh Dwarven Brewfest Hops
+                {24, 39476}, -- Fresh Goblin Brewfest Hops
+                {25, 37816} -- Preserved Brewfest Hops
             }
         },
         {
