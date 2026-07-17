@@ -1488,7 +1488,7 @@ data["SpiritOfHarmonyVendor"] = {
 data["ChallengeModeMoP"] = {
     name = AL["Challenge Mode"],
     ContentType = SET_CONTENT,
-    TableType = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.MOP_VERSION_NUM,
     items = {
         {
