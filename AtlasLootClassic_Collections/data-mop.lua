@@ -1848,15 +1848,27 @@ data["ChallengeModeMoP"] = {
                 { 12, 89154 }, -- Reins of the Crimson Pandaren Phoenix
                 { 13, 90712 }, -- Reins of the Violet Pandaren Phoenix
                 { 14, 90711 }, -- Reins of the Emerald Pandaren Phoenix
-                { 16, 265787 }, -- Magic Rooster Egg
-                { 17, 265788 }, -- Wooly White Rhino
-                { 18, 265789 }, -- Eye of the Legion
+                { 16, 276078 }, -- Tabard of the Arcane
+                { 17, 265785 }, -- Tabard of the Void
+                { 18, 265783 }, -- Tabard of Fury
+                { 19, 276076 }, -- Tabard of Nature
                 { 20, 265784 }, -- Tabard of Brilliance
-                { 21, 265785 }, -- Tabard of the Void
-                { 22, 265783 }, -- Tabard of Fury
-                { 24, 54212 }, -- Instant Statue Pedestal
-                { 25, 265786 }, -- Demon Hunter's Aspect
-                { 26, 266999 }, -- Swift Yak Pelt
+                { 21, 276077 }, -- Tabard of the Defender
+                { 22, 276079 }, -- Tabard of Frost
+                { 23, 276080 }, -- Tabard of Flame
+                { 25, 265787 }, -- Magic Rooster Egg
+                { 26, 265788 }, -- Wooly White Rhino
+                { 27, 276081 }, -- Spectral Wind Rider
+                { 28, 276075 }, -- Stormcrow
+                { 29, 277652 }, -- Frostwyrm Mount
+                { 101, 248742,"ac62399" }, -- Celestial Riding Tiger
+                { 102, 275928,"ac62059" }, -- Reins of the Fire Drake
+                { 103, 248744,"ac62060" }, -- Celestial Riding Ox
+                { 105, 265789 }, -- Eye of the Legion
+                { 106, 54212 }, -- Instant Statue Pedestal
+                { 107, 265786 }, -- Demon Hunter's Aspect
+                { 108, 266999 }, -- Swift Yak Pelt
+                { 109, 49704 }, -- Carved Ogre Idol
             },
         },
     },
