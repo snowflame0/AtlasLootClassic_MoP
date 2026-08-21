@@ -2376,25 +2376,6 @@ data["ShadowfangKeep"] = {
             { 24, "ac5505" },
             },
         },
-        {
-        name = AL["Apothecary Hummel <Crown Chemical Co.>"],
-        npcID = 36296,
-        DisplayIDs = {{31167}},
-        ExtraList = true,
-        [NORMAL_DIFF] = {
-        { 1,  93391 }, -- Heartbreak Charm
-        { 2,  93392 }, -- Winking Eye of Love
-        { 3,  93393 }, -- Sweet Perfume Broach
-        { 4,  93394 }, -- Choker of the Pure Heart
-        { 5,  93395 }, -- Shard of Pirouetting Happiness
-        { 7,  49641 }, -- Faded Lovely Greeting Card
-        { 8,  49715 }, -- Forever-Lovely Rose
-        { 9,  50250 }, -- X-45 Heartbreaker
-        { 10,  50446 }, -- Toxic Wasteling
-        { 11,  50471 }, -- The Heartbreaker
-        { 12,  50741 }, -- Vile Fumigator's Mask
-        },
-    },
     CATA_DUNGEON_HERO_AC_TABLE,
     CATA_DEFENDER_AC_TABLE,
     CATA_GLORY_OF_THE_HERO_AC_TABLE,

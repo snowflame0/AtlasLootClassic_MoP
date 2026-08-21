@@ -2182,7 +2182,7 @@ data["RaresMOPMobs"] = {
                 { 5, 104169 }, -- Gulp Froglet
                 { 7, "INV_box_04", nil, ALIL["Champion of the Black Flame"] },
                 { 8, 104302 }, -- Blackflame Daggers
-                { 10, "INV_box_04", nil, ALIL["Chelon"].." & "..ALIL["Great Turtle Furyshell"] },
+                { 10, "INV_box_04", nil, ALIL["Chelon"] .. " & " .. ALIL["Great Turtle Furyshell"] },
                 { 11, 86584 }, -- Hardened Shell
                 { 13, "INV_box_04", nil, ALIL["Cinderfall"] },
                 { 14, 104299 }, -- Falling Flame
@@ -2301,7 +2301,7 @@ data["RaresMOPItems"] = {
     gameVersion = AtlasLoot.MOP_VERSION_NUM,
     items = {
         {
-            name = ALIL["The Jade Forest"].." / "..ALIL["Valley of the Four Winds"],
+            name = ALIL["The Jade Forest"] .. " / " .. ALIL["Valley of the Four Winds"],
             [NORMAL_DIFF] = {
                 { 1, "INV_box_04", nil, ALIL["The Jade Forest"] },
                 { 2, 86196 },
@@ -2325,7 +2325,7 @@ data["RaresMOPItems"] = {
             }
         },
         {
-            name = ALIL["Krasarang Wilds"].." / "..ALIL["Kun-Lai Summit"],
+            name = ALIL["Krasarang Wilds"] .. " / " .. ALIL["Kun-Lai Summit"],
             [NORMAL_DIFF] = {
                 { 1, "INV_box_04", nil, ALIL["Krasarang Wilds"] },
                 { 2, 86124 },
@@ -2355,7 +2355,7 @@ data["RaresMOPItems"] = {
             }
         },
         {
-            name = ALIL["Townlong Steppes"].." / "..ALIL["Dread Wastes"],
+            name = ALIL["Townlong Steppes"] .. " / " .. ALIL["Dread Wastes"],
             [NORMAL_DIFF] = {
                 { 1, "INV_box_04", nil, ALIL["Townlong Steppes"] },
                 { 2, 86518 },
@@ -2833,14 +2833,12 @@ data["LunarFestivalMoP"] = {
                 { 1,  21100 }, -- Coin of Ancestry
                 { 2,  74610 }, -- Lunar Lantern
                 { 3,  74611 }, -- Festival Lantern
-                { 5,  89999 }, -- Everlasting Alliance Firework
-                { 6,  90000 }, -- Everlasting Horde Firework
-                { 8,  21157 }, -- Festive Green Dress
-                { 9,  21538 }, -- Festive Pink Dress
-                { 10,  21539 }, -- Festive Purple Dress
-                { 11,  21541 }, -- Festive Black Pant Suit
-                { 12, 21544 }, -- Festive Blue Pant Suit
-                { 13, 21543 }, -- Festive Teal Pant Suit
+                { 5,  21157 }, -- Festive Green Dress
+                { 6,  21538 }, -- Festive Pink Dress
+                { 7,  21539 }, -- Festive Purple Dress
+                { 8,  21541 }, -- Festive Black Pant Suit
+                { 9, 21544 }, -- Festive Blue Pant Suit
+                { 10, 21543 }, -- Festive Teal Pant Suit
             },
         },
         {
@@ -2936,11 +2934,11 @@ data["ValentinesdayMoP"] = {
             { 4,  50741 },  -- Vile Fumigator's Mask
             { 5,  50446 }, -- Toxic Wasteling
             { 6,  50471 }, -- The Heartbreaker
-            { 8,  93391 }, -- Heartbreak Charm
-            { 9,  93392 }, -- Winking Eye of Love
-            { 10, 93393 }, -- Sweet Perfume Broach
-            { 11, 93394 }, -- Choker of the Pure Heart
-            { 12, 93395 }, -- Shard of Pirouetting Happiness
+            { 8,  270890 }, -- Heartbreak Charm
+            { 9,  270884 }, -- Winking Eye of Love
+            { 10, 270892 }, -- Sweet Perfume Broach
+            { 11, 270886 }, -- Choker of the Pure Heart
+            { 12, 270894 }, -- Shard of Pirouetting Happiness
             { 14, 49641 } -- Faded Lovely Greeting Card
             }
         }
@@ -3029,16 +3027,24 @@ data["BrewfestMoP"] = {
         {
             name = AL["Food"],
             [NORMAL_DIFF] = {
-                {1, 33043}, -- The Essential Brewfest Pretzel
-                {3, 34017}, -- Small Step Brew
-                {4, 34018}, -- long Stride Brew
-                {5, 34019}, -- Path of Brew
-                {6, 34020}, -- Jungle River Water
-                {7, 34021}, -- Brewdoo Magic
-                {8, 34022}, -- Stout Shrunken Head
-                {9, 33034}, -- Gordok Grog
-                {10, 33035}, -- Ogre Mead
-                {11, 33036} -- Mudder's Milk
+                { 1, 34017 }, -- Small Step Brew
+                { 2, 34018 }, -- long Stride Brew
+                { 3, 34019 }, -- Path of Brew
+                { 4, 34020 }, -- Jungle River Water
+                { 5, 34021 }, -- Brewdoo Magic
+                { 6, 34022 }, -- Stout Shrunken Head
+                { 7, 33034 }, -- Gordok Grog
+                { 8, 33035 }, -- Ogre Mead
+                { 9, 33036 }, -- Mudder's Milk
+                { 10, 46403 }, -- Chuganpug's Delight
+                { 16, 33043 }, -- The Essential Brewfest Pretzel
+                { 17, 34065 }, -- Spiced Onion Cheese
+                { 18, 34063 }, -- Dried Sausage
+                { 19, 34064 }, -- Succulent Sausage
+                { 20, 33023 }, -- Savory Sausage
+                { 21, 33024 }, -- Pickled Sausage
+                { 22, 33025 }, -- Spicy Smoked Sausage
+                { 23, 33026 }, -- The Golden Link
             }
         },
         {
@@ -3048,14 +3054,14 @@ data["BrewfestMoP"] = {
                 { 2,  33977 }, -- Swift Brewfest Ram
                 { 3,  37828 }, -- Great Brewfest Kodo
                 { 4,  37863 }, -- Direbrew's Remote
-                { 5,  257863 }, -- Direbrew's Bloodied Shanker
-                { 6,  257865 }, -- Tremendous Tankard O' Terror
-                { 8,  257873 }, -- Bitterest Balebrew Charm
-                { 9,  257877 }, -- Bubbliest Brightbrew Charm
-                {10,  257880 }, -- Coren's Cold Chromium Coaster
-                {11,  257884 }, -- Mithril Wristwatch
-                {12,  257881 }, -- Thousand-Year Pickled Egg
-                {13,  257885 }, -- Brawler's Statue
+                { 5,  282043 }, -- Direbrew's Bloodied Shanker
+                { 6,  282109 }, -- Tremendous Tankard O' Terror
+                { 8,  282037 }, -- Bitterest Balebrew Charm
+                { 9,  282041 }, -- Bubbliest Brightbrew Charm
+                {10,  282035 }, -- Coren's Cold Chromium Coaster
+                {11,  282033 }, -- Mithril Wristwatch
+                {12,  282031 }, -- Thousand-Year Pickled Egg
+                {13,  282039 }, -- Brawler's Statue
                 {15,  38280} -- Direbrew's Dire Brew
             }
         }
@@ -3131,12 +3137,12 @@ data["HalloweenMoP"] = {
                 { 3, 37011 }, -- Magic Broom
                 { 4, 33154 }, -- Sinister Squashling
                 { 5, 33292 }, -- Hallowed Helm
-                { 6, 263014 }, -- The Horseman's Horrific Hood
-                { 7, 263018 }, -- The Horseman's Sinister Slicer
-                { 9, 263010 }, -- Seal of Ghoulish Glee
-                {10, 263011 }, -- The Horseman's Ring
-                {11, 263012 }, -- Wicked Witch's Signet
-                {12, 263013 }, -- Band of the Petrified Pumpkin
+                { 6, 282172 }, -- The Horseman's Horrific Hood
+                { 7, 282174 }, -- The Horseman's Sinister Slicer
+                { 9, 282176 }, -- Seal of Ghoulish Glee
+                {10, 282180 }, -- The Horseman's Ring
+                {11, 282182 }, -- Wicked Witch's Signet
+                {12, 282178 }, -- Band of the Petrified Pumpkin
                 {14, 34068 }, -- Weighted Jack-o'-Lantern
                 {15, 33277 }, -- Tome of Thomas Thomson
             }

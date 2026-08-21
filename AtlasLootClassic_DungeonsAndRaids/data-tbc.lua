@@ -1041,17 +1041,17 @@ data["TheSlavePens"] = {
             DisplayIDs = {{23344}},
             ExtraList = true,
             [NORMAL_DIFF] = {
-                { 1, 54536 }, -- Satchel of Chilled Goods
-                { 2, 95426 }, -- Frostscythe of Lord Ahune
-                { 4, 95425 }, -- Cloak of the Frigid Winds
-                { 5, 95427 }, -- Icebound Cloak
-                { 6, 95428 }, -- Shroud of Winter's Chill
-                { 7, 95429 }, -- The Frost Lord's Battle Shroud
-                { 8, 95430 }, -- The Frost Lord's War Cloak
-                { 10, 35723 }, -- Shards of Ahune
-                { 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
-                { 18, 53641 }, -- Ice Chip
-                { 20, 35557 }, -- Huge Snowball
+                { 1, "INV_Misc_Bag_17", nil, AL["Satchel of Chilled Goods"] }, -- Satchel of Chilled Goods
+                { 2, 280389 }, -- Frostscythe of Lord Ahune
+                { 3, 53641  }, -- Ice Chip
+                { 5, 280386 }, -- Cloak of the Frigid Winds
+                { 6, 280383 }, -- Icebound Cloak
+                { 7, 280385 }, -- Shroud of Winter's Chill
+                { 8, 280384 }, -- The Frost Lord's Battle Shroud
+                { 9, 280387 }, -- The Frost Lord's War Cloak
+                { 11, 35498 }, -- Formula: Enchant Weapon - Deathfrost
+                { 12, 35557 }, -- Huge Snowball
+                { 13, 35723 } -- Shards of Ahune
             },
         }),
     }
