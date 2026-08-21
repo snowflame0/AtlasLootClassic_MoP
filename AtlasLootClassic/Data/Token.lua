@@ -1575,6 +1575,15 @@ if AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM) then
             95888, 95889, 95887, 0, -- Legs
             type = 9
         },
+
+        ["Tier16CelestialTierTokens"] = {
+            99672, 99673, 99671, 0, -- Helm
+            99669, 99670, 99668, 0, -- Shoulders
+            99678, 99679, 99677, 0, -- Chest
+            99681, 99667, 99680, 0, -- Gloves
+            99675, 99676, 99674, 0, -- Legs
+            type = 9
+        },
     }
 end
 

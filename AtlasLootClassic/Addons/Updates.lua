@@ -13,16 +13,16 @@ local IMAGE_PATH = ALPrivate.IMAGE_PATH
 --- NOTE:
 --- Update Text
 ---
-local update_version = 5.30
+local update_version = 5.31
 local update_text = {
-    "Welcome to AtlasLootClassic |cFF33FFBDMoP|r v5.3.0!",
-    "Sorry for late update, been out of the game and dealing with family stuff",
-    "|cFFA335EEAugust Stone Cluster|r vendor items have been added.",
-    "Phase 5 activated and items updated.",
-    "Special Thanks to |cFFA335EEPewtro|r on GitHub for all the help, probably wouldn't have updated without their help!",
-    "Need help with dungeon loot tables, please contribute on GitHub!",
-    "|cFFFF8000HELP|r: If you find any issues or something missing, let me know on GitHub ( |cFF3366CCgithub.com/snowflame0/AtlasLootClassic_MoP/issues|r )",
-    "Again, if you appreciate all the work, feel free to support me at the link below (click, CTRL+A, and CTRL+C to copy)"
+    "Welcome to AtlasLootClassic |cFF33FFBDMoP|r v5.3.1!",
+    "Really been putting this one off, been going through it. Sorry it's so late, not really playing WoW for a minute",
+    "|cFFA335EECelestial Dungeon|r drops have been added.",
+    "Warforged items shown next to others in SoO (thanks @Firsthunterz).",
+    "Other small fixes, thanks again to those that contributed.",
+    "Special Thanks to |cFFA335EEPewtro|r, again, on GitHub for all the help with the dungeon loot tables!",
+    "|cFFFF8000HELP|r: If anyone wants to take over or help on whatever comes next, hit me up! ( |cFF3366CCgithub.com/snowflame0/AtlasLootClassic_MoP/issues|r )",
+    "Feel free to support me at the link below (click, CTRL+A, and CTRL+C to copy)"
 }
 local donation_link = "buymeacoffee.com/snowflame0"
 

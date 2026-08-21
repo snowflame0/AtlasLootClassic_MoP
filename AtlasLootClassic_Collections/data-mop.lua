@@ -409,21 +409,23 @@ data["AugustStoneClusterVendorMoP"] = {
             { 24, 104955 }, -- Gloves of the Golden Protector
             { 25, 104987 }, -- Korgra's Venom-Soaked Gauntlets
             { 26, 105097 }, -- Klaxxi Grips of Rejuvenation
+            { 27, 105818 }, -- Crimson Gauntlets of Death
+            { 28, 105817 }, -- Siid's Silent Stranglers
             -- Waist
-            { 28, 105002 }, -- Dragonmaw Emergency Strap
-            { 29, 105030 }, -- Damron's Belt of Darkness
-            { 30, 105137 }, -- Cord of Black Dreams
-            { 31, 105153 }, -- Seal of Karmic Return
+            { 101, 105002 }, -- Dragonmaw Emergency Strap
+            { 102, 105030 }, -- Damron's Belt of Darkness
+            { 103, 105137 }, -- Cord of Black Dreams
+            { 104, 105153 }, -- Seal of Karmic Return
             -- Legs
-            { 101, 104926 }, -- Salt Water Sandals
-            { 102, 105031 }, -- Riou's Vigilant Leggings
-            { 103, 105098 }, -- Shado-Pan Reliquary Kit
+            { 106, 105031 }, -- Riou's Vigilant Leggings
+            { 107, 105098 }, -- Shado-Pan Reliquary Kit
             -- Feet
             { 116, 104933 }, -- Stonetoe's Tormented Treads
             { 117, 104969 }, -- Boots of Broken Reliance
             { 118, 104986 }, -- Unrepentant Heels
             { 119, 105078 }, -- Boots of Perilous Infusion
             { 120, 105084 }, -- Pandaren Roofsprinters
+            { 121, 104926 }, -- Salt Water Sandals
         },
     },
     {
@@ -456,6 +458,8 @@ data["AugustStoneClusterVendorMoP"] = {
             { 24, 104934 }, -- Grips of Unending Anguish
             { 25, 105003 }, -- Grips of Tidal Force
             { 26, 105010 }, -- Precision Cutters
+            { 27, 105819 }, -- Keengrip Arrowpullers
+            { 28, 105820 }, -- Marco's Crackling Gloves
             -- Waist
             { 101, 104988 }, -- Cannoneer's Multipocket Gunbelt
             { 102, 105045 }, -- Belt of the Iron Prison
@@ -498,68 +502,72 @@ data["AugustStoneClusterVendorMoP"] = {
             { 20, 105110 }, -- Icy Blood Chestplate
             { 21, 105156 }, -- Chestplate of Fallen Passion
             -- Wrist
-            { 23, 104917 }, -- Bracers of Sordid Sleep
-            { 24, 104913 }, -- Bubble-Burst Bracers
-            { 25, 104958 }, -- Bracers of Blind Hatred
-            { 26, 104973 }, -- Wristplates of Broken Doubt
-            { 27, 104991 }, -- Arcsmasher Bracers
-            { 28, 105004 }, -- Smoldering Drakescale Bracers
-            { 29, 105012 }, -- Wall-Borer Bracers
-            { 30, 105047 }, -- Shackles of Stinking Slime
-            { 31, 105066 }, -- Blood Rage Bracers
+            { 101, 104917 }, -- Bracers of Sordid Sleep
+            { 102, 104913 }, -- Bubble-Burst Bracers
+            { 103, 104958 }, -- Bracers of Blind Hatred
+            { 104, 104973 }, -- Wristplates of Broken Doubt
+            { 105, 104991 }, -- Arcsmasher Bracers
+            { 106, 105004 }, -- Smoldering Drakescale Bracers
+            { 107, 105012 }, -- Wall-Borer Bracers
+            { 108, 105047 }, -- Shackles of Stinking Slime
+            { 109, 105066 }, -- Blood Rage Bracers
             -- Hands
-            { 101, 104915 }, -- Corruption-Rotted Gauntlets
-            { 102, 104950 }, -- Grips of the Fallen Council
-            { 103, 104937 }, -- Shockstriker Gauntlets
-            { 104, 105013 }, -- Tar-Coated Gauntlets
-            { 105, 105121 }, -- Calixian Bladebreakers
-            { 106, 105133 }, -- Gauntlets of Insane Calculations
-            { 107, 105823 }, -- Gauntlets of Discarded Time
-            { 108, 105821 }, -- Romy's Reliable Grips
-            { 109, 105822 }, -- Zoid's Molten Gauntlets
+            { 116, 104915 }, -- Corruption-Rotted Gauntlets
+            { 117, 104950 }, -- Grips of the Fallen Council
+            { 118, 104937 }, -- Shockstriker Gauntlets
+            { 119, 105013 }, -- Tar-Coated Gauntlets
+            { 120, 105121 }, -- Calixian Bladebreakers
+            { 121, 105133 }, -- Gauntlets of Insane Calculations
+            { 122, 105823 }, -- Gauntlets of Discarded Time
+            { 123, 105821 }, -- Romy's Reliable Grips
+            { 124, 105822 }, -- Zoid's Molten Gauntlets
             -- Waist
-            { 116, 104929 }, -- Greatbelt of Living Waters
-            { 117, 104935 }, -- Poisonbinder Girth
-            { 118, 105011 }, -- Demolisher's Reinforced Belt
-            { 119, 105035 }, -- Ashen Wall Girdle
-            { 120, 105101 }, -- Plate Belt of the War-Healer
-            { 121, 105089 }, -- Untarnishable Greatbelt
+            { 201, 104929 }, -- Greatbelt of Living Waters
+            { 202, 104935 }, -- Poisonbinder Girth
+            { 203, 105011 }, -- Demolisher's Reinforced Belt
+            { 204, 105035 }, -- Ashen Wall Girdle
+            { 205, 105101 }, -- Plate Belt of the War-Healer
+            { 206, 105089 }, -- Untarnishable Greatbelt
             -- Legs
-            { 123, 105005 }, -- Windfire Legplates
-            { 124, 105067 }, -- Legplates of Willful Doom
-            { 125, 105142 }, -- Legplates of Unthinking Strife
+            { 208, 105005 }, -- Windfire Legplates
+            { 209, 105067 }, -- Legplates of Willful Doom
+            { 210, 105142 }, -- Legplates of Unthinking Strife
             -- Feet
-            { 201, 104916 }, -- Treads of Unchained Hate
-            { 202, 104930 }, -- Waterwalker Greatboots
-            { 203, 104980 }, -- Greaves of Sublime Superiority
-            { 204, 105027 }, -- Borer Drill Boots
-            { 205, 105033 }, -- Wolf-Rider Spurs
-            { 206, 105065 }, -- Malkorok's Giant Stompers
-            { 207, 105102 }, -- Mogu Mindbender's Greaves
-            { 208, 105090 }, -- Ominous Mogu Greatboots
+            { 216, 104916 }, -- Treads of Unchained Hate
+            { 217, 104930 }, -- Waterwalker Greatboots
+            { 218, 104980 }, -- Greaves of Sublime Superiority
+            { 219, 105027 }, -- Borer Drill Boots
+            { 220, 105033 }, -- Wolf-Rider Spurs
+            { 221, 105065 }, -- Malkorok's Giant Stompers
+            { 222, 105102 }, -- Mogu Mindbender's Greaves
+            { 223, 105090 }, -- Ominous Mogu Greatboots
         },
     },
     {
         name = ALIL["Cloak"],
         [CELESTIAL_DIFF] = {
             { 1, 105421 }, -- Cloak of Misguided Power
-            { 2, 105437 }, -- Gleamwrap Greatcloak
+            { 2, 105437 }, -- Gloomwrap Greatcloak
             { 3, 105458 }, -- Drape of the Despairing Pit
             { 4, 105844 }, -- Brave Niunai's Cloak
             { 5, 105843 }, -- Drape of the Omega
             { 6, 105852 }, -- Aeth's Swiftcinder Cloak
             { 7, 105853 }, -- Turtleshell Greatcloak
+            { 8, 105028 }, -- Poisonmist Nightcloak
+            { 9, 105573 }, -- Black-Blooded Drape
+            { 10, 105843 }, -- Drape of the Omega
+            { 11, 105840 }, -- Cape of the Alpha
         },
     },
     {
         name = ALIL["Weapon"],
         [CELESTIAL_DIFF] = {
             -- 1H Axe
-            { 1, 104919 }, -- Encapsulated Essence of Immerseus
-            { 2, 105037 }, -- Haromm's Frozen Crescent
-            { 3, 105069 }, -- Malkorok's Skullcleaver
-            { 4, 105127 }, -- Korven's Crimson Crescent
+            { 1, 105037 }, -- Haromm's Frozen Crescent
+            { 2, 105069 }, -- Malkorok's Skullcleaver
+            { 3, 105127 }, -- Korven's Crimson Crescent
             -- 1H Mace
+            { 5, 104919 }, -- Encapsulated Essence of Immerseus
             { 6, 105006 }, -- Seismic Bore
             { 7, 105043 }, -- Kardris' Scepter
             { 8, 105123 }, -- Siegecrafter's Forge Hammer
@@ -659,7 +667,7 @@ data["AugustStoneClusterVendorMoP"] = {
             { 16, 104945 }, -- Petrified Pennyroyal Ring
             { 17, 105000 }, -- Extinguished Ember of Galakras
             { 18, 105108 }, -- Signet of the Dinomancers
-            { 19, 105130 }, -- Iyookuk's Hereditary Seal
+            { 19, 105130 }, -- Iyyokuk's Hereditary Seal
             -- Spirit Int
             { 21, 104925 }, -- Seal of Eternal Sorrow
             { 22, 105022 }, -- Laser-Slice Signet
@@ -673,7 +681,7 @@ data["AugustStoneClusterVendorMoP"] = {
             { 1, 104961 }, -- Fusion-Fire Core
             { 2, 104993 }, -- Evil Eye of Galakras
             { 3, 105111 }, -- Thok's Tail Tip
-            { 4, 105134 }, -- Skeer's Bloodsoaker Talisman
+            { 4, 105134 }, -- Skeer's Bloodsoaked Talisman
             -- Agility
             { 6, 104974 }, -- Assurance of Consequence
             { 7, 105029 }, -- Haromm's Talisman
@@ -1480,7 +1488,7 @@ data["SpiritOfHarmonyVendor"] = {
 data["ChallengeModeMoP"] = {
     name = AL["Challenge Mode"],
     ContentType = SET_CONTENT,
-    TableType = NORMAL_DIFF,
+    TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.MOP_VERSION_NUM,
     items = {
         {
@@ -1840,15 +1848,27 @@ data["ChallengeModeMoP"] = {
                 { 12, 89154 }, -- Reins of the Crimson Pandaren Phoenix
                 { 13, 90712 }, -- Reins of the Violet Pandaren Phoenix
                 { 14, 90711 }, -- Reins of the Emerald Pandaren Phoenix
-                { 16, 265787 }, -- Magic Rooster Egg
-                { 17, 265788 }, -- Wooly White Rhino
-                { 18, 265789 }, -- Eye of the Legion
+                { 16, 276078 }, -- Tabard of the Arcane
+                { 17, 265785 }, -- Tabard of the Void
+                { 18, 265783 }, -- Tabard of Fury
+                { 19, 276076 }, -- Tabard of Nature
                 { 20, 265784 }, -- Tabard of Brilliance
-                { 21, 265785 }, -- Tabard of the Void
-                { 22, 265783 }, -- Tabard of Fury
-                { 24, 54212 }, -- Instant Statue Pedestal
-                { 25, 265786 }, -- Demon Hunter's Aspect
-                { 26, 266999 }, -- Swift Yak Pelt
+                { 21, 276077 }, -- Tabard of the Defender
+                { 22, 276079 }, -- Tabard of Frost
+                { 23, 276080 }, -- Tabard of Flame
+                { 25, 265787 }, -- Magic Rooster Egg
+                { 26, 265788 }, -- Wooly White Rhino
+                { 27, 276081 }, -- Spectral Wind Rider
+                { 28, 276075 }, -- Stormcrow
+                { 29, 277652 }, -- Frostwyrm Mount
+                { 101, 248742,"ac62399" }, -- Celestial Riding Tiger
+                { 102, 275928,"ac62059" }, -- Reins of the Fire Drake
+                { 103, 248744,"ac62060" }, -- Celestial Riding Ox
+                { 105, 265789 }, -- Eye of the Legion
+                { 106, 54212 }, -- Instant Statue Pedestal
+                { 107, 265786 }, -- Demon Hunter's Aspect
+                { 108, 266999 }, -- Swift Yak Pelt
+                { 109, 49704 }, -- Carved Ogre Idol
             },
         },
     },
@@ -2910,17 +2930,18 @@ data["ValentinesdayMoP"] = {
         { -- SFKApothecaryH
         name = C_Map_GetAreaInfo(209) .. " - " .. AL["Apothecary Hummel"],
         [NORMAL_DIFF] = {
-            { 1,  93391 }, -- Heartbreak Charm
-            { 2,  93392 }, -- Winking Eye of Love
-            { 3,  93393 }, -- Sweet Perfume Broach
-            { 4,  93394 }, -- Choker of the Pure Heart
-            { 5,  93395 }, -- Shard of Pirouetting Happiness
-            { 7,  49641 }, -- Faded Lovely Greeting Card
-            { 8,  49715 }, -- Forever-Lovely Rose
-            { 9,  50250 }, -- X-45 Heartbreaker
-            { 10, 50446 }, -- Toxic Wasteling
-            { 11, 50471 }, -- The Heartbreaker
-            { 12, 50741 }  -- Vile Fumigator's Mask
+            { 1,  "INV_ValentinesBoxOfChocolates02", nil, AL["Heart-Shaped Box"] }, -- Heart-Shaped Box
+            { 2,  50250 }, -- X-45 Heartbreaker
+            { 3,  49715 }, -- Forever-Lovely Rose
+            { 4,  50741 },  -- Vile Fumigator's Mask
+            { 5,  50446 }, -- Toxic Wasteling
+            { 6,  50471 }, -- The Heartbreaker
+            { 8,  93391 }, -- Heartbreak Charm
+            { 9,  93392 }, -- Winking Eye of Love
+            { 10, 93393 }, -- Sweet Perfume Broach
+            { 11, 93394 }, -- Choker of the Pure Heart
+            { 12, 93395 }, -- Shard of Pirouetting Happiness
+            { 14, 49641 } -- Faded Lovely Greeting Card
             }
         }
     }
@@ -2957,17 +2978,17 @@ data["MidsummerFestivalMoP"] = {
         {
         name = C_Map_GetAreaInfo(3717) .. " - " .. AL["Ahune"],
         [NORMAL_DIFF] = {
-                { 1, 54536 }, -- Satchel of Chilled Goods
-                { 2, 95426 }, -- Frostscythe of Lord Ahune
-                { 4, 95425 }, -- Cloak of the Frigid Winds
-                { 5, 95427 }, -- Icebound Cloak
-                { 6, 95428 }, -- Shroud of Winter's Chill
-                { 7, 95429 }, -- The Frost Lord's Battle Shroud
-                { 8, 95430 }, -- The Frost Lord's War Cloak
-                { 10, 35723 }, -- Shards of Ahune
-                { 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
-                { 18, 53641 }, -- Ice Chip
-                { 20, 35557 }, -- Huge Snowball
+                { 1, "INV_Misc_Bag_17", nil, AL["Satchel of Chilled Goods"] }, -- Satchel of Chilled Goods
+                { 2, 280389 }, -- Frostscythe of Lord Ahune
+                { 3, 53641  }, -- Ice Chip
+                { 5, 280386 }, -- Cloak of the Frigid Winds
+                { 6, 280383 }, -- Icebound Cloak
+                { 7, 280385 }, -- Shroud of Winter's Chill
+                { 8, 280384 }, -- The Frost Lord's Battle Shroud
+                { 9, 280387 }, -- The Frost Lord's War Cloak
+                { 11, 35498 }, -- Formula: Enchant Weapon - Deathfrost
+                { 12, 35557 }, -- Huge Snowball
+                { 13, 35723 } -- Shards of Ahune
             }
         }
     }
@@ -3023,18 +3044,19 @@ data["BrewfestMoP"] = {
         {
             name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
             [NORMAL_DIFF] = {
-                { 1,  257873 }, -- Bitterest Balebrew Charm
-                { 2,  257877 }, -- Bubbliest Brightbrew Charm
-                { 3,  257880 }, -- Coren's Cold Chromium Coaster
-                { 4,  257884 }, -- Mithril Wristwatch
-                { 5,  257881 }, -- Thousand-Year Pickled Egg
-                { 6,  257885 }, -- Brawler's Statue
-                { 8,  257863 }, -- Direbrew's Bloodied Shanker
-                { 9,  257865 }, -- Tremendous Tankard O' Terror
-                {16, 33977}, -- Swift Brewfest Ram
-                {17, 37828}, -- Great Brewfest Kodo
-                {19, 37863}, -- Direbrew's Remote
-                {21, 38280} -- Direbrew's Dire Brew
+                { 1, "INV_Cask_02", nil, AL["Keg-Shaped Treasure Chest"] }, -- Keg-Shaped Treasure Chest
+                { 2,  33977 }, -- Swift Brewfest Ram
+                { 3,  37828 }, -- Great Brewfest Kodo
+                { 4,  37863 }, -- Direbrew's Remote
+                { 5,  257863 }, -- Direbrew's Bloodied Shanker
+                { 6,  257865 }, -- Tremendous Tankard O' Terror
+                { 8,  257873 }, -- Bitterest Balebrew Charm
+                { 9,  257877 }, -- Bubbliest Brightbrew Charm
+                {10,  257880 }, -- Coren's Cold Chromium Coaster
+                {11,  257884 }, -- Mithril Wristwatch
+                {12,  257881 }, -- Thousand-Year Pickled Egg
+                {13,  257885 }, -- Brawler's Statue
+                {15,  38280} -- Direbrew's Dire Brew
             }
         }
     }
@@ -3104,18 +3126,19 @@ data["HalloweenMoP"] = {
         { -- SMHeadlessHorseman
         name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
         [NORMAL_DIFF] = {
-                { 1, 263010 }, -- Seal of Ghoulish Glee
-                { 2, 263011 }, -- The Horseman's Ring
-                { 3, 263012 }, -- Wicked Witch's Signet
-                { 4, 263013 }, -- Band of the Petrified Pumpkin
-                { 5, 263014 }, -- The Horseman's Horrific Hood
-                { 6, 263018 }, -- The Horseman's Sinister Slicer
-                { 8, 33292 }, -- Hallowed Helm
-                { 10, 34068 }, -- Weighted Jack-o'-Lantern
-                { 12, 33277 }, -- Tome of Thomas Thomson
-                { 16, 37012 }, -- The Horseman's Reins
-                { 18, 37011 }, -- Magic Broom
-                { 20, 33154 }, -- Sinister Squashling
+                { 1, "INV_Misc_Bag_28_Halloween", nil, AL["Loot-Filled Pumpkin"] }, -- Loot-Filled Pumpkin
+                { 2, 37012 }, -- The Horseman's Reins
+                { 3, 37011 }, -- Magic Broom
+                { 4, 33154 }, -- Sinister Squashling
+                { 5, 33292 }, -- Hallowed Helm
+                { 6, 263014 }, -- The Horseman's Horrific Hood
+                { 7, 263018 }, -- The Horseman's Sinister Slicer
+                { 9, 263010 }, -- Seal of Ghoulish Glee
+                {10, 263011 }, -- The Horseman's Ring
+                {11, 263012 }, -- Wicked Witch's Signet
+                {12, 263013 }, -- Band of the Petrified Pumpkin
+                {14, 34068 }, -- Weighted Jack-o'-Lantern
+                {15, 33277 }, -- Tome of Thomas Thomson
             }
         }
     }

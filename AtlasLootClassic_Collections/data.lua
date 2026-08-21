@@ -1825,9 +1825,8 @@ data["Darkmoon"] = {
                 {15, 19450}, -- Jubling
                 {16, 91031}, -- Darkmoon Glowfly
                 {18, 90899}, -- Darkmoon Whistle
-                {19, 97994}, -- Darkmoon Seesaw
-                {20, 105898}, -- Moonfang's Paw
-                {21, 101571}, -- Moonfang Shroud
+                {19, 105898}, -- Moonfang's Paw
+                {20, 101571}, -- Moonfang Shroud
           },
       },
       {

@@ -1,3 +1,9 @@
+# 5.3.1 (Aug 21, 2026)
+- New Celestial dungeon drops added
+- Warforged items added to SoO
+- Fixed CM bug
+- Other small fixes
+
 # 5.3.0 (Jun 17, 2026)
 - Added August Stone Cluster vendor items
 - Updated to Phase 5
