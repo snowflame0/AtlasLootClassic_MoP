@@ -1403,12 +1403,12 @@ data["LunarFestivalCata"] = {
                 { 1,  21100 }, -- Coin of Ancestry
                 { 2,  74610 }, -- Lunar Lantern
                 { 3,  74611 }, -- Festival Lantern
-                { 6,  21157 }, -- Festive Green Dress
-                { 7,  21538 }, -- Festive Pink Dress
-                { 8,  21539 }, -- Festive Purple Dress
-                { 9,  21541 }, -- Festive Black Pant Suit
-                { 10, 21544 }, -- Festive Blue Pant Suit
-                { 11, 21543 }, -- Festive Teal Pant Suit
+                { 5,  21157 }, -- Festive Green Dress
+                { 6,  21538 }, -- Festive Pink Dress
+                { 7,  21539 }, -- Festive Purple Dress
+                { 8,  21541 }, -- Festive Black Pant Suit
+                { 9, 21544 }, -- Festive Blue Pant Suit
+                { 10, 21543 }, -- Festive Teal Pant Suit
             },
         },
         {
@@ -1468,43 +1468,46 @@ data["ValentinesdayCata"] = {
     TableType = NORMAL_ITTYPE,
     gameVersion = AtlasLoot.CATA_VERSION_NUM,
     CorrespondingFields = private.VALENTINES_DAY,
-    items = { {                                                                       -- Valentineday
+    items = { {            -- Valentineday
         name = AL["Love is in the Air"],
         [NORMAL_DIFF] = { { 1, 22206 },                                               -- Bouquet of Red Roses
             { 3, "INV_ValentinesBoxOfChocolates02", nil, AL["Gift of Adoration"] }, { 4, 22279 }, -- Lovely Black Dress
-            { 5,  72146 },                                                            -- Swift Lovebird
-            { 6,  22235 },                                                            -- Truesilver Shafted Arrow
-            { 7,  22200 },                                                            -- Silver Shafted Arrow
-            { 8,  34480 },                                                            -- Romantic Picnic Basket
-            { 9,  22261 },                                                            -- Love Fool
-            { 10, 22218 },                                                            -- Handful of Rose Petals
-            { 11, 21813 },                                                            -- Bag of Candies
+            { 5,  72146 }, -- Swift Lovebird
+            { 6,  22235 }, -- Truesilver Shafted Arrow
+            { 7,  22200 }, -- Silver Shafted Arrow
+            { 8,  34480 }, -- Romantic Picnic Basket
+            { 9,  22261 }, -- Love Fool
+            { 10, 22218 }, -- Handful of Rose Petals
+            { 11, 21813 }, -- Bag of Candies
             { 13, "INV_Box_02", nil, AL["Box of Chocolates"] }, { 14, 22237 },        -- Dark Desire
-            { 15, 22238 },                                                            -- Very Berry Cream
-            { 16, 22236 },                                                            -- Buttermilk Delight
-            { 17, 22239 },                                                            -- Sweet Surprise
-            { 18, 22276 },                                                            -- Lovely Red Dress
-            { 19, 22278 },                                                            -- Lovely Blue Dress
-            { 20, 22280 },                                                            -- Lovely Purple Dress
-            { 21, 22277 },                                                            -- Red Dinner Suit
-            { 22, 22281 },                                                            -- Blue Dinner Suit
-            { 23, 22282 }                                                             -- Purple Dinner Suit
+            { 15, 22238 }, -- Very Berry Cream
+            { 16, 22236 }, -- Buttermilk Delight
+            { 17, 22239 }, -- Sweet Surprise
+            { 18, 22276 }, -- Lovely Red Dress
+            { 19, 22278 }, -- Lovely Blue Dress
+            { 20, 22280 }, -- Lovely Purple Dress
+            { 21, 22277 }, -- Red Dinner Suit
+            { 22, 22281 }, -- Blue Dinner Suit
+            { 23, 22282 }  -- Purple Dinner Suit
         }
-    }, {                                                                              -- SFKApothecaryH
+    }, {                   -- SFKApothecaryH
         name = C_Map_GetAreaInfo(209) .. " - " .. AL["Apothecary Hummel"],
-        [NORMAL_DIFF] = { { 1, 238334 },                                              -- Heartbreak Charm
-            { 2,  238335 },                                                           -- Winking Eye of Love
-            { 3,  238336 },                                                           -- Sweet Perfume Broach
-            { 4,  238337 },                                                           -- Choker of the Pure Heart
-            { 5,  238338 },                                                           -- Shard of Pirouetting Happiness
-            { 7,  49641 },                                                            -- Faded Lovely Greeting Card
-            { 8,  49715 },                                                            -- Forever-Lovely Rose
-            { 9,  50250 },                                                            -- X-45 Heartbreaker
-            { 10, 50446 },                                                            -- Toxic Wasteling
-            { 11, 50471 },                                                            -- The Heartbreaker
-            { 12, 50741 }                                                             -- Vile Fumigator's Mask
+        [NORMAL_DIFF] = {
+            { 1,  "INV_ValentinesBoxOfChocolates02", nil, AL["Heart-Shaped Box"] }, -- Heart-Shaped Box
+            { 2,  50250 }, -- X-45 Heartbreaker
+            { 3,  49715 }, -- Forever-Lovely Rose
+            { 4,  50741 },  -- Vile Fumigator's Mask
+            { 5,  50446 }, -- Toxic Wasteling
+            { 6,  50471 }, -- The Heartbreaker
+            { 8,  238334 }, -- Heartbreak Charm
+            { 9,  238335 }, -- Winking Eye of Love
+            { 10, 238336 }, -- Sweet Perfume Broach
+            { 11, 238337 }, -- Choker of the Pure Heart
+            { 12, 238338 }, -- Shard of Pirouetting Happiness
+            { 14, 49641 } -- Faded Lovely Greeting Card
+            }
         }
-    } }
+    }
 }
 
 data["NoblegardenCata"] = {
@@ -1587,19 +1590,20 @@ data["MidsummerFestivalCata"] = {
     }, {
         name = C_Map_GetAreaInfo(3717) .. " - " .. AL["Ahune"],
         [NORMAL_DIFF] = {
-            { 1,  54536 }, -- Satchel of Chilled Goods
-            { 3,  248747 }, -- Frostscythe of Lord Ahune
-            { 4,  248750 }, -- Shroud of Winter's Chill
-            { 5,  248748 }, -- The Frost Lord's War Cloak
-            { 6,  248752 }, -- Icebound Cloak
-            { 7,  248751 }, -- Cloak of the Frigid Winds
-            { 8,  248749 }, -- The Frost Lord's Battle Shroud
-            { 10, 35723 }, -- Shards of Ahune
-            { 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
-            { 18, 53641 }, -- Ice Chip
-            { 20, 35557 }, -- Huge Snowball
+                { 1, "INV_Misc_Bag_17", nil, AL["Satchel of Chilled Goods"] }, -- Satchel of Chilled Goods
+                { 2, 248747 }, -- Frostscythe of Lord Ahune
+                { 3, 53641  }, -- Ice Chip
+                { 5, 248751 }, -- Cloak of the Frigid Winds
+                { 6, 248752 }, -- Icebound Cloak
+                { 7, 248750 }, -- Shroud of Winter's Chill
+                { 8, 248749 }, -- The Frost Lord's Battle Shroud
+                { 9, 248748 }, -- The Frost Lord's War Cloak
+                { 11, 35498 }, -- Formula: Enchant Weapon - Deathfrost
+                { 12, 35557 }, -- Huge Snowball
+                { 13, 35723 } -- Shards of Ahune
+            }
         }
-    } }
+    }
 }
 
 data["BrewfestCata"] = {
@@ -1637,33 +1641,42 @@ data["BrewfestCata"] = {
         {
             name = AL["Food"],
             [NORMAL_DIFF] = {
-                {1, 33043}, -- The Essential Brewfest Pretzel
-                {3, 34017}, -- Small Step Brew
-                {4, 34018}, -- long Stride Brew
-                {5, 34019}, -- Path of Brew
-                {6, 34020}, -- Jungle River Water
-                {7, 34021}, -- Brewdoo Magic
-                {8, 34022}, -- Stout Shrunken Head
-                {9, 33034}, -- Gordok Grog
-                {10, 33035}, -- Ogre Mead
-                {11, 33036} -- Mudder's Milk
+                { 1, 34017 }, -- Small Step Brew
+                { 2, 34018 }, -- long Stride Brew
+                { 3, 34019 }, -- Path of Brew
+                { 4, 34020 }, -- Jungle River Water
+                { 5, 34021 }, -- Brewdoo Magic
+                { 6, 34022 }, -- Stout Shrunken Head
+                { 7, 33034 }, -- Gordok Grog
+                { 8, 33035 }, -- Ogre Mead
+                { 9, 33036 }, -- Mudder's Milk
+                { 10, 46403 }, -- Chuganpug's Delight
+                { 16, 33043 }, -- The Essential Brewfest Pretzel
+                { 17, 34065 }, -- Spiced Onion Cheese
+                { 18, 34063 }, -- Dried Sausage
+                { 19, 34064 }, -- Succulent Sausage
+                { 20, 33023 }, -- Savory Sausage
+                { 21, 33024 }, -- Pickled Sausage
+                { 22, 33025 }, -- Spicy Smoked Sausage
+                { 23, 33026 }, -- The Golden Link
             }
         },
         {
             name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
             [NORMAL_DIFF] = {
-                { 1, 232017 }, -- Bitter Balebrew Charm
-                { 2,  232016 }, -- Bubbling Brightbrew Charm
-                { 3,  232012 }, -- Coren's Chromium Coaster
-                { 4,  232013 }, -- Mithril Pocketwatch
-                { 5,  232014 }, -- Ancient Pickled Egg
-                { 6,  232015 }, -- Brawler's Souvenir
-                { 8,  232030 }, -- Direbrew's Bloody Shanker
-                { 9,  232031 }, -- Tankard O' Terror
-                {16, 33977}, -- Swift Brewfest Ram
-                {17, 37828}, -- Great Brewfest Kodo
-                {19, 37863}, -- Direbrew's Remote
-                {21, 38280} -- Direbrew's Dire Brew
+                { 1, "INV_Cask_02", nil, AL["Keg-Shaped Treasure Chest"] }, -- Keg-Shaped Treasure Chest
+                { 2,  33977 }, -- Swift Brewfest Ram
+                { 3,  37828 }, -- Great Brewfest Kodo
+                { 4,  37863 }, -- Direbrew's Remote
+                { 5,  232030 }, -- Direbrew's Bloody Shanker
+                { 6,  232031 }, -- Tankard O' Terror
+                { 8,  232017 }, -- Bitter Balebrew Charm
+                { 9,  232016 }, -- Bubbling Brightbrew Charm
+                {10,  232012 }, -- Coren's Chromium Coaster
+                {11,  232013 }, -- Mithril Pocketwatch
+                {12,  232014 }, -- Ancient Pickled Egg
+                {13,  232015 }, -- Brawler's Souvenir
+                {15,  38280} -- Direbrew's Dire Brew
             }
         }
     }
@@ -1726,23 +1739,25 @@ data["HalloweenCata"] = {
             { 29, 69192 }, -- Ogre Female Mask
             { 30, 69194 }, -- Vrykul Female Mask
         }
-    }, {                         -- SMHeadlessHorseman
+    }, {                   -- SMHeadlessHorseman
         name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
         [NORMAL_DIFF] = {
-            { 1,  71327 }, -- Band of Ghoulish Glee
-            { 2,  71328 }, -- The Horseman's Signet
-            { 3,  71329 }, -- Wicked Witch's Ring
-            { 4,  71330 }, -- Seal of the Petrified Pumpkin
-            { 5,  71326 }, -- The Horseman's Horrific Helmet
-            { 6,  71325 }, -- The Horseman's Sinister Saber
-            { 8,  33292 }, -- Hallowed Helm
-            { 10, 34068 }, -- Weighted Jack-o'-Lantern
-            { 12, 33277 }, -- Tome of Thomas Thomson
-            { 16, 37012 }, -- The Horseman's Reins
-            { 18, 37011 }, -- Magic Broom               60% ground
-            { 20, 33154 } -- Sinister Squashling
+                { 1, "INV_Misc_Bag_28_Halloween", nil, AL["Loot-Filled Pumpkin"] }, -- Loot-Filled Pumpkin
+                { 2, 37012 }, -- The Horseman's Reins
+                { 3, 37011 }, -- Magic Broom
+                { 4, 33154 }, -- Sinister Squashling
+                { 5, 33292 }, -- Hallowed Helm
+                { 6, 71326 }, -- The Horseman's Horrific Helmet
+                { 7, 71325 }, -- The Horseman's Sinister Saber
+                { 9, 71327 }, -- Band of Ghoulish Glee
+                {10, 71328 }, -- The Horseman's Signet
+                {11, 71329 }, -- Wicked Witch's Ring
+                {12, 71330 }, -- Seal of the Petrified Pumpkin
+                {14, 34068 }, -- Weighted Jack-o'-Lantern
+                {15, 33277 }, -- Tome of Thomas Thomson
+            }
         }
-    } }
+    }
 }
 
 data["WinterVeilCata"] = {

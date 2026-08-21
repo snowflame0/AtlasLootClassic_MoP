@@ -406,8 +406,28 @@ data["ShadowfangKeepCata"] = {
                 { 16, "ac631" },
             },
         },
+        AtlasLoot:GameVersion_GE(AtlasLoot.MOP_VERSION_NUM, { -- Apothecary Hummel
+            name = AL["Apothecary Hummel <Crown Chemical Co.>"],
+            npcID = 36296,
+            DisplayIDs = {{31167}},
+            ExtraList = true,
+            [NORMAL_DIFF] = {
+                { 1,  "INV_ValentinesBoxOfChocolates02", nil, AL["Heart-Shaped Box"] }, -- Heart-Shaped Box
+                { 2,  50250 }, -- X-45 Heartbreaker
+                { 3,  49715 }, -- Forever-Lovely Rose
+                { 4,  50741 },  -- Vile Fumigator's Mask
+                { 5,  50446 }, -- Toxic Wasteling
+                { 6,  50471 }, -- The Heartbreaker
+                { 8,  270890 }, -- Heartbreak Charm
+                { 9,  270884 }, -- Winking Eye of Love
+                { 10, 270892 }, -- Sweet Perfume Broach
+                { 11, 270886 }, -- Choker of the Pure Heart
+                { 12, 270894 }, -- Shard of Pirouetting Happiness
+                { 14, 49641 } -- Faded Lovely Greeting Card
+            }
+        }),
         CLASSIC_INSTANCE_AC_TABLE,
-    }
+    },
 }
 
 data["WailingCaverns"] = {
@@ -960,18 +980,19 @@ data["ScarletMonastery"] = {
             DisplayIDs = {{22351}},
             ExtraList = true,
             [NORMAL_DIFF] = {
-                { 1, 263010 }, -- Seal of Ghoulish Glee
-                { 2, 263011 }, -- The Horseman's Ring
-                { 3, 263012 }, -- Wicked Witch's Signet
-                { 4, 263013 }, -- Band of the Petrified Pumpkin
-                { 5, 263014 }, -- The Horseman's Horrific Hood
-                { 6, 263018 }, -- The Horseman's Sinister Slicer
-                { 8, 33292 }, -- Hallowed Helm
-                { 10, 34068 }, -- Weighted Jack-o'-Lantern
-                { 12, 33277 }, -- Tome of Thomas Thomson
-                { 16, 37012 }, -- The Horseman's Reins
-                { 18, 37011 }, -- Magic Broom
-                { 20, 33154 }, -- Sinister Squashling
+                { 1, "INV_Misc_Bag_28_Halloween", nil, AL["Loot-Filled Pumpkin"] }, -- Loot-Filled Pumpkin
+                { 2, 37012 }, -- The Horseman's Reins
+                { 3, 37011 }, -- Magic Broom
+                { 4, 33154 }, -- Sinister Squashling
+                { 5, 33292 }, -- Hallowed Helm
+                { 6, 282172 }, -- The Horseman's Horrific Hood
+                { 7, 282174 }, -- The Horseman's Sinister Slicer
+                { 9, 282176 }, -- Seal of Ghoulish Glee
+                {10, 282180 }, -- The Horseman's Ring
+                {11, 282182 }, -- Wicked Witch's Signet
+                {12, 282178 }, -- Band of the Petrified Pumpkin
+                {14, 34068 }, -- Weighted Jack-o'-Lantern
+                {15, 33277 }, -- Tome of Thomas Thomson
             }
         }),
         CLASSIC_INSTANCE_AC_TABLE,
@@ -2731,18 +2752,19 @@ data["BlackrockDepths"] = {
             DisplayIDs = {{21824}},
             ExtraList = true,
             [NORMAL_DIFF] = {
-                { 1,  257873 }, -- Bitterest Balebrew Charm
-                { 2,  257877 }, -- Bubbliest Brightbrew Charm
-                { 3,  257880 }, -- Coren's Cold Chromium Coaster
-                { 4,  257884 }, -- Mithril Wristwatch
-                { 5,  257881 }, -- Thousand-Year Pickled Egg
-                { 6,  257885 }, -- Brawler's Statue
-                { 8,  257863 }, -- Direbrew's Bloodied Shanker
-                { 9,  257865 }, -- Tremendous Tankard O' Terror
-                { 16,  33977 }, -- Swift Brewfest Ram
-                { 17,  37828 }, -- Great Brewfest Kodo
-                { 19,  37863 }, -- Direbrew's Remote
-                { 21,  38280 }, -- Direbrew's Dire Brew
+                { 1, "INV_Cask_02", nil, AL["Keg-Shaped Treasure Chest"] }, -- Keg-Shaped Treasure Chest
+                { 2,  33977 }, -- Swift Brewfest Ram
+                { 3,  37828 }, -- Great Brewfest Kodo
+                { 4,  37863 }, -- Direbrew's Remote
+                { 5,  282043 }, -- Direbrew's Bloodied Shanker
+                { 6,  282109 }, -- Tremendous Tankard O' Terror
+                { 8,  282037 }, -- Bitterest Balebrew Charm
+                { 9,  282041 }, -- Bubbliest Brightbrew Charm
+                {10,  282035 }, -- Coren's Cold Chromium Coaster
+                {11,  282033 }, -- Mithril Wristwatch
+                {12,  282031 }, -- Thousand-Year Pickled Egg
+                {13,  282039 }, -- Brawler's Statue
+                {15,  38280} -- Direbrew's Dire Brew
             },
         }),
         CLASSIC_INSTANCE_AC_TABLE,

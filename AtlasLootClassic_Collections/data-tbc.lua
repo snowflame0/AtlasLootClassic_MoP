@@ -689,32 +689,34 @@ data["MidsummerFestivalBC"] = {
         }
     }, { -- CFRSlaveAhune
         name = C_Map_GetAreaInfo(3717) .. " - " .. AL["Ahune"],
-        [NORMAL_DIFF] = {{1, 35514}, -- Frostscythe of Lord Ahune
-        {2, 35494}, -- Shroud of Winter's Chill
-        {3, 35495}, -- The Frost Lord's War Cloak
-        {4, 35496}, -- Icebound Cloak
-        {5, 35497}, -- Cloak of the Frigid Winds
-        {7, 35723}, -- Shards of Ahune
-        {16, 35498}, -- Formula: Enchant Weapon - Deathfrost
-        {18, 34955}, -- Scorched Stone
-        {19, 35557} -- Huge Snowball
+        [NORMAL_DIFF] = {
+                { 1, 35514 }, -- Frostscythe of Lord Ahune
+                { 2, 34955  }, -- Scorched Stone
+                { 4, 35497 }, -- Cloak of the Frigid Winds
+                { 5, 35496 }, -- Icebound Cloak
+                { 6, 35494 }, -- Shroud of Winter's Chill
+                { 7, 35495 }, -- The Frost Lord's War Cloak
+                { 9, 35498 }, -- Formula: Enchant Weapon - Deathfrost
+                { 10, 35557 }, -- Huge Snowball
+                { 11, 35723 } -- Shards of Ahune
         },
-        [HEROIC_DIFF] = {{1, 29434}, -- Badge of Justice
-        {2, 35507}, -- Amulet of Bitter Hatred
-        {3, 35508}, -- Choker of the Arctic Flow
-        {4, 35509}, -- Amulet of Glacial Tranquility
-        {5, 35511}, -- Hailstone Pendant
-        {7, 35514}, -- Frostscythe of Lord Ahune
-        {8, 35494}, -- Shroud of Winter's Chill
-        {9, 35495}, -- The Frost Lord's War Cloak
-        {10, 35496}, -- Icebound Cloak
-        {11, 35497}, -- Cloak of the Frigid Winds
-        {13, 35723}, -- Shards of Ahune
-        {22, 35498}, -- Formula: Enchant Weapon - Deathfrost
-        {24, 34955}, -- Scorched Stone
-        {25, 35557} -- Huge Snowball
+        [HEROIC_DIFF] = {
+                { 1, 35514 }, -- Frostscythe of Lord Ahune
+                { 2, 34955  }, -- Scorched Stone
+                { 4, 35497 }, -- Cloak of the Frigid Winds
+                { 5, 35496 }, -- Icebound Cloak
+                { 6, 35494 }, -- Shroud of Winter's Chill
+                { 7, 35495 }, -- The Frost Lord's War Cloak
+                { 9, 35507}, -- Amulet of Bitter Hatred
+                { 10, 35508}, -- Choker of the Arctic Flow
+                { 11, 35509}, -- Amulet of Glacial Tranquility
+                { 12, 35511}, -- Hailstone Pendant
+                { 14, 35498 }, -- Formula: Enchant Weapon - Deathfrost
+                { 15, 35557 }, -- Huge Snowball
+                { 16, 35723 } -- Shards of Ahune
+            }
         }
-    }}
+    }
 }
 
 data["BrewfestBC"] = {
@@ -739,44 +741,53 @@ data["BrewfestBC"] = {
         {13, 33016}, -- Blue Brewfest Stein
         {15, 37829}, -- Brewfest Prize Token
         {16, 33976}, -- Brewfest Ram
-        {17, 33977}, -- Swift Brewfest Ram
-        {19, 32233}, -- Wolpertinger's Tankard
-        {21, 34028}, -- "Honorary Brewer" Hand Stamp
-        {22, 37599}, -- "Brew of the Month" Club Membership Form
-        {24, 33927}, -- Brewfest Pony Keg
-        {26, 37750}, -- Fresh Brewfest Hops
-        {27, 39477}, -- Fresh Dwarven Brewfest Hops
-        {28, 39476}, -- Fresh Goblin Brewfest Hops
-        {29, 37816} -- Preserved Brewfest Hops
+        {18, 32233}, -- Wolpertinger's Tankard
+        {20, 34028}, -- "Honorary Brewer" Hand Stamp
+        {21, 37599}, -- "Brew of the Month" Club Membership Form
+        {23, 33927}, -- Brewfest Pony Keg
+        {25, 37750}, -- Fresh Brewfest Hops
+        {26, 39477}, -- Fresh Dwarven Brewfest Hops
+        {27, 39476}, -- Fresh Goblin Brewfest Hops
+        {28, 37816} -- Preserved Brewfest Hops
         }
     }, {
         name = AL["Food"],
-        [NORMAL_DIFF] = {{1, 33043}, -- The Essential Brewfest Pretzel
-        {3, 34017}, -- Small Step Brew
-        {4, 34018}, -- long Stride Brew
-        {5, 34019}, -- Path of Brew
-        {6, 34020}, -- Jungle River Water
-        {7, 34021}, -- Brewdoo Magic
-        {8, 34022}, -- Stout Shrunken Head
-        {9, 33034}, -- Gordok Grog
-        {10, 33035}, -- Ogre Mead
-        {11, 33036} -- Mudder's Milk
+        [NORMAL_DIFF] = {
+                { 1, 34017 }, -- Small Step Brew
+                { 2, 34018 }, -- long Stride Brew
+                { 3, 34019 }, -- Path of Brew
+                { 4, 34020 }, -- Jungle River Water
+                { 5, 34021 }, -- Brewdoo Magic
+                { 6, 34022 }, -- Stout Shrunken Head
+                { 7, 33034 }, -- Gordok Grog
+                { 8, 33035 }, -- Ogre Mead
+                { 9, 33036 }, -- Mudder's Milk
+                { 16, 33043 }, -- The Essential Brewfest Pretzel
+                { 17, 34065 }, -- Spiced Onion Cheese
+                { 18, 34063 }, -- Dried Sausage
+                { 19, 34064 }, -- Succulent Sausage
+                { 20, 33023 }, -- Savory Sausage
+                { 21, 33024 }, -- Pickled Sausage
+                { 22, 33025 }, -- Spicy Smoked Sausage
+                { 23, 33026 }, -- The Golden Link
         }
     }, {
         name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
-        [NORMAL_DIFF] = {{1, 37128}, -- Balebrew Charm
-        {2, 37127}, -- Brightbrew Charm
-        {3, 38287}, -- Empty Mug of Direbrew
-        {4, 38290}, -- Dark Iron Smoking Pipe
-        {5, 38288}, -- Direbrew Hops
-        {6, 38289}, -- Coren's Lucky Coin
-        {8, 37597}, -- Direbrew's Shanker
-        {16, 33977}, -- Swift Brewfest Ram
-        {17, 37828}, -- Great Brewfest Kodo
-        {19, 37863}, -- Direbrew's Remote
-        {21, 38280} -- Direbrew's Dire Brew
+            [NORMAL_DIFF] = {
+                { 1,  33977 }, -- Swift Brewfest Ram
+                { 2,  37828 }, -- Great Brewfest Kodo
+                { 3,  37863 }, -- Direbrew's Remote
+                { 4,  37597 }, -- Direbrew's Shanker
+                { 6,  37128 }, -- Balebrew Charm
+                { 7,  37127 }, -- Brightbrew Charm
+                { 8,  38287 }, -- Empty Mug of Direbrew
+                { 9,  38290 }, -- Dark Iron Smoking Pipe
+                {10,  38288 }, -- Direbrew Hops
+                {11,  38289 }, -- Coren's Lucky Coin
+                {13,  38280 } -- Direbrew's Dire Brew
+            }
         }
-    }}
+    }
 }
 
 data["HalloweenBC"] = {
@@ -829,22 +840,21 @@ data["HalloweenBC"] = {
         }
     }, { -- SMHeadlessHorseman
         name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
-        [NORMAL_DIFF] = {{1, 34075}, -- Ring of Ghoulish Delight
-        {2, 34073}, -- The Horseman's Signet Ring
-        {3, 34074}, -- Witches Band
-        {5, 33808}, -- The Horseman's Helm
-        {6, 38175}, -- The Horseman's Blade
-        {8, 33292}, -- Hallowed Helm
-        {10, 34068}, -- Weighted Jack-o'-Lantern
-        {12, 33277}, -- Tome of Thomas Thomson
-        {16, 37012}, -- The Horseman's Reins
-        {18, 33182}, -- Swift Flying Broom        280% flying
-        {19, 33176}, -- Flying Broom              60% flying
-        {21, 33184}, -- Swift Magic Broom         100% ground
-        {22, 37011}, -- Magic Broom               60% ground
-        {24, 33154} -- Sinister Squashling
+        [NORMAL_DIFF] = {
+                { 1, 37012 }, -- The Horseman's Reins
+                { 2, 37011 }, -- Magic Broom
+                { 3, 33154 }, -- Sinister Squashling
+                { 4, 33292 }, -- Hallowed Helm
+                { 5, 33808 }, -- The Horseman's Helm
+                { 6, 38175 }, -- The Horseman's Blade
+                { 8, 34075 }, -- Ring of Ghoulish Delight
+                { 9, 34073 }, -- The Horseman's Signet Ring
+                {10, 34074 }, -- Witches Band
+                {12, 34068 }, -- Weighted Jack-o'-Lantern
+                {13, 33277 }, -- Tome of Thomas Thomson
+            }
         }
-    }}
+    }
 }
 
 data["WinterVeilBC"] = {

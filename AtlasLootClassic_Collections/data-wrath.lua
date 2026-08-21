@@ -1371,19 +1371,22 @@ data["ValentinesDayWrath"] = {
         }
     }, { -- SFKApothecaryH
         name = C_Map_GetAreaInfo(209) .. " - " .. AL["Apothecary Hummel"],
-        [NORMAL_DIFF] = {{1, 51804}, -- Winking Eye of Love
-        {2, 51805}, -- Heartbreak Charm
-        {3, 51806}, -- Shard of Pirouetting Happiness
-        {4, 51807}, -- Sweet Perfume Broach
-        {5, 51808}, -- Choker of the Pure Heart
-        {7, 49641}, -- Faded Lovely Greeting Card
-        {8, 49715}, -- Forever-Lovely Rose
-        {9, 50250}, -- X-45 Heartbreaker
-        {10, 50446}, -- Toxic Wasteling
-        {11, 50471}, -- The Heartbreaker
-        {12, 50741} -- Vile Fumigator's Mask
+        [NORMAL_DIFF] = {
+            { 1,  "INV_ValentinesBoxOfChocolates02", nil, AL["Heart-Shaped Box"] }, -- Heart-Shaped Box
+            { 2,  50250 }, -- X-45 Heartbreaker
+            { 3,  49715 }, -- Forever-Lovely Rose
+            { 4,  50741 },  -- Vile Fumigator's Mask
+            { 5,  50446 }, -- Toxic Wasteling
+            { 6,  50471 }, -- The Heartbreaker
+            { 8,  51805 }, -- Heartbreak Charm
+            { 9,  51804 }, -- Winking Eye of Love
+            { 10, 51807 }, -- Sweet Perfume Broach
+            { 11, 51808 }, -- Choker of the Pure Heart
+            { 12, 51806 }, -- Shard of Pirouetting Happiness
+            { 14, 49641 } -- Faded Lovely Greeting Card
+            }
         }
-    }}
+    }
 }
 
 data["ChildrensWeekWrath"] = {
@@ -1435,19 +1438,21 @@ data["MidsummerFestivalWrath"] = {
         }
     }, { -- CFRSlaveAhune
         name = C_Map_GetAreaInfo(3717) .. " - " .. AL["Ahune"],
-        [NORMAL_DIFF] = {{1, 54806}, -- Frostscythe of Lord Ahune
-        {2, 54804}, -- Shroud of Winter's Chill
-        {3, 54802}, -- The Frost Lord's War Cloak
-        {4, 54801}, -- Icebound Cloak
-        {5, 54805}, -- Cloak of the Frigid Winds
-        {6, 54803}, -- The Frost Lord's Battle Shroud
-        {8, 35723}, -- Shards of Ahune
-        {16, 35498}, -- Formula: Enchant Weapon - Deathfrost
-        {18, 34955}, -- Scorched Stone
-        {19, 53641}, --  Ice Chip
-        {21, 35557} -- Huge Snowball
+        [NORMAL_DIFF] = {
+                { 1, "INV_Misc_Bag_17", nil, AL["Satchel of Chilled Goods"] }, -- Satchel of Chilled Goods
+                { 2, 54806 }, -- Frostscythe of Lord Ahune
+                { 3, 53641  }, -- Ice Chip
+                { 5, 54805 }, -- Cloak of the Frigid Winds
+                { 6, 54801 }, -- Icebound Cloak
+                { 7, 54804 }, -- Shroud of Winter's Chill
+                { 8, 54803 }, -- The Frost Lord's Battle Shroud
+                { 9, 54802 }, -- The Frost Lord's War Cloak
+                { 11, 35498 }, -- Formula: Enchant Weapon - Deathfrost
+                { 12, 35557 }, -- Huge Snowball
+                { 13, 35723 } -- Shards of Ahune
+            }
         }
-    }}
+    }
 }
 
 data["BrewfestWrath"] = {
@@ -1485,33 +1490,42 @@ data["BrewfestWrath"] = {
         {
             name = AL["Food"],
             [NORMAL_DIFF] = {
-                {1, 33043}, -- The Essential Brewfest Pretzel
-                {3, 34017}, -- Small Step Brew
-                {4, 34018}, -- long Stride Brew
-                {5, 34019}, -- Path of Brew
-                {6, 34020}, -- Jungle River Water
-                {7, 34021}, -- Brewdoo Magic
-                {8, 34022}, -- Stout Shrunken Head
-                {9, 33034}, -- Gordok Grog
-                {10, 33035}, -- Ogre Mead
-                {11, 33036} -- Mudder's Milk
+                { 1, 34017 }, -- Small Step Brew
+                { 2, 34018 }, -- long Stride Brew
+                { 3, 34019 }, -- Path of Brew
+                { 4, 34020 }, -- Jungle River Water
+                { 5, 34021 }, -- Brewdoo Magic
+                { 6, 34022 }, -- Stout Shrunken Head
+                { 7, 33034 }, -- Gordok Grog
+                { 8, 33035 }, -- Ogre Mead
+                { 9, 33036 }, -- Mudder's Milk
+                { 10, 46403 }, -- Chuganpug's Delight
+                { 16, 33043 }, -- The Essential Brewfest Pretzel
+                { 17, 34065 }, -- Spiced Onion Cheese
+                { 18, 34063 }, -- Dried Sausage
+                { 19, 34064 }, -- Succulent Sausage
+                { 20, 33023 }, -- Savory Sausage
+                { 21, 33024 }, -- Pickled Sausage
+                { 22, 33025 }, -- Spicy Smoked Sausage
+                { 23, 33026 }, -- The Golden Link
             }
         },
         {
             name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
             [NORMAL_DIFF] = {
-                {1, 49116}, -- Bitter Balebrew Charm
-                {2, 49118}, -- Bubbling Brightbrew Charm
-                {3, 49074}, -- Coren's Chromium Coaster
-                {4, 49076}, -- Mithril Pocketwatch
-                {5, 49078}, -- Ancient Pickled Egg
-                {6, 49080}, -- Brawler's Souvenir
-                {8, 49120}, -- Direbrew's Bloody Shanker
-                {9, 48663}, -- Tankard O' Terror
-                {16, 33977}, -- Swift Brewfest Ram
-                {17, 37828}, -- Great Brewfest Kodo
-                {19, 37863}, -- Direbrew's Remote
-                {21, 38280} -- Direbrew's Dire Brew
+                { 1, "INV_Cask_02", nil, AL["Keg-Shaped Treasure Chest"] }, -- Keg-Shaped Treasure Chest
+                { 2,  33977 }, -- Swift Brewfest Ram
+                { 3,  37828 }, -- Great Brewfest Kodo
+                { 4,  37863 }, -- Direbrew's Remote
+                { 5,  49120 }, -- Direbrew's Bloody Shanker
+                { 6,  48663 }, -- Tankard O' Terror
+                { 8,  49116 }, -- Bitter Balebrew Charm
+                { 9,  49118 }, -- Bubbling Brightbrew Charm
+                {10,  49074 }, -- Coren's Chromium Coaster
+                {11,  49076 }, -- Mithril Pocketwatch
+                {12,  49078 }, -- Ancient Pickled Egg
+                {13,  49080 }, -- Brawler's Souvenir
+                {15,  38280} -- Direbrew's Dire Brew
             }
         }
     }
@@ -1567,22 +1581,22 @@ data["HalloweenWrath"] = {
         }
     }, { -- SMHeadlessHorseman
         name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
-        [NORMAL_DIFF] = {{1, 211817}, -- Ring of Ghoulish Glee
-        {2, 211844}, -- The Horseman's Seal
-        {3, 211847}, -- Wicked Witch's Band
-        {5, 211850}, -- The Horseman's Horrific Helm
-        {6, 211851}, -- The Horseman's Baleful Blade
-        {8, 33292}, -- Hallowed Helm
-        {10, 34068}, -- Weighted Jack-o'-Lantern
-        {12, 33277}, -- Tome of Thomas Thomson
-        {16, 37012}, -- The Horseman's Reins
-        {18, 33182}, -- Swift Flying Broom        280% flying
-        {19, 33176}, -- Flying Broom              60% flying
-        {21, 33184}, -- Swift Magic Broom         100% ground
-        {22, 37011}, -- Magic Broom               60% ground
-        {24, 33154} -- Sinister Squashling
+        [NORMAL_DIFF] = {
+                { 1, "INV_Misc_Bag_28_Halloween", nil, AL["Loot-Filled Pumpkin"] }, -- Loot-Filled Pumpkin
+                { 2, 37012 }, -- The Horseman's Reins
+                { 3, 37011 }, -- Magic Broom
+                { 4, 33154 }, -- Sinister Squashling
+                { 5, 33292 }, -- Hallowed Helm
+                { 6, 211850 }, -- The Horseman's Horrific Helm
+                { 7, 211851 }, -- The Horseman's Baleful Blade
+                { 9, 211817 }, -- Ring of Ghoulish Glee
+                {10, 211844 }, -- The Horseman's Seal
+                {11, 211847 }, -- Wicked Witch's Band
+                {13, 34068 }, -- Weighted Jack-o'-Lantern
+                {14, 33277 }, -- Tome of Thomas Thomson
+            }
         }
-    }}
+    }
 }
 
 data["DayoftheDeadWrath"] = {
@@ -1596,13 +1610,13 @@ data["DayoftheDeadWrath"] = {
         { -- DayoftheDead
         name = AL["Day of the Dead"],
             [NORMAL_DIFF] = {
-                {1, 46690}, -- Candy Skull
-                {2, 46710}, -- Recipe: Bread of the Dead
-                {3, 46711}, -- Spirit Candle
-                {4, 46718}, -- Orange Marigold
-                {5, 46831}, -- Macabre Marionette
-                {6, 46860}, -- Whimsical Skull Mask
-                {7, 46861} -- Bouquet of Orange Marigolds
+                {1, 46831}, -- Macabre Marionette
+                {3, 46710}, -- Recipe: Bread of the Dead
+                {5, 46690}, -- Candy Skull
+                {6, 46711}, -- Spirit Candle
+                {7, 46718}, -- Orange Marigold
+                {8, 46860}, -- Whimsical Skull Mask
+                {9, 46861} -- Bouquet of Orange Marigolds
             }
         }
     }
