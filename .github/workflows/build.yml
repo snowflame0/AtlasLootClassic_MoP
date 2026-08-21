@@ -12,13 +12,9 @@ jobs:
 
     steps:
       - name: Clone project
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      
-      - name: Hack around https://github.com/actions/checkout/issues/290
-        run: |
-          git fetch --tags --force
 
       - name: Install and run Luacheck
         uses: nebularg/actions-luacheck@v1
