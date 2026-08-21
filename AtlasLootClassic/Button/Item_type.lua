@@ -138,8 +138,11 @@ function Item.OnMouseAction(button, mouseButton)
 	mouseButton = ItemClickHandler:Get(mouseButton) or mouseButton
 	if mouseButton == "ChatLink" then
 		local itemInfo, itemLink = GetItemInfo(button.ItemString or button.ItemID)
-		itemLink = itemLink or button.ItemString
-		AtlasLoot.Button:AddChatLink(itemLink or "item:"..button.ItemID)
+		itemLink = itemLink or button.ItemString or "item:"..button.ItemID
+		if HandleModifiedItemClick(itemLink) then
+			return
+		end
+		AtlasLoot.Button:AddChatLink(itemLink)
 	elseif mouseButton == "WoWHeadLink" then
 		AtlasLoot.Button:OpenWoWHeadLink(button, "item", button.ItemID)
 	elseif mouseButton == "DressUp" then
