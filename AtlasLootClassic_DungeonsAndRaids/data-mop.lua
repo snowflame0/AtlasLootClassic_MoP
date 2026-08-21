@@ -4515,8 +4515,7 @@ data["SiegeofOrgrimmar"] = {
                 { 21, 103869, 105230 }, -- Greatsword of Pride's Fall
                 { 22, 103870, 105232 }, -- Shield of Mockeryier
                 { 24, 104162, "pet1331" }, -- Droplet of Y'Shaarj
-                { 25, 104163, "pet1332" }, -- Gooey Sha-ling
-                { 27, "ac8521" },
+                { 26, "ac8521" },
             },
             [HEROIC_DIFF] = {
                 { 1, 104480, 105476 }, -- Self-Reflecting Mask
@@ -4533,9 +4532,8 @@ data["SiegeofOrgrimmar"] = {
                 { 21, 104483, 105479 }, -- Greatsword of Pride's Fall
                 { 22, 104485, 105481 }, -- Shield of Mockery
                 { 24, 104162, "pet1331" }, -- Droplet of Y'Shaarj
-                { 25, 104163, "pet1332" }, -- Gooey Sha-ling
-                { 27, "ac8521" },
-                { 28, "ac8467" },
+                { 26, "ac8521" },
+                { 27, "ac8467" },
             },
         },
         {	--SoOGalakras
